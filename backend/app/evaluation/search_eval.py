@@ -1,9 +1,16 @@
 import sys
+from collections.abc import Callable
 from pathlib import Path
-from typing import ClassVar, Final
+from typing import Final
 
-from pydantic import BaseModel, ConfigDict, Field, TypeAdapter
+from pydantic import TypeAdapter
 
+from backend.app.evaluation.search_eval_schema import (
+    SearchEvalCase,
+    SearchEvalGroupScore,
+    SearchEvalReport,
+    SearchEvalResult,
+)
 from backend.app.indexing.fts_index import DEFAULT_FTS_INDEX_PATH
 from backend.app.schemas.search import SearchRequest
 from backend.app.services.hybrid_retriever import HybridRetriever
@@ -13,40 +20,6 @@ DEFAULT_REPORT_PATH: Final = Path("data/eval/search_eval_report.json")
 SEARCH_CASES_ADAPTER: Final[TypeAdapter[tuple["SearchEvalCase", ...]]] = TypeAdapter(
     tuple["SearchEvalCase", ...],
 )
-
-
-class SearchEvalCase(BaseModel):
-    model_config: ClassVar[ConfigDict] = ConfigDict(frozen=True)
-
-    case_id: str = Field(min_length=1)
-    query: str = Field(min_length=1)
-    model_ids: tuple[str, ...] = Field(default_factory=tuple)
-    expected_document_id: str = Field(min_length=1)
-    expected_pages: tuple[int, ...] = Field(min_length=1)
-    top_k: int = Field(default=5, ge=1)
-
-
-class SearchEvalResult(BaseModel):
-    model_config: ClassVar[ConfigDict] = ConfigDict(frozen=True)
-
-    case_id: str
-    hit_document: bool
-    hit_page: bool
-    top_rank: int | None
-    result_count: int = Field(ge=0)
-    result_pages: tuple[int, ...]
-    result_document_ids: tuple[str, ...]
-
-
-class SearchEvalReport(BaseModel):
-    model_config: ClassVar[ConfigDict] = ConfigDict(frozen=True)
-
-    case_count: int = Field(ge=0)
-    document_hit_count: int = Field(ge=0)
-    page_hit_count: int = Field(ge=0)
-    document_hit_rate: float = Field(ge=0, le=1)
-    page_hit_rate: float = Field(ge=0, le=1)
-    results: tuple[SearchEvalResult, ...]
 
 
 def run_search_eval(
@@ -109,6 +82,10 @@ def _evaluate_case(
     top_rank = _top_rank(case=case, document_ids=document_ids, pages=pages)
     return SearchEvalResult(
         case_id=case.case_id,
+        query_type=case.query_type,
+        feature_category=case.feature_category,
+        difficulty=case.difficulty,
+        source_method=case.source_method,
         hit_document=hit_document,
         hit_page=top_rank is not None,
         top_rank=top_rank,
@@ -128,6 +105,18 @@ def _build_report(results: tuple[SearchEvalResult, ...]) -> SearchEvalReport:
         page_hit_count=page_hit_count,
         document_hit_rate=_rate(count=document_hit_count, total=case_count),
         page_hit_rate=_rate(count=page_hit_count, total=case_count),
+        by_query_type=_group_scores(
+            results=results,
+            group_key=lambda result: result.query_type,
+        ),
+        by_feature_category=_group_scores(
+            results=results,
+            group_key=lambda result: result.feature_category,
+        ),
+        by_difficulty=_group_scores(
+            results=results,
+            group_key=lambda result: result.difficulty,
+        ),
         results=results,
     )
 
@@ -150,6 +139,41 @@ def _rate(*, count: int, total: int) -> float:
     if total == 0:
         return 0
     return count / total
+
+
+def _group_scores(
+    *,
+    results: tuple[SearchEvalResult, ...],
+    group_key: Callable[[SearchEvalResult], str],
+) -> tuple[SearchEvalGroupScore, ...]:
+    group_names = sorted({group_key(result) for result in results})
+    return tuple(
+        _build_group_score(
+            group_name=group_name,
+            results=tuple(
+                result for result in results if group_key(result) == group_name
+            ),
+        )
+        for group_name in group_names
+    )
+
+
+def _build_group_score(
+    *,
+    group_name: str,
+    results: tuple[SearchEvalResult, ...],
+) -> SearchEvalGroupScore:
+    case_count = len(results)
+    document_hit_count = sum(1 for result in results if result.hit_document)
+    page_hit_count = sum(1 for result in results if result.hit_page)
+    return SearchEvalGroupScore(
+        group_name=group_name,
+        case_count=case_count,
+        document_hit_count=document_hit_count,
+        page_hit_count=page_hit_count,
+        document_hit_rate=_rate(count=document_hit_count, total=case_count),
+        page_hit_rate=_rate(count=page_hit_count, total=case_count),
+    )
 
 
 if __name__ == "__main__":

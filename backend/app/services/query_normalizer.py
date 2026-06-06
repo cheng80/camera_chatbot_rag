@@ -26,8 +26,16 @@ SEPARATOR_PATTERN: Final = re.compile(r"[\t\r\n]+")
 WHITESPACE_PATTERN: Final = re.compile(r"\s+")
 QUERY_CONTROL_PATTERNS: Final = (
     re.compile(r"어디(?:서|에서)\s*설정(?:해|하나요|합니까|할\s*수\s*있어)\??"),
+    re.compile(r"어디에\s*있(?:어|나요|습니까)?\??"),
+    re.compile(r"어디에\??"),
     re.compile(r"어떻게\s*설정(?:해|하나요|합니까)\??"),
     re.compile(r"어디(?:서|에서)\s*찾(?:아|나요|습니까)\??"),
+    re.compile(r"연결\s*방법"),
+)
+PARTICLE_TERM_PATTERN: Final = r"(?P<term>[A-Za-z0-9가-힣.]+)(?:은|는|이|가|을|를)\s+"
+CONTROL_LOOKAHEAD_PATTERN: Final = r"(?=(?:어디|어떻게))"
+CONTROL_PARTICLE_PATTERN: Final = re.compile(
+    f"{PARTICLE_TERM_PATTERN}{CONTROL_LOOKAHEAD_PATTERN}",
 )
 
 
@@ -129,6 +137,7 @@ def _strip_model_aliases(
     normalized = SEPARATOR_PATTERN.sub(" ", query)
     for alias in aliases:
         normalized = _alias_pattern(alias.alias).sub(" ", normalized)
+    normalized = _strip_control_particle(normalized)
     normalized = _strip_query_control_phrases(normalized)
     stripped = WHITESPACE_PATTERN.sub(" ", normalized).strip()
     return stripped or query.strip()
@@ -139,6 +148,10 @@ def _strip_query_control_phrases(query: str) -> str:
     for pattern in QUERY_CONTROL_PATTERNS:
         normalized = pattern.sub(" ", normalized)
     return normalized
+
+
+def _strip_control_particle(query: str) -> str:
+    return CONTROL_PARTICLE_PATTERN.sub(r"\g<term> ", query)
 
 
 def _alias_pattern(alias: str) -> re.Pattern[str]:

@@ -26,6 +26,39 @@ def test_normalize_search_input_removes_query_control_phrase() -> None:
     assert result.effective_model_ids == ("DC-G9M2",)
 
 
+def test_normalize_search_input_removes_question_phrase_and_particle() -> None:
+    result = normalize_search_input(
+        query="TZ99 충전 램프가 어디에 있어?",
+        requested_model_ids=(),
+        models=(_model("DC-TZ99", "LUMIX TZ99"),),
+    )
+
+    assert result.search_query == "충전 램프"
+    assert result.effective_model_ids == ("DC-TZ99",)
+
+
+def test_normalize_search_input_removes_connection_method_phrase() -> None:
+    result = normalize_search_input(
+        query="S1M2 LUMIX Lab 연결 방법",
+        requested_model_ids=(),
+        models=(_model("DC-S1M2", "LUMIX S1II"),),
+    )
+
+    assert result.search_query == "LUMIX Lab"
+    assert result.effective_model_ids == ("DC-S1M2",)
+
+
+def test_normalize_search_input_preserves_particle_like_word_endings() -> None:
+    result = normalize_search_input(
+        query="TZ99 와이파이 연결 방법",
+        requested_model_ids=(),
+        models=(_model("DC-TZ99", "LUMIX TZ99"),),
+    )
+
+    assert result.search_query == "와이파이"
+    assert result.effective_model_ids == ("DC-TZ99",)
+
+
 def test_normalize_search_input_keeps_requested_filter_priority() -> None:
     result = normalize_search_input(
         query="G9M2 제브라 패턴",

@@ -36,10 +36,13 @@
   - 대표 4개 PDF에서 OpenDataLoader primary 추출 평가 완료
   - DMC-G85 CLI 실패 원인은 Java TimSort 계약 위반이며 legacy merge sort JVM 옵션으로 해결
   - 전체 29개 PDF 배치 추출 리포트 생성: `data/processed/reports/extraction_report.json`
-  - 검색 평가셋(Search Evaluation Set) 11개 작성: `data/eval/search_eval_cases.json`
+  - 검색 평가셋(Search Evaluation Set) 50개 작성: `data/eval/search_eval_cases.json`
   - 검색 기준선(Search Baseline) 생성: `data/eval/search_eval_report.json`
-  - 현재 검색 기준선: 문서 적중률(Document Hit Rate) 100%, 페이지 적중률(Page Hit Rate) 100%
+  - 현재 검색 기준선: 50개 seed 기준 문서 적중률(Document Hit Rate) 100%, 페이지 적중률(Page Hit Rate) 100%
   - 검색 평가는 FTS 내부 함수가 아니라 `HybridRetriever` 표면을 기준으로 실행
+  - 평가 리포트는 질의 유형(Query Type), 기능 범주(Feature Category), 난이도(Difficulty)별 점수를 포함
+  - 자동 평가셋 생성기 존재: `.venv/bin/uv run python -m backend.app.evaluation.generate_search_eval_cases`
+  - 자동 약라벨 산출물: `data/eval/generated_search_eval_cases.json`, 300개, 25개 문서, `section_title_weak_label`
 - 웹/API(Web/API)
   - FastAPI 정적 UI 서빙 구조 존재
   - SQLite FTS5 색인(Full-Text Search Index) CLI 존재: `.venv/bin/uv run python -m backend.app.indexing.fts_index`
@@ -52,33 +55,62 @@
   - 한국어 검색은 원문 `unicode61` 색인과 공백 제거 `trigram` 보조 색인을 함께 사용
   - 붙여쓰기 질의 예: `제브라패턴`, `손떨림보정` 검색 가능
   - 현재 카드는 LLM 요약이 아니라 검색 청크(Chunk) 기반 임시 카드
+- 작업 계획(Project Planning)
+  - 전체 목표 기반 다음 작업 로드맵 작성: `docs/project/next_work_roadmap.md`
+  - 검색 평가셋(Search Evaluation Set) 확장은 여기서 멈추고 후속 고도화로 분리
 
 ## Next Work
 
-다음 우선순위는 출처 검증(Source Reference Validation)과 검색 평가셋(Search Evaluation Set) 확장이다.
+다음 추천 작업은 출처 참조 검증기(Source Reference Validator) 구현이다.
+구현 전에는 현재 평가셋(Evaluation Set) 및 문서 갱신 변경분을 체크포인트 커밋(Checkpoint Commit)으로 정리하는 것을 권장한다.
 
-1. Source Reference 검증기
+1. 체크포인트 커밋/푸시(Checkpoint Commit/Push)
+   - 현재 평가셋(Evaluation Set) 확장, 자동 약라벨(Weak Label) 생성기, 문서 갱신 작업을 분리해 저장
+   - 다음 출처 검증(Source Validation) 작업과 변경 범위를 섞지 않기 위함
+2. Source Reference 검증기(Source Reference Validator)
    - `document_id`, `model_id`, `page` 유효성 검사
-   - PDF viewer link 가능 여부 확인
-2. 페이지 이미지(Page Image) 렌더링
+   - 문서(Document)가 해당 모델(Model)을 포함하는지 확인
+   - 처리된 페이지(Page) 범위 안에 있는지 확인
+   - PDF 뷰어 링크(Viewer Link) 가능 여부 확인
+   - 추천 파일: `backend/app/wiki/source_ref_checker.py`, `backend/tests/test_source_ref_checker.py`
+3. 페이지 이미지(Page Image) 렌더링
    - 검색 결과 출처 페이지를 viewer에서 확인할 수 있게 연결
-3. 검색 평가셋(Search Evaluation Set) 확장
-   - 대표 질문을 11개에서 30개로 확장
-   - 모델명 포함 질의, 오타, 무띄어쓰기, 후속 질문형 질의를 추가
-   - Top-K 포함률과 출처 정확도 추적
-4. 검색 품질 개선
+   - 추천 파일: `backend/app/indexing/page_renderer.py`, `backend/tests/test_page_renderer.py`
+4. 기능 카드 계약(Feature Card Contract) 강화
+   - 기능 카드(Feature Card) Pydantic schema 정리
+   - 출처 없는 카드의 근거 부족(Insufficient Evidence) 상태 정의
+   - 같은 문서/페이지 중복 카드 축소
+5. 검색 로그(Search Log) 설계
+   - query, normalized_query, selected_model_ids, retrieval_status 저장
+   - 클릭한 출처 페이지, no_results, 사용자 재검색 여부를 나중에 기록할 수 있게 API 구조 준비
+   - 개인정보 없이 검색 품질 개선에 필요한 최소 필드만 저장
+6. 검색 품질 개선(Search Quality Pass)
    - FTS5 결과의 섹션 제목(Section Title) 가중치 조정
    - 같은 문서/페이지 중복 결과 축소
    - 기능명 후보를 카드 제목으로 더 정확히 선택
    - 조사/어미 제거 같은 한국어 정규화(Korean Normalization) 추가 검토
-5. 이후 벡터 검색(Vector Search) 또는 Elasticsearch 추가
+7. 후속 고도화: 검색 평가셋(Search Evaluation Set) 확장
+   - 자동 생성된 300개 약라벨 케이스의 노이즈 필터를 더 보강
+   - 처리된 청크(Chunk), 섹션 제목(Section Title), 목차, 메뉴 목록에서 후보 케이스 추가 생성
+   - 100개 개발 평가셋(Dev Evaluation Set)으로 확장
+   - 최소 300개 잠금 평가셋(Locked Evaluation Set)으로 확장
+   - 모델명 포함 질의, 오타, 무띄어쓰기, 후속 질문형 질의, no_results 질의를 추가
+   - 웹 프로토타입 이후 커뮤니티 검색 로그로 실제 질의 기반 평가셋을 보강
+8. 후속 고도화: 벡터 검색(Vector Search) 또는 Elasticsearch 추가
    - FTS5 키워드 검색과 합쳐 Hybrid RAG로 확장
-   - Elasticsearch는 30개 이상 평가셋에서 FTS5 한계가 확인되면 검색 어댑터(Search Adapter)로 붙임
+   - Elasticsearch는 300개 잠금 평가셋에서 FTS5 한계가 확인되면 검색 어댑터(Search Adapter)로 붙임
+
+추천 다음 커밋 단위:
+
+```text
+source reference validator + tests
+```
 
 ## Reference Entry Points
 
 - [README](README.md): 프로젝트 개요와 실행 방법
 - [문서 인덱스](docs/README.md): 전체 문서 분류와 읽는 순서
+- [다음 작업 로드맵](docs/project/next_work_roadmap.md): 전체 목표 기반 작업 우선순위
 - [초기 설계 문서](docs/Panasonic_LUMIX_Manual_Assistant_GCSE_Initial_Design.md): 장기 설계 원본
 - [아키텍처 개요](docs/architecture/overview.md): 시스템 구성
 - [RAG 파이프라인](docs/architecture/rag_pipeline.md): 검색 증강 생성 흐름

@@ -1,0 +1,4802 @@
+[
+  {
+    "case_id": "auto_dc_g100_kor_23_사용_가능한_렌즈",
+    "query": "사용 가능한 렌즈",
+    "model_ids": [
+      "DC-G100"
+    ],
+    "expected_document_id": "dc_g100_kor",
+    "expected_pages": [
+      23
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_g100_kor_24_사용_가능한_메모리_카드",
+    "query": "사용 가능한 메모리 카드",
+    "model_ids": [
+      "DC-G100"
+    ],
+    "expected_document_id": "dc_g100_kor",
+    "expected_pages": [
+      24
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "setup",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_g100_kor_30_어깨끈_부착하기",
+    "query": "어깨끈 부착하기",
+    "model_ids": [
+      "DC-G100"
+    ],
+    "expected_document_id": "dc_g100_kor",
+    "expected_pages": [
+      30
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_g100_kor_31_배터리_충전하기",
+    "query": "배터리 충전하기",
+    "model_ids": [
+      "DC-G100"
+    ],
+    "expected_document_id": "dc_g100_kor",
+    "expected_pages": [
+      31
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "power",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_g100_kor_39_카드_옵션_넣기",
+    "query": "카드(옵션) 넣기",
+    "model_ids": [
+      "DC-G100"
+    ],
+    "expected_document_id": "dc_g100_kor",
+    "expected_pages": [
+      39
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "setup",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_g100_kor_41_렌즈_부착하기",
+    "query": "렌즈 부착하기",
+    "model_ids": [
+      "DC-G100"
+    ],
+    "expected_document_id": "dc_g100_kor",
+    "expected_pages": [
+      41
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_g100_kor_44_모니터_방향_및_각도_조정하기",
+    "query": "모니터 방향 및 각도 조정하기",
+    "model_ids": [
+      "DC-G100"
+    ],
+    "expected_document_id": "dc_g100_kor",
+    "expected_pages": [
+      44
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "display",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_g100_kor_45_시계_설정하기_처음_켤_때",
+    "query": "시계 설정하기(처음 켤 때)",
+    "model_ids": [
+      "DC-G100"
+    ],
+    "expected_document_id": "dc_g100_kor",
+    "expected_pages": [
+      45
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "setup",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_g100_kor_48_3_기본_조작",
+    "query": "3. 기본 조작",
+    "model_ids": [
+      "DC-G100"
+    ],
+    "expected_document_id": "dc_g100_kor",
+    "expected_pages": [
+      48
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_g100_kor_48_기본적인_촬영_조작",
+    "query": "기본적인 촬영 조작",
+    "model_ids": [
+      "DC-G100"
+    ],
+    "expected_document_id": "dc_g100_kor",
+    "expected_pages": [
+      48
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_g100_kor_53_카메라_설정_조작",
+    "query": "카메라 설정 조작",
+    "model_ids": [
+      "DC-G100"
+    ],
+    "expected_document_id": "dc_g100_kor",
+    "expected_pages": [
+      53
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "setup",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_g100_kor_55_표시_설정",
+    "query": "표시 설정",
+    "model_ids": [
+      "DC-G100"
+    ],
+    "expected_document_id": "dc_g100_kor",
+    "expected_pages": [
+      55
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "display",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_g100d_full_kor_23_사용_가능한_렌즈",
+    "query": "사용 가능한 렌즈",
+    "model_ids": [
+      "DC-G100D"
+    ],
+    "expected_document_id": "dc_g100d_full_kor",
+    "expected_pages": [
+      23
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_g100d_full_kor_24_사용_가능한_메모리_카드",
+    "query": "사용 가능한 메모리 카드",
+    "model_ids": [
+      "DC-G100D"
+    ],
+    "expected_document_id": "dc_g100d_full_kor",
+    "expected_pages": [
+      24
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "setup",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_g100d_full_kor_30_어깨끈_부착하기",
+    "query": "어깨끈 부착하기",
+    "model_ids": [
+      "DC-G100D"
+    ],
+    "expected_document_id": "dc_g100d_full_kor",
+    "expected_pages": [
+      30
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_g100d_full_kor_31_배터리_충전하기",
+    "query": "배터리 충전하기",
+    "model_ids": [
+      "DC-G100D"
+    ],
+    "expected_document_id": "dc_g100d_full_kor",
+    "expected_pages": [
+      31
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "power",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_g100d_full_kor_39_카드_옵션_넣기",
+    "query": "카드(옵션) 넣기",
+    "model_ids": [
+      "DC-G100D"
+    ],
+    "expected_document_id": "dc_g100d_full_kor",
+    "expected_pages": [
+      39
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "setup",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_g100d_full_kor_41_렌즈_부착하기",
+    "query": "렌즈 부착하기",
+    "model_ids": [
+      "DC-G100D"
+    ],
+    "expected_document_id": "dc_g100d_full_kor",
+    "expected_pages": [
+      41
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_g100d_full_kor_44_모니터_방향_및_각도_조정하기",
+    "query": "모니터 방향 및 각도 조정하기",
+    "model_ids": [
+      "DC-G100D"
+    ],
+    "expected_document_id": "dc_g100d_full_kor",
+    "expected_pages": [
+      44
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "display",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_g100d_full_kor_45_시계_설정하기_처음_켤_때",
+    "query": "시계 설정하기(처음 켤 때)",
+    "model_ids": [
+      "DC-G100D"
+    ],
+    "expected_document_id": "dc_g100d_full_kor",
+    "expected_pages": [
+      45
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "setup",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_g100d_full_kor_48_3_기본_조작",
+    "query": "3. 기본 조작",
+    "model_ids": [
+      "DC-G100D"
+    ],
+    "expected_document_id": "dc_g100d_full_kor",
+    "expected_pages": [
+      48
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_g100d_full_kor_48_기본적인_촬영_조작",
+    "query": "기본적인 촬영 조작",
+    "model_ids": [
+      "DC-G100D"
+    ],
+    "expected_document_id": "dc_g100d_full_kor",
+    "expected_pages": [
+      48
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_g100d_full_kor_53_카메라_설정_조작",
+    "query": "카메라 설정 조작",
+    "model_ids": [
+      "DC-G100D"
+    ],
+    "expected_document_id": "dc_g100d_full_kor",
+    "expected_pages": [
+      53
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "setup",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_g100d_full_kor_55_표시_설정",
+    "query": "표시 설정",
+    "model_ids": [
+      "DC-G100D"
+    ],
+    "expected_document_id": "dc_g100d_full_kor",
+    "expected_pages": [
+      55
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "display",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_g95_kor_1_고급_기능_사용_설명서",
+    "query": "고급 기능 사용 설명서",
+    "model_ids": [
+      "DC-G95"
+    ],
+    "expected_document_id": "dc_g95_kor",
+    "expected_pages": [
+      1
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_g95_kor_1_모델_번호_dc_g95",
+    "query": "모델 번호 DC-G95",
+    "model_ids": [
+      "DC-G95"
+    ],
+    "expected_document_id": "dc_g95_kor",
+    "expected_pages": [
+      1
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_g95_kor_1_메시지_표시_p325_문제해결_p328",
+    "query": "메시지 표시 P325 문제해결 P328",
+    "model_ids": [
+      "DC-G95"
+    ],
+    "expected_document_id": "dc_g95_kor",
+    "expected_pages": [
+      1
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "display",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_g95_kor_2_사용자가_필요로_하는_정보_찾기",
+    "query": "사용자가 필요로 하는 정보 찾기",
+    "model_ids": [
+      "DC-G95"
+    ],
+    "expected_document_id": "dc_g95_kor",
+    "expected_pages": [
+      2
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_g95_kor_2_목차_에서_검색",
+    "query": "“ 목차 ” 에서 검색",
+    "model_ids": [
+      "DC-G95"
+    ],
+    "expected_document_id": "dc_g95_kor",
+    "expected_pages": [
+      2
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_g95_kor_3_본_매뉴얼_사용법",
+    "query": "본 매뉴얼 사용법",
+    "model_ids": [
+      "DC-G95"
+    ],
+    "expected_document_id": "dc_g95_kor",
+    "expected_pages": [
+      3
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_g95_kor_3_텍스트_내_기호에_관하여",
+    "query": "∫ 텍스트 내 기호에 관하여",
+    "model_ids": [
+      "DC-G95"
+    ],
+    "expected_document_id": "dc_g95_kor",
+    "expected_pages": [
+      3
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_g95_kor_4_1_사용하기_전에",
+    "query": "1. 사용하기 전에",
+    "model_ids": [
+      "DC-G95"
+    ],
+    "expected_document_id": "dc_g95_kor",
+    "expected_pages": [
+      4
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_g95_kor_4_2_시작하기_기본조작",
+    "query": "2. 시작하기 / 기본조작",
+    "model_ids": [
+      "DC-G95"
+    ],
+    "expected_document_id": "dc_g95_kor",
+    "expected_pages": [
+      4
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_g95_kor_6_5_4k_포토_및_드라이브_설정들",
+    "query": "5. 4K 포토 및 드라이브 설정들",
+    "model_ids": [
+      "DC-G95"
+    ],
+    "expected_document_id": "dc_g95_kor",
+    "expected_pages": [
+      6
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "setup",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_g95_kor_6_6_손떨림_방지_기능_줌_및_플래시",
+    "query": "6. 손떨림 방지 기능 , 줌 및 플래시",
+    "model_ids": [
+      "DC-G95"
+    ],
+    "expected_document_id": "dc_g95_kor",
+    "expected_pages": [
+      6
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "stabilization",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_g95_kor_8_10_wi_fi_bluetooth_기능_사용하기",
+    "query": "10. Wi-Fi/Bluetooth 기능 사용하기",
+    "model_ids": [
+      "DC-G95"
+    ],
+    "expected_document_id": "dc_g95_kor",
+    "expected_pages": [
+      8
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "connectivity",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_g9_full_kor_1_고급_기능_사용_설명서",
+    "query": "고급 기능 사용 설명서",
+    "model_ids": [
+      "DC-G9"
+    ],
+    "expected_document_id": "dc_g9_full_kor",
+    "expected_pages": [
+      1
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_g9_full_kor_1_모델_번호_dc_g9",
+    "query": "모델 번호 DC-G9",
+    "model_ids": [
+      "DC-G9"
+    ],
+    "expected_document_id": "dc_g9_full_kor",
+    "expected_pages": [
+      1
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_g9_full_kor_1_메시지_표시_p321_문제해결_p323",
+    "query": "메시지 표시 P321 문제해결 P323",
+    "model_ids": [
+      "DC-G9"
+    ],
+    "expected_document_id": "dc_g9_full_kor",
+    "expected_pages": [
+      1
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "display",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_g9_full_kor_2_사용자가_필요로_하는_정보_찾기",
+    "query": "사용자가 필요로 하는 정보 찾기",
+    "model_ids": [
+      "DC-G9"
+    ],
+    "expected_document_id": "dc_g9_full_kor",
+    "expected_pages": [
+      2
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_g9_full_kor_2_목차_에서_검색",
+    "query": "“ 목차 ” 에서 검색",
+    "model_ids": [
+      "DC-G9"
+    ],
+    "expected_document_id": "dc_g9_full_kor",
+    "expected_pages": [
+      2
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_g9_full_kor_3_본_매뉴얼_사용법",
+    "query": "본 매뉴얼 사용법",
+    "model_ids": [
+      "DC-G9"
+    ],
+    "expected_document_id": "dc_g9_full_kor",
+    "expected_pages": [
+      3
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_g9_full_kor_3_텍스트_내_기호에_관하여",
+    "query": "∫ 텍스트 내 기호에 관하여",
+    "model_ids": [
+      "DC-G9"
+    ],
+    "expected_document_id": "dc_g9_full_kor",
+    "expected_pages": [
+      3
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_g9_full_kor_4_1_사용하기_전에",
+    "query": "1. 사용하기 전에",
+    "model_ids": [
+      "DC-G9"
+    ],
+    "expected_document_id": "dc_g9_full_kor",
+    "expected_pages": [
+      4
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_g9_full_kor_4_2_시작하기_기본조작",
+    "query": "2. 시작하기 / 기본조작",
+    "model_ids": [
+      "DC-G9"
+    ],
+    "expected_document_id": "dc_g9_full_kor",
+    "expected_pages": [
+      4
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_g9_full_kor_6_6_손떨림_방지_기능_줌_및_플래시",
+    "query": "6. 손떨림 방지 기능 , 줌 및 플래시",
+    "model_ids": [
+      "DC-G9"
+    ],
+    "expected_document_id": "dc_g9_full_kor",
+    "expected_pages": [
+      6
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "stabilization",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_g9_full_kor_7_8_사진_재생_및_편집하기",
+    "query": "8. 사진 재생 및 편집하기",
+    "model_ids": [
+      "DC-G9"
+    ],
+    "expected_document_id": "dc_g9_full_kor",
+    "expected_pages": [
+      7
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_g9_full_kor_7_10_wi_fi_bluetooth_기능_사용하기",
+    "query": "10. Wi-Fi/Bluetooth 기능 사용하기",
+    "model_ids": [
+      "DC-G9"
+    ],
+    "expected_document_id": "dc_g9_full_kor",
+    "expected_pages": [
+      7
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "connectivity",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_g9m2_full_kor_1_모델_번호_dc_g9m2",
+    "query": "모델 번호 DC-G9M2",
+    "model_ids": [
+      "DC-G9M2"
+    ],
+    "expected_document_id": "dc_g9m2_full_kor",
+    "expected_pages": [
+      1
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_g9m2_full_kor_1_until_2023_11_1",
+    "query": "until 2023/11/1",
+    "model_ids": [
+      "DC-G9M2"
+    ],
+    "expected_document_id": "dc_g9m2_full_kor",
+    "expected_pages": [
+      1
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_g9m2_full_kor_2_본_설명서에_사용된_기호",
+    "query": " 본 설명서에 사용된 기호",
+    "model_ids": [
+      "DC-G9M2"
+    ],
+    "expected_document_id": "dc_g9m2_full_kor",
+    "expected_pages": [
+      2
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_g9m2_full_kor_4_알림_유형_기호",
+    "query": "알림 유형 기호",
+    "model_ids": [
+      "DC-G9M2"
+    ],
+    "expected_document_id": "dc_g9m2_full_kor",
+    "expected_pages": [
+      4
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_g9m2_full_kor_5_시작하기_39",
+    "query": "시작하기 39",
+    "model_ids": [
+      "DC-G9M2"
+    ],
+    "expected_document_id": "dc_g9m2_full_kor",
+    "expected_pages": [
+      5
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_g9m2_full_kor_5_기본_조작_72",
+    "query": "기본 조작 72",
+    "model_ids": [
+      "DC-G9M2"
+    ],
+    "expected_document_id": "dc_g9m2_full_kor",
+    "expected_pages": [
+      5
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_g9m2_full_kor_6_사진_촬영하기_112",
+    "query": "사진 촬영하기 112",
+    "model_ids": [
+      "DC-G9M2"
+    ],
+    "expected_document_id": "dc_g9m2_full_kor",
+    "expected_pages": [
+      6
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_g9m2_full_kor_6_비디오_촬영하기_121",
+    "query": "비디오 촬영하기 121",
+    "model_ids": [
+      "DC-G9M2"
+    ],
+    "expected_document_id": "dc_g9m2_full_kor",
+    "expected_pages": [
+      6
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "video",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_g9m2_full_kor_7_초점_줌_150",
+    "query": "초점 / 줌 150",
+    "model_ids": [
+      "DC-G9M2"
+    ],
+    "expected_document_id": "dc_g9m2_full_kor",
+    "expected_pages": [
+      7
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "focus",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_g9m2_full_kor_8_드라이브_셔터_이미지_흔들림_방지_209",
+    "query": "드라이브 / 셔터 / 이미지 흔들림 방지 209",
+    "model_ids": [
+      "DC-G9M2"
+    ],
+    "expected_document_id": "dc_g9m2_full_kor",
+    "expected_pages": [
+      8
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_g9m2_full_kor_8_측광_노출_iso_감도_276",
+    "query": "측광 / 노출 / ISO 감도 276",
+    "model_ids": [
+      "DC-G9M2"
+    ],
+    "expected_document_id": "dc_g9m2_full_kor",
+    "expected_pages": [
+      8
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "exposure",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_g9m2_full_kor_9_화이트_밸런스_이미지_품질_307",
+    "query": "화이트 밸런스 / 이미지 품질 307",
+    "model_ids": [
+      "DC-G9M2"
+    ],
+    "expected_document_id": "dc_g9m2_full_kor",
+    "expected_pages": [
+      9
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_gf10_kor_1_고급_기능_사용_설명서",
+    "query": "고급 기능 사용 설명서",
+    "model_ids": [
+      "DC-GF10"
+    ],
+    "expected_document_id": "dc_gf10_kor",
+    "expected_pages": [
+      1
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_gf10_kor_1_모델_번호_dc_gf10",
+    "query": "모델 번호 DC-GF10",
+    "model_ids": [
+      "DC-GF10"
+    ],
+    "expected_document_id": "dc_gf10_kor",
+    "expected_pages": [
+      1
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_gf10_kor_1_메시지_표시_p309_문제해결_p312",
+    "query": "메시지 표시 P309 문제해결 P312",
+    "model_ids": [
+      "DC-GF10"
+    ],
+    "expected_document_id": "dc_gf10_kor",
+    "expected_pages": [
+      1
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "display",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_gf10_kor_1_until_2017_2_13",
+    "query": "until 2017/2/13",
+    "model_ids": [
+      "DC-GF10"
+    ],
+    "expected_document_id": "dc_gf10_kor",
+    "expected_pages": [
+      1
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_gf10_kor_2_사용자가_필요로_하는_정보_찾기",
+    "query": "사용자가 필요로 하는 정보 찾기",
+    "model_ids": [
+      "DC-GF10"
+    ],
+    "expected_document_id": "dc_gf10_kor",
+    "expected_pages": [
+      2
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_gf10_kor_2_목차_에서_검색",
+    "query": "“ 목차 ” 에서 검색",
+    "model_ids": [
+      "DC-GF10"
+    ],
+    "expected_document_id": "dc_gf10_kor",
+    "expected_pages": [
+      2
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_gf10_kor_3_본_매뉴얼_사용법",
+    "query": "본 매뉴얼 사용법",
+    "model_ids": [
+      "DC-GF10"
+    ],
+    "expected_document_id": "dc_gf10_kor",
+    "expected_pages": [
+      3
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_gf10_kor_3_텍스트_내_기호에_관하여",
+    "query": "∫ 텍스트 내 기호에 관하여",
+    "model_ids": [
+      "DC-GF10"
+    ],
+    "expected_document_id": "dc_gf10_kor",
+    "expected_pages": [
+      3
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_gf10_kor_4_1_사용하기_전에",
+    "query": "1. 사용하기 전에",
+    "model_ids": [
+      "DC-GF10"
+    ],
+    "expected_document_id": "dc_gf10_kor",
+    "expected_pages": [
+      4
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_gf10_kor_4_2_시작하기_기본조작",
+    "query": "2. 시작하기 / 기본조작",
+    "model_ids": [
+      "DC-GF10"
+    ],
+    "expected_document_id": "dc_gf10_kor",
+    "expected_pages": [
+      4
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_gf10_kor_5_3_촬영_모드",
+    "query": "3. 촬영 모드",
+    "model_ids": [
+      "DC-GF10"
+    ],
+    "expected_document_id": "dc_gf10_kor",
+    "expected_pages": [
+      5
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_gf10_kor_5_5_4k_포토_및_드라이브_설정들",
+    "query": "5. 4K 포토 및 드라이브 설정들",
+    "model_ids": [
+      "DC-GF10"
+    ],
+    "expected_document_id": "dc_gf10_kor",
+    "expected_pages": [
+      5
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "setup",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_gf9_kor_1_고급_기능_사용_설명서",
+    "query": "고급 기능 사용 설명서",
+    "model_ids": [
+      "DC-GF9"
+    ],
+    "expected_document_id": "dc_gf9_kor",
+    "expected_pages": [
+      1
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_gf9_kor_1_모델_번호_dc_gf9",
+    "query": "모델 번호 DC-GF9",
+    "model_ids": [
+      "DC-GF9"
+    ],
+    "expected_document_id": "dc_gf9_kor",
+    "expected_pages": [
+      1
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_gf9_kor_1_메시지_표시_p302_문제해결_p305",
+    "query": "메시지 표시 P302 문제해결 P305",
+    "model_ids": [
+      "DC-GF9"
+    ],
+    "expected_document_id": "dc_gf9_kor",
+    "expected_pages": [
+      1
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "display",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_gf9_kor_1_until_2017_2_13",
+    "query": "until 2017/2/13",
+    "model_ids": [
+      "DC-GF9"
+    ],
+    "expected_document_id": "dc_gf9_kor",
+    "expected_pages": [
+      1
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_gf9_kor_2_사용자가_필요로_하는_정보_찾기",
+    "query": "사용자가 필요로 하는 정보 찾기",
+    "model_ids": [
+      "DC-GF9"
+    ],
+    "expected_document_id": "dc_gf9_kor",
+    "expected_pages": [
+      2
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_gf9_kor_2_목차_에서_검색",
+    "query": "“ 목차 ” 에서 검색",
+    "model_ids": [
+      "DC-GF9"
+    ],
+    "expected_document_id": "dc_gf9_kor",
+    "expected_pages": [
+      2
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_gf9_kor_3_본_매뉴얼_사용법",
+    "query": "본 매뉴얼 사용법",
+    "model_ids": [
+      "DC-GF9"
+    ],
+    "expected_document_id": "dc_gf9_kor",
+    "expected_pages": [
+      3
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_gf9_kor_3_텍스트_내_기호에_관하여",
+    "query": "∫ 텍스트 내 기호에 관하여",
+    "model_ids": [
+      "DC-GF9"
+    ],
+    "expected_document_id": "dc_gf9_kor",
+    "expected_pages": [
+      3
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_gf9_kor_4_1_사용하기_전에",
+    "query": "1. 사용하기 전에",
+    "model_ids": [
+      "DC-GF9"
+    ],
+    "expected_document_id": "dc_gf9_kor",
+    "expected_pages": [
+      4
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_gf9_kor_4_2_시작하기_기본조작",
+    "query": "2. 시작하기 / 기본조작",
+    "model_ids": [
+      "DC-GF9"
+    ],
+    "expected_document_id": "dc_gf9_kor",
+    "expected_pages": [
+      4
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_gf9_kor_5_3_촬영_모드",
+    "query": "3. 촬영 모드",
+    "model_ids": [
+      "DC-GF9"
+    ],
+    "expected_document_id": "dc_gf9_kor",
+    "expected_pages": [
+      5
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_gf9_kor_5_5_4k_포토_및_드라이브_설정들",
+    "query": "5. 4K 포토 및 드라이브 설정들",
+    "model_ids": [
+      "DC-GF9"
+    ],
+    "expected_document_id": "dc_gf9_kor",
+    "expected_pages": [
+      5
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "setup",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_gh5_full_kor_1_고급_기능_사용_설명서",
+    "query": "고급 기능 사용 설명서",
+    "model_ids": [
+      "DC-GH5"
+    ],
+    "expected_document_id": "dc_gh5_full_kor",
+    "expected_pages": [
+      1
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_gh5_full_kor_1_모델_번호_dc_gh5",
+    "query": "모델 번호 DC-GH5",
+    "model_ids": [
+      "DC-GH5"
+    ],
+    "expected_document_id": "dc_gh5_full_kor",
+    "expected_pages": [
+      1
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_gh5_full_kor_1_메시지_표시_p328_문제해결_p330",
+    "query": "메시지 표시 P328 문제해결 P330",
+    "model_ids": [
+      "DC-GH5"
+    ],
+    "expected_document_id": "dc_gh5_full_kor",
+    "expected_pages": [
+      1
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "display",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_gh5_full_kor_2_사용자가_필요로_하는_정보_찾기",
+    "query": "사용자가 필요로 하는 정보 찾기",
+    "model_ids": [
+      "DC-GH5"
+    ],
+    "expected_document_id": "dc_gh5_full_kor",
+    "expected_pages": [
+      2
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_gh5_full_kor_2_목차_에서_검색",
+    "query": "“ 목차 ” 에서 검색",
+    "model_ids": [
+      "DC-GH5"
+    ],
+    "expected_document_id": "dc_gh5_full_kor",
+    "expected_pages": [
+      2
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_gh5_full_kor_3_본_매뉴얼_사용법",
+    "query": "본 매뉴얼 사용법",
+    "model_ids": [
+      "DC-GH5"
+    ],
+    "expected_document_id": "dc_gh5_full_kor",
+    "expected_pages": [
+      3
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_gh5_full_kor_3_텍스트_내_기호에_관하여",
+    "query": "∫ 텍스트 내 기호에 관하여",
+    "model_ids": [
+      "DC-GH5"
+    ],
+    "expected_document_id": "dc_gh5_full_kor",
+    "expected_pages": [
+      3
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_gh5_full_kor_4_1_사용하기_전에",
+    "query": "1. 사용하기 전에",
+    "model_ids": [
+      "DC-GH5"
+    ],
+    "expected_document_id": "dc_gh5_full_kor",
+    "expected_pages": [
+      4
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_gh5_full_kor_4_2_시작하기_기본조작",
+    "query": "2. 시작하기 / 기본조작",
+    "model_ids": [
+      "DC-GH5"
+    ],
+    "expected_document_id": "dc_gh5_full_kor",
+    "expected_pages": [
+      4
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_gh5_full_kor_6_5_6k_4k_포토_및_드라이브_설정들",
+    "query": "5. 6K/4K 포토 및 드라이브 설정들",
+    "model_ids": [
+      "DC-GH5"
+    ],
+    "expected_document_id": "dc_gh5_full_kor",
+    "expected_pages": [
+      6
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "setup",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_gh5_full_kor_6_6_손떨림_방지_기능_줌_및_플래시",
+    "query": "6. 손떨림 방지 기능 , 줌 및 플래시",
+    "model_ids": [
+      "DC-GH5"
+    ],
+    "expected_document_id": "dc_gh5_full_kor",
+    "expected_pages": [
+      6
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "stabilization",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_gh5_full_kor_8_10_wi_fi_bluetooth_기능_사용하기",
+    "query": "10. Wi-Fi/Bluetooth 기능 사용하기",
+    "model_ids": [
+      "DC-GH5"
+    ],
+    "expected_document_id": "dc_gh5_full_kor",
+    "expected_pages": [
+      8
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "connectivity",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_gh5s_full_kor_1_고급_기능_사용_설명서",
+    "query": "고급 기능 사용 설명서",
+    "model_ids": [
+      "DC-GH5S"
+    ],
+    "expected_document_id": "dc_gh5s_full_kor",
+    "expected_pages": [
+      1
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_gh5s_full_kor_1_모델_번호_dc_gh5s",
+    "query": "모델 번호 DC-GH5S",
+    "model_ids": [
+      "DC-GH5S"
+    ],
+    "expected_document_id": "dc_gh5s_full_kor",
+    "expected_pages": [
+      1
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_gh5s_full_kor_1_메시지_표시_p352_문제해결_p355",
+    "query": "메시지 표시 P352 문제해결 P355",
+    "model_ids": [
+      "DC-GH5S"
+    ],
+    "expected_document_id": "dc_gh5s_full_kor",
+    "expected_pages": [
+      1
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "display",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_gh5s_full_kor_2_사용자가_필요로_하는_정보_찾기",
+    "query": "사용자가 필요로 하는 정보 찾기",
+    "model_ids": [
+      "DC-GH5S"
+    ],
+    "expected_document_id": "dc_gh5s_full_kor",
+    "expected_pages": [
+      2
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_gh5s_full_kor_2_목차_에서_검색",
+    "query": "“ 목차 ” 에서 검색",
+    "model_ids": [
+      "DC-GH5S"
+    ],
+    "expected_document_id": "dc_gh5s_full_kor",
+    "expected_pages": [
+      2
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_gh5s_full_kor_3_본_매뉴얼_사용법",
+    "query": "본 매뉴얼 사용법",
+    "model_ids": [
+      "DC-GH5S"
+    ],
+    "expected_document_id": "dc_gh5s_full_kor",
+    "expected_pages": [
+      3
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_gh5s_full_kor_3_텍스트_내_기호에_관하여",
+    "query": "∫ 텍스트 내 기호에 관하여",
+    "model_ids": [
+      "DC-GH5S"
+    ],
+    "expected_document_id": "dc_gh5s_full_kor",
+    "expected_pages": [
+      3
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_gh5s_full_kor_4_1_사용하기_전에",
+    "query": "1. 사용하기 전에",
+    "model_ids": [
+      "DC-GH5S"
+    ],
+    "expected_document_id": "dc_gh5s_full_kor",
+    "expected_pages": [
+      4
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_gh5s_full_kor_4_2_시작하기_기본조작",
+    "query": "2. 시작하기 / 기본조작",
+    "model_ids": [
+      "DC-GH5S"
+    ],
+    "expected_document_id": "dc_gh5s_full_kor",
+    "expected_pages": [
+      4
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_gh5s_full_kor_6_6_손떨림_방지_기능_줌_및_플래시",
+    "query": "6. 손떨림 방지 기능 , 줌 및 플래시",
+    "model_ids": [
+      "DC-GH5S"
+    ],
+    "expected_document_id": "dc_gh5s_full_kor",
+    "expected_pages": [
+      6
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "stabilization",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_gh5s_full_kor_7_8_사진_재생_및_편집하기",
+    "query": "8. 사진 재생 및 편집하기",
+    "model_ids": [
+      "DC-GH5S"
+    ],
+    "expected_document_id": "dc_gh5s_full_kor",
+    "expected_pages": [
+      7
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_gh5s_full_kor_7_10_wi_fi_bluetooth_기능_사용하기",
+    "query": "10. Wi-Fi/Bluetooth 기능 사용하기",
+    "model_ids": [
+      "DC-GH5S"
+    ],
+    "expected_document_id": "dc_gh5s_full_kor",
+    "expected_pages": [
+      7
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "connectivity",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_gh6_full_kor_1_모델_번호_dc_gh6",
+    "query": "모델 번호 DC-GH6",
+    "model_ids": [
+      "DC-GH6"
+    ],
+    "expected_document_id": "dc_gh6_full_kor",
+    "expected_pages": [
+      1
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_gh6_full_kor_2_본_설명서에_사용된_기호",
+    "query": "본 설명서에 사용된 기호",
+    "model_ids": [
+      "DC-GH6"
+    ],
+    "expected_document_id": "dc_gh6_full_kor",
+    "expected_pages": [
+      2
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_gh6_full_kor_4_알림_유형_기호",
+    "query": "알림 유형 기호",
+    "model_ids": [
+      "DC-GH6"
+    ],
+    "expected_document_id": "dc_gh6_full_kor",
+    "expected_pages": [
+      4
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_gh6_full_kor_5_시작하기_39",
+    "query": "시작하기 39",
+    "model_ids": [
+      "DC-GH6"
+    ],
+    "expected_document_id": "dc_gh6_full_kor",
+    "expected_pages": [
+      5
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_gh6_full_kor_6_기본_조작_76",
+    "query": "기본 조작 76",
+    "model_ids": [
+      "DC-GH6"
+    ],
+    "expected_document_id": "dc_gh6_full_kor",
+    "expected_pages": [
+      6
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_gh6_full_kor_6_사진_촬영하기_117",
+    "query": "사진 촬영하기 117",
+    "model_ids": [
+      "DC-GH6"
+    ],
+    "expected_document_id": "dc_gh6_full_kor",
+    "expected_pages": [
+      6
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_gh6_full_kor_6_비디오_촬영하기_125",
+    "query": "비디오 촬영하기 125",
+    "model_ids": [
+      "DC-GH6"
+    ],
+    "expected_document_id": "dc_gh6_full_kor",
+    "expected_pages": [
+      6
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "video",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_gh6_full_kor_7_초점_줌_152",
+    "query": "초점 / 줌 152",
+    "model_ids": [
+      "DC-GH6"
+    ],
+    "expected_document_id": "dc_gh6_full_kor",
+    "expected_pages": [
+      7
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "focus",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_gh6_full_kor_7_드라이브_셔터_이미지_흔들림_방지_209",
+    "query": "드라이브 / 셔터 / 이미지 흔들림 방지 209",
+    "model_ids": [
+      "DC-GH6"
+    ],
+    "expected_document_id": "dc_gh6_full_kor",
+    "expected_pages": [
+      7
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_gh6_full_kor_8_측광_노출_iso_감도_267",
+    "query": "측광 / 노출 / ISO 감도 267",
+    "model_ids": [
+      "DC-GH6"
+    ],
+    "expected_document_id": "dc_gh6_full_kor",
+    "expected_pages": [
+      8
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "exposure",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_gh6_full_kor_9_화이트_밸런스_이미지_품질_299",
+    "query": "화이트 밸런스 / 이미지 품질 299",
+    "model_ids": [
+      "DC-GH6"
+    ],
+    "expected_document_id": "dc_gh6_full_kor",
+    "expected_pages": [
+      9
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_gh6_full_kor_9_플래시_323",
+    "query": "플래시 323",
+    "model_ids": [
+      "DC-GH6"
+    ],
+    "expected_document_id": "dc_gh6_full_kor",
+    "expected_pages": [
+      9
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "exposure",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_gh7_full_kor_1_모델_번호_dc_gh7",
+    "query": "모델 번호 DC-GH7",
+    "model_ids": [
+      "DC-GH7"
+    ],
+    "expected_document_id": "dc_gh7_full_kor",
+    "expected_pages": [
+      1
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_gh7_full_kor_1_until_2024_7_1",
+    "query": "until 2024/7/1",
+    "model_ids": [
+      "DC-GH7"
+    ],
+    "expected_document_id": "dc_gh7_full_kor",
+    "expected_pages": [
+      1
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_gh7_full_kor_2_본_설명서에_사용된_기호",
+    "query": " 본 설명서에 사용된 기호",
+    "model_ids": [
+      "DC-GH7"
+    ],
+    "expected_document_id": "dc_gh7_full_kor",
+    "expected_pages": [
+      2
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_gh7_full_kor_4_알림_유형_기호",
+    "query": "알림 유형 기호",
+    "model_ids": [
+      "DC-GH7"
+    ],
+    "expected_document_id": "dc_gh7_full_kor",
+    "expected_pages": [
+      4
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_gh7_full_kor_5_시작하기_41",
+    "query": "시작하기 41",
+    "model_ids": [
+      "DC-GH7"
+    ],
+    "expected_document_id": "dc_gh7_full_kor",
+    "expected_pages": [
+      5
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_gh7_full_kor_6_기본_조작_79",
+    "query": "기본 조작 79",
+    "model_ids": [
+      "DC-GH7"
+    ],
+    "expected_document_id": "dc_gh7_full_kor",
+    "expected_pages": [
+      6
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_gh7_full_kor_6_사진_촬영하기_120",
+    "query": "사진 촬영하기 120",
+    "model_ids": [
+      "DC-GH7"
+    ],
+    "expected_document_id": "dc_gh7_full_kor",
+    "expected_pages": [
+      6
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_gh7_full_kor_6_비디오_촬영하기_129",
+    "query": "비디오 촬영하기 129",
+    "model_ids": [
+      "DC-GH7"
+    ],
+    "expected_document_id": "dc_gh7_full_kor",
+    "expected_pages": [
+      6
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "video",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_gh7_full_kor_7_초점_줌_168",
+    "query": "초점 / 줌 168",
+    "model_ids": [
+      "DC-GH7"
+    ],
+    "expected_document_id": "dc_gh7_full_kor",
+    "expected_pages": [
+      7
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "focus",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_gh7_full_kor_8_드라이브_셔터_이미지_흔들림_방지_233",
+    "query": "드라이브 / 셔터 / 이미지 흔들림 방지 233",
+    "model_ids": [
+      "DC-GH7"
+    ],
+    "expected_document_id": "dc_gh7_full_kor",
+    "expected_pages": [
+      8
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_gh7_full_kor_8_측광_노출_iso_감도_302",
+    "query": "측광 / 노출 / ISO 감도 302",
+    "model_ids": [
+      "DC-GH7"
+    ],
+    "expected_document_id": "dc_gh7_full_kor",
+    "expected_pages": [
+      8
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "exposure",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_gh7_full_kor_9_화이트_밸런스_이미지_품질_333",
+    "query": "화이트 밸런스 / 이미지 품질 333",
+    "model_ids": [
+      "DC-GH7"
+    ],
+    "expected_document_id": "dc_gh7_full_kor",
+    "expected_pages": [
+      9
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_gx9_kor_1_모델_번호_dc_gx9",
+    "query": "모델 번호 DC-GX9",
+    "model_ids": [
+      "DC-GX9"
+    ],
+    "expected_document_id": "dc_gx9_kor",
+    "expected_pages": [
+      1
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_gx9_kor_2_필요한_정보_찾기",
+    "query": "필요한 정보 찾기",
+    "model_ids": [
+      "DC-GX9"
+    ],
+    "expected_document_id": "dc_gx9_kor",
+    "expected_pages": [
+      2
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_gx9_kor_2_이_설명서_사용법에_대한_자세한_내용은_다음_페이지를_참조하십시오",
+    "query": "이 설명서 사용법에 대한 자세한 내용은 다음 페이지를 참조하십시오.",
+    "model_ids": [
+      "DC-GX9"
+    ],
+    "expected_document_id": "dc_gx9_kor",
+    "expected_pages": [
+      2
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_gx9_kor_5_사용하기_전에",
+    "query": "사용하기 전에",
+    "model_ids": [
+      "DC-GX9"
+    ],
+    "expected_document_id": "dc_gx9_kor",
+    "expected_pages": [
+      5
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_gx9_kor_7_초점_밝기_노출_및_색조_설정",
+    "query": "초점, 밝기(노출) 및 색조 설정",
+    "model_ids": [
+      "DC-GX9"
+    ],
+    "expected_document_id": "dc_gx9_kor",
+    "expected_pages": [
+      7
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "focus",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_gx9_kor_7_4k_사진_및_드라이브_설정",
+    "query": "4K 사진 및 드라이브 설정",
+    "model_ids": [
+      "DC-GX9"
+    ],
+    "expected_document_id": "dc_gx9_kor",
+    "expected_pages": [
+      7
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "setup",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_gx9_kor_8_동영상_촬영",
+    "query": "동영상 촬영",
+    "model_ids": [
+      "DC-GX9"
+    ],
+    "expected_document_id": "dc_gx9_kor",
+    "expected_pages": [
+      8
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "video",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_gx9_kor_9_메뉴_기능_사용",
+    "query": "메뉴 기능 사용",
+    "model_ids": [
+      "DC-GX9"
+    ],
+    "expected_document_id": "dc_gx9_kor",
+    "expected_pages": [
+      9
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_gx9_kor_10_다른_장치와_연결",
+    "query": "다른 장치와 연결",
+    "model_ids": [
+      "DC-GX9"
+    ],
+    "expected_document_id": "dc_gx9_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_gx9_kor_11_기능별_목차",
+    "query": "기능별 목차",
+    "model_ids": [
+      "DC-GX9"
+    ],
+    "expected_document_id": "dc_gx9_kor",
+    "expected_pages": [
+      11
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_gx9_kor_16_각_부분의_명칭과_기능",
+    "query": "각 부분의 명칭과 기능",
+    "model_ids": [
+      "DC-GX9"
+    ],
+    "expected_document_id": "dc_gx9_kor",
+    "expected_pages": [
+      16
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_gx9_kor_23_배터리를_꺼내려면_카드_배터리함의_레버를_화살표_방향으로",
+    "query": "■배터리를 꺼내려면 카드/배터리함의 레버를 화살표 방향으로",
+    "model_ids": [
+      "DC-GX9"
+    ],
+    "expected_document_id": "dc_gx9_kor",
+    "expected_pages": [
+      23
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "power",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_lx100m2_kor_1_고급_기능_사용_설명서",
+    "query": "고급 기능 사용 설명서",
+    "model_ids": [
+      "DC-LX100M2"
+    ],
+    "expected_document_id": "dc_lx100m2_kor",
+    "expected_pages": [
+      1
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_lx100m2_kor_1_모델_번호_dc_lx100m2",
+    "query": "모델 번호 DC-LX100M2",
+    "model_ids": [
+      "DC-LX100M2"
+    ],
+    "expected_document_id": "dc_lx100m2_kor",
+    "expected_pages": [
+      1
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_lx100m2_kor_1_메시지_표시_p290_문제해결_p292",
+    "query": "메시지 표시 P290 문제해결 P292",
+    "model_ids": [
+      "DC-LX100M2"
+    ],
+    "expected_document_id": "dc_lx100m2_kor",
+    "expected_pages": [
+      1
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "display",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_lx100m2_kor_2_사용자가_필요로_하는_정보_찾기",
+    "query": "사용자가 필요로 하는 정보 찾기",
+    "model_ids": [
+      "DC-LX100M2"
+    ],
+    "expected_document_id": "dc_lx100m2_kor",
+    "expected_pages": [
+      2
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_lx100m2_kor_2_목차_에서_검색",
+    "query": "“ 목차 ” 에서 검색",
+    "model_ids": [
+      "DC-LX100M2"
+    ],
+    "expected_document_id": "dc_lx100m2_kor",
+    "expected_pages": [
+      2
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_lx100m2_kor_3_본_매뉴얼_사용법",
+    "query": "본 매뉴얼 사용법",
+    "model_ids": [
+      "DC-LX100M2"
+    ],
+    "expected_document_id": "dc_lx100m2_kor",
+    "expected_pages": [
+      3
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_lx100m2_kor_3_텍스트_내_기호에_관하여",
+    "query": "∫ 텍스트 내 기호에 관하여",
+    "model_ids": [
+      "DC-LX100M2"
+    ],
+    "expected_document_id": "dc_lx100m2_kor",
+    "expected_pages": [
+      3
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_lx100m2_kor_4_1_사용하기_전에",
+    "query": "1. 사용하기 전에",
+    "model_ids": [
+      "DC-LX100M2"
+    ],
+    "expected_document_id": "dc_lx100m2_kor",
+    "expected_pages": [
+      4
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_lx100m2_kor_4_2_시작하기_기본조작",
+    "query": "2. 시작하기 / 기본조작",
+    "model_ids": [
+      "DC-LX100M2"
+    ],
+    "expected_document_id": "dc_lx100m2_kor",
+    "expected_pages": [
+      4
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_lx100m2_kor_6_6_피사체_및_목적에_맞는_이미지_촬영하기",
+    "query": "6. 피사체 및 목적에 맞는 이미지 촬영하기",
+    "model_ids": [
+      "DC-LX100M2"
+    ],
+    "expected_document_id": "dc_lx100m2_kor",
+    "expected_pages": [
+      6
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_lx100m2_kor_6_7_손떨림_보정_줌_및_플래시",
+    "query": "7. 손떨림 보정 , 줌 및 플래시",
+    "model_ids": [
+      "DC-LX100M2"
+    ],
+    "expected_document_id": "dc_lx100m2_kor",
+    "expected_pages": [
+      6
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "stabilization",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_lx100m2_kor_6_9_사진_재생하기_및_편집하기",
+    "query": "9. 사진 재생하기 및 편집하기",
+    "model_ids": [
+      "DC-LX100M2"
+    ],
+    "expected_document_id": "dc_lx100m2_kor",
+    "expected_pages": [
+      6
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_s1_full_kor_2_고객_여러분께",
+    "query": "고객 여러분께,",
+    "model_ids": [
+      "DC-S1"
+    ],
+    "expected_document_id": "dc_s1_full_kor",
+    "expected_pages": [
+      2
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_s1_full_kor_2_저작권법을_엄격히_준수합니다",
+    "query": "저작권법을 엄격히 준수합니다.",
+    "model_ids": [
+      "DC-S1"
+    ],
+    "expected_document_id": "dc_s1_full_kor",
+    "expected_pages": [
+      2
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_s1_full_kor_3_본_설명서에_사용된_기호",
+    "query": "본 설명서에 사용된 기호",
+    "model_ids": [
+      "DC-S1"
+    ],
+    "expected_document_id": "dc_s1_full_kor",
+    "expected_pages": [
+      3
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_s1_full_kor_3_사용할_수_있는_촬영_모드_사진_및_비디오_기호",
+    "query": "사용할 수 있는 촬영 모드, 사진 및 비디오 기호",
+    "model_ids": [
+      "DC-S1"
+    ],
+    "expected_document_id": "dc_s1_full_kor",
+    "expected_pages": [
+      3
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "video",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_s1_full_kor_3_조작_기호",
+    "query": "조작 기호",
+    "model_ids": [
+      "DC-S1"
+    ],
+    "expected_document_id": "dc_s1_full_kor",
+    "expected_pages": [
+      3
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_s1_full_kor_4_알림_유형_기호",
+    "query": "알림 유형 기호",
+    "model_ids": [
+      "DC-S1"
+    ],
+    "expected_document_id": "dc_s1_full_kor",
+    "expected_pages": [
+      4
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_s1_full_kor_6_1_소개_17",
+    "query": "1. 소개 17",
+    "model_ids": [
+      "DC-S1"
+    ],
+    "expected_document_id": "dc_s1_full_kor",
+    "expected_pages": [
+      6
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_s1_full_kor_6_2_시작하기_31",
+    "query": "2. 시작하기 31",
+    "model_ids": [
+      "DC-S1"
+    ],
+    "expected_document_id": "dc_s1_full_kor",
+    "expected_pages": [
+      6
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_s1_full_kor_6_3_기본_조작_56",
+    "query": "3. 기본 조작 56",
+    "model_ids": [
+      "DC-S1"
+    ],
+    "expected_document_id": "dc_s1_full_kor",
+    "expected_pages": [
+      6
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_s1_full_kor_7_4_간편한_촬영방식_77",
+    "query": "4. 간편한 촬영방식 77",
+    "model_ids": [
+      "DC-S1"
+    ],
+    "expected_document_id": "dc_s1_full_kor",
+    "expected_pages": [
+      7
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_s1_full_kor_7_5_이미지_촬영_82",
+    "query": "5. 이미지 촬영 82",
+    "model_ids": [
+      "DC-S1"
+    ],
+    "expected_document_id": "dc_s1_full_kor",
+    "expected_pages": [
+      7
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_s1_full_kor_7_6_초점_줌_91",
+    "query": "6. 초점 / 줌 91",
+    "model_ids": [
+      "DC-S1"
+    ],
+    "expected_document_id": "dc_s1_full_kor",
+    "expected_pages": [
+      7
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "focus",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_s1h_full_kor_2_고객_여러분께",
+    "query": "고객 여러분께,",
+    "model_ids": [
+      "DC-S1H"
+    ],
+    "expected_document_id": "dc_s1h_full_kor",
+    "expected_pages": [
+      2
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_s1h_full_kor_2_저작권법을_엄격히_준수합니다",
+    "query": "저작권법을 엄격히 준수합니다.",
+    "model_ids": [
+      "DC-S1H"
+    ],
+    "expected_document_id": "dc_s1h_full_kor",
+    "expected_pages": [
+      2
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_s1h_full_kor_2_필요한_정보_찾기",
+    "query": "필요한 정보 찾기",
+    "model_ids": [
+      "DC-S1H"
+    ],
+    "expected_document_id": "dc_s1h_full_kor",
+    "expected_pages": [
+      2
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_s1h_full_kor_3_본_설명서에_사용된_기호",
+    "query": "본 설명서에 사용된 기호",
+    "model_ids": [
+      "DC-S1H"
+    ],
+    "expected_document_id": "dc_s1h_full_kor",
+    "expected_pages": [
+      3
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_s1h_full_kor_3_사용할_수_있는_촬영_모드_사진_및_비디오_기호",
+    "query": "사용할 수 있는 촬영 모드, 사진 및 비디오 기호",
+    "model_ids": [
+      "DC-S1H"
+    ],
+    "expected_document_id": "dc_s1h_full_kor",
+    "expected_pages": [
+      3
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "video",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_s1h_full_kor_3_조작_기호",
+    "query": "조작 기호",
+    "model_ids": [
+      "DC-S1H"
+    ],
+    "expected_document_id": "dc_s1h_full_kor",
+    "expected_pages": [
+      3
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_s1h_full_kor_4_알림_유형_기호",
+    "query": "알림 유형 기호",
+    "model_ids": [
+      "DC-S1H"
+    ],
+    "expected_document_id": "dc_s1h_full_kor",
+    "expected_pages": [
+      4
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_s1h_full_kor_6_1_소개_19",
+    "query": "1. 소개 19",
+    "model_ids": [
+      "DC-S1H"
+    ],
+    "expected_document_id": "dc_s1h_full_kor",
+    "expected_pages": [
+      6
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_s1h_full_kor_6_2_시작하기_34",
+    "query": "2. 시작하기 34",
+    "model_ids": [
+      "DC-S1H"
+    ],
+    "expected_document_id": "dc_s1h_full_kor",
+    "expected_pages": [
+      6
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_s1h_full_kor_7_3_기본_조작_59",
+    "query": "3. 기본 조작 59",
+    "model_ids": [
+      "DC-S1H"
+    ],
+    "expected_document_id": "dc_s1h_full_kor",
+    "expected_pages": [
+      7
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_s1h_full_kor_7_4_이미지_촬영_87",
+    "query": "4. 이미지 촬영 87",
+    "model_ids": [
+      "DC-S1H"
+    ],
+    "expected_document_id": "dc_s1h_full_kor",
+    "expected_pages": [
+      7
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_s1h_full_kor_8_5_초점_줌_96",
+    "query": "5. 초점 / 줌 96",
+    "model_ids": [
+      "DC-S1H"
+    ],
+    "expected_document_id": "dc_s1h_full_kor",
+    "expected_pages": [
+      8
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "focus",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_s1m2_full_kor_1_dc_s1m2",
+    "query": "DC-S1M2",
+    "model_ids": [
+      "DC-S1M2"
+    ],
+    "expected_document_id": "dc_s1m2_full_kor",
+    "expected_pages": [
+      1
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_s1m2_full_kor_3_조작_기호",
+    "query": "조작 기호",
+    "model_ids": [
+      "DC-S1M2"
+    ],
+    "expected_document_id": "dc_s1m2_full_kor",
+    "expected_pages": [
+      3
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_s1m2_full_kor_4_알림_유형_기호",
+    "query": "알림 유형 기호",
+    "model_ids": [
+      "DC-S1M2"
+    ],
+    "expected_document_id": "dc_s1m2_full_kor",
+    "expected_pages": [
+      4
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_s1m2_full_kor_5_시작하기_42",
+    "query": "시작하기 42",
+    "model_ids": [
+      "DC-S1M2"
+    ],
+    "expected_document_id": "dc_s1m2_full_kor",
+    "expected_pages": [
+      5
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_s1m2_full_kor_6_기본_조작_77",
+    "query": "기본 조작 77",
+    "model_ids": [
+      "DC-S1M2"
+    ],
+    "expected_document_id": "dc_s1m2_full_kor",
+    "expected_pages": [
+      6
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_s1m2_full_kor_6_사진_촬영하기_120",
+    "query": "사진 촬영하기 120",
+    "model_ids": [
+      "DC-S1M2"
+    ],
+    "expected_document_id": "dc_s1m2_full_kor",
+    "expected_pages": [
+      6
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_s1m2_full_kor_7_비디오_촬영하기_134",
+    "query": "비디오 촬영하기 134",
+    "model_ids": [
+      "DC-S1M2"
+    ],
+    "expected_document_id": "dc_s1m2_full_kor",
+    "expected_pages": [
+      7
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "video",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_s1m2_full_kor_7_초점_줌_182",
+    "query": "초점 / 줌 182",
+    "model_ids": [
+      "DC-S1M2"
+    ],
+    "expected_document_id": "dc_s1m2_full_kor",
+    "expected_pages": [
+      7
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "focus",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_s1m2_full_kor_8_드라이브_셔터_이미지_흔들림_방지_256",
+    "query": "드라이브 / 셔터 / 이미지 흔들림 방지 256",
+    "model_ids": [
+      "DC-S1M2"
+    ],
+    "expected_document_id": "dc_s1m2_full_kor",
+    "expected_pages": [
+      8
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_s1m2_full_kor_9_측광_노출_iso_감도_327",
+    "query": "측광 / 노출 / ISO 감도 327",
+    "model_ids": [
+      "DC-S1M2"
+    ],
+    "expected_document_id": "dc_s1m2_full_kor",
+    "expected_pages": [
+      9
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "exposure",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_s1m2_full_kor_9_화이트_밸런스_이미지_품질_364",
+    "query": "화이트 밸런스 / 이미지 품질 364",
+    "model_ids": [
+      "DC-S1M2"
+    ],
+    "expected_document_id": "dc_s1m2_full_kor",
+    "expected_pages": [
+      9
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_s1m2_full_kor_10_플래시_411",
+    "query": "플래시 411",
+    "model_ids": [
+      "DC-S1M2"
+    ],
+    "expected_document_id": "dc_s1m2_full_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "exposure",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_s1m2es_full_kor_1_dc_s1m2es",
+    "query": "DC-S1M2ES",
+    "model_ids": [
+      "DC-S1M2ES"
+    ],
+    "expected_document_id": "dc_s1m2es_full_kor",
+    "expected_pages": [
+      1
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_s1m2es_full_kor_3_조작_기호",
+    "query": "조작 기호",
+    "model_ids": [
+      "DC-S1M2ES"
+    ],
+    "expected_document_id": "dc_s1m2es_full_kor",
+    "expected_pages": [
+      3
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_s1m2es_full_kor_4_알림_유형_기호",
+    "query": "알림 유형 기호",
+    "model_ids": [
+      "DC-S1M2ES"
+    ],
+    "expected_document_id": "dc_s1m2es_full_kor",
+    "expected_pages": [
+      4
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_s1m2es_full_kor_5_시작하기_42",
+    "query": "시작하기 42",
+    "model_ids": [
+      "DC-S1M2ES"
+    ],
+    "expected_document_id": "dc_s1m2es_full_kor",
+    "expected_pages": [
+      5
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_s1m2es_full_kor_6_기본_조작_77",
+    "query": "기본 조작 77",
+    "model_ids": [
+      "DC-S1M2ES"
+    ],
+    "expected_document_id": "dc_s1m2es_full_kor",
+    "expected_pages": [
+      6
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_s1m2es_full_kor_6_사진_촬영하기_120",
+    "query": "사진 촬영하기 120",
+    "model_ids": [
+      "DC-S1M2ES"
+    ],
+    "expected_document_id": "dc_s1m2es_full_kor",
+    "expected_pages": [
+      6
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_s1m2es_full_kor_7_비디오_촬영하기_134",
+    "query": "비디오 촬영하기 134",
+    "model_ids": [
+      "DC-S1M2ES"
+    ],
+    "expected_document_id": "dc_s1m2es_full_kor",
+    "expected_pages": [
+      7
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "video",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_s1m2es_full_kor_7_초점_줌_180",
+    "query": "초점 / 줌 180",
+    "model_ids": [
+      "DC-S1M2ES"
+    ],
+    "expected_document_id": "dc_s1m2es_full_kor",
+    "expected_pages": [
+      7
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "focus",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_s1m2es_full_kor_8_드라이브_셔터_이미지_흔들림_방지_252",
+    "query": "드라이브 / 셔터 / 이미지 흔들림 방지 252",
+    "model_ids": [
+      "DC-S1M2ES"
+    ],
+    "expected_document_id": "dc_s1m2es_full_kor",
+    "expected_pages": [
+      8
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_s1m2es_full_kor_9_측광_노출_iso_감도_323",
+    "query": "측광 / 노출 / ISO 감도 323",
+    "model_ids": [
+      "DC-S1M2ES"
+    ],
+    "expected_document_id": "dc_s1m2es_full_kor",
+    "expected_pages": [
+      9
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "exposure",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_s1m2es_full_kor_9_화이트_밸런스_이미지_품질_360",
+    "query": "화이트 밸런스 / 이미지 품질 360",
+    "model_ids": [
+      "DC-S1M2ES"
+    ],
+    "expected_document_id": "dc_s1m2es_full_kor",
+    "expected_pages": [
+      9
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_s1m2es_full_kor_10_플래시_407",
+    "query": "플래시 407",
+    "model_ids": [
+      "DC-S1M2ES"
+    ],
+    "expected_document_id": "dc_s1m2es_full_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "exposure",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_s1r_full_kor_2_고객_여러분께",
+    "query": "고객 여러분께,",
+    "model_ids": [
+      "DC-S1R"
+    ],
+    "expected_document_id": "dc_s1r_full_kor",
+    "expected_pages": [
+      2
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_s1r_full_kor_2_저작권법을_엄격히_준수합니다",
+    "query": "저작권법을 엄격히 준수합니다.",
+    "model_ids": [
+      "DC-S1R"
+    ],
+    "expected_document_id": "dc_s1r_full_kor",
+    "expected_pages": [
+      2
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_s1r_full_kor_3_본_설명서에_사용된_기호",
+    "query": "본 설명서에 사용된 기호",
+    "model_ids": [
+      "DC-S1R"
+    ],
+    "expected_document_id": "dc_s1r_full_kor",
+    "expected_pages": [
+      3
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_s1r_full_kor_3_사용할_수_있는_촬영_모드_사진_및_비디오_기호",
+    "query": "사용할 수 있는 촬영 모드, 사진 및 비디오 기호",
+    "model_ids": [
+      "DC-S1R"
+    ],
+    "expected_document_id": "dc_s1r_full_kor",
+    "expected_pages": [
+      3
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "video",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_s1r_full_kor_3_조작_기호",
+    "query": "조작 기호",
+    "model_ids": [
+      "DC-S1R"
+    ],
+    "expected_document_id": "dc_s1r_full_kor",
+    "expected_pages": [
+      3
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_s1r_full_kor_4_알림_유형_기호",
+    "query": "알림 유형 기호",
+    "model_ids": [
+      "DC-S1R"
+    ],
+    "expected_document_id": "dc_s1r_full_kor",
+    "expected_pages": [
+      4
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_s1r_full_kor_6_1_소개_17",
+    "query": "1. 소개 17",
+    "model_ids": [
+      "DC-S1R"
+    ],
+    "expected_document_id": "dc_s1r_full_kor",
+    "expected_pages": [
+      6
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_s1r_full_kor_6_2_시작하기_31",
+    "query": "2. 시작하기 31",
+    "model_ids": [
+      "DC-S1R"
+    ],
+    "expected_document_id": "dc_s1r_full_kor",
+    "expected_pages": [
+      6
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_s1r_full_kor_6_3_기본_조작_56",
+    "query": "3. 기본 조작 56",
+    "model_ids": [
+      "DC-S1R"
+    ],
+    "expected_document_id": "dc_s1r_full_kor",
+    "expected_pages": [
+      6
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_s1r_full_kor_7_4_간편한_촬영방식_77",
+    "query": "4. 간편한 촬영방식 77",
+    "model_ids": [
+      "DC-S1R"
+    ],
+    "expected_document_id": "dc_s1r_full_kor",
+    "expected_pages": [
+      7
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_s1r_full_kor_7_5_이미지_촬영_82",
+    "query": "5. 이미지 촬영 82",
+    "model_ids": [
+      "DC-S1R"
+    ],
+    "expected_document_id": "dc_s1r_full_kor",
+    "expected_pages": [
+      7
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_s1r_full_kor_7_6_초점_줌_91",
+    "query": "6. 초점 / 줌 91",
+    "model_ids": [
+      "DC-S1R"
+    ],
+    "expected_document_id": "dc_s1r_full_kor",
+    "expected_pages": [
+      7
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "focus",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_s1rm2_full_kor_1_dc_s1rm2",
+    "query": "DC-S1RM2",
+    "model_ids": [
+      "DC-S1RM2"
+    ],
+    "expected_document_id": "dc_s1rm2_full_kor",
+    "expected_pages": [
+      1
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_s1rm2_full_kor_3_조작_기호",
+    "query": "조작 기호",
+    "model_ids": [
+      "DC-S1RM2"
+    ],
+    "expected_document_id": "dc_s1rm2_full_kor",
+    "expected_pages": [
+      3
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_s1rm2_full_kor_4_알림_유형_기호",
+    "query": "알림 유형 기호",
+    "model_ids": [
+      "DC-S1RM2"
+    ],
+    "expected_document_id": "dc_s1rm2_full_kor",
+    "expected_pages": [
+      4
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_s1rm2_full_kor_5_시작하기_41",
+    "query": "시작하기 41",
+    "model_ids": [
+      "DC-S1RM2"
+    ],
+    "expected_document_id": "dc_s1rm2_full_kor",
+    "expected_pages": [
+      5
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_s1rm2_full_kor_6_기본_조작_76",
+    "query": "기본 조작 76",
+    "model_ids": [
+      "DC-S1RM2"
+    ],
+    "expected_document_id": "dc_s1rm2_full_kor",
+    "expected_pages": [
+      6
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_s1rm2_full_kor_6_사진_촬영하기_119",
+    "query": "사진 촬영하기 119",
+    "model_ids": [
+      "DC-S1RM2"
+    ],
+    "expected_document_id": "dc_s1rm2_full_kor",
+    "expected_pages": [
+      6
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_s1rm2_full_kor_6_비디오_촬영하기_130",
+    "query": "비디오 촬영하기 130",
+    "model_ids": [
+      "DC-S1RM2"
+    ],
+    "expected_document_id": "dc_s1rm2_full_kor",
+    "expected_pages": [
+      6
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "video",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_s1rm2_full_kor_7_초점_줌_175",
+    "query": "초점 / 줌 175",
+    "model_ids": [
+      "DC-S1RM2"
+    ],
+    "expected_document_id": "dc_s1rm2_full_kor",
+    "expected_pages": [
+      7
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "focus",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_s1rm2_full_kor_8_드라이브_셔터_이미지_흔들림_방지_247",
+    "query": "드라이브 / 셔터 / 이미지 흔들림 방지 247",
+    "model_ids": [
+      "DC-S1RM2"
+    ],
+    "expected_document_id": "dc_s1rm2_full_kor",
+    "expected_pages": [
+      8
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_s1rm2_full_kor_8_측광_노출_iso_감도_318",
+    "query": "측광 / 노출 / ISO 감도 318",
+    "model_ids": [
+      "DC-S1RM2"
+    ],
+    "expected_document_id": "dc_s1rm2_full_kor",
+    "expected_pages": [
+      8
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "exposure",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_s1rm2_full_kor_9_화이트_밸런스_이미지_품질_355",
+    "query": "화이트 밸런스 / 이미지 품질 355",
+    "model_ids": [
+      "DC-S1RM2"
+    ],
+    "expected_document_id": "dc_s1rm2_full_kor",
+    "expected_pages": [
+      9
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_s1rm2_full_kor_10_플래시_398",
+    "query": "플래시 398",
+    "model_ids": [
+      "DC-S1RM2"
+    ],
+    "expected_document_id": "dc_s1rm2_full_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "exposure",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_s5_full_kor_2_고객_여러분께",
+    "query": "고객 여러분께,",
+    "model_ids": [
+      "DC-S5"
+    ],
+    "expected_document_id": "dc_s5_full_kor",
+    "expected_pages": [
+      2
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_s5_full_kor_2_저작권법을_엄격히_준수합니다",
+    "query": "저작권법을 엄격히 준수합니다.",
+    "model_ids": [
+      "DC-S5"
+    ],
+    "expected_document_id": "dc_s5_full_kor",
+    "expected_pages": [
+      2
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_s5_full_kor_2_필요한_정보_찾기",
+    "query": "필요한 정보 찾기",
+    "model_ids": [
+      "DC-S5"
+    ],
+    "expected_document_id": "dc_s5_full_kor",
+    "expected_pages": [
+      2
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_s5_full_kor_3_본_설명서에_사용된_기호",
+    "query": "본 설명서에 사용된 기호",
+    "model_ids": [
+      "DC-S5"
+    ],
+    "expected_document_id": "dc_s5_full_kor",
+    "expected_pages": [
+      3
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_s5_full_kor_3_사용할_수_있는_촬영_모드_사진_및_비디오_기호",
+    "query": "사용할 수 있는 촬영 모드, 사진 및 비디오 기호",
+    "model_ids": [
+      "DC-S5"
+    ],
+    "expected_document_id": "dc_s5_full_kor",
+    "expected_pages": [
+      3
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "video",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_s5_full_kor_3_조작_기호",
+    "query": "조작 기호",
+    "model_ids": [
+      "DC-S5"
+    ],
+    "expected_document_id": "dc_s5_full_kor",
+    "expected_pages": [
+      3
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_s5_full_kor_4_알림_유형_기호",
+    "query": "알림 유형 기호",
+    "model_ids": [
+      "DC-S5"
+    ],
+    "expected_document_id": "dc_s5_full_kor",
+    "expected_pages": [
+      4
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_s5_full_kor_6_1_소개_19",
+    "query": "1. 소개 19",
+    "model_ids": [
+      "DC-S5"
+    ],
+    "expected_document_id": "dc_s5_full_kor",
+    "expected_pages": [
+      6
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_s5_full_kor_6_2_시작하기_33",
+    "query": "2. 시작하기 33",
+    "model_ids": [
+      "DC-S5"
+    ],
+    "expected_document_id": "dc_s5_full_kor",
+    "expected_pages": [
+      6
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_s5_full_kor_7_3_기본_조작_57",
+    "query": "3. 기본 조작 57",
+    "model_ids": [
+      "DC-S5"
+    ],
+    "expected_document_id": "dc_s5_full_kor",
+    "expected_pages": [
+      7
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_s5_full_kor_7_4_이미지_촬영_83",
+    "query": "4. 이미지 촬영 83",
+    "model_ids": [
+      "DC-S5"
+    ],
+    "expected_document_id": "dc_s5_full_kor",
+    "expected_pages": [
+      7
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_s5_full_kor_8_5_초점_줌_92",
+    "query": "5. 초점 / 줌 92",
+    "model_ids": [
+      "DC-S5"
+    ],
+    "expected_document_id": "dc_s5_full_kor",
+    "expected_pages": [
+      8
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "focus",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_s5m2_full_kor_1_dc_s5m2",
+    "query": "DC-S5M2",
+    "model_ids": [
+      "DC-S5M2"
+    ],
+    "expected_document_id": "dc_s5m2_full_kor",
+    "expected_pages": [
+      1
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_s5m2_full_kor_2_본_설명서에_사용된_기호",
+    "query": " 본 설명서에 사용된 기호",
+    "model_ids": [
+      "DC-S5M2"
+    ],
+    "expected_document_id": "dc_s5m2_full_kor",
+    "expected_pages": [
+      2
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_s5m2_full_kor_4_알림_유형_기호",
+    "query": "알림 유형 기호",
+    "model_ids": [
+      "DC-S5M2"
+    ],
+    "expected_document_id": "dc_s5m2_full_kor",
+    "expected_pages": [
+      4
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_s5m2_full_kor_5_시작하기_39",
+    "query": "시작하기 39",
+    "model_ids": [
+      "DC-S5M2"
+    ],
+    "expected_document_id": "dc_s5m2_full_kor",
+    "expected_pages": [
+      5
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_s5m2_full_kor_5_기본_조작_72",
+    "query": "기본 조작 72",
+    "model_ids": [
+      "DC-S5M2"
+    ],
+    "expected_document_id": "dc_s5m2_full_kor",
+    "expected_pages": [
+      5
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_s5m2_full_kor_6_사진_촬영하기_112",
+    "query": "사진 촬영하기 112",
+    "model_ids": [
+      "DC-S5M2"
+    ],
+    "expected_document_id": "dc_s5m2_full_kor",
+    "expected_pages": [
+      6
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_s5m2_full_kor_6_비디오_촬영하기_122",
+    "query": "비디오 촬영하기 122",
+    "model_ids": [
+      "DC-S5M2"
+    ],
+    "expected_document_id": "dc_s5m2_full_kor",
+    "expected_pages": [
+      6
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "video",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_s5m2_full_kor_7_초점_줌_146",
+    "query": "초점 / 줌 146",
+    "model_ids": [
+      "DC-S5M2"
+    ],
+    "expected_document_id": "dc_s5m2_full_kor",
+    "expected_pages": [
+      7
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "focus",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_s5m2_full_kor_7_드라이브_셔터_이미지_흔들림_방지_201",
+    "query": "드라이브 / 셔터 / 이미지 흔들림 방지 201",
+    "model_ids": [
+      "DC-S5M2"
+    ],
+    "expected_document_id": "dc_s5m2_full_kor",
+    "expected_pages": [
+      7
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_s5m2_full_kor_8_측광_노출_iso_감도_260",
+    "query": "측광 / 노출 / ISO 감도 260",
+    "model_ids": [
+      "DC-S5M2"
+    ],
+    "expected_document_id": "dc_s5m2_full_kor",
+    "expected_pages": [
+      8
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "exposure",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_s5m2_full_kor_9_화이트_밸런스_이미지_품질_292",
+    "query": "화이트 밸런스 / 이미지 품질 292",
+    "model_ids": [
+      "DC-S5M2"
+    ],
+    "expected_document_id": "dc_s5m2_full_kor",
+    "expected_pages": [
+      9
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_s5m2_full_kor_9_플래시_329",
+    "query": "플래시 329",
+    "model_ids": [
+      "DC-S5M2"
+    ],
+    "expected_document_id": "dc_s5m2_full_kor",
+    "expected_pages": [
+      9
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "exposure",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_s5m2x_full_kor_1_dc_s5m2x",
+    "query": "DC-S5M2X",
+    "model_ids": [
+      "DC-S5M2X"
+    ],
+    "expected_document_id": "dc_s5m2x_full_kor",
+    "expected_pages": [
+      1
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_s5m2x_full_kor_2_본_설명서에_사용된_기호",
+    "query": " 본 설명서에 사용된 기호",
+    "model_ids": [
+      "DC-S5M2X"
+    ],
+    "expected_document_id": "dc_s5m2x_full_kor",
+    "expected_pages": [
+      2
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_s5m2x_full_kor_4_알림_유형_기호",
+    "query": "알림 유형 기호",
+    "model_ids": [
+      "DC-S5M2X"
+    ],
+    "expected_document_id": "dc_s5m2x_full_kor",
+    "expected_pages": [
+      4
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_s5m2x_full_kor_5_시작하기_40",
+    "query": "시작하기 40",
+    "model_ids": [
+      "DC-S5M2X"
+    ],
+    "expected_document_id": "dc_s5m2x_full_kor",
+    "expected_pages": [
+      5
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_s5m2x_full_kor_5_기본_조작_73",
+    "query": "기본 조작 73",
+    "model_ids": [
+      "DC-S5M2X"
+    ],
+    "expected_document_id": "dc_s5m2x_full_kor",
+    "expected_pages": [
+      5
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_s5m2x_full_kor_6_사진_촬영하기_113",
+    "query": "사진 촬영하기 113",
+    "model_ids": [
+      "DC-S5M2X"
+    ],
+    "expected_document_id": "dc_s5m2x_full_kor",
+    "expected_pages": [
+      6
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_s5m2x_full_kor_6_비디오_촬영하기_123",
+    "query": "비디오 촬영하기 123",
+    "model_ids": [
+      "DC-S5M2X"
+    ],
+    "expected_document_id": "dc_s5m2x_full_kor",
+    "expected_pages": [
+      6
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "video",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_s5m2x_full_kor_7_초점_줌_151",
+    "query": "초점 / 줌 151",
+    "model_ids": [
+      "DC-S5M2X"
+    ],
+    "expected_document_id": "dc_s5m2x_full_kor",
+    "expected_pages": [
+      7
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "focus",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_s5m2x_full_kor_7_드라이브_셔터_이미지_흔들림_방지_206",
+    "query": "드라이브 / 셔터 / 이미지 흔들림 방지 206",
+    "model_ids": [
+      "DC-S5M2X"
+    ],
+    "expected_document_id": "dc_s5m2x_full_kor",
+    "expected_pages": [
+      7
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_s5m2x_full_kor_8_측광_노출_iso_감도_269",
+    "query": "측광 / 노출 / ISO 감도 269",
+    "model_ids": [
+      "DC-S5M2X"
+    ],
+    "expected_document_id": "dc_s5m2x_full_kor",
+    "expected_pages": [
+      8
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "exposure",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_s5m2x_full_kor_9_화이트_밸런스_이미지_품질_301",
+    "query": "화이트 밸런스 / 이미지 품질 301",
+    "model_ids": [
+      "DC-S5M2X"
+    ],
+    "expected_document_id": "dc_s5m2x_full_kor",
+    "expected_pages": [
+      9
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_s5m2x_full_kor_9_플래시_338",
+    "query": "플래시 338",
+    "model_ids": [
+      "DC-S5M2X"
+    ],
+    "expected_document_id": "dc_s5m2x_full_kor",
+    "expected_pages": [
+      9
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "exposure",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_tz99_zs99_full_kor_1_모델_번호_dc_tz99_dc_zs99",
+    "query": "모델 번호 DC-TZ99/DC-ZS99",
+    "model_ids": [
+      "DC-TZ99"
+    ],
+    "expected_document_id": "dc_tz99_zs99_full_kor",
+    "expected_pages": [
+      1
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_tz99_zs99_full_kor_2_필요한_정보_검색",
+    "query": "필요한 정보 검색",
+    "model_ids": [
+      "DC-TZ99"
+    ],
+    "expected_document_id": "dc_tz99_zs99_full_kor",
+    "expected_pages": [
+      2
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_tz99_zs99_full_kor_3_본_설명서를_사용하는_방법",
+    "query": "본 설명서를 사용하는 방법",
+    "model_ids": [
+      "DC-TZ99"
+    ],
+    "expected_document_id": "dc_tz99_zs99_full_kor",
+    "expected_pages": [
+      3
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_tz99_zs99_full_kor_5_사용하기_전",
+    "query": "사용하기 전",
+    "model_ids": [
+      "DC-TZ99"
+    ],
+    "expected_document_id": "dc_tz99_zs99_full_kor",
+    "expected_pages": [
+      5
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_tz99_zs99_full_kor_7_4k_사진_및_드라이브_설정",
+    "query": "4K 사진 및 드라이브 설정",
+    "model_ids": [
+      "DC-TZ99"
+    ],
+    "expected_document_id": "dc_tz99_zs99_full_kor",
+    "expected_pages": [
+      7
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "setup",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_tz99_zs99_full_kor_9_메뉴_기능_사용",
+    "query": "메뉴 기능 사용",
+    "model_ids": [
+      "DC-TZ99"
+    ],
+    "expected_document_id": "dc_tz99_zs99_full_kor",
+    "expected_pages": [
+      9
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_tz99_zs99_full_kor_10_다른_장치와_연결",
+    "query": "다른 장치와 연결",
+    "model_ids": [
+      "DC-TZ99"
+    ],
+    "expected_document_id": "dc_tz99_zs99_full_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_tz99_zs99_full_kor_10_기타",
+    "query": "기타",
+    "model_ids": [
+      "DC-TZ99"
+    ],
+    "expected_document_id": "dc_tz99_zs99_full_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_tz99_zs99_full_kor_11_기능별_목차",
+    "query": "기능별 목차",
+    "model_ids": [
+      "DC-TZ99"
+    ],
+    "expected_document_id": "dc_tz99_zs99_full_kor",
+    "expected_pages": [
+      11
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_tz99_zs99_full_kor_16_각_부분의_명칭과_기능",
+    "query": "각 부분의 명칭과 기능",
+    "model_ids": [
+      "DC-TZ99"
+    ],
+    "expected_document_id": "dc_tz99_zs99_full_kor",
+    "expected_pages": [
+      16
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_tz99_zs99_full_kor_24_dc_zs99p_dc_zs99pp_dc_tz99gd",
+    "query": "DC-ZS99P/DC-ZS99PP/DC-TZ99GD",
+    "model_ids": [
+      "DC-TZ99"
+    ],
+    "expected_document_id": "dc_tz99_zs99_full_kor",
+    "expected_pages": [
+      24
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_tz99_zs99_full_kor_25_dc_tz99e_dc_tz99ga_dc_tz99gh_dc_tz99gn",
+    "query": "DC-TZ99E/DC-TZ99GA/DC-TZ99GH/DC-TZ99GN",
+    "model_ids": [
+      "DC-TZ99"
+    ],
+    "expected_document_id": "dc_tz99_zs99_full_kor",
+    "expected_pages": [
+      25
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dmc_g85_full_kor_1_고급_기능_사용_설명서",
+    "query": "고급 기능 사용 설명서",
+    "model_ids": [
+      "DMC-G85"
+    ],
+    "expected_document_id": "dmc_g85_full_kor",
+    "expected_pages": [
+      1
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dmc_g85_full_kor_1_모델_번호_dmc_g85",
+    "query": "모델 번호 DMC-G85",
+    "model_ids": [
+      "DMC-G85"
+    ],
+    "expected_document_id": "dmc_g85_full_kor",
+    "expected_pages": [
+      1
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dmc_g85_full_kor_1_메시지_표시_p318_문제해결_p320",
+    "query": "메시지 표시 P318 문제해결 P320",
+    "model_ids": [
+      "DMC-G85"
+    ],
+    "expected_document_id": "dmc_g85_full_kor",
+    "expected_pages": [
+      1
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "display",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dmc_g85_full_kor_1_until_2016_11_14",
+    "query": "until 2016/11/14",
+    "model_ids": [
+      "DMC-G85"
+    ],
+    "expected_document_id": "dmc_g85_full_kor",
+    "expected_pages": [
+      1
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dmc_g85_full_kor_2_사용자가_필요로_하는_정보_찾기",
+    "query": "사용자가 필요로 하는 정보 찾기",
+    "model_ids": [
+      "DMC-G85"
+    ],
+    "expected_document_id": "dmc_g85_full_kor",
+    "expected_pages": [
+      2
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dmc_g85_full_kor_3_본_매뉴얼_사용법",
+    "query": "본 매뉴얼 사용법",
+    "model_ids": [
+      "DMC-G85"
+    ],
+    "expected_document_id": "dmc_g85_full_kor",
+    "expected_pages": [
+      3
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dmc_g85_full_kor_3_텍스트_내_기호에_관하여",
+    "query": "∫ 텍스트 내 기호에 관하여",
+    "model_ids": [
+      "DMC-G85"
+    ],
+    "expected_document_id": "dmc_g85_full_kor",
+    "expected_pages": [
+      3
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dmc_g85_full_kor_4_1_사용하기_전에",
+    "query": "1. 사용하기 전에",
+    "model_ids": [
+      "DMC-G85"
+    ],
+    "expected_document_id": "dmc_g85_full_kor",
+    "expected_pages": [
+      4
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dmc_g85_full_kor_4_2_시작하기_기본조작",
+    "query": "2. 시작하기 / 기본조작",
+    "model_ids": [
+      "DMC-G85"
+    ],
+    "expected_document_id": "dmc_g85_full_kor",
+    "expected_pages": [
+      4
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dmc_g85_full_kor_6_6_손떨림_방지_기능_줌_및_플래시",
+    "query": "6. 손떨림 방지 기능 , 줌 및 플래시",
+    "model_ids": [
+      "DMC-G85"
+    ],
+    "expected_document_id": "dmc_g85_full_kor",
+    "expected_pages": [
+      6
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "stabilization",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dmc_g85_full_kor_6_8_사진_재생_및_편집하기",
+    "query": "8. 사진 재생 및 편집하기",
+    "model_ids": [
+      "DMC-G85"
+    ],
+    "expected_document_id": "dmc_g85_full_kor",
+    "expected_pages": [
+      6
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dmc_g85_full_kor_8_12_기타",
+    "query": "12. 기타",
+    "model_ids": [
+      "DMC-G85"
+    ],
+    "expected_document_id": "dmc_g85_full_kor",
+    "expected_pages": [
+      8
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dmc_gf1_kor_1_사용설명서",
+    "query": "사용설명서",
+    "model_ids": [
+      "DMC-GF1"
+    ],
+    "expected_document_id": "dmc_gf1_kor",
+    "expected_pages": [
+      1
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dmc_gf1_kor_1_모델_번호_dmc_gf1c",
+    "query": "모델 번호 DMC-GF1C",
+    "model_ids": [
+      "DMC-GF1"
+    ],
+    "expected_document_id": "dmc_gf1_kor",
+    "expected_pages": [
+      1
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dmc_gf1_kor_2_저작권법을_엄격히_준수합니다",
+    "query": "저작권법을 엄격히 준수합니다 .",
+    "model_ids": [
+      "DMC-GF1"
+    ],
+    "expected_document_id": "dmc_gf1_kor",
+    "expected_pages": [
+      2
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dmc_gf1_kor_2_안전상의_주의사항",
+    "query": "안전상의 주의사항",
+    "model_ids": [
+      "DMC-GF1"
+    ],
+    "expected_document_id": "dmc_gf1_kor",
+    "expected_pages": [
+      2
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dmc_gf1_kor_2_경고_화재_위험이나_감전_제품의_손상을_방지하려면",
+    "query": "경고 : 화재 위험이나 감전 , 제품의 손상을 방지하려면",
+    "model_ids": [
+      "DMC-GF1"
+    ],
+    "expected_document_id": "dmc_gf1_kor",
+    "expected_pages": [
+      2
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dmc_gf1_kor_2_배터리_팩에_관해",
+    "query": "∫ 배터리 팩에 관해",
+    "model_ids": [
+      "DMC-GF1"
+    ],
+    "expected_document_id": "dmc_gf1_kor",
+    "expected_pages": [
+      2
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "power",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dmc_gf1_kor_2_주의",
+    "query": "주의",
+    "model_ids": [
+      "DMC-GF1"
+    ],
+    "expected_document_id": "dmc_gf1_kor",
+    "expected_pages": [
+      2
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dmc_gf1_kor_2_주의",
+    "query": "주의 !",
+    "model_ids": [
+      "DMC-GF1"
+    ],
+    "expected_document_id": "dmc_gf1_kor",
+    "expected_pages": [
+      2
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dmc_gf1_kor_3_카메라_취급",
+    "query": "∫ 카메라 취급",
+    "model_ids": [
+      "DMC-GF1"
+    ],
+    "expected_document_id": "dmc_gf1_kor",
+    "expected_pages": [
+      3
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dmc_gf1_kor_3_응결_렌즈나_뷰파인더가_흐릿해지는_현상_에_관하여",
+    "query": "∫ 응결 ( 렌즈나 뷰파인더가 흐릿해지는 현상 ) 에 관하여",
+    "model_ids": [
+      "DMC-GF1"
+    ],
+    "expected_document_id": "dmc_gf1_kor",
+    "expected_pages": [
+      3
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "display",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dmc_gf1_kor_4_사용하기_전에",
+    "query": "사용하기 전에",
+    "model_ids": [
+      "DMC-GF1"
+    ],
+    "expected_document_id": "dmc_gf1_kor",
+    "expected_pages": [
+      4
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dmc_gf1_kor_4_고급_기능_사진_촬영하기",
+    "query": "고급 기능 ( 사진 촬영하기 )",
+    "model_ids": [
+      "DMC-GF1"
+    ],
+    "expected_document_id": "dmc_gf1_kor",
+    "expected_pages": [
+      4
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  }
+]

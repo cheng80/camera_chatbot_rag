@@ -9,6 +9,10 @@
 
 - [초기 설계 문서](Panasonic_LUMIX_Manual_Assistant_GCSE_Initial_Design.md): 프로젝트 원본 설계와 장기 방향
 
+## Project
+
+- [다음 작업 로드맵](project/next_work_roadmap.md): 전체 목표 기반 다음 작업 우선순위와 추천 커밋 단위
+
 ## Architecture
 
 - [아키텍처 개요](architecture/overview.md): 시스템 구성과 주요 컴포넌트
