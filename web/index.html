@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Panasonic LUMIX Manual Assistant</title>
+    <link rel="stylesheet" href="/assets/css/app.css" />
+  </head>
+  <body>
+    <header class="app-header">
+      <h1>Panasonic LUMIX Manual Assistant</h1>
+    </header>
+    <main class="app-shell">
+      <aside class="filters" aria-label="검색 필터">
+        <h2>Models</h2>
+        <button type="button">DC-G9M2</button>
+        <button type="button">DC-S1M2</button>
+        <button type="button">DC-TZ99 / DC-ZS99</button>
+        <button type="button">DMC-G85</button>
+      </aside>
+      <section class="search-panel">
+        <form id="search-form">
+          <label for="query">기능 검색</label>
+          <div class="search-row">
+            <input id="query" name="query" type="search" autocomplete="off" />
+            <button type="submit">Search</button>
+          </div>
+        </form>
+        <div id="results" class="results" aria-live="polite"></div>
+      </section>
+      <section class="viewer-panel" aria-label="PDF viewer">
+        <h2>PDF Source</h2>
+        <p>검색 결과의 출처 페이지가 여기에 표시됩니다.</p>
+      </section>
+    </main>
+    <script type="module" src="/assets/js/app.js"></script>
+  </body>
+</html>

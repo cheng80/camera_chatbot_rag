@@ -167,9 +167,11 @@ Panasonic LUMIX 카메라는 기능이 많고 모델별 차이가 크다. 그러
 
 ## 8. 서비스 형태
 
-### 8.1 1차: 웹 서비스
+### 8.1 1차: FastAPI 서빙 정적 웹 UI
 
-웹 MVP는 포트폴리오의 핵심 시연 대상이다.
+웹 MVP는 포트폴리오의 핵심 시연 대상이며, 초기 구현은 FastAPI가 정적 웹사이트를 서빙하는 구조를 기본으로 한다.
+여기서 “정적”은 HTML/CSS/JavaScript 프론트엔드 빌드 산출물의 서빙 방식을 뜻한다.
+검색·카드 생성·출처 검증은 FastAPI Backend API에서 Hybrid RAG → Feature Wiki LLM → Wiki-derived Graph-lite → Guided Support Assistant 흐름으로 확장 가능한 구조로 설계한다.
 
 ```text
 - 웹 브라우저에서 자연어 검색
@@ -178,6 +180,7 @@ Panasonic LUMIX 카메라는 기능이 많고 모델별 차이가 크다. 그러
 - 카드 상세 보기
 - PDF 페이지 뷰어 연동
 - 출처 페이지 하이라이트
+- FastAPI 검색 API 연동
 - 검색 로그 및 피드백 수집
 ```
 
@@ -558,19 +561,19 @@ RRF score = Σ 1 / (k + rank_i)
 
 | 영역 | 1차 Web MVP 권장 | 2차 Flutter 앱 권장 | 대안 |
 |---|---|---|---|
-| Backend API | FastAPI | 동일 API 사용 | NestJS, Spring Boot |
-| Frontend Web | Next.js + TypeScript | - | React + Vite |
+| Backend API | FastAPI + Hybrid RAG API + StaticFiles | 동일 FastAPI API 사용 | 추가 REST/Graph endpoints |
+| Frontend Web | Static HTML/CSS/JavaScript | - | React + Vite, Next.js |
 | Mobile | - | Flutter + Riverpod 또는 BLoC | Kotlin Multiplatform |
 | PDF Parsing | PyMuPDF, pdfplumber | 서버 처리 결과 사용 | pypdf, unstructured |
 | PDF Viewer | pdf.js | pdfx 또는 Syncfusion Flutter PDF Viewer | PSPDFKit 등 상용 SDK |
-| Vector DB | Qdrant | 서버 API 사용 | ChromaDB, pgvector, Weaviate |
-| Keyword Search | SQLite FTS5 또는 OpenSearch | 서버 API 사용 | Elasticsearch, Meilisearch |
-| RDB | PostgreSQL | 서버 API 사용 | SQLite, MySQL |
+| Vector DB | Qdrant 우선, ChromaDB 대안 | 서버 API 사용 | pgvector, Weaviate |
+| Keyword Search | SQLite FTS5 초기, OpenSearch 확장 | 서버 API 사용 | Elasticsearch, Meilisearch |
+| RDB | SQLite 초기, PostgreSQL 확장 | 서버 API 사용 | MySQL |
 | Object Storage | Local filesystem, MinIO, S3 | 서버 URL 사용 | Cloudflare R2 |
-| Cache | Redis | 앱 로컬 캐시 | Valkey, in-memory |
+| Cache | 브라우저 캐시 | 앱 로컬 캐시 | Redis, Valkey |
 | LLM Gateway | OpenAI-compatible adapter | 서버 API 사용 | LangServe, LiteLLM |
-| Observability | OpenTelemetry, Prometheus, Grafana | Firebase Crashlytics 선택 | Sentry |
-| Deployment | Docker Compose, VPS | Play Store/TestFlight 준비 | Kubernetes |
+| Observability | 초기 없음 | Firebase Crashlytics 선택 | Sentry |
+| Deployment | FastAPI + StaticFiles, Docker Compose, VPS | Play Store/TestFlight 준비 | Nginx reverse proxy |
 
 ---
 
@@ -643,8 +646,8 @@ LLM은 모든 것을 직접 답하는 용도가 아니라, 다음 역할에 제�
 권장 최종안:
 
 ```text
-Web MVP: Qdrant + PostgreSQL + SQLite FTS5 또는 OpenSearch
-초기 로컬 데모: ChromaDB + SQLite FTS5
+초기 로컬 Web MVP: FastAPI + StaticFiles + ChromaDB + SQLite FTS5 + pdf.js
+Web MVP 안정화: FastAPI + Qdrant + PostgreSQL + SQLite FTS5 또는 OpenSearch
 운영형 확장: Qdrant + PostgreSQL + OpenSearch
 ```
 
@@ -678,7 +681,7 @@ Web MVP: Qdrant + PostgreSQL + SQLite FTS5 또는 OpenSearch
 
 | 자원 | 권장 사양 |
 |---|---|
-| 개발 PC | 16GB RAM 이상, Python/Node/Flutter 개발 가능 환경 |
+| 개발 PC | 16GB RAM 이상, Python 3.10.12 개발 가능 환경 |
 | 로컬 LLM 테스트 | 24GB VRAM 이상이면 중형 모델 실험 가능, 없으면 API 사용 |
 | 로컬 Vector DB | Docker 기반 Qdrant 또는 ChromaDB |
 | PDF 처리 저장소 | 원본 PDF, page image, chunk JSON 저장 공간 |
@@ -727,7 +730,7 @@ Web MVP: Qdrant + PostgreSQL + SQLite FTS5 또는 OpenSearch
 
 | 영역 | 권장 기술 |
 |---|---|
-| 언어 | Python 3.11+ |
+| 언어 | Python 3.10.12 |
 | PDF 추출 | PyMuPDF, pdfplumber, pypdf |
 | 이미지 변환 | PyMuPDF page rendering, Pillow |
 | OCR 선택 | PaddleOCR 또는 Tesseract Korean data |
@@ -758,13 +761,14 @@ Web MVP: Qdrant + PostgreSQL + SQLite FTS5 또는 OpenSearch
 
 ---
 
-## 26. Phase 1 — Web MVP: 기능 검색 + 카드 + PDF 뷰어
+## 26. Phase 1 — Web MVP: 정적 UI 서빙 + Hybrid RAG 검색
 
 ### 26.1 목표
 
 ```text
-사용자가 웹에서 자연어로 기능을 검색하면,
-기능 카드와 PDF 출처 페이지 링크를 보여주는 MVP를 만든다.
+사용자가 정적 웹사이트에서 자연어로 기능을 검색하면,
+FastAPI Backend의 Hybrid RAG 검색 API가 기능 카드와 PDF 출처 페이지 링크를 반환하는 MVP를 만든다.
+초기 단계에서 정적인 것은 웹 UI 산출물이며, 검색·출처 검증·카드 생성은 FastAPI API에서 처리한다.
 ```
 
 ### 26.2 핵심 기능
@@ -783,20 +787,29 @@ Web MVP: Qdrant + PostgreSQL + SQLite FTS5 또는 OpenSearch
 
 | 영역 | 권장 기술 |
 |---|---|
-| Backend | FastAPI, Pydantic, SQLAlchemy/SQLModel |
+| Backend | FastAPI, Pydantic, StaticFiles |
 | API 문서 | OpenAPI 자동 문서 |
-| RDB | PostgreSQL 또는 SQLite |
+| RDB | SQLite 초기, PostgreSQL 확장 |
 | Vector DB | Qdrant 우선, ChromaDB 대안 |
 | Keyword Search | SQLite FTS5 초기, OpenSearch 확장 |
 | Embedding | bge-m3 우선 후보, multilingual-e5-large 대안 |
 | LLM | 상용 API 또는 로컬 Instruct 모델 |
-| Frontend | Next.js, TypeScript, Tailwind CSS |
-| Data Fetching | TanStack Query |
+| Frontend | Static HTML/CSS/JavaScript |
+| Data Fetching | FastAPI JSON API fetch |
 | PDF Viewer | pdf.js |
-| Auth | 초기에는 관리자 기능만 simple token, 공개 검색은 auth 없이 가능 |
-| Deployment | Docker Compose, Nginx, HTTPS |
+| Auth | 없음 |
+| Deployment | FastAPI app, Docker Compose, VPS |
 
-### 26.4 API 초안
+### 26.4 정적 파일 및 리소스 초안
+
+```text
+GET /static/index.html
+GET /static/assets/*
+GET /manuals/{document_id}.pdf
+GET /page-images/{document_id}/{page}.png
+```
+
+### 26.5 API 초안
 
 ```text
 POST /api/documents/import
@@ -810,7 +823,7 @@ GET  /api/viewer/{document_id}/pages/{page}
 POST /api/feedback
 ```
 
-### 26.5 SearchRequest
+### 26.6 SearchRequest
 
 ```json
 {
@@ -823,7 +836,7 @@ POST /api/feedback
 }
 ```
 
-### 26.6 SearchResponse
+### 26.7 SearchResponse
 
 ```json
 {
@@ -860,10 +873,10 @@ POST /api/feedback
 }
 ```
 
-### 26.7 완료 기준
+### 26.8 완료 기준
 
 ```text
-- 웹에서 자연어 검색 가능
+- 정적 웹사이트에서 자연어 검색 가능
 - 모델 필터 적용 가능
 - 기능 카드 3~5개 출력 가능
 - PDF 페이지로 이동 가능
@@ -1038,7 +1051,7 @@ issue_feature_links
 | 시각화 | React Flow, Mermaid export |
 | 분석 | NetworkX 선택 |
 | 확장 Graph DB | Neo4j 선택 |
-| API | FastAPI graph endpoints |
+| API | 후속 FastAPI graph endpoints |
 
 ### 28.7 완료 기준
 
@@ -1056,7 +1069,7 @@ issue_feature_links
 ### 29.1 목표
 
 ```text
-웹 MVP와 같은 Backend API를 사용하여 모바일 환경에서 기능 검색과 PDF 상세 보기를 제공한다.
+정적 웹 MVP를 서빙하는 FastAPI를 확장하여 모바일 환경에서도 기능 검색과 PDF 상세 보기를 제공한다.
 ```
 
 ### 29.2 주요 기능
@@ -1857,7 +1870,7 @@ flowchart TD
 | 1주차 | PDF 분석 및 데이터 구조 설계 | document registry, page extraction script |
 | 2주차 | chunking + vector index + FTS index | 검색 API prototype |
 | 3주차 | Hybrid Retriever + Query Normalizer | `/api/search` 동작 |
-| 4주차 | Feature Card Builder + PDF Viewer | 웹 MVP 1차 데모 |
+| 4주차 | Feature Card Builder + 정적 웹 UI + PDF Viewer | 웹 MVP 1차 데모 |
 | 5주차 | Source Guard + Evidence Evaluator | 근거 부족/모델 혼합 방지 |
 | 6주차 | Feature Wiki LLM 초안 | 주요 기능 50개 wiki |
 | 7주차 | UI 개선 + 피드백 로그 + 평가셋 | 시연 가능한 웹 데모 |
@@ -1905,7 +1918,7 @@ flowchart TD
 ```text
 핵심 설계는 Hybrid RAG, Feature Wiki, 모델별 Source Guard, PDF Viewer 연동입니다.
 답변의 근거를 공식 문서 페이지로 제한하여 정보 오염을 줄이고,
-웹 MVP 이후 Flutter 앱으로 확장 가능한 구조로 설계했습니다.
+FastAPI API와 정적 웹 UI를 분리하여 웹 MVP 이후 Flutter 앱으로 확장 가능한 구조로 설계했습니다.
 ```
 
 ---
@@ -1924,10 +1937,10 @@ flowchart TD
 7. SQLite FTS5 keyword index
 8. `/api/search`
 9. FeatureCard schema
-10. pdf.js viewer
+10. 정적 웹 UI + pdf.js viewer
 ```
 
-## 59. 나중에 만들 것
+## 59. 이후 확장할 것
 
 ```text
 1. Feature Wiki 자동 생성
@@ -1952,9 +1965,11 @@ flowchart TD
 ```text
 Backend:
 - FastAPI
+- StaticFiles 기반 정적 웹 UI 서빙
 - Pydantic
 - SQLAlchemy 또는 SQLModel
-- PostgreSQL
+- SQLite 초기, PostgreSQL 확장
+- PDF 분석/색인 생성은 Python 3.10.12 오프라인 스크립트로 처리
 
 Search:
 - Qdrant
@@ -1974,10 +1989,9 @@ PDF:
 - pdf.js viewer
 
 Frontend:
-- Next.js
-- TypeScript
-- Tailwind CSS
-- TanStack Query
+- Static HTML/CSS/JavaScript
+- FastAPI API fetch
+- 필요 시 React + Vite 또는 Next.js로 확장
 
 Mobile:
 - Flutter
@@ -1988,7 +2002,8 @@ Mobile:
 
 Infra:
 - Docker Compose
-- Nginx
+- VPS
+- 필요 시 Nginx reverse proxy
 - MinIO 또는 local filesystem
 - GitHub Actions
 ```
@@ -1998,6 +2013,8 @@ Infra:
 ```text
 Backend:
 - FastAPI
+- StaticFiles 기반 정적 웹 UI 서빙
+- Python 3.10.12 오프라인 생성 스크립트
 - SQLite
 
 Search:
@@ -2009,7 +2026,7 @@ LLM:
 - Ollama 기반 로컬 모델 또는 API
 
 Frontend:
-- Next.js
+- Static HTML/CSS/JavaScript
 
 PDF:
 - PyMuPDF
@@ -2051,12 +2068,13 @@ Observability:
 
 ```text
 1차는 웹 기반 제품 매뉴얼 기능 검색 서비스로 만든다.
+초기 웹 UI는 FastAPI가 서빙하는 정적 웹사이트를 기본으로 한다.
 2차는 Flutter 앱으로 확장한다.
 검색 결과는 일반 답변이 아니라 기능 카드로 제공한다.
 모든 기능 카드에는 공식 PDF 출처 페이지를 연결한다.
 모델별 기능 혼합을 막기 위해 source metadata와 model filter를 강제한다.
 Hybrid RAG로 검색 정확도를 확보하고, Feature Wiki LLM으로 기능 지식을 정리한다.
-나중에는 Feature Wiki에서 모델-기능 관계를 Graph-lite로 생성해 비교 검색을 강화한다.
+Feature Wiki에서 모델-기능 관계를 Graph-lite로 생성해 비교 검색을 강화하고, Guided Support Assistant로 문제 해결 흐름을 확장한다.
 ```
 
 ## 62. 첫 번째 개발 목표
@@ -2119,9 +2137,8 @@ Hybrid RAG로 검색 정확도를 확보하고, Feature Wiki LLM으로 기능 �
 [ ] bge-m3 embedding 테스트
 [ ] `/api/search` 구현
 [ ] 기능 카드 JSON schema 구현
-[ ] Next.js 검색 화면 구현
+[ ] 정적 웹 검색 화면 구현
 [ ] pdf.js viewer 연결
 [ ] 테스트 질문 30개 작성
 [ ] README 초안 작성
 ```
-

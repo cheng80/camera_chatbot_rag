@@ -157,6 +157,13 @@ analysis_benchmark.json
 
 # Local source datasets and generated heavy artifacts
 data/source/
+data/raw/manuals/*.pdf
+data/processed/page_images/**/*
+!data/processed/page_images/.gitkeep
+data/indexes/fts/**/*
+!data/indexes/fts/.gitkeep
+data/indexes/vector/**/*
+!data/indexes/vector/.gitkeep
 
 # Leveling simulation / ML generated heavy artifacts
 logs/sim/*.jsonl
