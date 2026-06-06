@@ -1,5 +1,6 @@
 from collections.abc import Sequence
 from hashlib import sha256
+from pathlib import Path
 from typing import ClassVar, Literal, Self
 
 from pydantic import BaseModel, ConfigDict, Field, model_validator
@@ -57,6 +58,22 @@ def build_page_chunks(pages: Sequence[ExtractedPage]) -> tuple[ExtractedChunk, .
         for page in pages
         if page.text
     )
+
+
+def write_document_chunks_jsonl(
+    *,
+    chunks: Sequence[ExtractedChunk],
+    document_id: str,
+    output_dir: Path,
+) -> Path:
+    output_dir.mkdir(parents=True, exist_ok=True)
+    output_path = output_dir / f"{document_id}.jsonl"
+    lines = [chunk.model_dump_json() for chunk in chunks]
+    content = "\n".join(lines)
+    if content:
+        content = f"{content}\n"
+    _ = output_path.write_text(content, encoding="utf-8")
+    return output_path
 
 
 def content_hash(content: str) -> str:

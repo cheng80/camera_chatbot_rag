@@ -27,10 +27,12 @@ uv run uvicorn backend.app.main:app --reload
 - `web/`: FastAPI가 서빙할 정적 웹 UI
 - `data/`: 원본 PDF, 추출 결과, 인덱스, 평가셋
 - `feature_wiki/`: 기능별 Markdown 지식층
-- `docs/`: 설계, API, 평가 문서
+- `docs/`: 설계, 아키텍처, API, 데이터, 평가, 참고 문서
 - `mobile/`: Flutter 앱 확장 영역
 
 ## 참고 문서
 
-- [용어 사전](docs/glossary.md): RAG 초급자를 위한 한글/영문 용어와 기능 설명
-- [PDF 로더 후보 검토](docs/pdf_loader_options.md): PyMuPDF와 OpenDataLoader PDF 비교 기준
+- [다음 세션 진입점](NEXT_SESSION.md): 현재 진행 상황, 다음 작업, 참조 문서 입구
+- [문서 인덱스](docs/README.md): 문서 분류와 읽는 순서
+- [용어 사전](docs/reference/glossary.md): RAG 초급자를 위한 한글/영문 용어와 기능 설명
+- [PDF 로더 후보 검토](docs/data/pdf_loader_options.md): OpenDataLoader PDF와 pypdf 비교 기준

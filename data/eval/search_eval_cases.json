@@ -1,0 +1,90 @@
+[
+  {
+    "case_id": "g9m2_zebra_phrase",
+    "query": "제브라 패턴",
+    "model_ids": ["DC-G9M2"],
+    "expected_document_id": "dc_g9m2_full_kor",
+    "expected_pages": [415],
+    "top_k": 5
+  },
+  {
+    "case_id": "g9m2_zebra_compact",
+    "query": "제브라패턴",
+    "model_ids": ["DC-G9M2"],
+    "expected_document_id": "dc_g9m2_full_kor",
+    "expected_pages": [415],
+    "top_k": 5
+  },
+  {
+    "case_id": "g9m2_zebra_with_model_name",
+    "query": "G9M2 제브라 패턴",
+    "model_ids": ["DC-G9M2"],
+    "expected_document_id": "dc_g9m2_full_kor",
+    "expected_pages": [415],
+    "top_k": 5
+  },
+  {
+    "case_id": "g9m2_zebra_natural_language",
+    "query": "G9M2에서 제브라 패턴 어디서 설정해?",
+    "model_ids": [],
+    "expected_document_id": "dc_g9m2_full_kor",
+    "expected_pages": [415],
+    "top_k": 5
+  },
+  {
+    "case_id": "g9m2_stabilizer_compact",
+    "query": "손떨림보정",
+    "model_ids": ["DC-G9M2"],
+    "expected_document_id": "dc_g9m2_full_kor",
+    "expected_pages": [266, 269],
+    "top_k": 5
+  },
+  {
+    "case_id": "tz99_zoom",
+    "query": "줌",
+    "model_ids": ["DC-TZ99"],
+    "expected_document_id": "dc_tz99_zs99_full_kor",
+    "expected_pages": [35, 51],
+    "top_k": 5
+  },
+  {
+    "case_id": "zs99_zoom",
+    "query": "줌",
+    "model_ids": ["DC-ZS99"],
+    "expected_document_id": "dc_tz99_zs99_full_kor",
+    "expected_pages": [35, 51],
+    "top_k": 5
+  },
+  {
+    "case_id": "s1m2_lumix_lab",
+    "query": "LUMIX Lab",
+    "model_ids": ["DC-S1M2"],
+    "expected_document_id": "dc_s1m2_full_kor",
+    "expected_pages": [770, 775, 1002],
+    "top_k": 5
+  },
+  {
+    "case_id": "s1m2_frame_io",
+    "query": "Frame.io",
+    "model_ids": ["DC-S1M2"],
+    "expected_document_id": "dc_s1m2_full_kor",
+    "expected_pages": [737, 964],
+    "top_k": 5
+  },
+  {
+    "case_id": "g85_post_focus",
+    "query": "포스트 포커스",
+    "model_ids": ["DMC-G85"],
+    "expected_document_id": "dmc_g85_full_kor",
+    "expected_pages": [129, 130],
+    "top_k": 5
+  },
+  {
+    "case_id": "tz99_charge_lamp",
+    "query": "충전 램프",
+    "model_ids": ["DC-TZ99"],
+    "expected_document_id": "dc_tz99_zs99_full_kor",
+    "expected_pages": [17, 22],
+    "top_k": 5
+  }
+]

@@ -6,6 +6,7 @@ from pydantic import BaseModel, ConfigDict, Field
 from pypdf import PdfReader
 from pypdf.errors import PdfReadError
 
+from backend.app.indexing.chunker import ExtractedChunk, build_page_chunks
 from backend.app.indexing.opendataloader_adapter import (
     adapt_opendataloader_json_to_chunks,
     adapt_opendataloader_json_to_pages,
@@ -32,6 +33,7 @@ class PdfLoaderResult(BaseModel):
 
     loader: PdfLoaderName
     pages: tuple[ExtractedPage, ...]
+    chunks: tuple[ExtractedChunk, ...] = ()
     chunk_count: int = Field(ge=0)
     fallback_reason: str | None = None
 
@@ -52,7 +54,7 @@ def extract_document_pages_primary(
     pdf_path: Path,
 ) -> PdfLoaderResult:
     try:
-        pages, chunk_count = _extract_with_opendataloader(
+        pages, chunks = _extract_with_opendataloader(
             document=document,
             pdf_path=pdf_path,
         )
@@ -60,17 +62,20 @@ def extract_document_pages_primary(
         if error.kind not in FALLBACK_ALLOWED_KINDS:
             raise
         fallback_pages = extract_document_pages(document=document, pdf_path=pdf_path)
+        fallback_chunks = build_page_chunks(fallback_pages)
         return PdfLoaderResult(
             loader="pypdf",
             pages=fallback_pages,
-            chunk_count=0,
+            chunks=fallback_chunks,
+            chunk_count=len(fallback_chunks),
             fallback_reason=error.reason,
         )
 
     return PdfLoaderResult(
         loader="opendataloader",
         pages=pages,
-        chunk_count=chunk_count,
+        chunks=chunks,
+        chunk_count=len(chunks),
         fallback_reason=None,
     )
 
@@ -112,7 +117,7 @@ def _extract_with_opendataloader(
     *,
     document: ManualDocumentRegistryEntry,
     pdf_path: Path,
-) -> tuple[tuple[ExtractedPage, ...], int]:
+) -> tuple[tuple[ExtractedPage, ...], tuple[ExtractedChunk, ...]]:
     expected_page_count = _read_pdf_page_count(pdf_path)
     cli_path = resolve_opendataloader_cli()
     with TemporaryDirectory(prefix="lumix-opendl-") as temp_dir:
@@ -138,7 +143,7 @@ def _extract_with_opendataloader(
         pages=completed_pages,
         expected_page_count=expected_page_count,
     )
-    return completed_pages, len(chunks)
+    return completed_pages, chunks
 
 
 def _read_pdf_page_count(pdf_path: Path) -> int:

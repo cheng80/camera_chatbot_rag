@@ -1,0 +1,49 @@
+from backend.app.schemas.document import CameraModelRegistryEntry
+from backend.app.services.query_normalizer import normalize_search_input
+
+
+def test_normalize_search_input_detects_model_alias_and_removes_it() -> None:
+    result = normalize_search_input(
+        query="G9M2에서 제브라 패턴 어디서 설정해?",
+        requested_model_ids=(),
+        models=(_model("DC-G9M2", "LUMIX G9II"),),
+    )
+
+    assert result.search_query == "제브라 패턴"
+    assert result.effective_model_ids == ("DC-G9M2",)
+    assert result.normalized_query.detected_model_ids == ["DC-G9M2"]
+    assert result.normalized_query.search_query == "제브라 패턴"
+
+
+def test_normalize_search_input_removes_query_control_phrase() -> None:
+    result = normalize_search_input(
+        query="G9M2에서 제브라 패턴 어디서 설정해?",
+        requested_model_ids=(),
+        models=(_model("DC-G9M2", "LUMIX G9II"),),
+    )
+
+    assert result.search_query == "제브라 패턴"
+    assert result.effective_model_ids == ("DC-G9M2",)
+
+
+def test_normalize_search_input_keeps_requested_filter_priority() -> None:
+    result = normalize_search_input(
+        query="G9M2 제브라 패턴",
+        requested_model_ids=("DC-S1M2",),
+        models=(
+            _model("DC-G9M2", "LUMIX G9II"),
+            _model("DC-S1M2", "LUMIX S1II"),
+        ),
+    )
+
+    assert result.search_query == "제브라 패턴"
+    assert result.effective_model_ids == ("DC-S1M2",)
+    assert result.normalized_query.detected_model_ids == ["DC-G9M2"]
+
+
+def _model(model_id: str, display_name: str) -> CameraModelRegistryEntry:
+    return CameraModelRegistryEntry(
+        model_id=model_id,
+        display_name=display_name,
+        product_line="LUMIX",
+    )

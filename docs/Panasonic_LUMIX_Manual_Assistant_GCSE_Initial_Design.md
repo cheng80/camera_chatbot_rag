@@ -746,7 +746,7 @@ Web MVP 안정화: FastAPI + Qdrant + PostgreSQL + SQLite FTS5 또는 OpenSearch
 /data/processed/page_images/{document_id}/{page}.png
 /data/processed/toc/{document_id}.json
 /data/processed/feature_seeds/*.jsonl
-/docs/data_inventory.md
+/docs/data/data_inventory.md
 ```
 
 ### 25.5 완료 기준
@@ -1661,11 +1661,20 @@ panasonic-lumix-manual-assistant/
     scripts/
 
   docs/
-    architecture.md
-    api.md
-    database.md
-    rag_pipeline.md
-    evaluation.md
+    README.md
+    architecture/
+      overview.md
+      rag_pipeline.md
+      graph_lite_erd.md
+    api/
+      api_spec.md
+    data/
+      data_inventory.md
+      pdf_loader_options.md
+    evaluation/
+      evaluation_report.md
+    reference/
+      glossary.md
 ```
 
 ---

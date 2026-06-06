@@ -163,8 +163,12 @@ data/raw/manuals/**/*
 !data/raw/manuals/.gitkeep
 data/processed/pages/**/*
 !data/processed/pages/.gitkeep
+data/processed/chunks/**/*
+!data/processed/chunks/.gitkeep
 data/processed/page_images/**/*
 !data/processed/page_images/.gitkeep
+data/processed/reports/**/*
+!data/processed/reports/.gitkeep
 data/indexes/fts/**/*
 !data/indexes/fts/.gitkeep
 data/indexes/vector/**/*

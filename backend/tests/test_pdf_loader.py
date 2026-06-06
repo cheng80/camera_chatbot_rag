@@ -2,10 +2,11 @@ from pathlib import Path
 
 import pytest
 from backend.app.indexing import opendataloader_runner, pdf_loader
+from backend.app.indexing.chunker import ExtractedChunk
 from backend.app.indexing.pdf_extractor import ExtractedPage
 from backend.app.schemas.document import ManualDocumentRegistryEntry
 
-type ExtractionOutcome = tuple[tuple[ExtractedPage, ...], int]
+type ExtractionOutcome = tuple[tuple[ExtractedPage, ...], tuple[ExtractedChunk, ...]]
 
 
 def test_extract_document_pages_primary_uses_opendataloader_when_available(
@@ -21,15 +22,29 @@ def test_extract_document_pages_primary_uses_opendataloader_when_available(
             char_count=2,
         ),
     )
+    expected_chunks = (
+        ExtractedChunk(
+            chunk_id="sample_manual:opendl:1:1",
+            document_id="sample_manual",
+            model_ids=("DC-TZ99",),
+            page_start=1,
+            page_end=1,
+            section_title=None,
+            chunk_type="heading",
+            content="목차",
+            char_count=2,
+            source_hash="0" * 64,
+        ),
+    )
 
     def fake_extract_with_opendataloader(
         *,
         document: ManualDocumentRegistryEntry,
         pdf_path: Path,
-    ) -> tuple[tuple[ExtractedPage, ...], int]:
+    ) -> ExtractionOutcome:
         assert document == registry_entry
         assert pdf_path == Path("sample.pdf")
-        return expected_pages, 3
+        return expected_pages, expected_chunks
 
     monkeypatch.setattr(
         pdf_loader,
@@ -44,7 +59,8 @@ def test_extract_document_pages_primary_uses_opendataloader_when_available(
 
     assert result.loader == "opendataloader"
     assert result.pages == expected_pages
-    assert result.chunk_count == 3
+    assert result.chunks == expected_chunks
+    assert result.chunk_count == 1
     assert result.fallback_reason is None
 
 
@@ -106,7 +122,7 @@ def test_extract_document_pages_primary_falls_back_for_allowed_cli_errors(
 
     assert result.loader == "pypdf"
     assert result.pages == expected_pages
-    assert result.chunk_count == 0
+    assert result.chunk_count == 1
     assert result.fallback_reason == error.reason
 
 

@@ -92,7 +92,7 @@ OpenDataLoader PDF를 기본 로더로 올리는 기준:
 - [x] 초기 PDF 1개를 `markdown,json,text`로 변환한다.
 - [x] pypdf 결과와 page text, section order, structured output을 비교한다.
 - [x] OpenDataLoader JSON을 ExtractedPage/Chunk로 변환하는 adapter를 만든다.
-- [x] 결과를 `docs/evaluation_report.md`에 기록한다.
+- [x] 결과를 `docs/evaluation/evaluation_report.md`에 기록한다.
 
 ## 2026-06-06 비교 결과
 

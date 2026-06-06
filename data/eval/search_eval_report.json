@@ -1,0 +1,238 @@
+{
+  "case_count": 11,
+  "document_hit_count": 11,
+  "page_hit_count": 11,
+  "document_hit_rate": 1.0,
+  "page_hit_rate": 1.0,
+  "results": [
+    {
+      "case_id": "g9m2_zebra_phrase",
+      "hit_document": true,
+      "hit_page": true,
+      "top_rank": 3,
+      "result_count": 5,
+      "result_pages": [
+        537,
+        549,
+        415,
+        589,
+        796
+      ],
+      "result_document_ids": [
+        "dc_g9m2_full_kor",
+        "dc_g9m2_full_kor",
+        "dc_g9m2_full_kor",
+        "dc_g9m2_full_kor",
+        "dc_g9m2_full_kor"
+      ]
+    },
+    {
+      "case_id": "g9m2_zebra_compact",
+      "hit_document": true,
+      "hit_page": true,
+      "top_rank": 1,
+      "result_count": 5,
+      "result_pages": [
+        415,
+        589,
+        796,
+        537,
+        549
+      ],
+      "result_document_ids": [
+        "dc_g9m2_full_kor",
+        "dc_g9m2_full_kor",
+        "dc_g9m2_full_kor",
+        "dc_g9m2_full_kor",
+        "dc_g9m2_full_kor"
+      ]
+    },
+    {
+      "case_id": "g9m2_zebra_with_model_name",
+      "hit_document": true,
+      "hit_page": true,
+      "top_rank": 3,
+      "result_count": 5,
+      "result_pages": [
+        537,
+        549,
+        415,
+        589,
+        796
+      ],
+      "result_document_ids": [
+        "dc_g9m2_full_kor",
+        "dc_g9m2_full_kor",
+        "dc_g9m2_full_kor",
+        "dc_g9m2_full_kor",
+        "dc_g9m2_full_kor"
+      ]
+    },
+    {
+      "case_id": "g9m2_zebra_natural_language",
+      "hit_document": true,
+      "hit_page": true,
+      "top_rank": 3,
+      "result_count": 5,
+      "result_pages": [
+        537,
+        549,
+        415,
+        589,
+        796
+      ],
+      "result_document_ids": [
+        "dc_g9m2_full_kor",
+        "dc_g9m2_full_kor",
+        "dc_g9m2_full_kor",
+        "dc_g9m2_full_kor",
+        "dc_g9m2_full_kor"
+      ]
+    },
+    {
+      "case_id": "g9m2_stabilizer_compact",
+      "hit_document": true,
+      "hit_page": true,
+      "top_rank": 1,
+      "result_count": 5,
+      "result_pages": [
+        266,
+        269,
+        38,
+        269,
+        784
+      ],
+      "result_document_ids": [
+        "dc_g9m2_full_kor",
+        "dc_g9m2_full_kor",
+        "dc_g9m2_full_kor",
+        "dc_g9m2_full_kor",
+        "dc_g9m2_full_kor"
+      ]
+    },
+    {
+      "case_id": "tz99_zoom",
+      "hit_document": true,
+      "hit_page": true,
+      "top_rank": 1,
+      "result_count": 5,
+      "result_pages": [
+        35,
+        51,
+        81,
+        186,
+        161
+      ],
+      "result_document_ids": [
+        "dc_tz99_zs99_full_kor",
+        "dc_tz99_zs99_full_kor",
+        "dc_tz99_zs99_full_kor",
+        "dc_tz99_zs99_full_kor",
+        "dc_tz99_zs99_full_kor"
+      ]
+    },
+    {
+      "case_id": "zs99_zoom",
+      "hit_document": true,
+      "hit_page": true,
+      "top_rank": 1,
+      "result_count": 5,
+      "result_pages": [
+        35,
+        51,
+        81,
+        186,
+        161
+      ],
+      "result_document_ids": [
+        "dc_tz99_zs99_full_kor",
+        "dc_tz99_zs99_full_kor",
+        "dc_tz99_zs99_full_kor",
+        "dc_tz99_zs99_full_kor",
+        "dc_tz99_zs99_full_kor"
+      ]
+    },
+    {
+      "case_id": "s1m2_lumix_lab",
+      "hit_document": true,
+      "hit_page": true,
+      "top_rank": 1,
+      "result_count": 5,
+      "result_pages": [
+        1002,
+        770,
+        775,
+        816,
+        15
+      ],
+      "result_document_ids": [
+        "dc_s1m2_full_kor",
+        "dc_s1m2_full_kor",
+        "dc_s1m2_full_kor",
+        "dc_s1m2_full_kor",
+        "dc_s1m2_full_kor"
+      ]
+    },
+    {
+      "case_id": "s1m2_frame_io",
+      "hit_document": true,
+      "hit_page": true,
+      "top_rank": 1,
+      "result_count": 5,
+      "result_pages": [
+        737,
+        964,
+        286,
+        474,
+        708
+      ],
+      "result_document_ids": [
+        "dc_s1m2_full_kor",
+        "dc_s1m2_full_kor",
+        "dc_s1m2_full_kor",
+        "dc_s1m2_full_kor",
+        "dc_s1m2_full_kor"
+      ]
+    },
+    {
+      "case_id": "g85_post_focus",
+      "hit_document": true,
+      "hit_page": true,
+      "top_rank": 1,
+      "result_count": 5,
+      "result_pages": [
+        129,
+        316,
+        130,
+        5,
+        62
+      ],
+      "result_document_ids": [
+        "dmc_g85_full_kor",
+        "dmc_g85_full_kor",
+        "dmc_g85_full_kor",
+        "dmc_g85_full_kor",
+        "dmc_g85_full_kor"
+      ]
+    },
+    {
+      "case_id": "tz99_charge_lamp",
+      "hit_document": true,
+      "hit_page": true,
+      "top_rank": 1,
+      "result_count": 4,
+      "result_pages": [
+        22,
+        17,
+        22,
+        267
+      ],
+      "result_document_ids": [
+        "dc_tz99_zs99_full_kor",
+        "dc_tz99_zs99_full_kor",
+        "dc_tz99_zs99_full_kor",
+        "dc_tz99_zs99_full_kor"
+      ]
+    }
+  ]
+}
