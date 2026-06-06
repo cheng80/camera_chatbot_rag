@@ -6,7 +6,7 @@ from backend.app.services.hybrid_retriever import HybridRetriever
 router = APIRouter()
 
 
-@router.post("", response_model=SearchResponse)
+@router.post("")
 async def search_manuals(payload: SearchRequest) -> SearchResponse:
     retriever = HybridRetriever()
     return retriever.search(payload)

@@ -1,10 +1,12 @@
+from typing import ClassVar
+
 from pydantic import BaseModel, ConfigDict, Field
 
 from backend.app.schemas.feature_card import FeatureCard
 
 
 class NormalizedQuery(BaseModel):
-    model_config = ConfigDict(frozen=True)
+    model_config: ClassVar[ConfigDict] = ConfigDict(frozen=True)
 
     intent: str
     terms: list[str]
@@ -12,7 +14,7 @@ class NormalizedQuery(BaseModel):
 
 
 class SearchRequest(BaseModel):
-    model_config = ConfigDict(frozen=True)
+    model_config: ClassVar[ConfigDict] = ConfigDict(frozen=True)
 
     query: str
     model_ids: list[str] = Field(default_factory=list)
@@ -23,7 +25,7 @@ class SearchRequest(BaseModel):
 
 
 class SearchResponse(BaseModel):
-    model_config = ConfigDict(frozen=True)
+    model_config: ClassVar[ConfigDict] = ConfigDict(frozen=True)
 
     query: str
     normalized_query: NormalizedQuery

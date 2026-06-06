@@ -1,8 +1,10 @@
+from typing import ClassVar
+
 from pydantic import BaseModel, ConfigDict
 
 
 class FeedbackRequest(BaseModel):
-    model_config = ConfigDict(frozen=True)
+    model_config: ClassVar[ConfigDict] = ConfigDict(frozen=True)
 
     query: str
     feature_id: str
@@ -11,7 +13,7 @@ class FeedbackRequest(BaseModel):
 
 
 class FeedbackResponse(BaseModel):
-    model_config = ConfigDict(frozen=True)
+    model_config: ClassVar[ConfigDict] = ConfigDict(frozen=True)
 
     status: str
     feature_id: str

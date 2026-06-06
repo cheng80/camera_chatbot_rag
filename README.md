@@ -5,7 +5,7 @@ Panasonic LUMIX 한국어 PDF 매뉴얼을 기반으로 기능 검색, 기능 �
 
 ## 방향
 
-- Python 3.10.12
+- Python 3.12.10
 - FastAPI가 정적 웹 UI와 API를 함께 서빙
 - 검색 흐름: Hybrid RAG → Feature Wiki LLM → Wiki-derived Graph-lite → Guided Support Assistant
 - 1차 UI는 정적 HTML/CSS/JavaScript

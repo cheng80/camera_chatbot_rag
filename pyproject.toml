@@ -3,7 +3,7 @@ name = "camera-chatbot-rag"
 version = "0.1.0"
 description = "Panasonic LUMIX manual assistant with FastAPI-served static UI and Hybrid RAG."
 readme = "README.md"
-requires-python = ">=3.10.12,<3.11"
+requires-python = ">=3.12.10,<3.13"
 dependencies = [
     "fastapi>=0.115",
     "uvicorn[standard]>=0.32",
@@ -13,6 +13,7 @@ dependencies = [
     "pymupdf>=1.24",
     "pdfplumber>=0.11",
     "pypdf>=5.1",
+    "httpx2>=0.28",
 ]
 
 [dependency-groups]
@@ -25,7 +26,7 @@ dev = [
 
 [tool.basedpyright]
 typeCheckingMode = "all"
-pythonVersion = "3.10"
+pythonVersion = "3.12"
 pythonPlatform = "All"
 include = ["backend/app", "backend/tests"]
 exclude = ["**/__pycache__", "**/.venv", "**/build", "**/dist"]
@@ -33,11 +34,10 @@ reportUnusedCallResult = "warning"
 reportUnnecessaryTypeIgnoreComment = "error"
 reportUnusedVariable = "error"
 reportMissingParameterType = "error"
-reportMissingReturnType = "error"
 reportPrivateUsage = "error"
 
 [tool.ruff]
-target-version = "py310"
+target-version = "py312"
 line-length = 88
 src = ["backend/app", "backend/tests"]
 

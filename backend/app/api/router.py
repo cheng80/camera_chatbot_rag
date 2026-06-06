@@ -1,6 +1,14 @@
 from fastapi import APIRouter
 
-from backend.app.api.routes import documents, feedback, features, health, models, search, viewer
+from backend.app.api.routes import (
+    documents,
+    features,
+    feedback,
+    health,
+    models,
+    search,
+    viewer,
+)
 
 api_router = APIRouter()
 api_router.include_router(health.router, tags=["health"])

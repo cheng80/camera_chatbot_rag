@@ -1,17 +1,17 @@
-from typing import Literal
+from typing import ClassVar, Literal
 
 from pydantic import BaseModel, ConfigDict, Field
 
 
 class SupportedModel(BaseModel):
-    model_config = ConfigDict(frozen=True)
+    model_config: ClassVar[ConfigDict] = ConfigDict(frozen=True)
 
     model_id: str
     support_status: Literal["supported", "unsupported", "unknown"]
 
 
 class SourceReference(BaseModel):
-    model_config = ConfigDict(frozen=True)
+    model_config: ClassVar[ConfigDict] = ConfigDict(frozen=True)
 
     document_id: str
     model_id: str
@@ -21,7 +21,7 @@ class SourceReference(BaseModel):
 
 
 class FeatureCard(BaseModel):
-    model_config = ConfigDict(frozen=True)
+    model_config: ClassVar[ConfigDict] = ConfigDict(frozen=True)
 
     feature_id: str
     feature_name: str

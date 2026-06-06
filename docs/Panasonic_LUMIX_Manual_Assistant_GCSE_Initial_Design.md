@@ -681,7 +681,7 @@ Web MVP 안정화: FastAPI + Qdrant + PostgreSQL + SQLite FTS5 또는 OpenSearch
 
 | 자원 | 권장 사양 |
 |---|---|
-| 개발 PC | 16GB RAM 이상, Python 3.10.12 개발 가능 환경 |
+| 개발 PC | 16GB RAM 이상, Python 3.12.10 개발 가능 환경 |
 | 로컬 LLM 테스트 | 24GB VRAM 이상이면 중형 모델 실험 가능, 없으면 API 사용 |
 | 로컬 Vector DB | Docker 기반 Qdrant 또는 ChromaDB |
 | PDF 처리 저장소 | 원본 PDF, page image, chunk JSON 저장 공간 |
@@ -730,7 +730,7 @@ Web MVP 안정화: FastAPI + Qdrant + PostgreSQL + SQLite FTS5 또는 OpenSearch
 
 | 영역 | 권장 기술 |
 |---|---|
-| 언어 | Python 3.10.12 |
+| 언어 | Python 3.12.10 |
 | PDF 추출 | PyMuPDF, pdfplumber, pypdf |
 | 이미지 변환 | PyMuPDF page rendering, Pillow |
 | OCR 선택 | PaddleOCR 또는 Tesseract Korean data |
@@ -1969,7 +1969,7 @@ Backend:
 - Pydantic
 - SQLAlchemy 또는 SQLModel
 - SQLite 초기, PostgreSQL 확장
-- PDF 분석/색인 생성은 Python 3.10.12 오프라인 스크립트로 처리
+- PDF 분석/색인 생성은 Python 3.12.10 오프라인 스크립트로 처리
 
 Search:
 - Qdrant
@@ -2014,7 +2014,7 @@ Infra:
 Backend:
 - FastAPI
 - StaticFiles 기반 정적 웹 UI 서빙
-- Python 3.10.12 오프라인 생성 스크립트
+- Python 3.12.10 오프라인 생성 스크립트
 - SQLite
 
 Search:
