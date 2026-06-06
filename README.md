@@ -8,6 +8,7 @@ Panasonic LUMIX 한국어 PDF 매뉴얼을 기반으로 기능 검색, 기능 �
 - Python 3.12.10
 - FastAPI가 정적 웹 UI와 API를 함께 서빙
 - 검색 흐름: Hybrid RAG → Feature Wiki LLM → Wiki-derived Graph-lite → Guided Support Assistant
+- PDF 로더: OpenDataLoader PDF primary + pypdf fallback
 - 1차 UI는 정적 HTML/CSS/JavaScript
 - 2차 확장은 Flutter 앱
 
@@ -28,3 +29,8 @@ uv run uvicorn backend.app.main:app --reload
 - `feature_wiki/`: 기능별 Markdown 지식층
 - `docs/`: 설계, API, 평가 문서
 - `mobile/`: Flutter 앱 확장 영역
+
+## 참고 문서
+
+- [용어 사전](docs/glossary.md): RAG 초급자를 위한 한글/영문 용어와 기능 설명
+- [PDF 로더 후보 검토](docs/pdf_loader_options.md): PyMuPDF와 OpenDataLoader PDF 비교 기준

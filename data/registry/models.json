@@ -1,1 +1,152 @@
-[]
+[
+  {
+    "model_id": "DC-G100D",
+    "display_name": "LUMIX G100D",
+    "product_line": "LUMIX G"
+  },
+  {
+    "model_id": "DC-G100",
+    "display_name": "LUMIX G100",
+    "product_line": "LUMIX G"
+  },
+  {
+    "model_id": "DC-G95",
+    "display_name": "LUMIX G95",
+    "product_line": "LUMIX G"
+  },
+  {
+    "model_id": "DC-G9M2",
+    "display_name": "LUMIX G9II",
+    "product_line": "LUMIX G"
+  },
+  {
+    "model_id": "DC-G9",
+    "display_name": "LUMIX G9",
+    "product_line": "LUMIX G"
+  },
+  {
+    "model_id": "DC-GF10",
+    "display_name": "LUMIX GF10",
+    "product_line": "LUMIX G"
+  },
+  {
+    "model_id": "DC-GF9",
+    "display_name": "LUMIX GF9",
+    "product_line": "LUMIX G"
+  },
+  {
+    "model_id": "DC-GH5S",
+    "display_name": "LUMIX GH5S",
+    "product_line": "LUMIX G"
+  },
+  {
+    "model_id": "DC-GH5",
+    "display_name": "LUMIX GH5",
+    "product_line": "LUMIX G"
+  },
+  {
+    "model_id": "DC-GH6",
+    "display_name": "LUMIX GH6",
+    "product_line": "LUMIX G"
+  },
+  {
+    "model_id": "DC-GH7",
+    "display_name": "LUMIX GH7",
+    "product_line": "LUMIX G"
+  },
+  {
+    "model_id": "DC-GX9",
+    "display_name": "LUMIX GX9",
+    "product_line": "LUMIX G"
+  },
+  {
+    "model_id": "DC-LX100M2",
+    "display_name": "LUMIX LX100II",
+    "product_line": "LUMIX LX"
+  },
+  {
+    "model_id": "DC-S1H",
+    "display_name": "LUMIX S1H",
+    "product_line": "LUMIX S"
+  },
+  {
+    "model_id": "DC-S1M2",
+    "display_name": "LUMIX S1II",
+    "product_line": "LUMIX S"
+  },
+  {
+    "model_id": "DC-S1M2ES",
+    "display_name": "LUMIX S1IIE/S",
+    "product_line": "LUMIX S"
+  },
+  {
+    "model_id": "DC-S1RM2",
+    "display_name": "LUMIX S1RII",
+    "product_line": "LUMIX S"
+  },
+  {
+    "model_id": "DC-S1R",
+    "display_name": "LUMIX S1R",
+    "product_line": "LUMIX S"
+  },
+  {
+    "model_id": "DC-S1",
+    "display_name": "LUMIX S1",
+    "product_line": "LUMIX S"
+  },
+  {
+    "model_id": "DC-S5M2X",
+    "display_name": "LUMIX S5IIX",
+    "product_line": "LUMIX S"
+  },
+  {
+    "model_id": "DC-S5M2",
+    "display_name": "LUMIX S5II",
+    "product_line": "LUMIX S"
+  },
+  {
+    "model_id": "DC-S5",
+    "display_name": "LUMIX S5",
+    "product_line": "LUMIX S"
+  },
+  {
+    "model_id": "DC-TZ99",
+    "display_name": "LUMIX TZ99",
+    "product_line": "LUMIX TZ"
+  },
+  {
+    "model_id": "DC-ZS99",
+    "display_name": "LUMIX ZS99",
+    "product_line": "LUMIX ZS"
+  },
+  {
+    "model_id": "DMC-G85",
+    "display_name": "LUMIX G85",
+    "product_line": "LUMIX G"
+  },
+  {
+    "model_id": "DMC-GF1",
+    "display_name": "LUMIX GF1",
+    "product_line": "LUMIX G"
+  },
+  {
+    "model_id": "DMC-GM1",
+    "display_name": "LUMIX GM1",
+    "product_line": "LUMIX G"
+  },
+  {
+    "model_id": "DMC-GM5",
+    "display_name": "LUMIX GM5",
+    "product_line": "LUMIX G"
+  },
+  {
+    "model_id": "DMC-GX85",
+    "display_name": "LUMIX GX85",
+    "product_line": "LUMIX G"
+  },
+  {
+    "model_id": "DMC-LX10",
+    "display_name": "LUMIX LX10",
+    "product_line": "LUMIX LX"
+  }
+]

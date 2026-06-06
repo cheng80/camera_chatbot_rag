@@ -8,6 +8,7 @@ pdfplumber>=0.11
 pypdf>=5.1
 httpx>=0.27
 httpx2>=0.28
+opendataloader-pdf>=2.4.7
 basedpyright>=1.21
 ruff>=0.8
 pytest>=8

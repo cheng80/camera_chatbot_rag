@@ -26,6 +26,8 @@
 .ag/
 .codex/
 .kiro/
+.playwright-cli/
+output/playwright/
 
 ############################################################
 # Node.js
@@ -157,7 +159,10 @@ analysis_benchmark.json
 
 # Local source datasets and generated heavy artifacts
 data/source/
-data/raw/manuals/*.pdf
+data/raw/manuals/**/*
+!data/raw/manuals/.gitkeep
+data/processed/pages/**/*
+!data/processed/pages/.gitkeep
 data/processed/page_images/**/*
 !data/processed/page_images/.gitkeep
 data/indexes/fts/**/*
