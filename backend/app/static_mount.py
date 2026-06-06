@@ -5,7 +5,6 @@ from backend.app.core.settings import Settings
 
 
 def mount_static_assets(app: FastAPI, settings: Settings) -> None:
-    app.mount("/", StaticFiles(directory=settings.static_dir, html=True), name="web")
     app.mount(
         "/manuals",
         StaticFiles(directory=settings.data_dir / "raw" / "manuals"),
@@ -16,3 +15,4 @@ def mount_static_assets(app: FastAPI, settings: Settings) -> None:
         StaticFiles(directory=settings.data_dir / "processed" / "page_images"),
         name="page-images",
     )
+    app.mount("/", StaticFiles(directory=settings.static_dir, html=True), name="web")

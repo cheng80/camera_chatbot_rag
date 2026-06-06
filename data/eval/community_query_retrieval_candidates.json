@@ -1,0 +1,3838 @@
+[
+  {
+    "post_id": "201629",
+    "query": "[루믹스s9] 실시간 노출 미리보기가 S모드에서 안됩니다.???",
+    "category": "camera_feature",
+    "model_mentions": [
+      "S9"
+    ],
+    "resolved_model_ids": [
+      "DC-S9"
+    ],
+    "retrieval_status": "no_results",
+    "normalized_query": "실시간 노출 미리보기가 S모드에서 안됩니다",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "201621",
+    "query": "루믹스 s9 하이브리드, 크롭 줌 문의",
+    "category": "camera_feature",
+    "model_mentions": [
+      "S9"
+    ],
+    "resolved_model_ids": [
+      "DC-S9"
+    ],
+    "retrieval_status": "ok",
+    "normalized_query": "하이브리드 크롭 줌",
+    "needs_pdf_label": true,
+    "sources": [
+      {
+        "rank": 1,
+        "document_id": "dc_s9_full_kor",
+        "model_id": "DC-S9",
+        "page": 201,
+        "feature_name": "[하이브리드 줌(동영상)]",
+        "section_title": "[하이브리드 줌(동영상)]",
+        "viewer_url": "/api/viewer/dc_s9_full_kor/pages/201",
+        "source_ref_valid": true
+      },
+      {
+        "rank": 2,
+        "document_id": "dc_s9_full_kor",
+        "model_id": "DC-S9",
+        "page": 775,
+        "feature_name": "≥ 하이브리드 줌(사진)/크롭 줌(사진)",
+        "section_title": "≥ 하이브리드 줌(사진)/크롭 줌(사진)",
+        "viewer_url": "/api/viewer/dc_s9_full_kor/pages/775",
+        "source_ref_valid": true
+      },
+      {
+        "rank": 3,
+        "document_id": "dc_s9_full_kor",
+        "model_id": "DC-S9",
+        "page": 7,
+        "feature_name": "초점 / 줌 138",
+        "section_title": "초점 / 줌 138",
+        "viewer_url": "/api/viewer/dc_s9_full_kor/pages/7",
+        "source_ref_valid": true
+      },
+      {
+        "rank": 4,
+        "document_id": "dc_s9_full_kor",
+        "model_id": "DC-S9",
+        "page": 190,
+        "feature_name": "줌으로 촬영하기",
+        "section_title": "줌으로 촬영하기",
+        "viewer_url": "/api/viewer/dc_s9_full_kor/pages/190",
+        "source_ref_valid": true
+      },
+      {
+        "rank": 5,
+        "document_id": "dc_s9_full_kor",
+        "model_id": "DC-S9",
+        "page": 473,
+        "feature_name": "(A)",
+        "section_title": "(A)",
+        "viewer_url": "/api/viewer/dc_s9_full_kor/pages/473",
+        "source_ref_valid": true
+      }
+    ],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "201602",
+    "query": "s9 연사 이렇게 짧은가요?",
+    "category": "camera_feature",
+    "model_mentions": [
+      "S9"
+    ],
+    "resolved_model_ids": [
+      "DC-S9"
+    ],
+    "retrieval_status": "no_results",
+    "normalized_query": "연사 이렇게 짧은가요",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "201592",
+    "query": "S5와 S5M2(S5M2X)의 색감이 다른가요?",
+    "category": "camera_feature",
+    "model_mentions": [
+      "S5M2X",
+      "S5M2"
+    ],
+    "resolved_model_ids": [
+      "DC-S5M2X",
+      "DC-S5M2"
+    ],
+    "retrieval_status": "no_results",
+    "normalized_query": "와 ( )의 색감이 다른가요",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "201567",
+    "query": "제품사진 촬영에 추천할만한 럿이 있을가요?",
+    "category": "camera_feature",
+    "model_mentions": [],
+    "resolved_model_ids": [],
+    "retrieval_status": "no_results",
+    "normalized_query": "제품사진 촬영에 추천할만한 LUT이 있을가요",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "201543",
+    "query": "실시간 LUT",
+    "category": "camera_feature",
+    "model_mentions": [],
+    "resolved_model_ids": [],
+    "retrieval_status": "ok",
+    "normalized_query": "실시간 LUT",
+    "needs_pdf_label": true,
+    "sources": [
+      {
+        "rank": 1,
+        "document_id": "dc_gh7_full_kor",
+        "model_id": "DC-GH7",
+        "page": 603,
+        "feature_name": "[이미지 품질]",
+        "section_title": "[이미지 품질]",
+        "viewer_url": "/api/viewer/dc_gh7_full_kor/pages/603",
+        "source_ref_valid": true
+      },
+      {
+        "rank": 2,
+        "document_id": "dc_s1m2_full_kor",
+        "model_id": "DC-S1M2",
+        "page": 652,
+        "feature_name": "Fn",
+        "section_title": "Fn",
+        "viewer_url": "/api/viewer/dc_s1m2_full_kor/pages/652",
+        "source_ref_valid": true
+      },
+      {
+        "rank": 3,
+        "document_id": "dc_s1m2es_full_kor",
+        "model_id": "DC-S1M2ES",
+        "page": 631,
+        "feature_name": "Fn",
+        "section_title": "Fn",
+        "viewer_url": "/api/viewer/dc_s1m2es_full_kor/pages/631",
+        "source_ref_valid": true
+      },
+      {
+        "rank": 4,
+        "document_id": "dc_s1rm2_full_kor",
+        "model_id": "DC-S1RM2",
+        "page": 612,
+        "feature_name": "Fn",
+        "section_title": "Fn",
+        "viewer_url": "/api/viewer/dc_s1rm2_full_kor/pages/612",
+        "source_ref_valid": true
+      },
+      {
+        "rank": 5,
+        "document_id": "dc_s9_full_kor",
+        "model_id": "DC-S9",
+        "page": 493,
+        "feature_name": "[이미지 품질]",
+        "section_title": "[이미지 품질]",
+        "viewer_url": "/api/viewer/dc_s9_full_kor/pages/493",
+        "source_ref_valid": true
+      }
+    ],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "201541",
+    "query": "S9 설정 관련 질문입니다.",
+    "category": "camera_feature",
+    "model_mentions": [
+      "S9"
+    ],
+    "resolved_model_ids": [
+      "DC-S9"
+    ],
+    "retrieval_status": "ok",
+    "normalized_query": "설정",
+    "needs_pdf_label": true,
+    "sources": [
+      {
+        "rank": 1,
+        "document_id": "dc_s9_full_kor",
+        "model_id": "DC-S9",
+        "page": 754,
+        "feature_name": "[설정]: [설정]",
+        "section_title": "[설정]: [설정]",
+        "viewer_url": "/api/viewer/dc_s9_full_kor/pages/754",
+        "source_ref_valid": true
+      },
+      {
+        "rank": 2,
+        "document_id": "dc_s9_full_kor",
+        "model_id": "DC-S9",
+        "page": 566,
+        "feature_name": "[설정] 메뉴([설정])",
+        "section_title": "[설정] 메뉴([설정])",
+        "viewer_url": "/api/viewer/dc_s9_full_kor/pages/566",
+        "source_ref_valid": true
+      },
+      {
+        "rank": 3,
+        "document_id": "dc_s9_full_kor",
+        "model_id": "DC-S9",
+        "page": 813,
+        "feature_name": " [ ]  [ ]  [AF 중 포커스 링 설정]/[MF 중 포커스 링 설정]선택",
+        "section_title": " [ ]  [ ]  [AF 중 포커스 링 설정]/[MF 중 포커스 링 설정]선택",
+        "viewer_url": "/api/viewer/dc_s9_full_kor/pages/813",
+        "source_ref_valid": true
+      },
+      {
+        "rank": 4,
+        "document_id": "dc_s9_full_kor",
+        "model_id": "DC-S9",
+        "page": 818,
+        "feature_name": " 기본 설정/사용자 정의 저장/복사에 사용할 수 있는 설정 목록",
+        "section_title": " 기본 설정/사용자 정의 저장/복사에 사용할 수 있는 설정 목록",
+        "viewer_url": "/api/viewer/dc_s9_full_kor/pages/818",
+        "source_ref_valid": true
+      },
+      {
+        "rank": 5,
+        "document_id": "dc_s9_full_kor",
+        "model_id": "DC-S9",
+        "page": 89,
+        "feature_name": "[리셋]",
+        "section_title": "[리셋]",
+        "viewer_url": "/api/viewer/dc_s9_full_kor/pages/89",
+        "source_ref_valid": true
+      }
+    ],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "201521",
+    "query": "S9 실시간 LUT 불투명도 저장 질문드립니다.",
+    "category": "camera_feature",
+    "model_mentions": [
+      "S9"
+    ],
+    "resolved_model_ids": [
+      "DC-S9"
+    ],
+    "retrieval_status": "no_results",
+    "normalized_query": "실시간 LUT 불투명도 저장",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "201503",
+    "query": "루믹스랩 오류 질문입니다",
+    "category": "camera_feature",
+    "model_mentions": [],
+    "resolved_model_ids": [],
+    "retrieval_status": "no_results",
+    "normalized_query": "LUMIX Lab 오류",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "201502",
+    "query": "오픈게이트 촬영과 그냥 세로촬영 비교질문입니다",
+    "category": "camera_feature",
+    "model_mentions": [],
+    "resolved_model_ids": [],
+    "retrieval_status": "no_results",
+    "normalized_query": "오픈 게이트 촬영과 그냥 세로촬영 비교",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "201500",
+    "query": "s9 초기설정문의드립니다!",
+    "category": "camera_feature",
+    "model_mentions": [
+      "S9"
+    ],
+    "resolved_model_ids": [
+      "DC-S9"
+    ],
+    "retrieval_status": "no_results",
+    "normalized_query": "초기 설정",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "201490",
+    "query": "S9 발열 관련 여쭤봅니다!",
+    "category": "camera_feature",
+    "model_mentions": [
+      "S9"
+    ],
+    "resolved_model_ids": [
+      "DC-S9"
+    ],
+    "retrieval_status": "no_results",
+    "normalized_query": "발열",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "201445",
+    "query": "루믹스랩",
+    "category": "camera_feature",
+    "model_mentions": [],
+    "resolved_model_ids": [],
+    "retrieval_status": "ok",
+    "normalized_query": "LUMIX Lab",
+    "needs_pdf_label": true,
+    "sources": [
+      {
+        "rank": 1,
+        "document_id": "dc_g9m2_full_kor",
+        "model_id": "DC-G9M2",
+        "page": 833,
+        "feature_name": "“LUMIX Lab”",
+        "section_title": "“LUMIX Lab”",
+        "viewer_url": "/api/viewer/dc_g9m2_full_kor/pages/833",
+        "source_ref_valid": true
+      },
+      {
+        "rank": 2,
+        "document_id": "dc_gh7_full_kor",
+        "model_id": "DC-GH7",
+        "page": 978,
+        "feature_name": "“LUMIX Lab”",
+        "section_title": "“LUMIX Lab”",
+        "viewer_url": "/api/viewer/dc_gh7_full_kor/pages/978",
+        "source_ref_valid": true
+      },
+      {
+        "rank": 3,
+        "document_id": "dc_s1m2_full_kor",
+        "model_id": "DC-S1M2",
+        "page": 1002,
+        "feature_name": "“LUMIX Lab”",
+        "section_title": "“LUMIX Lab”",
+        "viewer_url": "/api/viewer/dc_s1m2_full_kor/pages/1002",
+        "source_ref_valid": true
+      },
+      {
+        "rank": 4,
+        "document_id": "dc_s1m2es_full_kor",
+        "model_id": "DC-S1M2ES",
+        "page": 980,
+        "feature_name": "“LUMIX Lab”",
+        "section_title": "“LUMIX Lab”",
+        "viewer_url": "/api/viewer/dc_s1m2es_full_kor/pages/980",
+        "source_ref_valid": true
+      },
+      {
+        "rank": 5,
+        "document_id": "dc_s1rm2_full_kor",
+        "model_id": "DC-S1RM2",
+        "page": 947,
+        "feature_name": "“LUMIX Lab”",
+        "section_title": "“LUMIX Lab”",
+        "viewer_url": "/api/viewer/dc_s1rm2_full_kor/pages/947",
+        "source_ref_valid": true
+      }
+    ],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "201443",
+    "query": "S9 18-40으로 입문했습니다. 동영상 크롭 질문드립니다!",
+    "category": "camera_feature",
+    "model_mentions": [
+      "S9"
+    ],
+    "resolved_model_ids": [
+      "DC-S9"
+    ],
+    "retrieval_status": "no_results",
+    "normalized_query": "18-40으로 입문했습니다 동영상 크롭",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "201437",
+    "query": "루믹스 LUT 많이 들 쓰시나요?",
+    "category": "camera_feature",
+    "model_mentions": [],
+    "resolved_model_ids": [],
+    "retrieval_status": "no_results",
+    "normalized_query": "루믹스 LUT 많이 들 쓰시나요",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "201378",
+    "query": "S5M2 AF 이동 전환 질문드립니다.",
+    "category": "camera_feature",
+    "model_mentions": [
+      "S5M2"
+    ],
+    "resolved_model_ids": [
+      "DC-S5M2"
+    ],
+    "retrieval_status": "no_results",
+    "normalized_query": "AF 이동 전환",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "201366",
+    "query": "S9 사진에 특정부분 화질 저하문제",
+    "category": "camera_feature",
+    "model_mentions": [
+      "S9"
+    ],
+    "resolved_model_ids": [
+      "DC-S9"
+    ],
+    "retrieval_status": "no_results",
+    "normalized_query": "사진에 특정부분 화질 저하문제",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "201353",
+    "query": "S9 OFF로 놔도 화면 안꺼짐 증상",
+    "category": "camera_feature",
+    "model_mentions": [
+      "S9"
+    ],
+    "resolved_model_ids": [
+      "DC-S9"
+    ],
+    "retrieval_status": "no_results",
+    "normalized_query": "OFF로 놔도 화면 안꺼짐 증상",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "201351",
+    "query": "S9의 af는 브랜드 중에 어느정도 위치인가요?",
+    "category": "camera_feature",
+    "model_mentions": [
+      "S9"
+    ],
+    "resolved_model_ids": [
+      "DC-S9"
+    ],
+    "retrieval_status": "no_results",
+    "normalized_query": "의 af는 브랜드 중에 어느정도 위치인가요",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "201329",
+    "query": "lut 불투명도 빠르게 조절하는방법?",
+    "category": "camera_feature",
+    "model_mentions": [],
+    "resolved_model_ids": [],
+    "retrieval_status": "no_results",
+    "normalized_query": "lut 불투명도 빠르게 조절하는방법",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "201320",
+    "query": "카메라 내에서 사진 확인이 너무 느려요 ㅜ ㅜ",
+    "category": "camera_feature",
+    "model_mentions": [],
+    "resolved_model_ids": [],
+    "retrieval_status": "no_results",
+    "normalized_query": "카메라 내에서 사진 확인이 너무 느려요",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "201295",
+    "query": "하이브리드 줌 vs 크롭줌",
+    "category": "camera_feature",
+    "model_mentions": [],
+    "resolved_model_ids": [],
+    "retrieval_status": "no_results",
+    "normalized_query": "하이브리드 줌 vs 크롭줌",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "201276",
+    "query": "L10이 손떨방이 없는데 영상에 적합할까요?",
+    "category": "camera_feature",
+    "model_mentions": [],
+    "resolved_model_ids": [],
+    "retrieval_status": "no_results",
+    "normalized_query": "L10이 손떨방이 없는데 영상에 적합할까요",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "201233",
+    "query": "루믹스바디 iso조절 질문드립니다~",
+    "category": "camera_feature",
+    "model_mentions": [],
+    "resolved_model_ids": [],
+    "retrieval_status": "no_results",
+    "normalized_query": "루믹스바디 iso조절",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "201204",
+    "query": "S9에서는 사진 위치 정보 확인 할 수 없나요??",
+    "category": "camera_feature",
+    "model_mentions": [
+      "S9"
+    ],
+    "resolved_model_ids": [
+      "DC-S9"
+    ],
+    "retrieval_status": "no_results",
+    "normalized_query": "에서는 사진 위치 정보 확인 할 수 없나요",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "201200",
+    "query": "루믹스 s9 카메라 액정 부분 이거 맞나요?!",
+    "category": "camera_feature",
+    "model_mentions": [
+      "S9"
+    ],
+    "resolved_model_ids": [
+      "DC-S9"
+    ],
+    "retrieval_status": "no_results",
+    "normalized_query": "카메라 액정 부분 이거 맞나요",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "201192",
+    "query": "오픈게이트 촬영후 편집 질문입니다",
+    "category": "camera_feature",
+    "model_mentions": [],
+    "resolved_model_ids": [],
+    "retrieval_status": "no_results",
+    "normalized_query": "오픈 게이트 촬영후 편집",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "201184",
+    "query": "gr4 시네마그린같은 사진LUT 있나요?",
+    "category": "camera_feature",
+    "model_mentions": [],
+    "resolved_model_ids": [],
+    "retrieval_status": "no_results",
+    "normalized_query": "gr4 시네마그린같은 사진LUT 있나요",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "201175",
+    "query": "S9에 L10 lut",
+    "category": "camera_feature",
+    "model_mentions": [
+      "S9"
+    ],
+    "resolved_model_ids": [
+      "DC-S9"
+    ],
+    "retrieval_status": "no_results",
+    "normalized_query": "에 L10 lut",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "201167",
+    "query": "초점 전환시 배경떨림 질문",
+    "category": "camera_feature",
+    "model_mentions": [],
+    "resolved_model_ids": [],
+    "retrieval_status": "no_results",
+    "normalized_query": "초점 전환시 배경떨림",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "201159",
+    "query": "루믹스 s9 영상촬영시 기계 소음 해결 방법",
+    "category": "camera_feature",
+    "model_mentions": [
+      "S9"
+    ],
+    "resolved_model_ids": [
+      "DC-S9"
+    ],
+    "retrieval_status": "no_results",
+    "normalized_query": "영상촬영시 기계 소음 해결 방법",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "201142",
+    "query": "루믹스S9 무음모드 촬영 시 소리",
+    "category": "camera_feature",
+    "model_mentions": [
+      "S9"
+    ],
+    "resolved_model_ids": [
+      "DC-S9"
+    ],
+    "retrieval_status": "no_results",
+    "normalized_query": "무음모드 촬영 시 소리",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "201131",
+    "query": "S5M2 헨드헬드로 영상 촬영하시는 분 계신가요?",
+    "category": "camera_feature",
+    "model_mentions": [
+      "S5M2"
+    ],
+    "resolved_model_ids": [
+      "DC-S5M2"
+    ],
+    "retrieval_status": "no_results",
+    "normalized_query": "헨드헬드로 영상 촬영하시는 분 계신가요",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "201109",
+    "query": "S9 커스텀(C3) 저장 방법 문의",
+    "category": "camera_feature",
+    "model_mentions": [
+      "S9"
+    ],
+    "resolved_model_ids": [
+      "DC-S9"
+    ],
+    "retrieval_status": "no_results",
+    "normalized_query": "커스텀(C3) 저장 방법",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "201105",
+    "query": "S5M2X 배터리 방전이 너무 빠른거 같은데 정상일까요?",
+    "category": "camera_feature",
+    "model_mentions": [
+      "S5M2X"
+    ],
+    "resolved_model_ids": [
+      "DC-S5M2X"
+    ],
+    "retrieval_status": "no_results",
+    "normalized_query": "배터리 방전이 너무 빠른거 같은데 정상일까요",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "201081",
+    "query": "S9 핸드폰 또는 컴퓨터로 사진전송",
+    "category": "camera_feature",
+    "model_mentions": [
+      "S9"
+    ],
+    "resolved_model_ids": [
+      "DC-S9"
+    ],
+    "retrieval_status": "no_results",
+    "normalized_query": "핸드폰 또는 컴퓨터로 사진전송",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "201068",
+    "query": "s9 카메라 액정이랑 폰으로 옮겨서 볼때 색감",
+    "category": "camera_feature",
+    "model_mentions": [
+      "S9"
+    ],
+    "resolved_model_ids": [
+      "DC-S9"
+    ],
+    "retrieval_status": "no_results",
+    "normalized_query": "카메라 액정이랑 폰으로 옮겨서 볼때 색감",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "201047",
+    "query": "S5m2 유저분들 루믹스 랩과 호환이 다들 잘 되시나요?",
+    "category": "camera_feature",
+    "model_mentions": [
+      "S5M2"
+    ],
+    "resolved_model_ids": [
+      "DC-S5M2"
+    ],
+    "retrieval_status": "no_results",
+    "normalized_query": "유저분들 루믹스 랩과 호환이 다들 잘 되시나요",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "201028",
+    "query": "Lumix lab에서 LUT다운로드가 안됩니다.",
+    "category": "camera_feature",
+    "model_mentions": [],
+    "resolved_model_ids": [],
+    "retrieval_status": "no_results",
+    "normalized_query": "Lumix lab에서 LUT다운로드가 안됩니다",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "201027",
+    "query": "럿 이름으로 검색이 가능한가요?",
+    "category": "camera_feature",
+    "model_mentions": [],
+    "resolved_model_ids": [],
+    "retrieval_status": "no_results",
+    "normalized_query": "LUT 이름으로 검색이",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "200985",
+    "query": "[S9]고수님들 촬영다이얼 커스텀모드(C1, C2)질문 있습니다-!",
+    "category": "camera_feature",
+    "model_mentions": [
+      "S9"
+    ],
+    "resolved_model_ids": [
+      "DC-S9"
+    ],
+    "retrieval_status": "no_results",
+    "normalized_query": "고수님들 촬영다이얼 커스텀모드(C1 C2) 있습니다-",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "200938",
+    "query": "스튜디오 첫촬영.. 조명 동조 관련 문의드립니다 (_ _",
+    "category": "camera_feature",
+    "model_mentions": [],
+    "resolved_model_ids": [],
+    "retrieval_status": "no_results",
+    "normalized_query": "스튜디오 첫촬영 조명 동조 (_ _",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "200909",
+    "query": "실내 영상 촬영시 어두운 이유??",
+    "category": "camera_feature",
+    "model_mentions": [],
+    "resolved_model_ids": [],
+    "retrieval_status": "no_results",
+    "normalized_query": "실내 영상 촬영시 어두운 이유",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "200899",
+    "query": "파나소닉 실시간 LUT 적용 방법 문의드립니다 (G9m2)",
+    "category": "camera_feature",
+    "model_mentions": [],
+    "resolved_model_ids": [],
+    "retrieval_status": "no_results",
+    "normalized_query": "파나소닉 실시간 LUT 적용 방법 ( )",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "200858",
+    "query": "iso오토일때 셔터스피드 조절에 대해",
+    "category": "camera_feature",
+    "model_mentions": [],
+    "resolved_model_ids": [],
+    "retrieval_status": "no_results",
+    "normalized_query": "iso오토일때 셔터스피드 조절에 대해",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "200841",
+    "query": "S5M2 슬로우/퀵 동영상 인식",
+    "category": "camera_feature",
+    "model_mentions": [
+      "S5M2"
+    ],
+    "resolved_model_ids": [
+      "DC-S5M2"
+    ],
+    "retrieval_status": "no_results",
+    "normalized_query": "슬로우/퀵 동영상 인식",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "200777",
+    "query": "s9화질 문의..",
+    "category": "camera_feature",
+    "model_mentions": [
+      "S9"
+    ],
+    "resolved_model_ids": [
+      "DC-S9"
+    ],
+    "retrieval_status": "ok",
+    "normalized_query": "화질",
+    "needs_pdf_label": true,
+    "sources": [
+      {
+        "rank": 1,
+        "document_id": "dc_s9_full_kor",
+        "model_id": "DC-S9",
+        "page": 495,
+        "feature_name": "[이미지 품질]",
+        "section_title": "[이미지 품질]",
+        "viewer_url": "/api/viewer/dc_s9_full_kor/pages/495",
+        "source_ref_valid": true
+      },
+      {
+        "rank": 2,
+        "document_id": "dc_s9_full_kor",
+        "model_id": "DC-S9",
+        "page": 508,
+        "feature_name": "[이미지 품질]",
+        "section_title": "[이미지 품질]",
+        "viewer_url": "/api/viewer/dc_s9_full_kor/pages/508",
+        "source_ref_valid": true
+      },
+      {
+        "rank": 3,
+        "document_id": "dc_s9_full_kor",
+        "model_id": "DC-S9",
+        "page": 117,
+        "feature_name": " 파일 분할 크기 간격 파일 크기가 다음 조건을 초과하면 계속 기록하기 위해 새 파일이 생성됩니 다.",
+        "section_title": " 파일 분할 크기 간격 파일 크기가 다음 조건을 초과하면 계속 기록하기 위해 새 파일이 생성됩니 다.",
+        "viewer_url": "/api/viewer/dc_s9_full_kor/pages/117",
+        "source_ref_valid": true
+      },
+      {
+        "rank": 4,
+        "document_id": "dc_s9_full_kor",
+        "model_id": "DC-S9",
+        "page": 123,
+        "feature_name": "[화질]",
+        "section_title": "[화질]",
+        "viewer_url": "/api/viewer/dc_s9_full_kor/pages/123",
+        "source_ref_valid": true
+      },
+      {
+        "rank": 5,
+        "document_id": "dc_s9_full_kor",
+        "model_id": "DC-S9",
+        "page": 125,
+        "feature_name": " [녹화 파일 형식]: [MP4(Lite)]",
+        "section_title": " [녹화 파일 형식]: [MP4(Lite)]",
+        "viewer_url": "/api/viewer/dc_s9_full_kor/pages/125",
+        "source_ref_valid": true
+      }
+    ],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "200747",
+    "query": "S9 동영상 파일 전송 오류",
+    "category": "camera_feature",
+    "model_mentions": [
+      "S9"
+    ],
+    "resolved_model_ids": [
+      "DC-S9"
+    ],
+    "retrieval_status": "no_results",
+    "normalized_query": "동영상 파일 전송 오류",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "200744",
+    "query": "S5M1 vs S5M2 색감",
+    "category": "camera_feature",
+    "model_mentions": [
+      "S5M2"
+    ],
+    "resolved_model_ids": [
+      "DC-S5M2"
+    ],
+    "retrieval_status": "no_results",
+    "normalized_query": "S5M1 vs 색감",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "200712",
+    "query": "루믹스랩 사진전송 질문",
+    "category": "camera_feature",
+    "model_mentions": [],
+    "resolved_model_ids": [],
+    "retrieval_status": "no_results",
+    "normalized_query": "LUMIX Lab 사진전송",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "200613",
+    "query": "S5m2x에 샌디스크 익스트림 프로 ssd 호환이 안되나요?",
+    "category": "camera_feature",
+    "model_mentions": [
+      "S5M2X"
+    ],
+    "resolved_model_ids": [
+      "DC-S5M2X"
+    ],
+    "retrieval_status": "no_results",
+    "normalized_query": "에 샌디스크 익스트림 프로 ssd 호환이 안되나요",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "200558",
+    "query": "영상 촬영시 ISO 문의 드립니다",
+    "category": "camera_feature",
+    "model_mentions": [],
+    "resolved_model_ids": [],
+    "retrieval_status": "no_results",
+    "normalized_query": "영상 촬영시 ISO",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "200542",
+    "query": "루믹스 s9 초점 잡을때 살짝 끊김 증상이 있나요 원래??",
+    "category": "camera_feature",
+    "model_mentions": [
+      "S9"
+    ],
+    "resolved_model_ids": [
+      "DC-S9"
+    ],
+    "retrieval_status": "no_results",
+    "normalized_query": "초점 잡을때 살짝 끊김 증상이 있나요 원래",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "200506",
+    "query": "파나소닉 lx100m2 촬영시 같은 3장이 저장돼요 ㅠ",
+    "category": "camera_feature",
+    "model_mentions": [
+      "LX100M2"
+    ],
+    "resolved_model_ids": [
+      "DC-LX100M2"
+    ],
+    "retrieval_status": "no_results",
+    "normalized_query": "파나소닉 촬영시 같은 3장이 저장돼요",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "200478",
+    "query": "아이폰으로 raw파일 전송 문제",
+    "category": "camera_feature",
+    "model_mentions": [],
+    "resolved_model_ids": [],
+    "retrieval_status": "no_results",
+    "normalized_query": "아이폰으로 raw파일 전송 문제",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "200461",
+    "query": "(s9) lut 촬영하시는분들 모두 raw로 촬영하시나요?",
+    "category": "camera_feature",
+    "model_mentions": [
+      "S9"
+    ],
+    "resolved_model_ids": [
+      "DC-S9"
+    ],
+    "retrieval_status": "no_results",
+    "normalized_query": "( ) lut 촬영하시는분들 모두 raw로 촬영하시나요",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "200422",
+    "query": "틀어짐이 적은 LUT 추천 부탁드립니다",
+    "category": "camera_feature",
+    "model_mentions": [],
+    "resolved_model_ids": [],
+    "retrieval_status": "no_results",
+    "normalized_query": "틀어짐이 적은 LUT 추천 부탁",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "200409",
+    "query": "화이트밸런스...노출...반셔터때와 다르게 찍히는 이유 알수있을까요ㅜㅜ",
+    "category": "camera_feature",
+    "model_mentions": [],
+    "resolved_model_ids": [],
+    "retrieval_status": "no_results",
+    "normalized_query": "화이트밸런스 노출 반셔터때와 다르게 찍히는 이유 알수있을까요",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "200368",
+    "query": "g9m2를 쓰다 서브로 gh5s를 주문했는데 배터리 그대로 사용 가능한가요?",
+    "category": "camera_feature",
+    "model_mentions": [],
+    "resolved_model_ids": [],
+    "retrieval_status": "no_results",
+    "normalized_query": "를 쓰다 서브로 를 주문했는데 배터리 그대로 사용",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "200347",
+    "query": "s1h 영상 리그로 사용하시는 분 계실까요",
+    "category": "camera_feature",
+    "model_mentions": [],
+    "resolved_model_ids": [],
+    "retrieval_status": "no_results",
+    "normalized_query": "영상 리그로 사용하시는 분 계실까요",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "200328",
+    "query": "BLK22 배터리 카메라로 충전시 속도 얼마나 나오나요?",
+    "category": "camera_feature",
+    "model_mentions": [],
+    "resolved_model_ids": [],
+    "retrieval_status": "no_results",
+    "normalized_query": "BLK22 배터리 카메라로 충전시 속도 얼마나 나오나요",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "200299",
+    "query": "실시간 lut",
+    "category": "camera_feature",
+    "model_mentions": [],
+    "resolved_model_ids": [],
+    "retrieval_status": "ok",
+    "normalized_query": "실시간 lut",
+    "needs_pdf_label": true,
+    "sources": [
+      {
+        "rank": 1,
+        "document_id": "dc_gh7_full_kor",
+        "model_id": "DC-GH7",
+        "page": 603,
+        "feature_name": "[이미지 품질]",
+        "section_title": "[이미지 품질]",
+        "viewer_url": "/api/viewer/dc_gh7_full_kor/pages/603",
+        "source_ref_valid": true
+      },
+      {
+        "rank": 2,
+        "document_id": "dc_s1m2_full_kor",
+        "model_id": "DC-S1M2",
+        "page": 652,
+        "feature_name": "Fn",
+        "section_title": "Fn",
+        "viewer_url": "/api/viewer/dc_s1m2_full_kor/pages/652",
+        "source_ref_valid": true
+      },
+      {
+        "rank": 3,
+        "document_id": "dc_s1m2es_full_kor",
+        "model_id": "DC-S1M2ES",
+        "page": 631,
+        "feature_name": "Fn",
+        "section_title": "Fn",
+        "viewer_url": "/api/viewer/dc_s1m2es_full_kor/pages/631",
+        "source_ref_valid": true
+      },
+      {
+        "rank": 4,
+        "document_id": "dc_s1rm2_full_kor",
+        "model_id": "DC-S1RM2",
+        "page": 612,
+        "feature_name": "Fn",
+        "section_title": "Fn",
+        "viewer_url": "/api/viewer/dc_s1rm2_full_kor/pages/612",
+        "source_ref_valid": true
+      },
+      {
+        "rank": 5,
+        "document_id": "dc_s9_full_kor",
+        "model_id": "DC-S9",
+        "page": 493,
+        "feature_name": "[이미지 품질]",
+        "section_title": "[이미지 품질]",
+        "viewer_url": "/api/viewer/dc_s9_full_kor/pages/493",
+        "source_ref_valid": true
+      }
+    ],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "200260",
+    "query": "s9 화질 질문이요 ㅠㅠ",
+    "category": "camera_feature",
+    "model_mentions": [
+      "S9"
+    ],
+    "resolved_model_ids": [
+      "DC-S9"
+    ],
+    "retrieval_status": "no_results",
+    "normalized_query": "화질 이요",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "200235",
+    "query": "[S9] 후보정 lut 화질저하 질문합니당",
+    "category": "camera_feature",
+    "model_mentions": [
+      "S9"
+    ],
+    "resolved_model_ids": [
+      "DC-S9"
+    ],
+    "retrieval_status": "no_results",
+    "normalized_query": "후보정 lut 화질저하 합니당",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "200161",
+    "query": "Lumix lab magic lut 활용법",
+    "category": "camera_feature",
+    "model_mentions": [],
+    "resolved_model_ids": [],
+    "retrieval_status": "no_results",
+    "normalized_query": "Lumix lab magic lut 활용법",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "200077",
+    "query": "LX100M2 AFC 초점 문제",
+    "category": "camera_feature",
+    "model_mentions": [
+      "LX100M2"
+    ],
+    "resolved_model_ids": [
+      "DC-LX100M2"
+    ],
+    "retrieval_status": "no_results",
+    "normalized_query": "AFC 초점 문제",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "200074",
+    "query": "S1H에서 사진모드 설정하고 동영상으로 넘어가면 설정값이 그대로 따라가나요?",
+    "category": "camera_feature",
+    "model_mentions": [],
+    "resolved_model_ids": [],
+    "retrieval_status": "no_results",
+    "normalized_query": "사진모드 설정하고 동영상으로 넘어가면 설정값이 그대로 따라가나요",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "200071",
+    "query": "루믹스랩 어플 다른분들도 버그 심하신가요?",
+    "category": "camera_feature",
+    "model_mentions": [],
+    "resolved_model_ids": [],
+    "retrieval_status": "no_results",
+    "normalized_query": "LUMIX Lab 어플 다른분들도 버그 심하신가요",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "200029",
+    "query": "s1m2 여기에 단축키 설정못하나요?",
+    "category": "camera_feature",
+    "model_mentions": [
+      "S1M2"
+    ],
+    "resolved_model_ids": [
+      "DC-S1M2"
+    ],
+    "retrieval_status": "no_results",
+    "normalized_query": "여기에 단축키 설정못하나요",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "200026",
+    "query": "루믹스 s9 상단 노출 질문입니다",
+    "category": "camera_feature",
+    "model_mentions": [
+      "S9"
+    ],
+    "resolved_model_ids": [
+      "DC-S9"
+    ],
+    "retrieval_status": "no_results",
+    "normalized_query": "상단 노출",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "200003",
+    "query": "S1M2 usb 충전 중 보조배터리 배터리가 0이면!",
+    "category": "camera_feature",
+    "model_mentions": [
+      "S1M2"
+    ],
+    "resolved_model_ids": [
+      "DC-S1M2"
+    ],
+    "retrieval_status": "no_results",
+    "normalized_query": "usb 충전 중 보조배터리 배터리가 0이면",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "199985",
+    "query": "하이브리드 줌 질문",
+    "category": "camera_feature",
+    "model_mentions": [],
+    "resolved_model_ids": [],
+    "retrieval_status": "ok",
+    "normalized_query": "하이브리드 줌",
+    "needs_pdf_label": true,
+    "sources": [
+      {
+        "rank": 1,
+        "document_id": "dc_s1m2_full_kor",
+        "model_id": "DC-S1M2",
+        "page": 654,
+        "feature_name": "Fn",
+        "section_title": "Fn",
+        "viewer_url": "/api/viewer/dc_s1m2_full_kor/pages/654",
+        "source_ref_valid": true
+      },
+      {
+        "rank": 2,
+        "document_id": "dc_s1m2_full_kor",
+        "model_id": "DC-S1M2",
+        "page": 655,
+        "feature_name": "Fn",
+        "section_title": "Fn",
+        "viewer_url": "/api/viewer/dc_s1m2_full_kor/pages/655",
+        "source_ref_valid": true
+      },
+      {
+        "rank": 3,
+        "document_id": "dc_s1m2_full_kor",
+        "model_id": "DC-S1M2",
+        "page": 668,
+        "feature_name": "[이미지 품질]",
+        "section_title": "[이미지 품질]",
+        "viewer_url": "/api/viewer/dc_s1m2_full_kor/pages/668",
+        "source_ref_valid": true
+      },
+      {
+        "rank": 4,
+        "document_id": "dc_s1m2_full_kor",
+        "model_id": "DC-S1M2",
+        "page": 670,
+        "feature_name": "[기타 (비디오)]",
+        "section_title": "[기타 (비디오)]",
+        "viewer_url": "/api/viewer/dc_s1m2_full_kor/pages/670",
+        "source_ref_valid": true
+      },
+      {
+        "rank": 5,
+        "document_id": "dc_s1m2_full_kor",
+        "model_id": "DC-S1M2",
+        "page": 867,
+        "feature_name": "촬영 화면",
+        "section_title": "촬영 화면",
+        "viewer_url": "/api/viewer/dc_s1m2_full_kor/pages/867",
+        "source_ref_valid": true
+      }
+    ],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "199866",
+    "query": "이런 사진이나 영상 찍고싶은데 아시는분..",
+    "category": "camera_feature",
+    "model_mentions": [],
+    "resolved_model_ids": [],
+    "retrieval_status": "no_results",
+    "normalized_query": "이런 사진이나 영상 찍고싶은데 아시는분",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "199860",
+    "query": "인물 2인이상 찍을때 초점 질문합니다.",
+    "category": "camera_feature",
+    "model_mentions": [],
+    "resolved_model_ids": [],
+    "retrieval_status": "no_results",
+    "normalized_query": "인물 2인이상 찍을때 초점 합니다",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "199858",
+    "query": "루믹스 S9 AF 질문입니다",
+    "category": "camera_feature",
+    "model_mentions": [
+      "S9"
+    ],
+    "resolved_model_ids": [
+      "DC-S9"
+    ],
+    "retrieval_status": "ok",
+    "normalized_query": "AF",
+    "needs_pdf_label": true,
+    "sources": [
+      {
+        "rank": 1,
+        "document_id": "dc_s9_full_kor",
+        "model_id": "DC-S9",
+        "page": 530,
+        "feature_name": "[사용자] 메뉴([작동])",
+        "section_title": "[사용자] 메뉴([작동])",
+        "viewer_url": "/api/viewer/dc_s9_full_kor/pages/530",
+        "source_ref_valid": true
+      },
+      {
+        "rank": 2,
+        "document_id": "dc_s9_full_kor",
+        "model_id": "DC-S9",
+        "page": 98,
+        "feature_name": "터치 AF/터치 셔터",
+        "section_title": "터치 AF/터치 셔터",
+        "viewer_url": "/api/viewer/dc_s9_full_kor/pages/98",
+        "source_ref_valid": true
+      },
+      {
+        "rank": 3,
+        "document_id": "dc_s9_full_kor",
+        "model_id": "DC-S9",
+        "page": 100,
+        "feature_name": "터치 AE",
+        "section_title": "터치 AE",
+        "viewer_url": "/api/viewer/dc_s9_full_kor/pages/100",
+        "source_ref_valid": true
+      },
+      {
+        "rank": 4,
+        "document_id": "dc_s9_full_kor",
+        "model_id": "DC-S9",
+        "page": 184,
+        "feature_name": "4 초점을 조절합니다.",
+        "section_title": "4 초점을 조절합니다.",
+        "viewer_url": "/api/viewer/dc_s9_full_kor/pages/184",
+        "source_ref_valid": true
+      },
+      {
+        "rank": 5,
+        "document_id": "dc_s9_full_kor",
+        "model_id": "DC-S9",
+        "page": 185,
+        "feature_name": " MF 보조 화면 조작",
+        "section_title": " MF 보조 화면 조작",
+        "viewer_url": "/api/viewer/dc_s9_full_kor/pages/185",
+        "source_ref_valid": true
+      }
+    ],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "199834",
+    "query": "GF7 컷수 확인 방법",
+    "category": "camera_feature",
+    "model_mentions": [],
+    "resolved_model_ids": [],
+    "retrieval_status": "no_results",
+    "normalized_query": "GF7 컷수 확인 방법",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "199832",
+    "query": "루믹스 어려워용... LUT도 어렵고 ㅡ.ㅜ",
+    "category": "camera_feature",
+    "model_mentions": [],
+    "resolved_model_ids": [],
+    "retrieval_status": "no_results",
+    "normalized_query": "루믹스 어려워용 LUT도 어렵고 ㅡ",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "199826",
+    "query": "HDR 영상 편집시…",
+    "category": "camera_feature",
+    "model_mentions": [],
+    "resolved_model_ids": [],
+    "retrieval_status": "no_results",
+    "normalized_query": "HDR 영상 편집시…",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "199809",
+    "query": "s5m2x 저가 중국산 배터리 문제 없을까요?",
+    "category": "camera_feature",
+    "model_mentions": [
+      "S5M2X"
+    ],
+    "resolved_model_ids": [
+      "DC-S5M2X"
+    ],
+    "retrieval_status": "no_results",
+    "normalized_query": "저가 중국산 배터리 문제 없을까요",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "199802",
+    "query": "S9에서도 lx100m2처럼 동영상 촬영중 사진 캡쳐 기능 있나요?",
+    "category": "camera_feature",
+    "model_mentions": [
+      "S9",
+      "LX100M2"
+    ],
+    "resolved_model_ids": [
+      "DC-S9",
+      "DC-LX100M2"
+    ],
+    "retrieval_status": "no_results",
+    "normalized_query": "에서도 처럼 동영상 촬영중 사진 캡쳐 기능 있나요",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "199800",
+    "query": "크롭줌 하이브리드줌 개념...",
+    "category": "camera_feature",
+    "model_mentions": [],
+    "resolved_model_ids": [],
+    "retrieval_status": "no_results",
+    "normalized_query": "크롭줌 하이브리드줌 개념",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "199715",
+    "query": "루믹스 S9 영상 질문입니다",
+    "category": "camera_feature",
+    "model_mentions": [
+      "S9"
+    ],
+    "resolved_model_ids": [
+      "DC-S9"
+    ],
+    "retrieval_status": "ok",
+    "normalized_query": "영상",
+    "needs_pdf_label": true,
+    "sources": [
+      {
+        "rank": 1,
+        "document_id": "dc_s9_full_kor",
+        "model_id": "DC-S9",
+        "page": 743,
+        "feature_name": "[비디오]: [기타 (비디오)]",
+        "section_title": "[비디오]: [기타 (비디오)]",
+        "viewer_url": "/api/viewer/dc_s9_full_kor/pages/743",
+        "source_ref_valid": true
+      },
+      {
+        "rank": 2,
+        "document_id": "dc_s9_full_kor",
+        "model_id": "DC-S9",
+        "page": 741,
+        "feature_name": "[비디오]: [초점]",
+        "section_title": "[비디오]: [초점]",
+        "viewer_url": "/api/viewer/dc_s9_full_kor/pages/741",
+        "source_ref_valid": true
+      },
+      {
+        "rank": 3,
+        "document_id": "dc_s9_full_kor",
+        "model_id": "DC-S9",
+        "page": 186,
+        "feature_name": " MF 보조 화면 조작",
+        "section_title": " MF 보조 화면 조작",
+        "viewer_url": "/api/viewer/dc_s9_full_kor/pages/186",
+        "source_ref_valid": true
+      }
+    ],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "199705",
+    "query": "fujify lut 사용해 보신 분 계신가요?",
+    "category": "camera_feature",
+    "model_mentions": [],
+    "resolved_model_ids": [],
+    "retrieval_status": "no_results",
+    "normalized_query": "fujify lut 사용해 보신 분 계신가요",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "199688",
+    "query": "S5M2X 영상 세팅법",
+    "category": "camera_feature",
+    "model_mentions": [
+      "S5M2X"
+    ],
+    "resolved_model_ids": [
+      "DC-S5M2X"
+    ],
+    "retrieval_status": "no_results",
+    "normalized_query": "영상 세팅법",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "199638",
+    "query": "소니 쓰다가 s1r2로 왔는데 역동적인 인물 af 나만 불편함을 느끼는 건가영?",
+    "category": "camera_feature",
+    "model_mentions": [
+      "S1R2"
+    ],
+    "resolved_model_ids": [
+      "DC-S1RM2"
+    ],
+    "retrieval_status": "no_results",
+    "normalized_query": "소니 쓰다가 로 왔는데 역동적인 인물 af 나만 불편함을 느끼는 건가영",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "199635",
+    "query": "G9M2 + Olym 12-100F4 조합에서 바디손떨방 불가",
+    "category": "camera_feature",
+    "model_mentions": [],
+    "resolved_model_ids": [],
+    "retrieval_status": "no_results",
+    "normalized_query": "+ Olym 12-100F4 조합에서 바디손떨방 불가",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "199634",
+    "query": "S9 사진이 한번에 3장씩 촬영되는데 사유가 궁금합니다.",
+    "category": "camera_feature",
+    "model_mentions": [
+      "S9"
+    ],
+    "resolved_model_ids": [
+      "DC-S9"
+    ],
+    "retrieval_status": "no_results",
+    "normalized_query": "사진이 한번에 3장씩 촬영되는데 사유가 궁금합니다",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "199560",
+    "query": "[S9] AF 초점 유형 설정 및 조작방법 질문",
+    "category": "camera_feature",
+    "model_mentions": [
+      "S9"
+    ],
+    "resolved_model_ids": [
+      "DC-S9"
+    ],
+    "retrieval_status": "no_results",
+    "normalized_query": "AF 초점 유형 설정 및 조작방법",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "199558",
+    "query": "혹시 s1r2 발열 테스트 해보신분 계실까요?",
+    "category": "camera_feature",
+    "model_mentions": [
+      "S1R2"
+    ],
+    "resolved_model_ids": [
+      "DC-S1RM2"
+    ],
+    "retrieval_status": "no_results",
+    "normalized_query": "혹시 발열 테스트 해보신분 계실까요",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "199531",
+    "query": "[S9] 야간촬영 모드 (P? A? S? M? iA?) 뭘로 어떻게 해야할까요?ㅠ",
+    "category": "camera_feature",
+    "model_mentions": [
+      "S9"
+    ],
+    "resolved_model_ids": [
+      "DC-S9"
+    ],
+    "retrieval_status": "no_results",
+    "normalized_query": "야간촬영 모드 (P A S M iA ) 뭘로 어떻게 해야할까요",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "199527",
+    "query": "S9 촬영 결과물 관련 문의",
+    "category": "camera_feature",
+    "model_mentions": [
+      "S9"
+    ],
+    "resolved_model_ids": [
+      "DC-S9"
+    ],
+    "retrieval_status": "no_results",
+    "normalized_query": "촬영 결과물",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "199509",
+    "query": "마이크로포서드 카메라 중 다중노출이 있는 카메라 어떤게 있을까요?",
+    "category": "camera_feature",
+    "model_mentions": [],
+    "resolved_model_ids": [],
+    "retrieval_status": "no_results",
+    "normalized_query": "마이크로포서드 카메라 중 다중노출이 있는 카메라 어떤게 있을까요",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "199488",
+    "query": "색감 장인 선생님 도와주세요😢 아쿠아 400",
+    "category": "camera_feature",
+    "model_mentions": [],
+    "resolved_model_ids": [],
+    "retrieval_status": "no_results",
+    "normalized_query": "색감 장인 선생님 도와주세요😢 아쿠아 400",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "199474",
+    "query": "사진이 세장씩 저장돼요",
+    "category": "camera_feature",
+    "model_mentions": [],
+    "resolved_model_ids": [],
+    "retrieval_status": "no_results",
+    "normalized_query": "사진이 세장씩 저장돼요",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "199435",
+    "query": "셔터눌러서 초점만 왔다갔다하고 사진이 안찍혀요",
+    "category": "camera_feature",
+    "model_mentions": [],
+    "resolved_model_ids": [],
+    "retrieval_status": "no_results",
+    "normalized_query": "셔터눌러서 초점만 왔다갔다하고 사진이 안찍혀요",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "199428",
+    "query": "S1M2 핀포인트 AF 관련 질문드립니다.",
+    "category": "camera_feature",
+    "model_mentions": [
+      "S1M2"
+    ],
+    "resolved_model_ids": [
+      "DC-S1M2"
+    ],
+    "retrieval_status": "ok",
+    "normalized_query": "핀포인트 AF",
+    "needs_pdf_label": true,
+    "sources": [
+      {
+        "rank": 1,
+        "document_id": "dc_s1m2_full_kor",
+        "model_id": "DC-S1M2",
+        "page": 690,
+        "feature_name": "[사용자] 메뉴([초점/셔터])",
+        "section_title": "[사용자] 메뉴([초점/셔터])",
+        "viewer_url": "/api/viewer/dc_s1m2_full_kor/pages/690",
+        "source_ref_valid": true
+      },
+      {
+        "rank": 2,
+        "document_id": "dc_s1m2_full_kor",
+        "model_id": "DC-S1M2",
+        "page": 690,
+        "feature_name": "[사용자] 메뉴([초점/셔터])",
+        "section_title": "[사용자] 메뉴([초점/셔터])",
+        "viewer_url": "/api/viewer/dc_s1m2_full_kor/pages/690",
+        "source_ref_valid": true
+      },
+      {
+        "rank": 3,
+        "document_id": "dc_s1m2_full_kor",
+        "model_id": "DC-S1M2",
+        "page": 690,
+        "feature_name": "[사용자] 메뉴([초점/셔터])",
+        "section_title": "[사용자] 메뉴([초점/셔터])",
+        "viewer_url": "/api/viewer/dc_s1m2_full_kor/pages/690",
+        "source_ref_valid": true
+      },
+      {
+        "rank": 4,
+        "document_id": "dc_s1m2_full_kor",
+        "model_id": "DC-S1M2",
+        "page": 953,
+        "feature_name": "[사용자]: [초점/셔터]",
+        "section_title": "[사용자]: [초점/셔터]",
+        "viewer_url": "/api/viewer/dc_s1m2_full_kor/pages/953",
+        "source_ref_valid": true
+      },
+      {
+        "rank": 5,
+        "document_id": "dc_s1m2_full_kor",
+        "model_id": "DC-S1M2",
+        "page": 953,
+        "feature_name": "[사용자]: [초점/셔터]",
+        "section_title": "[사용자]: [초점/셔터]",
+        "viewer_url": "/api/viewer/dc_s1m2_full_kor/pages/953",
+        "source_ref_valid": true
+      }
+    ],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "199427",
+    "query": "일본 감성으로 찍고싶어요 ㅠ (LUT세팅)",
+    "category": "camera_feature",
+    "model_mentions": [],
+    "resolved_model_ids": [],
+    "retrieval_status": "no_results",
+    "normalized_query": "일본 감성으로 찍고싶어요 (LUT세팅)",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "199413",
+    "query": "[S9]카메라를 가로 세로로 돌리면 안에서 덜컹거려요.(손떨방때문인거로... 확인완료!)",
+    "category": "camera_feature",
+    "model_mentions": [
+      "S9"
+    ],
+    "resolved_model_ids": [
+      "DC-S9"
+    ],
+    "retrieval_status": "no_results",
+    "normalized_query": "카메라를 가로 세로로 돌리면 안에서 덜컹거려요 (손떨방때문인거로 확인완료 )",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "199402",
+    "query": "초점이 왜 안잡히는 느낌 나는지 모르겠어요ㅜㅜ",
+    "category": "camera_feature",
+    "model_mentions": [],
+    "resolved_model_ids": [],
+    "retrieval_status": "no_results",
+    "normalized_query": "초점이 왜 안잡히는 느낌 나는지 모르겠어요",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "199369",
+    "query": "파나소닉 s9 눈,비 촬영 가능한가요? 방진방적 지원안되는거면 절대 안되는건지",
+    "category": "camera_feature",
+    "model_mentions": [
+      "S9"
+    ],
+    "resolved_model_ids": [
+      "DC-S9"
+    ],
+    "retrieval_status": "no_results",
+    "normalized_query": "파나소닉 눈 비 촬영 방진방적 지원안되는거면 절대 안되는건지",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "199288",
+    "query": "85.8도 크롭줌이 되나요?",
+    "category": "camera_feature",
+    "model_mentions": [],
+    "resolved_model_ids": [],
+    "retrieval_status": "no_results",
+    "normalized_query": "85 8도 크롭줌이 되나요",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "199254",
+    "query": "S9 노출조정 고정방법 모르겠어요..",
+    "category": "camera_feature",
+    "model_mentions": [
+      "S9"
+    ],
+    "resolved_model_ids": [
+      "DC-S9"
+    ],
+    "retrieval_status": "no_results",
+    "normalized_query": "노출조정 고정방법 모르겠어요",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "199229",
+    "query": "[S9] 찍은 사진,영상 파일명을 날짜로...",
+    "category": "camera_feature",
+    "model_mentions": [
+      "S9"
+    ],
+    "resolved_model_ids": [
+      "DC-S9"
+    ],
+    "retrieval_status": "no_results",
+    "normalized_query": "찍은 사진 영상 파일명을 날짜로",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "199188",
+    "query": "s9 / s5m2x 사진색감차이",
+    "category": "camera_feature",
+    "model_mentions": [
+      "S5M2X",
+      "S9"
+    ],
+    "resolved_model_ids": [
+      "DC-S5M2X",
+      "DC-S9"
+    ],
+    "retrieval_status": "no_results",
+    "normalized_query": "/ 사진색감차이",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "199163",
+    "query": "s9 화이트밸런스 켈빈값 브라케팅 (사진이 2~3장씩 저장됩니다)",
+    "category": "camera_feature",
+    "model_mentions": [
+      "S9"
+    ],
+    "resolved_model_ids": [
+      "DC-S9"
+    ],
+    "retrieval_status": "no_results",
+    "normalized_query": "화이트밸런스 켈빈값 브라케팅 (사진이 2 3장씩 저장됩니다)",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "199131",
+    "query": "S9 af 포커스 포인트 이동 키 배치 변경법",
+    "category": "camera_feature",
+    "model_mentions": [
+      "S9"
+    ],
+    "resolved_model_ids": [
+      "DC-S9"
+    ],
+    "retrieval_status": "no_results",
+    "normalized_query": "af 포커스 포인트 이동 키 배치 변경법",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "199113",
+    "query": "S9 사진 초점 관련 문의",
+    "category": "camera_feature",
+    "model_mentions": [
+      "S9"
+    ],
+    "resolved_model_ids": [
+      "DC-S9"
+    ],
+    "retrieval_status": "ok",
+    "normalized_query": "사진 초점",
+    "needs_pdf_label": true,
+    "sources": [
+      {
+        "rank": 1,
+        "document_id": "dc_s9_full_kor",
+        "model_id": "DC-S9",
+        "page": 737,
+        "feature_name": "메뉴 기본 설정",
+        "section_title": "메뉴 기본 설정",
+        "viewer_url": "/api/viewer/dc_s9_full_kor/pages/737",
+        "source_ref_valid": true
+      },
+      {
+        "rank": 2,
+        "document_id": "dc_s9_full_kor",
+        "model_id": "DC-S9",
+        "page": 759,
+        "feature_name": "[사진]: [초점]",
+        "section_title": "[사진]: [초점]",
+        "viewer_url": "/api/viewer/dc_s9_full_kor/pages/759",
+        "source_ref_valid": true
+      },
+      {
+        "rank": 3,
+        "document_id": "dc_s9_full_kor",
+        "model_id": "DC-S9",
+        "page": 213,
+        "feature_name": " 연사 사진 촬영 시 초점",
+        "section_title": " 연사 사진 촬영 시 초점",
+        "viewer_url": "/api/viewer/dc_s9_full_kor/pages/213",
+        "source_ref_valid": true
+      },
+      {
+        "rank": 4,
+        "document_id": "dc_s9_full_kor",
+        "model_id": "DC-S9",
+        "page": 576,
+        "feature_name": "[사진] 메뉴",
+        "section_title": "[사진] 메뉴",
+        "viewer_url": "/api/viewer/dc_s9_full_kor/pages/576",
+        "source_ref_valid": true
+      },
+      {
+        "rank": 5,
+        "document_id": "dc_s9_full_kor",
+        "model_id": "DC-S9",
+        "page": 94,
+        "feature_name": " 자동 장면 감지 유형",
+        "section_title": " 자동 장면 감지 유형",
+        "viewer_url": "/api/viewer/dc_s9_full_kor/pages/94",
+        "source_ref_valid": true
+      }
+    ],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "199053",
+    "query": "루믹스랩에서 사진 조정 후 내보내기 깨짐 문제",
+    "category": "camera_feature",
+    "model_mentions": [],
+    "resolved_model_ids": [],
+    "retrieval_status": "no_results",
+    "normalized_query": "LUMIX Lab에서 사진 조정 후 내보내기 깨짐 문제",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "199047",
+    "query": "Lut 적용 질문드립니다.",
+    "category": "camera_feature",
+    "model_mentions": [],
+    "resolved_model_ids": [],
+    "retrieval_status": "ok",
+    "normalized_query": "Lut 적용",
+    "needs_pdf_label": true,
+    "sources": [
+      {
+        "rank": 1,
+        "document_id": "dc_g9m2_full_kor",
+        "model_id": "DC-G9M2",
+        "page": 533,
+        "feature_name": "[이미지 품질]",
+        "section_title": "[이미지 품질]",
+        "viewer_url": "/api/viewer/dc_g9m2_full_kor/pages/533",
+        "source_ref_valid": true
+      },
+      {
+        "rank": 2,
+        "document_id": "dc_gh7_full_kor",
+        "model_id": "DC-GH7",
+        "page": 603,
+        "feature_name": "[이미지 품질]",
+        "section_title": "[이미지 품질]",
+        "viewer_url": "/api/viewer/dc_gh7_full_kor/pages/603",
+        "source_ref_valid": true
+      },
+      {
+        "rank": 3,
+        "document_id": "dc_s1m2_full_kor",
+        "model_id": "DC-S1M2",
+        "page": 652,
+        "feature_name": "Fn",
+        "section_title": "Fn",
+        "viewer_url": "/api/viewer/dc_s1m2_full_kor/pages/652",
+        "source_ref_valid": true
+      },
+      {
+        "rank": 4,
+        "document_id": "dc_s1m2es_full_kor",
+        "model_id": "DC-S1M2ES",
+        "page": 631,
+        "feature_name": "Fn",
+        "section_title": "Fn",
+        "viewer_url": "/api/viewer/dc_s1m2es_full_kor/pages/631",
+        "source_ref_valid": true
+      },
+      {
+        "rank": 5,
+        "document_id": "dc_s1rm2_full_kor",
+        "model_id": "DC-S1RM2",
+        "page": 612,
+        "feature_name": "Fn",
+        "section_title": "Fn",
+        "viewer_url": "/api/viewer/dc_s1rm2_full_kor/pages/612",
+        "source_ref_valid": true
+      }
+    ],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "199007",
+    "query": "영상편집용 모니터 추천 부탁드리겠습니다^^",
+    "category": "camera_feature",
+    "model_mentions": [],
+    "resolved_model_ids": [],
+    "retrieval_status": "no_results",
+    "normalized_query": "영상편집용 모니터 추천 부탁드리겠습니다^^",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "199004",
+    "query": "루믹스s1m2 포멕스 동조기 호환되나요?",
+    "category": "camera_feature",
+    "model_mentions": [
+      "S1M2"
+    ],
+    "resolved_model_ids": [
+      "DC-S1M2"
+    ],
+    "retrieval_status": "no_results",
+    "normalized_query": "포멕스 동조기 호환되나요",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "198997",
+    "query": "S5m2 영상용 Sd카드 추천부탁드립니다",
+    "category": "camera_feature",
+    "model_mentions": [
+      "S5M2"
+    ],
+    "resolved_model_ids": [
+      "DC-S5M2"
+    ],
+    "retrieval_status": "no_results",
+    "normalized_query": "영상용 Sd카드 추천부탁",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "198971",
+    "query": "S9 시간 설정 다시 어떻게 하나요?",
+    "category": "camera_feature",
+    "model_mentions": [
+      "S9"
+    ],
+    "resolved_model_ids": [
+      "DC-S9"
+    ],
+    "retrieval_status": "no_results",
+    "normalized_query": "시간 설정 다시 어떻게 하나요",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "198946",
+    "query": "S9 캡처카드 추천(카메라 촬영 화면 녹화 송출)",
+    "category": "camera_feature",
+    "model_mentions": [
+      "S9"
+    ],
+    "resolved_model_ids": [
+      "DC-S9"
+    ],
+    "retrieval_status": "no_results",
+    "normalized_query": "캡처카드 추천(카메라 촬영 화면 녹화 송출)",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "198926",
+    "query": "하이브리드 줌 질문입니다.",
+    "category": "camera_feature",
+    "model_mentions": [],
+    "resolved_model_ids": [],
+    "retrieval_status": "ok",
+    "normalized_query": "하이브리드 줌",
+    "needs_pdf_label": true,
+    "sources": [
+      {
+        "rank": 1,
+        "document_id": "dc_s1m2_full_kor",
+        "model_id": "DC-S1M2",
+        "page": 654,
+        "feature_name": "Fn",
+        "section_title": "Fn",
+        "viewer_url": "/api/viewer/dc_s1m2_full_kor/pages/654",
+        "source_ref_valid": true
+      },
+      {
+        "rank": 2,
+        "document_id": "dc_s1m2_full_kor",
+        "model_id": "DC-S1M2",
+        "page": 655,
+        "feature_name": "Fn",
+        "section_title": "Fn",
+        "viewer_url": "/api/viewer/dc_s1m2_full_kor/pages/655",
+        "source_ref_valid": true
+      },
+      {
+        "rank": 3,
+        "document_id": "dc_s1m2_full_kor",
+        "model_id": "DC-S1M2",
+        "page": 668,
+        "feature_name": "[이미지 품질]",
+        "section_title": "[이미지 품질]",
+        "viewer_url": "/api/viewer/dc_s1m2_full_kor/pages/668",
+        "source_ref_valid": true
+      },
+      {
+        "rank": 4,
+        "document_id": "dc_s1m2_full_kor",
+        "model_id": "DC-S1M2",
+        "page": 670,
+        "feature_name": "[기타 (비디오)]",
+        "section_title": "[기타 (비디오)]",
+        "viewer_url": "/api/viewer/dc_s1m2_full_kor/pages/670",
+        "source_ref_valid": true
+      },
+      {
+        "rank": 5,
+        "document_id": "dc_s1m2_full_kor",
+        "model_id": "DC-S1M2",
+        "page": 867,
+        "feature_name": "촬영 화면",
+        "section_title": "촬영 화면",
+        "viewer_url": "/api/viewer/dc_s1m2_full_kor/pages/867",
+        "source_ref_valid": true
+      }
+    ],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "198839",
+    "query": "촬영 대상의 색에 따른 포커스 피킹",
+    "category": "camera_feature",
+    "model_mentions": [],
+    "resolved_model_ids": [],
+    "retrieval_status": "no_results",
+    "normalized_query": "촬영 대상의 색에 따른 포커스 피킹",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "198830",
+    "query": "GH5 사진 af 감도,속도?",
+    "category": "camera_feature",
+    "model_mentions": [],
+    "resolved_model_ids": [],
+    "retrieval_status": "no_results",
+    "normalized_query": "사진 af 감도 속도",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "198714",
+    "query": "노출과 히스토그램?",
+    "category": "camera_feature",
+    "model_mentions": [],
+    "resolved_model_ids": [],
+    "retrieval_status": "no_results",
+    "normalized_query": "노출과 히스토그램",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "198685",
+    "query": "Vlog 촬영 질문",
+    "category": "camera_feature",
+    "model_mentions": [],
+    "resolved_model_ids": [],
+    "retrieval_status": "no_results",
+    "normalized_query": "Vlog 촬영",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "198613",
+    "query": "E손떨림보정 화질열화 궁금합니다.",
+    "category": "camera_feature",
+    "model_mentions": [],
+    "resolved_model_ids": [],
+    "retrieval_status": "no_results",
+    "normalized_query": "E손떨림보정 화질열화 궁금합니다",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "198571",
+    "query": "루믹스s9 구입했는데 궁금한 게 있어요 (lut관련)",
+    "category": "camera_feature",
+    "model_mentions": [
+      "S9"
+    ],
+    "resolved_model_ids": [
+      "DC-S9"
+    ],
+    "retrieval_status": "no_results",
+    "normalized_query": "구입했는데 궁금한 게 있어요 (lut )",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "198562",
+    "query": "동영상 촬영시 모터소리?",
+    "category": "camera_feature",
+    "model_mentions": [],
+    "resolved_model_ids": [],
+    "retrieval_status": "no_results",
+    "normalized_query": "동영상 촬영시 모터소리",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "198555",
+    "query": "루믹스랩 럿 검색 관련질문",
+    "category": "camera_feature",
+    "model_mentions": [],
+    "resolved_model_ids": [],
+    "retrieval_status": "no_results",
+    "normalized_query": "LUMIX Lab LUT 검색",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "198493",
+    "query": "[S5M2] MP4 24p 설정 시, 2개 중 어떤 것이 더 화질이 좋은 것인가요?",
+    "category": "camera_feature",
+    "model_mentions": [
+      "S5M2"
+    ],
+    "resolved_model_ids": [
+      "DC-S5M2"
+    ],
+    "retrieval_status": "no_results",
+    "normalized_query": "MP4 24p 설정 시 2개 중 어떤 것이 더 화질이 좋은 것인가요",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "198478",
+    "query": "S9...손떨방 질문이요!",
+    "category": "camera_feature",
+    "model_mentions": [
+      "S9"
+    ],
+    "resolved_model_ids": [
+      "DC-S9"
+    ],
+    "retrieval_status": "no_results",
+    "normalized_query": "손떨방 이요",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "198463",
+    "query": "s5m2 컷수 확인",
+    "category": "camera_feature",
+    "model_mentions": [
+      "S5M2"
+    ],
+    "resolved_model_ids": [
+      "DC-S5M2"
+    ],
+    "retrieval_status": "no_results",
+    "normalized_query": "컷수 확인",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "198390",
+    "query": "S5M2X 오픈게이트로 촬영하니까 배터리가 ㅎㄷㄷㄷ",
+    "category": "camera_feature",
+    "model_mentions": [
+      "S5M2X"
+    ],
+    "resolved_model_ids": [
+      "DC-S5M2X"
+    ],
+    "retrieval_status": "no_results",
+    "normalized_query": "오픈 게이트로 촬영하니까 배터리가 ㅎㄷㄷㄷ",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "198382",
+    "query": "Velvia100 느낌의 LUT있을까요?",
+    "category": "camera_feature",
+    "model_mentions": [],
+    "resolved_model_ids": [],
+    "retrieval_status": "no_results",
+    "normalized_query": "Velvia100 느낌의 LUT있을까요",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "198352",
+    "query": "s9 사진촬영하는데 언제부턴가 사진이 3장씩 찍힙니다. 연사모드는 선택하지 않은걸로 나오는데도 계속 3장씩 찍히는데 뭐가 문제인건가요?",
+    "category": "camera_feature",
+    "model_mentions": [
+      "S9"
+    ],
+    "resolved_model_ids": [
+      "DC-S9"
+    ],
+    "retrieval_status": "no_results",
+    "normalized_query": "사진촬영하는데 언제부턴가 사진이 3장씩 찍힙니다 연사모드는 선택하지 않은걸로 나오는데도 계속 3장씩 찍히는데 뭐가 문제인건가요",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "198326",
+    "query": "전체 초점은 어떻게 설정하나요?",
+    "category": "camera_feature",
+    "model_mentions": [],
+    "resolved_model_ids": [],
+    "retrieval_status": "ok",
+    "normalized_query": "전체 초점",
+    "needs_pdf_label": true,
+    "sources": [
+      {
+        "rank": 1,
+        "document_id": "dc_gx9_kor",
+        "model_id": "DC-GX9",
+        "page": 209,
+        "feature_name": "[HDR]",
+        "section_title": "[HDR]",
+        "viewer_url": "/api/viewer/dc_gx9_kor/pages/209",
+        "source_ref_valid": true
+      },
+      {
+        "rank": 2,
+        "document_id": "dc_tz300_zs300_full_kor",
+        "model_id": "DC-TZ300",
+        "page": 181,
+        "feature_name": "[HDR]",
+        "section_title": "[HDR]",
+        "viewer_url": "/api/viewer/dc_tz300_zs300_full_kor/pages/181",
+        "source_ref_valid": true
+      },
+      {
+        "rank": 3,
+        "document_id": "dc_tz99_zs99_full_kor",
+        "model_id": "DC-TZ99",
+        "page": 183,
+        "feature_name": "[HDR]",
+        "section_title": "[HDR]",
+        "viewer_url": "/api/viewer/dc_tz99_zs99_full_kor/pages/183",
+        "source_ref_valid": true
+      },
+      {
+        "rank": 4,
+        "document_id": "dmc_lx10_kor",
+        "model_id": "DMC-LX10",
+        "page": 190,
+        "feature_name": "[HDR]",
+        "section_title": "[HDR]",
+        "viewer_url": "/api/viewer/dmc_lx10_kor/pages/190",
+        "source_ref_valid": true
+      },
+      {
+        "rank": 5,
+        "document_id": "dc_gf10_kor",
+        "model_id": "DC-GF10",
+        "page": 205,
+        "feature_name": ": [사용자] 메뉴 MENU > [사용자]",
+        "section_title": ": [사용자] 메뉴 MENU > [사용자]",
+        "viewer_url": "/api/viewer/dc_gf10_kor/pages/205",
+        "source_ref_valid": true
+      }
+    ],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "198284",
+    "query": "S9+1840 사진(동영상) 촬영 세팅 팁 혹은 질문!!",
+    "category": "camera_feature",
+    "model_mentions": [
+      "S9"
+    ],
+    "resolved_model_ids": [
+      "DC-S9"
+    ],
+    "retrieval_status": "no_results",
+    "normalized_query": "+1840 사진(동영상) 촬영 세팅 팁 혹은",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "198258",
+    "query": "s1m2 파일 저장방식? 질문",
+    "category": "camera_feature",
+    "model_mentions": [
+      "S1M2"
+    ],
+    "resolved_model_ids": [
+      "DC-S1M2"
+    ],
+    "retrieval_status": "no_results",
+    "normalized_query": "파일 저장방식",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "198204",
+    "query": "어떤 LUT를 추천하시나요?",
+    "category": "camera_feature",
+    "model_mentions": [],
+    "resolved_model_ids": [],
+    "retrieval_status": "no_results",
+    "normalized_query": "어떤 LUT를 추천하시나요",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "198189",
+    "query": "s1r2 raw 파일, 배터리 관련 질문 드립니다.",
+    "category": "camera_feature",
+    "model_mentions": [
+      "S1R2"
+    ],
+    "resolved_model_ids": [
+      "DC-S1RM2"
+    ],
+    "retrieval_status": "no_results",
+    "normalized_query": "raw 파일 배터리",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "198045",
+    "query": "티비앞에서 영상을 찍으면 그림자가 생겨요",
+    "category": "camera_feature",
+    "model_mentions": [],
+    "resolved_model_ids": [],
+    "retrieval_status": "no_results",
+    "normalized_query": "티비앞에서 영상을 찍으면 그림자가 생겨요",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "198012",
+    "query": "루믹스랩 연결 잘 되나요??",
+    "category": "camera_feature",
+    "model_mentions": [],
+    "resolved_model_ids": [],
+    "retrieval_status": "no_results",
+    "normalized_query": "LUMIX Lab 연결 잘 되나요",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "198011",
+    "query": "S5m2도 S9과 동일하게 LUT 되나요?",
+    "category": "camera_feature",
+    "model_mentions": [
+      "S5M2",
+      "S9"
+    ],
+    "resolved_model_ids": [
+      "DC-S5M2",
+      "DC-S9"
+    ],
+    "retrieval_status": "no_results",
+    "normalized_query": "도 과 동일하게 LUT 되나요",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "198006",
+    "query": "로그촬영 메뉴 셋팅 질문 드려요 ㅠ",
+    "category": "camera_feature",
+    "model_mentions": [],
+    "resolved_model_ids": [],
+    "retrieval_status": "no_results",
+    "normalized_query": "로그촬영 메뉴 셋팅 드려요",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "197997",
+    "query": "액션캠, S9 손떨방 질문이요..",
+    "category": "camera_feature",
+    "model_mentions": [
+      "S9"
+    ],
+    "resolved_model_ids": [
+      "DC-S9"
+    ],
+    "retrieval_status": "no_results",
+    "normalized_query": "액션캠 손떨방 이요",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "197991",
+    "query": "S9 루믹스랩 연결문제",
+    "category": "camera_feature",
+    "model_mentions": [
+      "S9"
+    ],
+    "resolved_model_ids": [
+      "DC-S9"
+    ],
+    "retrieval_status": "no_results",
+    "normalized_query": "LUMIX Lab 연결문제",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "197990",
+    "query": "[S9] ai af 인물 검출력 성능이 희안한데 저만 이런가요?",
+    "category": "camera_feature",
+    "model_mentions": [
+      "S9"
+    ],
+    "resolved_model_ids": [
+      "DC-S9"
+    ],
+    "retrieval_status": "no_results",
+    "normalized_query": "ai af 인물 검출력 성능이 희안한데 저만 이런가요",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "197970",
+    "query": "a7m5 새로나왔던데 영상은 어떤가요?",
+    "category": "camera_feature",
+    "model_mentions": [],
+    "resolved_model_ids": [],
+    "retrieval_status": "no_results",
+    "normalized_query": "a7m5 새로나왔던데 영상은 어떤가요",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "197959",
+    "query": "루믹스랩에서 휴대폰사진불러오는방법?",
+    "category": "camera_feature",
+    "model_mentions": [],
+    "resolved_model_ids": [],
+    "retrieval_status": "no_results",
+    "normalized_query": "LUMIX Lab에서 휴대폰사진불러오는방법",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "197950",
+    "query": "루믹스랩과 카메라가 연결이 안돼요.",
+    "category": "camera_feature",
+    "model_mentions": [],
+    "resolved_model_ids": [],
+    "retrieval_status": "no_results",
+    "normalized_query": "LUMIX Lab과 카메라가 연결이 안돼요",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "197940",
+    "query": "파나소닉 소니처럼 초첨 영역모드 설정",
+    "category": "camera_feature",
+    "model_mentions": [],
+    "resolved_model_ids": [],
+    "retrieval_status": "no_results",
+    "normalized_query": "파나소닉 소니처럼 초첨 영역모드 설정",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "197937",
+    "query": "s1m2에는 사진촬영에서 6k/4k 촬영 기능은 없나요?",
+    "category": "camera_feature",
+    "model_mentions": [
+      "S1M2"
+    ],
+    "resolved_model_ids": [
+      "DC-S1M2"
+    ],
+    "retrieval_status": "no_results",
+    "normalized_query": "에는 사진촬영에서 6k/4k 촬영 기능은 없나요",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "197917",
+    "query": "S1R2 ProRes 다빈치리졸브 설정",
+    "category": "camera_feature",
+    "model_mentions": [
+      "S1R2"
+    ],
+    "resolved_model_ids": [
+      "DC-S1RM2"
+    ],
+    "retrieval_status": "no_results",
+    "normalized_query": "ProRes 다빈치리졸브 설정",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "197914",
+    "query": "루믹스 S1M2 하이브리드 줌 기능 질문!",
+    "category": "camera_feature",
+    "model_mentions": [
+      "S1M2"
+    ],
+    "resolved_model_ids": [
+      "DC-S1M2"
+    ],
+    "retrieval_status": "no_results",
+    "normalized_query": "하이브리드 줌 기능",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "197892",
+    "query": "파나소닉 S9 LUT 및 보정 기능 질문있습니다.",
+    "category": "camera_feature",
+    "model_mentions": [
+      "S9"
+    ],
+    "resolved_model_ids": [
+      "DC-S9"
+    ],
+    "retrieval_status": "no_results",
+    "normalized_query": "파나소닉 LUT 및 보정 기능 있습니다",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "197867",
+    "query": "혹시 쇼츠용으로 촬영해보신분",
+    "category": "camera_feature",
+    "model_mentions": [],
+    "resolved_model_ids": [],
+    "retrieval_status": "no_results",
+    "normalized_query": "혹시 쇼츠용으로 촬영해보신분",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "197859",
+    "query": "sony a7m4와 s1m2 영상 화질을 비교하면",
+    "category": "camera_feature",
+    "model_mentions": [
+      "S1M2"
+    ],
+    "resolved_model_ids": [
+      "DC-S1M2"
+    ],
+    "retrieval_status": "no_results",
+    "normalized_query": "sony a7m4와 영상 화질을 비교하면",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "197840",
+    "query": "루믹스랩 사용 질문이 있습니다.",
+    "category": "camera_feature",
+    "model_mentions": [],
+    "resolved_model_ids": [],
+    "retrieval_status": "no_results",
+    "normalized_query": "LUMIX Lab 사용 이 있습니다",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "197676",
+    "query": "S5m2 동영상 촬영중 af 관련 문의드립니다.",
+    "category": "camera_feature",
+    "model_mentions": [
+      "S5M2"
+    ],
+    "resolved_model_ids": [
+      "DC-S5M2"
+    ],
+    "retrieval_status": "no_results",
+    "normalized_query": "동영상 촬영중 af",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "197631",
+    "query": "파나소닉 루믹스 gf 시리즈 lcd 화질 문제",
+    "category": "camera_feature",
+    "model_mentions": [],
+    "resolved_model_ids": [],
+    "retrieval_status": "no_results",
+    "normalized_query": "파나소닉 루믹스 gf 시리즈 lcd 화질 문제",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "197608",
+    "query": "G9M2 촬영중 충전이 안되는건가요?",
+    "category": "camera_feature",
+    "model_mentions": [],
+    "resolved_model_ids": [],
+    "retrieval_status": "no_results",
+    "normalized_query": "촬영중 충전이 안되는건가요",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "197550",
+    "query": "카메라 오랜만에 킬 때 센서 정렬 소음",
+    "category": "camera_feature",
+    "model_mentions": [],
+    "resolved_model_ids": [],
+    "retrieval_status": "no_results",
+    "normalized_query": "카메라 오랜만에 킬 때 센서 정렬 소음",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "197533",
+    "query": "수동모드에서 ISO 설정후 노출 자동 조정?",
+    "category": "camera_feature",
+    "model_mentions": [],
+    "resolved_model_ids": [],
+    "retrieval_status": "no_results",
+    "normalized_query": "수동모드에서 ISO 설정후 노출 자동 조정",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "197483",
+    "query": "s5m2x 2.5v 펌웨어 이후 AF",
+    "category": "camera_feature",
+    "model_mentions": [
+      "S5M2X"
+    ],
+    "resolved_model_ids": [
+      "DC-S5M2X"
+    ],
+    "retrieval_status": "no_results",
+    "normalized_query": "2 5v 펌웨어 이후 AF",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "197472",
+    "query": "영상 스펙 420 422 문의",
+    "category": "camera_feature",
+    "model_mentions": [],
+    "resolved_model_ids": [],
+    "retrieval_status": "no_results",
+    "normalized_query": "영상 스펙 420 422",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "197436",
+    "query": "이번 업뎃 후 mp4 lite 화질문의",
+    "category": "camera_feature",
+    "model_mentions": [],
+    "resolved_model_ids": [],
+    "retrieval_status": "no_results",
+    "normalized_query": "이번 업뎃 후 mp4 lite 화 의",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "197428",
+    "query": "log촬영은 생방송 송출에 활용하기 어려울까요?",
+    "category": "camera_feature",
+    "model_mentions": [],
+    "resolved_model_ids": [],
+    "retrieval_status": "no_results",
+    "normalized_query": "log촬영은 생방송 송출에 활용하기 어려울까요",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "197374",
+    "query": "사진 찍힌 후 화면 색상이 이상해요.",
+    "category": "camera_feature",
+    "model_mentions": [],
+    "resolved_model_ids": [],
+    "retrieval_status": "no_results",
+    "normalized_query": "사진 찍힌 후 화면 색상이 이상해요",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "197367",
+    "query": "영상7:사진3 이라면 파나소닉s9 : 캐논 v1",
+    "category": "camera_feature",
+    "model_mentions": [
+      "S9"
+    ],
+    "resolved_model_ids": [
+      "DC-S9"
+    ],
+    "retrieval_status": "no_results",
+    "normalized_query": "영상7:사진3 이라면 파나소닉 : 캐논 v1",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "197320",
+    "query": "lut으로 촬영한 영상을 일반으로 돌릴 수 있나요?",
+    "category": "camera_feature",
+    "model_mentions": [],
+    "resolved_model_ids": [],
+    "retrieval_status": "no_results",
+    "normalized_query": "lut으로 촬영한 영상을 일반으로 돌릴 수 있나요",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "197286",
+    "query": "s9 S모드 촬영 후 결과값이 달라요...",
+    "category": "camera_feature",
+    "model_mentions": [
+      "S9"
+    ],
+    "resolved_model_ids": [
+      "DC-S9"
+    ],
+    "retrieval_status": "no_results",
+    "normalized_query": "S모드 촬영 후 결과값이 달라요",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "197247",
+    "query": "Lut cube 파일을 icc 캡쳐원 파일로 변환 방법이 쉬운게 있을까요?",
+    "category": "camera_feature",
+    "model_mentions": [],
+    "resolved_model_ids": [],
+    "retrieval_status": "no_results",
+    "normalized_query": "Lut cube 파일을 icc 캡쳐원 파일로 변환 방법이 쉬운게 있을까요",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "197188",
+    "query": "s5m2x 루믹스랩 lut 연결이 안되네요 ㅜㅜ",
+    "category": "camera_feature",
+    "model_mentions": [
+      "S5M2X"
+    ],
+    "resolved_model_ids": [
+      "DC-S5M2X"
+    ],
+    "retrieval_status": "no_results",
+    "normalized_query": "LUMIX Lab lut 연결이 안되네요",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "197183",
+    "query": "루믹스랩 사용하다가 질문드립니다!",
+    "category": "camera_feature",
+    "model_mentions": [],
+    "resolved_model_ids": [],
+    "retrieval_status": "no_results",
+    "normalized_query": "LUMIX Lab 사용하다가",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "197159",
+    "query": "LX100m2 와 G100D 모두 사용해 보신 분? 화질, 선예도 차이가?",
+    "category": "camera_feature",
+    "model_mentions": [
+      "LX100M2"
+    ],
+    "resolved_model_ids": [
+      "DC-LX100M2"
+    ],
+    "retrieval_status": "no_results",
+    "normalized_query": "와 모두 사용해 보신 분 화질 선예도 차이가",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "197152",
+    "query": "루믹스랩 앱 실행하자마자 바로 꺼지는 현상 있으신분...? (아이폰, 아이패드)",
+    "category": "camera_feature",
+    "model_mentions": [],
+    "resolved_model_ids": [],
+    "retrieval_status": "no_results",
+    "normalized_query": "LUMIX Lab 앱 실행하자마자 바로 꺼지는 현상 있으신분 (아이폰 아이패드)",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "197147",
+    "query": "S9 루믹스랩을통해 사진찍기 가능한가요?",
+    "category": "camera_feature",
+    "model_mentions": [
+      "S9"
+    ],
+    "resolved_model_ids": [
+      "DC-S9"
+    ],
+    "retrieval_status": "no_results",
+    "normalized_query": "LUMIX Lab을통해 사진찍기",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "197119",
+    "query": "루믹스랩 연동 문제…(잘만 쓰다가)",
+    "category": "camera_feature",
+    "model_mentions": [],
+    "resolved_model_ids": [],
+    "retrieval_status": "no_results",
+    "normalized_query": "LUMIX Lab 연동 문제…(잘만 쓰다가)",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "197118",
+    "query": "루믹스 카메라는 프리뷰모니터 연결 중 재생할 경우 소리가 안나오나요?",
+    "category": "camera_feature",
+    "model_mentions": [],
+    "resolved_model_ids": [],
+    "retrieval_status": "no_results",
+    "normalized_query": "루믹스 카메라는 프리뷰모니터 연결 중 재생할 경우 소리가 안나오나요",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "197116",
+    "query": "보정없이 영상찍는다면 mp4 lite도 충분할까요?",
+    "category": "camera_feature",
+    "model_mentions": [],
+    "resolved_model_ids": [],
+    "retrieval_status": "no_results",
+    "normalized_query": "보정없이 영상찍는다면 mp4 lite도 충분할까요",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "197109",
+    "query": "G9M2 MOV 선택해서 촬영했는데 음향이 너무 찢어져서 무슨일인지 모르겠습니다",
+    "category": "camera_feature",
+    "model_mentions": [],
+    "resolved_model_ids": [],
+    "retrieval_status": "no_results",
+    "normalized_query": "MOV 선택해서 촬영했는데 음향이 너무 찢어져서 무슨일인지 모르겠습니다",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "197101",
+    "query": "s1m2 iso,노출,화벨 버튼",
+    "category": "camera_feature",
+    "model_mentions": [
+      "S1M2"
+    ],
+    "resolved_model_ids": [
+      "DC-S1M2"
+    ],
+    "retrieval_status": "no_results",
+    "normalized_query": "iso 노출 화벨 버튼",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "197042",
+    "query": "S9 4k 60fps 촬영 질문드립니다.",
+    "category": "camera_feature",
+    "model_mentions": [
+      "S9"
+    ],
+    "resolved_model_ids": [
+      "DC-S9"
+    ],
+    "retrieval_status": "no_results",
+    "normalized_query": "4k 60fps 촬영",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "197032",
+    "query": "s1m2랑 s1r2랑 af 차이가 있나요?",
+    "category": "camera_feature",
+    "model_mentions": [
+      "S1R2",
+      "S1M2"
+    ],
+    "resolved_model_ids": [
+      "DC-S1RM2",
+      "DC-S1M2"
+    ],
+    "retrieval_status": "no_results",
+    "normalized_query": "랑 랑 af 차이가 있나요",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "196997",
+    "query": "다들 픽셀투픽셀 4k 영상 잘돌아가시나요?",
+    "category": "camera_feature",
+    "model_mentions": [],
+    "resolved_model_ids": [],
+    "retrieval_status": "no_results",
+    "normalized_query": "다들 픽셀투픽셀 4k 영상 잘돌아가시나요",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "196976",
+    "query": "TZ99 컷 수 확인",
+    "category": "camera_feature",
+    "model_mentions": [
+      "TZ99"
+    ],
+    "resolved_model_ids": [
+      "DC-TZ99"
+    ],
+    "retrieval_status": "no_results",
+    "normalized_query": "컷 수 확인",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "196938",
+    "query": "tz99 색감 설정 질문있습니다",
+    "category": "camera_feature",
+    "model_mentions": [
+      "TZ99"
+    ],
+    "resolved_model_ids": [
+      "DC-TZ99"
+    ],
+    "retrieval_status": "no_results",
+    "normalized_query": "색감 설정 있습니다",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "196937",
+    "query": "루믹스 s9 lut이 궁금해서 보고있습니다",
+    "category": "camera_feature",
+    "model_mentions": [
+      "S9"
+    ],
+    "resolved_model_ids": [
+      "DC-S9"
+    ],
+    "retrieval_status": "no_results",
+    "normalized_query": "lut이 궁금해서 보고있습니다",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "196936",
+    "query": "결혼식장 영상촬영 부탁받았는데 도움과 LUT 추천부탁해요!",
+    "category": "camera_feature",
+    "model_mentions": [],
+    "resolved_model_ids": [],
+    "retrieval_status": "no_results",
+    "normalized_query": "결혼식장 영상촬영 부탁받았는데 도움과 LUT 추천부탁해요",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "196880",
+    "query": "[S9] 사진 촬영시 밝기 문의",
+    "category": "camera_feature",
+    "model_mentions": [
+      "S9"
+    ],
+    "resolved_model_ids": [
+      "DC-S9"
+    ],
+    "retrieval_status": "no_results",
+    "normalized_query": "사진 촬영시 밝기",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "196847",
+    "query": "저퀄 영상을 위한 아빠진사의 질문이 있습니다😂(feat. 니콘)",
+    "category": "camera_feature",
+    "model_mentions": [],
+    "resolved_model_ids": [],
+    "retrieval_status": "no_results",
+    "normalized_query": "저퀄 영상을 위한 아빠진사의 이 있습니다😂(feat 니콘)",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "196826",
+    "query": "G9M2 동영상 전혀 소리가 안나네요",
+    "category": "camera_feature",
+    "model_mentions": [],
+    "resolved_model_ids": [],
+    "retrieval_status": "no_results",
+    "normalized_query": "동영상 전혀 소리가 안나네요",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "196811",
+    "query": "행사 연사 사진 ... 어떻게 해야 보다 가치 있어질까요? (단품 사진으로 ? 영상으로 ? )",
+    "category": "camera_feature",
+    "model_mentions": [],
+    "resolved_model_ids": [],
+    "retrieval_status": "no_results",
+    "normalized_query": "행사 연사 사진 어떻게 해야 보다 가치 있어질까요 (단품 사진으로 영상으로 )",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "196761",
+    "query": "s5m2x vs s1m2 손떨방 차이많이 나나요?",
+    "category": "camera_feature",
+    "model_mentions": [
+      "S1M2",
+      "S5M2X"
+    ],
+    "resolved_model_ids": [
+      "DC-S1M2",
+      "DC-S5M2X"
+    ],
+    "retrieval_status": "no_results",
+    "normalized_query": "vs 손떨방 차이많이 나나요",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "196743",
+    "query": "레시피는 4개까지만 등록 가능한가요??",
+    "category": "camera_feature",
+    "model_mentions": [],
+    "resolved_model_ids": [],
+    "retrieval_status": "no_results",
+    "normalized_query": "레시피는 4개까지만 등록",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "196736",
+    "query": "루믹스랩 오류?",
+    "category": "camera_feature",
+    "model_mentions": [],
+    "resolved_model_ids": [],
+    "retrieval_status": "no_results",
+    "normalized_query": "LUMIX Lab 오류",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "196719",
+    "query": "매직lut 으로 캐논이나 후지색감 만들려면 그 카메라가 있어야 겠네요",
+    "category": "camera_feature",
+    "model_mentions": [],
+    "resolved_model_ids": [],
+    "retrieval_status": "no_results",
+    "normalized_query": "매직lut 으로 캐논이나 후지색감 만들려면 그 카메라가 있어야 겠네요",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "196715",
+    "query": "루믹스 s9 jpg 저장에 관해 질문 드립니다.",
+    "category": "camera_feature",
+    "model_mentions": [
+      "S9"
+    ],
+    "resolved_model_ids": [
+      "DC-S9"
+    ],
+    "retrieval_status": "no_results",
+    "normalized_query": "jpg 저장에 관해",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "196706",
+    "query": "센서가 이상한데 고수님들 확인좀 부탁드립니다",
+    "category": "camera_feature",
+    "model_mentions": [],
+    "resolved_model_ids": [],
+    "retrieval_status": "no_results",
+    "normalized_query": "센서가 이상한데 고수님들 확인좀 부탁",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "196681",
+    "query": "S9에서 4:2:2 촬영은 30p 밖에 없나요....ㅠㅜ?",
+    "category": "camera_feature",
+    "model_mentions": [
+      "S9"
+    ],
+    "resolved_model_ids": [
+      "DC-S9"
+    ],
+    "retrieval_status": "no_results",
+    "normalized_query": "에서 4:2:2 촬영은 30p 밖에 없나요",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "196674",
+    "query": "휴대용 보조모니터를 촬영 프리뷰 모니터로 쓰시는 분 있나요?",
+    "category": "camera_feature",
+    "model_mentions": [],
+    "resolved_model_ids": [],
+    "retrieval_status": "no_results",
+    "normalized_query": "휴대용 보조모니터를 촬영 프리뷰 모니터로 쓰시는 분 있나요",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "196655",
+    "query": "s9은 422 4k로 vlog로 찍으면 화질이 왜 구린가요?",
+    "category": "camera_feature",
+    "model_mentions": [
+      "S9"
+    ],
+    "resolved_model_ids": [
+      "DC-S9"
+    ],
+    "retrieval_status": "no_results",
+    "normalized_query": "은 422 4k로 vlog로 찍으면 화질이 왜 구린가요",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "196632",
+    "query": "MOV 영상 오류",
+    "category": "camera_feature",
+    "model_mentions": [],
+    "resolved_model_ids": [],
+    "retrieval_status": "no_results",
+    "normalized_query": "MOV 영상 오류",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "196601",
+    "query": "루믹스 S9으로 이런 색감 어떻게 방향성 잡아야할까요?",
+    "category": "camera_feature",
+    "model_mentions": [
+      "S9"
+    ],
+    "resolved_model_ids": [
+      "DC-S9"
+    ],
+    "retrieval_status": "no_results",
+    "normalized_query": "으로 이런 색감 어떻게 방향성 잡아야할까요",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "196565",
+    "query": "매뉴얼 포커스링 커스텀 어떻게 하나요?",
+    "category": "camera_feature",
+    "model_mentions": [],
+    "resolved_model_ids": [],
+    "retrieval_status": "no_results",
+    "normalized_query": "매뉴얼 포커스링 커스텀 어떻게 하나요",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "196545",
+    "query": "내 사진 스타일 설정 질문",
+    "category": "camera_feature",
+    "model_mentions": [],
+    "resolved_model_ids": [],
+    "retrieval_status": "ok",
+    "normalized_query": "내 사진 스타일 설정",
+    "needs_pdf_label": true,
+    "sources": [
+      {
+        "rank": 1,
+        "document_id": "dc_gh7_full_kor",
+        "model_id": "DC-GH7",
+        "page": 165,
+        "feature_name": " [ ]  [ ]  [프록시 기록 설정]  [실시간 LUT(프록시)] 선택",
+        "section_title": " [ ]  [ ]  [프록시 기록 설정]  [실시간 LUT(프록시)] 선택",
+        "viewer_url": "/api/viewer/dc_gh7_full_kor/pages/165",
+        "source_ref_valid": true
+      },
+      {
+        "rank": 2,
+        "document_id": "dc_s1m2_full_kor",
+        "model_id": "DC-S1M2",
+        "page": 179,
+        "feature_name": " [ ]  [ ]  [프록시 기록 설정]  [실시간 LUT(프록시)] 선택",
+        "section_title": " [ ]  [ ]  [프록시 기록 설정]  [실시간 LUT(프록시)] 선택",
+        "viewer_url": "/api/viewer/dc_s1m2_full_kor/pages/179",
+        "source_ref_valid": true
+      },
+      {
+        "rank": 3,
+        "document_id": "dc_s1m2es_full_kor",
+        "model_id": "DC-S1M2ES",
+        "page": 177,
+        "feature_name": " [ ]  [ ]  [프록시 기록 설정]  [실시간 LUT(프록시)] 선택",
+        "section_title": " [ ]  [ ]  [프록시 기록 설정]  [실시간 LUT(프록시)] 선택",
+        "viewer_url": "/api/viewer/dc_s1m2es_full_kor/pages/177",
+        "source_ref_valid": true
+      },
+      {
+        "rank": 4,
+        "document_id": "dc_s1rm2_full_kor",
+        "model_id": "DC-S1RM2",
+        "page": 172,
+        "feature_name": " [ ]  [ ]  [프록시 기록 설정]  [실시간 LUT(프록시)] 선택",
+        "section_title": " [ ]  [ ]  [프록시 기록 설정]  [실시간 LUT(프록시)] 선택",
+        "viewer_url": "/api/viewer/dc_s1rm2_full_kor/pages/172",
+        "source_ref_valid": true
+      },
+      {
+        "rank": 5,
+        "document_id": "dc_s5m2_full_kor",
+        "model_id": "DC-S5M2",
+        "page": 845,
+        "feature_name": " [ ]  [ ]  [프록시 기록 설정]  [실시간 LUT(프록시)] 선택",
+        "section_title": " [ ]  [ ]  [프록시 기록 설정]  [실시간 LUT(프록시)] 선택",
+        "viewer_url": "/api/viewer/dc_s5m2_full_kor/pages/845",
+        "source_ref_valid": true
+      }
+    ],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "196527",
+    "query": "mdt파일을 영상 파일로 변환 가능한가요?",
+    "category": "camera_feature",
+    "model_mentions": [],
+    "resolved_model_ids": [],
+    "retrieval_status": "no_results",
+    "normalized_query": "mdt파일을 영상 파일로 변환",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "196517",
+    "query": "영상을 찍었는데 프레임마다 핀이맞았다 안맞았다합니다",
+    "category": "camera_feature",
+    "model_mentions": [],
+    "resolved_model_ids": [],
+    "retrieval_status": "no_results",
+    "normalized_query": "영상을 찍었는데 프레임마다 핀이맞았다 안맞았다합니다",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "196504",
+    "query": "S9 다 좋은데 이 노출만 어떻게 안되나요?",
+    "category": "camera_feature",
+    "model_mentions": [
+      "S9"
+    ],
+    "resolved_model_ids": [
+      "DC-S9"
+    ],
+    "retrieval_status": "no_results",
+    "normalized_query": "다 좋은데 이 노출만 어떻게 안되나요",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "196497",
+    "query": "갤럭시 폰으로 루믹스랩 쓰시는 분들 궁금해요.",
+    "category": "camera_feature",
+    "model_mentions": [],
+    "resolved_model_ids": [],
+    "retrieval_status": "no_results",
+    "normalized_query": "갤럭시 폰으로 LUMIX Lab 쓰시는 분들 궁금해요",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "196490",
+    "query": "S9에서 니콘zr 영상만볼때 어떨까요?",
+    "category": "camera_feature",
+    "model_mentions": [
+      "S9"
+    ],
+    "resolved_model_ids": [
+      "DC-S9"
+    ],
+    "retrieval_status": "no_results",
+    "normalized_query": "에서 니콘zr 영상만볼때 어떨까요",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "196483",
+    "query": "s9 색감..",
+    "category": "camera_feature",
+    "model_mentions": [
+      "S9"
+    ],
+    "resolved_model_ids": [
+      "DC-S9"
+    ],
+    "retrieval_status": "no_results",
+    "normalized_query": "색감",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "196468",
+    "query": "s9 af선택",
+    "category": "camera_feature",
+    "model_mentions": [
+      "S9"
+    ],
+    "resolved_model_ids": [
+      "DC-S9"
+    ],
+    "retrieval_status": "no_results",
+    "normalized_query": "af선택",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "196463",
+    "query": "s9 보조배터리 추천",
+    "category": "camera_feature",
+    "model_mentions": [
+      "S9"
+    ],
+    "resolved_model_ids": [
+      "DC-S9"
+    ],
+    "retrieval_status": "no_results",
+    "normalized_query": "보조배터리 추천",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "196454",
+    "query": "루믹스 GH4배터리",
+    "category": "camera_feature",
+    "model_mentions": [],
+    "resolved_model_ids": [],
+    "retrieval_status": "no_results",
+    "normalized_query": "루믹스 GH4배터리",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "196442",
+    "query": "tz99 원격 촬영?",
+    "category": "camera_feature",
+    "model_mentions": [
+      "TZ99"
+    ],
+    "resolved_model_ids": [
+      "DC-TZ99"
+    ],
+    "retrieval_status": "ok",
+    "normalized_query": "원격 촬영",
+    "needs_pdf_label": true,
+    "sources": [
+      {
+        "rank": 1,
+        "document_id": "dc_tz99_zs99_full_kor",
+        "model_id": "DC-TZ99",
+        "page": 12,
+        "feature_name": "기능별 목차",
+        "section_title": "기능별 목차",
+        "viewer_url": "/api/viewer/dc_tz99_zs99_full_kor/pages/12",
+        "source_ref_valid": true
+      },
+      {
+        "rank": 2,
+        "document_id": "dc_tz99_zs99_full_kor",
+        "model_id": "DC-TZ99",
+        "page": 233,
+        "feature_name": "스마트폰으로 제어",
+        "section_title": "스마트폰으로 제어",
+        "viewer_url": "/api/viewer/dc_tz99_zs99_full_kor/pages/233",
+        "source_ref_valid": true
+      },
+      {
+        "rank": 3,
+        "document_id": "dc_tz99_zs99_full_kor",
+        "model_id": "DC-TZ99",
+        "page": 222,
+        "feature_name": "■설정을 변경하려면 [효과] 또는 [설정]을 선택하고 [MENU/SET]을 누릅니다.",
+        "section_title": "■설정을 변경하려면 [효과] 또는 [설정]을 선택하고 [MENU/SET]을 누릅니다.",
+        "viewer_url": "/api/viewer/dc_tz99_zs99_full_kor/pages/222",
+        "source_ref_valid": true
+      },
+      {
+        "rank": 4,
+        "document_id": "dc_tz99_zs99_full_kor",
+        "model_id": "DC-TZ99",
+        "page": 233,
+        "feature_name": "스마트폰으로 제어",
+        "section_title": "스마트폰으로 제어",
+        "viewer_url": "/api/viewer/dc_tz99_zs99_full_kor/pages/233",
+        "source_ref_valid": true
+      },
+      {
+        "rank": 5,
+        "document_id": "dc_tz99_zs99_full_kor",
+        "model_id": "DC-TZ99",
+        "page": 230,
+        "feature_name": "카메라를 스마트폰에 연결",
+        "section_title": "카메라를 스마트폰에 연결",
+        "viewer_url": "/api/viewer/dc_tz99_zs99_full_kor/pages/230",
+        "source_ref_valid": true
+      }
+    ],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "196395",
+    "query": "s5m2x 배터리 불량일까요? ssd 문제?",
+    "category": "camera_feature",
+    "model_mentions": [
+      "S5M2X"
+    ],
+    "resolved_model_ids": [
+      "DC-S5M2X"
+    ],
+    "retrieval_status": "no_results",
+    "normalized_query": "배터리 불량일까요 ssd 문제",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "196318",
+    "query": "s1m2 저속 셔터 촬영이 불가능한가요?",
+    "category": "camera_feature",
+    "model_mentions": [
+      "S1M2"
+    ],
+    "resolved_model_ids": [
+      "DC-S1M2"
+    ],
+    "retrieval_status": "no_results",
+    "normalized_query": "저속 셔터 촬영이 불",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "196317",
+    "query": "배터리 보증 문의",
+    "category": "camera_feature",
+    "model_mentions": [],
+    "resolved_model_ids": [],
+    "retrieval_status": "no_results",
+    "normalized_query": "배터리 보증",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "196287",
+    "query": "정품배터리를 사야겠는데요",
+    "category": "camera_feature",
+    "model_mentions": [],
+    "resolved_model_ids": [],
+    "retrieval_status": "no_results",
+    "normalized_query": "정품배터리를 사야겠는데요",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "196233",
+    "query": "왜 루믹스랩, 이미징클라우드엔 한국인 작가가 없을까요?",
+    "category": "camera_feature",
+    "model_mentions": [],
+    "resolved_model_ids": [],
+    "retrieval_status": "no_results",
+    "normalized_query": "왜 LUMIX Lab 이미징클라우드엔 한국인 작가가 없을까요",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  },
+  {
+    "post_id": "196179",
+    "query": "카메라 초본데..s9 m모드에서 셔속 48보도 더 느리게 설정이 안돼요",
+    "category": "camera_feature",
+    "model_mentions": [
+      "S9"
+    ],
+    "resolved_model_ids": [
+      "DC-S9"
+    ],
+    "retrieval_status": "no_results",
+    "normalized_query": "카메라 초본데 m모드에서 셔속 48보도 더 느리게 설정이 안돼요",
+    "needs_pdf_label": true,
+    "sources": [],
+    "source_method": "community_retrieval_candidate"
+  }
+]

@@ -29,6 +29,7 @@ class PageReference(BaseModel):
 
     document_id: str
     page: int
+    image_url: str
 
 
 class CameraModelRegistryEntry(BaseModel):

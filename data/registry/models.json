@@ -110,13 +110,28 @@
     "product_line": "LUMIX S"
   },
   {
+    "model_id": "DC-S9",
+    "display_name": "LUMIX S9",
+    "product_line": "LUMIX S"
+  },
+  {
     "model_id": "DC-TZ99",
     "display_name": "LUMIX TZ99",
     "product_line": "LUMIX TZ"
   },
   {
+    "model_id": "DC-TZ300",
+    "display_name": "LUMIX TZ300",
+    "product_line": "LUMIX TZ"
+  },
+  {
     "model_id": "DC-ZS99",
     "display_name": "LUMIX ZS99",
+    "product_line": "LUMIX ZS"
+  },
+  {
+    "model_id": "DC-ZS300",
+    "display_name": "LUMIX ZS300",
     "product_line": "LUMIX ZS"
   },
   {

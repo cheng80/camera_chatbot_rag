@@ -176,12 +176,28 @@
     "document_type": "full_manual"
   },
   {
+    "document_id": "dc_s9_full_kor",
+    "title": "DC-S9 전체 안내서",
+    "filename": "DC-S9_DVQP3153_full_kor.pdf",
+    "model_ids": ["DC-S9"],
+    "language": "ko",
+    "document_type": "full_manual"
+  },
+  {
     "document_id": "dc_tz99_zs99_full_kor",
     "title": "DC-TZ99/DC-ZS99 고급 기능 사용 설명서",
     "filename": "DC-TZ99_ZS99_DVQP3300_full_kor.pdf",
     "model_ids": ["DC-TZ99", "DC-ZS99"],
     "language": "ko",
     "document_type": "advanced_manual"
+  },
+  {
+    "document_id": "dc_tz300_zs300_full_kor",
+    "title": "DC-TZ300/DC-ZS300 전체 안내서",
+    "filename": "DC-TZ300_ZS300_DVQP3529_full_kor.pdf",
+    "model_ids": ["DC-TZ300", "DC-ZS300"],
+    "language": "ko",
+    "document_type": "full_manual"
   },
   {
     "document_id": "dmc_g85_full_kor",

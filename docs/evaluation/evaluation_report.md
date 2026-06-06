@@ -9,6 +9,21 @@
 | 출처 페이지 정확도 | 95% | 미측정 |
 | 모델 혼합 오류율 | 3% 이하 | 미측정 |
 
+## 출처/뷰어 검증 상태
+
+현재 출처 참조(Source Reference)는 `document_id`, `model_id`, 문서-모델 관계,
+처리 페이지 범위를 구조적으로 검증한다. 뷰어 API(Page Viewer API)는 처리된 페이지가
+있는 경우 `/api/viewer/{document_id}/pages/{page}`에서 `image_url`을 반환하고,
+정적 경로 `/page-images/{document_id}/{page}.png`로 렌더링된 PNG를 제공한다.
+
+현재 확인한 실제 스모크:
+
+| 항목 | 결과 |
+|---|---|
+| `/api/viewer/dc_s9_full_kor/pages/201` | 200, `image_url=/page-images/dc_s9_full_kor/201.png` |
+| `/page-images/dc_s9_full_kor/201.png` | 200, `image/png` |
+| `/api/viewer/dc_tz300_zs300_full_kor/pages/402` | 404, `page not found` |
+
 ## 검색 평가 기준선
 
 평가 목적:
@@ -296,7 +311,7 @@ DMC-G85는 261페이지에서 Java TimSort 계약 위반 오류가 재현됐지�
 legacy merge sort JVM 옵션으로 OpenDataLoader primary 추출이 성공한다.
 ```
 
-## 전체 29개 PDF 배치 추출 결과
+## 전체 31개 PDF 배치 추출 결과
 
 평가 목적:
 
@@ -313,12 +328,12 @@ legacy merge sort JVM 옵션으로 OpenDataLoader primary 추출이 성공한다
 
 | 항목 | 결과 |
 |---|---:|
-| 등록 문서 | 29 |
-| 추출 성공 문서 | 29 |
-| OpenDataLoader primary 사용 | 29 |
+| 등록 문서 | 31 |
+| 추출 성공 문서 | 31 |
+| OpenDataLoader primary 사용 | 31 |
 | pypdf fallback 사용 | 0 |
-| 전체 페이지(Page) | 16,532 |
-| 전체 청크(Chunk) | 302,304 |
+| 전체 페이지(Page) | 17,631 |
+| 전체 청크(Chunk) | 320,269 |
 
 산출물:
 

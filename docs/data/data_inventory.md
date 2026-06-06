@@ -6,11 +6,11 @@
 
 | 항목 | 값 |
 |---|---:|
-| 등록 문서 | 29 |
-| 등록 모델 | 30 |
-| 추출 완료 문서 | 29 |
-| 전체 페이지(Page) | 16,532 |
-| 전체 청크(Chunk) | 302,304 |
+| 등록 문서 | 31 |
+| 등록 모델 | 33 |
+| 추출 완료 문서 | 31 |
+| 전체 페이지(Page) | 17,631 |
+| 전체 청크(Chunk) | 320,269 |
 | FTS5 색인(Index) | 생성 완료 |
 | 한국어 보조 색인 | trigram |
 | pypdf fallback | 0 |
@@ -53,7 +53,9 @@ data/indexes/fts/lumix_manuals.sqlite3
 | dc_s5m2x_full_kor | DC-S5M2X_DVQP3007_full_kor.pdf | DC-S5M2X | opendataloader | 1,038 | 17,837 | extracted |
 | dc_s5m2_full_kor | DC-S5M2_DVQP2855_full_kor.pdf | DC-S5M2 | opendataloader | 981 | 14,743 | extracted |
 | dc_s5_full_kor | DC-S5_DVQP2218ZD_full_kor.pdf | DC-S5 | opendataloader | 598 | 10,607 | extracted |
+| dc_s9_full_kor | DC-S9_DVQP3153_full_kor.pdf | DC-S9 | opendataloader | 818 | 12,202 | extracted |
 | dc_tz99_zs99_full_kor | DC-TZ99_ZS99_DVQP3300_full_kor.pdf | DC-TZ99 / DC-ZS99 | opendataloader | 285 | 5,712 | extracted |
+| dc_tz300_zs300_full_kor | DC-TZ300_ZS300_DVQP3529_full_kor.pdf | DC-TZ300 / DC-ZS300 | opendataloader | 281 | 5,763 | extracted |
 | dmc_g85_full_kor | DMC-G85_DVQP1024ZA_kor.pdf | DMC-G85 | opendataloader | 338 | 7,592 | extracted |
 | dmc_gf1_kor | DMC-GF1-KOR.pdf | DMC-GF1 | opendataloader | 196 | 5,803 | extracted |
 | dmc_gm1_kor | DMC-GM1-KOR.pdf | DMC-GM1 | opendataloader | 350 | 6,870 | extracted |

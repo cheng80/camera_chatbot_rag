@@ -5,8 +5,8 @@ from pydantic import TypeAdapter
 
 DOCUMENTS_ADAPTER = TypeAdapter(list[DocumentSummary])
 MODELS_ADAPTER = TypeAdapter(list[CameraModel])
-REGISTERED_DOCUMENT_COUNT = 29
-REGISTERED_MODEL_COUNT = 30
+REGISTERED_DOCUMENT_COUNT = 31
+REGISTERED_MODEL_COUNT = 33
 
 
 def test_documents_route_returns_registered_manuals() -> None:
