@@ -183,25 +183,28 @@ PDF 추출(PDF Extraction)
 ## Priority 5: New PDF Ingestion Process
 
 신규 PDF 추가 프로세스(New PDF Ingestion Process)는 새 매뉴얼을 추가할 때 반복되는
-작업을 하나의 체크리스트 또는 CLI 프로세스로 정리하는 단계다.
+작업을 사람 개입 없이 하나의 CLI 프로세스로 정리하는 단계다.
 
 작업 범위:
 
 - 원본 PDF를 `data/raw/manuals/`에 배치
-- `data/registry/documents.json`, `data/registry/models.json` 등록
+- 파일명과 PDF 첫 페이지 텍스트에서 `document_id`, `model_id`, `document_type` 자동 판정
+- confidence gate 통과 시 `data/registry/documents.json`, `data/registry/models.json` 자동 등록
+- 기준 미달 시 사람 확인 요청이 아니라 `blocked` 상태와 `block_reasons` 반환
 - OpenDataLoader primary 추출과 pypdf fallback 결과 기록
 - `data/processed/pages`, `data/processed/chunks`, `data/processed/reports` 갱신
 - SQLite FTS5 색인(Index) 재생성
 - 신규 모델 검색 스모크와 기존 검색 평가(Search Evaluation) 회귀 확인
 - `/api/viewer`와 `/page-images` 출처 페이지 동작 확인
 - `NEXT_SESSION.md`, `docs/data/data_inventory.md`, 평가 문서 갱신
-- 자동 실행 가능한 단계와 사람이 확인해야 하는 단계 분리
+- 자동 등록/추출/색인/평가/검증 CLI:
+  `.venv/bin/uv run python -m backend.app.indexing.ingest_new_pdf data/raw/manuals/<PDF>`
 
 왜 필요한가:
 
 - S9, TZ300/ZS300처럼 새 PDF를 추가할 때 같은 작업이 반복된다.
 - 등록, 추출, 색인, 평가, 문서 갱신 중 하나가 빠지면 검색 결과와 문서 상태가 어긋난다.
-- 후속 CLI 또는 make target으로 묶기 전에 정확한 운영 절차를 먼저 고정해야 한다.
+- 사람 검수를 전제로 둘 수 없으므로 자동 판정 가능한 케이스만 통과시키고 애매한 PDF는 명확히 차단해야 한다.
 
 ## Priority 6: Web MVP Integration
 

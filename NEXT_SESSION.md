@@ -105,8 +105,9 @@
    - 클릭한 출처 페이지, no_results, 사용자 재검색 여부를 나중에 기록할 수 있게 API 구조 준비
    - 개인정보 없이 검색 품질 개선에 필요한 최소 필드만 저장
 5. 후속 고도화: 신규 PDF 추가 프로세스(New PDF Ingestion Process) 정리
-   - 원본 PDF 배치, 레지스트리 문서/모델 등록, PDF 추출, FTS5 색인 재생성, 검색 평가, 뷰어/페이지 이미지 검증, 문서 갱신을 하나의 체크리스트 또는 CLI 프로세스로 정리
-   - 신규 PDF 추가 시 자동으로 실행해야 할 작업과 사람이 확인해야 할 작업을 분리
+   - 원본 PDF 배치, 자동 레지스트리 등록, PDF 추출, FTS5 색인 재생성, 검색 평가, 뷰어 검증을 하나의 CLI 프로세스로 정리
+   - 신규 PDF 추가 시 사람이 확인하는 단계 대신 confidence gate로 자동 등록 또는 `blocked` 상태를 반환
+   - 자동 등록 CLI: `.venv/bin/uv run python -m backend.app.indexing.ingest_new_pdf data/raw/manuals/<PDF>`
    - 실패 시 OpenDataLoader primary 원인 분석과 pypdf fallback 기록 방식을 포함
 6. 후속 고도화: 검색 평가셋(Search Evaluation Set) 확장
    - 자동 생성된 300개 약라벨 케이스의 노이즈 필터를 더 보강
