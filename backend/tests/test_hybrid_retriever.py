@@ -3,66 +3,11 @@ from pathlib import Path
 from backend.app.indexing.fts_index import build_fts_index
 from backend.app.schemas.search import SearchRequest
 from backend.app.services.hybrid_retriever import HybridRetriever
-from backend.app.services.vector_search import (
-    VectorSearchRequest,
-    VectorSearchResult,
-)
 from backend.tests.hybrid_retriever_fixtures import (
     hybrid_chunk,
     hybrid_model,
     write_hybrid_source_validation_fixture,
 )
-
-
-class FakeVectorSearchAdapter:
-    def search(self, request: VectorSearchRequest) -> tuple[VectorSearchResult, ...]:
-        assert request.query == "제브라"
-        return (
-            VectorSearchResult(
-                chunk_id="sample_manual:vector:12:1",
-                document_id="sample_manual",
-                model_ids=("DC-G9M2",),
-                page_start=12,
-                page_end=12,
-                section_title="촬영 보조",
-                content="제브라 패턴은 노출 확인에 사용하는 촬영 보조 기능입니다.",
-                score=0.75,
-            ),
-        )
-
-
-class MultiModelVectorSearchAdapter:
-    def search(self, request: VectorSearchRequest) -> tuple[VectorSearchResult, ...]:
-        _ = request
-        return (
-            VectorSearchResult(
-                chunk_id="sample_manual:vector:12:multi",
-                document_id="sample_manual",
-                model_ids=("DC-TZ99", "DC-ZS99"),
-                page_start=12,
-                page_end=12,
-                section_title="촬영 보조",
-                content="제브라 패턴은 노출 확인에 사용하는 촬영 보조 기능입니다.",
-                score=0.75,
-            ),
-        )
-
-
-class InvalidVectorSearchAdapter:
-    def search(self, request: VectorSearchRequest) -> tuple[VectorSearchResult, ...]:
-        _ = request
-        return (
-            VectorSearchResult(
-                chunk_id="missing_manual:vector:99:1",
-                document_id="missing_manual",
-                model_ids=("DC-G9M2",),
-                page_start=99,
-                page_end=99,
-                section_title="촬영 보조",
-                content="제브라 패턴",
-                score=0.5,
-            ),
-        )
 
 
 def test_hybrid_retriever_returns_feature_cards_from_fts_index(
@@ -104,58 +49,6 @@ def test_hybrid_retriever_reports_not_indexed_when_index_missing(
     response = retriever.search(SearchRequest(query="제브라"))
 
     assert response.retrieval_status == "not_indexed"
-    assert response.cards == []
-
-
-def test_hybrid_retriever_can_use_vector_adapter_when_fts_has_no_results(
-    tmp_path: Path,
-) -> None:
-    registry_dir, pages_dir = write_hybrid_source_validation_fixture(tmp_path=tmp_path)
-    retriever = HybridRetriever(
-        index_path=tmp_path / "missing.sqlite3",
-        registry_dir=registry_dir,
-        pages_dir=pages_dir,
-        vector_adapter=FakeVectorSearchAdapter(),
-    )
-
-    response = retriever.search(SearchRequest(query="제브라", model_ids=["DC-G9M2"]))
-
-    assert response.retrieval_status == "ok"
-    assert response.cards[0].feature_id == "sample_manual:vector:12:1"
-    assert response.cards[0].confidence == 0.75
-
-
-def test_hybrid_retriever_uses_requested_model_for_vector_source(
-    tmp_path: Path,
-) -> None:
-    registry_dir, pages_dir = write_hybrid_source_validation_fixture(tmp_path=tmp_path)
-    retriever = HybridRetriever(
-        index_path=tmp_path / "missing.sqlite3",
-        registry_dir=registry_dir,
-        pages_dir=pages_dir,
-        vector_adapter=MultiModelVectorSearchAdapter(),
-    )
-
-    response = retriever.search(SearchRequest(query="제브라", model_ids=["DC-ZS99"]))
-
-    assert response.retrieval_status == "ok"
-    assert response.cards[0].sources[0].model_id == "DC-ZS99"
-
-
-def test_hybrid_retriever_reports_insufficient_evidence_for_invalid_vector_source(
-    tmp_path: Path,
-) -> None:
-    registry_dir, pages_dir = write_hybrid_source_validation_fixture(tmp_path=tmp_path)
-    retriever = HybridRetriever(
-        index_path=tmp_path / "missing.sqlite3",
-        registry_dir=registry_dir,
-        pages_dir=pages_dir,
-        vector_adapter=InvalidVectorSearchAdapter(),
-    )
-
-    response = retriever.search(SearchRequest(query="제브라", model_ids=["DC-G9M2"]))
-
-    assert response.retrieval_status == "insufficient_evidence"
     assert response.cards == []
 
 

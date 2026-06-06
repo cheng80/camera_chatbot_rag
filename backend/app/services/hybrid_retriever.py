@@ -10,9 +10,9 @@ from backend.app.services.query_normalizer import (
     load_default_models,
     normalize_search_input,
 )
-from backend.app.services.retrieval_feature_cards import (
-    response_from_fts_results,
-    response_from_vector_results,
+from backend.app.services.retrieval_hybrid_fusion import (
+    HybridFusionInput,
+    response_from_hybrid_results,
 )
 from backend.app.services.retrieval_source_validation import (
     SourceValidationCache,
@@ -59,41 +59,29 @@ class HybridRetriever:
             model_ids=normalized_input.effective_model_ids,
             top_k=payload.top_k,
         )
-        if not results and self._vector_adapter is not None:
-            vector_results = self._vector_adapter.search(
+        vector_results = (
+            self._vector_adapter.search(
                 VectorSearchRequest(
                     query=normalized_input.search_query,
                     model_ids=tuple(normalized_input.effective_model_ids),
                     top_k=payload.top_k,
                 ),
             )
-            return response_from_vector_results(
+            if self._vector_adapter is not None
+            else ()
+        )
+        return response_from_hybrid_results(
+            fusion_input=HybridFusionInput(
                 payload=payload,
                 normalized_query=normalized_input.normalized_query,
-                results=vector_results,
+                fts_results=results,
+                vector_results=vector_results,
                 requested_model_ids=tuple(normalized_input.effective_model_ids),
                 validation_context=SourceValidationContext(
                     registry_dir=self._registry_dir,
                     pages_dir=self._pages_dir,
                     validation_cache=self._source_validation_cache,
                 ),
-            )
-        if not results:
-            status = "not_indexed" if not self._index_path.is_file() else "no_results"
-            return SearchResponse(
-                query=payload.query,
-                normalized_query=normalized_input.normalized_query,
-                cards=[],
-                retrieval_status=status,
-            )
-        return response_from_fts_results(
-            payload=payload,
-            normalized_query=normalized_input.normalized_query,
-            results=results,
-            requested_model_ids=tuple(normalized_input.effective_model_ids),
-            validation_context=SourceValidationContext(
-                registry_dir=self._registry_dir,
-                pages_dir=self._pages_dir,
-                validation_cache=self._source_validation_cache,
+                index_exists=self._index_path.is_file(),
             ),
         )

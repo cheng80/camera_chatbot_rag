@@ -30,7 +30,7 @@ PDF 추출(PDF Extraction)
 - PDF 추출(PDF Extraction): OpenDataLoader PDF primary + pypdf fallback 구성 완료
 - 전체 추출: 32개 문서, 17,699 페이지(Page), 321,976 청크(Chunk)
 - 검색 색인(Search Index): SQLite FTS5 원문 색인 + trigram 보조 색인 생성 완료
-- Vector Search: local-only adapter seam과 in-memory hash vector PoC 구현 완료
+- Vector Search: local-only adapter seam과 in-memory hash vector PoC, FTS/vector 후보 병합, API opt-in wiring 구현 완료
 - 검색 API(Search API): `/api/search`가 임시 기능 카드(Feature Card)를 반환
 - 질의 정규화(Query Normalization): 모델 별칭, 제어 문구, 일부 한국어 검색어 처리 완료
 - 검색 평가(Search Evaluation): 50개 seed 평가셋과 300개 자동 약라벨(Weak Label) 후보 생성 완료

@@ -18,6 +18,7 @@ class Settings(BaseSettings):
     static_dir: Path = Path("web")
     data_dir: Path = Path("data")
     allowed_origins: list[str] = Field(default_factory=list)
+    enable_local_vector: bool = False
 
 
 @lru_cache

@@ -54,7 +54,7 @@
   - SQLite FTS5 색인(Full-Text Search Index) CLI 존재: `.venv/bin/uv run python -m backend.app.indexing.fts_index`
   - FTS5 색인 생성 완료: `data/indexes/fts/lumix_manuals.sqlite3`
   - 현재 FTS5 색인: 32개 문서, 321,976 청크(Chunk)
-  - `/api/search`는 FTS5 색인을 사용해 임시 기능 카드(Feature Card)를 반환
+  - `/api/search`는 FTS5 색인과 선택적 vector adapter 후보를 병합해 임시 기능 카드(Feature Card)를 반환
   - 모델 필터(Model Filter) 적용 가능
   - 질의 정규화(Query Normalization) 추가: `G9M2`, `DC-G9M2`, `LUMIX G9II` 같은 모델 별칭을 검색어에서 분리해 모델 필터로 사용
   - 질의 제어 문구(Query Control Phrase) 제거: `어디서 설정해?`, `어떻게 설정해?` 같은 검색 의도 문구를 제거
@@ -63,6 +63,8 @@
   - 붙여쓰기 질의 예: `제브라패턴`, `손떨림보정` 검색 가능
   - 현재 카드는 LLM 요약이 아니라 검색 청크(Chunk) 기반 임시 카드
   - Vector Search adapter seam과 local-only in-memory hash vector PoC 구현
+  - HybridRetriever는 FTS5/vector 후보를 동시에 검색하고 source page 기준으로 중복 제거/병합
+  - API local vector opt-in: `LUMIX_ENABLE_LOCAL_VECTOR=true`
   - 실제 embedding provider 또는 Vector DB 도입은 별도 승인 필요
 - 출처/뷰어(Source/Viewer)
   - Source Reference 검증기(Source Reference Validator) 구현 완료
