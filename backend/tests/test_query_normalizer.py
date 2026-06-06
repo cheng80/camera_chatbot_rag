@@ -48,6 +48,17 @@ def test_normalize_search_input_removes_connection_method_phrase() -> None:
     assert result.effective_model_ids == ("DC-S1M2",)
 
 
+def test_normalize_search_input_applies_manual_vocabulary_synonyms() -> None:
+    result = normalize_search_input(
+        query="S9 루믹스랩 오픈게이트 초기설정",
+        requested_model_ids=(),
+        models=(_model("DC-S9", "LUMIX S9"),),
+    )
+
+    assert result.search_query == "LUMIX Lab 오픈 게이트 초기 설정"
+    assert result.effective_model_ids == ("DC-S9",)
+
+
 def test_normalize_search_input_preserves_particle_like_word_endings() -> None:
     result = normalize_search_input(
         query="TZ99 와이파이 연결 방법",

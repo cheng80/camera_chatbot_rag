@@ -4,7 +4,7 @@ from pathlib import Path
 from time import perf_counter
 from typing import ClassVar
 
-from pydantic import BaseModel, ConfigDict, Field
+from pydantic import BaseModel, ConfigDict, Field, ValidationError
 
 from backend.app.indexing.chunker import write_document_chunks_jsonl
 from backend.app.indexing.pdf_extractor import write_document_pages_jsonl
@@ -61,7 +61,11 @@ def run_batch_extraction(
         )
         for document in documents
     )
-    report = ExtractionReport(document_count=len(records), records=records)
+    report = _extraction_report(
+        records=records,
+        selected_document_ids=tuple(document_ids),
+        report_path=output_root / "reports" / "extraction_report.json",
+    )
     _ = write_extraction_report(report=report, output_dir=output_root / "reports")
     return report
 
@@ -80,6 +84,38 @@ def write_extraction_report(
     return output_path
 
 
+def _extraction_report(
+    *,
+    records: tuple[ExtractionRecord, ...],
+    selected_document_ids: tuple[str, ...],
+    report_path: Path,
+) -> ExtractionReport:
+    if not selected_document_ids:
+        return ExtractionReport(document_count=len(records), records=records)
+    existing_report = _load_existing_report(report_path=report_path)
+    if existing_report is None:
+        return ExtractionReport(document_count=len(records), records=records)
+    selected_ids = set(selected_document_ids)
+    retained_records = tuple(
+        record
+        for record in existing_report.records
+        if record.document_id not in selected_ids
+    )
+    merged_records = retained_records + records
+    return ExtractionReport(document_count=len(merged_records), records=merged_records)
+
+
+def _load_existing_report(*, report_path: Path) -> ExtractionReport | None:
+    try:
+        raw_json = report_path.read_text(encoding="utf-8")
+    except FileNotFoundError:
+        return None
+    try:
+        return ExtractionReport.model_validate_json(raw_json)
+    except ValidationError:
+        return None
+
+
 def main() -> None:
     registry_dir = Path("data/registry")
     manuals_dir = Path("data/raw/manuals")
@@ -89,6 +125,7 @@ def main() -> None:
         catalog=catalog,
         manuals_dir=manuals_dir,
         output_root=output_root,
+        document_ids=tuple(sys.argv[1:]),
     )
     _ = sys.stdout.write(f"extracted {report.document_count} documents\n")
 

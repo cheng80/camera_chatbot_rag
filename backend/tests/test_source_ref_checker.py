@@ -114,6 +114,41 @@ def test_validate_source_reference_rejects_unsafe_document_id(
     assert result.viewer_url is None
 
 
+def test_validate_source_reference_sees_updated_processed_pages(
+    tmp_path: Path,
+) -> None:
+    registry_dir = tmp_path / "registry"
+    pages_dir = tmp_path / "pages"
+    registry_dir.mkdir()
+    pages_dir.mkdir()
+    _write_registry(registry_dir)
+    _write_pages(pages_dir=pages_dir, document_id="dc_g9m2_full_kor", pages=(7,))
+
+    first_result = validate_source_reference(
+        SourceReferenceCandidate(
+            document_id="dc_g9m2_full_kor",
+            model_id="DC-G9M2",
+            page=12,
+        ),
+        registry_dir=registry_dir,
+        pages_dir=pages_dir,
+    )
+    _write_pages(pages_dir=pages_dir, document_id="dc_g9m2_full_kor", pages=(12,))
+
+    second_result = validate_source_reference(
+        SourceReferenceCandidate(
+            document_id="dc_g9m2_full_kor",
+            model_id="DC-G9M2",
+            page=12,
+        ),
+        registry_dir=registry_dir,
+        pages_dir=pages_dir,
+    )
+
+    assert first_result.valid is False
+    assert second_result.valid is True
+
+
 def _write_registry(registry_dir: Path) -> None:
     _ = (registry_dir / "models.json").write_text(
         json.dumps(

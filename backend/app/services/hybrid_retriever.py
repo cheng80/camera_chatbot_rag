@@ -1,25 +1,31 @@
 from pathlib import Path
-from typing import Final
 
 from backend.app.indexing.fts_index import (
     DEFAULT_FTS_INDEX_PATH,
-    FtsSearchResult,
     search_fts_index,
 )
 from backend.app.schemas.document import CameraModelRegistryEntry
-from backend.app.schemas.feature_card import (
-    FeatureCard,
-    SourceReference,
-    SupportedModel,
-)
 from backend.app.schemas.search import SearchRequest, SearchResponse
 from backend.app.services.query_normalizer import (
     load_default_models,
     normalize_search_input,
 )
-
-DEFAULT_CATEGORY: Final = "manual_chunk"
-SUMMARY_LIMIT: Final = 180
+from backend.app.services.retrieval_feature_cards import (
+    response_from_fts_results,
+    response_from_vector_results,
+)
+from backend.app.services.retrieval_source_validation import (
+    SourceValidationCache,
+    SourceValidationContext,
+)
+from backend.app.services.vector_search import (
+    VectorSearchAdapter,
+    VectorSearchRequest,
+)
+from backend.app.wiki.source_ref_checker import (
+    DEFAULT_PAGES_DIR,
+    DEFAULT_REGISTRY_DIR,
+)
 
 
 class HybridRetriever:
@@ -27,12 +33,19 @@ class HybridRetriever:
         self,
         *,
         index_path: Path = DEFAULT_FTS_INDEX_PATH,
+        registry_dir: Path = DEFAULT_REGISTRY_DIR,
+        pages_dir: Path = DEFAULT_PAGES_DIR,
         models: tuple[CameraModelRegistryEntry, ...] | None = None,
+        vector_adapter: VectorSearchAdapter | None = None,
     ) -> None:
         self._index_path: Path = index_path
+        self._registry_dir: Path = registry_dir
+        self._pages_dir: Path = pages_dir
         self._models: tuple[CameraModelRegistryEntry, ...] = (
             models if models is not None else load_default_models()
         )
+        self._vector_adapter: VectorSearchAdapter | None = vector_adapter
+        self._source_validation_cache: SourceValidationCache = {}
 
     def search(self, payload: SearchRequest) -> SearchResponse:
         normalized_input = normalize_search_input(
@@ -46,6 +59,25 @@ class HybridRetriever:
             model_ids=normalized_input.effective_model_ids,
             top_k=payload.top_k,
         )
+        if not results and self._vector_adapter is not None:
+            vector_results = self._vector_adapter.search(
+                VectorSearchRequest(
+                    query=normalized_input.search_query,
+                    model_ids=tuple(normalized_input.effective_model_ids),
+                    top_k=payload.top_k,
+                ),
+            )
+            return response_from_vector_results(
+                payload=payload,
+                normalized_query=normalized_input.normalized_query,
+                results=vector_results,
+                requested_model_ids=tuple(normalized_input.effective_model_ids),
+                validation_context=SourceValidationContext(
+                    registry_dir=self._registry_dir,
+                    pages_dir=self._pages_dir,
+                    validation_cache=self._source_validation_cache,
+                ),
+            )
         if not results:
             status = "not_indexed" if not self._index_path.is_file() else "no_results"
             return SearchResponse(
@@ -54,68 +86,14 @@ class HybridRetriever:
                 cards=[],
                 retrieval_status=status,
             )
-        return SearchResponse(
-            query=payload.query,
+        return response_from_fts_results(
+            payload=payload,
             normalized_query=normalized_input.normalized_query,
-            cards=[
-                _card_from_result(
-                    result=result,
-                    requested_model_ids=list(normalized_input.effective_model_ids),
-                )
-                for result in results
-            ],
-            retrieval_status="ok",
-        )
-
-
-def _card_from_result(
-    *,
-    result: FtsSearchResult,
-    requested_model_ids: list[str],
-) -> FeatureCard:
-    feature_name = result.section_title or result.chunk_type
-    source_model_id = _source_model_id(
-        result_model_ids=result.model_ids,
-        requested_model_ids=requested_model_ids,
-    )
-    return FeatureCard(
-        feature_id=result.chunk_id,
-        feature_name=feature_name,
-        category=DEFAULT_CATEGORY,
-        summary=_summary(result.content),
-        supported_models=[
-            SupportedModel(model_id=model_id, support_status="unknown")
-            for model_id in result.model_ids
-        ],
-        how_to_use=[],
-        menu_path=None,
-        cautions=[],
-        sources=[
-            SourceReference(
-                document_id=result.document_id,
-                model_id=source_model_id,
-                page=result.page_start,
-                section_title=feature_name,
-                viewer_url=f"/api/viewer/{result.document_id}/pages/{result.page_start}",
+            results=results,
+            requested_model_ids=tuple(normalized_input.effective_model_ids),
+            validation_context=SourceValidationContext(
+                registry_dir=self._registry_dir,
+                pages_dir=self._pages_dir,
+                validation_cache=self._source_validation_cache,
             ),
-        ],
-        confidence=0.55,
-    )
-
-
-def _summary(content: str) -> str:
-    normalized = " ".join(content.split())
-    if len(normalized) <= SUMMARY_LIMIT:
-        return normalized
-    return f"{normalized[:SUMMARY_LIMIT]}..."
-
-
-def _source_model_id(
-    *,
-    result_model_ids: tuple[str, ...],
-    requested_model_ids: list[str],
-) -> str:
-    for model_id in requested_model_ids:
-        if model_id in result_model_ids:
-            return model_id
-    return result_model_ids[0]
+        )

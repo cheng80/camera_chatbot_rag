@@ -19,9 +19,9 @@
   - `docs/architecture/`, `docs/api/`, `docs/data/`, `docs/evaluation/`, `docs/reference/`로 분류
   - 초기 설계 문서는 스킬 참조를 위해 `docs/` 루트에 유지
 - 레지스트리(Registry)
-  - `data/registry/documents.json`: 31개 PDF 문서 등록
-  - `data/registry/models.json`: 33개 모델 등록
-  - 신규 등록: `DC-S9`, `DC-TZ300`, `DC-ZS300`
+  - `data/registry/documents.json`: 32개 PDF 문서 등록
+  - `data/registry/models.json`: 34개 모델 등록
+  - 신규 등록: `DC-S9`, `DC-TZ300`, `DC-ZS300`, `DMC-G7`
   - 동종/공동 매뉴얼은 하나의 문서가 여러 `model_id`를 가질 수 있음
 - PDF 추출(PDF Extraction)
   - pypdf 기반 페이지 추출기 존재
@@ -29,15 +29,15 @@
   - OpenDataLoader JSON -> `ExtractedPage`/`ExtractedChunk` 어댑터 존재
   - OpenDataLoader primary, pypdf fallback 정책 채택
   - 배치 추출 CLI(Batch Extraction CLI) 존재: `.venv/bin/uv run python -m backend.app.indexing.batch_extractor`
-  - 전체 31개 PDF 추출 완료
+  - 전체 32개 PDF 추출 완료
   - 로컬 산출물: `data/processed/pages/*.jsonl`, `data/processed/chunks/*.jsonl`
-  - 전체 결과: 31개 문서, 17,631 페이지(Page), 320,269 청크(Chunk)
-  - 신규 추출: `dc_s9_full_kor` 818페이지/12,202청크, `dc_tz300_zs300_full_kor` 281페이지/5,763청크
-  - fallback 사용 문서 없음: 신규 2개 문서 모두 OpenDataLoader primary 성공
+  - 전체 결과: 32개 문서, 17,699 페이지(Page), 321,976 청크(Chunk)
+  - 신규 추출: `dc_s9_full_kor` 818페이지/12,202청크, `dc_tz300_zs300_full_kor` 281페이지/5,763청크, `dmc_g7_kor` 68페이지/1,707청크
+  - fallback 사용 문서 없음: 신규 문서 모두 OpenDataLoader primary 성공
 - 평가(Evaluation)
   - 대표 4개 PDF에서 OpenDataLoader primary 추출 평가 완료
   - DMC-G85 CLI 실패 원인은 Java TimSort 계약 위반이며 legacy merge sort JVM 옵션으로 해결
-  - 전체 31개 PDF 추출 리포트 생성: `data/processed/reports/extraction_report.json`
+  - 전체 32개 PDF 추출 리포트 생성: `data/processed/reports/extraction_report.json`
   - 검색 평가셋(Search Evaluation Set) 50개 작성: `data/eval/search_eval_cases.json`
   - 검색 기준선(Search Baseline) 생성: `data/eval/search_eval_report.json`
   - 현재 검색 기준선: 50개 seed 기준 문서 적중률(Document Hit Rate) 100%, 페이지 적중률(Page Hit Rate) 100%
@@ -47,12 +47,13 @@
   - 자동 약라벨 산출물: `data/eval/generated_search_eval_cases.json`, 300개, 25개 문서, `section_title_weak_label`
   - 네이버 카페 수동 복사 제목 후보화 도구 존재: `.venv/bin/uv run python -m backend.app.evaluation.import_community_queries`
   - 커뮤니티 후보 산출물: `data/eval/community_query_candidates.json`, 999개 제목 후보
-  - 커뮤니티 기능 후보 retrieval 산출물: `data/eval/community_query_retrieval_candidates.json`, 216개 기능 후보 중 16개에 검수용 출처 후보 부착
+  - 커뮤니티 기능 후보 retrieval 산출물: `data/eval/community_query_retrieval_candidates.json`, 216개 기능 후보를 자동 triage/weak-label 후보 풀로 관리
+  - 커뮤니티 후보는 정답 평가셋이 아니라 검색 품질 개선 입력으로만 사용
 - 웹/API(Web/API)
   - FastAPI 정적 UI 서빙 구조 존재
   - SQLite FTS5 색인(Full-Text Search Index) CLI 존재: `.venv/bin/uv run python -m backend.app.indexing.fts_index`
   - FTS5 색인 생성 완료: `data/indexes/fts/lumix_manuals.sqlite3`
-  - 현재 FTS5 색인: 31개 문서, 320,269 청크(Chunk)
+  - 현재 FTS5 색인: 32개 문서, 321,976 청크(Chunk)
   - `/api/search`는 FTS5 색인을 사용해 임시 기능 카드(Feature Card)를 반환
   - 모델 필터(Model Filter) 적용 가능
   - 질의 정규화(Query Normalization) 추가: `G9M2`, `DC-G9M2`, `LUMIX G9II` 같은 모델 별칭을 검색어에서 분리해 모델 필터로 사용
@@ -61,6 +62,8 @@
   - 한국어 검색은 원문 `unicode61` 색인과 공백 제거 `trigram` 보조 색인을 함께 사용
   - 붙여쓰기 질의 예: `제브라패턴`, `손떨림보정` 검색 가능
   - 현재 카드는 LLM 요약이 아니라 검색 청크(Chunk) 기반 임시 카드
+  - Vector Search adapter seam과 local-only in-memory hash vector PoC 구현
+  - 실제 embedding provider 또는 Vector DB 도입은 별도 승인 필요
 - 출처/뷰어(Source/Viewer)
   - Source Reference 검증기(Source Reference Validator) 구현 완료
   - `document_id`, `model_id`, 문서-모델 관계, 처리 페이지 범위, viewer URL 가능 여부 검증
@@ -92,7 +95,7 @@
    - Source Reference 검증기를 카드 생성/검색 응답 경계에 연결
    - `/api/viewer`의 `image_url`과 카드 `viewer_url`의 UI 사용 방식을 정리
 3. 검색 품질 개선(Search Quality Pass)
-   - 커뮤니티 기능 후보 216개 중 16개만 출처 후보가 붙는 원인을 기준으로 질의 정규화 개선
+   - 커뮤니티 기능 후보 216개의 `triage_bucket`, `triage_reasons`를 기준으로 질의 정규화 개선
    - `S9`, `TZ300/ZS300` 신규 색인 반영 후 no_results 케이스를 분석
    - FTS5 결과의 섹션 제목(Section Title) 가중치 조정
    - 같은 문서/페이지 중복 결과 축소
@@ -101,14 +104,18 @@
    - query, normalized_query, selected_model_ids, retrieval_status 저장
    - 클릭한 출처 페이지, no_results, 사용자 재검색 여부를 나중에 기록할 수 있게 API 구조 준비
    - 개인정보 없이 검색 품질 개선에 필요한 최소 필드만 저장
-5. 후속 고도화: 검색 평가셋(Search Evaluation Set) 확장
+5. 후속 고도화: 신규 PDF 추가 프로세스(New PDF Ingestion Process) 정리
+   - 원본 PDF 배치, 레지스트리 문서/모델 등록, PDF 추출, FTS5 색인 재생성, 검색 평가, 뷰어/페이지 이미지 검증, 문서 갱신을 하나의 체크리스트 또는 CLI 프로세스로 정리
+   - 신규 PDF 추가 시 자동으로 실행해야 할 작업과 사람이 확인해야 할 작업을 분리
+   - 실패 시 OpenDataLoader primary 원인 분석과 pypdf fallback 기록 방식을 포함
+6. 후속 고도화: 검색 평가셋(Search Evaluation Set) 확장
    - 자동 생성된 300개 약라벨 케이스의 노이즈 필터를 더 보강
    - 처리된 청크(Chunk), 섹션 제목(Section Title), 목차, 메뉴 목록에서 후보 케이스 추가 생성
    - 100개 개발 평가셋(Dev Evaluation Set)으로 확장
    - 최소 300개 잠금 평가셋(Locked Evaluation Set)으로 확장
    - 모델명 포함 질의, 오타, 무띄어쓰기, 후속 질문형 질의, no_results 질의를 추가
    - 웹 프로토타입 이후 커뮤니티 검색 로그로 실제 질의 기반 평가셋을 보강
-6. 후속 고도화: 벡터 검색(Vector Search) 또는 Elasticsearch 추가
+7. 후속 고도화: 벡터 검색(Vector Search) 또는 Elasticsearch 추가
    - FTS5 키워드 검색과 합쳐 Hybrid RAG로 확장
    - Elasticsearch는 300개 잠금 평가셋에서 FTS5 한계가 확인되면 검색 어댑터(Search Adapter)로 붙임
 
@@ -126,6 +133,7 @@ feature card contract + source validation integration
 - [초기 설계 문서](docs/Panasonic_LUMIX_Manual_Assistant_GCSE_Initial_Design.md): 장기 설계 원본
 - [아키텍처 개요](docs/architecture/overview.md): 시스템 구성
 - [RAG 파이프라인](docs/architecture/rag_pipeline.md): 검색 증강 생성 흐름
+- [Vector Search 계획](docs/architecture/vector_search_plan.md): 로컬 벡터 검색 adapter와 도입 기준
 - [API 명세](docs/api/api_spec.md): FastAPI 엔드포인트
 - [데이터 인벤토리](docs/data/data_inventory.md): 원본/처리 데이터
 - [PDF 로더 후보 검토](docs/data/pdf_loader_options.md): OpenDataLoader PDF와 pypdf 정책

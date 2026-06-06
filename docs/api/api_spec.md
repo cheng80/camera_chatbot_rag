@@ -16,7 +16,7 @@ POST /api/feedback
 
 `POST /api/search`
 
-현재 검색은 SQLite FTS5 색인(Full-Text Search Index)을 사용한다.
+현재 검색은 SQLite FTS5 색인(Full-Text Search Index)을 기본으로 사용한다.
 LLM 요약은 아직 붙이지 않았고, 검색 청크(Chunk)를 임시 기능 카드(Feature Card)로
 매핑한다.
 
@@ -46,3 +46,18 @@ LLM 요약은 아직 붙이지 않았고, 검색 청크(Chunk)를 임시 기능 
 | ok | 색인에서 검색 결과를 찾음 |
 | no_results | 색인은 있지만 검색 결과가 없음 |
 | not_indexed | 색인 파일이 아직 없음 |
+| insufficient_evidence | 검색 후보는 있었지만 Source Reference 검증을 통과한 공식 출처가 없음 |
+
+기능 카드(Feature Card) 출처 계약:
+
+| 필드 | 의미 |
+|---|---|
+| `sources[].document_id` | 등록된 PDF 문서 ID |
+| `sources[].model_id` | 출처 문서와 연결된 모델 ID |
+| `sources[].page` | 처리된 PDF 페이지 번호 |
+| `sources[].viewer_url` | `/api/viewer/{document_id}/pages/{page}` 형식의 뷰어 API |
+| `evidence_status` | `source_validated` 또는 `insufficient_evidence` |
+| `source_validation_errors` | 출처 검증 실패 코드 목록 |
+
+검색 응답에 포함되는 카드는 현재 `source_validated` 출처만 반환한다. 검증 가능한
+출처가 없으면 카드를 반환하지 않고 `insufficient_evidence` 상태를 사용한다.

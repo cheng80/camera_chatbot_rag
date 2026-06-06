@@ -208,6 +208,14 @@
     "document_type": "advanced_manual"
   },
   {
+    "document_id": "dmc_g7_kor",
+    "title": "DMC-G7 기본 사용 설명서",
+    "filename": "DMC-G7.pdf",
+    "model_ids": ["DMC-G7"],
+    "language": "ko",
+    "document_type": "operating_instructions"
+  },
+  {
     "document_id": "dmc_gf1_kor",
     "title": "DMC-GF1 사용 설명서",
     "filename": "DMC-GF1-KOR.pdf",

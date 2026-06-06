@@ -37,6 +37,11 @@ CONTROL_LOOKAHEAD_PATTERN: Final = r"(?=(?:어디|어떻게))"
 CONTROL_PARTICLE_PATTERN: Final = re.compile(
     f"{PARTICLE_TERM_PATTERN}{CONTROL_LOOKAHEAD_PATTERN}",
 )
+QUERY_SYNONYMS: Final[tuple[tuple[str, str], ...]] = (
+    ("루믹스랩", "LUMIX Lab"),
+    ("오픈게이트", "오픈 게이트"),
+    ("초기설정", "초기 설정"),
+)
 
 
 class NormalizedSearchInput(BaseModel):
@@ -137,6 +142,7 @@ def _strip_model_aliases(
     normalized = SEPARATOR_PATTERN.sub(" ", query)
     for alias in aliases:
         normalized = _alias_pattern(alias.alias).sub(" ", normalized)
+    normalized = _apply_query_synonyms(normalized)
     normalized = _strip_control_particle(normalized)
     normalized = _strip_query_control_phrases(normalized)
     stripped = WHITESPACE_PATTERN.sub(" ", normalized).strip()
@@ -147,6 +153,13 @@ def _strip_query_control_phrases(query: str) -> str:
     normalized = query
     for pattern in QUERY_CONTROL_PATTERNS:
         normalized = pattern.sub(" ", normalized)
+    return normalized
+
+
+def _apply_query_synonyms(query: str) -> str:
+    normalized = query
+    for source, target in QUERY_SYNONYMS:
+        normalized = normalized.replace(source, target)
     return normalized
 
 

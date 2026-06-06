@@ -24,6 +24,23 @@
 | `/page-images/dc_s9_full_kor/201.png` | 200, `image/png` |
 | `/api/viewer/dc_tz300_zs300_full_kor/pages/402` | 404, `page not found` |
 
+## 커뮤니티 후보 Triage
+
+네이버 카페 수동 복사 제목에서 추출한 커뮤니티 후보는 정답 평가셋이 아니라
+검색 품질 개선용 후보 풀이다. 자동 triage 결과는 다음과 같다.
+
+| bucket | 건수 | 의미 |
+|---|---:|---|
+| `ok_with_source` | 16 | 검증 가능한 출처 후보가 붙은 약라벨 후보 |
+| `needs_synonym` | 53 | 매뉴얼 용어/동의어 보강 가능성이 높은 후보 |
+| `query_too_broad` | 12 | 질의가 넓어 정확한 기능 검색어가 부족한 후보 |
+| `low_signal_query` | 8 | 검색 신호가 너무 짧거나 일반적인 후보 |
+| `no_results` | 127 | 현재 자동 규칙으로 원인 세분화가 안 된 no_results 후보 |
+
+모든 커뮤니티 후보는 `not_human_verified=true`로 유지한다. `weak_label=true`는
+공식 PDF 문서/모델/페이지 조합이 존재하는 약라벨 후보라는 뜻이며, 최종 품질 주장에
+바로 사용하지 않는다.
+
 ## 검색 평가 기준선
 
 평가 목적:
@@ -311,7 +328,7 @@ DMC-G85는 261페이지에서 Java TimSort 계약 위반 오류가 재현됐지�
 legacy merge sort JVM 옵션으로 OpenDataLoader primary 추출이 성공한다.
 ```
 
-## 전체 31개 PDF 배치 추출 결과
+## 전체 32개 PDF 배치 추출 결과
 
 평가 목적:
 
@@ -328,12 +345,12 @@ legacy merge sort JVM 옵션으로 OpenDataLoader primary 추출이 성공한다
 
 | 항목 | 결과 |
 |---|---:|
-| 등록 문서 | 31 |
-| 추출 성공 문서 | 31 |
-| OpenDataLoader primary 사용 | 31 |
+| 등록 문서 | 32 |
+| 추출 성공 문서 | 32 |
+| OpenDataLoader primary 사용 | 32 |
 | pypdf fallback 사용 | 0 |
-| 전체 페이지(Page) | 17,631 |
-| 전체 청크(Chunk) | 320,269 |
+| 전체 페이지(Page) | 17,699 |
+| 전체 청크(Chunk) | 321,976 |
 
 산출물:
 

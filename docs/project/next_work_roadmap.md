@@ -26,10 +26,11 @@ PDF 추출(PDF Extraction)
 
 ## Current Baseline
 
-- 레지스트리(Registry): 31개 문서(Document), 33개 모델(Model) 등록 완료
+- 레지스트리(Registry): 32개 문서(Document), 34개 모델(Model) 등록 완료
 - PDF 추출(PDF Extraction): OpenDataLoader PDF primary + pypdf fallback 구성 완료
-- 전체 추출: 31개 문서, 17,631 페이지(Page), 320,269 청크(Chunk)
+- 전체 추출: 32개 문서, 17,699 페이지(Page), 321,976 청크(Chunk)
 - 검색 색인(Search Index): SQLite FTS5 원문 색인 + trigram 보조 색인 생성 완료
+- Vector Search: local-only adapter seam과 in-memory hash vector PoC 구현 완료
 - 검색 API(Search API): `/api/search`가 임시 기능 카드(Feature Card)를 반환
 - 질의 정규화(Query Normalization): 모델 별칭, 제어 문구, 일부 한국어 검색어 처리 완료
 - 검색 평가(Search Evaluation): 50개 seed 평가셋과 300개 자동 약라벨(Weak Label) 후보 생성 완료
@@ -37,8 +38,8 @@ PDF 추출(PDF Extraction)
 - 페이지 이미지 렌더링(Page Image Rendering): PDF 페이지 PNG 렌더링 구현 완료
 - 뷰어 API(Page Viewer API): 처리된 페이지 범위를 검증하고 `image_url`을 반환
 - 페이지 이미지 정적 제공(Page Image Static Serving): `/page-images/{document_id}/{page}.png` 응답 확인 완료
-- 커뮤니티 후보(Community Candidates): 네이버 카페 수동 복사 제목 999개 후보화, 기능 후보 216개 중 16개에 검색 출처 후보 부착
-- 현재 제한: 기능 카드는 아직 LLM 요약이 아니며, 검색 응답 경계에서 Source Reference 검증과 근거 부족 상태가 아직 연결되지 않음
+- 커뮤니티 후보(Community Candidates): 네이버 카페 수동 복사 제목 999개 후보화, 기능 후보 216개를 자동 triage/weak-label 후보 풀로 관리
+- 현재 제한: 기능 카드는 아직 LLM 요약이 아니며, Vector Search는 local PoC adapter까지만 연결됨
 
 ## Priority 0: Checkpoint
 
@@ -127,22 +128,23 @@ PDF 추출(PDF Extraction)
 - LLM 요약 전에도 안정적인 검색 카드 UI를 만들 수 있다.
 - 이후 기능 위키 LLM(Feature Wiki LLM)이 들어와도 응답 형식이 흔들리지 않는다.
 
-## Priority 2: Community Candidate Labeling
+## Priority 2: Community Candidate Triage
 
-커뮤니티 후보 라벨링(Community Candidate Labeling)은 실제 사용자 질문 후보를
-공식 PDF 근거와 연결하기 위한 검수 보조 단계다.
+커뮤니티 후보 triage(Community Candidate Triage)는 실제 사용자 질문 후보를
+수동 정답 라벨링 없이 자동 분석해 검색 품질 개선 입력으로 쓰는 단계다.
 
 작업 범위:
 
-- `data/eval/community_query_retrieval_candidates.json`에서 출처 후보가 붙은 항목을 수동 검수
-- `source_ref_valid=true`라도 자동 정답으로 승격하지 않고 문맥 관련성을 확인
-- 검수된 항목만 `manual_seed` 또는 별도 verified source_method로 검색 평가셋(Search Evaluation Set)에 편입
+- `data/eval/community_query_retrieval_candidates.json`에 `triage_bucket`, `triage_reasons`, `weak_label`, `not_human_verified` 필드 유지
+- `ok_with_source`, `no_results`, `model_missing`, `query_too_broad`, `lens_accessory_noise`, `low_signal_query`, `needs_synonym` bucket으로 자동 분류
+- `source_ref_valid=true`라도 정답으로 승격하지 않고 `weak_label=true`, `not_human_verified=true` 후보로만 유지
+- no_results 원인을 검색 품질 개선(Search Quality Pass) 입력으로 넘김
 - `S9`, `TZ300/ZS300` 신규 문서 반영 후 no_results 케이스를 검색 품질 개선 입력으로 사용
 
 주의:
 
-- 현재 커뮤니티 기능 후보는 216개이며 검색 출처 후보가 붙은 항목은 16개다.
-- 이 산출물은 평가셋이 아니라 후보 풀이다.
+- 현재 커뮤니티 기능 후보는 216개이며 이 산출물은 평가셋이 아니라 후보 풀이다.
+- 사람 손검수 없이 품질 주장에 쓰지 않는다.
 
 ## Priority 3: Search Quality Pass
 
@@ -178,7 +180,30 @@ PDF 추출(PDF Extraction)
 - 사람 손검수(QA)가 어려운 현재 조건에서 웹 프로토타입 이후 실제 검색어를 품질 개선에
   활용할 수 있다.
 
-## Priority 5: Web MVP Integration
+## Priority 5: New PDF Ingestion Process
+
+신규 PDF 추가 프로세스(New PDF Ingestion Process)는 새 매뉴얼을 추가할 때 반복되는
+작업을 하나의 체크리스트 또는 CLI 프로세스로 정리하는 단계다.
+
+작업 범위:
+
+- 원본 PDF를 `data/raw/manuals/`에 배치
+- `data/registry/documents.json`, `data/registry/models.json` 등록
+- OpenDataLoader primary 추출과 pypdf fallback 결과 기록
+- `data/processed/pages`, `data/processed/chunks`, `data/processed/reports` 갱신
+- SQLite FTS5 색인(Index) 재생성
+- 신규 모델 검색 스모크와 기존 검색 평가(Search Evaluation) 회귀 확인
+- `/api/viewer`와 `/page-images` 출처 페이지 동작 확인
+- `NEXT_SESSION.md`, `docs/data/data_inventory.md`, 평가 문서 갱신
+- 자동 실행 가능한 단계와 사람이 확인해야 하는 단계 분리
+
+왜 필요한가:
+
+- S9, TZ300/ZS300처럼 새 PDF를 추가할 때 같은 작업이 반복된다.
+- 등록, 추출, 색인, 평가, 문서 갱신 중 하나가 빠지면 검색 결과와 문서 상태가 어긋난다.
+- 후속 CLI 또는 make target으로 묶기 전에 정확한 운영 절차를 먼저 고정해야 한다.
+
+## Priority 6: Web MVP Integration
 
 웹 MVP 통합(Web MVP Integration)은 사용자가 브라우저에서 검색하고 출처를 확인하는
 첫 완성 화면을 만드는 단계다.
@@ -199,7 +224,7 @@ PDF 추출(PDF Extraction)
 - 기능 위키 LLM(Feature Wiki LLM): PDF 근거 기반 기능 요약 지식층 생성
 - 그래프 라이트(Graph-lite): 모델, 기능, 문서, 페이지 관계를 그래프로 연결
 - 가이드형 지원 도우미(Guided Support Assistant): 문제 해결 질의를 단계별로 안내
-- 벡터 검색(Vector Search): 의미 기반 검색 보강
+- 벡터 검색(Vector Search): adapter 경계와 local PoC는 완료, 실제 embedding provider/vector store 선택은 승인 후 진행
 - Elasticsearch: FTS5 한계가 평가로 확인된 뒤 검색 어댑터(Search Adapter)로 도입
 - 검색 평가셋(Search Evaluation Set) 확장: 웹 프로토타입 이후 검색 로그 기반으로 보강
 - Flutter 앱(Flutter App): 웹 MVP 이후 모바일 앱으로 확장

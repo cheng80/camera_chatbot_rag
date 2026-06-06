@@ -9,6 +9,7 @@ from backend.app.evaluation.search_eval import (
 from backend.app.evaluation.search_eval_schema import SearchEvalCase, SearchEvalReport
 from backend.app.indexing.chunker import ExtractedChunk
 from backend.app.indexing.fts_index import build_fts_index
+from backend.app.indexing.pdf_extractor import ExtractedPage
 from pydantic import ValidationError
 
 
@@ -21,6 +22,10 @@ def test_run_search_eval_reports_document_and_page_hit_rates(tmp_path: Path) -> 
     )
     index_path = tmp_path / "fts" / "lumix_manuals.sqlite3"
     _ = build_fts_index(chunks_dir=chunks_dir, index_path=index_path)
+    registry_dir, pages_dir = _write_source_validation_fixture(
+        tmp_path=tmp_path,
+        pages=(7,),
+    )
     cases_path = tmp_path / "search_eval_cases.json"
     _ = cases_path.write_text(
         json.dumps(
@@ -54,7 +59,12 @@ def test_run_search_eval_reports_document_and_page_hit_rates(tmp_path: Path) -> 
         encoding="utf-8",
     )
 
-    report = run_search_eval(cases_path=cases_path, index_path=index_path)
+    report = run_search_eval(
+        cases_path=cases_path,
+        index_path=index_path,
+        registry_dir=registry_dir,
+        pages_dir=pages_dir,
+    )
 
     assert report.case_count == 2
     assert report.document_hit_count == 1
@@ -80,6 +90,11 @@ def test_run_search_eval_requires_page_hit_in_expected_document(
     )
     index_path = tmp_path / "fts" / "lumix_manuals.sqlite3"
     _ = build_fts_index(chunks_dir=chunks_dir, index_path=index_path)
+    registry_dir, pages_dir = _write_source_validation_fixture(
+        tmp_path=tmp_path,
+        pages=(7, 8),
+        document_ids=("sample_manual", "other_manual"),
+    )
     cases_path = tmp_path / "search_eval_cases.json"
     _ = cases_path.write_text(
         json.dumps(
@@ -101,7 +116,12 @@ def test_run_search_eval_requires_page_hit_in_expected_document(
         encoding="utf-8",
     )
 
-    report = run_search_eval(cases_path=cases_path, index_path=index_path)
+    report = run_search_eval(
+        cases_path=cases_path,
+        index_path=index_path,
+        registry_dir=registry_dir,
+        pages_dir=pages_dir,
+    )
 
     assert report.document_hit_count == 1
     assert report.page_hit_count == 0
@@ -161,3 +181,59 @@ def _chunk(
         char_count=len(content),
         source_hash="0" * 64,
     )
+
+
+def _write_source_validation_fixture(
+    *,
+    tmp_path: Path,
+    pages: tuple[int, ...],
+    document_ids: tuple[str, ...] = ("sample_manual",),
+) -> tuple[Path, Path]:
+    registry_dir = tmp_path / "registry"
+    pages_dir = tmp_path / "pages"
+    registry_dir.mkdir()
+    pages_dir.mkdir()
+    _ = (registry_dir / "models.json").write_text(
+        json.dumps(
+            [
+                {
+                    "model_id": "DC-G9M2",
+                    "display_name": "LUMIX G9II",
+                    "product_line": "LUMIX G",
+                },
+            ],
+        ),
+        encoding="utf-8",
+    )
+    _ = (registry_dir / "documents.json").write_text(
+        json.dumps(
+            [
+                {
+                    "document_id": document_id,
+                    "title": "Sample Manual",
+                    "filename": f"{document_id}.pdf",
+                    "model_ids": ["DC-G9M2"],
+                    "language": "ko",
+                    "document_type": "full_manual",
+                }
+                for document_id in document_ids
+            ],
+        ),
+        encoding="utf-8",
+    )
+    for document_id in document_ids:
+        lines = [
+            ExtractedPage(
+                document_id=document_id,
+                model_ids=("DC-G9M2",),
+                page=page,
+                text=f"page {page}",
+                char_count=7,
+            ).model_dump_json()
+            for page in pages
+        ]
+        _ = (pages_dir / f"{document_id}.jsonl").write_text(
+            "\n".join(lines) + "\n",
+            encoding="utf-8",
+        )
+    return registry_dir, pages_dir

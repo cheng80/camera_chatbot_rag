@@ -14,6 +14,7 @@ from backend.app.evaluation.search_eval_schema import (
 from backend.app.indexing.fts_index import DEFAULT_FTS_INDEX_PATH
 from backend.app.schemas.search import SearchRequest
 from backend.app.services.hybrid_retriever import HybridRetriever
+from backend.app.wiki.source_ref_checker import DEFAULT_PAGES_DIR, DEFAULT_REGISTRY_DIR
 
 DEFAULT_CASES_PATH: Final = Path("data/eval/search_eval_cases.json")
 DEFAULT_REPORT_PATH: Final = Path("data/eval/search_eval_report.json")
@@ -26,9 +27,15 @@ def run_search_eval(
     *,
     cases_path: Path,
     index_path: Path,
+    registry_dir: Path = DEFAULT_REGISTRY_DIR,
+    pages_dir: Path = DEFAULT_PAGES_DIR,
 ) -> SearchEvalReport:
     cases = load_search_eval_cases(cases_path)
-    retriever = HybridRetriever(index_path=index_path)
+    retriever = HybridRetriever(
+        index_path=index_path,
+        registry_dir=registry_dir,
+        pages_dir=pages_dir,
+    )
     results = tuple(_evaluate_case(case=case, retriever=retriever) for case in cases)
     return _build_report(results)
 

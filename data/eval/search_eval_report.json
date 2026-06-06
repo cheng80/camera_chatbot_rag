@@ -272,16 +272,14 @@
       "hit_document": true,
       "hit_page": true,
       "top_rank": 1,
-      "result_count": 5,
+      "result_count": 4,
       "result_pages": [
         266,
         269,
         38,
-        269,
         784
       ],
       "result_document_ids": [
-        "dc_g9m2_full_kor",
         "dc_g9m2_full_kor",
         "dc_g9m2_full_kor",
         "dc_g9m2_full_kor",
@@ -597,16 +595,14 @@
       "hit_document": true,
       "hit_page": true,
       "top_rank": 2,
-      "result_count": 5,
+      "result_count": 4,
       "result_pages": [
         234,
         647,
         654,
-        647,
         695
       ],
       "result_document_ids": [
-        "dc_s1m2_full_kor",
         "dc_s1m2_full_kor",
         "dc_s1m2_full_kor",
         "dc_s1m2_full_kor",
@@ -722,15 +718,13 @@
       "hit_document": true,
       "hit_page": true,
       "top_rank": 1,
-      "result_count": 4,
+      "result_count": 3,
       "result_pages": [
         22,
         17,
-        22,
         267
       ],
       "result_document_ids": [
-        "dc_tz99_zs99_full_kor",
         "dc_tz99_zs99_full_kor",
         "dc_tz99_zs99_full_kor",
         "dc_tz99_zs99_full_kor"
@@ -820,16 +814,14 @@
       "hit_document": true,
       "hit_page": true,
       "top_rank": 1,
-      "result_count": 5,
+      "result_count": 4,
       "result_pages": [
-        246,
         246,
         248,
         285,
         196
       ],
       "result_document_ids": [
-        "dc_tz99_zs99_full_kor",
         "dc_tz99_zs99_full_kor",
         "dc_tz99_zs99_full_kor",
         "dc_tz99_zs99_full_kor",
@@ -845,16 +837,14 @@
       "hit_document": true,
       "hit_page": true,
       "top_rank": 1,
-      "result_count": 5,
+      "result_count": 4,
       "result_pages": [
-        228,
         228,
         197,
         222,
         232
       ],
       "result_document_ids": [
-        "dc_tz99_zs99_full_kor",
         "dc_tz99_zs99_full_kor",
         "dc_tz99_zs99_full_kor",
         "dc_tz99_zs99_full_kor",
@@ -1202,16 +1192,14 @@
       "hit_document": true,
       "hit_page": true,
       "top_rank": 1,
-      "result_count": 5,
+      "result_count": 4,
       "result_pages": [
-        1019,
         1019,
         129,
         1007,
         703
       ],
       "result_document_ids": [
-        "dc_gh7_full_kor",
         "dc_gh7_full_kor",
         "dc_gh7_full_kor",
         "dc_gh7_full_kor",
@@ -1377,15 +1365,13 @@
       "hit_document": true,
       "hit_page": true,
       "top_rank": 1,
-      "result_count": 4,
+      "result_count": 3,
       "result_pages": [
         22,
         17,
-        22,
         267
       ],
       "result_document_ids": [
-        "dc_tz99_zs99_full_kor",
         "dc_tz99_zs99_full_kor",
         "dc_tz99_zs99_full_kor",
         "dc_tz99_zs99_full_kor"

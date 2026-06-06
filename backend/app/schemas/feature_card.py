@@ -2,6 +2,8 @@ from typing import ClassVar, Literal
 
 from pydantic import BaseModel, ConfigDict, Field
 
+type EvidenceStatus = Literal["source_validated", "insufficient_evidence"]
+
 
 class SupportedModel(BaseModel):
     model_config: ClassVar[ConfigDict] = ConfigDict(frozen=True)
@@ -32,4 +34,6 @@ class FeatureCard(BaseModel):
     menu_path: str | None = None
     cautions: list[str] = Field(default_factory=list)
     sources: list[SourceReference]
+    evidence_status: EvidenceStatus = "source_validated"
+    source_validation_errors: list[str] = Field(default_factory=list)
     confidence: float

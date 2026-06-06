@@ -1,4 +1,5 @@
 import re
+from functools import lru_cache
 from pathlib import Path
 from typing import ClassVar, Final, Literal
 
@@ -13,6 +14,7 @@ SAFE_DOCUMENT_ID_RE: Final = re.compile(r"^[a-z0-9_]+$")
 PAGES_ADAPTER: Final[TypeAdapter[tuple[ExtractedPage, ...]]] = TypeAdapter(
     tuple[ExtractedPage, ...],
 )
+type PageFileSignature = tuple[int, int]
 
 type SourceReferenceErrorCode = Literal[
     "document_model_mismatch",
@@ -145,7 +147,10 @@ def _page_errors(
                 message=f"missing processed pages: {pages_path}",
             ),
         )
-    pages = _load_document_pages(pages_path)
+    pages = _load_document_pages(
+        path=pages_path,
+        signature=_page_file_signature(pages_path),
+    )
     known_pages = {page.page for page in pages}
     if reference.page in known_pages:
         return ()
@@ -162,9 +167,20 @@ def _page_errors(
     )
 
 
-def _load_document_pages(path: Path) -> tuple[ExtractedPage, ...]:
+@lru_cache(maxsize=128)
+def _load_document_pages(
+    *,
+    path: Path,
+    signature: PageFileSignature,
+) -> tuple[ExtractedPage, ...]:
+    _ = signature
     content = f"[{','.join(path.read_text(encoding='utf-8').splitlines())}]"
     return PAGES_ADAPTER.validate_json(content)
+
+
+def _page_file_signature(path: Path) -> PageFileSignature:
+    stat_result = path.stat()
+    return (stat_result.st_mtime_ns, stat_result.st_size)
 
 
 def _is_safe_document_id(document_id: str) -> bool:
