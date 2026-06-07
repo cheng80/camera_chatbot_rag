@@ -12,6 +12,7 @@
 ## Project
 
 - [다음 작업 로드맵](project/next_work_roadmap.md): 전체 목표 기반 다음 작업 우선순위와 추천 커밋 단위
+- [기술 근거 매트릭스](project/technical_evidence_matrix.md): 사용 기술, 구현 위치, 평가 산출물, 리포트 인용 근거
 
 ## Architecture
 

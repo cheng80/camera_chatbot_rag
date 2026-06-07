@@ -19,13 +19,12 @@ class LocalModelCandidate(BaseModel):
 LOCAL_MODEL_CANDIDATES: tuple[LocalModelCandidate, ...] = (
     LocalModelCandidate(
         role="primary_llm",
-        model_id="hf.co/unsloth/gemma-4-12B-it-qat-GGUF:UD-Q4_K_XL",
-        hf_ref="hf.co/unsloth/gemma-4-12B-it-qat-GGUF:UD-Q4_K_XL",
+        model_id="hf.co/mradermacher/supergemma4-e4b-abliterated-i1-GGUF:Q4_K_M",
+        hf_ref="hf.co/mradermacher/supergemma4-e4b-abliterated-i1-GGUF:Q4_K_M",
         runtime="llama.cpp, Ollama, LM Studio, or any OpenAI-compatible server",
-        memory_note="16GB Mac quality candidate; keep context modest during tests.",
+        memory_note="16GB Mac fast non-thinking candidate.",
         use_case=(
-            "Feature card JSON, Korean answer synthesis, "
-            "evidence-aware summaries."
+            "Fast Korean answer synthesis when explicit thinking is not required."
         ),
     ),
     LocalModelCandidate(
@@ -41,13 +40,12 @@ LOCAL_MODEL_CANDIDATES: tuple[LocalModelCandidate, ...] = (
     ),
     LocalModelCandidate(
         role="comparison_llm",
-        model_id="hf.co/mradermacher/supergemma4-e4b-abliterated-i1-GGUF:Q4_K_M",
-        hf_ref="hf.co/mradermacher/supergemma4-e4b-abliterated-i1-GGUF:Q4_K_M",
+        model_id="hf.co/unsloth/gemma-4-12B-it-qat-GGUF:UD-Q4_K_XL",
+        hf_ref="hf.co/unsloth/gemma-4-12B-it-qat-GGUF:UD-Q4_K_XL",
         runtime="llama.cpp, Ollama, LM Studio, or any OpenAI-compatible server",
-        memory_note="16GB Mac speed comparison candidate.",
+        memory_note="16GB Mac quality comparison candidate; keep context modest.",
         use_case=(
-            "Compare latency and Korean instruction following "
-            "against Gemma 4 12B."
+            "Compare higher-parameter Gemma-family quality against E4B models."
         ),
     ),
     LocalModelCandidate(

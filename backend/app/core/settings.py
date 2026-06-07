@@ -1,6 +1,6 @@
 from functools import lru_cache
 from pathlib import Path
-from typing import ClassVar
+from typing import ClassVar, Literal
 
 from pydantic import AliasChoices, Field
 from pydantic_settings import BaseSettings, SettingsConfigDict
@@ -25,12 +25,15 @@ class Settings(BaseSettings):
     enable_local_vector: bool = False
     llm_base_url: str = "http://127.0.0.1:11434/v1"
     llm_api_key: str = "local"
-    llm_model: str = "hf.co/unsloth/gemma-4-12B-it-qat-GGUF:UD-Q4_K_XL"
+    llm_selection_mode: Literal["fixed", "auto"] = "auto"
+    llm_model: str = "hf.co/mradermacher/supergemma4-e4b-abliterated-i1-GGUF:Q4_K_M"
+    llm_fast_model: str = (
+        "hf.co/mradermacher/supergemma4-e4b-abliterated-i1-GGUF:Q4_K_M"
+    )
+    llm_thinking_model: str = "hf.co/Qwen/Qwen3-8B-GGUF:Q4_K_M"
     llm_comparison_models: list[str] = Field(
         default_factory=lambda: [
             "hf.co/unsloth/gemma-4-E4B-it-qat-GGUF:UD-Q4_K_XL",
-            "hf.co/mradermacher/supergemma4-e4b-abliterated-i1-GGUF:Q4_K_M",
-            "hf.co/Qwen/Qwen3-8B-GGUF:Q4_K_M",
         ],
     )
     embedding_base_url: str = "http://127.0.0.1:11434/v1"

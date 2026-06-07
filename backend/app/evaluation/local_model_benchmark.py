@@ -20,7 +20,7 @@ from backend.app.evaluation.search_eval import (
     DEFAULT_CASES_PATH,
     load_search_eval_cases,
 )
-from backend.app.services.local_model_config import local_model_candidates_by_role
+from backend.app.services.llm_model_selector import select_llm_model
 
 DEFAULT_OUTPUT_PATH: Final = Path(
     "data/processed/evaluation/local_model_benchmark.json",
@@ -29,11 +29,10 @@ DEFAULT_PROMPT_LIMIT: Final = 10
 
 
 def benchmark_model_ids(settings: Settings) -> tuple[str, ...]:
-    primary = (settings.llm_model,)
-    comparisons = tuple(
-        candidate.model_id
-        for candidate in local_model_candidates_by_role("comparison_llm")
+    primary = (
+        select_llm_model(settings=settings, requires_thinking=settings.llm_think),
     )
+    comparisons = tuple(settings.llm_comparison_models)
     return primary + tuple(model for model in comparisons if model not in primary)
 
 

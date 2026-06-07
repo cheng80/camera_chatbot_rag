@@ -20,6 +20,7 @@ if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 
 from backend.app.core.settings import Settings  # noqa: E402
+from backend.app.services.llm_model_selector import select_llm_model  # noqa: E402
 
 type SmokeTarget = Literal["llm", "embedding", "all"]
 
@@ -111,8 +112,9 @@ def _run_smoke_tests(
 
 
 def _smoke_llm(*, settings: Settings, prompt: str) -> SmokeResult:
+    model_id = select_llm_model(settings=settings, requires_thinking=settings.llm_think)
     payload: dict[str, object] = {
-        "model": settings.llm_model,
+        "model": model_id,
         "messages": [
             {
                 "role": "system",
@@ -136,7 +138,7 @@ def _smoke_llm(*, settings: Settings, prompt: str) -> SmokeResult:
         return SmokeResult(ok=False, message="LLM endpoint returned no payload.")
     return validate_llm_response(
         payload=result.payload,
-        model=settings.llm_model,
+        model=model_id,
     )
 
 
