@@ -36,6 +36,15 @@ class Settings(BaseSettings):
             "hf.co/unsloth/gemma-4-E4B-it-qat-GGUF:UD-Q4_K_XL",
         ],
     )
+    llm_rewrite_enabled: bool = True
+    llm_rewrite_model: str = "hf.co/unsloth/gemma-4-E4B-it-qat-GGUF:UD-Q4_K_XL"
+    llm_rewrite_fallback_models: list[str] = Field(
+        default_factory=lambda: [
+            "hf.co/mradermacher/supergemma4-e4b-abliterated-i1-GGUF:Q4_K_M",
+        ],
+    )
+    llm_rewrite_max_tokens: int = Field(default=128, ge=1)
+    llm_rewrite_think: bool = False
     embedding_base_url: str = "http://127.0.0.1:11434/v1"
     embedding_api_key: str = "local"
     embedding_model: str = "bge-m3"

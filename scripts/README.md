@@ -10,8 +10,14 @@ PDF 수집, 텍스트 추출, 페이지 렌더링, chunk 생성, 인덱스 구�
 ```bash
 .venv/bin/python scripts/local_model_benchmark.py --limit 10
 .venv/bin/python scripts/rag_model_quality_eval.py --limit 5
+.venv/bin/python scripts/card_template_rewrite_eval.py --limit 10 --max-tokens 128
+.venv/bin/python scripts/card_answer_rewrite_eval.py --limit 10 --max-tokens 128
 ```
 
 `local_model_benchmark.py`는 생성 속도와 응답 안정성을 본다.
 `rag_model_quality_eval.py`는 같은 검색 근거를 넣은 뒤 LLM inference 답변과
 retrieval-only 기준선을 비교한다.
+`card_template_rewrite_eval.py`는 deterministic card 답변을 LLM이 짧게 보정할 때의
+품질, JSON 안정성, 속도, 토큰 수를 비교한다.
+`card_answer_rewrite_eval.py`는 LLM이 JSON을 만들지 않고 답변 문장만 생성하게 한 뒤,
+코드가 기존 card source contract를 붙이는 구조를 비교한다.

@@ -59,6 +59,17 @@ def test_normalize_search_input_applies_manual_vocabulary_synonyms() -> None:
     assert result.effective_model_ids == ("DC-S9",)
 
 
+def test_normalize_search_input_splits_compound_feature_aliases() -> None:
+    result = normalize_search_input(
+        query="G9M2 제브라패턴 손떨림보정",
+        requested_model_ids=(),
+        models=(_model("DC-G9M2", "LUMIX G9II"),),
+    )
+
+    assert result.search_query == "제브라 패턴 손떨림 보정"
+    assert result.effective_model_ids == ("DC-G9M2",)
+
+
 def test_normalize_search_input_preserves_particle_like_word_endings() -> None:
     result = normalize_search_input(
         query="TZ99 와이파이 연결 방법",
@@ -66,7 +77,7 @@ def test_normalize_search_input_preserves_particle_like_word_endings() -> None:
         models=(_model("DC-TZ99", "LUMIX TZ99"),),
     )
 
-    assert result.search_query == "와이파이"
+    assert result.search_query == "Wi-Fi"
     assert result.effective_model_ids == ("DC-TZ99",)
 
 

@@ -1,0 +1,3354 @@
+{
+  "source_path": "data/eval/search_eval_cases.json",
+  "model_count": 5,
+  "prompt_count": 11,
+  "summaries": [
+    {
+      "model_id": "card_template",
+      "answer_mode": "card_template",
+      "case_count": 11,
+      "json_valid_rate": 1.0,
+      "json_recoverable_rate": 1.0,
+      "avg_latency_ms": 0.0,
+      "avg_completion_tokens": 0.0,
+      "avg_total_tokens": 0.0,
+      "tokens_per_second": 0.0,
+      "avg_output_chars": 311.72727272727275,
+      "error_count": 0,
+      "answer_relevance_rate": 1.0,
+      "korean_intent_rate": 1.0,
+      "source_citation_rate": 1.0,
+      "pdf_source_faithfulness_rate": 1.0,
+      "unsupported_handling_rate": 1.0,
+      "overall_pass_rate": 1.0
+    },
+    {
+      "model_id": "hf.co/unsloth/gemma-4-E4B-it-qat-GGUF:UD-Q4_K_XL",
+      "answer_mode": "card_answer_rewrite",
+      "case_count": 11,
+      "json_valid_rate": 1.0,
+      "json_recoverable_rate": 1.0,
+      "avg_latency_ms": 5805.111723541896,
+      "avg_completion_tokens": 34.36363636363637,
+      "avg_total_tokens": 301.27272727272725,
+      "tokens_per_second": 5.919547805476161,
+      "avg_output_chars": 241.8181818181818,
+      "error_count": 0,
+      "answer_relevance_rate": 1.0,
+      "korean_intent_rate": 1.0,
+      "source_citation_rate": 1.0,
+      "pdf_source_faithfulness_rate": 1.0,
+      "unsupported_handling_rate": 1.0,
+      "overall_pass_rate": 1.0
+    },
+    {
+      "model_id": "hf.co/Qwen/Qwen3-4B-GGUF:Q4_K_M",
+      "answer_mode": "card_answer_rewrite",
+      "case_count": 11,
+      "json_valid_rate": 1.0,
+      "json_recoverable_rate": 1.0,
+      "avg_latency_ms": 6610.348556817785,
+      "avg_completion_tokens": 231.9090909090909,
+      "avg_total_tokens": 501.6363636363636,
+      "tokens_per_second": 35.082732614743044,
+      "avg_output_chars": 1038.1818181818182,
+      "error_count": 0,
+      "answer_relevance_rate": 0.09090909090909091,
+      "korean_intent_rate": 1.0,
+      "source_citation_rate": 1.0,
+      "pdf_source_faithfulness_rate": 0.09090909090909091,
+      "unsupported_handling_rate": 1.0,
+      "overall_pass_rate": 0.09090909090909091
+    },
+    {
+      "model_id": "hf.co/mradermacher/supergemma4-e4b-abliterated-i1-GGUF:Q4_K_M",
+      "answer_mode": "card_answer_rewrite",
+      "case_count": 11,
+      "json_valid_rate": 1.0,
+      "json_recoverable_rate": 1.0,
+      "avg_latency_ms": 5391.946276538709,
+      "avg_completion_tokens": 39.72727272727273,
+      "avg_total_tokens": 306.6363636363636,
+      "tokens_per_second": 7.3678910526488295,
+      "avg_output_chars": 253.54545454545453,
+      "error_count": 0,
+      "answer_relevance_rate": 0.9090909090909091,
+      "korean_intent_rate": 1.0,
+      "source_citation_rate": 1.0,
+      "pdf_source_faithfulness_rate": 0.9090909090909091,
+      "unsupported_handling_rate": 1.0,
+      "overall_pass_rate": 0.9090909090909091
+    },
+    {
+      "model_id": "hf.co/unsloth/gemma-4-12B-it-qat-GGUF:UD-Q4_K_XL",
+      "answer_mode": "card_answer_rewrite",
+      "case_count": 11,
+      "json_valid_rate": 1.0,
+      "json_recoverable_rate": 1.0,
+      "avg_latency_ms": 3169.060431727716,
+      "avg_completion_tokens": 39.72727272727273,
+      "avg_total_tokens": 310.6363636363636,
+      "tokens_per_second": 12.535978275937804,
+      "avg_output_chars": 257.27272727272725,
+      "error_count": 0,
+      "answer_relevance_rate": 0.5454545454545454,
+      "korean_intent_rate": 1.0,
+      "source_citation_rate": 1.0,
+      "pdf_source_faithfulness_rate": 0.5454545454545454,
+      "unsupported_handling_rate": 1.0,
+      "overall_pass_rate": 0.5454545454545454
+    }
+  ],
+  "scores": [
+    {
+      "model_id": "card_template",
+      "answer_mode": "card_template",
+      "case_id": "g9m2_zebra_phrase",
+      "query": "제브라 패턴",
+      "raw_answer": "{\"answer\":\"DC-G9M2 매뉴얼 415쪽에서 확인하세요. [제브라 패턴] 기준 값보다 밝은 부분에 줄무늬가 표시됩니다. 지정한 밝기 범위 안에 있는 부분에 줄무늬가 표시되도록 범위 폭과 기준 값 을 설정할 수도 있습니다. [ZEBRA1] [ZEBRA2] [ZEBRA1+2]\",\"intent_summary\":\"제브라 패턴\",\"source_refs\":[{\"document_id\":\"dc_g9m2_full_kor\",\"model_id\":\"DC-G9M2\",\"page\":415}],\"supported_by_sources\":true,\"needs_more_context\":false}",
+      "parsed_answer": {
+        "answer": "DC-G9M2 매뉴얼 415쪽에서 확인하세요. [제브라 패턴] 기준 값보다 밝은 부분에 줄무늬가 표시됩니다. 지정한 밝기 범위 안에 있는 부분에 줄무늬가 표시되도록 범위 폭과 기준 값 을 설정할 수도 있습니다. [ZEBRA1] [ZEBRA2] [ZEBRA1+2]",
+        "intent_summary": "제브라 패턴",
+        "source_refs": [
+          {
+            "document_id": "dc_g9m2_full_kor",
+            "model_id": "DC-G9M2",
+            "page": 415
+          }
+        ],
+        "supported_by_sources": true,
+        "needs_more_context": false
+      },
+      "retrieved_sources": [
+        {
+          "source_id": "S1",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 415,
+          "section_title": "제브라 패턴",
+          "summary": "• [제브라 패턴]([제브라 패턴]: 415)",
+          "evidence_text": "[제브라 패턴]\n기준 값보다 밝은 부분에 줄무늬가 표시됩니다. 지정한 밝기 범위 안에 있는 부분에 줄무늬가 표시되도록 범위 폭과 기준 값 을 설정할 수도 있습니다.\n[ZEBRA1]\n[ZEBRA2]\n[ZEBRA1+2]"
+        },
+        {
+          "source_id": "S2",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 589,
+          "section_title": "[사용자] 메뉴([모니터/디스플레이(비디오)])",
+          "summary": "[제브라 패턴]",
+          "evidence_text": "[프레임 마커]\n[ON] / [OFF]\n[SET]\n[프레임 비율]\n[프레임 색]\n[프레임 마스크]\n설정한 화면비율의 프레임이 촬영 화면에 표시됩니다. [프레임 비율]도 사용자 설정할 수 있습니다. ([프레임 마커]: 417)\n[제브라 패턴]\n[ZEBRA1] / [ZEBRA2] / [ZEBRA1+2] / [OFF]\n[SET]\n[제브라1]\n[제브라2]\n기준 값보다 밝은 부분에 줄무늬가 표시됩니다. ([제브라 패턴]: 415)\n[파형 모니터 / 벡터 범위]\n[WAVE] / [VECTOR] / [OFF]\n촬영 화면에 파형 모니터 또는 벡터 범위를 표시합니다. ([파형 모니터 / 벡터 범위]: 409)"
+        },
+        {
+          "source_id": "S3",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 796,
+          "section_title": "[사용자]: [모니터/디스플레이(비디오)]",
+          "summary": "[제브라 패턴]",
+          "evidence_text": "[사용자]: [모니터/디스플레이(비디오)]\n[V-Log 보기 지원]\n[LUT 선택]\n[Vlog_709]\n\n\n\n[LUT 보기 지원(모니터)]\n[OFF]\n\n\n\n[LUT 보기 지원(HDMI)]\n[OFF]\n\n\n\n[HLG 보기 지원]\n[모니터]\n[MODE2]\n\n\n\n[HDMI]\n[AUTO]\n\n\n\n[아나모픽 디스퀴즈 표시]\n[OFF]\n\n\n\n[흑백 라이브 뷰]\n[OFF]\n\n\n\n[센터 마커]\n[OFF]\n\n\n\n[세이프티 존 마커]\n[OFF]\n\n\n\n[프레임 마커]\n[ON] / [OFF]\n[OFF]\n\n\n\n[SET]\n—\n\n\n\n[제브라 패턴]\n[ZEBRA1] / [ZEBRA2] / [ZEBRA1+2] / [OFF]\n[OFF]\n\n\n\n[SET]\n—\n\n\n\n[파형 모니터"
+        }
+      ],
+      "latency_ms": 0.0,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "output_chars": 323,
+      "json_valid": true,
+      "json_recoverable": true,
+      "answer_relevance_pass": true,
+      "korean_intent_pass": true,
+      "source_citation_pass": true,
+      "pdf_source_faithfulness_pass": true,
+      "unsupported_handling_pass": true,
+      "overall_pass": true,
+      "error_message": null
+    },
+    {
+      "model_id": "hf.co/unsloth/gemma-4-E4B-it-qat-GGUF:UD-Q4_K_XL",
+      "answer_mode": "card_answer_rewrite",
+      "case_id": "g9m2_zebra_phrase",
+      "query": "제브라 패턴",
+      "raw_answer": "{\"answer\":\"제브라 패턴: DC-G9M2 매뉴얼 415쪽에서 확인하세요. 기준 값보다 밝은 부분에 줄무늬가 표시됩니다.\",\"intent_summary\":\"제브라 패턴\",\"source_refs\":[{\"document_id\":\"dc_g9m2_full_kor\",\"model_id\":\"DC-G9M2\",\"page\":415}],\"supported_by_sources\":true,\"needs_more_context\":false}",
+      "parsed_answer": {
+        "answer": "제브라 패턴: DC-G9M2 매뉴얼 415쪽에서 확인하세요. 기준 값보다 밝은 부분에 줄무늬가 표시됩니다.",
+        "intent_summary": "제브라 패턴",
+        "source_refs": [
+          {
+            "document_id": "dc_g9m2_full_kor",
+            "model_id": "DC-G9M2",
+            "page": 415
+          }
+        ],
+        "supported_by_sources": true,
+        "needs_more_context": false
+      },
+      "retrieved_sources": [
+        {
+          "source_id": "S1",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 415,
+          "section_title": "제브라 패턴",
+          "summary": "• [제브라 패턴]([제브라 패턴]: 415)",
+          "evidence_text": "[제브라 패턴]\n기준 값보다 밝은 부분에 줄무늬가 표시됩니다. 지정한 밝기 범위 안에 있는 부분에 줄무늬가 표시되도록 범위 폭과 기준 값 을 설정할 수도 있습니다.\n[ZEBRA1]\n[ZEBRA2]\n[ZEBRA1+2]"
+        },
+        {
+          "source_id": "S2",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 589,
+          "section_title": "[사용자] 메뉴([모니터/디스플레이(비디오)])",
+          "summary": "[제브라 패턴]",
+          "evidence_text": "[프레임 마커]\n[ON] / [OFF]\n[SET]\n[프레임 비율]\n[프레임 색]\n[프레임 마스크]\n설정한 화면비율의 프레임이 촬영 화면에 표시됩니다. [프레임 비율]도 사용자 설정할 수 있습니다. ([프레임 마커]: 417)\n[제브라 패턴]\n[ZEBRA1] / [ZEBRA2] / [ZEBRA1+2] / [OFF]\n[SET]\n[제브라1]\n[제브라2]\n기준 값보다 밝은 부분에 줄무늬가 표시됩니다. ([제브라 패턴]: 415)\n[파형 모니터 / 벡터 범위]\n[WAVE] / [VECTOR] / [OFF]\n촬영 화면에 파형 모니터 또는 벡터 범위를 표시합니다. ([파형 모니터 / 벡터 범위]: 409)"
+        },
+        {
+          "source_id": "S3",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 796,
+          "section_title": "[사용자]: [모니터/디스플레이(비디오)]",
+          "summary": "[제브라 패턴]",
+          "evidence_text": "[사용자]: [모니터/디스플레이(비디오)]\n[V-Log 보기 지원]\n[LUT 선택]\n[Vlog_709]\n\n\n\n[LUT 보기 지원(모니터)]\n[OFF]\n\n\n\n[LUT 보기 지원(HDMI)]\n[OFF]\n\n\n\n[HLG 보기 지원]\n[모니터]\n[MODE2]\n\n\n\n[HDMI]\n[AUTO]\n\n\n\n[아나모픽 디스퀴즈 표시]\n[OFF]\n\n\n\n[흑백 라이브 뷰]\n[OFF]\n\n\n\n[센터 마커]\n[OFF]\n\n\n\n[세이프티 존 마커]\n[OFF]\n\n\n\n[프레임 마커]\n[ON] / [OFF]\n[OFF]\n\n\n\n[SET]\n—\n\n\n\n[제브라 패턴]\n[ZEBRA1] / [ZEBRA2] / [ZEBRA1+2] / [OFF]\n[OFF]\n\n\n\n[SET]\n—\n\n\n\n[파형 모니터"
+        }
+      ],
+      "latency_ms": 3876.1418749927543,
+      "prompt_tokens": 266,
+      "completion_tokens": 33,
+      "total_tokens": 299,
+      "output_chars": 236,
+      "json_valid": true,
+      "json_recoverable": true,
+      "answer_relevance_pass": true,
+      "korean_intent_pass": true,
+      "source_citation_pass": true,
+      "pdf_source_faithfulness_pass": true,
+      "unsupported_handling_pass": true,
+      "overall_pass": true,
+      "error_message": null
+    },
+    {
+      "model_id": "hf.co/Qwen/Qwen3-4B-GGUF:Q4_K_M",
+      "answer_mode": "card_answer_rewrite",
+      "case_id": "g9m2_zebra_phrase",
+      "query": "제브라 패턴",
+      "raw_answer": "{\"answer\":\"Okay, the user is asking about the \\\"제브라 패턴\\\" which is Zebra Pattern. I need to rewrite the verified answer in Korean without any extra information. The original answer mentions DC-G9M2 manual page 415. The key points are that the zebra pattern shows stripes in areas brighter than the set reference value. Also, you can set the range and reference value to display stripes within a specified brightness range. The options mentioned are [ZEBRA1], [ZEBRA2], [ZEBRA1+2]. I need to make sure to only include the information from the verified answer. No additional facts or verbs. Just the two sentences as per the instructions. Let me check the original answer again to confirm. Yes, the answer is straightforward. So, the response should be concise, in Korean, and directly quote the verified points without any markdown or JSON. </think> 제브라 패턴은 [ZEBRA1], [ZEBRA2], [ZEBRA1+2]로 설정해 수동으로 조절할 수 있습니다. DC-G9M2 매뉴얼 415쪽에 따르면 기준 값보다 밝은 부분에 줄무늬\",\"intent_summary\":\"제브라 패턴\",\"source_refs\":[{\"document_id\":\"dc_g9m2_full_kor\",\"model_id\":\"DC-G9M2\",\"page\":415}],\"supported_by_sources\":true,\"needs_more_context\":false}",
+      "parsed_answer": {
+        "answer": "Okay, the user is asking about the \"제브라 패턴\" which is Zebra Pattern. I need to rewrite the verified answer in Korean without any extra information. The original answer mentions DC-G9M2 manual page 415. The key points are that the zebra pattern shows stripes in areas brighter than the set reference value. Also, you can set the range and reference value to display stripes within a specified brightness range. The options mentioned are [ZEBRA1], [ZEBRA2], [ZEBRA1+2]. I need to make sure to only include the information from the verified answer. No additional facts or verbs. Just the two sentences as per the instructions. Let me check the original answer again to confirm. Yes, the answer is straightforward. So, the response should be concise, in Korean, and directly quote the verified points without any markdown or JSON. </think> 제브라 패턴은 [ZEBRA1], [ZEBRA2], [ZEBRA1+2]로 설정해 수동으로 조절할 수 있습니다. DC-G9M2 매뉴얼 415쪽에 따르면 기준 값보다 밝은 부분에 줄무늬",
+        "intent_summary": "제브라 패턴",
+        "source_refs": [
+          {
+            "document_id": "dc_g9m2_full_kor",
+            "model_id": "DC-G9M2",
+            "page": 415
+          }
+        ],
+        "supported_by_sources": true,
+        "needs_more_context": false
+      },
+      "retrieved_sources": [
+        {
+          "source_id": "S1",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 415,
+          "section_title": "제브라 패턴",
+          "summary": "• [제브라 패턴]([제브라 패턴]: 415)",
+          "evidence_text": "[제브라 패턴]\n기준 값보다 밝은 부분에 줄무늬가 표시됩니다. 지정한 밝기 범위 안에 있는 부분에 줄무늬가 표시되도록 범위 폭과 기준 값 을 설정할 수도 있습니다.\n[ZEBRA1]\n[ZEBRA2]\n[ZEBRA1+2]"
+        },
+        {
+          "source_id": "S2",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 589,
+          "section_title": "[사용자] 메뉴([모니터/디스플레이(비디오)])",
+          "summary": "[제브라 패턴]",
+          "evidence_text": "[프레임 마커]\n[ON] / [OFF]\n[SET]\n[프레임 비율]\n[프레임 색]\n[프레임 마스크]\n설정한 화면비율의 프레임이 촬영 화면에 표시됩니다. [프레임 비율]도 사용자 설정할 수 있습니다. ([프레임 마커]: 417)\n[제브라 패턴]\n[ZEBRA1] / [ZEBRA2] / [ZEBRA1+2] / [OFF]\n[SET]\n[제브라1]\n[제브라2]\n기준 값보다 밝은 부분에 줄무늬가 표시됩니다. ([제브라 패턴]: 415)\n[파형 모니터 / 벡터 범위]\n[WAVE] / [VECTOR] / [OFF]\n촬영 화면에 파형 모니터 또는 벡터 범위를 표시합니다. ([파형 모니터 / 벡터 범위]: 409)"
+        },
+        {
+          "source_id": "S3",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 796,
+          "section_title": "[사용자]: [모니터/디스플레이(비디오)]",
+          "summary": "[제브라 패턴]",
+          "evidence_text": "[사용자]: [모니터/디스플레이(비디오)]\n[V-Log 보기 지원]\n[LUT 선택]\n[Vlog_709]\n\n\n\n[LUT 보기 지원(모니터)]\n[OFF]\n\n\n\n[LUT 보기 지원(HDMI)]\n[OFF]\n\n\n\n[HLG 보기 지원]\n[모니터]\n[MODE2]\n\n\n\n[HDMI]\n[AUTO]\n\n\n\n[아나모픽 디스퀴즈 표시]\n[OFF]\n\n\n\n[흑백 라이브 뷰]\n[OFF]\n\n\n\n[센터 마커]\n[OFF]\n\n\n\n[세이프티 존 마커]\n[OFF]\n\n\n\n[프레임 마커]\n[ON] / [OFF]\n[OFF]\n\n\n\n[SET]\n—\n\n\n\n[제브라 패턴]\n[ZEBRA1] / [ZEBRA2] / [ZEBRA1+2] / [OFF]\n[OFF]\n\n\n\n[SET]\n—\n\n\n\n[파형 모니터"
+        }
+      ],
+      "latency_ms": 6719.239541998832,
+      "prompt_tokens": 277,
+      "completion_tokens": 256,
+      "total_tokens": 533,
+      "output_chars": 1114,
+      "json_valid": true,
+      "json_recoverable": true,
+      "answer_relevance_pass": false,
+      "korean_intent_pass": true,
+      "source_citation_pass": true,
+      "pdf_source_faithfulness_pass": false,
+      "unsupported_handling_pass": true,
+      "overall_pass": false,
+      "error_message": "quality gate failed"
+    },
+    {
+      "model_id": "hf.co/mradermacher/supergemma4-e4b-abliterated-i1-GGUF:Q4_K_M",
+      "answer_mode": "card_answer_rewrite",
+      "case_id": "g9m2_zebra_phrase",
+      "query": "제브라 패턴",
+      "raw_answer": "{\"answer\":\"제브라 패턴: DC-G9M2 매뉴얼 415쪽에서 확인하세요. 기준 값보다 밝은 부분에 줄무늬가 표시되며, 범위 폭과 기준 값을 설정하여 지정한 밝기 범위 안에 줄무늬를 표시할 수 있습니다.\",\"intent_summary\":\"제브라 패턴\",\"source_refs\":[{\"document_id\":\"dc_g9m2_full_kor\",\"model_id\":\"DC-G9M2\",\"page\":415}],\"supported_by_sources\":true,\"needs_more_context\":false}",
+      "parsed_answer": {
+        "answer": "제브라 패턴: DC-G9M2 매뉴얼 415쪽에서 확인하세요. 기준 값보다 밝은 부분에 줄무늬가 표시되며, 범위 폭과 기준 값을 설정하여 지정한 밝기 범위 안에 줄무늬를 표시할 수 있습니다.",
+        "intent_summary": "제브라 패턴",
+        "source_refs": [
+          {
+            "document_id": "dc_g9m2_full_kor",
+            "model_id": "DC-G9M2",
+            "page": 415
+          }
+        ],
+        "supported_by_sources": true,
+        "needs_more_context": false
+      },
+      "retrieved_sources": [
+        {
+          "source_id": "S1",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 415,
+          "section_title": "제브라 패턴",
+          "summary": "• [제브라 패턴]([제브라 패턴]: 415)",
+          "evidence_text": "[제브라 패턴]\n기준 값보다 밝은 부분에 줄무늬가 표시됩니다. 지정한 밝기 범위 안에 있는 부분에 줄무늬가 표시되도록 범위 폭과 기준 값 을 설정할 수도 있습니다.\n[ZEBRA1]\n[ZEBRA2]\n[ZEBRA1+2]"
+        },
+        {
+          "source_id": "S2",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 589,
+          "section_title": "[사용자] 메뉴([모니터/디스플레이(비디오)])",
+          "summary": "[제브라 패턴]",
+          "evidence_text": "[프레임 마커]\n[ON] / [OFF]\n[SET]\n[프레임 비율]\n[프레임 색]\n[프레임 마스크]\n설정한 화면비율의 프레임이 촬영 화면에 표시됩니다. [프레임 비율]도 사용자 설정할 수 있습니다. ([프레임 마커]: 417)\n[제브라 패턴]\n[ZEBRA1] / [ZEBRA2] / [ZEBRA1+2] / [OFF]\n[SET]\n[제브라1]\n[제브라2]\n기준 값보다 밝은 부분에 줄무늬가 표시됩니다. ([제브라 패턴]: 415)\n[파형 모니터 / 벡터 범위]\n[WAVE] / [VECTOR] / [OFF]\n촬영 화면에 파형 모니터 또는 벡터 범위를 표시합니다. ([파형 모니터 / 벡터 범위]: 409)"
+        },
+        {
+          "source_id": "S3",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 796,
+          "section_title": "[사용자]: [모니터/디스플레이(비디오)]",
+          "summary": "[제브라 패턴]",
+          "evidence_text": "[사용자]: [모니터/디스플레이(비디오)]\n[V-Log 보기 지원]\n[LUT 선택]\n[Vlog_709]\n\n\n\n[LUT 보기 지원(모니터)]\n[OFF]\n\n\n\n[LUT 보기 지원(HDMI)]\n[OFF]\n\n\n\n[HLG 보기 지원]\n[모니터]\n[MODE2]\n\n\n\n[HDMI]\n[AUTO]\n\n\n\n[아나모픽 디스퀴즈 표시]\n[OFF]\n\n\n\n[흑백 라이브 뷰]\n[OFF]\n\n\n\n[센터 마커]\n[OFF]\n\n\n\n[세이프티 존 마커]\n[OFF]\n\n\n\n[프레임 마커]\n[ON] / [OFF]\n[OFF]\n\n\n\n[SET]\n—\n\n\n\n[제브라 패턴]\n[ZEBRA1] / [ZEBRA2] / [ZEBRA1+2] / [OFF]\n[OFF]\n\n\n\n[SET]\n—\n\n\n\n[파형 모니터"
+        }
+      ],
+      "latency_ms": 5983.5683749988675,
+      "prompt_tokens": 266,
+      "completion_tokens": 55,
+      "total_tokens": 321,
+      "output_chars": 282,
+      "json_valid": true,
+      "json_recoverable": true,
+      "answer_relevance_pass": true,
+      "korean_intent_pass": true,
+      "source_citation_pass": true,
+      "pdf_source_faithfulness_pass": true,
+      "unsupported_handling_pass": true,
+      "overall_pass": true,
+      "error_message": null
+    },
+    {
+      "model_id": "hf.co/unsloth/gemma-4-12B-it-qat-GGUF:UD-Q4_K_XL",
+      "answer_mode": "card_answer_rewrite",
+      "case_id": "g9m2_zebra_phrase",
+      "query": "제브라 패턴",
+      "raw_answer": "{\"answer\":\"제브라 패턴: 기준 값보다 밝은 부분에 줄무늬가 표시됩니다. 범위 폭과 기준 값을 설정하여 지정한 밝기 범위 안에 줄무늬가 표시되도록 할 수도 있습니다.\",\"intent_summary\":\"제브라 패턴\",\"source_refs\":[{\"document_id\":\"dc_g9m2_full_kor\",\"model_id\":\"DC-G9M2\",\"page\":415}],\"supported_by_sources\":true,\"needs_more_context\":false}",
+      "parsed_answer": {
+        "answer": "제브라 패턴: 기준 값보다 밝은 부분에 줄무늬가 표시됩니다. 범위 폭과 기준 값을 설정하여 지정한 밝기 범위 안에 줄무늬가 표시되도록 할 수도 있습니다.",
+        "intent_summary": "제브라 패턴",
+        "source_refs": [
+          {
+            "document_id": "dc_g9m2_full_kor",
+            "model_id": "DC-G9M2",
+            "page": 415
+          }
+        ],
+        "supported_by_sources": true,
+        "needs_more_context": false
+      },
+      "retrieved_sources": [
+        {
+          "source_id": "S1",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 415,
+          "section_title": "제브라 패턴",
+          "summary": "• [제브라 패턴]([제브라 패턴]: 415)",
+          "evidence_text": "[제브라 패턴]\n기준 값보다 밝은 부분에 줄무늬가 표시됩니다. 지정한 밝기 범위 안에 있는 부분에 줄무늬가 표시되도록 범위 폭과 기준 값 을 설정할 수도 있습니다.\n[ZEBRA1]\n[ZEBRA2]\n[ZEBRA1+2]"
+        },
+        {
+          "source_id": "S2",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 589,
+          "section_title": "[사용자] 메뉴([모니터/디스플레이(비디오)])",
+          "summary": "[제브라 패턴]",
+          "evidence_text": "[프레임 마커]\n[ON] / [OFF]\n[SET]\n[프레임 비율]\n[프레임 색]\n[프레임 마스크]\n설정한 화면비율의 프레임이 촬영 화면에 표시됩니다. [프레임 비율]도 사용자 설정할 수 있습니다. ([프레임 마커]: 417)\n[제브라 패턴]\n[ZEBRA1] / [ZEBRA2] / [ZEBRA1+2] / [OFF]\n[SET]\n[제브라1]\n[제브라2]\n기준 값보다 밝은 부분에 줄무늬가 표시됩니다. ([제브라 패턴]: 415)\n[파형 모니터 / 벡터 범위]\n[WAVE] / [VECTOR] / [OFF]\n촬영 화면에 파형 모니터 또는 벡터 범위를 표시합니다. ([파형 모니터 / 벡터 범위]: 409)"
+        },
+        {
+          "source_id": "S3",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 796,
+          "section_title": "[사용자]: [모니터/디스플레이(비디오)]",
+          "summary": "[제브라 패턴]",
+          "evidence_text": "[사용자]: [모니터/디스플레이(비디오)]\n[V-Log 보기 지원]\n[LUT 선택]\n[Vlog_709]\n\n\n\n[LUT 보기 지원(모니터)]\n[OFF]\n\n\n\n[LUT 보기 지원(HDMI)]\n[OFF]\n\n\n\n[HLG 보기 지원]\n[모니터]\n[MODE2]\n\n\n\n[HDMI]\n[AUTO]\n\n\n\n[아나모픽 디스퀴즈 표시]\n[OFF]\n\n\n\n[흑백 라이브 뷰]\n[OFF]\n\n\n\n[센터 마커]\n[OFF]\n\n\n\n[세이프티 존 마커]\n[OFF]\n\n\n\n[프레임 마커]\n[ON] / [OFF]\n[OFF]\n\n\n\n[SET]\n—\n\n\n\n[제브라 패턴]\n[ZEBRA1] / [ZEBRA2] / [ZEBRA1+2] / [OFF]\n[OFF]\n\n\n\n[SET]\n—\n\n\n\n[파형 모니터"
+        }
+      ],
+      "latency_ms": 7609.089542005677,
+      "prompt_tokens": 270,
+      "completion_tokens": 39,
+      "total_tokens": 309,
+      "output_chars": 262,
+      "json_valid": true,
+      "json_recoverable": true,
+      "answer_relevance_pass": true,
+      "korean_intent_pass": true,
+      "source_citation_pass": true,
+      "pdf_source_faithfulness_pass": true,
+      "unsupported_handling_pass": true,
+      "overall_pass": true,
+      "error_message": null
+    },
+    {
+      "model_id": "card_template",
+      "answer_mode": "card_template",
+      "case_id": "g9m2_zebra_compact",
+      "query": "제브라패턴",
+      "raw_answer": "{\"answer\":\"DC-G9M2 매뉴얼 415쪽에서 확인하세요. [제브라 패턴] 기준 값보다 밝은 부분에 줄무늬가 표시됩니다. 지정한 밝기 범위 안에 있는 부분에 줄무늬가 표시되도록 범위 폭과 기준 값 을 설정할 수도 있습니다. [ZEBRA1] [ZEBRA2] [ZEBRA1+2]\",\"intent_summary\":\"제브라패턴\",\"source_refs\":[{\"document_id\":\"dc_g9m2_full_kor\",\"model_id\":\"DC-G9M2\",\"page\":415}],\"supported_by_sources\":true,\"needs_more_context\":false}",
+      "parsed_answer": {
+        "answer": "DC-G9M2 매뉴얼 415쪽에서 확인하세요. [제브라 패턴] 기준 값보다 밝은 부분에 줄무늬가 표시됩니다. 지정한 밝기 범위 안에 있는 부분에 줄무늬가 표시되도록 범위 폭과 기준 값 을 설정할 수도 있습니다. [ZEBRA1] [ZEBRA2] [ZEBRA1+2]",
+        "intent_summary": "제브라패턴",
+        "source_refs": [
+          {
+            "document_id": "dc_g9m2_full_kor",
+            "model_id": "DC-G9M2",
+            "page": 415
+          }
+        ],
+        "supported_by_sources": true,
+        "needs_more_context": false
+      },
+      "retrieved_sources": [
+        {
+          "source_id": "S1",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 415,
+          "section_title": "제브라 패턴",
+          "summary": "• [제브라 패턴]([제브라 패턴]: 415)",
+          "evidence_text": "[제브라 패턴]\n기준 값보다 밝은 부분에 줄무늬가 표시됩니다. 지정한 밝기 범위 안에 있는 부분에 줄무늬가 표시되도록 범위 폭과 기준 값 을 설정할 수도 있습니다.\n[ZEBRA1]\n[ZEBRA2]\n[ZEBRA1+2]"
+        },
+        {
+          "source_id": "S2",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 589,
+          "section_title": "[사용자] 메뉴([모니터/디스플레이(비디오)])",
+          "summary": "[제브라 패턴]",
+          "evidence_text": "[프레임 마커]\n[ON] / [OFF]\n[SET]\n[프레임 비율]\n[프레임 색]\n[프레임 마스크]\n설정한 화면비율의 프레임이 촬영 화면에 표시됩니다. [프레임 비율]도 사용자 설정할 수 있습니다. ([프레임 마커]: 417)\n[제브라 패턴]\n[ZEBRA1] / [ZEBRA2] / [ZEBRA1+2] / [OFF]\n[SET]\n[제브라1]\n[제브라2]\n기준 값보다 밝은 부분에 줄무늬가 표시됩니다. ([제브라 패턴]: 415)\n[파형 모니터 / 벡터 범위]\n[WAVE] / [VECTOR] / [OFF]\n촬영 화면에 파형 모니터 또는 벡터 범위를 표시합니다. ([파형 모니터 / 벡터 범위]: 409)"
+        },
+        {
+          "source_id": "S3",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 796,
+          "section_title": "[사용자]: [모니터/디스플레이(비디오)]",
+          "summary": "[제브라 패턴]",
+          "evidence_text": "[사용자]: [모니터/디스플레이(비디오)]\n[V-Log 보기 지원]\n[LUT 선택]\n[Vlog_709]\n\n\n\n[LUT 보기 지원(모니터)]\n[OFF]\n\n\n\n[LUT 보기 지원(HDMI)]\n[OFF]\n\n\n\n[HLG 보기 지원]\n[모니터]\n[MODE2]\n\n\n\n[HDMI]\n[AUTO]\n\n\n\n[아나모픽 디스퀴즈 표시]\n[OFF]\n\n\n\n[흑백 라이브 뷰]\n[OFF]\n\n\n\n[센터 마커]\n[OFF]\n\n\n\n[세이프티 존 마커]\n[OFF]\n\n\n\n[프레임 마커]\n[ON] / [OFF]\n[OFF]\n\n\n\n[SET]\n—\n\n\n\n[제브라 패턴]\n[ZEBRA1] / [ZEBRA2] / [ZEBRA1+2] / [OFF]\n[OFF]\n\n\n\n[SET]\n—\n\n\n\n[파형 모니터"
+        }
+      ],
+      "latency_ms": 0.0,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "output_chars": 322,
+      "json_valid": true,
+      "json_recoverable": true,
+      "answer_relevance_pass": true,
+      "korean_intent_pass": true,
+      "source_citation_pass": true,
+      "pdf_source_faithfulness_pass": true,
+      "unsupported_handling_pass": true,
+      "overall_pass": true,
+      "error_message": null
+    },
+    {
+      "model_id": "hf.co/unsloth/gemma-4-E4B-it-qat-GGUF:UD-Q4_K_XL",
+      "answer_mode": "card_answer_rewrite",
+      "case_id": "g9m2_zebra_compact",
+      "query": "제브라패턴",
+      "raw_answer": "{\"answer\":\"제브라패턴: DC-G9M2 매뉴얼 415쪽에서 확인하세요. 기준 값보다 밝은 부분에 줄무늬가 표시됩니다.\",\"intent_summary\":\"제브라패턴\",\"source_refs\":[{\"document_id\":\"dc_g9m2_full_kor\",\"model_id\":\"DC-G9M2\",\"page\":415}],\"supported_by_sources\":true,\"needs_more_context\":false}",
+      "parsed_answer": {
+        "answer": "제브라패턴: DC-G9M2 매뉴얼 415쪽에서 확인하세요. 기준 값보다 밝은 부분에 줄무늬가 표시됩니다.",
+        "intent_summary": "제브라패턴",
+        "source_refs": [
+          {
+            "document_id": "dc_g9m2_full_kor",
+            "model_id": "DC-G9M2",
+            "page": 415
+          }
+        ],
+        "supported_by_sources": true,
+        "needs_more_context": false
+      },
+      "retrieved_sources": [
+        {
+          "source_id": "S1",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 415,
+          "section_title": "제브라 패턴",
+          "summary": "• [제브라 패턴]([제브라 패턴]: 415)",
+          "evidence_text": "[제브라 패턴]\n기준 값보다 밝은 부분에 줄무늬가 표시됩니다. 지정한 밝기 범위 안에 있는 부분에 줄무늬가 표시되도록 범위 폭과 기준 값 을 설정할 수도 있습니다.\n[ZEBRA1]\n[ZEBRA2]\n[ZEBRA1+2]"
+        },
+        {
+          "source_id": "S2",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 589,
+          "section_title": "[사용자] 메뉴([모니터/디스플레이(비디오)])",
+          "summary": "[제브라 패턴]",
+          "evidence_text": "[프레임 마커]\n[ON] / [OFF]\n[SET]\n[프레임 비율]\n[프레임 색]\n[프레임 마스크]\n설정한 화면비율의 프레임이 촬영 화면에 표시됩니다. [프레임 비율]도 사용자 설정할 수 있습니다. ([프레임 마커]: 417)\n[제브라 패턴]\n[ZEBRA1] / [ZEBRA2] / [ZEBRA1+2] / [OFF]\n[SET]\n[제브라1]\n[제브라2]\n기준 값보다 밝은 부분에 줄무늬가 표시됩니다. ([제브라 패턴]: 415)\n[파형 모니터 / 벡터 범위]\n[WAVE] / [VECTOR] / [OFF]\n촬영 화면에 파형 모니터 또는 벡터 범위를 표시합니다. ([파형 모니터 / 벡터 범위]: 409)"
+        },
+        {
+          "source_id": "S3",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 796,
+          "section_title": "[사용자]: [모니터/디스플레이(비디오)]",
+          "summary": "[제브라 패턴]",
+          "evidence_text": "[사용자]: [모니터/디스플레이(비디오)]\n[V-Log 보기 지원]\n[LUT 선택]\n[Vlog_709]\n\n\n\n[LUT 보기 지원(모니터)]\n[OFF]\n\n\n\n[LUT 보기 지원(HDMI)]\n[OFF]\n\n\n\n[HLG 보기 지원]\n[모니터]\n[MODE2]\n\n\n\n[HDMI]\n[AUTO]\n\n\n\n[아나모픽 디스퀴즈 표시]\n[OFF]\n\n\n\n[흑백 라이브 뷰]\n[OFF]\n\n\n\n[센터 마커]\n[OFF]\n\n\n\n[세이프티 존 마커]\n[OFF]\n\n\n\n[프레임 마커]\n[ON] / [OFF]\n[OFF]\n\n\n\n[SET]\n—\n\n\n\n[제브라 패턴]\n[ZEBRA1] / [ZEBRA2] / [ZEBRA1+2] / [OFF]\n[OFF]\n\n\n\n[SET]\n—\n\n\n\n[파형 모니터"
+        }
+      ],
+      "latency_ms": 5395.933417021297,
+      "prompt_tokens": 268,
+      "completion_tokens": 33,
+      "total_tokens": 301,
+      "output_chars": 234,
+      "json_valid": true,
+      "json_recoverable": true,
+      "answer_relevance_pass": true,
+      "korean_intent_pass": true,
+      "source_citation_pass": true,
+      "pdf_source_faithfulness_pass": true,
+      "unsupported_handling_pass": true,
+      "overall_pass": true,
+      "error_message": null
+    },
+    {
+      "model_id": "hf.co/Qwen/Qwen3-4B-GGUF:Q4_K_M",
+      "answer_mode": "card_answer_rewrite",
+      "case_id": "g9m2_zebra_compact",
+      "query": "제브라패턴",
+      "raw_answer": "{\"answer\":\"Okay, the user is asking about \\\"제브라패턴\\\" which is Zebras pattern. I need to rewrite the verified answer in Korean without any extra information. Let me check the verified answer again. The answer says to check page 415 of the DC-G9M2 manual. It mentions that lines appear in areas brighter than the reference value. Also, you can set range width and reference value to display lines within specified brightness ranges. The options mentioned are [ZEBRA1], [ZEBRA2], [ZEBRA1+2]. I need to make sure I only include the facts from the verified answer. No additional sentences, no verbs, no features or menu names not present. Just the key points: checking the manual page, lines appearing in brighter areas, and setting parameters for ranges. Also, the options listed are part of the answer, so they should be included. Let me structure this into two short sentences. First, mention the manual page and the effect of the pattern. Second, explain the settings for range and reference value. Make sure to use the exact terms from the answer, like \\\"기준 값\\\" and \\\"범위 폭\\\". Avoid any markdown or JSON. Just plain Korean text. </think> DC\",\"intent_summary\":\"제브라패턴\",\"source_refs\":[{\"document_id\":\"dc_g9m2_full_kor\",\"model_id\":\"DC-G9M2\",\"page\":415}],\"supported_by_sources\":true,\"needs_more_context\":false}",
+      "parsed_answer": {
+        "answer": "Okay, the user is asking about \"제브라패턴\" which is Zebras pattern. I need to rewrite the verified answer in Korean without any extra information. Let me check the verified answer again. The answer says to check page 415 of the DC-G9M2 manual. It mentions that lines appear in areas brighter than the reference value. Also, you can set range width and reference value to display lines within specified brightness ranges. The options mentioned are [ZEBRA1], [ZEBRA2], [ZEBRA1+2]. I need to make sure I only include the facts from the verified answer. No additional sentences, no verbs, no features or menu names not present. Just the key points: checking the manual page, lines appearing in brighter areas, and setting parameters for ranges. Also, the options listed are part of the answer, so they should be included. Let me structure this into two short sentences. First, mention the manual page and the effect of the pattern. Second, explain the settings for range and reference value. Make sure to use the exact terms from the answer, like \"기준 값\" and \"범위 폭\". Avoid any markdown or JSON. Just plain Korean text. </think> DC",
+        "intent_summary": "제브라패턴",
+        "source_refs": [
+          {
+            "document_id": "dc_g9m2_full_kor",
+            "model_id": "DC-G9M2",
+            "page": 415
+          }
+        ],
+        "supported_by_sources": true,
+        "needs_more_context": false
+      },
+      "retrieved_sources": [
+        {
+          "source_id": "S1",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 415,
+          "section_title": "제브라 패턴",
+          "summary": "• [제브라 패턴]([제브라 패턴]: 415)",
+          "evidence_text": "[제브라 패턴]\n기준 값보다 밝은 부분에 줄무늬가 표시됩니다. 지정한 밝기 범위 안에 있는 부분에 줄무늬가 표시되도록 범위 폭과 기준 값 을 설정할 수도 있습니다.\n[ZEBRA1]\n[ZEBRA2]\n[ZEBRA1+2]"
+        },
+        {
+          "source_id": "S2",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 589,
+          "section_title": "[사용자] 메뉴([모니터/디스플레이(비디오)])",
+          "summary": "[제브라 패턴]",
+          "evidence_text": "[프레임 마커]\n[ON] / [OFF]\n[SET]\n[프레임 비율]\n[프레임 색]\n[프레임 마스크]\n설정한 화면비율의 프레임이 촬영 화면에 표시됩니다. [프레임 비율]도 사용자 설정할 수 있습니다. ([프레임 마커]: 417)\n[제브라 패턴]\n[ZEBRA1] / [ZEBRA2] / [ZEBRA1+2] / [OFF]\n[SET]\n[제브라1]\n[제브라2]\n기준 값보다 밝은 부분에 줄무늬가 표시됩니다. ([제브라 패턴]: 415)\n[파형 모니터 / 벡터 범위]\n[WAVE] / [VECTOR] / [OFF]\n촬영 화면에 파형 모니터 또는 벡터 범위를 표시합니다. ([파형 모니터 / 벡터 범위]: 409)"
+        },
+        {
+          "source_id": "S3",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 796,
+          "section_title": "[사용자]: [모니터/디스플레이(비디오)]",
+          "summary": "[제브라 패턴]",
+          "evidence_text": "[사용자]: [모니터/디스플레이(비디오)]\n[V-Log 보기 지원]\n[LUT 선택]\n[Vlog_709]\n\n\n\n[LUT 보기 지원(모니터)]\n[OFF]\n\n\n\n[LUT 보기 지원(HDMI)]\n[OFF]\n\n\n\n[HLG 보기 지원]\n[모니터]\n[MODE2]\n\n\n\n[HDMI]\n[AUTO]\n\n\n\n[아나모픽 디스퀴즈 표시]\n[OFF]\n\n\n\n[흑백 라이브 뷰]\n[OFF]\n\n\n\n[센터 마커]\n[OFF]\n\n\n\n[세이프티 존 마커]\n[OFF]\n\n\n\n[프레임 마커]\n[ON] / [OFF]\n[OFF]\n\n\n\n[SET]\n—\n\n\n\n[제브라 패턴]\n[ZEBRA1] / [ZEBRA2] / [ZEBRA1+2] / [OFF]\n[OFF]\n\n\n\n[SET]\n—\n\n\n\n[파형 모니터"
+        }
+      ],
+      "latency_ms": 6957.921666995389,
+      "prompt_tokens": 275,
+      "completion_tokens": 256,
+      "total_tokens": 531,
+      "output_chars": 1303,
+      "json_valid": true,
+      "json_recoverable": true,
+      "answer_relevance_pass": false,
+      "korean_intent_pass": true,
+      "source_citation_pass": true,
+      "pdf_source_faithfulness_pass": false,
+      "unsupported_handling_pass": true,
+      "overall_pass": false,
+      "error_message": "quality gate failed"
+    },
+    {
+      "model_id": "hf.co/mradermacher/supergemma4-e4b-abliterated-i1-GGUF:Q4_K_M",
+      "answer_mode": "card_answer_rewrite",
+      "case_id": "g9m2_zebra_compact",
+      "query": "제브라패턴",
+      "raw_answer": "{\"answer\":\"제브라패턴: DC-G9M2 매뉴얼 415쪽에서 확인하세요. 기준 값보다 밝은 부분에 줄무늬가 표시되며, 범위 폭과 기준 값을 설정하여 지정한 밝기 범위 안에 있는 부분에 줄무늬를 표시할 수 있습니다.\",\"intent_summary\":\"제브라패턴\",\"source_refs\":[{\"document_id\":\"dc_g9m2_full_kor\",\"model_id\":\"DC-G9M2\",\"page\":415}],\"supported_by_sources\":true,\"needs_more_context\":false}",
+      "parsed_answer": {
+        "answer": "제브라패턴: DC-G9M2 매뉴얼 415쪽에서 확인하세요. 기준 값보다 밝은 부분에 줄무늬가 표시되며, 범위 폭과 기준 값을 설정하여 지정한 밝기 범위 안에 있는 부분에 줄무늬를 표시할 수 있습니다.",
+        "intent_summary": "제브라패턴",
+        "source_refs": [
+          {
+            "document_id": "dc_g9m2_full_kor",
+            "model_id": "DC-G9M2",
+            "page": 415
+          }
+        ],
+        "supported_by_sources": true,
+        "needs_more_context": false
+      },
+      "retrieved_sources": [
+        {
+          "source_id": "S1",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 415,
+          "section_title": "제브라 패턴",
+          "summary": "• [제브라 패턴]([제브라 패턴]: 415)",
+          "evidence_text": "[제브라 패턴]\n기준 값보다 밝은 부분에 줄무늬가 표시됩니다. 지정한 밝기 범위 안에 있는 부분에 줄무늬가 표시되도록 범위 폭과 기준 값 을 설정할 수도 있습니다.\n[ZEBRA1]\n[ZEBRA2]\n[ZEBRA1+2]"
+        },
+        {
+          "source_id": "S2",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 589,
+          "section_title": "[사용자] 메뉴([모니터/디스플레이(비디오)])",
+          "summary": "[제브라 패턴]",
+          "evidence_text": "[프레임 마커]\n[ON] / [OFF]\n[SET]\n[프레임 비율]\n[프레임 색]\n[프레임 마스크]\n설정한 화면비율의 프레임이 촬영 화면에 표시됩니다. [프레임 비율]도 사용자 설정할 수 있습니다. ([프레임 마커]: 417)\n[제브라 패턴]\n[ZEBRA1] / [ZEBRA2] / [ZEBRA1+2] / [OFF]\n[SET]\n[제브라1]\n[제브라2]\n기준 값보다 밝은 부분에 줄무늬가 표시됩니다. ([제브라 패턴]: 415)\n[파형 모니터 / 벡터 범위]\n[WAVE] / [VECTOR] / [OFF]\n촬영 화면에 파형 모니터 또는 벡터 범위를 표시합니다. ([파형 모니터 / 벡터 범위]: 409)"
+        },
+        {
+          "source_id": "S3",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 796,
+          "section_title": "[사용자]: [모니터/디스플레이(비디오)]",
+          "summary": "[제브라 패턴]",
+          "evidence_text": "[사용자]: [모니터/디스플레이(비디오)]\n[V-Log 보기 지원]\n[LUT 선택]\n[Vlog_709]\n\n\n\n[LUT 보기 지원(모니터)]\n[OFF]\n\n\n\n[LUT 보기 지원(HDMI)]\n[OFF]\n\n\n\n[HLG 보기 지원]\n[모니터]\n[MODE2]\n\n\n\n[HDMI]\n[AUTO]\n\n\n\n[아나모픽 디스퀴즈 표시]\n[OFF]\n\n\n\n[흑백 라이브 뷰]\n[OFF]\n\n\n\n[센터 마커]\n[OFF]\n\n\n\n[세이프티 존 마커]\n[OFF]\n\n\n\n[프레임 마커]\n[ON] / [OFF]\n[OFF]\n\n\n\n[SET]\n—\n\n\n\n[제브라 패턴]\n[ZEBRA1] / [ZEBRA2] / [ZEBRA1+2] / [OFF]\n[OFF]\n\n\n\n[SET]\n—\n\n\n\n[파형 모니터"
+        }
+      ],
+      "latency_ms": 6248.155624984065,
+      "prompt_tokens": 268,
+      "completion_tokens": 58,
+      "total_tokens": 326,
+      "output_chars": 287,
+      "json_valid": true,
+      "json_recoverable": true,
+      "answer_relevance_pass": true,
+      "korean_intent_pass": true,
+      "source_citation_pass": true,
+      "pdf_source_faithfulness_pass": true,
+      "unsupported_handling_pass": true,
+      "overall_pass": true,
+      "error_message": null
+    },
+    {
+      "model_id": "hf.co/unsloth/gemma-4-12B-it-qat-GGUF:UD-Q4_K_XL",
+      "answer_mode": "card_answer_rewrite",
+      "case_id": "g9m2_zebra_compact",
+      "query": "제브라패턴",
+      "raw_answer": "{\"answer\":\"제브라패턴: 기준 값보다 밝은 부분에 줄무늬가 표시됩니다. 범위 폭과 기준 값을 설정하여 지정한 밝기 범위 안에 줄무늬가 표시되도록 할 수도 있습니다.\",\"intent_summary\":\"제브라패턴\",\"source_refs\":[{\"document_id\":\"dc_g9m2_full_kor\",\"model_id\":\"DC-G9M2\",\"page\":415}],\"supported_by_sources\":true,\"needs_more_context\":false}",
+      "parsed_answer": {
+        "answer": "제브라패턴: 기준 값보다 밝은 부분에 줄무늬가 표시됩니다. 범위 폭과 기준 값을 설정하여 지정한 밝기 범위 안에 줄무늬가 표시되도록 할 수도 있습니다.",
+        "intent_summary": "제브라패턴",
+        "source_refs": [
+          {
+            "document_id": "dc_g9m2_full_kor",
+            "model_id": "DC-G9M2",
+            "page": 415
+          }
+        ],
+        "supported_by_sources": true,
+        "needs_more_context": false
+      },
+      "retrieved_sources": [
+        {
+          "source_id": "S1",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 415,
+          "section_title": "제브라 패턴",
+          "summary": "• [제브라 패턴]([제브라 패턴]: 415)",
+          "evidence_text": "[제브라 패턴]\n기준 값보다 밝은 부분에 줄무늬가 표시됩니다. 지정한 밝기 범위 안에 있는 부분에 줄무늬가 표시되도록 범위 폭과 기준 값 을 설정할 수도 있습니다.\n[ZEBRA1]\n[ZEBRA2]\n[ZEBRA1+2]"
+        },
+        {
+          "source_id": "S2",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 589,
+          "section_title": "[사용자] 메뉴([모니터/디스플레이(비디오)])",
+          "summary": "[제브라 패턴]",
+          "evidence_text": "[프레임 마커]\n[ON] / [OFF]\n[SET]\n[프레임 비율]\n[프레임 색]\n[프레임 마스크]\n설정한 화면비율의 프레임이 촬영 화면에 표시됩니다. [프레임 비율]도 사용자 설정할 수 있습니다. ([프레임 마커]: 417)\n[제브라 패턴]\n[ZEBRA1] / [ZEBRA2] / [ZEBRA1+2] / [OFF]\n[SET]\n[제브라1]\n[제브라2]\n기준 값보다 밝은 부분에 줄무늬가 표시됩니다. ([제브라 패턴]: 415)\n[파형 모니터 / 벡터 범위]\n[WAVE] / [VECTOR] / [OFF]\n촬영 화면에 파형 모니터 또는 벡터 범위를 표시합니다. ([파형 모니터 / 벡터 범위]: 409)"
+        },
+        {
+          "source_id": "S3",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 796,
+          "section_title": "[사용자]: [모니터/디스플레이(비디오)]",
+          "summary": "[제브라 패턴]",
+          "evidence_text": "[사용자]: [모니터/디스플레이(비디오)]\n[V-Log 보기 지원]\n[LUT 선택]\n[Vlog_709]\n\n\n\n[LUT 보기 지원(모니터)]\n[OFF]\n\n\n\n[LUT 보기 지원(HDMI)]\n[OFF]\n\n\n\n[HLG 보기 지원]\n[모니터]\n[MODE2]\n\n\n\n[HDMI]\n[AUTO]\n\n\n\n[아나모픽 디스퀴즈 표시]\n[OFF]\n\n\n\n[흑백 라이브 뷰]\n[OFF]\n\n\n\n[센터 마커]\n[OFF]\n\n\n\n[세이프티 존 마커]\n[OFF]\n\n\n\n[프레임 마커]\n[ON] / [OFF]\n[OFF]\n\n\n\n[SET]\n—\n\n\n\n[제브라 패턴]\n[ZEBRA1] / [ZEBRA2] / [ZEBRA1+2] / [OFF]\n[OFF]\n\n\n\n[SET]\n—\n\n\n\n[파형 모니터"
+        }
+      ],
+      "latency_ms": 7430.901499988977,
+      "prompt_tokens": 272,
+      "completion_tokens": 39,
+      "total_tokens": 311,
+      "output_chars": 260,
+      "json_valid": true,
+      "json_recoverable": true,
+      "answer_relevance_pass": true,
+      "korean_intent_pass": true,
+      "source_citation_pass": true,
+      "pdf_source_faithfulness_pass": true,
+      "unsupported_handling_pass": true,
+      "overall_pass": true,
+      "error_message": null
+    },
+    {
+      "model_id": "card_template",
+      "answer_mode": "card_template",
+      "case_id": "g9m2_zebra_with_model_name",
+      "query": "G9M2 제브라 패턴",
+      "raw_answer": "{\"answer\":\"DC-G9M2 매뉴얼 415쪽에서 확인하세요. [제브라 패턴] 기준 값보다 밝은 부분에 줄무늬가 표시됩니다. 지정한 밝기 범위 안에 있는 부분에 줄무늬가 표시되도록 범위 폭과 기준 값 을 설정할 수도 있습니다. [ZEBRA1] [ZEBRA2] [ZEBRA1+2]\",\"intent_summary\":\"G9M2 제브라 패턴\",\"source_refs\":[{\"document_id\":\"dc_g9m2_full_kor\",\"model_id\":\"DC-G9M2\",\"page\":415}],\"supported_by_sources\":true,\"needs_more_context\":false}",
+      "parsed_answer": {
+        "answer": "DC-G9M2 매뉴얼 415쪽에서 확인하세요. [제브라 패턴] 기준 값보다 밝은 부분에 줄무늬가 표시됩니다. 지정한 밝기 범위 안에 있는 부분에 줄무늬가 표시되도록 범위 폭과 기준 값 을 설정할 수도 있습니다. [ZEBRA1] [ZEBRA2] [ZEBRA1+2]",
+        "intent_summary": "G9M2 제브라 패턴",
+        "source_refs": [
+          {
+            "document_id": "dc_g9m2_full_kor",
+            "model_id": "DC-G9M2",
+            "page": 415
+          }
+        ],
+        "supported_by_sources": true,
+        "needs_more_context": false
+      },
+      "retrieved_sources": [
+        {
+          "source_id": "S1",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 415,
+          "section_title": "제브라 패턴",
+          "summary": "• [제브라 패턴]([제브라 패턴]: 415)",
+          "evidence_text": "[제브라 패턴]\n기준 값보다 밝은 부분에 줄무늬가 표시됩니다. 지정한 밝기 범위 안에 있는 부분에 줄무늬가 표시되도록 범위 폭과 기준 값 을 설정할 수도 있습니다.\n[ZEBRA1]\n[ZEBRA2]\n[ZEBRA1+2]"
+        },
+        {
+          "source_id": "S2",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 589,
+          "section_title": "[사용자] 메뉴([모니터/디스플레이(비디오)])",
+          "summary": "[제브라 패턴]",
+          "evidence_text": "[프레임 마커]\n[ON] / [OFF]\n[SET]\n[프레임 비율]\n[프레임 색]\n[프레임 마스크]\n설정한 화면비율의 프레임이 촬영 화면에 표시됩니다. [프레임 비율]도 사용자 설정할 수 있습니다. ([프레임 마커]: 417)\n[제브라 패턴]\n[ZEBRA1] / [ZEBRA2] / [ZEBRA1+2] / [OFF]\n[SET]\n[제브라1]\n[제브라2]\n기준 값보다 밝은 부분에 줄무늬가 표시됩니다. ([제브라 패턴]: 415)\n[파형 모니터 / 벡터 범위]\n[WAVE] / [VECTOR] / [OFF]\n촬영 화면에 파형 모니터 또는 벡터 범위를 표시합니다. ([파형 모니터 / 벡터 범위]: 409)"
+        },
+        {
+          "source_id": "S3",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 796,
+          "section_title": "[사용자]: [모니터/디스플레이(비디오)]",
+          "summary": "[제브라 패턴]",
+          "evidence_text": "[사용자]: [모니터/디스플레이(비디오)]\n[V-Log 보기 지원]\n[LUT 선택]\n[Vlog_709]\n\n\n\n[LUT 보기 지원(모니터)]\n[OFF]\n\n\n\n[LUT 보기 지원(HDMI)]\n[OFF]\n\n\n\n[HLG 보기 지원]\n[모니터]\n[MODE2]\n\n\n\n[HDMI]\n[AUTO]\n\n\n\n[아나모픽 디스퀴즈 표시]\n[OFF]\n\n\n\n[흑백 라이브 뷰]\n[OFF]\n\n\n\n[센터 마커]\n[OFF]\n\n\n\n[세이프티 존 마커]\n[OFF]\n\n\n\n[프레임 마커]\n[ON] / [OFF]\n[OFF]\n\n\n\n[SET]\n—\n\n\n\n[제브라 패턴]\n[ZEBRA1] / [ZEBRA2] / [ZEBRA1+2] / [OFF]\n[OFF]\n\n\n\n[SET]\n—\n\n\n\n[파형 모니터"
+        }
+      ],
+      "latency_ms": 0.0,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "output_chars": 328,
+      "json_valid": true,
+      "json_recoverable": true,
+      "answer_relevance_pass": true,
+      "korean_intent_pass": true,
+      "source_citation_pass": true,
+      "pdf_source_faithfulness_pass": true,
+      "unsupported_handling_pass": true,
+      "overall_pass": true,
+      "error_message": null
+    },
+    {
+      "model_id": "hf.co/unsloth/gemma-4-E4B-it-qat-GGUF:UD-Q4_K_XL",
+      "answer_mode": "card_answer_rewrite",
+      "case_id": "g9m2_zebra_with_model_name",
+      "query": "G9M2 제브라 패턴",
+      "raw_answer": "{\"answer\":\"G9M2 제브라 패턴: DC-G9M2 매뉴얼 415쪽에서 확인하세요. 기준 값보다 밝은 부분에 줄무늬가 표시됩니다.\",\"intent_summary\":\"G9M2 제브라 패턴\",\"source_refs\":[{\"document_id\":\"dc_g9m2_full_kor\",\"model_id\":\"DC-G9M2\",\"page\":415}],\"supported_by_sources\":true,\"needs_more_context\":false}",
+      "parsed_answer": {
+        "answer": "G9M2 제브라 패턴: DC-G9M2 매뉴얼 415쪽에서 확인하세요. 기준 값보다 밝은 부분에 줄무늬가 표시됩니다.",
+        "intent_summary": "G9M2 제브라 패턴",
+        "source_refs": [
+          {
+            "document_id": "dc_g9m2_full_kor",
+            "model_id": "DC-G9M2",
+            "page": 415
+          }
+        ],
+        "supported_by_sources": true,
+        "needs_more_context": false
+      },
+      "retrieved_sources": [
+        {
+          "source_id": "S1",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 415,
+          "section_title": "제브라 패턴",
+          "summary": "• [제브라 패턴]([제브라 패턴]: 415)",
+          "evidence_text": "[제브라 패턴]\n기준 값보다 밝은 부분에 줄무늬가 표시됩니다. 지정한 밝기 범위 안에 있는 부분에 줄무늬가 표시되도록 범위 폭과 기준 값 을 설정할 수도 있습니다.\n[ZEBRA1]\n[ZEBRA2]\n[ZEBRA1+2]"
+        },
+        {
+          "source_id": "S2",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 589,
+          "section_title": "[사용자] 메뉴([모니터/디스플레이(비디오)])",
+          "summary": "[제브라 패턴]",
+          "evidence_text": "[프레임 마커]\n[ON] / [OFF]\n[SET]\n[프레임 비율]\n[프레임 색]\n[프레임 마스크]\n설정한 화면비율의 프레임이 촬영 화면에 표시됩니다. [프레임 비율]도 사용자 설정할 수 있습니다. ([프레임 마커]: 417)\n[제브라 패턴]\n[ZEBRA1] / [ZEBRA2] / [ZEBRA1+2] / [OFF]\n[SET]\n[제브라1]\n[제브라2]\n기준 값보다 밝은 부분에 줄무늬가 표시됩니다. ([제브라 패턴]: 415)\n[파형 모니터 / 벡터 범위]\n[WAVE] / [VECTOR] / [OFF]\n촬영 화면에 파형 모니터 또는 벡터 범위를 표시합니다. ([파형 모니터 / 벡터 범위]: 409)"
+        },
+        {
+          "source_id": "S3",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 796,
+          "section_title": "[사용자]: [모니터/디스플레이(비디오)]",
+          "summary": "[제브라 패턴]",
+          "evidence_text": "[사용자]: [모니터/디스플레이(비디오)]\n[V-Log 보기 지원]\n[LUT 선택]\n[Vlog_709]\n\n\n\n[LUT 보기 지원(모니터)]\n[OFF]\n\n\n\n[LUT 보기 지원(HDMI)]\n[OFF]\n\n\n\n[HLG 보기 지원]\n[모니터]\n[MODE2]\n\n\n\n[HDMI]\n[AUTO]\n\n\n\n[아나모픽 디스퀴즈 표시]\n[OFF]\n\n\n\n[흑백 라이브 뷰]\n[OFF]\n\n\n\n[센터 마커]\n[OFF]\n\n\n\n[세이프티 존 마커]\n[OFF]\n\n\n\n[프레임 마커]\n[ON] / [OFF]\n[OFF]\n\n\n\n[SET]\n—\n\n\n\n[제브라 패턴]\n[ZEBRA1] / [ZEBRA2] / [ZEBRA1+2] / [OFF]\n[OFF]\n\n\n\n[SET]\n—\n\n\n\n[파형 모니터"
+        }
+      ],
+      "latency_ms": 6147.377290995792,
+      "prompt_tokens": 274,
+      "completion_tokens": 33,
+      "total_tokens": 307,
+      "output_chars": 246,
+      "json_valid": true,
+      "json_recoverable": true,
+      "answer_relevance_pass": true,
+      "korean_intent_pass": true,
+      "source_citation_pass": true,
+      "pdf_source_faithfulness_pass": true,
+      "unsupported_handling_pass": true,
+      "overall_pass": true,
+      "error_message": null
+    },
+    {
+      "model_id": "hf.co/Qwen/Qwen3-4B-GGUF:Q4_K_M",
+      "answer_mode": "card_answer_rewrite",
+      "case_id": "g9m2_zebra_with_model_name",
+      "query": "G9M2 제브라 패턴",
+      "raw_answer": "{\"answer\":\"G9M2 제브라 패턴: Okay, the user is asking about the \\\"제브라 패턴\\\" on the G9M2. Let me check the verified answer. The answer says to refer to page 415 of the DC-G9M2 manual. It mentions that the [ZEBRA1], [ZEBRA2], and [ZEBRA1+2] options are available. The key points are that the pattern shows stripes in areas brighter than the set threshold and that you can adjust the range and baseline value. I need to make sure the response is in plain Korean, no markdown or JSON. Just two short sentences. Let me confirm the exact wording from the verified answer. The answer states the page number and the options. So the response should mention page 415 and the available options without adding any extra information. Make sure not to include any verbs or other terms not in the original answer. </think> DC-G9M2 매뉴얼 415쪽에서 [제브라 패턴] 기준 값보다 밝은 부분에 줄무늬가 표시됩니다. [ZEBRA1], [ZEBRA2], [ZEBRA1+2] 옵션을 통해 범위\",\"intent_summary\":\"G9M2 제브라 패턴\",\"source_refs\":[{\"document_id\":\"dc_g9m2_full_kor\",\"model_id\":\"DC-G9M2\",\"page\":415}],\"supported_by_sources\":true,\"needs_more_context\":false}",
+      "parsed_answer": {
+        "answer": "G9M2 제브라 패턴: Okay, the user is asking about the \"제브라 패턴\" on the G9M2. Let me check the verified answer. The answer says to refer to page 415 of the DC-G9M2 manual. It mentions that the [ZEBRA1], [ZEBRA2], and [ZEBRA1+2] options are available. The key points are that the pattern shows stripes in areas brighter than the set threshold and that you can adjust the range and baseline value. I need to make sure the response is in plain Korean, no markdown or JSON. Just two short sentences. Let me confirm the exact wording from the verified answer. The answer states the page number and the options. So the response should mention page 415 and the available options without adding any extra information. Make sure not to include any verbs or other terms not in the original answer. </think> DC-G9M2 매뉴얼 415쪽에서 [제브라 패턴] 기준 값보다 밝은 부분에 줄무늬가 표시됩니다. [ZEBRA1], [ZEBRA2], [ZEBRA1+2] 옵션을 통해 범위",
+        "intent_summary": "G9M2 제브라 패턴",
+        "source_refs": [
+          {
+            "document_id": "dc_g9m2_full_kor",
+            "model_id": "DC-G9M2",
+            "page": 415
+          }
+        ],
+        "supported_by_sources": true,
+        "needs_more_context": false
+      },
+      "retrieved_sources": [
+        {
+          "source_id": "S1",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 415,
+          "section_title": "제브라 패턴",
+          "summary": "• [제브라 패턴]([제브라 패턴]: 415)",
+          "evidence_text": "[제브라 패턴]\n기준 값보다 밝은 부분에 줄무늬가 표시됩니다. 지정한 밝기 범위 안에 있는 부분에 줄무늬가 표시되도록 범위 폭과 기준 값 을 설정할 수도 있습니다.\n[ZEBRA1]\n[ZEBRA2]\n[ZEBRA1+2]"
+        },
+        {
+          "source_id": "S2",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 589,
+          "section_title": "[사용자] 메뉴([모니터/디스플레이(비디오)])",
+          "summary": "[제브라 패턴]",
+          "evidence_text": "[프레임 마커]\n[ON] / [OFF]\n[SET]\n[프레임 비율]\n[프레임 색]\n[프레임 마스크]\n설정한 화면비율의 프레임이 촬영 화면에 표시됩니다. [프레임 비율]도 사용자 설정할 수 있습니다. ([프레임 마커]: 417)\n[제브라 패턴]\n[ZEBRA1] / [ZEBRA2] / [ZEBRA1+2] / [OFF]\n[SET]\n[제브라1]\n[제브라2]\n기준 값보다 밝은 부분에 줄무늬가 표시됩니다. ([제브라 패턴]: 415)\n[파형 모니터 / 벡터 범위]\n[WAVE] / [VECTOR] / [OFF]\n촬영 화면에 파형 모니터 또는 벡터 범위를 표시합니다. ([파형 모니터 / 벡터 범위]: 409)"
+        },
+        {
+          "source_id": "S3",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 796,
+          "section_title": "[사용자]: [모니터/디스플레이(비디오)]",
+          "summary": "[제브라 패턴]",
+          "evidence_text": "[사용자]: [모니터/디스플레이(비디오)]\n[V-Log 보기 지원]\n[LUT 선택]\n[Vlog_709]\n\n\n\n[LUT 보기 지원(모니터)]\n[OFF]\n\n\n\n[LUT 보기 지원(HDMI)]\n[OFF]\n\n\n\n[HLG 보기 지원]\n[모니터]\n[MODE2]\n\n\n\n[HDMI]\n[AUTO]\n\n\n\n[아나모픽 디스퀴즈 표시]\n[OFF]\n\n\n\n[흑백 라이브 뷰]\n[OFF]\n\n\n\n[센터 마커]\n[OFF]\n\n\n\n[세이프티 존 마커]\n[OFF]\n\n\n\n[프레임 마커]\n[ON] / [OFF]\n[OFF]\n\n\n\n[SET]\n—\n\n\n\n[제브라 패턴]\n[ZEBRA1] / [ZEBRA2] / [ZEBRA1+2] / [OFF]\n[OFF]\n\n\n\n[SET]\n—\n\n\n\n[파형 모니터"
+        }
+      ],
+      "latency_ms": 7119.886458007386,
+      "prompt_tokens": 285,
+      "completion_tokens": 256,
+      "total_tokens": 541,
+      "output_chars": 1067,
+      "json_valid": true,
+      "json_recoverable": true,
+      "answer_relevance_pass": false,
+      "korean_intent_pass": true,
+      "source_citation_pass": true,
+      "pdf_source_faithfulness_pass": false,
+      "unsupported_handling_pass": true,
+      "overall_pass": false,
+      "error_message": "quality gate failed"
+    },
+    {
+      "model_id": "hf.co/mradermacher/supergemma4-e4b-abliterated-i1-GGUF:Q4_K_M",
+      "answer_mode": "card_answer_rewrite",
+      "case_id": "g9m2_zebra_with_model_name",
+      "query": "G9M2 제브라 패턴",
+      "raw_answer": "{\"answer\":\"G9M2 제브라 패턴: DC-G9M2 매뉴얼 415쪽에서 확인하세요. 기준 값보다 밝은 부분에 줄무늬가 표시되며, 범위 폭과 기준 값을 설정하여 지정한 밝기 범위 안에 있는 부분에 줄무늬를 표시할 수 있습니다.\",\"intent_summary\":\"G9M2 제브라 패턴\",\"source_refs\":[{\"document_id\":\"dc_g9m2_full_kor\",\"model_id\":\"DC-G9M2\",\"page\":415}],\"supported_by_sources\":true,\"needs_more_context\":false}",
+      "parsed_answer": {
+        "answer": "G9M2 제브라 패턴: DC-G9M2 매뉴얼 415쪽에서 확인하세요. 기준 값보다 밝은 부분에 줄무늬가 표시되며, 범위 폭과 기준 값을 설정하여 지정한 밝기 범위 안에 있는 부분에 줄무늬를 표시할 수 있습니다.",
+        "intent_summary": "G9M2 제브라 패턴",
+        "source_refs": [
+          {
+            "document_id": "dc_g9m2_full_kor",
+            "model_id": "DC-G9M2",
+            "page": 415
+          }
+        ],
+        "supported_by_sources": true,
+        "needs_more_context": false
+      },
+      "retrieved_sources": [
+        {
+          "source_id": "S1",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 415,
+          "section_title": "제브라 패턴",
+          "summary": "• [제브라 패턴]([제브라 패턴]: 415)",
+          "evidence_text": "[제브라 패턴]\n기준 값보다 밝은 부분에 줄무늬가 표시됩니다. 지정한 밝기 범위 안에 있는 부분에 줄무늬가 표시되도록 범위 폭과 기준 값 을 설정할 수도 있습니다.\n[ZEBRA1]\n[ZEBRA2]\n[ZEBRA1+2]"
+        },
+        {
+          "source_id": "S2",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 589,
+          "section_title": "[사용자] 메뉴([모니터/디스플레이(비디오)])",
+          "summary": "[제브라 패턴]",
+          "evidence_text": "[프레임 마커]\n[ON] / [OFF]\n[SET]\n[프레임 비율]\n[프레임 색]\n[프레임 마스크]\n설정한 화면비율의 프레임이 촬영 화면에 표시됩니다. [프레임 비율]도 사용자 설정할 수 있습니다. ([프레임 마커]: 417)\n[제브라 패턴]\n[ZEBRA1] / [ZEBRA2] / [ZEBRA1+2] / [OFF]\n[SET]\n[제브라1]\n[제브라2]\n기준 값보다 밝은 부분에 줄무늬가 표시됩니다. ([제브라 패턴]: 415)\n[파형 모니터 / 벡터 범위]\n[WAVE] / [VECTOR] / [OFF]\n촬영 화면에 파형 모니터 또는 벡터 범위를 표시합니다. ([파형 모니터 / 벡터 범위]: 409)"
+        },
+        {
+          "source_id": "S3",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 796,
+          "section_title": "[사용자]: [모니터/디스플레이(비디오)]",
+          "summary": "[제브라 패턴]",
+          "evidence_text": "[사용자]: [모니터/디스플레이(비디오)]\n[V-Log 보기 지원]\n[LUT 선택]\n[Vlog_709]\n\n\n\n[LUT 보기 지원(모니터)]\n[OFF]\n\n\n\n[LUT 보기 지원(HDMI)]\n[OFF]\n\n\n\n[HLG 보기 지원]\n[모니터]\n[MODE2]\n\n\n\n[HDMI]\n[AUTO]\n\n\n\n[아나모픽 디스퀴즈 표시]\n[OFF]\n\n\n\n[흑백 라이브 뷰]\n[OFF]\n\n\n\n[센터 마커]\n[OFF]\n\n\n\n[세이프티 존 마커]\n[OFF]\n\n\n\n[프레임 마커]\n[ON] / [OFF]\n[OFF]\n\n\n\n[SET]\n—\n\n\n\n[제브라 패턴]\n[ZEBRA1] / [ZEBRA2] / [ZEBRA1+2] / [OFF]\n[OFF]\n\n\n\n[SET]\n—\n\n\n\n[파형 모니터"
+        }
+      ],
+      "latency_ms": 5826.080541999545,
+      "prompt_tokens": 274,
+      "completion_tokens": 58,
+      "total_tokens": 332,
+      "output_chars": 299,
+      "json_valid": true,
+      "json_recoverable": true,
+      "answer_relevance_pass": true,
+      "korean_intent_pass": true,
+      "source_citation_pass": true,
+      "pdf_source_faithfulness_pass": true,
+      "unsupported_handling_pass": true,
+      "overall_pass": true,
+      "error_message": null
+    },
+    {
+      "model_id": "hf.co/unsloth/gemma-4-12B-it-qat-GGUF:UD-Q4_K_XL",
+      "answer_mode": "card_answer_rewrite",
+      "case_id": "g9m2_zebra_with_model_name",
+      "query": "G9M2 제브라 패턴",
+      "raw_answer": "{\"answer\":\"G9M2 제브라 패턴: 기준 값보다 밝은 부분에 줄무늬가 표시됩니다. 범위 폭과 기준 값을 설정하여 지정한 밝기 범위 안에 줄무늬가 표시되도록 할 수도 있습니다.\",\"intent_summary\":\"G9M2 제브라 패턴\",\"source_refs\":[{\"document_id\":\"dc_g9m2_full_kor\",\"model_id\":\"DC-G9M2\",\"page\":415}],\"supported_by_sources\":true,\"needs_more_context\":false}",
+      "parsed_answer": {
+        "answer": "G9M2 제브라 패턴: 기준 값보다 밝은 부분에 줄무늬가 표시됩니다. 범위 폭과 기준 값을 설정하여 지정한 밝기 범위 안에 줄무늬가 표시되도록 할 수도 있습니다.",
+        "intent_summary": "G9M2 제브라 패턴",
+        "source_refs": [
+          {
+            "document_id": "dc_g9m2_full_kor",
+            "model_id": "DC-G9M2",
+            "page": 415
+          }
+        ],
+        "supported_by_sources": true,
+        "needs_more_context": false
+      },
+      "retrieved_sources": [
+        {
+          "source_id": "S1",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 415,
+          "section_title": "제브라 패턴",
+          "summary": "• [제브라 패턴]([제브라 패턴]: 415)",
+          "evidence_text": "[제브라 패턴]\n기준 값보다 밝은 부분에 줄무늬가 표시됩니다. 지정한 밝기 범위 안에 있는 부분에 줄무늬가 표시되도록 범위 폭과 기준 값 을 설정할 수도 있습니다.\n[ZEBRA1]\n[ZEBRA2]\n[ZEBRA1+2]"
+        },
+        {
+          "source_id": "S2",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 589,
+          "section_title": "[사용자] 메뉴([모니터/디스플레이(비디오)])",
+          "summary": "[제브라 패턴]",
+          "evidence_text": "[프레임 마커]\n[ON] / [OFF]\n[SET]\n[프레임 비율]\n[프레임 색]\n[프레임 마스크]\n설정한 화면비율의 프레임이 촬영 화면에 표시됩니다. [프레임 비율]도 사용자 설정할 수 있습니다. ([프레임 마커]: 417)\n[제브라 패턴]\n[ZEBRA1] / [ZEBRA2] / [ZEBRA1+2] / [OFF]\n[SET]\n[제브라1]\n[제브라2]\n기준 값보다 밝은 부분에 줄무늬가 표시됩니다. ([제브라 패턴]: 415)\n[파형 모니터 / 벡터 범위]\n[WAVE] / [VECTOR] / [OFF]\n촬영 화면에 파형 모니터 또는 벡터 범위를 표시합니다. ([파형 모니터 / 벡터 범위]: 409)"
+        },
+        {
+          "source_id": "S3",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 796,
+          "section_title": "[사용자]: [모니터/디스플레이(비디오)]",
+          "summary": "[제브라 패턴]",
+          "evidence_text": "[사용자]: [모니터/디스플레이(비디오)]\n[V-Log 보기 지원]\n[LUT 선택]\n[Vlog_709]\n\n\n\n[LUT 보기 지원(모니터)]\n[OFF]\n\n\n\n[LUT 보기 지원(HDMI)]\n[OFF]\n\n\n\n[HLG 보기 지원]\n[모니터]\n[MODE2]\n\n\n\n[HDMI]\n[AUTO]\n\n\n\n[아나모픽 디스퀴즈 표시]\n[OFF]\n\n\n\n[흑백 라이브 뷰]\n[OFF]\n\n\n\n[센터 마커]\n[OFF]\n\n\n\n[세이프티 존 마커]\n[OFF]\n\n\n\n[프레임 마커]\n[ON] / [OFF]\n[OFF]\n\n\n\n[SET]\n—\n\n\n\n[제브라 패턴]\n[ZEBRA1] / [ZEBRA2] / [ZEBRA1+2] / [OFF]\n[OFF]\n\n\n\n[SET]\n—\n\n\n\n[파형 모니터"
+        }
+      ],
+      "latency_ms": 2196.6742920049,
+      "prompt_tokens": 278,
+      "completion_tokens": 39,
+      "total_tokens": 317,
+      "output_chars": 272,
+      "json_valid": true,
+      "json_recoverable": true,
+      "answer_relevance_pass": true,
+      "korean_intent_pass": true,
+      "source_citation_pass": true,
+      "pdf_source_faithfulness_pass": true,
+      "unsupported_handling_pass": true,
+      "overall_pass": true,
+      "error_message": null
+    },
+    {
+      "model_id": "card_template",
+      "answer_mode": "card_template",
+      "case_id": "g9m2_zebra_natural_language",
+      "query": "G9M2에서 제브라 패턴 어디서 설정해?",
+      "raw_answer": "{\"answer\":\"DC-G9M2 매뉴얼 415쪽에서 확인하세요. [제브라 패턴] 기준 값보다 밝은 부분에 줄무늬가 표시됩니다. 지정한 밝기 범위 안에 있는 부분에 줄무늬가 표시되도록 범위 폭과 기준 값 을 설정할 수도 있습니다. [ZEBRA1] [ZEBRA2] [ZEBRA1+2]\",\"intent_summary\":\"G9M2에서 제브라 패턴 어디서 설정해?\",\"source_refs\":[{\"document_id\":\"dc_g9m2_full_kor\",\"model_id\":\"DC-G9M2\",\"page\":415}],\"supported_by_sources\":true,\"needs_more_context\":false}",
+      "parsed_answer": {
+        "answer": "DC-G9M2 매뉴얼 415쪽에서 확인하세요. [제브라 패턴] 기준 값보다 밝은 부분에 줄무늬가 표시됩니다. 지정한 밝기 범위 안에 있는 부분에 줄무늬가 표시되도록 범위 폭과 기준 값 을 설정할 수도 있습니다. [ZEBRA1] [ZEBRA2] [ZEBRA1+2]",
+        "intent_summary": "G9M2에서 제브라 패턴 어디서 설정해?",
+        "source_refs": [
+          {
+            "document_id": "dc_g9m2_full_kor",
+            "model_id": "DC-G9M2",
+            "page": 415
+          }
+        ],
+        "supported_by_sources": true,
+        "needs_more_context": false
+      },
+      "retrieved_sources": [
+        {
+          "source_id": "S1",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 415,
+          "section_title": "제브라 패턴",
+          "summary": "• [제브라 패턴]([제브라 패턴]: 415)",
+          "evidence_text": "[제브라 패턴]\n기준 값보다 밝은 부분에 줄무늬가 표시됩니다. 지정한 밝기 범위 안에 있는 부분에 줄무늬가 표시되도록 범위 폭과 기준 값 을 설정할 수도 있습니다.\n[ZEBRA1]\n[ZEBRA2]\n[ZEBRA1+2]"
+        },
+        {
+          "source_id": "S2",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 589,
+          "section_title": "[사용자] 메뉴([모니터/디스플레이(비디오)])",
+          "summary": "[제브라 패턴]",
+          "evidence_text": "[프레임 마커]\n[ON] / [OFF]\n[SET]\n[프레임 비율]\n[프레임 색]\n[프레임 마스크]\n설정한 화면비율의 프레임이 촬영 화면에 표시됩니다. [프레임 비율]도 사용자 설정할 수 있습니다. ([프레임 마커]: 417)\n[제브라 패턴]\n[ZEBRA1] / [ZEBRA2] / [ZEBRA1+2] / [OFF]\n[SET]\n[제브라1]\n[제브라2]\n기준 값보다 밝은 부분에 줄무늬가 표시됩니다. ([제브라 패턴]: 415)\n[파형 모니터 / 벡터 범위]\n[WAVE] / [VECTOR] / [OFF]\n촬영 화면에 파형 모니터 또는 벡터 범위를 표시합니다. ([파형 모니터 / 벡터 범위]: 409)"
+        },
+        {
+          "source_id": "S3",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 796,
+          "section_title": "[사용자]: [모니터/디스플레이(비디오)]",
+          "summary": "[제브라 패턴]",
+          "evidence_text": "[사용자]: [모니터/디스플레이(비디오)]\n[V-Log 보기 지원]\n[LUT 선택]\n[Vlog_709]\n\n\n\n[LUT 보기 지원(모니터)]\n[OFF]\n\n\n\n[LUT 보기 지원(HDMI)]\n[OFF]\n\n\n\n[HLG 보기 지원]\n[모니터]\n[MODE2]\n\n\n\n[HDMI]\n[AUTO]\n\n\n\n[아나모픽 디스퀴즈 표시]\n[OFF]\n\n\n\n[흑백 라이브 뷰]\n[OFF]\n\n\n\n[센터 마커]\n[OFF]\n\n\n\n[세이프티 존 마커]\n[OFF]\n\n\n\n[프레임 마커]\n[ON] / [OFF]\n[OFF]\n\n\n\n[SET]\n—\n\n\n\n[제브라 패턴]\n[ZEBRA1] / [ZEBRA2] / [ZEBRA1+2] / [OFF]\n[OFF]\n\n\n\n[SET]\n—\n\n\n\n[파형 모니터"
+        }
+      ],
+      "latency_ms": 0.0,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "output_chars": 339,
+      "json_valid": true,
+      "json_recoverable": true,
+      "answer_relevance_pass": true,
+      "korean_intent_pass": true,
+      "source_citation_pass": true,
+      "pdf_source_faithfulness_pass": true,
+      "unsupported_handling_pass": true,
+      "overall_pass": true,
+      "error_message": null
+    },
+    {
+      "model_id": "hf.co/unsloth/gemma-4-E4B-it-qat-GGUF:UD-Q4_K_XL",
+      "answer_mode": "card_answer_rewrite",
+      "case_id": "g9m2_zebra_natural_language",
+      "query": "G9M2에서 제브라 패턴 어디서 설정해?",
+      "raw_answer": "{\"answer\":\"G9M2에서 제브라 패턴 어디서 설정해?: DC-G9M2 매뉴얼 415쪽에서 확인하세요. 지정한 밝기 범위 안에 줄무늬가 표시되도록 범위 폭과 기준 값을 설정할 수 있습니다.\",\"intent_summary\":\"G9M2에서 제브라 패턴 어디서 설정해?\",\"source_refs\":[{\"document_id\":\"dc_g9m2_full_kor\",\"model_id\":\"DC-G9M2\",\"page\":415}],\"supported_by_sources\":true,\"needs_more_context\":false}",
+      "parsed_answer": {
+        "answer": "G9M2에서 제브라 패턴 어디서 설정해?: DC-G9M2 매뉴얼 415쪽에서 확인하세요. 지정한 밝기 범위 안에 줄무늬가 표시되도록 범위 폭과 기준 값을 설정할 수 있습니다.",
+        "intent_summary": "G9M2에서 제브라 패턴 어디서 설정해?",
+        "source_refs": [
+          {
+            "document_id": "dc_g9m2_full_kor",
+            "model_id": "DC-G9M2",
+            "page": 415
+          }
+        ],
+        "supported_by_sources": true,
+        "needs_more_context": false
+      },
+      "retrieved_sources": [
+        {
+          "source_id": "S1",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 415,
+          "section_title": "제브라 패턴",
+          "summary": "• [제브라 패턴]([제브라 패턴]: 415)",
+          "evidence_text": "[제브라 패턴]\n기준 값보다 밝은 부분에 줄무늬가 표시됩니다. 지정한 밝기 범위 안에 있는 부분에 줄무늬가 표시되도록 범위 폭과 기준 값 을 설정할 수도 있습니다.\n[ZEBRA1]\n[ZEBRA2]\n[ZEBRA1+2]"
+        },
+        {
+          "source_id": "S2",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 589,
+          "section_title": "[사용자] 메뉴([모니터/디스플레이(비디오)])",
+          "summary": "[제브라 패턴]",
+          "evidence_text": "[프레임 마커]\n[ON] / [OFF]\n[SET]\n[프레임 비율]\n[프레임 색]\n[프레임 마스크]\n설정한 화면비율의 프레임이 촬영 화면에 표시됩니다. [프레임 비율]도 사용자 설정할 수 있습니다. ([프레임 마커]: 417)\n[제브라 패턴]\n[ZEBRA1] / [ZEBRA2] / [ZEBRA1+2] / [OFF]\n[SET]\n[제브라1]\n[제브라2]\n기준 값보다 밝은 부분에 줄무늬가 표시됩니다. ([제브라 패턴]: 415)\n[파형 모니터 / 벡터 범위]\n[WAVE] / [VECTOR] / [OFF]\n촬영 화면에 파형 모니터 또는 벡터 범위를 표시합니다. ([파형 모니터 / 벡터 범위]: 409)"
+        },
+        {
+          "source_id": "S3",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 796,
+          "section_title": "[사용자]: [모니터/디스플레이(비디오)]",
+          "summary": "[제브라 패턴]",
+          "evidence_text": "[사용자]: [모니터/디스플레이(비디오)]\n[V-Log 보기 지원]\n[LUT 선택]\n[Vlog_709]\n\n\n\n[LUT 보기 지원(모니터)]\n[OFF]\n\n\n\n[LUT 보기 지원(HDMI)]\n[OFF]\n\n\n\n[HLG 보기 지원]\n[모니터]\n[MODE2]\n\n\n\n[HDMI]\n[AUTO]\n\n\n\n[아나모픽 디스퀴즈 표시]\n[OFF]\n\n\n\n[흑백 라이브 뷰]\n[OFF]\n\n\n\n[센터 마커]\n[OFF]\n\n\n\n[세이프티 존 마커]\n[OFF]\n\n\n\n[프레임 마커]\n[ON] / [OFF]\n[OFF]\n\n\n\n[SET]\n—\n\n\n\n[제브라 패턴]\n[ZEBRA1] / [ZEBRA2] / [ZEBRA1+2] / [OFF]\n[OFF]\n\n\n\n[SET]\n—\n\n\n\n[파형 모니터"
+        }
+      ],
+      "latency_ms": 6068.543458008207,
+      "prompt_tokens": 286,
+      "completion_tokens": 42,
+      "total_tokens": 328,
+      "output_chars": 290,
+      "json_valid": true,
+      "json_recoverable": true,
+      "answer_relevance_pass": true,
+      "korean_intent_pass": true,
+      "source_citation_pass": true,
+      "pdf_source_faithfulness_pass": true,
+      "unsupported_handling_pass": true,
+      "overall_pass": true,
+      "error_message": null
+    },
+    {
+      "model_id": "hf.co/Qwen/Qwen3-4B-GGUF:Q4_K_M",
+      "answer_mode": "card_answer_rewrite",
+      "case_id": "g9m2_zebra_natural_language",
+      "query": "G9M2에서 제브라 패턴 어디서 설정해?",
+      "raw_answer": "{\"answer\":\"G9M2에서 제브라 패턴 어디서 설정해?: Okay, the user is asking where to set the zebra pattern on the G9M2. The verified answer says to check page 415 of the DC-G9M2 manual. It also mentions that the zebra pattern displays brighter areas compared to the reference value and that you can set the range and reference value to control where the stripes appear. The answer should be in plain Korean, two sentences max, no extra info. So, first sentence: Mention the page number from the manual. Second sentence: Explain the setting of the reference value and range. Need to make sure not to add any extra details or verbs. Just stick to the verified information. Check for any specific terms like [ZEBRA1], but the user said not to include menu names. So just the key points: manual page 415, setting reference value and range for zebra pattern. </think> DC-G9M2 매뉴얼 415쪽에서 확인하세요. [제브라 패턴] 기준 값과 범위 폭을 설정해 줄무늬가 표시되는 부분을 조절할 수 있습니다.\",\"intent_summary\":\"G9M2에서 제브라 패턴 어디서 설정해?\",\"source_refs\":[{\"document_id\":\"dc_g9m2_full_kor\",\"model_id\":\"DC-G9M2\",\"page\":415}],\"supported_by_sources\":true,\"needs_more_context\":false}",
+      "parsed_answer": {
+        "answer": "G9M2에서 제브라 패턴 어디서 설정해?: Okay, the user is asking where to set the zebra pattern on the G9M2. The verified answer says to check page 415 of the DC-G9M2 manual. It also mentions that the zebra pattern displays brighter areas compared to the reference value and that you can set the range and reference value to control where the stripes appear. The answer should be in plain Korean, two sentences max, no extra info. So, first sentence: Mention the page number from the manual. Second sentence: Explain the setting of the reference value and range. Need to make sure not to add any extra details or verbs. Just stick to the verified information. Check for any specific terms like [ZEBRA1], but the user said not to include menu names. So just the key points: manual page 415, setting reference value and range for zebra pattern. </think> DC-G9M2 매뉴얼 415쪽에서 확인하세요. [제브라 패턴] 기준 값과 범위 폭을 설정해 줄무늬가 표시되는 부분을 조절할 수 있습니다.",
+        "intent_summary": "G9M2에서 제브라 패턴 어디서 설정해?",
+        "source_refs": [
+          {
+            "document_id": "dc_g9m2_full_kor",
+            "model_id": "DC-G9M2",
+            "page": 415
+          }
+        ],
+        "supported_by_sources": true,
+        "needs_more_context": false
+      },
+      "retrieved_sources": [
+        {
+          "source_id": "S1",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 415,
+          "section_title": "제브라 패턴",
+          "summary": "• [제브라 패턴]([제브라 패턴]: 415)",
+          "evidence_text": "[제브라 패턴]\n기준 값보다 밝은 부분에 줄무늬가 표시됩니다. 지정한 밝기 범위 안에 있는 부분에 줄무늬가 표시되도록 범위 폭과 기준 값 을 설정할 수도 있습니다.\n[ZEBRA1]\n[ZEBRA2]\n[ZEBRA1+2]"
+        },
+        {
+          "source_id": "S2",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 589,
+          "section_title": "[사용자] 메뉴([모니터/디스플레이(비디오)])",
+          "summary": "[제브라 패턴]",
+          "evidence_text": "[프레임 마커]\n[ON] / [OFF]\n[SET]\n[프레임 비율]\n[프레임 색]\n[프레임 마스크]\n설정한 화면비율의 프레임이 촬영 화면에 표시됩니다. [프레임 비율]도 사용자 설정할 수 있습니다. ([프레임 마커]: 417)\n[제브라 패턴]\n[ZEBRA1] / [ZEBRA2] / [ZEBRA1+2] / [OFF]\n[SET]\n[제브라1]\n[제브라2]\n기준 값보다 밝은 부분에 줄무늬가 표시됩니다. ([제브라 패턴]: 415)\n[파형 모니터 / 벡터 범위]\n[WAVE] / [VECTOR] / [OFF]\n촬영 화면에 파형 모니터 또는 벡터 범위를 표시합니다. ([파형 모니터 / 벡터 범위]: 409)"
+        },
+        {
+          "source_id": "S3",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 796,
+          "section_title": "[사용자]: [모니터/디스플레이(비디오)]",
+          "summary": "[제브라 패턴]",
+          "evidence_text": "[사용자]: [모니터/디스플레이(비디오)]\n[V-Log 보기 지원]\n[LUT 선택]\n[Vlog_709]\n\n\n\n[LUT 보기 지원(모니터)]\n[OFF]\n\n\n\n[LUT 보기 지원(HDMI)]\n[OFF]\n\n\n\n[HLG 보기 지원]\n[모니터]\n[MODE2]\n\n\n\n[HDMI]\n[AUTO]\n\n\n\n[아나모픽 디스퀴즈 표시]\n[OFF]\n\n\n\n[흑백 라이브 뷰]\n[OFF]\n\n\n\n[센터 마커]\n[OFF]\n\n\n\n[세이프티 존 마커]\n[OFF]\n\n\n\n[프레임 마커]\n[ON] / [OFF]\n[OFF]\n\n\n\n[SET]\n—\n\n\n\n[제브라 패턴]\n[ZEBRA1] / [ZEBRA2] / [ZEBRA1+2] / [OFF]\n[OFF]\n\n\n\n[SET]\n—\n\n\n\n[파형 모니터"
+        }
+      ],
+      "latency_ms": 6663.866832997883,
+      "prompt_tokens": 296,
+      "completion_tokens": 236,
+      "total_tokens": 532,
+      "output_chars": 1105,
+      "json_valid": true,
+      "json_recoverable": true,
+      "answer_relevance_pass": false,
+      "korean_intent_pass": true,
+      "source_citation_pass": true,
+      "pdf_source_faithfulness_pass": false,
+      "unsupported_handling_pass": true,
+      "overall_pass": false,
+      "error_message": "quality gate failed"
+    },
+    {
+      "model_id": "hf.co/mradermacher/supergemma4-e4b-abliterated-i1-GGUF:Q4_K_M",
+      "answer_mode": "card_answer_rewrite",
+      "case_id": "g9m2_zebra_natural_language",
+      "query": "G9M2에서 제브라 패턴 어디서 설정해?",
+      "raw_answer": "{\"answer\":\"G9M2에서 제브라 패턴 어디서 설정해?: DC-G9M2 매뉴얼 415쪽에서 확인하세요. 범위 폭과 기준 값을 설정하여 줄무늬 표시 범위를 지정할 수 있습니다.\",\"intent_summary\":\"G9M2에서 제브라 패턴 어디서 설정해?\",\"source_refs\":[{\"document_id\":\"dc_g9m2_full_kor\",\"model_id\":\"DC-G9M2\",\"page\":415}],\"supported_by_sources\":true,\"needs_more_context\":false}",
+      "parsed_answer": {
+        "answer": "G9M2에서 제브라 패턴 어디서 설정해?: DC-G9M2 매뉴얼 415쪽에서 확인하세요. 범위 폭과 기준 값을 설정하여 줄무늬 표시 범위를 지정할 수 있습니다.",
+        "intent_summary": "G9M2에서 제브라 패턴 어디서 설정해?",
+        "source_refs": [
+          {
+            "document_id": "dc_g9m2_full_kor",
+            "model_id": "DC-G9M2",
+            "page": 415
+          }
+        ],
+        "supported_by_sources": true,
+        "needs_more_context": false
+      },
+      "retrieved_sources": [
+        {
+          "source_id": "S1",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 415,
+          "section_title": "제브라 패턴",
+          "summary": "• [제브라 패턴]([제브라 패턴]: 415)",
+          "evidence_text": "[제브라 패턴]\n기준 값보다 밝은 부분에 줄무늬가 표시됩니다. 지정한 밝기 범위 안에 있는 부분에 줄무늬가 표시되도록 범위 폭과 기준 값 을 설정할 수도 있습니다.\n[ZEBRA1]\n[ZEBRA2]\n[ZEBRA1+2]"
+        },
+        {
+          "source_id": "S2",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 589,
+          "section_title": "[사용자] 메뉴([모니터/디스플레이(비디오)])",
+          "summary": "[제브라 패턴]",
+          "evidence_text": "[프레임 마커]\n[ON] / [OFF]\n[SET]\n[프레임 비율]\n[프레임 색]\n[프레임 마스크]\n설정한 화면비율의 프레임이 촬영 화면에 표시됩니다. [프레임 비율]도 사용자 설정할 수 있습니다. ([프레임 마커]: 417)\n[제브라 패턴]\n[ZEBRA1] / [ZEBRA2] / [ZEBRA1+2] / [OFF]\n[SET]\n[제브라1]\n[제브라2]\n기준 값보다 밝은 부분에 줄무늬가 표시됩니다. ([제브라 패턴]: 415)\n[파형 모니터 / 벡터 범위]\n[WAVE] / [VECTOR] / [OFF]\n촬영 화면에 파형 모니터 또는 벡터 범위를 표시합니다. ([파형 모니터 / 벡터 범위]: 409)"
+        },
+        {
+          "source_id": "S3",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 796,
+          "section_title": "[사용자]: [모니터/디스플레이(비디오)]",
+          "summary": "[제브라 패턴]",
+          "evidence_text": "[사용자]: [모니터/디스플레이(비디오)]\n[V-Log 보기 지원]\n[LUT 선택]\n[Vlog_709]\n\n\n\n[LUT 보기 지원(모니터)]\n[OFF]\n\n\n\n[LUT 보기 지원(HDMI)]\n[OFF]\n\n\n\n[HLG 보기 지원]\n[모니터]\n[MODE2]\n\n\n\n[HDMI]\n[AUTO]\n\n\n\n[아나모픽 디스퀴즈 표시]\n[OFF]\n\n\n\n[흑백 라이브 뷰]\n[OFF]\n\n\n\n[센터 마커]\n[OFF]\n\n\n\n[세이프티 존 마커]\n[OFF]\n\n\n\n[프레임 마커]\n[ON] / [OFF]\n[OFF]\n\n\n\n[SET]\n—\n\n\n\n[제브라 패턴]\n[ZEBRA1] / [ZEBRA2] / [ZEBRA1+2] / [OFF]\n[OFF]\n\n\n\n[SET]\n—\n\n\n\n[파형 모니터"
+        }
+      ],
+      "latency_ms": 5141.062165988842,
+      "prompt_tokens": 286,
+      "completion_tokens": 37,
+      "total_tokens": 323,
+      "output_chars": 282,
+      "json_valid": true,
+      "json_recoverable": true,
+      "answer_relevance_pass": true,
+      "korean_intent_pass": true,
+      "source_citation_pass": true,
+      "pdf_source_faithfulness_pass": true,
+      "unsupported_handling_pass": true,
+      "overall_pass": true,
+      "error_message": null
+    },
+    {
+      "model_id": "hf.co/unsloth/gemma-4-12B-it-qat-GGUF:UD-Q4_K_XL",
+      "answer_mode": "card_answer_rewrite",
+      "case_id": "g9m2_zebra_natural_language",
+      "query": "G9M2에서 제브라 패턴 어디서 설정해?",
+      "raw_answer": "{\"answer\":\"G9M2에서 제브라 패턴 어디서 설정해?: 매뉴얼 415쪽에서 확인하세요. [제브라 패턴] 기준 값보다 밝은 부분에 줄무늬가 표시됩니다.\",\"intent_summary\":\"G9M2에서 제브라 패턴 어디서 설정해?\",\"source_refs\":[{\"document_id\":\"dc_g9m2_full_kor\",\"model_id\":\"DC-G9M2\",\"page\":415}],\"supported_by_sources\":true,\"needs_more_context\":false}",
+      "parsed_answer": {
+        "answer": "G9M2에서 제브라 패턴 어디서 설정해?: 매뉴얼 415쪽에서 확인하세요. [제브라 패턴] 기준 값보다 밝은 부분에 줄무늬가 표시됩니다.",
+        "intent_summary": "G9M2에서 제브라 패턴 어디서 설정해?",
+        "source_refs": [
+          {
+            "document_id": "dc_g9m2_full_kor",
+            "model_id": "DC-G9M2",
+            "page": 415
+          }
+        ],
+        "supported_by_sources": true,
+        "needs_more_context": false
+      },
+      "retrieved_sources": [
+        {
+          "source_id": "S1",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 415,
+          "section_title": "제브라 패턴",
+          "summary": "• [제브라 패턴]([제브라 패턴]: 415)",
+          "evidence_text": "[제브라 패턴]\n기준 값보다 밝은 부분에 줄무늬가 표시됩니다. 지정한 밝기 범위 안에 있는 부분에 줄무늬가 표시되도록 범위 폭과 기준 값 을 설정할 수도 있습니다.\n[ZEBRA1]\n[ZEBRA2]\n[ZEBRA1+2]"
+        },
+        {
+          "source_id": "S2",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 589,
+          "section_title": "[사용자] 메뉴([모니터/디스플레이(비디오)])",
+          "summary": "[제브라 패턴]",
+          "evidence_text": "[프레임 마커]\n[ON] / [OFF]\n[SET]\n[프레임 비율]\n[프레임 색]\n[프레임 마스크]\n설정한 화면비율의 프레임이 촬영 화면에 표시됩니다. [프레임 비율]도 사용자 설정할 수 있습니다. ([프레임 마커]: 417)\n[제브라 패턴]\n[ZEBRA1] / [ZEBRA2] / [ZEBRA1+2] / [OFF]\n[SET]\n[제브라1]\n[제브라2]\n기준 값보다 밝은 부분에 줄무늬가 표시됩니다. ([제브라 패턴]: 415)\n[파형 모니터 / 벡터 범위]\n[WAVE] / [VECTOR] / [OFF]\n촬영 화면에 파형 모니터 또는 벡터 범위를 표시합니다. ([파형 모니터 / 벡터 범위]: 409)"
+        },
+        {
+          "source_id": "S3",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 796,
+          "section_title": "[사용자]: [모니터/디스플레이(비디오)]",
+          "summary": "[제브라 패턴]",
+          "evidence_text": "[사용자]: [모니터/디스플레이(비디오)]\n[V-Log 보기 지원]\n[LUT 선택]\n[Vlog_709]\n\n\n\n[LUT 보기 지원(모니터)]\n[OFF]\n\n\n\n[LUT 보기 지원(HDMI)]\n[OFF]\n\n\n\n[HLG 보기 지원]\n[모니터]\n[MODE2]\n\n\n\n[HDMI]\n[AUTO]\n\n\n\n[아나모픽 디스퀴즈 표시]\n[OFF]\n\n\n\n[흑백 라이브 뷰]\n[OFF]\n\n\n\n[센터 마커]\n[OFF]\n\n\n\n[세이프티 존 마커]\n[OFF]\n\n\n\n[프레임 마커]\n[ON] / [OFF]\n[OFF]\n\n\n\n[SET]\n—\n\n\n\n[제브라 패턴]\n[ZEBRA1] / [ZEBRA2] / [ZEBRA1+2] / [OFF]\n[OFF]\n\n\n\n[SET]\n—\n\n\n\n[파형 모니터"
+        }
+      ],
+      "latency_ms": 2018.1470829993486,
+      "prompt_tokens": 290,
+      "completion_tokens": 33,
+      "total_tokens": 323,
+      "output_chars": 269,
+      "json_valid": true,
+      "json_recoverable": true,
+      "answer_relevance_pass": true,
+      "korean_intent_pass": true,
+      "source_citation_pass": true,
+      "pdf_source_faithfulness_pass": true,
+      "unsupported_handling_pass": true,
+      "overall_pass": true,
+      "error_message": null
+    },
+    {
+      "model_id": "card_template",
+      "answer_mode": "card_template",
+      "case_id": "g9m2_stabilizer_compact",
+      "query": "손떨림보정",
+      "raw_answer": "{\"answer\":\"DC-G9M2 매뉴얼 266쪽에서 확인하세요. 이미지 손떨림 보정 ≥이미지 손떨림 보정 설정: 269 본 카메라는 본체 내 이미지 손떨림 보정 기능과 렌즈 내 이미지 손떨림 보 정 기능을 모두 사용할 수 있습니다. 이것은 2 개의 이미지 손떨림 보정 기능을...\",\"intent_summary\":\"손떨림보정\",\"source_refs\":[{\"document_id\":\"dc_g9m2_full_kor\",\"model_id\":\"DC-G9M2\",\"page\":266}],\"supported_by_sources\":true,\"needs_more_context\":false}",
+      "parsed_answer": {
+        "answer": "DC-G9M2 매뉴얼 266쪽에서 확인하세요. 이미지 손떨림 보정 ≥이미지 손떨림 보정 설정: 269 본 카메라는 본체 내 이미지 손떨림 보정 기능과 렌즈 내 이미지 손떨림 보 정 기능을 모두 사용할 수 있습니다. 이것은 2 개의 이미지 손떨림 보정 기능을...",
+        "intent_summary": "손떨림보정",
+        "source_refs": [
+          {
+            "document_id": "dc_g9m2_full_kor",
+            "model_id": "DC-G9M2",
+            "page": 266
+          }
+        ],
+        "supported_by_sources": true,
+        "needs_more_context": false
+      },
+      "retrieved_sources": [
+        {
+          "source_id": "S1",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 266,
+          "section_title": "이미지 손떨림 보정",
+          "summary": "(7) 이미지 손떨림 보정(이미지 손떨림 보정: 266)",
+          "evidence_text": "이미지 손떨림 보정\n≥이미지 손떨림 보정 설정: 269\n본 카메라는 본체 내 이미지 손떨림 보정 기능과 렌즈 내 이미지 손떨림 보 정 기능을 모두 사용할 수 있습니다. 이것은 2 개의 이미지 손떨림 보정 기능을 효과적으로 결합한 듀얼 I.S.2 시 스템과 호환됩니다. 그밖에도, 전자식 손떨림 보정 기능을 결합한 5축 하이브리드 이미지 손떨 림 보정 기능을 비디오 촬영에 사용할 수 있습니다."
+        },
+        {
+          "source_id": "S2",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 272,
+          "section_title": "E-손떨림 보정 (비디오)",
+          "summary": "• [E-손떨림 보정 (비디오)]([E-손떨림 보정 (비디오)]: 272)",
+          "evidence_text": " [E-손떨림 보정 (비디오)]\n렌즈 내, 본체 내 및 전자식 이미지 흔들림 방지 기능을 결합하여 비디오 촬 영 시 세로, 가로, 롤, 피치 및 요축을 따라 5축의 카메라 흔들림과 광각 렌 즈 사용 시 쉽게 발생하는 주변 왜곡을 보정합니다. (5축 하이브리드 이미지 흔들림 방지)\n[HIGH] 큰 흔들림과 주변 왜곡이 전자적으로 보정됩니다. 시야각이 [STANDARD]보다 좁습니다.\n• 비디오를 촬영하는 동안 화면에 [ ]가 표시됩니다.\n[STANDARD] 흔들림 및 주변 왜곡이 전자적으로 보정됩니다. 시야각이 좁습니다.\n• 비디오를 촬영하는 동안 화면에 [ ]가 표시됩니다.\n[OFF] 전자식 이미지 흔들림 방지(비디오) 기능이 꺼집니다.\n• 촬영에 사용된 비디오 모드 및 촬영 조건에 따라 보정 효과가 달라"
+        },
+        {
+          "source_id": "S3",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 8,
+          "section_title": "드라이브 / 셔터 / 이미지 흔들림 방지 209",
+          "summary": "이미지 손떨림 보정..................................................................266",
+          "evidence_text": "드라이브 / 셔터 / 이미지 흔들림 방지 209\n드라이브 모드 선택하기...........................................................210 연사 사진 촬영하기..................................................................212 고해상도 모드 ..........................................................................223 인터벌 촬영으로 촬영하기 .......................................................228 스톱 모션 애니메이션으로 촬영하기........................................2"
+        }
+      ],
+      "latency_ms": 0.0,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "output_chars": 322,
+      "json_valid": true,
+      "json_recoverable": true,
+      "answer_relevance_pass": true,
+      "korean_intent_pass": true,
+      "source_citation_pass": true,
+      "pdf_source_faithfulness_pass": true,
+      "unsupported_handling_pass": true,
+      "overall_pass": true,
+      "error_message": null
+    },
+    {
+      "model_id": "hf.co/unsloth/gemma-4-E4B-it-qat-GGUF:UD-Q4_K_XL",
+      "answer_mode": "card_answer_rewrite",
+      "case_id": "g9m2_stabilizer_compact",
+      "query": "손떨림보정",
+      "raw_answer": "{\"answer\":\"손떨림보정: DC-G9M2 매뉴얼 266쪽에서 확인하세요. 본체 내 및 렌즈 내 이미지 손떨림 보정 기능을 모두 사용할 수 있습니다.\",\"intent_summary\":\"손떨림보정\",\"source_refs\":[{\"document_id\":\"dc_g9m2_full_kor\",\"model_id\":\"DC-G9M2\",\"page\":266}],\"supported_by_sources\":true,\"needs_more_context\":false}",
+      "parsed_answer": {
+        "answer": "손떨림보정: DC-G9M2 매뉴얼 266쪽에서 확인하세요. 본체 내 및 렌즈 내 이미지 손떨림 보정 기능을 모두 사용할 수 있습니다.",
+        "intent_summary": "손떨림보정",
+        "source_refs": [
+          {
+            "document_id": "dc_g9m2_full_kor",
+            "model_id": "DC-G9M2",
+            "page": 266
+          }
+        ],
+        "supported_by_sources": true,
+        "needs_more_context": false
+      },
+      "retrieved_sources": [
+        {
+          "source_id": "S1",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 266,
+          "section_title": "이미지 손떨림 보정",
+          "summary": "(7) 이미지 손떨림 보정(이미지 손떨림 보정: 266)",
+          "evidence_text": "이미지 손떨림 보정\n≥이미지 손떨림 보정 설정: 269\n본 카메라는 본체 내 이미지 손떨림 보정 기능과 렌즈 내 이미지 손떨림 보 정 기능을 모두 사용할 수 있습니다. 이것은 2 개의 이미지 손떨림 보정 기능을 효과적으로 결합한 듀얼 I.S.2 시 스템과 호환됩니다. 그밖에도, 전자식 손떨림 보정 기능을 결합한 5축 하이브리드 이미지 손떨 림 보정 기능을 비디오 촬영에 사용할 수 있습니다."
+        },
+        {
+          "source_id": "S2",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 272,
+          "section_title": "E-손떨림 보정 (비디오)",
+          "summary": "• [E-손떨림 보정 (비디오)]([E-손떨림 보정 (비디오)]: 272)",
+          "evidence_text": " [E-손떨림 보정 (비디오)]\n렌즈 내, 본체 내 및 전자식 이미지 흔들림 방지 기능을 결합하여 비디오 촬 영 시 세로, 가로, 롤, 피치 및 요축을 따라 5축의 카메라 흔들림과 광각 렌 즈 사용 시 쉽게 발생하는 주변 왜곡을 보정합니다. (5축 하이브리드 이미지 흔들림 방지)\n[HIGH] 큰 흔들림과 주변 왜곡이 전자적으로 보정됩니다. 시야각이 [STANDARD]보다 좁습니다.\n• 비디오를 촬영하는 동안 화면에 [ ]가 표시됩니다.\n[STANDARD] 흔들림 및 주변 왜곡이 전자적으로 보정됩니다. 시야각이 좁습니다.\n• 비디오를 촬영하는 동안 화면에 [ ]가 표시됩니다.\n[OFF] 전자식 이미지 흔들림 방지(비디오) 기능이 꺼집니다.\n• 촬영에 사용된 비디오 모드 및 촬영 조건에 따라 보정 효과가 달라"
+        },
+        {
+          "source_id": "S3",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 8,
+          "section_title": "드라이브 / 셔터 / 이미지 흔들림 방지 209",
+          "summary": "이미지 손떨림 보정..................................................................266",
+          "evidence_text": "드라이브 / 셔터 / 이미지 흔들림 방지 209\n드라이브 모드 선택하기...........................................................210 연사 사진 촬영하기..................................................................212 고해상도 모드 ..........................................................................223 인터벌 촬영으로 촬영하기 .......................................................228 스톱 모션 애니메이션으로 촬영하기........................................2"
+        }
+      ],
+      "latency_ms": 6527.8949580097105,
+      "prompt_tokens": 268,
+      "completion_tokens": 39,
+      "total_tokens": 307,
+      "output_chars": 250,
+      "json_valid": true,
+      "json_recoverable": true,
+      "answer_relevance_pass": true,
+      "korean_intent_pass": true,
+      "source_citation_pass": true,
+      "pdf_source_faithfulness_pass": true,
+      "unsupported_handling_pass": true,
+      "overall_pass": true,
+      "error_message": null
+    },
+    {
+      "model_id": "hf.co/Qwen/Qwen3-4B-GGUF:Q4_K_M",
+      "answer_mode": "card_answer_rewrite",
+      "case_id": "g9m2_stabilizer_compact",
+      "query": "손떨림보정",
+      "raw_answer": "{\"answer\":\"Okay, the user is asking about \\\"손떨림보정\\\", which translates to image shake correction. The verified answer mentions the DC-G9M2 manual page 266 and explains that the camera can use both built-in and lens-based image shake correction. The answer also notes that there are two image shake correction functions. I need to rewrite this in plain Korean, using only the information from the verified answer. The user specified not to add any extra facts or verbs. So I should focus on the key points: the manual page, the two correction functions. Make sure it's concise, two sentences max. Check for any specific terms like \\\"DC-G9M2\\\" and \\\"이미지 손떨림 보정\\\" as they are part of the verified answer. Avoid any markdown or JSON. Just the Korean text. Let me put that together. </think> DC-G9M2 매뉴얼 266쪽에 기술되어 있습니다. 이 카메라는 본체와 렌즈 내 모두 이미지 손떨림 보정 기능을 사용할 수 있습니다.\",\"intent_summary\":\"손떨림보정\",\"source_refs\":[{\"document_id\":\"dc_g9m2_full_kor\",\"model_id\":\"DC-G9M2\",\"page\":266}],\"supported_by_sources\":true,\"needs_more_context\":false}",
+      "parsed_answer": {
+        "answer": "Okay, the user is asking about \"손떨림보정\", which translates to image shake correction. The verified answer mentions the DC-G9M2 manual page 266 and explains that the camera can use both built-in and lens-based image shake correction. The answer also notes that there are two image shake correction functions. I need to rewrite this in plain Korean, using only the information from the verified answer. The user specified not to add any extra facts or verbs. So I should focus on the key points: the manual page, the two correction functions. Make sure it's concise, two sentences max. Check for any specific terms like \"DC-G9M2\" and \"이미지 손떨림 보정\" as they are part of the verified answer. Avoid any markdown or JSON. Just the Korean text. Let me put that together. </think> DC-G9M2 매뉴얼 266쪽에 기술되어 있습니다. 이 카메라는 본체와 렌즈 내 모두 이미지 손떨림 보정 기능을 사용할 수 있습니다.",
+        "intent_summary": "손떨림보정",
+        "source_refs": [
+          {
+            "document_id": "dc_g9m2_full_kor",
+            "model_id": "DC-G9M2",
+            "page": 266
+          }
+        ],
+        "supported_by_sources": true,
+        "needs_more_context": false
+      },
+      "retrieved_sources": [
+        {
+          "source_id": "S1",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 266,
+          "section_title": "이미지 손떨림 보정",
+          "summary": "(7) 이미지 손떨림 보정(이미지 손떨림 보정: 266)",
+          "evidence_text": "이미지 손떨림 보정\n≥이미지 손떨림 보정 설정: 269\n본 카메라는 본체 내 이미지 손떨림 보정 기능과 렌즈 내 이미지 손떨림 보 정 기능을 모두 사용할 수 있습니다. 이것은 2 개의 이미지 손떨림 보정 기능을 효과적으로 결합한 듀얼 I.S.2 시 스템과 호환됩니다. 그밖에도, 전자식 손떨림 보정 기능을 결합한 5축 하이브리드 이미지 손떨 림 보정 기능을 비디오 촬영에 사용할 수 있습니다."
+        },
+        {
+          "source_id": "S2",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 272,
+          "section_title": "E-손떨림 보정 (비디오)",
+          "summary": "• [E-손떨림 보정 (비디오)]([E-손떨림 보정 (비디오)]: 272)",
+          "evidence_text": " [E-손떨림 보정 (비디오)]\n렌즈 내, 본체 내 및 전자식 이미지 흔들림 방지 기능을 결합하여 비디오 촬 영 시 세로, 가로, 롤, 피치 및 요축을 따라 5축의 카메라 흔들림과 광각 렌 즈 사용 시 쉽게 발생하는 주변 왜곡을 보정합니다. (5축 하이브리드 이미지 흔들림 방지)\n[HIGH] 큰 흔들림과 주변 왜곡이 전자적으로 보정됩니다. 시야각이 [STANDARD]보다 좁습니다.\n• 비디오를 촬영하는 동안 화면에 [ ]가 표시됩니다.\n[STANDARD] 흔들림 및 주변 왜곡이 전자적으로 보정됩니다. 시야각이 좁습니다.\n• 비디오를 촬영하는 동안 화면에 [ ]가 표시됩니다.\n[OFF] 전자식 이미지 흔들림 방지(비디오) 기능이 꺼집니다.\n• 촬영에 사용된 비디오 모드 및 촬영 조건에 따라 보정 효과가 달라"
+        },
+        {
+          "source_id": "S3",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 8,
+          "section_title": "드라이브 / 셔터 / 이미지 흔들림 방지 209",
+          "summary": "이미지 손떨림 보정..................................................................266",
+          "evidence_text": "드라이브 / 셔터 / 이미지 흔들림 방지 209\n드라이브 모드 선택하기...........................................................210 연사 사진 촬영하기..................................................................212 고해상도 모드 ..........................................................................223 인터벌 촬영으로 촬영하기 .......................................................228 스톱 모션 애니메이션으로 촬영하기........................................2"
+        }
+      ],
+      "latency_ms": 6542.962624982465,
+      "prompt_tokens": 272,
+      "completion_tokens": 228,
+      "total_tokens": 500,
+      "output_chars": 1025,
+      "json_valid": true,
+      "json_recoverable": true,
+      "answer_relevance_pass": false,
+      "korean_intent_pass": true,
+      "source_citation_pass": true,
+      "pdf_source_faithfulness_pass": false,
+      "unsupported_handling_pass": true,
+      "overall_pass": false,
+      "error_message": "quality gate failed"
+    },
+    {
+      "model_id": "hf.co/mradermacher/supergemma4-e4b-abliterated-i1-GGUF:Q4_K_M",
+      "answer_mode": "card_answer_rewrite",
+      "case_id": "g9m2_stabilizer_compact",
+      "query": "손떨림보정",
+      "raw_answer": "{\"answer\":\"손떨림보정: 매뉴얼 266쪽에서 확인하세요. 본체 내 이미지 손떨림 보정 기능과 렌즈 내 이미지 손떨림 보정 기능을 모두 사용할 수 있습니다.\",\"intent_summary\":\"손떨림보정\",\"source_refs\":[{\"document_id\":\"dc_g9m2_full_kor\",\"model_id\":\"DC-G9M2\",\"page\":266}],\"supported_by_sources\":true,\"needs_more_context\":false}",
+      "parsed_answer": {
+        "answer": "손떨림보정: 매뉴얼 266쪽에서 확인하세요. 본체 내 이미지 손떨림 보정 기능과 렌즈 내 이미지 손떨림 보정 기능을 모두 사용할 수 있습니다.",
+        "intent_summary": "손떨림보정",
+        "source_refs": [
+          {
+            "document_id": "dc_g9m2_full_kor",
+            "model_id": "DC-G9M2",
+            "page": 266
+          }
+        ],
+        "supported_by_sources": true,
+        "needs_more_context": false
+      },
+      "retrieved_sources": [
+        {
+          "source_id": "S1",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 266,
+          "section_title": "이미지 손떨림 보정",
+          "summary": "(7) 이미지 손떨림 보정(이미지 손떨림 보정: 266)",
+          "evidence_text": "이미지 손떨림 보정\n≥이미지 손떨림 보정 설정: 269\n본 카메라는 본체 내 이미지 손떨림 보정 기능과 렌즈 내 이미지 손떨림 보 정 기능을 모두 사용할 수 있습니다. 이것은 2 개의 이미지 손떨림 보정 기능을 효과적으로 결합한 듀얼 I.S.2 시 스템과 호환됩니다. 그밖에도, 전자식 손떨림 보정 기능을 결합한 5축 하이브리드 이미지 손떨 림 보정 기능을 비디오 촬영에 사용할 수 있습니다."
+        },
+        {
+          "source_id": "S2",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 272,
+          "section_title": "E-손떨림 보정 (비디오)",
+          "summary": "• [E-손떨림 보정 (비디오)]([E-손떨림 보정 (비디오)]: 272)",
+          "evidence_text": " [E-손떨림 보정 (비디오)]\n렌즈 내, 본체 내 및 전자식 이미지 흔들림 방지 기능을 결합하여 비디오 촬 영 시 세로, 가로, 롤, 피치 및 요축을 따라 5축의 카메라 흔들림과 광각 렌 즈 사용 시 쉽게 발생하는 주변 왜곡을 보정합니다. (5축 하이브리드 이미지 흔들림 방지)\n[HIGH] 큰 흔들림과 주변 왜곡이 전자적으로 보정됩니다. 시야각이 [STANDARD]보다 좁습니다.\n• 비디오를 촬영하는 동안 화면에 [ ]가 표시됩니다.\n[STANDARD] 흔들림 및 주변 왜곡이 전자적으로 보정됩니다. 시야각이 좁습니다.\n• 비디오를 촬영하는 동안 화면에 [ ]가 표시됩니다.\n[OFF] 전자식 이미지 흔들림 방지(비디오) 기능이 꺼집니다.\n• 촬영에 사용된 비디오 모드 및 촬영 조건에 따라 보정 효과가 달라"
+        },
+        {
+          "source_id": "S3",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 8,
+          "section_title": "드라이브 / 셔터 / 이미지 흔들림 방지 209",
+          "summary": "이미지 손떨림 보정..................................................................266",
+          "evidence_text": "드라이브 / 셔터 / 이미지 흔들림 방지 209\n드라이브 모드 선택하기...........................................................210 연사 사진 촬영하기..................................................................212 고해상도 모드 ..........................................................................223 인터벌 촬영으로 촬영하기 .......................................................228 스톱 모션 애니메이션으로 촬영하기........................................2"
+        }
+      ],
+      "latency_ms": 5517.420958000002,
+      "prompt_tokens": 268,
+      "completion_tokens": 40,
+      "total_tokens": 308,
+      "output_chars": 255,
+      "json_valid": true,
+      "json_recoverable": true,
+      "answer_relevance_pass": true,
+      "korean_intent_pass": true,
+      "source_citation_pass": true,
+      "pdf_source_faithfulness_pass": true,
+      "unsupported_handling_pass": true,
+      "overall_pass": true,
+      "error_message": null
+    },
+    {
+      "model_id": "hf.co/unsloth/gemma-4-12B-it-qat-GGUF:UD-Q4_K_XL",
+      "answer_mode": "card_answer_rewrite",
+      "case_id": "g9m2_stabilizer_compact",
+      "query": "손떨림보정",
+      "raw_answer": "{\"answer\":\"손떨림보정: 본 카메라는 본체 내 이미지 손떨림 보정 기능과 렌즈 내 이미지 손떨림 보정 기능을 모두 사용할 수 있습니다. 매뉴얼 266쪽에서 확인하세요.\",\"intent_summary\":\"손떨림보정\",\"source_refs\":[{\"document_id\":\"dc_g9m2_full_kor\",\"model_id\":\"DC-G9M2\",\"page\":266}],\"supported_by_sources\":true,\"needs_more_context\":false}",
+      "parsed_answer": {
+        "answer": "손떨림보정: 본 카메라는 본체 내 이미지 손떨림 보정 기능과 렌즈 내 이미지 손떨림 보정 기능을 모두 사용할 수 있습니다. 매뉴얼 266쪽에서 확인하세요.",
+        "intent_summary": "손떨림보정",
+        "source_refs": [
+          {
+            "document_id": "dc_g9m2_full_kor",
+            "model_id": "DC-G9M2",
+            "page": 266
+          }
+        ],
+        "supported_by_sources": true,
+        "needs_more_context": false
+      },
+      "retrieved_sources": [
+        {
+          "source_id": "S1",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 266,
+          "section_title": "이미지 손떨림 보정",
+          "summary": "(7) 이미지 손떨림 보정(이미지 손떨림 보정: 266)",
+          "evidence_text": "이미지 손떨림 보정\n≥이미지 손떨림 보정 설정: 269\n본 카메라는 본체 내 이미지 손떨림 보정 기능과 렌즈 내 이미지 손떨림 보 정 기능을 모두 사용할 수 있습니다. 이것은 2 개의 이미지 손떨림 보정 기능을 효과적으로 결합한 듀얼 I.S.2 시 스템과 호환됩니다. 그밖에도, 전자식 손떨림 보정 기능을 결합한 5축 하이브리드 이미지 손떨 림 보정 기능을 비디오 촬영에 사용할 수 있습니다."
+        },
+        {
+          "source_id": "S2",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 272,
+          "section_title": "E-손떨림 보정 (비디오)",
+          "summary": "• [E-손떨림 보정 (비디오)]([E-손떨림 보정 (비디오)]: 272)",
+          "evidence_text": " [E-손떨림 보정 (비디오)]\n렌즈 내, 본체 내 및 전자식 이미지 흔들림 방지 기능을 결합하여 비디오 촬 영 시 세로, 가로, 롤, 피치 및 요축을 따라 5축의 카메라 흔들림과 광각 렌 즈 사용 시 쉽게 발생하는 주변 왜곡을 보정합니다. (5축 하이브리드 이미지 흔들림 방지)\n[HIGH] 큰 흔들림과 주변 왜곡이 전자적으로 보정됩니다. 시야각이 [STANDARD]보다 좁습니다.\n• 비디오를 촬영하는 동안 화면에 [ ]가 표시됩니다.\n[STANDARD] 흔들림 및 주변 왜곡이 전자적으로 보정됩니다. 시야각이 좁습니다.\n• 비디오를 촬영하는 동안 화면에 [ ]가 표시됩니다.\n[OFF] 전자식 이미지 흔들림 방지(비디오) 기능이 꺼집니다.\n• 촬영에 사용된 비디오 모드 및 촬영 조건에 따라 보정 효과가 달라"
+        },
+        {
+          "source_id": "S3",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 8,
+          "section_title": "드라이브 / 셔터 / 이미지 흔들림 방지 209",
+          "summary": "이미지 손떨림 보정..................................................................266",
+          "evidence_text": "드라이브 / 셔터 / 이미지 흔들림 방지 209\n드라이브 모드 선택하기...........................................................210 연사 사진 촬영하기..................................................................212 고해상도 모드 ..........................................................................223 인터벌 촬영으로 촬영하기 .......................................................228 스톱 모션 애니메이션으로 촬영하기........................................2"
+        }
+      ],
+      "latency_ms": 2332.817916001659,
+      "prompt_tokens": 272,
+      "completion_tokens": 44,
+      "total_tokens": 316,
+      "output_chars": 262,
+      "json_valid": true,
+      "json_recoverable": true,
+      "answer_relevance_pass": true,
+      "korean_intent_pass": true,
+      "source_citation_pass": true,
+      "pdf_source_faithfulness_pass": true,
+      "unsupported_handling_pass": true,
+      "overall_pass": true,
+      "error_message": null
+    },
+    {
+      "model_id": "card_template",
+      "answer_mode": "card_template",
+      "case_id": "g9m2_stabilizer_phrase",
+      "query": "손떨림 보정",
+      "raw_answer": "{\"answer\":\"DC-G9M2 매뉴얼 266쪽에서 확인하세요. 이미지 손떨림 보정 ≥이미지 손떨림 보정 설정: 269 본 카메라는 본체 내 이미지 손떨림 보정 기능과 렌즈 내 이미지 손떨림 보 정 기능을 모두 사용할 수 있습니다. 이것은 2 개의 이미지 손떨림 보정 기능을...\",\"intent_summary\":\"손떨림 보정\",\"source_refs\":[{\"document_id\":\"dc_g9m2_full_kor\",\"model_id\":\"DC-G9M2\",\"page\":266}],\"supported_by_sources\":true,\"needs_more_context\":false}",
+      "parsed_answer": {
+        "answer": "DC-G9M2 매뉴얼 266쪽에서 확인하세요. 이미지 손떨림 보정 ≥이미지 손떨림 보정 설정: 269 본 카메라는 본체 내 이미지 손떨림 보정 기능과 렌즈 내 이미지 손떨림 보 정 기능을 모두 사용할 수 있습니다. 이것은 2 개의 이미지 손떨림 보정 기능을...",
+        "intent_summary": "손떨림 보정",
+        "source_refs": [
+          {
+            "document_id": "dc_g9m2_full_kor",
+            "model_id": "DC-G9M2",
+            "page": 266
+          }
+        ],
+        "supported_by_sources": true,
+        "needs_more_context": false
+      },
+      "retrieved_sources": [
+        {
+          "source_id": "S1",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 266,
+          "section_title": "이미지 손떨림 보정",
+          "summary": "(7) 이미지 손떨림 보정(이미지 손떨림 보정: 266)",
+          "evidence_text": "이미지 손떨림 보정\n≥이미지 손떨림 보정 설정: 269\n본 카메라는 본체 내 이미지 손떨림 보정 기능과 렌즈 내 이미지 손떨림 보 정 기능을 모두 사용할 수 있습니다. 이것은 2 개의 이미지 손떨림 보정 기능을 효과적으로 결합한 듀얼 I.S.2 시 스템과 호환됩니다. 그밖에도, 전자식 손떨림 보정 기능을 결합한 5축 하이브리드 이미지 손떨 림 보정 기능을 비디오 촬영에 사용할 수 있습니다."
+        },
+        {
+          "source_id": "S2",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 272,
+          "section_title": "E-손떨림 보정 (비디오)",
+          "summary": "• [E-손떨림 보정 (비디오)]([E-손떨림 보정 (비디오)]: 272)",
+          "evidence_text": " [E-손떨림 보정 (비디오)]\n렌즈 내, 본체 내 및 전자식 이미지 흔들림 방지 기능을 결합하여 비디오 촬 영 시 세로, 가로, 롤, 피치 및 요축을 따라 5축의 카메라 흔들림과 광각 렌 즈 사용 시 쉽게 발생하는 주변 왜곡을 보정합니다. (5축 하이브리드 이미지 흔들림 방지)\n[HIGH] 큰 흔들림과 주변 왜곡이 전자적으로 보정됩니다. 시야각이 [STANDARD]보다 좁습니다.\n• 비디오를 촬영하는 동안 화면에 [ ]가 표시됩니다.\n[STANDARD] 흔들림 및 주변 왜곡이 전자적으로 보정됩니다. 시야각이 좁습니다.\n• 비디오를 촬영하는 동안 화면에 [ ]가 표시됩니다.\n[OFF] 전자식 이미지 흔들림 방지(비디오) 기능이 꺼집니다.\n• 촬영에 사용된 비디오 모드 및 촬영 조건에 따라 보정 효과가 달라"
+        },
+        {
+          "source_id": "S3",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 8,
+          "section_title": "드라이브 / 셔터 / 이미지 흔들림 방지 209",
+          "summary": "이미지 손떨림 보정..................................................................266",
+          "evidence_text": "드라이브 / 셔터 / 이미지 흔들림 방지 209\n드라이브 모드 선택하기...........................................................210 연사 사진 촬영하기..................................................................212 고해상도 모드 ..........................................................................223 인터벌 촬영으로 촬영하기 .......................................................228 스톱 모션 애니메이션으로 촬영하기........................................2"
+        }
+      ],
+      "latency_ms": 0.0,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "output_chars": 323,
+      "json_valid": true,
+      "json_recoverable": true,
+      "answer_relevance_pass": true,
+      "korean_intent_pass": true,
+      "source_citation_pass": true,
+      "pdf_source_faithfulness_pass": true,
+      "unsupported_handling_pass": true,
+      "overall_pass": true,
+      "error_message": null
+    },
+    {
+      "model_id": "hf.co/unsloth/gemma-4-E4B-it-qat-GGUF:UD-Q4_K_XL",
+      "answer_mode": "card_answer_rewrite",
+      "case_id": "g9m2_stabilizer_phrase",
+      "query": "손떨림 보정",
+      "raw_answer": "{\"answer\":\"DC-G9M2 매뉴얼 266쪽에서 확인하세요. 본체 및 렌즈 내 이미지 손떨림 보정 기능을 모두 사용할 수 있습니다.\",\"intent_summary\":\"손떨림 보정\",\"source_refs\":[{\"document_id\":\"dc_g9m2_full_kor\",\"model_id\":\"DC-G9M2\",\"page\":266}],\"supported_by_sources\":true,\"needs_more_context\":false}",
+      "parsed_answer": {
+        "answer": "DC-G9M2 매뉴얼 266쪽에서 확인하세요. 본체 및 렌즈 내 이미지 손떨림 보정 기능을 모두 사용할 수 있습니다.",
+        "intent_summary": "손떨림 보정",
+        "source_refs": [
+          {
+            "document_id": "dc_g9m2_full_kor",
+            "model_id": "DC-G9M2",
+            "page": 266
+          }
+        ],
+        "supported_by_sources": true,
+        "needs_more_context": false
+      },
+      "retrieved_sources": [
+        {
+          "source_id": "S1",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 266,
+          "section_title": "이미지 손떨림 보정",
+          "summary": "(7) 이미지 손떨림 보정(이미지 손떨림 보정: 266)",
+          "evidence_text": "이미지 손떨림 보정\n≥이미지 손떨림 보정 설정: 269\n본 카메라는 본체 내 이미지 손떨림 보정 기능과 렌즈 내 이미지 손떨림 보 정 기능을 모두 사용할 수 있습니다. 이것은 2 개의 이미지 손떨림 보정 기능을 효과적으로 결합한 듀얼 I.S.2 시 스템과 호환됩니다. 그밖에도, 전자식 손떨림 보정 기능을 결합한 5축 하이브리드 이미지 손떨 림 보정 기능을 비디오 촬영에 사용할 수 있습니다."
+        },
+        {
+          "source_id": "S2",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 272,
+          "section_title": "E-손떨림 보정 (비디오)",
+          "summary": "• [E-손떨림 보정 (비디오)]([E-손떨림 보정 (비디오)]: 272)",
+          "evidence_text": " [E-손떨림 보정 (비디오)]\n렌즈 내, 본체 내 및 전자식 이미지 흔들림 방지 기능을 결합하여 비디오 촬 영 시 세로, 가로, 롤, 피치 및 요축을 따라 5축의 카메라 흔들림과 광각 렌 즈 사용 시 쉽게 발생하는 주변 왜곡을 보정합니다. (5축 하이브리드 이미지 흔들림 방지)\n[HIGH] 큰 흔들림과 주변 왜곡이 전자적으로 보정됩니다. 시야각이 [STANDARD]보다 좁습니다.\n• 비디오를 촬영하는 동안 화면에 [ ]가 표시됩니다.\n[STANDARD] 흔들림 및 주변 왜곡이 전자적으로 보정됩니다. 시야각이 좁습니다.\n• 비디오를 촬영하는 동안 화면에 [ ]가 표시됩니다.\n[OFF] 전자식 이미지 흔들림 방지(비디오) 기능이 꺼집니다.\n• 촬영에 사용된 비디오 모드 및 촬영 조건에 따라 보정 효과가 달라"
+        },
+        {
+          "source_id": "S3",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 8,
+          "section_title": "드라이브 / 셔터 / 이미지 흔들림 방지 209",
+          "summary": "이미지 손떨림 보정..................................................................266",
+          "evidence_text": "드라이브 / 셔터 / 이미지 흔들림 방지 209\n드라이브 모드 선택하기...........................................................210 연사 사진 촬영하기..................................................................212 고해상도 모드 ..........................................................................223 인터벌 촬영으로 촬영하기 .......................................................228 스톱 모션 애니메이션으로 촬영하기........................................2"
+        }
+      ],
+      "latency_ms": 5219.665957993129,
+      "prompt_tokens": 268,
+      "completion_tokens": 38,
+      "total_tokens": 306,
+      "output_chars": 242,
+      "json_valid": true,
+      "json_recoverable": true,
+      "answer_relevance_pass": true,
+      "korean_intent_pass": true,
+      "source_citation_pass": true,
+      "pdf_source_faithfulness_pass": true,
+      "unsupported_handling_pass": true,
+      "overall_pass": true,
+      "error_message": null
+    },
+    {
+      "model_id": "hf.co/Qwen/Qwen3-4B-GGUF:Q4_K_M",
+      "answer_mode": "card_answer_rewrite",
+      "case_id": "g9m2_stabilizer_phrase",
+      "query": "손떨림 보정",
+      "raw_answer": "{\"answer\":\"Okay, the user is asking about \\\"손떨림 보정\\\" which translates to shake correction. The verified answer mentions the DC-G9M2 manual page 266 and explains that the camera can use both built-in and lens-based shake correction. The answer also references page 269 where it's mentioned that the camera can utilize both functions. I need to rewrite this in plain Korean, using only the information from the verified answer. The user specified not to add any extra facts or verbs. So I should focus on the key points: the manual page numbers and the fact that both body and lens shake correction are available. Let me check the original answer again. The answer says that the camera can use both the body's image shake correction and the lens's image shake correction. The source references are pages 266 and 269. But in the answer, it's mentioned that the body has the function and the lens also has it. So the key points are that both functions are available. I need to make sure not to include any additional information. The answer should be concise, two sentences max. So maybe start with the manual reference, then state that both functions are available. Let me structure it: \\\"DC-G9\",\"intent_summary\":\"손떨림 보정\",\"source_refs\":[{\"document_id\":\"dc_g9m2_full_kor\",\"model_id\":\"DC-G9M2\",\"page\":266}],\"supported_by_sources\":true,\"needs_more_context\":false}",
+      "parsed_answer": {
+        "answer": "Okay, the user is asking about \"손떨림 보정\" which translates to shake correction. The verified answer mentions the DC-G9M2 manual page 266 and explains that the camera can use both built-in and lens-based shake correction. The answer also references page 269 where it's mentioned that the camera can utilize both functions. I need to rewrite this in plain Korean, using only the information from the verified answer. The user specified not to add any extra facts or verbs. So I should focus on the key points: the manual page numbers and the fact that both body and lens shake correction are available. Let me check the original answer again. The answer says that the camera can use both the body's image shake correction and the lens's image shake correction. The source references are pages 266 and 269. But in the answer, it's mentioned that the body has the function and the lens also has it. So the key points are that both functions are available. I need to make sure not to include any additional information. The answer should be concise, two sentences max. So maybe start with the manual reference, then state that both functions are available. Let me structure it: \"DC-G9",
+        "intent_summary": "손떨림 보정",
+        "source_refs": [
+          {
+            "document_id": "dc_g9m2_full_kor",
+            "model_id": "DC-G9M2",
+            "page": 266
+          }
+        ],
+        "supported_by_sources": true,
+        "needs_more_context": false
+      },
+      "retrieved_sources": [
+        {
+          "source_id": "S1",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 266,
+          "section_title": "이미지 손떨림 보정",
+          "summary": "(7) 이미지 손떨림 보정(이미지 손떨림 보정: 266)",
+          "evidence_text": "이미지 손떨림 보정\n≥이미지 손떨림 보정 설정: 269\n본 카메라는 본체 내 이미지 손떨림 보정 기능과 렌즈 내 이미지 손떨림 보 정 기능을 모두 사용할 수 있습니다. 이것은 2 개의 이미지 손떨림 보정 기능을 효과적으로 결합한 듀얼 I.S.2 시 스템과 호환됩니다. 그밖에도, 전자식 손떨림 보정 기능을 결합한 5축 하이브리드 이미지 손떨 림 보정 기능을 비디오 촬영에 사용할 수 있습니다."
+        },
+        {
+          "source_id": "S2",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 272,
+          "section_title": "E-손떨림 보정 (비디오)",
+          "summary": "• [E-손떨림 보정 (비디오)]([E-손떨림 보정 (비디오)]: 272)",
+          "evidence_text": " [E-손떨림 보정 (비디오)]\n렌즈 내, 본체 내 및 전자식 이미지 흔들림 방지 기능을 결합하여 비디오 촬 영 시 세로, 가로, 롤, 피치 및 요축을 따라 5축의 카메라 흔들림과 광각 렌 즈 사용 시 쉽게 발생하는 주변 왜곡을 보정합니다. (5축 하이브리드 이미지 흔들림 방지)\n[HIGH] 큰 흔들림과 주변 왜곡이 전자적으로 보정됩니다. 시야각이 [STANDARD]보다 좁습니다.\n• 비디오를 촬영하는 동안 화면에 [ ]가 표시됩니다.\n[STANDARD] 흔들림 및 주변 왜곡이 전자적으로 보정됩니다. 시야각이 좁습니다.\n• 비디오를 촬영하는 동안 화면에 [ ]가 표시됩니다.\n[OFF] 전자식 이미지 흔들림 방지(비디오) 기능이 꺼집니다.\n• 촬영에 사용된 비디오 모드 및 촬영 조건에 따라 보정 효과가 달라"
+        },
+        {
+          "source_id": "S3",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 8,
+          "section_title": "드라이브 / 셔터 / 이미지 흔들림 방지 209",
+          "summary": "이미지 손떨림 보정..................................................................266",
+          "evidence_text": "드라이브 / 셔터 / 이미지 흔들림 방지 209\n드라이브 모드 선택하기...........................................................210 연사 사진 촬영하기..................................................................212 고해상도 모드 ..........................................................................223 인터벌 촬영으로 촬영하기 .......................................................228 스톱 모션 애니메이션으로 촬영하기........................................2"
+        }
+      ],
+      "latency_ms": 6900.135750009213,
+      "prompt_tokens": 272,
+      "completion_tokens": 256,
+      "total_tokens": 528,
+      "output_chars": 1357,
+      "json_valid": true,
+      "json_recoverable": true,
+      "answer_relevance_pass": false,
+      "korean_intent_pass": true,
+      "source_citation_pass": true,
+      "pdf_source_faithfulness_pass": false,
+      "unsupported_handling_pass": true,
+      "overall_pass": false,
+      "error_message": "quality gate failed"
+    },
+    {
+      "model_id": "hf.co/mradermacher/supergemma4-e4b-abliterated-i1-GGUF:Q4_K_M",
+      "answer_mode": "card_answer_rewrite",
+      "case_id": "g9m2_stabilizer_phrase",
+      "query": "손떨림 보정",
+      "raw_answer": "{\"answer\":\"손떨림 보정: 매뉴얼 266쪽에서 확인하세요. 본체 내 기능과 렌즈 내 기능을 모두 사용할 수 있습니다.\",\"intent_summary\":\"손떨림 보정\",\"source_refs\":[{\"document_id\":\"dc_g9m2_full_kor\",\"model_id\":\"DC-G9M2\",\"page\":266}],\"supported_by_sources\":true,\"needs_more_context\":false}",
+      "parsed_answer": {
+        "answer": "손떨림 보정: 매뉴얼 266쪽에서 확인하세요. 본체 내 기능과 렌즈 내 기능을 모두 사용할 수 있습니다.",
+        "intent_summary": "손떨림 보정",
+        "source_refs": [
+          {
+            "document_id": "dc_g9m2_full_kor",
+            "model_id": "DC-G9M2",
+            "page": 266
+          }
+        ],
+        "supported_by_sources": true,
+        "needs_more_context": false
+      },
+      "retrieved_sources": [
+        {
+          "source_id": "S1",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 266,
+          "section_title": "이미지 손떨림 보정",
+          "summary": "(7) 이미지 손떨림 보정(이미지 손떨림 보정: 266)",
+          "evidence_text": "이미지 손떨림 보정\n≥이미지 손떨림 보정 설정: 269\n본 카메라는 본체 내 이미지 손떨림 보정 기능과 렌즈 내 이미지 손떨림 보 정 기능을 모두 사용할 수 있습니다. 이것은 2 개의 이미지 손떨림 보정 기능을 효과적으로 결합한 듀얼 I.S.2 시 스템과 호환됩니다. 그밖에도, 전자식 손떨림 보정 기능을 결합한 5축 하이브리드 이미지 손떨 림 보정 기능을 비디오 촬영에 사용할 수 있습니다."
+        },
+        {
+          "source_id": "S2",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 272,
+          "section_title": "E-손떨림 보정 (비디오)",
+          "summary": "• [E-손떨림 보정 (비디오)]([E-손떨림 보정 (비디오)]: 272)",
+          "evidence_text": " [E-손떨림 보정 (비디오)]\n렌즈 내, 본체 내 및 전자식 이미지 흔들림 방지 기능을 결합하여 비디오 촬 영 시 세로, 가로, 롤, 피치 및 요축을 따라 5축의 카메라 흔들림과 광각 렌 즈 사용 시 쉽게 발생하는 주변 왜곡을 보정합니다. (5축 하이브리드 이미지 흔들림 방지)\n[HIGH] 큰 흔들림과 주변 왜곡이 전자적으로 보정됩니다. 시야각이 [STANDARD]보다 좁습니다.\n• 비디오를 촬영하는 동안 화면에 [ ]가 표시됩니다.\n[STANDARD] 흔들림 및 주변 왜곡이 전자적으로 보정됩니다. 시야각이 좁습니다.\n• 비디오를 촬영하는 동안 화면에 [ ]가 표시됩니다.\n[OFF] 전자식 이미지 흔들림 방지(비디오) 기능이 꺼집니다.\n• 촬영에 사용된 비디오 모드 및 촬영 조건에 따라 보정 효과가 달라"
+        },
+        {
+          "source_id": "S3",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 8,
+          "section_title": "드라이브 / 셔터 / 이미지 흔들림 방지 209",
+          "summary": "이미지 손떨림 보정..................................................................266",
+          "evidence_text": "드라이브 / 셔터 / 이미지 흔들림 방지 209\n드라이브 모드 선택하기...........................................................210 연사 사진 촬영하기..................................................................212 고해상도 모드 ..........................................................................223 인터벌 촬영으로 촬영하기 .......................................................228 스톱 모션 애니메이션으로 촬영하기........................................2"
+        }
+      ],
+      "latency_ms": 4790.581582987215,
+      "prompt_tokens": 268,
+      "completion_tokens": 28,
+      "total_tokens": 296,
+      "output_chars": 235,
+      "json_valid": true,
+      "json_recoverable": true,
+      "answer_relevance_pass": true,
+      "korean_intent_pass": true,
+      "source_citation_pass": true,
+      "pdf_source_faithfulness_pass": true,
+      "unsupported_handling_pass": true,
+      "overall_pass": true,
+      "error_message": null
+    },
+    {
+      "model_id": "hf.co/unsloth/gemma-4-12B-it-qat-GGUF:UD-Q4_K_XL",
+      "answer_mode": "card_answer_rewrite",
+      "case_id": "g9m2_stabilizer_phrase",
+      "query": "손떨림 보정",
+      "raw_answer": "{\"answer\":\"본 카메라는 본체 내 이미지 손떨림 보정 기능과 렌즈 내 이미지 손떨림 보정 기능을 모두 사용할 수 있습니다. 이것은 2개의 이미지 손떨림 보정 기능을 사용합니다.\",\"intent_summary\":\"손떨림 보정\",\"source_refs\":[{\"document_id\":\"dc_g9m2_full_kor\",\"model_id\":\"DC-G9M2\",\"page\":266}],\"supported_by_sources\":true,\"needs_more_context\":false}",
+      "parsed_answer": {
+        "answer": "본 카메라는 본체 내 이미지 손떨림 보정 기능과 렌즈 내 이미지 손떨림 보정 기능을 모두 사용할 수 있습니다. 이것은 2개의 이미지 손떨림 보정 기능을 사용합니다.",
+        "intent_summary": "손떨림 보정",
+        "source_refs": [
+          {
+            "document_id": "dc_g9m2_full_kor",
+            "model_id": "DC-G9M2",
+            "page": 266
+          }
+        ],
+        "supported_by_sources": true,
+        "needs_more_context": false
+      },
+      "retrieved_sources": [
+        {
+          "source_id": "S1",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 266,
+          "section_title": "이미지 손떨림 보정",
+          "summary": "(7) 이미지 손떨림 보정(이미지 손떨림 보정: 266)",
+          "evidence_text": "이미지 손떨림 보정\n≥이미지 손떨림 보정 설정: 269\n본 카메라는 본체 내 이미지 손떨림 보정 기능과 렌즈 내 이미지 손떨림 보 정 기능을 모두 사용할 수 있습니다. 이것은 2 개의 이미지 손떨림 보정 기능을 효과적으로 결합한 듀얼 I.S.2 시 스템과 호환됩니다. 그밖에도, 전자식 손떨림 보정 기능을 결합한 5축 하이브리드 이미지 손떨 림 보정 기능을 비디오 촬영에 사용할 수 있습니다."
+        },
+        {
+          "source_id": "S2",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 272,
+          "section_title": "E-손떨림 보정 (비디오)",
+          "summary": "• [E-손떨림 보정 (비디오)]([E-손떨림 보정 (비디오)]: 272)",
+          "evidence_text": " [E-손떨림 보정 (비디오)]\n렌즈 내, 본체 내 및 전자식 이미지 흔들림 방지 기능을 결합하여 비디오 촬 영 시 세로, 가로, 롤, 피치 및 요축을 따라 5축의 카메라 흔들림과 광각 렌 즈 사용 시 쉽게 발생하는 주변 왜곡을 보정합니다. (5축 하이브리드 이미지 흔들림 방지)\n[HIGH] 큰 흔들림과 주변 왜곡이 전자적으로 보정됩니다. 시야각이 [STANDARD]보다 좁습니다.\n• 비디오를 촬영하는 동안 화면에 [ ]가 표시됩니다.\n[STANDARD] 흔들림 및 주변 왜곡이 전자적으로 보정됩니다. 시야각이 좁습니다.\n• 비디오를 촬영하는 동안 화면에 [ ]가 표시됩니다.\n[OFF] 전자식 이미지 흔들림 방지(비디오) 기능이 꺼집니다.\n• 촬영에 사용된 비디오 모드 및 촬영 조건에 따라 보정 효과가 달라"
+        },
+        {
+          "source_id": "S3",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 8,
+          "section_title": "드라이브 / 셔터 / 이미지 흔들림 방지 209",
+          "summary": "이미지 손떨림 보정..................................................................266",
+          "evidence_text": "드라이브 / 셔터 / 이미지 흔들림 방지 209\n드라이브 모드 선택하기...........................................................210 연사 사진 촬영하기..................................................................212 고해상도 모드 ..........................................................................223 인터벌 촬영으로 촬영하기 .......................................................228 스톱 모션 애니메이션으로 촬영하기........................................2"
+        }
+      ],
+      "latency_ms": 2381.4369999745395,
+      "prompt_tokens": 272,
+      "completion_tokens": 47,
+      "total_tokens": 319,
+      "output_chars": 268,
+      "json_valid": true,
+      "json_recoverable": true,
+      "answer_relevance_pass": false,
+      "korean_intent_pass": true,
+      "source_citation_pass": true,
+      "pdf_source_faithfulness_pass": false,
+      "unsupported_handling_pass": true,
+      "overall_pass": false,
+      "error_message": "quality gate failed"
+    },
+    {
+      "model_id": "card_template",
+      "answer_mode": "card_template",
+      "case_id": "g9m2_boost_is",
+      "query": "Boost I.S.",
+      "raw_answer": "{\"answer\":\"DC-G9M2 매뉴얼 269쪽에서 확인하세요. 이미지 손떨림 보정 설정 촬영 상황에 적합한 이미지 손떨림 보정 작동을 설정합니다. 사진:  [ ]  [ ]  [이미지 흔들림 방지] 선택 비디오:  [ ]  [ ]  [이미지 흔들림 방지] 선택 [...\",\"intent_summary\":\"Boost I.S.\",\"source_refs\":[{\"document_id\":\"dc_g9m2_full_kor\",\"model_id\":\"DC-G9M2\",\"page\":269}],\"supported_by_sources\":true,\"needs_more_context\":false}",
+      "parsed_answer": {
+        "answer": "DC-G9M2 매뉴얼 269쪽에서 확인하세요. 이미지 손떨림 보정 설정 촬영 상황에 적합한 이미지 손떨림 보정 작동을 설정합니다. 사진:  [ ]  [ ]  [이미지 흔들림 방지] 선택 비디오:  [ ]  [ ]  [이미지 흔들림 방지] 선택 [...",
+        "intent_summary": "Boost I.S.",
+        "source_refs": [
+          {
+            "document_id": "dc_g9m2_full_kor",
+            "model_id": "DC-G9M2",
+            "page": 269
+          }
+        ],
+        "supported_by_sources": true,
+        "needs_more_context": false
+      },
+      "retrieved_sources": [
+        {
+          "source_id": "S1",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 269,
+          "section_title": "Boost I.S. (비디오)",
+          "summary": "• [Boost I.S. (비디오)]([Boost I.S. (비디오)]: 269)",
+          "evidence_text": "이미지 손떨림 보정 설정\n촬영 상황에 적합한 이미지 손떨림 보정 작동을 설정합니다.\n사진:  [ ]  [ ]  [이미지 흔들림 방지] 선택 비디오:  [ ]  [ ]  [이미지 흔들림 방지] 선택\n[작동 모드] 촬영 방법(일반, 패닝)에 적합한 흔들림 방지 움직임(흔들림)을 설정합니다. ([작동 모드]: 271)\n[E-손떨림 보정 (비디오)]\n렌즈 내, 본체 내 및 전자식 이미지 흔들림 방지 기능을 결합하여 비디오 촬영 시 세로, 가로, 롤, 피치 및 요축을 따라 5축의 카메라 흔들림과 광각 렌즈 사용 시 쉽게 발생하는 주변 왜곡을 보정합니다. (5축 하이브리드 이미지 흔들림 방지)([E-손떨림 보정 (비 디오)]: 272)\n[Boost I.S. (비디오)] 비디오 촬영 중에 이미지 손떨림 보"
+        },
+        {
+          "source_id": "S2",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 784,
+          "section_title": "[사진]: [기타 (사진)]",
+          "summary": "[Boost I.S. (비디오)]",
+          "evidence_text": "[사진]: [기타 (사진)]\n[브래킷]\n[브래킷 유형]\n[OFF]\n\n\n\n[더 많은 설정]\n—\n\n\n\n[무음 모드]\n[OFF]\n\n\n\n[이미지 흔들림 방\n지]\n[작동 모드]\n[ ]\n\n\n\n[E-손떨림 보정 (비디오)]\n[OFF]\n\n\n\n[Boost I.S. (비디오)]\n[OFF]\n\n\n\n[아나모픽 (비디오)]\n[OFF]\n\n\n\n[렌즈 정보]\n[Lens1]\n\n\n[연사 촬영 설정]\n[연사 촬영1 설정]\n[H]\n\n\n\n[연사 촬영2 설정]\n[SH75]\n\n\n\n[SH 연사 사전 촬영 시간]\n[0.5SEC]\n\n\n\n[셔터 타입]\n[MECH.]\n\n\n\n[셔터 지연]\n[OFF]\n\n\n\n[확장 망원 변환]\n[OFF]\n\n\n\n[인터벌/애니메이 션]\n[모드]\n[인터벌 촬영]\n"
+        },
+        {
+          "source_id": "S3",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 789,
+          "section_title": "[비디오]: [기타 (비디오)]",
+          "summary": "[Boost I.S. (비디오)]",
+          "evidence_text": "[비디오]: [기타 (비디오)]\n[무음 모드]\n[OFF]\n\n\n\n[이미지 흔들림 방\n지]\n[작동 모드]\n[ ]\n\n\n\n[E-손떨림 보정 (비디오)]\n[OFF]\n\n\n\n[Boost I.S. (비디오)]\n[OFF]\n\n\n\n[아나모픽 (비디오)]\n[OFF]\n\n\n\n[렌즈 정보]\n[Lens1]\n\n\n[셀프타이머 설정]\n[셀프타이머]\n[ ]\n\n\n\n[비디오용 셀프타이머]\n[OFF]\n\n\n\n[초점 전환]\n[초점 위치 설정]\n—\n[초점 전환 속도]\n[M]\n\n\n\n[초점 전환 녹화]\n[OFF]\n\n\n\n[초점 전환 대기]\n[OFF]\n\n\n\n[파일 분할 녹화]\n[OFF]\n\n\n"
+        }
+      ],
+      "latency_ms": 0.0,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "output_chars": 327,
+      "json_valid": true,
+      "json_recoverable": true,
+      "answer_relevance_pass": true,
+      "korean_intent_pass": true,
+      "source_citation_pass": true,
+      "pdf_source_faithfulness_pass": true,
+      "unsupported_handling_pass": true,
+      "overall_pass": true,
+      "error_message": null
+    },
+    {
+      "model_id": "hf.co/unsloth/gemma-4-E4B-it-qat-GGUF:UD-Q4_K_XL",
+      "answer_mode": "card_answer_rewrite",
+      "case_id": "g9m2_boost_is",
+      "query": "Boost I.S.",
+      "raw_answer": "{\"answer\":\"Boost I.S.: DC-G9M2 매뉴얼 269쪽에서 확인하세요. 이미지 손떨림 보정 설정으로 촬영 상황에 맞는 작동을 설정합니다.\",\"intent_summary\":\"Boost I.S.\",\"source_refs\":[{\"document_id\":\"dc_g9m2_full_kor\",\"model_id\":\"DC-G9M2\",\"page\":269}],\"supported_by_sources\":true,\"needs_more_context\":false}",
+      "parsed_answer": {
+        "answer": "Boost I.S.: DC-G9M2 매뉴얼 269쪽에서 확인하세요. 이미지 손떨림 보정 설정으로 촬영 상황에 맞는 작동을 설정합니다.",
+        "intent_summary": "Boost I.S.",
+        "source_refs": [
+          {
+            "document_id": "dc_g9m2_full_kor",
+            "model_id": "DC-G9M2",
+            "page": 269
+          }
+        ],
+        "supported_by_sources": true,
+        "needs_more_context": false
+      },
+      "retrieved_sources": [
+        {
+          "source_id": "S1",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 269,
+          "section_title": "Boost I.S. (비디오)",
+          "summary": "• [Boost I.S. (비디오)]([Boost I.S. (비디오)]: 269)",
+          "evidence_text": "이미지 손떨림 보정 설정\n촬영 상황에 적합한 이미지 손떨림 보정 작동을 설정합니다.\n사진:  [ ]  [ ]  [이미지 흔들림 방지] 선택 비디오:  [ ]  [ ]  [이미지 흔들림 방지] 선택\n[작동 모드] 촬영 방법(일반, 패닝)에 적합한 흔들림 방지 움직임(흔들림)을 설정합니다. ([작동 모드]: 271)\n[E-손떨림 보정 (비디오)]\n렌즈 내, 본체 내 및 전자식 이미지 흔들림 방지 기능을 결합하여 비디오 촬영 시 세로, 가로, 롤, 피치 및 요축을 따라 5축의 카메라 흔들림과 광각 렌즈 사용 시 쉽게 발생하는 주변 왜곡을 보정합니다. (5축 하이브리드 이미지 흔들림 방지)([E-손떨림 보정 (비 디오)]: 272)\n[Boost I.S. (비디오)] 비디오 촬영 중에 이미지 손떨림 보"
+        },
+        {
+          "source_id": "S2",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 784,
+          "section_title": "[사진]: [기타 (사진)]",
+          "summary": "[Boost I.S. (비디오)]",
+          "evidence_text": "[사진]: [기타 (사진)]\n[브래킷]\n[브래킷 유형]\n[OFF]\n\n\n\n[더 많은 설정]\n—\n\n\n\n[무음 모드]\n[OFF]\n\n\n\n[이미지 흔들림 방\n지]\n[작동 모드]\n[ ]\n\n\n\n[E-손떨림 보정 (비디오)]\n[OFF]\n\n\n\n[Boost I.S. (비디오)]\n[OFF]\n\n\n\n[아나모픽 (비디오)]\n[OFF]\n\n\n\n[렌즈 정보]\n[Lens1]\n\n\n[연사 촬영 설정]\n[연사 촬영1 설정]\n[H]\n\n\n\n[연사 촬영2 설정]\n[SH75]\n\n\n\n[SH 연사 사전 촬영 시간]\n[0.5SEC]\n\n\n\n[셔터 타입]\n[MECH.]\n\n\n\n[셔터 지연]\n[OFF]\n\n\n\n[확장 망원 변환]\n[OFF]\n\n\n\n[인터벌/애니메이 션]\n[모드]\n[인터벌 촬영]\n"
+        },
+        {
+          "source_id": "S3",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 789,
+          "section_title": "[비디오]: [기타 (비디오)]",
+          "summary": "[Boost I.S. (비디오)]",
+          "evidence_text": "[비디오]: [기타 (비디오)]\n[무음 모드]\n[OFF]\n\n\n\n[이미지 흔들림 방\n지]\n[작동 모드]\n[ ]\n\n\n\n[E-손떨림 보정 (비디오)]\n[OFF]\n\n\n\n[Boost I.S. (비디오)]\n[OFF]\n\n\n\n[아나모픽 (비디오)]\n[OFF]\n\n\n\n[렌즈 정보]\n[Lens1]\n\n\n[셀프타이머 설정]\n[셀프타이머]\n[ ]\n\n\n\n[비디오용 셀프타이머]\n[OFF]\n\n\n\n[초점 전환]\n[초점 위치 설정]\n—\n[초점 전환 속도]\n[M]\n\n\n\n[초점 전환 녹화]\n[OFF]\n\n\n\n[초점 전환 대기]\n[OFF]\n\n\n\n[파일 분할 녹화]\n[OFF]\n\n\n"
+        }
+      ],
+      "latency_ms": 5676.875916979043,
+      "prompt_tokens": 286,
+      "completion_tokens": 36,
+      "total_tokens": 322,
+      "output_chars": 255,
+      "json_valid": true,
+      "json_recoverable": true,
+      "answer_relevance_pass": true,
+      "korean_intent_pass": true,
+      "source_citation_pass": true,
+      "pdf_source_faithfulness_pass": true,
+      "unsupported_handling_pass": true,
+      "overall_pass": true,
+      "error_message": null
+    },
+    {
+      "model_id": "hf.co/Qwen/Qwen3-4B-GGUF:Q4_K_M",
+      "answer_mode": "card_answer_rewrite",
+      "case_id": "g9m2_boost_is",
+      "query": "Boost I.S.",
+      "raw_answer": "{\"answer\":\"Boost I.S.: Okay, the user wants me to rewrite the verified answer in plain Korean, without any extra information. Let me check the original answer. The original answer says: \\\"DC-G9M2 매뉴얼 269쪽에서 확인하세요. 이미지 손떨림 보정 설정 촬영 상황에 적합한 이미지 손떨림 보정 작동을 설정합니다. 사진:  [ ]  [ ]  [이미지 흔들림 방지] 선택 비디오:  [ ]  [ ]  [이미지 흔들림 방지] 선택\\\" I need to make sure I only use the words and claims from the verified answer. The user specified not to add any facts, verbs, features, menu names, or options not present. So I should just rephrase it into Korean, keeping it concise and within two short sentences. Let me start by translating the key points. The main information is that the setting is on page 269 of the DC-G9M2 manual. Then, it mentions setting the image shake correction for shooting conditions. The example shows options for photo and video with [이미\",\"intent_summary\":\"Boost I.S.\",\"source_refs\":[{\"document_id\":\"dc_g9m2_full_kor\",\"model_id\":\"DC-G9M2\",\"page\":269}],\"supported_by_sources\":true,\"needs_more_context\":false}",
+      "parsed_answer": {
+        "answer": "Boost I.S.: Okay, the user wants me to rewrite the verified answer in plain Korean, without any extra information. Let me check the original answer. The original answer says: \"DC-G9M2 매뉴얼 269쪽에서 확인하세요. 이미지 손떨림 보정 설정 촬영 상황에 적합한 이미지 손떨림 보정 작동을 설정합니다. 사진:  [ ]  [ ]  [이미지 흔들림 방지] 선택 비디오:  [ ]  [ ]  [이미지 흔들림 방지] 선택\" I need to make sure I only use the words and claims from the verified answer. The user specified not to add any facts, verbs, features, menu names, or options not present. So I should just rephrase it into Korean, keeping it concise and within two short sentences. Let me start by translating the key points. The main information is that the setting is on page 269 of the DC-G9M2 manual. Then, it mentions setting the image shake correction for shooting conditions. The example shows options for photo and video with [이미",
+        "intent_summary": "Boost I.S.",
+        "source_refs": [
+          {
+            "document_id": "dc_g9m2_full_kor",
+            "model_id": "DC-G9M2",
+            "page": 269
+          }
+        ],
+        "supported_by_sources": true,
+        "needs_more_context": false
+      },
+      "retrieved_sources": [
+        {
+          "source_id": "S1",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 269,
+          "section_title": "Boost I.S. (비디오)",
+          "summary": "• [Boost I.S. (비디오)]([Boost I.S. (비디오)]: 269)",
+          "evidence_text": "이미지 손떨림 보정 설정\n촬영 상황에 적합한 이미지 손떨림 보정 작동을 설정합니다.\n사진:  [ ]  [ ]  [이미지 흔들림 방지] 선택 비디오:  [ ]  [ ]  [이미지 흔들림 방지] 선택\n[작동 모드] 촬영 방법(일반, 패닝)에 적합한 흔들림 방지 움직임(흔들림)을 설정합니다. ([작동 모드]: 271)\n[E-손떨림 보정 (비디오)]\n렌즈 내, 본체 내 및 전자식 이미지 흔들림 방지 기능을 결합하여 비디오 촬영 시 세로, 가로, 롤, 피치 및 요축을 따라 5축의 카메라 흔들림과 광각 렌즈 사용 시 쉽게 발생하는 주변 왜곡을 보정합니다. (5축 하이브리드 이미지 흔들림 방지)([E-손떨림 보정 (비 디오)]: 272)\n[Boost I.S. (비디오)] 비디오 촬영 중에 이미지 손떨림 보"
+        },
+        {
+          "source_id": "S2",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 784,
+          "section_title": "[사진]: [기타 (사진)]",
+          "summary": "[Boost I.S. (비디오)]",
+          "evidence_text": "[사진]: [기타 (사진)]\n[브래킷]\n[브래킷 유형]\n[OFF]\n\n\n\n[더 많은 설정]\n—\n\n\n\n[무음 모드]\n[OFF]\n\n\n\n[이미지 흔들림 방\n지]\n[작동 모드]\n[ ]\n\n\n\n[E-손떨림 보정 (비디오)]\n[OFF]\n\n\n\n[Boost I.S. (비디오)]\n[OFF]\n\n\n\n[아나모픽 (비디오)]\n[OFF]\n\n\n\n[렌즈 정보]\n[Lens1]\n\n\n[연사 촬영 설정]\n[연사 촬영1 설정]\n[H]\n\n\n\n[연사 촬영2 설정]\n[SH75]\n\n\n\n[SH 연사 사전 촬영 시간]\n[0.5SEC]\n\n\n\n[셔터 타입]\n[MECH.]\n\n\n\n[셔터 지연]\n[OFF]\n\n\n\n[확장 망원 변환]\n[OFF]\n\n\n\n[인터벌/애니메이 션]\n[모드]\n[인터벌 촬영]\n"
+        },
+        {
+          "source_id": "S3",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 789,
+          "section_title": "[비디오]: [기타 (비디오)]",
+          "summary": "[Boost I.S. (비디오)]",
+          "evidence_text": "[비디오]: [기타 (비디오)]\n[무음 모드]\n[OFF]\n\n\n\n[이미지 흔들림 방\n지]\n[작동 모드]\n[ ]\n\n\n\n[E-손떨림 보정 (비디오)]\n[OFF]\n\n\n\n[Boost I.S. (비디오)]\n[OFF]\n\n\n\n[아나모픽 (비디오)]\n[OFF]\n\n\n\n[렌즈 정보]\n[Lens1]\n\n\n[셀프타이머 설정]\n[셀프타이머]\n[ ]\n\n\n\n[비디오용 셀프타이머]\n[OFF]\n\n\n\n[초점 전환]\n[초점 위치 설정]\n—\n[초점 전환 속도]\n[M]\n\n\n\n[초점 전환 녹화]\n[OFF]\n\n\n\n[초점 전환 대기]\n[OFF]\n\n\n\n[파일 분할 녹화]\n[OFF]\n\n\n"
+        }
+      ],
+      "latency_ms": 6906.702874985058,
+      "prompt_tokens": 278,
+      "completion_tokens": 256,
+      "total_tokens": 534,
+      "output_chars": 1022,
+      "json_valid": true,
+      "json_recoverable": true,
+      "answer_relevance_pass": false,
+      "korean_intent_pass": true,
+      "source_citation_pass": true,
+      "pdf_source_faithfulness_pass": false,
+      "unsupported_handling_pass": true,
+      "overall_pass": false,
+      "error_message": "quality gate failed"
+    },
+    {
+      "model_id": "hf.co/mradermacher/supergemma4-e4b-abliterated-i1-GGUF:Q4_K_M",
+      "answer_mode": "card_answer_rewrite",
+      "case_id": "g9m2_boost_is",
+      "query": "Boost I.S.",
+      "raw_answer": "{\"answer\":\"Boost I.S.: DC-G9M2 매뉴얼 269쪽에서 확인하세요. 이미지 손떨림 보정 설정으로 촬영 상황에 적합한 작동을 설정합니다.\",\"intent_summary\":\"Boost I.S.\",\"source_refs\":[{\"document_id\":\"dc_g9m2_full_kor\",\"model_id\":\"DC-G9M2\",\"page\":269}],\"supported_by_sources\":true,\"needs_more_context\":false}",
+      "parsed_answer": {
+        "answer": "Boost I.S.: DC-G9M2 매뉴얼 269쪽에서 확인하세요. 이미지 손떨림 보정 설정으로 촬영 상황에 적합한 작동을 설정합니다.",
+        "intent_summary": "Boost I.S.",
+        "source_refs": [
+          {
+            "document_id": "dc_g9m2_full_kor",
+            "model_id": "DC-G9M2",
+            "page": 269
+          }
+        ],
+        "supported_by_sources": true,
+        "needs_more_context": false
+      },
+      "retrieved_sources": [
+        {
+          "source_id": "S1",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 269,
+          "section_title": "Boost I.S. (비디오)",
+          "summary": "• [Boost I.S. (비디오)]([Boost I.S. (비디오)]: 269)",
+          "evidence_text": "이미지 손떨림 보정 설정\n촬영 상황에 적합한 이미지 손떨림 보정 작동을 설정합니다.\n사진:  [ ]  [ ]  [이미지 흔들림 방지] 선택 비디오:  [ ]  [ ]  [이미지 흔들림 방지] 선택\n[작동 모드] 촬영 방법(일반, 패닝)에 적합한 흔들림 방지 움직임(흔들림)을 설정합니다. ([작동 모드]: 271)\n[E-손떨림 보정 (비디오)]\n렌즈 내, 본체 내 및 전자식 이미지 흔들림 방지 기능을 결합하여 비디오 촬영 시 세로, 가로, 롤, 피치 및 요축을 따라 5축의 카메라 흔들림과 광각 렌즈 사용 시 쉽게 발생하는 주변 왜곡을 보정합니다. (5축 하이브리드 이미지 흔들림 방지)([E-손떨림 보정 (비 디오)]: 272)\n[Boost I.S. (비디오)] 비디오 촬영 중에 이미지 손떨림 보"
+        },
+        {
+          "source_id": "S2",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 784,
+          "section_title": "[사진]: [기타 (사진)]",
+          "summary": "[Boost I.S. (비디오)]",
+          "evidence_text": "[사진]: [기타 (사진)]\n[브래킷]\n[브래킷 유형]\n[OFF]\n\n\n\n[더 많은 설정]\n—\n\n\n\n[무음 모드]\n[OFF]\n\n\n\n[이미지 흔들림 방\n지]\n[작동 모드]\n[ ]\n\n\n\n[E-손떨림 보정 (비디오)]\n[OFF]\n\n\n\n[Boost I.S. (비디오)]\n[OFF]\n\n\n\n[아나모픽 (비디오)]\n[OFF]\n\n\n\n[렌즈 정보]\n[Lens1]\n\n\n[연사 촬영 설정]\n[연사 촬영1 설정]\n[H]\n\n\n\n[연사 촬영2 설정]\n[SH75]\n\n\n\n[SH 연사 사전 촬영 시간]\n[0.5SEC]\n\n\n\n[셔터 타입]\n[MECH.]\n\n\n\n[셔터 지연]\n[OFF]\n\n\n\n[확장 망원 변환]\n[OFF]\n\n\n\n[인터벌/애니메이 션]\n[모드]\n[인터벌 촬영]\n"
+        },
+        {
+          "source_id": "S3",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 789,
+          "section_title": "[비디오]: [기타 (비디오)]",
+          "summary": "[Boost I.S. (비디오)]",
+          "evidence_text": "[비디오]: [기타 (비디오)]\n[무음 모드]\n[OFF]\n\n\n\n[이미지 흔들림 방\n지]\n[작동 모드]\n[ ]\n\n\n\n[E-손떨림 보정 (비디오)]\n[OFF]\n\n\n\n[Boost I.S. (비디오)]\n[OFF]\n\n\n\n[아나모픽 (비디오)]\n[OFF]\n\n\n\n[렌즈 정보]\n[Lens1]\n\n\n[셀프타이머 설정]\n[셀프타이머]\n[ ]\n\n\n\n[비디오용 셀프타이머]\n[OFF]\n\n\n\n[초점 전환]\n[초점 위치 설정]\n—\n[초점 전환 속도]\n[M]\n\n\n\n[초점 전환 녹화]\n[OFF]\n\n\n\n[초점 전환 대기]\n[OFF]\n\n\n\n[파일 분할 녹화]\n[OFF]\n\n\n"
+        }
+      ],
+      "latency_ms": 5161.369292007294,
+      "prompt_tokens": 286,
+      "completion_tokens": 38,
+      "total_tokens": 324,
+      "output_chars": 256,
+      "json_valid": true,
+      "json_recoverable": true,
+      "answer_relevance_pass": true,
+      "korean_intent_pass": true,
+      "source_citation_pass": true,
+      "pdf_source_faithfulness_pass": true,
+      "unsupported_handling_pass": true,
+      "overall_pass": true,
+      "error_message": null
+    },
+    {
+      "model_id": "hf.co/unsloth/gemma-4-12B-it-qat-GGUF:UD-Q4_K_XL",
+      "answer_mode": "card_answer_rewrite",
+      "case_id": "g9m2_boost_is",
+      "query": "Boost I.S.",
+      "raw_answer": "{\"answer\":\"Boost I.S.: 촬영 상황에 적합한 이미지 손떨림 보정 작동을 설정합니다. 사진과 비디오 메뉴에서 이미지 흔들림 방지를 선택하세요.\",\"intent_summary\":\"Boost I.S.\",\"source_refs\":[{\"document_id\":\"dc_g9m2_full_kor\",\"model_id\":\"DC-G9M2\",\"page\":269}],\"supported_by_sources\":true,\"needs_more_context\":false}",
+      "parsed_answer": {
+        "answer": "Boost I.S.: 촬영 상황에 적합한 이미지 손떨림 보정 작동을 설정합니다. 사진과 비디오 메뉴에서 이미지 흔들림 방지를 선택하세요.",
+        "intent_summary": "Boost I.S.",
+        "source_refs": [
+          {
+            "document_id": "dc_g9m2_full_kor",
+            "model_id": "DC-G9M2",
+            "page": 269
+          }
+        ],
+        "supported_by_sources": true,
+        "needs_more_context": false
+      },
+      "retrieved_sources": [
+        {
+          "source_id": "S1",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 269,
+          "section_title": "Boost I.S. (비디오)",
+          "summary": "• [Boost I.S. (비디오)]([Boost I.S. (비디오)]: 269)",
+          "evidence_text": "이미지 손떨림 보정 설정\n촬영 상황에 적합한 이미지 손떨림 보정 작동을 설정합니다.\n사진:  [ ]  [ ]  [이미지 흔들림 방지] 선택 비디오:  [ ]  [ ]  [이미지 흔들림 방지] 선택\n[작동 모드] 촬영 방법(일반, 패닝)에 적합한 흔들림 방지 움직임(흔들림)을 설정합니다. ([작동 모드]: 271)\n[E-손떨림 보정 (비디오)]\n렌즈 내, 본체 내 및 전자식 이미지 흔들림 방지 기능을 결합하여 비디오 촬영 시 세로, 가로, 롤, 피치 및 요축을 따라 5축의 카메라 흔들림과 광각 렌즈 사용 시 쉽게 발생하는 주변 왜곡을 보정합니다. (5축 하이브리드 이미지 흔들림 방지)([E-손떨림 보정 (비 디오)]: 272)\n[Boost I.S. (비디오)] 비디오 촬영 중에 이미지 손떨림 보"
+        },
+        {
+          "source_id": "S2",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 784,
+          "section_title": "[사진]: [기타 (사진)]",
+          "summary": "[Boost I.S. (비디오)]",
+          "evidence_text": "[사진]: [기타 (사진)]\n[브래킷]\n[브래킷 유형]\n[OFF]\n\n\n\n[더 많은 설정]\n—\n\n\n\n[무음 모드]\n[OFF]\n\n\n\n[이미지 흔들림 방\n지]\n[작동 모드]\n[ ]\n\n\n\n[E-손떨림 보정 (비디오)]\n[OFF]\n\n\n\n[Boost I.S. (비디오)]\n[OFF]\n\n\n\n[아나모픽 (비디오)]\n[OFF]\n\n\n\n[렌즈 정보]\n[Lens1]\n\n\n[연사 촬영 설정]\n[연사 촬영1 설정]\n[H]\n\n\n\n[연사 촬영2 설정]\n[SH75]\n\n\n\n[SH 연사 사전 촬영 시간]\n[0.5SEC]\n\n\n\n[셔터 타입]\n[MECH.]\n\n\n\n[셔터 지연]\n[OFF]\n\n\n\n[확장 망원 변환]\n[OFF]\n\n\n\n[인터벌/애니메이 션]\n[모드]\n[인터벌 촬영]\n"
+        },
+        {
+          "source_id": "S3",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 789,
+          "section_title": "[비디오]: [기타 (비디오)]",
+          "summary": "[Boost I.S. (비디오)]",
+          "evidence_text": "[비디오]: [기타 (비디오)]\n[무음 모드]\n[OFF]\n\n\n\n[이미지 흔들림 방\n지]\n[작동 모드]\n[ ]\n\n\n\n[E-손떨림 보정 (비디오)]\n[OFF]\n\n\n\n[Boost I.S. (비디오)]\n[OFF]\n\n\n\n[아나모픽 (비디오)]\n[OFF]\n\n\n\n[렌즈 정보]\n[Lens1]\n\n\n[셀프타이머 설정]\n[셀프타이머]\n[ ]\n\n\n\n[비디오용 셀프타이머]\n[OFF]\n\n\n\n[초점 전환]\n[초점 위치 설정]\n—\n[초점 전환 속도]\n[M]\n\n\n\n[초점 전환 녹화]\n[OFF]\n\n\n\n[초점 전환 대기]\n[OFF]\n\n\n\n[파일 분할 녹화]\n[OFF]\n\n\n"
+        }
+      ],
+      "latency_ms": 2001.2043750029989,
+      "prompt_tokens": 290,
+      "completion_tokens": 33,
+      "total_tokens": 323,
+      "output_chars": 257,
+      "json_valid": true,
+      "json_recoverable": true,
+      "answer_relevance_pass": false,
+      "korean_intent_pass": true,
+      "source_citation_pass": true,
+      "pdf_source_faithfulness_pass": false,
+      "unsupported_handling_pass": true,
+      "overall_pass": false,
+      "error_message": "quality gate failed"
+    },
+    {
+      "model_id": "card_template",
+      "answer_mode": "card_template",
+      "case_id": "g9m2_wifi_connection",
+      "query": "Wi-Fi 연결",
+      "raw_answer": "{\"answer\":\"DC-G9M2 매뉴얼 673쪽에서 확인하세요. Wi-Fi 연결 ≥[네트워크]: 674 ≥[직접]: 678 ≥이전에 저장된 설정으로 Wi-Fi에 연결하기: 680 ≥[Wi-Fi]가 지정된 Fn 버튼: 682 [설정]([입력/출력]) 메뉴에서 [Wi-Fi]의 ...\",\"intent_summary\":\"Wi-Fi 연결\",\"source_refs\":[{\"document_id\":\"dc_g9m2_full_kor\",\"model_id\":\"DC-G9M2\",\"page\":673}],\"supported_by_sources\":true,\"needs_more_context\":false}",
+      "parsed_answer": {
+        "answer": "DC-G9M2 매뉴얼 673쪽에서 확인하세요. Wi-Fi 연결 ≥[네트워크]: 674 ≥[직접]: 678 ≥이전에 저장된 설정으로 Wi-Fi에 연결하기: 680 ≥[Wi-Fi]가 지정된 Fn 버튼: 682 [설정]([입력/출력]) 메뉴에서 [Wi-Fi]의 ...",
+        "intent_summary": "Wi-Fi 연결",
+        "source_refs": [
+          {
+            "document_id": "dc_g9m2_full_kor",
+            "model_id": "DC-G9M2",
+            "page": 673
+          }
+        ],
+        "supported_by_sources": true,
+        "needs_more_context": false
+      },
+      "retrieved_sources": [
+        {
+          "source_id": "S1",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 673,
+          "section_title": "Wi-Fi 연결",
+          "summary": "Wi-Fi 연결",
+          "evidence_text": "Wi-Fi 연결\n≥[네트워크]: 674 ≥[직접]: 678 ≥이전에 저장된 설정으로 Wi-Fi에 연결하기: 680 ≥[Wi-Fi]가 지정된 Fn 버튼: 682\n[설정]([입력/출력]) 메뉴에서 [Wi-Fi]의 [Wi-Fi 기능]이 [새 연결]로 선택되\n어 있을 때, 연결 방식을 [네트워크] 또는 [직접]으로 선택합니다. [히스토리에서 대상 선택] 또는 [즐겨찾기에서 대상 선택]을 사용할 때 카메 라는 이전에 사용하던 설정으로 선택한 장치에 연결합니다."
+        },
+        {
+          "source_id": "S2",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 15,
+          "section_title": "Wi-Fi / Bluetooth 634",
+          "summary": "Wi-Fi 연결 ................................................................................673",
+          "evidence_text": "Wi-Fi 연결 ................................................................................673\n[네트워크] ....................................................................................... 674 [직접]............................................................................................... 678 이전에 저장된 설정으로 Wi-Fi에 연결하기...................................... 680 [Wi-Fi]가 지정된 Fn 버튼 .................."
+        },
+        {
+          "source_id": "S3",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 85,
+          "section_title": " 모니터와 뷰파인더에 동시에 표시",
+          "summary": "– 스마트폰과 Wi-Fi 연결",
+          "evidence_text": "• 안경 형태, 카메라를 잡는 방식 또는 아이피스 주위에 반짝이는 밝은 빛으로 인해 아이 센서가 제대로 작동되지 않을 수 있습니다.\n• 비디오 재생 또는 슬라이드쇼 중에는 자동 뷰파인더/모니터 전환이 작동하지 않습 니다.\n• 비디오 프레임 레이트가 200p 이상일 때 다음 기능을 사용하면 모니터와 뷰파인 더에 동시에 표시할 수 없습니다.\n– HDMI 출력\n– 스마트폰과 Wi-Fi 연결\n– 테더 촬영\n• 뷰파인더를 통해 볼 때 초점을 맞추려면: ([아이 센서 AF]: 569)\n• 아이 센서의 감도를 변경할 수 있습니다: ([아이 센서]: 606)\n• 사진을 촬영할 때 모니터의 라이브 뷰 표시 속도를 설정할 수 있습니다: ([모니터 프레임 비율]: 603)\n• 사진을 촬영할 때 뷰파인더의 라이브 뷰 표시 "
+        }
+      ],
+      "latency_ms": 0.0,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "output_chars": 325,
+      "json_valid": true,
+      "json_recoverable": true,
+      "answer_relevance_pass": true,
+      "korean_intent_pass": true,
+      "source_citation_pass": true,
+      "pdf_source_faithfulness_pass": true,
+      "unsupported_handling_pass": true,
+      "overall_pass": true,
+      "error_message": null
+    },
+    {
+      "model_id": "hf.co/unsloth/gemma-4-E4B-it-qat-GGUF:UD-Q4_K_XL",
+      "answer_mode": "card_answer_rewrite",
+      "case_id": "g9m2_wifi_connection",
+      "query": "Wi-Fi 연결",
+      "raw_answer": "{\"answer\":\"DC-G9M2 매뉴얼 673쪽에서 확인하세요. Wi-Fi 연결 관련 내용은 해당 페이지와 다음 페이지들을 참고할 수 있습니다.\",\"intent_summary\":\"Wi-Fi 연결\",\"source_refs\":[{\"document_id\":\"dc_g9m2_full_kor\",\"model_id\":\"DC-G9M2\",\"page\":673}],\"supported_by_sources\":true,\"needs_more_context\":false}",
+      "parsed_answer": {
+        "answer": "DC-G9M2 매뉴얼 673쪽에서 확인하세요. Wi-Fi 연결 관련 내용은 해당 페이지와 다음 페이지들을 참고할 수 있습니다.",
+        "intent_summary": "Wi-Fi 연결",
+        "source_refs": [
+          {
+            "document_id": "dc_g9m2_full_kor",
+            "model_id": "DC-G9M2",
+            "page": 673
+          }
+        ],
+        "supported_by_sources": true,
+        "needs_more_context": false
+      },
+      "retrieved_sources": [
+        {
+          "source_id": "S1",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 673,
+          "section_title": "Wi-Fi 연결",
+          "summary": "Wi-Fi 연결",
+          "evidence_text": "Wi-Fi 연결\n≥[네트워크]: 674 ≥[직접]: 678 ≥이전에 저장된 설정으로 Wi-Fi에 연결하기: 680 ≥[Wi-Fi]가 지정된 Fn 버튼: 682\n[설정]([입력/출력]) 메뉴에서 [Wi-Fi]의 [Wi-Fi 기능]이 [새 연결]로 선택되\n어 있을 때, 연결 방식을 [네트워크] 또는 [직접]으로 선택합니다. [히스토리에서 대상 선택] 또는 [즐겨찾기에서 대상 선택]을 사용할 때 카메 라는 이전에 사용하던 설정으로 선택한 장치에 연결합니다."
+        },
+        {
+          "source_id": "S2",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 15,
+          "section_title": "Wi-Fi / Bluetooth 634",
+          "summary": "Wi-Fi 연결 ................................................................................673",
+          "evidence_text": "Wi-Fi 연결 ................................................................................673\n[네트워크] ....................................................................................... 674 [직접]............................................................................................... 678 이전에 저장된 설정으로 Wi-Fi에 연결하기...................................... 680 [Wi-Fi]가 지정된 Fn 버튼 .................."
+        },
+        {
+          "source_id": "S3",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 85,
+          "section_title": " 모니터와 뷰파인더에 동시에 표시",
+          "summary": "– 스마트폰과 Wi-Fi 연결",
+          "evidence_text": "• 안경 형태, 카메라를 잡는 방식 또는 아이피스 주위에 반짝이는 밝은 빛으로 인해 아이 센서가 제대로 작동되지 않을 수 있습니다.\n• 비디오 재생 또는 슬라이드쇼 중에는 자동 뷰파인더/모니터 전환이 작동하지 않습 니다.\n• 비디오 프레임 레이트가 200p 이상일 때 다음 기능을 사용하면 모니터와 뷰파인 더에 동시에 표시할 수 없습니다.\n– HDMI 출력\n– 스마트폰과 Wi-Fi 연결\n– 테더 촬영\n• 뷰파인더를 통해 볼 때 초점을 맞추려면: ([아이 센서 AF]: 569)\n• 아이 센서의 감도를 변경할 수 있습니다: ([아이 센서]: 606)\n• 사진을 촬영할 때 모니터의 라이브 뷰 표시 속도를 설정할 수 있습니다: ([모니터 프레임 비율]: 603)\n• 사진을 촬영할 때 뷰파인더의 라이브 뷰 표시 "
+        }
+      ],
+      "latency_ms": 6235.96241697669,
+      "prompt_tokens": 278,
+      "completion_tokens": 36,
+      "total_tokens": 314,
+      "output_chars": 249,
+      "json_valid": true,
+      "json_recoverable": true,
+      "answer_relevance_pass": true,
+      "korean_intent_pass": true,
+      "source_citation_pass": true,
+      "pdf_source_faithfulness_pass": true,
+      "unsupported_handling_pass": true,
+      "overall_pass": true,
+      "error_message": null
+    },
+    {
+      "model_id": "hf.co/Qwen/Qwen3-4B-GGUF:Q4_K_M",
+      "answer_mode": "card_answer_rewrite",
+      "case_id": "g9m2_wifi_connection",
+      "query": "Wi-Fi 연결",
+      "raw_answer": "{\"answer\":\"Okay, the user is asking about Wi-Fi connection. Let me check the verified answer. The response mentions pages 673, 674, 678, 680, 682, and the [설정] menu. The answer should be in Korean, plain text, two sentences max. Need to avoid any extra info. Just the facts from the verified answer. So, the key points are the page numbers and the mention of the [설정] menu. Let me structure that concisely. </think> DC-G9M2 매뉴얼 673쪽에서 확인하세요. Wi-Fi 연결은 674, 678, 680, 682 페이지에 설명되어 있습니다. [설정] 메뉴에서 [Wi-Fi] 설정을 확인할 수 있습니다.\",\"intent_summary\":\"Wi-Fi 연결\",\"source_refs\":[{\"document_id\":\"dc_g9m2_full_kor\",\"model_id\":\"DC-G9M2\",\"page\":673}],\"supported_by_sources\":true,\"needs_more_context\":false}",
+      "parsed_answer": {
+        "answer": "Okay, the user is asking about Wi-Fi connection. Let me check the verified answer. The response mentions pages 673, 674, 678, 680, 682, and the [설정] menu. The answer should be in Korean, plain text, two sentences max. Need to avoid any extra info. Just the facts from the verified answer. So, the key points are the page numbers and the mention of the [설정] menu. Let me structure that concisely. </think> DC-G9M2 매뉴얼 673쪽에서 확인하세요. Wi-Fi 연결은 674, 678, 680, 682 페이지에 설명되어 있습니다. [설정] 메뉴에서 [Wi-Fi] 설정을 확인할 수 있습니다.",
+        "intent_summary": "Wi-Fi 연결",
+        "source_refs": [
+          {
+            "document_id": "dc_g9m2_full_kor",
+            "model_id": "DC-G9M2",
+            "page": 673
+          }
+        ],
+        "supported_by_sources": true,
+        "needs_more_context": false
+      },
+      "retrieved_sources": [
+        {
+          "source_id": "S1",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 673,
+          "section_title": "Wi-Fi 연결",
+          "summary": "Wi-Fi 연결",
+          "evidence_text": "Wi-Fi 연결\n≥[네트워크]: 674 ≥[직접]: 678 ≥이전에 저장된 설정으로 Wi-Fi에 연결하기: 680 ≥[Wi-Fi]가 지정된 Fn 버튼: 682\n[설정]([입력/출력]) 메뉴에서 [Wi-Fi]의 [Wi-Fi 기능]이 [새 연결]로 선택되\n어 있을 때, 연결 방식을 [네트워크] 또는 [직접]으로 선택합니다. [히스토리에서 대상 선택] 또는 [즐겨찾기에서 대상 선택]을 사용할 때 카메 라는 이전에 사용하던 설정으로 선택한 장치에 연결합니다."
+        },
+        {
+          "source_id": "S2",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 15,
+          "section_title": "Wi-Fi / Bluetooth 634",
+          "summary": "Wi-Fi 연결 ................................................................................673",
+          "evidence_text": "Wi-Fi 연결 ................................................................................673\n[네트워크] ....................................................................................... 674 [직접]............................................................................................... 678 이전에 저장된 설정으로 Wi-Fi에 연결하기...................................... 680 [Wi-Fi]가 지정된 Fn 버튼 .................."
+        },
+        {
+          "source_id": "S3",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 85,
+          "section_title": " 모니터와 뷰파인더에 동시에 표시",
+          "summary": "– 스마트폰과 Wi-Fi 연결",
+          "evidence_text": "• 안경 형태, 카메라를 잡는 방식 또는 아이피스 주위에 반짝이는 밝은 빛으로 인해 아이 센서가 제대로 작동되지 않을 수 있습니다.\n• 비디오 재생 또는 슬라이드쇼 중에는 자동 뷰파인더/모니터 전환이 작동하지 않습 니다.\n• 비디오 프레임 레이트가 200p 이상일 때 다음 기능을 사용하면 모니터와 뷰파인 더에 동시에 표시할 수 없습니다.\n– HDMI 출력\n– 스마트폰과 Wi-Fi 연결\n– 테더 촬영\n• 뷰파인더를 통해 볼 때 초점을 맞추려면: ([아이 센서 AF]: 569)\n• 아이 센서의 감도를 변경할 수 있습니다: ([아이 센서]: 606)\n• 사진을 촬영할 때 모니터의 라이브 뷰 표시 속도를 설정할 수 있습니다: ([모니터 프레임 비율]: 603)\n• 사진을 촬영할 때 뷰파인더의 라이브 뷰 표시 "
+        }
+      ],
+      "latency_ms": 6187.235958001111,
+      "prompt_tokens": 264,
+      "completion_tokens": 179,
+      "total_tokens": 443,
+      "output_chars": 688,
+      "json_valid": true,
+      "json_recoverable": true,
+      "answer_relevance_pass": false,
+      "korean_intent_pass": true,
+      "source_citation_pass": true,
+      "pdf_source_faithfulness_pass": false,
+      "unsupported_handling_pass": true,
+      "overall_pass": false,
+      "error_message": "quality gate failed"
+    },
+    {
+      "model_id": "hf.co/mradermacher/supergemma4-e4b-abliterated-i1-GGUF:Q4_K_M",
+      "answer_mode": "card_answer_rewrite",
+      "case_id": "g9m2_wifi_connection",
+      "query": "Wi-Fi 연결",
+      "raw_answer": "{\"answer\":\"매뉴얼 673쪽에서 확인하세요. Wi-Fi 연결은 네트워크, 직접, 이전에 저장된 설정으로의 연결 방법이 있습니다.\",\"intent_summary\":\"Wi-Fi 연결\",\"source_refs\":[{\"document_id\":\"dc_g9m2_full_kor\",\"model_id\":\"DC-G9M2\",\"page\":673}],\"supported_by_sources\":true,\"needs_more_context\":false}",
+      "parsed_answer": {
+        "answer": "매뉴얼 673쪽에서 확인하세요. Wi-Fi 연결은 네트워크, 직접, 이전에 저장된 설정으로의 연결 방법이 있습니다.",
+        "intent_summary": "Wi-Fi 연결",
+        "source_refs": [
+          {
+            "document_id": "dc_g9m2_full_kor",
+            "model_id": "DC-G9M2",
+            "page": 673
+          }
+        ],
+        "supported_by_sources": true,
+        "needs_more_context": false
+      },
+      "retrieved_sources": [
+        {
+          "source_id": "S1",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 673,
+          "section_title": "Wi-Fi 연결",
+          "summary": "Wi-Fi 연결",
+          "evidence_text": "Wi-Fi 연결\n≥[네트워크]: 674 ≥[직접]: 678 ≥이전에 저장된 설정으로 Wi-Fi에 연결하기: 680 ≥[Wi-Fi]가 지정된 Fn 버튼: 682\n[설정]([입력/출력]) 메뉴에서 [Wi-Fi]의 [Wi-Fi 기능]이 [새 연결]로 선택되\n어 있을 때, 연결 방식을 [네트워크] 또는 [직접]으로 선택합니다. [히스토리에서 대상 선택] 또는 [즐겨찾기에서 대상 선택]을 사용할 때 카메 라는 이전에 사용하던 설정으로 선택한 장치에 연결합니다."
+        },
+        {
+          "source_id": "S2",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 15,
+          "section_title": "Wi-Fi / Bluetooth 634",
+          "summary": "Wi-Fi 연결 ................................................................................673",
+          "evidence_text": "Wi-Fi 연결 ................................................................................673\n[네트워크] ....................................................................................... 674 [직접]............................................................................................... 678 이전에 저장된 설정으로 Wi-Fi에 연결하기...................................... 680 [Wi-Fi]가 지정된 Fn 버튼 .................."
+        },
+        {
+          "source_id": "S3",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 85,
+          "section_title": " 모니터와 뷰파인더에 동시에 표시",
+          "summary": "– 스마트폰과 Wi-Fi 연결",
+          "evidence_text": "• 안경 형태, 카메라를 잡는 방식 또는 아이피스 주위에 반짝이는 밝은 빛으로 인해 아이 센서가 제대로 작동되지 않을 수 있습니다.\n• 비디오 재생 또는 슬라이드쇼 중에는 자동 뷰파인더/모니터 전환이 작동하지 않습 니다.\n• 비디오 프레임 레이트가 200p 이상일 때 다음 기능을 사용하면 모니터와 뷰파인 더에 동시에 표시할 수 없습니다.\n– HDMI 출력\n– 스마트폰과 Wi-Fi 연결\n– 테더 촬영\n• 뷰파인더를 통해 볼 때 초점을 맞추려면: ([아이 센서 AF]: 569)\n• 아이 센서의 감도를 변경할 수 있습니다: ([아이 센서]: 606)\n• 사진을 촬영할 때 모니터의 라이브 뷰 표시 속도를 설정할 수 있습니다: ([모니터 프레임 비율]: 603)\n• 사진을 촬영할 때 뷰파인더의 라이브 뷰 표시 "
+        }
+      ],
+      "latency_ms": 5399.4885419961065,
+      "prompt_tokens": 278,
+      "completion_tokens": 34,
+      "total_tokens": 312,
+      "output_chars": 243,
+      "json_valid": true,
+      "json_recoverable": true,
+      "answer_relevance_pass": true,
+      "korean_intent_pass": true,
+      "source_citation_pass": true,
+      "pdf_source_faithfulness_pass": true,
+      "unsupported_handling_pass": true,
+      "overall_pass": true,
+      "error_message": null
+    },
+    {
+      "model_id": "hf.co/unsloth/gemma-4-12B-it-qat-GGUF:UD-Q4_K_XL",
+      "answer_mode": "card_answer_rewrite",
+      "case_id": "g9m2_wifi_connection",
+      "query": "Wi-Fi 연결",
+      "raw_answer": "{\"answer\":\"Wi-Fi 연결: DC-G9M2 매뉴얼 673쪽에서 확인하세요. [네트워크], [직접], 이전에 저장된 설정으로 Wi-Fi에 연결하기, [Wi-Fi]가 지정된 Fn 버튼 및 [설정] 메뉴의 [Wi-Fi]를 참조하세요.\",\"intent_summary\":\"Wi-Fi 연결\",\"source_refs\":[{\"document_id\":\"dc_g9m2_full_kor\",\"model_id\":\"DC-G9M2\",\"page\":673}],\"supported_by_sources\":true,\"needs_more_context\":false}",
+      "parsed_answer": {
+        "answer": "Wi-Fi 연결: DC-G9M2 매뉴얼 673쪽에서 확인하세요. [네트워크], [직접], 이전에 저장된 설정으로 Wi-Fi에 연결하기, [Wi-Fi]가 지정된 Fn 버튼 및 [설정] 메뉴의 [Wi-Fi]를 참조하세요.",
+        "intent_summary": "Wi-Fi 연결",
+        "source_refs": [
+          {
+            "document_id": "dc_g9m2_full_kor",
+            "model_id": "DC-G9M2",
+            "page": 673
+          }
+        ],
+        "supported_by_sources": true,
+        "needs_more_context": false
+      },
+      "retrieved_sources": [
+        {
+          "source_id": "S1",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 673,
+          "section_title": "Wi-Fi 연결",
+          "summary": "Wi-Fi 연결",
+          "evidence_text": "Wi-Fi 연결\n≥[네트워크]: 674 ≥[직접]: 678 ≥이전에 저장된 설정으로 Wi-Fi에 연결하기: 680 ≥[Wi-Fi]가 지정된 Fn 버튼: 682\n[설정]([입력/출력]) 메뉴에서 [Wi-Fi]의 [Wi-Fi 기능]이 [새 연결]로 선택되\n어 있을 때, 연결 방식을 [네트워크] 또는 [직접]으로 선택합니다. [히스토리에서 대상 선택] 또는 [즐겨찾기에서 대상 선택]을 사용할 때 카메 라는 이전에 사용하던 설정으로 선택한 장치에 연결합니다."
+        },
+        {
+          "source_id": "S2",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 15,
+          "section_title": "Wi-Fi / Bluetooth 634",
+          "summary": "Wi-Fi 연결 ................................................................................673",
+          "evidence_text": "Wi-Fi 연결 ................................................................................673\n[네트워크] ....................................................................................... 674 [직접]............................................................................................... 678 이전에 저장된 설정으로 Wi-Fi에 연결하기...................................... 680 [Wi-Fi]가 지정된 Fn 버튼 .................."
+        },
+        {
+          "source_id": "S3",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 85,
+          "section_title": " 모니터와 뷰파인더에 동시에 표시",
+          "summary": "– 스마트폰과 Wi-Fi 연결",
+          "evidence_text": "• 안경 형태, 카메라를 잡는 방식 또는 아이피스 주위에 반짝이는 밝은 빛으로 인해 아이 센서가 제대로 작동되지 않을 수 있습니다.\n• 비디오 재생 또는 슬라이드쇼 중에는 자동 뷰파인더/모니터 전환이 작동하지 않습 니다.\n• 비디오 프레임 레이트가 200p 이상일 때 다음 기능을 사용하면 모니터와 뷰파인 더에 동시에 표시할 수 없습니다.\n– HDMI 출력\n– 스마트폰과 Wi-Fi 연결\n– 테더 촬영\n• 뷰파인더를 통해 볼 때 초점을 맞추려면: ([아이 센서 AF]: 569)\n• 아이 센서의 감도를 변경할 수 있습니다: ([아이 센서]: 606)\n• 사진을 촬영할 때 모니터의 라이브 뷰 표시 속도를 설정할 수 있습니다: ([모니터 프레임 비율]: 603)\n• 사진을 촬영할 때 뷰파인더의 라이브 뷰 표시 "
+        }
+      ],
+      "latency_ms": 3023.8767499977257,
+      "prompt_tokens": 282,
+      "completion_tokens": 66,
+      "total_tokens": 348,
+      "output_chars": 300,
+      "json_valid": true,
+      "json_recoverable": true,
+      "answer_relevance_pass": false,
+      "korean_intent_pass": true,
+      "source_citation_pass": true,
+      "pdf_source_faithfulness_pass": false,
+      "unsupported_handling_pass": true,
+      "overall_pass": false,
+      "error_message": "quality gate failed"
+    },
+    {
+      "model_id": "card_template",
+      "answer_mode": "card_template",
+      "case_id": "g9m2_card_format",
+      "query": "카드 포맷",
+      "raw_answer": "{\"answer\":\"DC-G9M2 매뉴얼 798쪽에서 확인하세요. [설정]: [카드/파일] [카드 포맷] — [더블 카드 슬롯 기 능] [촬영 방법] [ ]   [대상 카드 슬롯] [ ]   [USB-SSD] [OFF]  [폴더 / 파일 설정] [폴더 선택] — [새...\",\"intent_summary\":\"카드 포맷\",\"source_refs\":[{\"document_id\":\"dc_g9m2_full_kor\",\"model_id\":\"DC-G9M2\",\"page\":798}],\"supported_by_sources\":true,\"needs_more_context\":false}",
+      "parsed_answer": {
+        "answer": "DC-G9M2 매뉴얼 798쪽에서 확인하세요. [설정]: [카드/파일] [카드 포맷] — [더블 카드 슬롯 기 능] [촬영 방법] [ ]   [대상 카드 슬롯] [ ]   [USB-SSD] [OFF]  [폴더 / 파일 설정] [폴더 선택] — [새...",
+        "intent_summary": "카드 포맷",
+        "source_refs": [
+          {
+            "document_id": "dc_g9m2_full_kor",
+            "model_id": "DC-G9M2",
+            "page": 798
+          }
+        ],
+        "supported_by_sources": true,
+        "needs_more_context": false
+      },
+      "retrieved_sources": [
+        {
+          "source_id": "S1",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 597,
+          "section_title": "[설정] 메뉴([카드/파일])",
+          "summary": "[카드 포맷]",
+          "evidence_text": "[설정] 메뉴([카드/파일])\n: 기본 설정\n[카드 포맷]\n[카드 슬롯 1] / [카드 슬롯 2]\n카드를 포맷합니다(초기화). 사용하기 전에 카메라에서 카드를 포맷하십시오.\n• 카드를 포맷하면 카드에 저장되어 있는 모든 데이터가 삭제되고 삭제된 데이터는 복구할 수 없습니다. 카드를 포맷하기 전에 필요한 데이터의 백업을 저장하십시오.\n• 포맷하는 동안 카메라를 끄거나 다른 조작을 하지 마십시오.\n• 포맷을 진행하는 동안 카메라를 끄지 마십시오.\n• 카드를 PC 또는 다른 장치에서 포맷한 경우에는 카메라에서 다시 포맷하십시오.\n• 카드에 저장된 카메라 설정 정보를 유지하면서 카드를포맷할 수 있습니다. ([카 메라 설정을 저장/복원]: 613)"
+        },
+        {
+          "source_id": "S2",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 798,
+          "section_title": "[설정]: [카드/파일]",
+          "summary": "[카드 포맷]",
+          "evidence_text": "[설정]: [카드/파일]\n[카드 포맷]\n—\n[더블 카드 슬롯 기 능]\n[촬영 방법]\n[ ]\n\n\n[대상 카드 슬롯]\n[ ]\n\n\n[USB-SSD]\n[OFF]\n\n[폴더 / 파일 설정]\n[폴더 선택]\n—\n[새폴더 생성]\n—\n[파일 이름 설정]\n[폴더 번호 링크]\n\n\n[파일 번호 리셋]\n—\n[저작권 정보]\n[사진작가]\n[OFF]\n\n\n[저작권자]\n[OFF]\n\n\n[저작권 정보 표시]\n—"
+        }
+      ],
+      "latency_ms": 0.0,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "output_chars": 322,
+      "json_valid": true,
+      "json_recoverable": true,
+      "answer_relevance_pass": true,
+      "korean_intent_pass": true,
+      "source_citation_pass": true,
+      "pdf_source_faithfulness_pass": true,
+      "unsupported_handling_pass": true,
+      "overall_pass": true,
+      "error_message": null
+    },
+    {
+      "model_id": "hf.co/unsloth/gemma-4-E4B-it-qat-GGUF:UD-Q4_K_XL",
+      "answer_mode": "card_answer_rewrite",
+      "case_id": "g9m2_card_format",
+      "query": "카드 포맷",
+      "raw_answer": "{\"answer\":\"DC-G9M2 매뉴얼 798쪽을 확인하세요. 설정에서 카드/파일 메뉴의 카드 포맷 기능을 이용할 수 있습니다.\",\"intent_summary\":\"카드 포맷\",\"source_refs\":[{\"document_id\":\"dc_g9m2_full_kor\",\"model_id\":\"DC-G9M2\",\"page\":798}],\"supported_by_sources\":true,\"needs_more_context\":false}",
+      "parsed_answer": {
+        "answer": "DC-G9M2 매뉴얼 798쪽을 확인하세요. 설정에서 카드/파일 메뉴의 카드 포맷 기능을 이용할 수 있습니다.",
+        "intent_summary": "카드 포맷",
+        "source_refs": [
+          {
+            "document_id": "dc_g9m2_full_kor",
+            "model_id": "DC-G9M2",
+            "page": 798
+          }
+        ],
+        "supported_by_sources": true,
+        "needs_more_context": false
+      },
+      "retrieved_sources": [
+        {
+          "source_id": "S1",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 597,
+          "section_title": "[설정] 메뉴([카드/파일])",
+          "summary": "[카드 포맷]",
+          "evidence_text": "[설정] 메뉴([카드/파일])\n: 기본 설정\n[카드 포맷]\n[카드 슬롯 1] / [카드 슬롯 2]\n카드를 포맷합니다(초기화). 사용하기 전에 카메라에서 카드를 포맷하십시오.\n• 카드를 포맷하면 카드에 저장되어 있는 모든 데이터가 삭제되고 삭제된 데이터는 복구할 수 없습니다. 카드를 포맷하기 전에 필요한 데이터의 백업을 저장하십시오.\n• 포맷하는 동안 카메라를 끄거나 다른 조작을 하지 마십시오.\n• 포맷을 진행하는 동안 카메라를 끄지 마십시오.\n• 카드를 PC 또는 다른 장치에서 포맷한 경우에는 카메라에서 다시 포맷하십시오.\n• 카드에 저장된 카메라 설정 정보를 유지하면서 카드를포맷할 수 있습니다. ([카 메라 설정을 저장/복원]: 613)"
+        },
+        {
+          "source_id": "S2",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 798,
+          "section_title": "[설정]: [카드/파일]",
+          "summary": "[카드 포맷]",
+          "evidence_text": "[설정]: [카드/파일]\n[카드 포맷]\n—\n[더블 카드 슬롯 기 능]\n[촬영 방법]\n[ ]\n\n\n[대상 카드 슬롯]\n[ ]\n\n\n[USB-SSD]\n[OFF]\n\n[폴더 / 파일 설정]\n[폴더 선택]\n—\n[새폴더 생성]\n—\n[파일 이름 설정]\n[폴더 번호 링크]\n\n\n[파일 번호 리셋]\n—\n[저작권 정보]\n[사진작가]\n[OFF]\n\n\n[저작권자]\n[OFF]\n\n\n[저작권 정보 표시]\n—"
+        }
+      ],
+      "latency_ms": 6186.011459009023,
+      "prompt_tokens": 282,
+      "completion_tokens": 35,
+      "total_tokens": 317,
+      "output_chars": 237,
+      "json_valid": true,
+      "json_recoverable": true,
+      "answer_relevance_pass": true,
+      "korean_intent_pass": true,
+      "source_citation_pass": true,
+      "pdf_source_faithfulness_pass": true,
+      "unsupported_handling_pass": true,
+      "overall_pass": true,
+      "error_message": null
+    },
+    {
+      "model_id": "hf.co/Qwen/Qwen3-4B-GGUF:Q4_K_M",
+      "answer_mode": "card_answer_rewrite",
+      "case_id": "g9m2_card_format",
+      "query": "카드 포맷",
+      "raw_answer": "{\"answer\":\"Okay, the user is asking about \\\"카드 포맷\\\" which translates to card formatting. The verified answer mentions page 798 of the DC-G9M2 manual. The key points from the answer are the menu path: [설정] > [카드/파일] > [카드 포맷], and the settings for dual card slot functionality, shooting method, target card slot, USB-SSD, and folder/file settings. The answer also includes a note about selecting a folder. I need to rewrite this in plain Korean without any additional information. The answer should be concise, using only the provided details. Make sure not to add any extra sentences or context beyond what's in the verified answer. Also, avoid using any verbs or technical terms not present. Just the facts from the source. </think> DC-G9M2 매뉴얼 798쪽에 [설정] > [카드/파일] > [카드 포맷] 메뉴에서 확인 가능합니다. [더블 카드 슬롯 기능] [촬영 방법] [대상 카드 슬롯] [USB-SSD] [폴더 / 파일 설정] 등이 표시되어 있습니다.\",\"intent_summary\":\"카드 포맷\",\"source_refs\":[{\"document_id\":\"dc_g9m2_full_kor\",\"model_id\":\"DC-G9M2\",\"page\":798}],\"supported_by_sources\":true,\"needs_more_context\":false}",
+      "parsed_answer": {
+        "answer": "Okay, the user is asking about \"카드 포맷\" which translates to card formatting. The verified answer mentions page 798 of the DC-G9M2 manual. The key points from the answer are the menu path: [설정] > [카드/파일] > [카드 포맷], and the settings for dual card slot functionality, shooting method, target card slot, USB-SSD, and folder/file settings. The answer also includes a note about selecting a folder. I need to rewrite this in plain Korean without any additional information. The answer should be concise, using only the provided details. Make sure not to add any extra sentences or context beyond what's in the verified answer. Also, avoid using any verbs or technical terms not present. Just the facts from the source. </think> DC-G9M2 매뉴얼 798쪽에 [설정] > [카드/파일] > [카드 포맷] 메뉴에서 확인 가능합니다. [더블 카드 슬롯 기능] [촬영 방법] [대상 카드 슬롯] [USB-SSD] [폴더 / 파일 설정] 등이 표시되어 있습니다.",
+        "intent_summary": "카드 포맷",
+        "source_refs": [
+          {
+            "document_id": "dc_g9m2_full_kor",
+            "model_id": "DC-G9M2",
+            "page": 798
+          }
+        ],
+        "supported_by_sources": true,
+        "needs_more_context": false
+      },
+      "retrieved_sources": [
+        {
+          "source_id": "S1",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 597,
+          "section_title": "[설정] 메뉴([카드/파일])",
+          "summary": "[카드 포맷]",
+          "evidence_text": "[설정] 메뉴([카드/파일])\n: 기본 설정\n[카드 포맷]\n[카드 슬롯 1] / [카드 슬롯 2]\n카드를 포맷합니다(초기화). 사용하기 전에 카메라에서 카드를 포맷하십시오.\n• 카드를 포맷하면 카드에 저장되어 있는 모든 데이터가 삭제되고 삭제된 데이터는 복구할 수 없습니다. 카드를 포맷하기 전에 필요한 데이터의 백업을 저장하십시오.\n• 포맷하는 동안 카메라를 끄거나 다른 조작을 하지 마십시오.\n• 포맷을 진행하는 동안 카메라를 끄지 마십시오.\n• 카드를 PC 또는 다른 장치에서 포맷한 경우에는 카메라에서 다시 포맷하십시오.\n• 카드에 저장된 카메라 설정 정보를 유지하면서 카드를포맷할 수 있습니다. ([카 메라 설정을 저장/복원]: 613)"
+        },
+        {
+          "source_id": "S2",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 798,
+          "section_title": "[설정]: [카드/파일]",
+          "summary": "[카드 포맷]",
+          "evidence_text": "[설정]: [카드/파일]\n[카드 포맷]\n—\n[더블 카드 슬롯 기 능]\n[촬영 방법]\n[ ]\n\n\n[대상 카드 슬롯]\n[ ]\n\n\n[USB-SSD]\n[OFF]\n\n[폴더 / 파일 설정]\n[폴더 선택]\n—\n[새폴더 생성]\n—\n[파일 이름 설정]\n[폴더 번호 링크]\n\n\n[파일 번호 리셋]\n—\n[저작권 정보]\n[사진작가]\n[OFF]\n\n\n[저작권자]\n[OFF]\n\n\n[저작권 정보 표시]\n—"
+        }
+      ],
+      "latency_ms": 6886.08962498256,
+      "prompt_tokens": 278,
+      "completion_tokens": 256,
+      "total_tokens": 534,
+      "output_chars": 1026,
+      "json_valid": true,
+      "json_recoverable": true,
+      "answer_relevance_pass": false,
+      "korean_intent_pass": true,
+      "source_citation_pass": true,
+      "pdf_source_faithfulness_pass": false,
+      "unsupported_handling_pass": true,
+      "overall_pass": false,
+      "error_message": "quality gate failed"
+    },
+    {
+      "model_id": "hf.co/mradermacher/supergemma4-e4b-abliterated-i1-GGUF:Q4_K_M",
+      "answer_mode": "card_answer_rewrite",
+      "case_id": "g9m2_card_format",
+      "query": "카드 포맷",
+      "raw_answer": "{\"answer\":\"DC-G9M2 매뉴얼 798쪽에서 확인하세요. [설정] > [카드/파일] > [카드 포맷]으로 진행합니다.\",\"intent_summary\":\"카드 포맷\",\"source_refs\":[{\"document_id\":\"dc_g9m2_full_kor\",\"model_id\":\"DC-G9M2\",\"page\":798}],\"supported_by_sources\":true,\"needs_more_context\":false}",
+      "parsed_answer": {
+        "answer": "DC-G9M2 매뉴얼 798쪽에서 확인하세요. [설정] > [카드/파일] > [카드 포맷]으로 진행합니다.",
+        "intent_summary": "카드 포맷",
+        "source_refs": [
+          {
+            "document_id": "dc_g9m2_full_kor",
+            "model_id": "DC-G9M2",
+            "page": 798
+          }
+        ],
+        "supported_by_sources": true,
+        "needs_more_context": false
+      },
+      "retrieved_sources": [
+        {
+          "source_id": "S1",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 597,
+          "section_title": "[설정] 메뉴([카드/파일])",
+          "summary": "[카드 포맷]",
+          "evidence_text": "[설정] 메뉴([카드/파일])\n: 기본 설정\n[카드 포맷]\n[카드 슬롯 1] / [카드 슬롯 2]\n카드를 포맷합니다(초기화). 사용하기 전에 카메라에서 카드를 포맷하십시오.\n• 카드를 포맷하면 카드에 저장되어 있는 모든 데이터가 삭제되고 삭제된 데이터는 복구할 수 없습니다. 카드를 포맷하기 전에 필요한 데이터의 백업을 저장하십시오.\n• 포맷하는 동안 카메라를 끄거나 다른 조작을 하지 마십시오.\n• 포맷을 진행하는 동안 카메라를 끄지 마십시오.\n• 카드를 PC 또는 다른 장치에서 포맷한 경우에는 카메라에서 다시 포맷하십시오.\n• 카드에 저장된 카메라 설정 정보를 유지하면서 카드를포맷할 수 있습니다. ([카 메라 설정을 저장/복원]: 613)"
+        },
+        {
+          "source_id": "S2",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 798,
+          "section_title": "[설정]: [카드/파일]",
+          "summary": "[카드 포맷]",
+          "evidence_text": "[설정]: [카드/파일]\n[카드 포맷]\n—\n[더블 카드 슬롯 기 능]\n[촬영 방법]\n[ ]\n\n\n[대상 카드 슬롯]\n[ ]\n\n\n[USB-SSD]\n[OFF]\n\n[폴더 / 파일 설정]\n[폴더 선택]\n—\n[새폴더 생성]\n—\n[파일 이름 설정]\n[폴더 번호 링크]\n\n\n[파일 번호 리셋]\n—\n[저작권 정보]\n[사진작가]\n[OFF]\n\n\n[저작권자]\n[OFF]\n\n\n[저작권 정보 표시]\n—"
+        }
+      ],
+      "latency_ms": 5473.455542000011,
+      "prompt_tokens": 282,
+      "completion_tokens": 39,
+      "total_tokens": 321,
+      "output_chars": 235,
+      "json_valid": true,
+      "json_recoverable": true,
+      "answer_relevance_pass": false,
+      "korean_intent_pass": true,
+      "source_citation_pass": true,
+      "pdf_source_faithfulness_pass": false,
+      "unsupported_handling_pass": true,
+      "overall_pass": false,
+      "error_message": "quality gate failed"
+    },
+    {
+      "model_id": "hf.co/unsloth/gemma-4-12B-it-qat-GGUF:UD-Q4_K_XL",
+      "answer_mode": "card_answer_rewrite",
+      "case_id": "g9m2_card_format",
+      "query": "카드 포맷",
+      "raw_answer": "{\"answer\":\"DC-G9M2 매뉴얼 798쪽에서 확인하세요. [설정]에서 [카드/파일]의 [카드 포맷]을 선택하세요.\",\"intent_summary\":\"카드 포맷\",\"source_refs\":[{\"document_id\":\"dc_g9m2_full_kor\",\"model_id\":\"DC-G9M2\",\"page\":798}],\"supported_by_sources\":true,\"needs_more_context\":false}",
+      "parsed_answer": {
+        "answer": "DC-G9M2 매뉴얼 798쪽에서 확인하세요. [설정]에서 [카드/파일]의 [카드 포맷]을 선택하세요.",
+        "intent_summary": "카드 포맷",
+        "source_refs": [
+          {
+            "document_id": "dc_g9m2_full_kor",
+            "model_id": "DC-G9M2",
+            "page": 798
+          }
+        ],
+        "supported_by_sources": true,
+        "needs_more_context": false
+      },
+      "retrieved_sources": [
+        {
+          "source_id": "S1",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 597,
+          "section_title": "[설정] 메뉴([카드/파일])",
+          "summary": "[카드 포맷]",
+          "evidence_text": "[설정] 메뉴([카드/파일])\n: 기본 설정\n[카드 포맷]\n[카드 슬롯 1] / [카드 슬롯 2]\n카드를 포맷합니다(초기화). 사용하기 전에 카메라에서 카드를 포맷하십시오.\n• 카드를 포맷하면 카드에 저장되어 있는 모든 데이터가 삭제되고 삭제된 데이터는 복구할 수 없습니다. 카드를 포맷하기 전에 필요한 데이터의 백업을 저장하십시오.\n• 포맷하는 동안 카메라를 끄거나 다른 조작을 하지 마십시오.\n• 포맷을 진행하는 동안 카메라를 끄지 마십시오.\n• 카드를 PC 또는 다른 장치에서 포맷한 경우에는 카메라에서 다시 포맷하십시오.\n• 카드에 저장된 카메라 설정 정보를 유지하면서 카드를포맷할 수 있습니다. ([카 메라 설정을 저장/복원]: 613)"
+        },
+        {
+          "source_id": "S2",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 798,
+          "section_title": "[설정]: [카드/파일]",
+          "summary": "[카드 포맷]",
+          "evidence_text": "[설정]: [카드/파일]\n[카드 포맷]\n—\n[더블 카드 슬롯 기 능]\n[촬영 방법]\n[ ]\n\n\n[대상 카드 슬롯]\n[ ]\n\n\n[USB-SSD]\n[OFF]\n\n[폴더 / 파일 설정]\n[폴더 선택]\n—\n[새폴더 생성]\n—\n[파일 이름 설정]\n[폴더 번호 링크]\n\n\n[파일 번호 리셋]\n—\n[저작권 정보]\n[사진작가]\n[OFF]\n\n\n[저작권자]\n[OFF]\n\n\n[저작권 정보 표시]\n—"
+        }
+      ],
+      "latency_ms": 2205.7440830103587,
+      "prompt_tokens": 286,
+      "completion_tokens": 39,
+      "total_tokens": 325,
+      "output_chars": 233,
+      "json_valid": true,
+      "json_recoverable": true,
+      "answer_relevance_pass": false,
+      "korean_intent_pass": true,
+      "source_citation_pass": true,
+      "pdf_source_faithfulness_pass": false,
+      "unsupported_handling_pass": true,
+      "overall_pass": false,
+      "error_message": "quality gate failed"
+    },
+    {
+      "model_id": "card_template",
+      "answer_mode": "card_template",
+      "case_id": "g9m2_live_view_composite",
+      "query": "라이브 뷰 합성",
+      "raw_answer": "{\"answer\":\"DC-G9M2 매뉴얼 253쪽에서 확인하세요. [라이브 뷰 합성] 이미지가 여러 번 반복 촬영되면서 더 밝게 변하는 부분만 합성됩니다. 설정한 노출 시간(셔터 속도)으로 촬영하여 합성된 이미지가 표시되어 촬 영을 진행하면서 이미지를 확인할 수 있습니다. 이...\",\"intent_summary\":\"라이브 뷰 합성\",\"source_refs\":[{\"document_id\":\"dc_g9m2_full_kor\",\"model_id\":\"DC-G9M2\",\"page\":253}],\"supported_by_sources\":true,\"needs_more_context\":false}",
+      "parsed_answer": {
+        "answer": "DC-G9M2 매뉴얼 253쪽에서 확인하세요. [라이브 뷰 합성] 이미지가 여러 번 반복 촬영되면서 더 밝게 변하는 부분만 합성됩니다. 설정한 노출 시간(셔터 속도)으로 촬영하여 합성된 이미지가 표시되어 촬 영을 진행하면서 이미지를 확인할 수 있습니다. 이...",
+        "intent_summary": "라이브 뷰 합성",
+        "source_refs": [
+          {
+            "document_id": "dc_g9m2_full_kor",
+            "model_id": "DC-G9M2",
+            "page": 253
+          }
+        ],
+        "supported_by_sources": true,
+        "needs_more_context": false
+      },
+      "retrieved_sources": [
+        {
+          "source_id": "S1",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 253,
+          "section_title": "라이브 뷰 합성",
+          "summary": "• [라이브 뷰 합성]([라이브 뷰 합성]: 253)",
+          "evidence_text": "[라이브 뷰 합성]\n이미지가 여러 번 반복 촬영되면서 더 밝게 변하는 부분만 합성됩니다. 설정한 노출 시간(셔터 속도)으로 촬영하여 합성된 이미지가 표시되어 촬 영을 진행하면서 이미지를 확인할 수 있습니다. 이 기능은 촬영의 전체 밝기를 줄일 수 있기 때문에 밝은 야경에서 별이나 불꽃놀이의 빛의 흔적을 촬영할 때 편리합니다.\n• 카메라 움직임을 최소화하기 위해 삼각대를 사용하십시오.\n1 촬영 모드를[M]으로 설정하십시오.\n≥모드 다이얼을 설정하십시오. (촬영 모드 선택하기: 75)\n2 [라이브 뷰 합성]을 설정하십시오.\n≥  [ ]  [ ]  [라이브 뷰 합성]\n3 라이브 뷰 합성 촬영을 시작하십시오.\n≥[시작]을 선택한 후 또는 를 누르십시오."
+        },
+        {
+          "source_id": "S2",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 173,
+          "section_title": "[핀포인트]",
+          "summary": "– [라이브 뷰 합성]",
+          "evidence_text": "• 다음 기능을 사용 중일 때 [ ]를 사용할 수 없습니다:\n– [인터벌 촬영]\n– [라이브 뷰 합성]\n• 초점 모드를 [AFC]로 설정하면 [ ]를 사용할 수 없습니다.\n• AF 모드 선택 화면에 표시할 AF 모드 항목을 설정할 수 있습니다: ([AF 모드 보이기/숨기기]: 566)"
+        },
+        {
+          "source_id": "S3",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 221,
+          "section_title": " 연사 사진 촬영 시 노출",
+          "summary": "– [라이브 뷰 합성]",
+          "evidence_text": "• 연사 사진을 저장하는 데 시간이 걸릴 수 있습니다. 저장하는 동안 연사 사진을 계속 촬영하면 촬영 가능한 최대 프레임 수가 줄어듭 니다. 연사 사진을 촬영할 때 고속 카드를 사용할 것을 권장합니다.\n• 다음 기능을 사용하는 동안에는 연사 사진을 촬영할 수 없습니다:\n– [라이브 뷰 합성]\nSH 연사 촬영에 대한 참고 사항\n• [셔터 타입]이 [ELEC.]로 고정됩니다.\n• SH 연사 촬영 중에 설정할 수 있는 셔터 속도에는 제한이 있습니다.\n– [SH75]/[SH75 PRE]: 최소 1/80 – [SH60]/[SH60 PRE]: 최소 1/60 – [SH20]/[SH20 PRE]: 최소 1/60\n• 연사 촬영 중에는 구경 값이 고정됩니다.\n• 촬영된 이미지는 연사 사진 그룹으로 저장됩니다. (그룹 이미지"
+        }
+      ],
+      "latency_ms": 0.0,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "output_chars": 325,
+      "json_valid": true,
+      "json_recoverable": true,
+      "answer_relevance_pass": true,
+      "korean_intent_pass": true,
+      "source_citation_pass": true,
+      "pdf_source_faithfulness_pass": true,
+      "unsupported_handling_pass": true,
+      "overall_pass": true,
+      "error_message": null
+    },
+    {
+      "model_id": "hf.co/unsloth/gemma-4-E4B-it-qat-GGUF:UD-Q4_K_XL",
+      "answer_mode": "card_answer_rewrite",
+      "case_id": "g9m2_live_view_composite",
+      "query": "라이브 뷰 합성",
+      "raw_answer": "{\"answer\":\"라이브 뷰 합성: DC-G9M2 매뉴얼 253쪽에서 확인하세요. 여러 번 반복 촬영되면서 더 밝게 변하는 부분만 합성됩니다.\",\"intent_summary\":\"라이브 뷰 합성\",\"source_refs\":[{\"document_id\":\"dc_g9m2_full_kor\",\"model_id\":\"DC-G9M2\",\"page\":253}],\"supported_by_sources\":true,\"needs_more_context\":false}",
+      "parsed_answer": {
+        "answer": "라이브 뷰 합성: DC-G9M2 매뉴얼 253쪽에서 확인하세요. 여러 번 반복 촬영되면서 더 밝게 변하는 부분만 합성됩니다.",
+        "intent_summary": "라이브 뷰 합성",
+        "source_refs": [
+          {
+            "document_id": "dc_g9m2_full_kor",
+            "model_id": "DC-G9M2",
+            "page": 253
+          }
+        ],
+        "supported_by_sources": true,
+        "needs_more_context": false
+      },
+      "retrieved_sources": [
+        {
+          "source_id": "S1",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 253,
+          "section_title": "라이브 뷰 합성",
+          "summary": "• [라이브 뷰 합성]([라이브 뷰 합성]: 253)",
+          "evidence_text": "[라이브 뷰 합성]\n이미지가 여러 번 반복 촬영되면서 더 밝게 변하는 부분만 합성됩니다. 설정한 노출 시간(셔터 속도)으로 촬영하여 합성된 이미지가 표시되어 촬 영을 진행하면서 이미지를 확인할 수 있습니다. 이 기능은 촬영의 전체 밝기를 줄일 수 있기 때문에 밝은 야경에서 별이나 불꽃놀이의 빛의 흔적을 촬영할 때 편리합니다.\n• 카메라 움직임을 최소화하기 위해 삼각대를 사용하십시오.\n1 촬영 모드를[M]으로 설정하십시오.\n≥모드 다이얼을 설정하십시오. (촬영 모드 선택하기: 75)\n2 [라이브 뷰 합성]을 설정하십시오.\n≥  [ ]  [ ]  [라이브 뷰 합성]\n3 라이브 뷰 합성 촬영을 시작하십시오.\n≥[시작]을 선택한 후 또는 를 누르십시오."
+        },
+        {
+          "source_id": "S2",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 173,
+          "section_title": "[핀포인트]",
+          "summary": "– [라이브 뷰 합성]",
+          "evidence_text": "• 다음 기능을 사용 중일 때 [ ]를 사용할 수 없습니다:\n– [인터벌 촬영]\n– [라이브 뷰 합성]\n• 초점 모드를 [AFC]로 설정하면 [ ]를 사용할 수 없습니다.\n• AF 모드 선택 화면에 표시할 AF 모드 항목을 설정할 수 있습니다: ([AF 모드 보이기/숨기기]: 566)"
+        },
+        {
+          "source_id": "S3",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 221,
+          "section_title": " 연사 사진 촬영 시 노출",
+          "summary": "– [라이브 뷰 합성]",
+          "evidence_text": "• 연사 사진을 저장하는 데 시간이 걸릴 수 있습니다. 저장하는 동안 연사 사진을 계속 촬영하면 촬영 가능한 최대 프레임 수가 줄어듭 니다. 연사 사진을 촬영할 때 고속 카드를 사용할 것을 권장합니다.\n• 다음 기능을 사용하는 동안에는 연사 사진을 촬영할 수 없습니다:\n– [라이브 뷰 합성]\nSH 연사 촬영에 대한 참고 사항\n• [셔터 타입]이 [ELEC.]로 고정됩니다.\n• SH 연사 촬영 중에 설정할 수 있는 셔터 속도에는 제한이 있습니다.\n– [SH75]/[SH75 PRE]: 최소 1/80 – [SH60]/[SH60 PRE]: 최소 1/60 – [SH20]/[SH20 PRE]: 최소 1/60\n• 연사 촬영 중에는 구경 값이 고정됩니다.\n• 촬영된 이미지는 연사 사진 그룹으로 저장됩니다. (그룹 이미지"
+        }
+      ],
+      "latency_ms": 6659.222583984956,
+      "prompt_tokens": 263,
+      "completion_tokens": 35,
+      "total_tokens": 298,
+      "output_chars": 248,
+      "json_valid": true,
+      "json_recoverable": true,
+      "answer_relevance_pass": true,
+      "korean_intent_pass": true,
+      "source_citation_pass": true,
+      "pdf_source_faithfulness_pass": true,
+      "unsupported_handling_pass": true,
+      "overall_pass": true,
+      "error_message": null
+    },
+    {
+      "model_id": "hf.co/Qwen/Qwen3-4B-GGUF:Q4_K_M",
+      "answer_mode": "card_answer_rewrite",
+      "case_id": "g9m2_live_view_composite",
+      "query": "라이브 뷰 합성",
+      "raw_answer": "{\"answer\":\"Okay, the user wants me to rewrite the verified answer in plain Korean, without any extra information. Let me check the original answer. The original answer says: \\\"DC-G9M2 매뉴얼 253쪽에서 확인하세요. [라이브 뷰 합성] 이미지가 여러 번 반복 촬영되면서 더 밝게 변하는 부분만 합성됩니다. 설정한 노출 시간(셔터 속도)으로 촬영하여 합성된 이미지가 표시되어 촬영을 진행하면서 이미지를 확인할 수 있습니다.\\\" I need to make sure I only use the words and claims from this answer. The user specified not to add any facts, verbs, features, menu names, or options not in the verified answer. Also, keep it to two short sentences. First sentence: \\\"DC-G9M2 매뉴얼 253쪽에서 확인하세요.\\\" That's straightforward. Second part talks about the live view synthesis. The key points are that images are synthesized by repeating shots, and only the brighter parts are combined. Also, using the set exposure time to capture and view the synthesized image during shooting. Wait, the original answer has two sentences\",\"intent_summary\":\"라이브 뷰 합성\",\"source_refs\":[{\"document_id\":\"dc_g9m2_full_kor\",\"model_id\":\"DC-G9M2\",\"page\":253}],\"supported_by_sources\":true,\"needs_more_context\":false}",
+      "parsed_answer": {
+        "answer": "Okay, the user wants me to rewrite the verified answer in plain Korean, without any extra information. Let me check the original answer. The original answer says: \"DC-G9M2 매뉴얼 253쪽에서 확인하세요. [라이브 뷰 합성] 이미지가 여러 번 반복 촬영되면서 더 밝게 변하는 부분만 합성됩니다. 설정한 노출 시간(셔터 속도)으로 촬영하여 합성된 이미지가 표시되어 촬영을 진행하면서 이미지를 확인할 수 있습니다.\" I need to make sure I only use the words and claims from this answer. The user specified not to add any facts, verbs, features, menu names, or options not in the verified answer. Also, keep it to two short sentences. First sentence: \"DC-G9M2 매뉴얼 253쪽에서 확인하세요.\" That's straightforward. Second part talks about the live view synthesis. The key points are that images are synthesized by repeating shots, and only the brighter parts are combined. Also, using the set exposure time to capture and view the synthesized image during shooting. Wait, the original answer has two sentences",
+        "intent_summary": "라이브 뷰 합성",
+        "source_refs": [
+          {
+            "document_id": "dc_g9m2_full_kor",
+            "model_id": "DC-G9M2",
+            "page": 253
+          }
+        ],
+        "supported_by_sources": true,
+        "needs_more_context": false
+      },
+      "retrieved_sources": [
+        {
+          "source_id": "S1",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 253,
+          "section_title": "라이브 뷰 합성",
+          "summary": "• [라이브 뷰 합성]([라이브 뷰 합성]: 253)",
+          "evidence_text": "[라이브 뷰 합성]\n이미지가 여러 번 반복 촬영되면서 더 밝게 변하는 부분만 합성됩니다. 설정한 노출 시간(셔터 속도)으로 촬영하여 합성된 이미지가 표시되어 촬 영을 진행하면서 이미지를 확인할 수 있습니다. 이 기능은 촬영의 전체 밝기를 줄일 수 있기 때문에 밝은 야경에서 별이나 불꽃놀이의 빛의 흔적을 촬영할 때 편리합니다.\n• 카메라 움직임을 최소화하기 위해 삼각대를 사용하십시오.\n1 촬영 모드를[M]으로 설정하십시오.\n≥모드 다이얼을 설정하십시오. (촬영 모드 선택하기: 75)\n2 [라이브 뷰 합성]을 설정하십시오.\n≥  [ ]  [ ]  [라이브 뷰 합성]\n3 라이브 뷰 합성 촬영을 시작하십시오.\n≥[시작]을 선택한 후 또는 를 누르십시오."
+        },
+        {
+          "source_id": "S2",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 173,
+          "section_title": "[핀포인트]",
+          "summary": "– [라이브 뷰 합성]",
+          "evidence_text": "• 다음 기능을 사용 중일 때 [ ]를 사용할 수 없습니다:\n– [인터벌 촬영]\n– [라이브 뷰 합성]\n• 초점 모드를 [AFC]로 설정하면 [ ]를 사용할 수 없습니다.\n• AF 모드 선택 화면에 표시할 AF 모드 항목을 설정할 수 있습니다: ([AF 모드 보이기/숨기기]: 566)"
+        },
+        {
+          "source_id": "S3",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 221,
+          "section_title": " 연사 사진 촬영 시 노출",
+          "summary": "– [라이브 뷰 합성]",
+          "evidence_text": "• 연사 사진을 저장하는 데 시간이 걸릴 수 있습니다. 저장하는 동안 연사 사진을 계속 촬영하면 촬영 가능한 최대 프레임 수가 줄어듭 니다. 연사 사진을 촬영할 때 고속 카드를 사용할 것을 권장합니다.\n• 다음 기능을 사용하는 동안에는 연사 사진을 촬영할 수 없습니다:\n– [라이브 뷰 합성]\nSH 연사 촬영에 대한 참고 사항\n• [셔터 타입]이 [ELEC.]로 고정됩니다.\n• SH 연사 촬영 중에 설정할 수 있는 셔터 속도에는 제한이 있습니다.\n– [SH75]/[SH75 PRE]: 최소 1/80 – [SH60]/[SH60 PRE]: 최소 1/60 – [SH20]/[SH20 PRE]: 최소 1/60\n• 연사 촬영 중에는 구경 값이 고정됩니다.\n• 촬영된 이미지는 연사 사진 그룹으로 저장됩니다. (그룹 이미지"
+        }
+      ],
+      "latency_ms": 6909.402750025038,
+      "prompt_tokens": 276,
+      "completion_tokens": 256,
+      "total_tokens": 532,
+      "output_chars": 1068,
+      "json_valid": true,
+      "json_recoverable": true,
+      "answer_relevance_pass": false,
+      "korean_intent_pass": true,
+      "source_citation_pass": true,
+      "pdf_source_faithfulness_pass": false,
+      "unsupported_handling_pass": true,
+      "overall_pass": false,
+      "error_message": "quality gate failed"
+    },
+    {
+      "model_id": "hf.co/mradermacher/supergemma4-e4b-abliterated-i1-GGUF:Q4_K_M",
+      "answer_mode": "card_answer_rewrite",
+      "case_id": "g9m2_live_view_composite",
+      "query": "라이브 뷰 합성",
+      "raw_answer": "{\"answer\":\"라이브 뷰 합성: DC-G9M2 매뉴얼 253쪽을 확인하세요. 여러 번 반복 촬영되어 밝아지는 부분만 합성됩니다.\",\"intent_summary\":\"라이브 뷰 합성\",\"source_refs\":[{\"document_id\":\"dc_g9m2_full_kor\",\"model_id\":\"DC-G9M2\",\"page\":253}],\"supported_by_sources\":true,\"needs_more_context\":false}",
+      "parsed_answer": {
+        "answer": "라이브 뷰 합성: DC-G9M2 매뉴얼 253쪽을 확인하세요. 여러 번 반복 촬영되어 밝아지는 부분만 합성됩니다.",
+        "intent_summary": "라이브 뷰 합성",
+        "source_refs": [
+          {
+            "document_id": "dc_g9m2_full_kor",
+            "model_id": "DC-G9M2",
+            "page": 253
+          }
+        ],
+        "supported_by_sources": true,
+        "needs_more_context": false
+      },
+      "retrieved_sources": [
+        {
+          "source_id": "S1",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 253,
+          "section_title": "라이브 뷰 합성",
+          "summary": "• [라이브 뷰 합성]([라이브 뷰 합성]: 253)",
+          "evidence_text": "[라이브 뷰 합성]\n이미지가 여러 번 반복 촬영되면서 더 밝게 변하는 부분만 합성됩니다. 설정한 노출 시간(셔터 속도)으로 촬영하여 합성된 이미지가 표시되어 촬 영을 진행하면서 이미지를 확인할 수 있습니다. 이 기능은 촬영의 전체 밝기를 줄일 수 있기 때문에 밝은 야경에서 별이나 불꽃놀이의 빛의 흔적을 촬영할 때 편리합니다.\n• 카메라 움직임을 최소화하기 위해 삼각대를 사용하십시오.\n1 촬영 모드를[M]으로 설정하십시오.\n≥모드 다이얼을 설정하십시오. (촬영 모드 선택하기: 75)\n2 [라이브 뷰 합성]을 설정하십시오.\n≥  [ ]  [ ]  [라이브 뷰 합성]\n3 라이브 뷰 합성 촬영을 시작하십시오.\n≥[시작]을 선택한 후 또는 를 누르십시오."
+        },
+        {
+          "source_id": "S2",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 173,
+          "section_title": "[핀포인트]",
+          "summary": "– [라이브 뷰 합성]",
+          "evidence_text": "• 다음 기능을 사용 중일 때 [ ]를 사용할 수 없습니다:\n– [인터벌 촬영]\n– [라이브 뷰 합성]\n• 초점 모드를 [AFC]로 설정하면 [ ]를 사용할 수 없습니다.\n• AF 모드 선택 화면에 표시할 AF 모드 항목을 설정할 수 있습니다: ([AF 모드 보이기/숨기기]: 566)"
+        },
+        {
+          "source_id": "S3",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 221,
+          "section_title": " 연사 사진 촬영 시 노출",
+          "summary": "– [라이브 뷰 합성]",
+          "evidence_text": "• 연사 사진을 저장하는 데 시간이 걸릴 수 있습니다. 저장하는 동안 연사 사진을 계속 촬영하면 촬영 가능한 최대 프레임 수가 줄어듭 니다. 연사 사진을 촬영할 때 고속 카드를 사용할 것을 권장합니다.\n• 다음 기능을 사용하는 동안에는 연사 사진을 촬영할 수 없습니다:\n– [라이브 뷰 합성]\nSH 연사 촬영에 대한 참고 사항\n• [셔터 타입]이 [ELEC.]로 고정됩니다.\n• SH 연사 촬영 중에 설정할 수 있는 셔터 속도에는 제한이 있습니다.\n– [SH75]/[SH75 PRE]: 최소 1/80 – [SH60]/[SH60 PRE]: 최소 1/60 – [SH20]/[SH20 PRE]: 최소 1/60\n• 연사 촬영 중에는 구경 값이 고정됩니다.\n• 촬영된 이미지는 연사 사진 그룹으로 저장됩니다. (그룹 이미지"
+        }
+      ],
+      "latency_ms": 5045.672749984078,
+      "prompt_tokens": 263,
+      "completion_tokens": 32,
+      "total_tokens": 295,
+      "output_chars": 242,
+      "json_valid": true,
+      "json_recoverable": true,
+      "answer_relevance_pass": true,
+      "korean_intent_pass": true,
+      "source_citation_pass": true,
+      "pdf_source_faithfulness_pass": true,
+      "unsupported_handling_pass": true,
+      "overall_pass": true,
+      "error_message": null
+    },
+    {
+      "model_id": "hf.co/unsloth/gemma-4-12B-it-qat-GGUF:UD-Q4_K_XL",
+      "answer_mode": "card_answer_rewrite",
+      "case_id": "g9m2_live_view_composite",
+      "query": "라이브 뷰 합성",
+      "raw_answer": "{\"answer\":\"라이브 뷰 합성: 이미지가 여러 번 반복 촬영되면서 더 밝게 변하는 부분만 합성됩니다. 설정한 노출 시간으로 촬영하여 합성된 이미지를 확인하며 촬영을 진행할 수 있습니다.\",\"intent_summary\":\"라이브 뷰 합성\",\"source_refs\":[{\"document_id\":\"dc_g9m2_full_kor\",\"model_id\":\"DC-G9M2\",\"page\":253}],\"supported_by_sources\":true,\"needs_more_context\":false}",
+      "parsed_answer": {
+        "answer": "라이브 뷰 합성: 이미지가 여러 번 반복 촬영되면서 더 밝게 변하는 부분만 합성됩니다. 설정한 노출 시간으로 촬영하여 합성된 이미지를 확인하며 촬영을 진행할 수 있습니다.",
+        "intent_summary": "라이브 뷰 합성",
+        "source_refs": [
+          {
+            "document_id": "dc_g9m2_full_kor",
+            "model_id": "DC-G9M2",
+            "page": 253
+          }
+        ],
+        "supported_by_sources": true,
+        "needs_more_context": false
+      },
+      "retrieved_sources": [
+        {
+          "source_id": "S1",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 253,
+          "section_title": "라이브 뷰 합성",
+          "summary": "• [라이브 뷰 합성]([라이브 뷰 합성]: 253)",
+          "evidence_text": "[라이브 뷰 합성]\n이미지가 여러 번 반복 촬영되면서 더 밝게 변하는 부분만 합성됩니다. 설정한 노출 시간(셔터 속도)으로 촬영하여 합성된 이미지가 표시되어 촬 영을 진행하면서 이미지를 확인할 수 있습니다. 이 기능은 촬영의 전체 밝기를 줄일 수 있기 때문에 밝은 야경에서 별이나 불꽃놀이의 빛의 흔적을 촬영할 때 편리합니다.\n• 카메라 움직임을 최소화하기 위해 삼각대를 사용하십시오.\n1 촬영 모드를[M]으로 설정하십시오.\n≥모드 다이얼을 설정하십시오. (촬영 모드 선택하기: 75)\n2 [라이브 뷰 합성]을 설정하십시오.\n≥  [ ]  [ ]  [라이브 뷰 합성]\n3 라이브 뷰 합성 촬영을 시작하십시오.\n≥[시작]을 선택한 후 또는 를 누르십시오."
+        },
+        {
+          "source_id": "S2",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 173,
+          "section_title": "[핀포인트]",
+          "summary": "– [라이브 뷰 합성]",
+          "evidence_text": "• 다음 기능을 사용 중일 때 [ ]를 사용할 수 없습니다:\n– [인터벌 촬영]\n– [라이브 뷰 합성]\n• 초점 모드를 [AFC]로 설정하면 [ ]를 사용할 수 없습니다.\n• AF 모드 선택 화면에 표시할 AF 모드 항목을 설정할 수 있습니다: ([AF 모드 보이기/숨기기]: 566)"
+        },
+        {
+          "source_id": "S3",
+          "document_id": "dc_g9m2_full_kor",
+          "model_id": "DC-G9M2",
+          "page": 221,
+          "section_title": " 연사 사진 촬영 시 노출",
+          "summary": "– [라이브 뷰 합성]",
+          "evidence_text": "• 연사 사진을 저장하는 데 시간이 걸릴 수 있습니다. 저장하는 동안 연사 사진을 계속 촬영하면 촬영 가능한 최대 프레임 수가 줄어듭 니다. 연사 사진을 촬영할 때 고속 카드를 사용할 것을 권장합니다.\n• 다음 기능을 사용하는 동안에는 연사 사진을 촬영할 수 없습니다:\n– [라이브 뷰 합성]\nSH 연사 촬영에 대한 참고 사항\n• [셔터 타입]이 [ELEC.]로 고정됩니다.\n• SH 연사 촬영 중에 설정할 수 있는 셔터 속도에는 제한이 있습니다.\n– [SH75]/[SH75 PRE]: 최소 1/80 – [SH60]/[SH60 PRE]: 최소 1/60 – [SH20]/[SH20 PRE]: 최소 1/60\n• 연사 촬영 중에는 구경 값이 고정됩니다.\n• 촬영된 이미지는 연사 사진 그룹으로 저장됩니다. (그룹 이미지"
+        }
+      ],
+      "latency_ms": 2255.863083002623,
+      "prompt_tokens": 267,
+      "completion_tokens": 40,
+      "total_tokens": 307,
+      "output_chars": 274,
+      "json_valid": true,
+      "json_recoverable": true,
+      "answer_relevance_pass": false,
+      "korean_intent_pass": true,
+      "source_citation_pass": true,
+      "pdf_source_faithfulness_pass": false,
+      "unsupported_handling_pass": true,
+      "overall_pass": false,
+      "error_message": "quality gate failed"
+    },
+    {
+      "model_id": "card_template",
+      "answer_mode": "card_template",
+      "case_id": "unsupported_no_pdf_evidence",
+      "query": "DC-G9M2에서 순간이동 촬영 기능은 어디서 설정해?",
+      "raw_answer": "{\"answer\":\"검색된 PDF 근거가 없습니다. 관련 페이지를 먼저 확인해야 합니다.\",\"intent_summary\":\"DC-G9M2에서 순간이동 촬영 기능은 어디서 설정해?\",\"source_refs\":[],\"supported_by_sources\":false,\"needs_more_context\":true}",
+      "parsed_answer": {
+        "answer": "검색된 PDF 근거가 없습니다. 관련 페이지를 먼저 확인해야 합니다.",
+        "intent_summary": "DC-G9M2에서 순간이동 촬영 기능은 어디서 설정해?",
+        "source_refs": [],
+        "supported_by_sources": false,
+        "needs_more_context": true
+      },
+      "retrieved_sources": [],
+      "latency_ms": 0.0,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "output_chars": 173,
+      "json_valid": true,
+      "json_recoverable": true,
+      "answer_relevance_pass": true,
+      "korean_intent_pass": true,
+      "source_citation_pass": true,
+      "pdf_source_faithfulness_pass": true,
+      "unsupported_handling_pass": true,
+      "overall_pass": true,
+      "error_message": null
+    },
+    {
+      "model_id": "hf.co/unsloth/gemma-4-E4B-it-qat-GGUF:UD-Q4_K_XL",
+      "answer_mode": "card_answer_rewrite",
+      "case_id": "unsupported_no_pdf_evidence",
+      "query": "DC-G9M2에서 순간이동 촬영 기능은 어디서 설정해?",
+      "raw_answer": "{\"answer\":\"검색된 PDF 근거가 없습니다. 관련 페이지를 먼저 확인해야 합니다.\",\"intent_summary\":\"DC-G9M2에서 순간이동 촬영 기능은 어디서 설정해?\",\"source_refs\":[],\"supported_by_sources\":false,\"needs_more_context\":true}",
+      "parsed_answer": {
+        "answer": "검색된 PDF 근거가 없습니다. 관련 페이지를 먼저 확인해야 합니다.",
+        "intent_summary": "DC-G9M2에서 순간이동 촬영 기능은 어디서 설정해?",
+        "source_refs": [],
+        "supported_by_sources": false,
+        "needs_more_context": true
+      },
+      "retrieved_sources": [],
+      "latency_ms": 5862.599624990253,
+      "prompt_tokens": 197,
+      "completion_tokens": 18,
+      "total_tokens": 215,
+      "output_chars": 173,
+      "json_valid": true,
+      "json_recoverable": true,
+      "answer_relevance_pass": true,
+      "korean_intent_pass": true,
+      "source_citation_pass": true,
+      "pdf_source_faithfulness_pass": true,
+      "unsupported_handling_pass": true,
+      "overall_pass": true,
+      "error_message": null
+    },
+    {
+      "model_id": "hf.co/Qwen/Qwen3-4B-GGUF:Q4_K_M",
+      "answer_mode": "card_answer_rewrite",
+      "case_id": "unsupported_no_pdf_evidence",
+      "query": "DC-G9M2에서 순간이동 촬영 기능은 어디서 설정해?",
+      "raw_answer": "{\"answer\":\"Okay, the user is asking where to set the instant move shooting function on the DC-G9M2. The verified answer says there's no PDF reference found and that related pages need to be checked first. So I need to translate that into Korean without adding any extra info. Just two short sentences. Let me make sure I don't include any other details or verbs. The answer should be straightforward, mentioning the lack of PDF evidence and the need to check related pages. </think> 검색된 PDF 근거가 없습니다. 관련 페이지를 먼저 확인해야 합니다.\",\"intent_summary\":\"DC-G9M2에서 순간이동 촬영 기능은 어디서 설정해?\",\"source_refs\":[],\"supported_by_sources\":false,\"needs_more_context\":true}",
+      "parsed_answer": {
+        "answer": "Okay, the user is asking where to set the instant move shooting function on the DC-G9M2. The verified answer says there's no PDF reference found and that related pages need to be checked first. So I need to translate that into Korean without adding any extra info. Just two short sentences. Let me make sure I don't include any other details or verbs. The answer should be straightforward, mentioning the lack of PDF evidence and the need to check related pages. </think> 검색된 PDF 근거가 없습니다. 관련 페이지를 먼저 확인해야 합니다.",
+        "intent_summary": "DC-G9M2에서 순간이동 촬영 기능은 어디서 설정해?",
+        "source_refs": [],
+        "supported_by_sources": false,
+        "needs_more_context": true
+      },
+      "retrieved_sources": [],
+      "latency_ms": 4920.390042010695,
+      "prompt_tokens": 194,
+      "completion_tokens": 116,
+      "total_tokens": 310,
+      "output_chars": 645,
+      "json_valid": true,
+      "json_recoverable": true,
+      "answer_relevance_pass": true,
+      "korean_intent_pass": true,
+      "source_citation_pass": true,
+      "pdf_source_faithfulness_pass": true,
+      "unsupported_handling_pass": true,
+      "overall_pass": true,
+      "error_message": null
+    },
+    {
+      "model_id": "hf.co/mradermacher/supergemma4-e4b-abliterated-i1-GGUF:Q4_K_M",
+      "answer_mode": "card_answer_rewrite",
+      "case_id": "unsupported_no_pdf_evidence",
+      "query": "DC-G9M2에서 순간이동 촬영 기능은 어디서 설정해?",
+      "raw_answer": "{\"answer\":\"검색된 PDF 근거가 없습니다. 관련 페이지를 먼저 확인해야 합니다.\",\"intent_summary\":\"DC-G9M2에서 순간이동 촬영 기능은 어디서 설정해?\",\"source_refs\":[],\"supported_by_sources\":false,\"needs_more_context\":true}",
+      "parsed_answer": {
+        "answer": "검색된 PDF 근거가 없습니다. 관련 페이지를 먼저 확인해야 합니다.",
+        "intent_summary": "DC-G9M2에서 순간이동 촬영 기능은 어디서 설정해?",
+        "source_refs": [],
+        "supported_by_sources": false,
+        "needs_more_context": true
+      },
+      "retrieved_sources": [],
+      "latency_ms": 4724.553666979773,
+      "prompt_tokens": 197,
+      "completion_tokens": 18,
+      "total_tokens": 215,
+      "output_chars": 173,
+      "json_valid": true,
+      "json_recoverable": true,
+      "answer_relevance_pass": true,
+      "korean_intent_pass": true,
+      "source_citation_pass": true,
+      "pdf_source_faithfulness_pass": true,
+      "unsupported_handling_pass": true,
+      "overall_pass": true,
+      "error_message": null
+    },
+    {
+      "model_id": "hf.co/unsloth/gemma-4-12B-it-qat-GGUF:UD-Q4_K_XL",
+      "answer_mode": "card_answer_rewrite",
+      "case_id": "unsupported_no_pdf_evidence",
+      "query": "DC-G9M2에서 순간이동 촬영 기능은 어디서 설정해?",
+      "raw_answer": "{\"answer\":\"검색된 PDF 근거가 없습니다. 관련 페이지를 먼저 확인해야 합니다.\",\"intent_summary\":\"DC-G9M2에서 순간이동 촬영 기능은 어디서 설정해?\",\"source_refs\":[],\"supported_by_sources\":false,\"needs_more_context\":true}",
+      "parsed_answer": {
+        "answer": "검색된 PDF 근거가 없습니다. 관련 페이지를 먼저 확인해야 합니다.",
+        "intent_summary": "DC-G9M2에서 순간이동 촬영 기능은 어디서 설정해?",
+        "source_refs": [],
+        "supported_by_sources": false,
+        "needs_more_context": true
+      },
+      "retrieved_sources": [],
+      "latency_ms": 1403.909125016071,
+      "prompt_tokens": 201,
+      "completion_tokens": 18,
+      "total_tokens": 219,
+      "output_chars": 173,
+      "json_valid": true,
+      "json_recoverable": true,
+      "answer_relevance_pass": true,
+      "korean_intent_pass": true,
+      "source_citation_pass": true,
+      "pdf_source_faithfulness_pass": true,
+      "unsupported_handling_pass": true,
+      "overall_pass": true,
+      "error_message": null
+    }
+  ]
+}

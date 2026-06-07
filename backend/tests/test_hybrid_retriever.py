@@ -131,6 +131,50 @@ def test_hybrid_retriever_handles_natural_language_setting_query(
     assert response.cards[0].sources[0].model_id == "DC-G9M2"
 
 
+def test_hybrid_retriever_promotes_menu_reference_page(
+    tmp_path: Path,
+) -> None:
+    chunks_dir = tmp_path / "chunks"
+    chunks_dir.mkdir()
+    menu_chunk = hybrid_chunk(
+        chunk_id="sample_manual:opendl:535:1",
+    ).model_copy(
+        update={
+            "page_start": 535,
+            "page_end": 535,
+            "section_title": "[기타 (사진)]",
+            "content": "• [라이브 뷰 합성]([라이브 뷰 합성]: 253)",
+        },
+    )
+    _ = (chunks_dir / "sample_manual.jsonl").write_text(
+        menu_chunk.model_dump_json() + "\n",
+        encoding="utf-8",
+    )
+    index_path = tmp_path / "fts" / "lumix_manuals.sqlite3"
+    _ = build_fts_index(chunks_dir=chunks_dir, index_path=index_path)
+    registry_dir, pages_dir = write_hybrid_source_validation_fixture(
+        tmp_path=tmp_path,
+        pages=(253, 535),
+    )
+    retriever = HybridRetriever(
+        index_path=index_path,
+        registry_dir=registry_dir,
+        pages_dir=pages_dir,
+        models=(hybrid_model("DC-G9M2", "LUMIX G9II"),),
+    )
+
+    response = retriever.search(
+        SearchRequest(query="G9M2 라이브 뷰 합성", model_ids=["DC-G9M2"]),
+    )
+
+    assert response.retrieval_status == "ok"
+    assert response.cards[0].sources[0].page == 253
+    assert response.cards[0].sources[0].section_title == "라이브 뷰 합성"
+    assert (
+        response.cards[0].sources[0].viewer_url == "/api/viewer/sample_manual/pages/253"
+    )
+
+
 def test_hybrid_retriever_drops_unvalidated_source_cards(
     tmp_path: Path,
 ) -> None:

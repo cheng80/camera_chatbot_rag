@@ -60,6 +60,17 @@ LOCAL_MODEL_CANDIDATES: tuple[LocalModelCandidate, ...] = (
         ),
     ),
     LocalModelCandidate(
+        role="comparison_llm",
+        model_id="hf.co/Qwen/Qwen3-4B-GGUF:Q4_K_M",
+        hf_ref="hf.co/Qwen/Qwen3-4B-GGUF:Q4_K_M",
+        runtime="llama.cpp, Ollama, LM Studio, or any OpenAI-compatible server",
+        memory_note="16GB Mac smaller Qwen3 comparison candidate.",
+        use_case=(
+            "Compare short card-template rewrite latency and output contract "
+            "against E4B models."
+        ),
+    ),
+    LocalModelCandidate(
         role="embedding",
         model_id="bge-m3",
         hf_ref="BAAI/bge-m3",

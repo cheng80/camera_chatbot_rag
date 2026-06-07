@@ -7,7 +7,7 @@ from pydantic import ValidationError
 
 from backend.app.evaluation.rag_model_quality_gates import (
     answer_relevance_pass,
-    has_korean_text,
+    korean_intent_pass,
     pdf_source_faithfulness_pass,
     sources_relevant_to_query,
     unsupported_handling_pass,
@@ -143,8 +143,9 @@ def _score_parsed_answer(
     json_strict: bool,
     json_recoverable: bool,
 ) -> RagModelQualityScore:
-    korean_intent_pass = has_korean_text(parsed.answer) and has_korean_text(
-        parsed.intent_summary,
+    passes_korean_intent = korean_intent_pass(
+        parsed=parsed,
+        query=scoring_input.query,
     )
     answer_relevant = answer_relevance_pass(
         parsed=parsed,
@@ -171,7 +172,7 @@ def _score_parsed_answer(
         sources_relevant=sources_relevant,
     )
     overall_pass = (
-        korean_intent_pass
+        passes_korean_intent
         and answer_relevant
         and source_citation_pass
         and pdf_source_faithfulness
@@ -193,7 +194,7 @@ def _score_parsed_answer(
         json_valid=json_strict,
         json_recoverable=json_recoverable,
         answer_relevance_pass=answer_relevant,
-        korean_intent_pass=korean_intent_pass,
+        korean_intent_pass=passes_korean_intent,
         source_citation_pass=source_citation_pass,
         pdf_source_faithfulness_pass=pdf_source_faithfulness,
         unsupported_handling_pass=unsupported_handling,

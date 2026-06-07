@@ -17,7 +17,10 @@ def _zebra_source() -> RetrievedSourceForEval:
         page=415,
         section_title="제브라 패턴",
         summary="제브라 패턴 설정 설명",
-        evidence_text="제브라 패턴은 지정한 밝기보다 밝은 부분에 줄무늬를 표시합니다.",
+        evidence_text=(
+            "제브라 패턴은 지정한 밝기보다 밝은 부분에 줄무늬를 표시합니다. "
+            "범위 폭과 기준 값을 설정할 수 있습니다."
+        ),
     )
 
 
@@ -68,6 +71,91 @@ def test_score_rag_model_answer_accepts_grounded_korean_json() -> None:
     assert score.korean_intent_pass is True
     assert score.source_citation_pass is True
     assert score.pdf_source_faithfulness_pass is True
+    assert score.overall_pass is True
+
+
+def test_score_rag_model_answer_accepts_grounded_stem_variant() -> None:
+    score = score_rag_model_answer(
+        RagAnswerScoringInput(
+            model_id="model-a",
+            answer_mode="llm_inference",
+            case_id="case-1",
+            query="제브라 패턴 어디서 설정해?",
+            raw_answer=(
+                '{"answer":"제브라 패턴: 기준 값보다 밝은 부분에 줄무늬가 '
+                '표시되며, 범위 폭과 기준 값을 설정하여 표시 범위를 '
+                '지정할 수 있습니다.",'
+                '"intent_summary":"제브라 패턴",'
+                '"source_refs":[{"document_id":"dc_g9m2_full_kor",'
+                '"model_id":"DC-G9M2","page":415}],'
+                '"supported_by_sources":true,'
+                '"needs_more_context":false}'
+            ),
+            retrieved_sources=(_zebra_source(),),
+        ),
+    )
+
+    assert score.answer_relevance_pass is True
+    assert score.pdf_source_faithfulness_pass is True
+    assert score.overall_pass is True
+
+
+def test_score_rag_model_answer_accepts_compound_alias_spacing_variant() -> None:
+    score = score_rag_model_answer(
+        RagAnswerScoringInput(
+            model_id="model-a",
+            answer_mode="llm_inference",
+            case_id="case-1",
+            query="제브라패턴 어디서 설정해?",
+            raw_answer=(
+                '{"answer":"제브라 패턴은 밝은 부분에 줄무늬를 표시합니다.",'
+                '"intent_summary":"제브라 패턴",'
+                '"source_refs":[{"document_id":"dc_g9m2_full_kor",'
+                '"model_id":"DC-G9M2","page":415}],'
+                '"supported_by_sources":true,'
+                '"needs_more_context":false}'
+            ),
+            retrieved_sources=(_zebra_source(),),
+        ),
+    )
+
+    assert score.answer_relevance_pass is True
+    assert score.pdf_source_faithfulness_pass is True
+    assert score.overall_pass is True
+
+
+def test_score_rag_model_answer_accepts_english_feature_keyword_intent() -> None:
+    score = score_rag_model_answer(
+        RagAnswerScoringInput(
+            model_id="model-a",
+            answer_mode="llm_inference",
+            case_id="case-1",
+            query="Boost I.S.",
+            raw_answer=(
+                '{"answer":"이미지 손떨림 보정 설정에서 확인하세요.",'
+                '"intent_summary":"Boost I.S.",'
+                '"source_refs":[{"document_id":"dc_g9m2_full_kor",'
+                '"model_id":"DC-G9M2","page":415}],'
+                '"supported_by_sources":true,'
+                '"needs_more_context":false}'
+            ),
+            retrieved_sources=(
+                RetrievedSourceForEval(
+                    source_id="S1",
+                    document_id="dc_g9m2_full_kor",
+                    model_id="DC-G9M2",
+                    page=415,
+                    section_title="Boost I.S.",
+                    summary="이미지 손떨림 보정 설정",
+                    evidence_text=(
+                        "Boost I.S.는 이미지 손떨림 보정 설정에서 확인합니다."
+                    ),
+                ),
+            ),
+        ),
+    )
+
+    assert score.korean_intent_pass is True
     assert score.overall_pass is True
 
 

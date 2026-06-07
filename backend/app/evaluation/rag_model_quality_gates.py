@@ -6,6 +6,9 @@ from backend.app.evaluation.rag_model_quality_schema import (
     RagModelAnswer,
     RetrievedSourceForEval,
 )
+from backend.app.services.korean_text_normalization import (
+    normalize_korean_compound_aliases,
+)
 
 HANGUL_RE: Final = re.compile(r"[가-힣]")
 TERM_RE: Final = re.compile(r"[0-9A-Za-z가-힣]{2,}")
@@ -17,6 +20,7 @@ ALLOWED_GENERIC_TERMS: Final = {
     "검색",
     "검색된",
     "근거",
+    "관련",
     "내용",
     "대한",
     "방법",
@@ -29,6 +33,8 @@ ALLOWED_GENERIC_TERMS: Final = {
     "사용",
     "사용자",
     "수",
+    "이후",
+    "이용",
     "요약",
     "위치",
     "있으며",
@@ -39,17 +45,23 @@ ALLOWED_GENERIC_TERMS: Final = {
     "기능",
     "대해",
     "옵션",
+    "참고",
+    "참고하십시오",
     "요청",
+    "에서",
         "쪽에서",
         "쪽",
     "페이지",
+    "페이지들",
     "필요합니다",
     "하려면",
     "합니다",
     "해당",
+    "찾으세요",
     "확인",
     "확인하세요",
     "확인할",
+    "통해",
     "있습니다",
     "입니다",
     "내부",
@@ -59,6 +71,13 @@ ALLOWED_GENERIC_TERMS: Final = {
 
 def has_korean_text(value: str) -> bool:
     return HANGUL_RE.search(value) is not None
+
+
+def korean_intent_pass(*, parsed: RagModelAnswer, query: str) -> bool:
+    answer_has_korean = has_korean_text(parsed.answer)
+    if has_korean_text(query):
+        return answer_has_korean and has_korean_text(parsed.intent_summary)
+    return answer_has_korean
 
 
 def answer_relevance_pass(
@@ -131,9 +150,10 @@ def _discriminative_terms(value: str) -> set[str]:
 
 
 def _meaningful_terms(value: str) -> set[str]:
+    normalized_value = normalize_korean_compound_aliases(value)
     return {
         normalized
-        for match in TERM_RE.finditer(value)
+        for match in TERM_RE.finditer(normalized_value)
         if len(normalized := _normalize_term(match.group(0).lower()))
         >= MIN_TERM_LENGTH
     }
@@ -151,16 +171,19 @@ def _normalize_term(term: str) -> str:
         "에서",
         "으로",
         "에게",
+        "보다",
         "쪽",
         "이며",
         "이다",
         "된",
+        "되어",
         "되",
         "하여",
         "되며",
         "할",
         "하",
         "에",
+        "한",
         "의",
         "은",
         "는",

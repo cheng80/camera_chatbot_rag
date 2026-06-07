@@ -8,6 +8,7 @@ from backend.app.schemas.feature_card import (
     SupportedModel,
 )
 from backend.app.schemas.search import NormalizedQuery, SearchRequest, SearchResponse
+from backend.app.services.retrieval_reference_pages import referenced_page_for_query
 from backend.app.services.retrieval_source_validation import (
     SourceValidationContext,
     validate_source_reference_cached,
@@ -48,6 +49,7 @@ def response_from_fts_results(
         for card in (
             _card_from_result(
                 result=result,
+                normalized_query=normalized_query,
                 requested_model_ids=requested_model_ids,
                 validation_context=validation_context,
             )
@@ -185,6 +187,7 @@ def _card_from_vector_result(
 def _card_from_result(
     *,
     result: FtsSearchResult,
+    normalized_query: NormalizedQuery,
     requested_model_ids: tuple[str, ...],
     validation_context: SourceValidationContext,
 ) -> FeatureCard:
@@ -193,11 +196,21 @@ def _card_from_result(
         result_model_ids=result.model_ids,
         requested_model_ids=requested_model_ids,
     )
+    referenced_page = referenced_page_for_query(
+        result=result,
+        normalized_query=normalized_query,
+    )
+    source_page = (
+        referenced_page.page if referenced_page is not None else result.page_start
+    )
+    source_title = (
+        referenced_page.label if referenced_page is not None else feature_name
+    )
     validation_result = validate_source_reference_cached(
         reference=SourceReferenceCandidate(
             document_id=result.document_id,
             model_id=source_id,
-            page=result.page_start,
+            page=source_page,
         ),
         validation_context=validation_context,
     )
@@ -210,11 +223,11 @@ def _card_from_result(
             source=SourceReference(
                 document_id=result.document_id,
                 model_id=source_id,
-                page=result.page_start,
-                section_title=feature_name,
+                page=source_page,
+                section_title=source_title,
                 viewer_url=viewer_url(
                     document_id=result.document_id,
-                    page=result.page_start,
+                    page=source_page,
                     validation_result=validation_result,
                 ),
             ),

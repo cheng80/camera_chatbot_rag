@@ -38,6 +38,16 @@ def test_default_local_model_settings_target_requested_models() -> None:
         in settings.llm_comparison_models
     )
     assert "hf.co/Qwen/Qwen3-8B-GGUF:Q4_K_M" not in settings.llm_comparison_models
+    assert settings.llm_rewrite_enabled is True
+    assert (
+        settings.llm_rewrite_model
+        == "hf.co/unsloth/gemma-4-E4B-it-qat-GGUF:UD-Q4_K_XL"
+    )
+    assert settings.llm_rewrite_fallback_models == [
+        "hf.co/mradermacher/supergemma4-e4b-abliterated-i1-GGUF:Q4_K_M",
+    ]
+    assert settings.llm_rewrite_max_tokens == 128
+    assert settings.llm_rewrite_think is False
 
 
 def test_auto_llm_selection_uses_fast_model_without_thinking() -> None:
@@ -121,6 +131,7 @@ def test_local_model_candidates_include_recommended_roles() -> None:
     assert {candidate.model_id for candidate in comparisons} == {
         "hf.co/unsloth/gemma-4-E4B-it-qat-GGUF:UD-Q4_K_XL",
         "hf.co/Qwen/Qwen3-8B-GGUF:Q4_K_M",
+        "hf.co/Qwen/Qwen3-4B-GGUF:Q4_K_M",
         "hf.co/unsloth/gemma-4-12B-it-qat-GGUF:UD-Q4_K_XL",
     }
     assert embeddings[0].model_id == "bge-m3"

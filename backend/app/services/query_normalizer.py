@@ -7,6 +7,9 @@ from pydantic import BaseModel, ConfigDict, Field
 
 from backend.app.schemas.document import CameraModelRegistryEntry
 from backend.app.schemas.search import NormalizedQuery
+from backend.app.services.korean_text_normalization import (
+    normalize_korean_compound_aliases,
+)
 from backend.app.services.registry import load_registry
 
 DEFAULT_REGISTRY_DIR: Final = Path("data/registry")
@@ -38,9 +41,7 @@ CONTROL_PARTICLE_PATTERN: Final = re.compile(
     f"{PARTICLE_TERM_PATTERN}{CONTROL_LOOKAHEAD_PATTERN}",
 )
 QUERY_SYNONYMS: Final[tuple[tuple[str, str], ...]] = (
-    ("루믹스랩", "LUMIX Lab"),
-    ("오픈게이트", "오픈 게이트"),
-    ("초기설정", "초기 설정"),
+    ("와이파이", "Wi-Fi"),
 )
 
 
@@ -157,7 +158,7 @@ def _strip_query_control_phrases(query: str) -> str:
 
 
 def _apply_query_synonyms(query: str) -> str:
-    normalized = query
+    normalized = normalize_korean_compound_aliases(query)
     for source, target in QUERY_SYNONYMS:
         normalized = normalized.replace(source, target)
     return normalized

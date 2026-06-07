@@ -2,7 +2,13 @@ from typing import ClassVar, Literal
 
 from pydantic import BaseModel, ConfigDict, Field
 
-type RagAnswerMode = Literal["card_template", "llm_inference", "retrieval_only"]
+type RagAnswerMode = Literal[
+    "card_answer_rewrite",
+    "card_template",
+    "card_template_rewrite",
+    "llm_inference",
+    "retrieval_only",
+]
 
 
 class RetrievedSourceForEval(BaseModel):
