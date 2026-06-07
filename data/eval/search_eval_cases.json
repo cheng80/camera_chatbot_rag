@@ -103,8 +103,7 @@
     ],
     "expected_document_id": "dc_g9m2_full_kor",
     "expected_pages": [
-      536,
-      549
+      269
     ],
     "query_type": "english_keyword",
     "feature_category": "stabilization",
@@ -153,7 +152,7 @@
     ],
     "expected_document_id": "dc_g9m2_full_kor",
     "expected_pages": [
-      535
+      253
     ],
     "query_type": "exact_keyword",
     "feature_category": "photo",

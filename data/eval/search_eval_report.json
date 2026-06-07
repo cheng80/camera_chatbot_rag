@@ -171,18 +171,14 @@
       "source_method": "manual_seed",
       "hit_document": true,
       "hit_page": true,
-      "top_rank": 3,
-      "result_count": 5,
+      "top_rank": 1,
+      "result_count": 3,
       "result_pages": [
-        537,
-        549,
         415,
         589,
         796
       ],
       "result_document_ids": [
-        "dc_g9m2_full_kor",
-        "dc_g9m2_full_kor",
         "dc_g9m2_full_kor",
         "dc_g9m2_full_kor",
         "dc_g9m2_full_kor"
@@ -197,17 +193,13 @@
       "hit_document": true,
       "hit_page": true,
       "top_rank": 1,
-      "result_count": 5,
+      "result_count": 3,
       "result_pages": [
         415,
         589,
-        796,
-        537,
-        549
+        796
       ],
       "result_document_ids": [
-        "dc_g9m2_full_kor",
-        "dc_g9m2_full_kor",
         "dc_g9m2_full_kor",
         "dc_g9m2_full_kor",
         "dc_g9m2_full_kor"
@@ -221,18 +213,14 @@
       "source_method": "manual_seed",
       "hit_document": true,
       "hit_page": true,
-      "top_rank": 3,
-      "result_count": 5,
+      "top_rank": 1,
+      "result_count": 3,
       "result_pages": [
-        537,
-        549,
         415,
         589,
         796
       ],
       "result_document_ids": [
-        "dc_g9m2_full_kor",
-        "dc_g9m2_full_kor",
         "dc_g9m2_full_kor",
         "dc_g9m2_full_kor",
         "dc_g9m2_full_kor"
@@ -246,18 +234,14 @@
       "source_method": "manual_seed",
       "hit_document": true,
       "hit_page": true,
-      "top_rank": 3,
-      "result_count": 5,
+      "top_rank": 1,
+      "result_count": 3,
       "result_pages": [
-        537,
-        549,
         415,
         589,
         796
       ],
       "result_document_ids": [
-        "dc_g9m2_full_kor",
-        "dc_g9m2_full_kor",
         "dc_g9m2_full_kor",
         "dc_g9m2_full_kor",
         "dc_g9m2_full_kor"
@@ -272,15 +256,13 @@
       "hit_document": true,
       "hit_page": true,
       "top_rank": 1,
-      "result_count": 4,
+      "result_count": 3,
       "result_pages": [
         266,
-        269,
-        38,
-        784
+        272,
+        8
       ],
       "result_document_ids": [
-        "dc_g9m2_full_kor",
         "dc_g9m2_full_kor",
         "dc_g9m2_full_kor",
         "dc_g9m2_full_kor"
@@ -294,18 +276,14 @@
       "source_method": "manual_seed",
       "hit_document": true,
       "hit_page": true,
-      "top_rank": 2,
-      "result_count": 5,
+      "top_rank": 1,
+      "result_count": 3,
       "result_pages": [
-        38,
         266,
-        536,
-        549,
+        272,
         8
       ],
       "result_document_ids": [
-        "dc_g9m2_full_kor",
-        "dc_g9m2_full_kor",
         "dc_g9m2_full_kor",
         "dc_g9m2_full_kor",
         "dc_g9m2_full_kor"
@@ -320,16 +298,14 @@
       "hit_document": true,
       "hit_page": true,
       "top_rank": 1,
-      "result_count": 5,
+      "result_count": 4,
       "result_pages": [
-        536,
-        549,
+        269,
         784,
         789,
         807
       ],
       "result_document_ids": [
-        "dc_g9m2_full_kor",
         "dc_g9m2_full_kor",
         "dc_g9m2_full_kor",
         "dc_g9m2_full_kor",
@@ -370,18 +346,12 @@
       "hit_document": true,
       "hit_page": true,
       "top_rank": 1,
-      "result_count": 5,
+      "result_count": 2,
       "result_pages": [
         597,
-        798,
-        601,
-        56,
-        630
+        798
       ],
       "result_document_ids": [
-        "dc_g9m2_full_kor",
-        "dc_g9m2_full_kor",
-        "dc_g9m2_full_kor",
         "dc_g9m2_full_kor",
         "dc_g9m2_full_kor"
       ]
@@ -397,7 +367,7 @@
       "top_rank": 1,
       "result_count": 5,
       "result_pages": [
-        535,
+        253,
         173,
         221,
         227,
@@ -420,16 +390,14 @@
       "hit_document": true,
       "hit_page": true,
       "top_rank": 1,
-      "result_count": 5,
+      "result_count": 4,
       "result_pages": [
         1002,
         770,
         775,
-        816,
         15
       ],
       "result_document_ids": [
-        "dc_s1m2_full_kor",
         "dc_s1m2_full_kor",
         "dc_s1m2_full_kor",
         "dc_s1m2_full_kor",
@@ -569,18 +537,14 @@
       "source_method": "manual_seed",
       "hit_document": true,
       "hit_page": true,
-      "top_rank": 2,
-      "result_count": 5,
+      "top_rank": 1,
+      "result_count": 3,
       "result_pages": [
-        40,
         316,
         988,
-        655,
-        670
+        322
       ],
       "result_document_ids": [
-        "dc_s1m2_full_kor",
-        "dc_s1m2_full_kor",
         "dc_s1m2_full_kor",
         "dc_s1m2_full_kor",
         "dc_s1m2_full_kor"
@@ -1244,7 +1208,7 @@
       "result_pages": [
         317,
         516,
-        546,
+        442,
         312,
         329
       ],
@@ -1289,18 +1253,14 @@
       "source_method": "manual_seed",
       "hit_document": true,
       "hit_page": true,
-      "top_rank": 2,
-      "result_count": 5,
+      "top_rank": 1,
+      "result_count": 3,
       "result_pages": [
-        39,
         259,
         862,
-        545,
-        558
+        262
       ],
       "result_document_ids": [
-        "dc_s5m2x_full_kor",
-        "dc_s5m2x_full_kor",
         "dc_s5m2x_full_kor",
         "dc_s5m2x_full_kor",
         "dc_s5m2x_full_kor"
@@ -1319,7 +1279,7 @@
       "result_pages": [
         317,
         516,
-        546,
+        442,
         312,
         329
       ],
@@ -1340,16 +1300,14 @@
       "hit_document": true,
       "hit_page": true,
       "top_rank": 1,
-      "result_count": 5,
+      "result_count": 4,
       "result_pages": [
         1002,
         770,
         775,
-        816,
         15
       ],
       "result_document_ids": [
-        "dc_s1m2_full_kor",
         "dc_s1m2_full_kor",
         "dc_s1m2_full_kor",
         "dc_s1m2_full_kor",

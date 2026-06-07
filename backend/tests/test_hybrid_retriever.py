@@ -175,6 +175,89 @@ def test_hybrid_retriever_promotes_menu_reference_page(
     )
 
 
+def test_hybrid_retriever_keeps_specific_source_when_reference_label_is_broader(
+    tmp_path: Path,
+) -> None:
+    chunks_dir = tmp_path / "chunks"
+    chunks_dir.mkdir()
+    proxy_chunk = hybrid_chunk(
+        chunk_id="sample_manual:opendl:177:1",
+    ).model_copy(
+        update={
+            "page_start": 177,
+            "page_end": 177,
+            "section_title": "4 프록시 촬영을 설정하십시오.",
+            "content": (
+                "프록시 녹화 설정. "
+                "(HDMI를 통한 RAW 데이터 출력 시 프록시 녹화: 585)"
+            ),
+        },
+    )
+    _ = (chunks_dir / "sample_manual.jsonl").write_text(
+        proxy_chunk.model_dump_json() + "\n",
+        encoding="utf-8",
+    )
+    index_path = tmp_path / "fts" / "lumix_manuals.sqlite3"
+    _ = build_fts_index(chunks_dir=chunks_dir, index_path=index_path)
+    registry_dir, pages_dir = write_hybrid_source_validation_fixture(
+        tmp_path=tmp_path,
+        pages=(177, 585),
+    )
+    retriever = HybridRetriever(
+        index_path=index_path,
+        registry_dir=registry_dir,
+        pages_dir=pages_dir,
+        models=(hybrid_model("DC-G9M2", "LUMIX G9II"),),
+    )
+
+    response = retriever.search(
+        SearchRequest(query="프록시 녹화", model_ids=["DC-G9M2"]),
+    )
+
+    assert response.retrieval_status == "ok"
+    assert response.cards[0].sources[0].page == 177
+
+
+def test_hybrid_retriever_keeps_source_when_reference_label_has_no_terms(
+    tmp_path: Path,
+) -> None:
+    chunks_dir = tmp_path / "chunks"
+    chunks_dir.mkdir()
+    spaced_label_chunk = hybrid_chunk(
+        chunk_id="sample_manual:opendl:44:1",
+    ).model_copy(
+        update={
+            "page_start": 44,
+            "page_end": 44,
+            "section_title": "셔터 설정",
+            "content": "셔터 설정입니다. ([화 질]: 135)",
+        },
+    )
+    _ = (chunks_dir / "sample_manual.jsonl").write_text(
+        spaced_label_chunk.model_dump_json() + "\n",
+        encoding="utf-8",
+    )
+    index_path = tmp_path / "fts" / "lumix_manuals.sqlite3"
+    _ = build_fts_index(chunks_dir=chunks_dir, index_path=index_path)
+    registry_dir, pages_dir = write_hybrid_source_validation_fixture(
+        tmp_path=tmp_path,
+        pages=(44, 135),
+    )
+    retriever = HybridRetriever(
+        index_path=index_path,
+        registry_dir=registry_dir,
+        pages_dir=pages_dir,
+        models=(hybrid_model("DC-G9M2", "LUMIX G9II"),),
+    )
+
+    response = retriever.search(
+        SearchRequest(query="셔터 설정", model_ids=["DC-G9M2"]),
+    )
+
+    assert response.retrieval_status == "ok"
+    assert response.cards[0].sources[0].page == 44
+
+
 def test_hybrid_retriever_drops_unvalidated_source_cards(
     tmp_path: Path,
 ) -> None:

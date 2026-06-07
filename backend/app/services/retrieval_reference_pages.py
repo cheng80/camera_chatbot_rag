@@ -12,6 +12,7 @@ REFERENCE_PATTERN: Final = re.compile(
     r"\s*\[?(?P<label>[^\]\n:]+)\]?\s*:\s*(?P<page>\d{1,4})",
 )
 TERM_PATTERN: Final = re.compile(r"[0-9A-Za-z가-힣.]{2,}")
+MAX_REFERENCE_EXTRA_TERMS: Final = 1
 
 
 @dataclass(frozen=True, slots=True)
@@ -31,7 +32,7 @@ def referenced_page_for_query(
         return None
     for referenced_page in _referenced_pages(result.content):
         label_terms = _terms(referenced_page.label)
-        if query_terms.issubset(label_terms) or label_terms.issubset(query_terms):
+        if _terms_match(query_terms=query_terms, label_terms=label_terms):
             return referenced_page
     return None
 
@@ -49,3 +50,14 @@ def _referenced_pages(content: str) -> tuple[ReferencedPage, ...]:
 def _terms(value: str) -> set[str]:
     normalized = normalize_korean_compound_aliases(value).casefold()
     return {match.group(0) for match in TERM_PATTERN.finditer(normalized)}
+
+
+def _terms_match(*, query_terms: set[str], label_terms: set[str]) -> bool:
+    if not label_terms:
+        return False
+    if label_terms.issubset(query_terms):
+        return True
+    return (
+        query_terms.issubset(label_terms)
+        and len(label_terms - query_terms) <= MAX_REFERENCE_EXTRA_TERMS
+    )
