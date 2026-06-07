@@ -56,7 +56,8 @@ MVP에서는 `chunk` 단위로 시작하고, 중복 페이지 축소와 Feature 
 
 ## 다음 결정 필요 항목
 
-- 실제 embedding provider: local model 또는 외부 API
+- 실제 embedding provider: `bge-m3`를 Ollama OpenAI-compatible embedding endpoint로
+  로컬 smoke 완료
 - local vector store: sqlite-vec, FAISS, Chroma 중 선택
 - embedding 생성 비용과 재생성 정책
 - `chunk`에서 `section`으로 승격할 기준

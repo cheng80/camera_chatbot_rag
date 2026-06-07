@@ -227,7 +227,10 @@ PDF 추출(PDF Extraction)
 - 기능 위키 LLM(Feature Wiki LLM): PDF 근거 기반 기능 요약 지식층 생성
 - 그래프 라이트(Graph-lite): 모델, 기능, 문서, 페이지 관계를 그래프로 연결
 - 가이드형 지원 도우미(Guided Support Assistant): 문제 해결 질의를 단계별로 안내
-- 벡터 검색(Vector Search): adapter 경계와 local PoC는 완료, 실제 embedding provider/vector store 선택은 승인 후 진행
+- 로컬 모델 런타임(Local Model Runtime): Ollama 기반 Gemma 4 12B, Gemma 4 E4B,
+  SuperGemma E4B, Qwen3 8B, bge-m3 smoke 완료. 다음은 bge-m3 chunk embedding index 생성이다.
+- 벡터 검색(Vector Search): adapter 경계와 local PoC는 완료, bge-m3 embedding provider
+  smoke도 완료. 다음은 local vector store 선택과 embedding 재생성 정책이다.
 - Elasticsearch: FTS5 한계가 평가로 확인된 뒤 검색 어댑터(Search Adapter)로 도입
 - 검색 평가셋(Search Evaluation Set) 확장: 웹 프로토타입 이후 검색 로그 기반으로 보강
 - Flutter 앱(Flutter App): 웹 MVP 이후 모바일 앱으로 확장

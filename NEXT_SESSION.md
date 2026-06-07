@@ -65,7 +65,13 @@
   - Vector Search adapter seam과 local-only in-memory hash vector PoC 구현
   - HybridRetriever는 FTS5/vector 후보를 동시에 검색하고 source page 기준으로 중복 제거/병합
   - API local vector opt-in: `LUMIX_ENABLE_LOCAL_VECTOR=true`
-  - 실제 embedding provider 또는 Vector DB 도입은 별도 승인 필요
+  - Ollama 기반 로컬 모델 smoke 완료:
+    - LLM: `hf.co/unsloth/gemma-4-12B-it-qat-GGUF:UD-Q4_K_XL`
+    - 비교 LLM: `hf.co/unsloth/gemma-4-E4B-it-qat-GGUF:UD-Q4_K_XL`
+    - 비교 LLM: `hf.co/mradermacher/supergemma4-e4b-abliterated-i1-GGUF:Q4_K_M`
+    - 추천 비교 LLM: `hf.co/Qwen/Qwen3-8B-GGUF:Q4_K_M`
+    - embedding: `bge-m3`
+  - 다음은 bge-m3 chunk embedding index와 vector store 선택
 - 출처/뷰어(Source/Viewer)
   - Source Reference 검증기(Source Reference Validator) 구현 완료
   - `document_id`, `model_id`, 문서-모델 관계, 처리 페이지 범위, viewer URL 가능 여부 검증
