@@ -11,6 +11,7 @@ POST /api/search
 GET  /api/features/{feature_id}
 GET  /api/viewer/{document_id}/pages/{page}
 POST /api/feedback
+POST /api/search/rewrite
 ```
 
 ## Search
@@ -18,9 +19,11 @@ POST /api/feedback
 `POST /api/search`
 
 현재 검색은 SQLite FTS5 색인(Full-Text Search Index)을 기본으로 사용한다.
-검색 청크(Chunk)를 기능 카드(Feature Card)로 매핑하고, `CAMERA_LLM_REWRITE_ENABLED`
-가 켜져 있으면 첫 번째 카드의 `summary`만 짧은 한국어 답변으로 보정한다. 보정은
-카드의 `sources`, `evidence_status`, PDF viewer URL을 변경하지 않는다.
+검색 청크(Chunk)를 기능 카드(Feature Card)로 매핑한다. 기본 검색 응답은 빠른
+deterministic 카드 요약을 반환하고, `CAMERA_LLM_REWRITE_ON_SEARCH_ENABLED`가
+켜져 있을 때만 첫 번째 카드의 `summary`를 즉시 보정한다. 일반 UI에서는 사용자가
+카드를 선택했을 때 `POST /api/search/rewrite`로 해당 카드 하나만 LLM 보정한다.
+보정은 카드의 `sources`, `evidence_status`, PDF viewer URL을 변경하지 않는다.
 
 ## App Config
 
@@ -78,11 +81,49 @@ POST /api/feedback
 검색 응답에 포함되는 카드는 현재 `source_validated` 출처만 반환한다. 검증 가능한
 출처가 없으면 카드를 반환하지 않고 `insufficient_evidence` 상태를 사용한다.
 
+## Selected Card Rewrite
+
+`POST /api/search/rewrite`
+
+선택된 카드 하나의 `feature_name`, deterministic `summary`, `sources`를 받아
+짧은 한국어 `AI 요약`을 생성한다. LLM은 검색, 출처 선택, 페이지 번호 결정을 하지
+않고 검증된 카드 문장만 보정한다. 실패하거나 `CAMERA_LLM_REWRITE_ENABLED=false`이면
+`status=unavailable`과 원본 `summary`를 반환한다.
+
+요청 예시:
+
+```json
+{
+  "query": "기능 버튼",
+  "feature_name": "기능 버튼",
+  "summary": "자주 사용하는 기능들을 버튼에 지정하기",
+  "sources": [
+    {
+      "document_id": "dc_gf9_kor",
+      "model_id": "DC-GF9",
+      "page": 56,
+      "section_title": "기능 버튼들",
+      "viewer_url": "/api/viewer/dc_gf9_kor/pages/56"
+    }
+  ]
+}
+```
+
+응답 예시:
+
+```json
+{
+  "status": "ok",
+  "summary": "기능 버튼: 자주 사용하는 기능을 버튼에 지정합니다."
+}
+```
+
 LLM 보정 설정:
 
 | 환경 변수 | 의미 |
 |---|---|
-| `CAMERA_LLM_REWRITE_ENABLED` | 검색 응답의 첫 번째 카드 summary 보정 여부 |
+| `CAMERA_LLM_REWRITE_ENABLED` | 선택 카드 LLM 보정 기능 전체 활성화 여부 |
+| `CAMERA_LLM_REWRITE_ON_SEARCH_ENABLED` | `/api/search` 응답 시 즉시 첫 카드 보정 여부. 기본은 `false` |
 | `CAMERA_LLM_REWRITE_MODEL` | 기본 보정 모델 |
 | `CAMERA_LLM_REWRITE_FALLBACK_MODELS` | 기본 보정 모델 실패 시 시도할 예비 모델 목록 |
 | `CAMERA_LLM_REWRITE_MAX_TOKENS` | 보정 답변 생성 토큰 상한 |

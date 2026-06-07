@@ -83,6 +83,10 @@ class Settings(BaseSettings):
         default=True,
         validation_alias=_env_aliases("LLM_REWRITE_ENABLED"),
     )
+    llm_rewrite_on_search_enabled: bool = Field(
+        default=False,
+        validation_alias=_env_aliases("LLM_REWRITE_ON_SEARCH_ENABLED"),
+    )
     llm_rewrite_model: str = Field(
         default="hf.co/unsloth/gemma-4-E4B-it-qat-GGUF:UD-Q4_K_XL",
         validation_alias=_env_aliases("LLM_REWRITE_MODEL"),

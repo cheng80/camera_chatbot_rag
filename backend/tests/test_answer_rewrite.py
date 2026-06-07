@@ -12,6 +12,7 @@ from backend.app.schemas.feature_card import (
 from backend.app.schemas.search import NormalizedQuery, SearchResponse
 from backend.app.services.answer_rewrite import (
     rewrite_search_response,
+    rewrite_selected_card_summary,
     warm_up_answer_rewrite,
 )
 
@@ -158,6 +159,36 @@ def test_warm_up_answer_rewrite_uses_primary_model_when_enabled() -> None:
 
     assert warmed is True
     assert client.tried_models == [settings.llm_rewrite_model]
+
+
+def test_rewrite_selected_card_summary_updates_one_card() -> None:
+    settings = _settings()
+    client = FakeRewriteClient(responses=["밝은 부분에 줄무늬를 표시합니다."])
+
+    summary = rewrite_selected_card_summary(
+        query="제브라 패턴은 뭐야?",
+        card=_card(feature_name="제브라 패턴"),
+        settings=settings,
+        client=client,
+    )
+
+    assert summary == "제브라 패턴: 밝은 부분에 줄무늬를 표시합니다."
+    assert client.tried_models == [settings.llm_rewrite_model]
+
+
+def test_rewrite_selected_card_summary_respects_disabled_setting() -> None:
+    settings = _settings(llm_rewrite_enabled=False)
+    client = FakeRewriteClient(responses=["unused"])
+
+    summary = rewrite_selected_card_summary(
+        query="제브라 패턴은 뭐야?",
+        card=_card(feature_name="제브라 패턴"),
+        settings=settings,
+        client=client,
+    )
+
+    assert summary is None
+    assert client.tried_models == []
 
 
 def test_warm_up_answer_rewrite_respects_disabled_setting() -> None:

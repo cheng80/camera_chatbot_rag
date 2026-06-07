@@ -17,10 +17,28 @@
 
 ```bash
 uv sync
-uv run uvicorn backend.app.main:app --reload
+uv run uvicorn backend.app.main:app --host 127.0.0.1 --port 8010 --reload
 ```
 
-브라우저에서 `http://127.0.0.1:8000`을 엽니다.
+브라우저에서 `http://127.0.0.1:8010`을 엽니다.
+
+## Cloudflare Quick Tunnel
+
+다음 명령으로 임시 공개 URL을 발급합니다. 로컬 서버가 떠 있지 않으면
+`uvicorn backend.app.main:app`을 먼저 자동으로 띄운 뒤 터널을 연결합니다.
+
+```bash
+scripts/run_quick_tunnel.sh
+```
+
+기본 대상은 `http://127.0.0.1:8010`입니다. 포트를 바꿔야 하면:
+
+```bash
+CAMERA_TUNNEL_PORT=8000 scripts/run_quick_tunnel.sh
+```
+
+스크립트가 직접 띄운 uvicorn 로그는 기본적으로 `.quick-tunnel-uvicorn.log`에
+저장됩니다.
 
 ## 주요 디렉터리
 

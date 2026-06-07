@@ -106,6 +106,17 @@ def test_clean_feature_title_removes_plain_step_number_prefix() -> None:
     assert cleaned == "초점을 조절합니다."
 
 
+def test_clean_feature_title_repairs_pdf_korean_spacing() -> None:
+    # Given: a PDF-extracted title with broken Korean syllable spacing.
+    title = "자주 사용하는 기능들을 버튼에 지정하기 ( 기능 버 튼들 )"
+
+    # When: the text is cleaned for feature-card display.
+    cleaned = clean_feature_title(title)
+
+    # Then: the feature title uses natural Korean spacing.
+    assert cleaned == "자주 사용하는 기능들을 버튼에 지정하기 (기능 버튼들)"
+
+
 def test_clean_summary_text_removes_broken_empty_menu_icons() -> None:
     # Given: a summary snippet containing broken PDF menu icon text.
     summary = " [ ]  [ ]  [전기 절약 모드] 선택 후 설정합니다."
@@ -117,6 +128,17 @@ def test_clean_summary_text_removes_broken_empty_menu_icons() -> None:
     assert "" not in cleaned
     assert "[ ]" not in cleaned
     assert "전기 절약 모드" in cleaned
+
+
+def test_clean_summary_text_repairs_pdf_korean_spacing() -> None:
+    # Given: a PDF-extracted summary with split syllable spacing and punctuation.
+    summary = "새 연 결 버튼을 사 용할 수 없습니다 ."
+
+    # When: the text is cleaned for summary display.
+    cleaned = clean_summary_text(summary)
+
+    # Then: common PDF spacing artifacts are repaired.
+    assert cleaned == "새 연결 버튼을 사용할 수 없습니다."
 
 
 def test_clean_summary_text_removes_pdf_page_cross_reference() -> None:
@@ -318,6 +340,23 @@ def test_feature_title_from_card_uses_content_when_title_is_menu_path() -> None:
 
     # Then: the recovered feature target is used instead of the menu path.
     assert title == "하이브리드 줌 동영상"
+
+
+def test_feature_title_from_card_uses_content_when_title_is_corrupt_glyphs() -> None:
+    # Given: a PDF-extracted section title contains mojibake glyphs.
+    feature_name = "VÐîÑ"
+    source_title = "VÐîÑ"
+    content = "기능 버튼"
+
+    # When: the display title is selected for the card.
+    title = feature_title_from_card(
+        feature_name=feature_name,
+        source_title=source_title,
+        content=content,
+    )
+
+    # Then: the readable content is used instead of the corrupted title.
+    assert title == "기능 버튼"
 
 
 def test_source_title_from_card_uses_fallback_when_title_is_number() -> None:

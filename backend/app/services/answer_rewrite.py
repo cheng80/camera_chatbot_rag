@@ -113,6 +113,31 @@ def rewrite_search_response(
     )
 
 
+def rewrite_selected_card_summary(
+    *,
+    query: str,
+    card: FeatureCard,
+    settings: Settings,
+    client: AnswerRewriteClient | None = None,
+) -> str | None:
+    if not settings.llm_rewrite_enabled:
+        return None
+    if client is None:
+        with OllamaAnswerRewriteClient(settings=settings) as rewrite_client:
+            return _rewrite_selected_card_summary_with_client(
+                query=query,
+                card=card,
+                settings=settings,
+                client=rewrite_client,
+            )
+    return _rewrite_selected_card_summary_with_client(
+        query=query,
+        card=card,
+        settings=settings,
+        client=client,
+    )
+
+
 def warm_up_answer_rewrite(
     *,
     settings: Settings,
@@ -165,6 +190,24 @@ def _rewrite_with_client(
                 },
             )
     return response.model_copy(update={"cards": cards})
+
+
+def _rewrite_selected_card_summary_with_client(
+    *,
+    query: str,
+    card: FeatureCard,
+    settings: Settings,
+    client: AnswerRewriteClient,
+) -> str | None:
+    rewritten = _rewrite_card_summary(
+        query=query,
+        card=card,
+        settings=settings,
+        client=client,
+    )
+    if not rewritten:
+        return None
+    return _subject_prefixed_summary(subject=card.feature_name, summary=rewritten)
 
 
 def _rewrite_card_summary(

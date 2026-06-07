@@ -48,6 +48,7 @@ def test_default_local_model_settings_target_requested_models() -> None:
     ]
     assert settings.llm_rewrite_max_tokens == 128
     assert settings.llm_rewrite_think is False
+    assert settings.llm_rewrite_on_search_enabled is False
     assert settings.llm_rewrite_warmup_enabled is False
 
 
