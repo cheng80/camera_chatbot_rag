@@ -1,0 +1,2355 @@
+{
+  "case_count": 100,
+  "document_hit_count": 100,
+  "page_hit_count": 100,
+  "document_hit_rate": 1.0,
+  "page_hit_rate": 1.0,
+  "by_query_type": [
+    {
+      "group_name": "compact_korean",
+      "case_count": 2,
+      "document_hit_count": 2,
+      "page_hit_count": 2,
+      "document_hit_rate": 1.0,
+      "page_hit_rate": 1.0
+    },
+    {
+      "group_name": "english_keyword",
+      "case_count": 11,
+      "document_hit_count": 11,
+      "page_hit_count": 11,
+      "document_hit_rate": 1.0,
+      "page_hit_rate": 1.0
+    },
+    {
+      "group_name": "exact_keyword",
+      "case_count": 73,
+      "document_hit_count": 73,
+      "page_hit_count": 73,
+      "document_hit_rate": 1.0,
+      "page_hit_rate": 1.0
+    },
+    {
+      "group_name": "menu_setting",
+      "case_count": 4,
+      "document_hit_count": 4,
+      "page_hit_count": 4,
+      "document_hit_rate": 1.0,
+      "page_hit_rate": 1.0
+    },
+    {
+      "group_name": "model_alias",
+      "case_count": 1,
+      "document_hit_count": 1,
+      "page_hit_count": 1,
+      "document_hit_rate": 1.0,
+      "page_hit_rate": 1.0
+    },
+    {
+      "group_name": "natural_language",
+      "case_count": 6,
+      "document_hit_count": 6,
+      "page_hit_count": 6,
+      "document_hit_rate": 1.0,
+      "page_hit_rate": 1.0
+    },
+    {
+      "group_name": "troubleshooting",
+      "case_count": 3,
+      "document_hit_count": 3,
+      "page_hit_count": 3,
+      "document_hit_rate": 1.0,
+      "page_hit_rate": 1.0
+    }
+  ],
+  "by_feature_category": [
+    {
+      "group_name": "connectivity",
+      "case_count": 8,
+      "document_hit_count": 8,
+      "page_hit_count": 8,
+      "document_hit_rate": 1.0,
+      "page_hit_rate": 1.0
+    },
+    {
+      "group_name": "display",
+      "case_count": 16,
+      "document_hit_count": 16,
+      "page_hit_count": 16,
+      "document_hit_rate": 1.0,
+      "page_hit_rate": 1.0
+    },
+    {
+      "group_name": "exposure",
+      "case_count": 5,
+      "document_hit_count": 5,
+      "page_hit_count": 5,
+      "document_hit_rate": 1.0,
+      "page_hit_rate": 1.0
+    },
+    {
+      "group_name": "focus",
+      "case_count": 7,
+      "document_hit_count": 7,
+      "page_hit_count": 7,
+      "document_hit_rate": 1.0,
+      "page_hit_rate": 1.0
+    },
+    {
+      "group_name": "general",
+      "case_count": 2,
+      "document_hit_count": 2,
+      "page_hit_count": 2,
+      "document_hit_rate": 1.0,
+      "page_hit_rate": 1.0
+    },
+    {
+      "group_name": "photo",
+      "case_count": 6,
+      "document_hit_count": 6,
+      "page_hit_count": 6,
+      "document_hit_rate": 1.0,
+      "page_hit_rate": 1.0
+    },
+    {
+      "group_name": "power",
+      "case_count": 14,
+      "document_hit_count": 14,
+      "page_hit_count": 14,
+      "document_hit_rate": 1.0,
+      "page_hit_rate": 1.0
+    },
+    {
+      "group_name": "setup",
+      "case_count": 19,
+      "document_hit_count": 19,
+      "page_hit_count": 19,
+      "document_hit_rate": 1.0,
+      "page_hit_rate": 1.0
+    },
+    {
+      "group_name": "stabilization",
+      "case_count": 6,
+      "document_hit_count": 6,
+      "page_hit_count": 6,
+      "document_hit_rate": 1.0,
+      "page_hit_rate": 1.0
+    },
+    {
+      "group_name": "video",
+      "case_count": 17,
+      "document_hit_count": 17,
+      "page_hit_count": 17,
+      "document_hit_rate": 1.0,
+      "page_hit_rate": 1.0
+    }
+  ],
+  "by_difficulty": [
+    {
+      "group_name": "easy",
+      "case_count": 77,
+      "document_hit_count": 77,
+      "page_hit_count": 77,
+      "document_hit_rate": 1.0,
+      "page_hit_rate": 1.0
+    },
+    {
+      "group_name": "hard",
+      "case_count": 7,
+      "document_hit_count": 7,
+      "page_hit_count": 7,
+      "document_hit_rate": 1.0,
+      "page_hit_rate": 1.0
+    },
+    {
+      "group_name": "medium",
+      "case_count": 16,
+      "document_hit_count": 16,
+      "page_hit_count": 16,
+      "document_hit_rate": 1.0,
+      "page_hit_rate": 1.0
+    }
+  ],
+  "results": [
+    {
+      "case_id": "g9m2_zebra_phrase",
+      "query_type": "exact_keyword",
+      "feature_category": "exposure",
+      "difficulty": "easy",
+      "source_method": "manual_seed",
+      "hit_document": true,
+      "hit_page": true,
+      "top_rank": 1,
+      "result_count": 3,
+      "result_pages": [
+        415,
+        589,
+        796
+      ],
+      "result_document_ids": [
+        "dc_g9m2_full_kor",
+        "dc_g9m2_full_kor",
+        "dc_g9m2_full_kor"
+      ]
+    },
+    {
+      "case_id": "g9m2_zebra_compact",
+      "query_type": "compact_korean",
+      "feature_category": "exposure",
+      "difficulty": "medium",
+      "source_method": "manual_seed",
+      "hit_document": true,
+      "hit_page": true,
+      "top_rank": 1,
+      "result_count": 3,
+      "result_pages": [
+        415,
+        589,
+        796
+      ],
+      "result_document_ids": [
+        "dc_g9m2_full_kor",
+        "dc_g9m2_full_kor",
+        "dc_g9m2_full_kor"
+      ]
+    },
+    {
+      "case_id": "g9m2_zebra_with_model_name",
+      "query_type": "model_alias",
+      "feature_category": "exposure",
+      "difficulty": "medium",
+      "source_method": "manual_seed",
+      "hit_document": true,
+      "hit_page": true,
+      "top_rank": 1,
+      "result_count": 3,
+      "result_pages": [
+        415,
+        589,
+        796
+      ],
+      "result_document_ids": [
+        "dc_g9m2_full_kor",
+        "dc_g9m2_full_kor",
+        "dc_g9m2_full_kor"
+      ]
+    },
+    {
+      "case_id": "g9m2_zebra_natural_language",
+      "query_type": "natural_language",
+      "feature_category": "exposure",
+      "difficulty": "hard",
+      "source_method": "manual_seed",
+      "hit_document": true,
+      "hit_page": true,
+      "top_rank": 1,
+      "result_count": 3,
+      "result_pages": [
+        415,
+        589,
+        796
+      ],
+      "result_document_ids": [
+        "dc_g9m2_full_kor",
+        "dc_g9m2_full_kor",
+        "dc_g9m2_full_kor"
+      ]
+    },
+    {
+      "case_id": "g9m2_stabilizer_compact",
+      "query_type": "compact_korean",
+      "feature_category": "stabilization",
+      "difficulty": "medium",
+      "source_method": "manual_seed",
+      "hit_document": true,
+      "hit_page": true,
+      "top_rank": 1,
+      "result_count": 3,
+      "result_pages": [
+        266,
+        272,
+        8
+      ],
+      "result_document_ids": [
+        "dc_g9m2_full_kor",
+        "dc_g9m2_full_kor",
+        "dc_g9m2_full_kor"
+      ]
+    },
+    {
+      "case_id": "g9m2_stabilizer_phrase",
+      "query_type": "exact_keyword",
+      "feature_category": "stabilization",
+      "difficulty": "easy",
+      "source_method": "manual_seed",
+      "hit_document": true,
+      "hit_page": true,
+      "top_rank": 1,
+      "result_count": 3,
+      "result_pages": [
+        266,
+        272,
+        8
+      ],
+      "result_document_ids": [
+        "dc_g9m2_full_kor",
+        "dc_g9m2_full_kor",
+        "dc_g9m2_full_kor"
+      ]
+    },
+    {
+      "case_id": "g9m2_boost_is",
+      "query_type": "english_keyword",
+      "feature_category": "stabilization",
+      "difficulty": "medium",
+      "source_method": "manual_seed",
+      "hit_document": true,
+      "hit_page": true,
+      "top_rank": 1,
+      "result_count": 4,
+      "result_pages": [
+        269,
+        784,
+        789,
+        807
+      ],
+      "result_document_ids": [
+        "dc_g9m2_full_kor",
+        "dc_g9m2_full_kor",
+        "dc_g9m2_full_kor",
+        "dc_g9m2_full_kor"
+      ]
+    },
+    {
+      "case_id": "g9m2_wifi_connection",
+      "query_type": "exact_keyword",
+      "feature_category": "connectivity",
+      "difficulty": "easy",
+      "source_method": "manual_seed",
+      "hit_document": true,
+      "hit_page": true,
+      "top_rank": 1,
+      "result_count": 5,
+      "result_pages": [
+        673,
+        15,
+        85,
+        402,
+        404
+      ],
+      "result_document_ids": [
+        "dc_g9m2_full_kor",
+        "dc_g9m2_full_kor",
+        "dc_g9m2_full_kor",
+        "dc_g9m2_full_kor",
+        "dc_g9m2_full_kor"
+      ]
+    },
+    {
+      "case_id": "g9m2_card_format",
+      "query_type": "menu_setting",
+      "feature_category": "setup",
+      "difficulty": "easy",
+      "source_method": "manual_seed",
+      "hit_document": true,
+      "hit_page": true,
+      "top_rank": 1,
+      "result_count": 2,
+      "result_pages": [
+        597,
+        798
+      ],
+      "result_document_ids": [
+        "dc_g9m2_full_kor",
+        "dc_g9m2_full_kor"
+      ]
+    },
+    {
+      "case_id": "g9m2_live_view_composite",
+      "query_type": "exact_keyword",
+      "feature_category": "photo",
+      "difficulty": "medium",
+      "source_method": "manual_seed",
+      "hit_document": true,
+      "hit_page": true,
+      "top_rank": 1,
+      "result_count": 5,
+      "result_pages": [
+        253,
+        173,
+        221,
+        227,
+        234
+      ],
+      "result_document_ids": [
+        "dc_g9m2_full_kor",
+        "dc_g9m2_full_kor",
+        "dc_g9m2_full_kor",
+        "dc_g9m2_full_kor",
+        "dc_g9m2_full_kor"
+      ]
+    },
+    {
+      "case_id": "s1m2_lumix_lab",
+      "query_type": "english_keyword",
+      "feature_category": "connectivity",
+      "difficulty": "easy",
+      "source_method": "manual_seed",
+      "hit_document": true,
+      "hit_page": true,
+      "top_rank": 1,
+      "result_count": 4,
+      "result_pages": [
+        1002,
+        770,
+        775,
+        15
+      ],
+      "result_document_ids": [
+        "dc_s1m2_full_kor",
+        "dc_s1m2_full_kor",
+        "dc_s1m2_full_kor",
+        "dc_s1m2_full_kor"
+      ]
+    },
+    {
+      "case_id": "s1m2_frame_io",
+      "query_type": "english_keyword",
+      "feature_category": "connectivity",
+      "difficulty": "easy",
+      "source_method": "manual_seed",
+      "hit_document": true,
+      "hit_page": true,
+      "top_rank": 1,
+      "result_count": 5,
+      "result_pages": [
+        737,
+        964,
+        286,
+        474,
+        708
+      ],
+      "result_document_ids": [
+        "dc_s1m2_full_kor",
+        "dc_s1m2_full_kor",
+        "dc_s1m2_full_kor",
+        "dc_s1m2_full_kor",
+        "dc_s1m2_full_kor"
+      ]
+    },
+    {
+      "case_id": "s1m2_proxy_recording",
+      "query_type": "exact_keyword",
+      "feature_category": "video",
+      "difficulty": "medium",
+      "source_method": "manual_seed",
+      "hit_document": true,
+      "hit_page": true,
+      "top_rank": 1,
+      "result_count": 5,
+      "result_pages": [
+        177,
+        585,
+        7,
+        134,
+        756
+      ],
+      "result_document_ids": [
+        "dc_s1m2_full_kor",
+        "dc_s1m2_full_kor",
+        "dc_s1m2_full_kor",
+        "dc_s1m2_full_kor",
+        "dc_s1m2_full_kor"
+      ]
+    },
+    {
+      "case_id": "s1m2_vlog",
+      "query_type": "english_keyword",
+      "feature_category": "video",
+      "difficulty": "easy",
+      "source_method": "manual_seed",
+      "hit_document": true,
+      "hit_page": true,
+      "top_rank": 1,
+      "result_count": 5,
+      "result_pages": [
+        375,
+        384,
+        712,
+        959,
+        1038
+      ],
+      "result_document_ids": [
+        "dc_s1m2_full_kor",
+        "dc_s1m2_full_kor",
+        "dc_s1m2_full_kor",
+        "dc_s1m2_full_kor",
+        "dc_s1m2_full_kor"
+      ]
+    },
+    {
+      "case_id": "s1m2_timecode",
+      "query_type": "exact_keyword",
+      "feature_category": "video",
+      "difficulty": "easy",
+      "source_method": "manual_seed",
+      "hit_document": true,
+      "hit_page": true,
+      "top_rank": 1,
+      "result_count": 5,
+      "result_pages": [
+        470,
+        948,
+        975,
+        473,
+        11
+      ],
+      "result_document_ids": [
+        "dc_s1m2_full_kor",
+        "dc_s1m2_full_kor",
+        "dc_s1m2_full_kor",
+        "dc_s1m2_full_kor",
+        "dc_s1m2_full_kor"
+      ]
+    },
+    {
+      "case_id": "s1m2_hdmi_output",
+      "query_type": "exact_keyword",
+      "feature_category": "video",
+      "difficulty": "medium",
+      "source_method": "manual_seed",
+      "hit_document": true,
+      "hit_page": true,
+      "top_rank": 3,
+      "result_count": 5,
+      "result_pages": [
+        93,
+        353,
+        565,
+        627,
+        731
+      ],
+      "result_document_ids": [
+        "dc_s1m2_full_kor",
+        "dc_s1m2_full_kor",
+        "dc_s1m2_full_kor",
+        "dc_s1m2_full_kor",
+        "dc_s1m2_full_kor"
+      ]
+    },
+    {
+      "case_id": "s1m2_stabilizer",
+      "query_type": "exact_keyword",
+      "feature_category": "stabilization",
+      "difficulty": "easy",
+      "source_method": "manual_seed",
+      "hit_document": true,
+      "hit_page": true,
+      "top_rank": 1,
+      "result_count": 3,
+      "result_pages": [
+        316,
+        988,
+        322
+      ],
+      "result_document_ids": [
+        "dc_s1m2_full_kor",
+        "dc_s1m2_full_kor",
+        "dc_s1m2_full_kor"
+      ]
+    },
+    {
+      "case_id": "s1m2_af_on",
+      "query_type": "english_keyword",
+      "feature_category": "focus",
+      "difficulty": "medium",
+      "source_method": "manual_seed",
+      "hit_document": true,
+      "hit_page": true,
+      "top_rank": 2,
+      "result_count": 4,
+      "result_pages": [
+        234,
+        647,
+        654,
+        695
+      ],
+      "result_document_ids": [
+        "dc_s1m2_full_kor",
+        "dc_s1m2_full_kor",
+        "dc_s1m2_full_kor",
+        "dc_s1m2_full_kor"
+      ]
+    },
+    {
+      "case_id": "s1m2_battery_charge",
+      "query_type": "troubleshooting",
+      "feature_category": "power",
+      "difficulty": "easy",
+      "source_method": "manual_seed",
+      "hit_document": true,
+      "hit_page": true,
+      "top_rank": 2,
+      "result_count": 5,
+      "result_pages": [
+        5,
+        45,
+        48,
+        53,
+        875
+      ],
+      "result_document_ids": [
+        "dc_s1m2_full_kor",
+        "dc_s1m2_full_kor",
+        "dc_s1m2_full_kor",
+        "dc_s1m2_full_kor",
+        "dc_s1m2_full_kor"
+      ]
+    },
+    {
+      "case_id": "s1m2_streaming",
+      "query_type": "exact_keyword",
+      "feature_category": "video",
+      "difficulty": "hard",
+      "source_method": "manual_seed",
+      "hit_document": true,
+      "hit_page": true,
+      "top_rank": 1,
+      "result_count": 5,
+      "result_pages": [
+        177,
+        383,
+        589,
+        736,
+        799
+      ],
+      "result_document_ids": [
+        "dc_s1m2_full_kor",
+        "dc_s1m2_full_kor",
+        "dc_s1m2_full_kor",
+        "dc_s1m2_full_kor",
+        "dc_s1m2_full_kor"
+      ]
+    },
+    {
+      "case_id": "tz99_zoom",
+      "query_type": "exact_keyword",
+      "feature_category": "photo",
+      "difficulty": "easy",
+      "source_method": "manual_seed",
+      "hit_document": true,
+      "hit_page": true,
+      "top_rank": 1,
+      "result_count": 5,
+      "result_pages": [
+        35,
+        51,
+        81,
+        186,
+        161
+      ],
+      "result_document_ids": [
+        "dc_tz99_zs99_full_kor",
+        "dc_tz99_zs99_full_kor",
+        "dc_tz99_zs99_full_kor",
+        "dc_tz99_zs99_full_kor",
+        "dc_tz99_zs99_full_kor"
+      ]
+    },
+    {
+      "case_id": "zs99_zoom",
+      "query_type": "exact_keyword",
+      "feature_category": "photo",
+      "difficulty": "easy",
+      "source_method": "manual_seed",
+      "hit_document": true,
+      "hit_page": true,
+      "top_rank": 1,
+      "result_count": 5,
+      "result_pages": [
+        35,
+        51,
+        81,
+        186,
+        161
+      ],
+      "result_document_ids": [
+        "dc_tz99_zs99_full_kor",
+        "dc_tz99_zs99_full_kor",
+        "dc_tz99_zs99_full_kor",
+        "dc_tz99_zs99_full_kor",
+        "dc_tz99_zs99_full_kor"
+      ]
+    },
+    {
+      "case_id": "tz99_charge_lamp",
+      "query_type": "troubleshooting",
+      "feature_category": "power",
+      "difficulty": "easy",
+      "source_method": "manual_seed",
+      "hit_document": true,
+      "hit_page": true,
+      "top_rank": 1,
+      "result_count": 3,
+      "result_pages": [
+        22,
+        17,
+        267
+      ],
+      "result_document_ids": [
+        "dc_tz99_zs99_full_kor",
+        "dc_tz99_zs99_full_kor",
+        "dc_tz99_zs99_full_kor"
+      ]
+    },
+    {
+      "case_id": "tz99_self_shot",
+      "query_type": "exact_keyword",
+      "feature_category": "photo",
+      "difficulty": "easy",
+      "source_method": "manual_seed",
+      "hit_document": true,
+      "hit_page": true,
+      "top_rank": 1,
+      "result_count": 5,
+      "result_pages": [
+        58,
+        6,
+        191,
+        181,
+        130
+      ],
+      "result_document_ids": [
+        "dc_tz99_zs99_full_kor",
+        "dc_tz99_zs99_full_kor",
+        "dc_tz99_zs99_full_kor",
+        "dc_tz99_zs99_full_kor",
+        "dc_tz99_zs99_full_kor"
+      ]
+    },
+    {
+      "case_id": "tz99_4k_photo",
+      "query_type": "exact_keyword",
+      "feature_category": "photo",
+      "difficulty": "medium",
+      "source_method": "manual_seed",
+      "hit_document": true,
+      "hit_page": true,
+      "top_rank": 1,
+      "result_count": 5,
+      "result_pages": [
+        49,
+        50,
+        111,
+        167,
+        260
+      ],
+      "result_document_ids": [
+        "dc_tz99_zs99_full_kor",
+        "dc_tz99_zs99_full_kor",
+        "dc_tz99_zs99_full_kor",
+        "dc_tz99_zs99_full_kor",
+        "dc_tz99_zs99_full_kor"
+      ]
+    },
+    {
+      "case_id": "tz99_post_focus",
+      "query_type": "exact_keyword",
+      "feature_category": "focus",
+      "difficulty": "medium",
+      "source_method": "manual_seed",
+      "hit_document": true,
+      "hit_page": true,
+      "top_rank": 1,
+      "result_count": 5,
+      "result_pages": [
+        111,
+        125,
+        260,
+        7,
+        49
+      ],
+      "result_document_ids": [
+        "dc_tz99_zs99_full_kor",
+        "dc_tz99_zs99_full_kor",
+        "dc_tz99_zs99_full_kor",
+        "dc_tz99_zs99_full_kor",
+        "dc_tz99_zs99_full_kor"
+      ]
+    },
+    {
+      "case_id": "tz99_wifi",
+      "query_type": "english_keyword",
+      "feature_category": "connectivity",
+      "difficulty": "easy",
+      "source_method": "manual_seed",
+      "hit_document": true,
+      "hit_page": true,
+      "top_rank": 1,
+      "result_count": 4,
+      "result_pages": [
+        246,
+        248,
+        285,
+        196
+      ],
+      "result_document_ids": [
+        "dc_tz99_zs99_full_kor",
+        "dc_tz99_zs99_full_kor",
+        "dc_tz99_zs99_full_kor",
+        "dc_tz99_zs99_full_kor"
+      ]
+    },
+    {
+      "case_id": "tz99_bluetooth",
+      "query_type": "english_keyword",
+      "feature_category": "connectivity",
+      "difficulty": "easy",
+      "source_method": "manual_seed",
+      "hit_document": true,
+      "hit_page": true,
+      "top_rank": 1,
+      "result_count": 4,
+      "result_pages": [
+        228,
+        197,
+        222,
+        232
+      ],
+      "result_document_ids": [
+        "dc_tz99_zs99_full_kor",
+        "dc_tz99_zs99_full_kor",
+        "dc_tz99_zs99_full_kor",
+        "dc_tz99_zs99_full_kor"
+      ]
+    },
+    {
+      "case_id": "tz99_card_format",
+      "query_type": "menu_setting",
+      "feature_category": "setup",
+      "difficulty": "medium",
+      "source_method": "manual_seed",
+      "hit_document": true,
+      "hit_page": true,
+      "top_rank": 1,
+      "result_count": 3,
+      "result_pages": [
+        28,
+        5,
+        278
+      ],
+      "result_document_ids": [
+        "dc_tz99_zs99_full_kor",
+        "dc_tz99_zs99_full_kor",
+        "dc_tz99_zs99_full_kor"
+      ]
+    },
+    {
+      "case_id": "tz99_monitor_brightness",
+      "query_type": "menu_setting",
+      "feature_category": "display",
+      "difficulty": "medium",
+      "source_method": "manual_seed",
+      "hit_document": true,
+      "hit_page": true,
+      "top_rank": 1,
+      "result_count": 1,
+      "result_pages": [
+        200
+      ],
+      "result_document_ids": [
+        "dc_tz99_zs99_full_kor"
+      ]
+    },
+    {
+      "case_id": "g85_post_focus",
+      "query_type": "exact_keyword",
+      "feature_category": "focus",
+      "difficulty": "easy",
+      "source_method": "manual_seed",
+      "hit_document": true,
+      "hit_page": true,
+      "top_rank": 1,
+      "result_count": 5,
+      "result_pages": [
+        129,
+        316,
+        130,
+        5,
+        62
+      ],
+      "result_document_ids": [
+        "dmc_g85_full_kor",
+        "dmc_g85_full_kor",
+        "dmc_g85_full_kor",
+        "dmc_g85_full_kor",
+        "dmc_g85_full_kor"
+      ]
+    },
+    {
+      "case_id": "g85_4k_photo",
+      "query_type": "exact_keyword",
+      "feature_category": "photo",
+      "difficulty": "easy",
+      "source_method": "manual_seed",
+      "hit_document": true,
+      "hit_page": true,
+      "top_rank": 1,
+      "result_count": 5,
+      "result_pages": [
+        9,
+        43,
+        118,
+        185,
+        56
+      ],
+      "result_document_ids": [
+        "dmc_g85_full_kor",
+        "dmc_g85_full_kor",
+        "dmc_g85_full_kor",
+        "dmc_g85_full_kor",
+        "dmc_g85_full_kor"
+      ]
+    },
+    {
+      "case_id": "g85_stabilizer",
+      "query_type": "exact_keyword",
+      "feature_category": "stabilization",
+      "difficulty": "medium",
+      "source_method": "manual_seed",
+      "hit_document": true,
+      "hit_page": true,
+      "top_rank": 2,
+      "result_count": 5,
+      "result_pages": [
+        56,
+        185,
+        206,
+        144,
+        145
+      ],
+      "result_document_ids": [
+        "dmc_g85_full_kor",
+        "dmc_g85_full_kor",
+        "dmc_g85_full_kor",
+        "dmc_g85_full_kor",
+        "dmc_g85_full_kor"
+      ]
+    },
+    {
+      "case_id": "g85_focus_mode",
+      "query_type": "exact_keyword",
+      "feature_category": "focus",
+      "difficulty": "easy",
+      "source_method": "manual_seed",
+      "hit_document": true,
+      "hit_page": true,
+      "top_rank": 1,
+      "result_count": 5,
+      "result_pages": [
+        116,
+        168,
+        93,
+        123,
+        5
+      ],
+      "result_document_ids": [
+        "dmc_g85_full_kor",
+        "dmc_g85_full_kor",
+        "dmc_g85_full_kor",
+        "dmc_g85_full_kor",
+        "dmc_g85_full_kor"
+      ]
+    },
+    {
+      "case_id": "g85_wifi_connection",
+      "query_type": "exact_keyword",
+      "feature_category": "connectivity",
+      "difficulty": "medium",
+      "source_method": "manual_seed",
+      "hit_document": true,
+      "hit_page": true,
+      "top_rank": 2,
+      "result_count": 5,
+      "result_pages": [
+        209,
+        250,
+        325,
+        267,
+        255
+      ],
+      "result_document_ids": [
+        "dmc_g85_full_kor",
+        "dmc_g85_full_kor",
+        "dmc_g85_full_kor",
+        "dmc_g85_full_kor",
+        "dmc_g85_full_kor"
+      ]
+    },
+    {
+      "case_id": "g85_flash",
+      "query_type": "exact_keyword",
+      "feature_category": "exposure",
+      "difficulty": "easy",
+      "source_method": "manual_seed",
+      "hit_document": true,
+      "hit_page": true,
+      "top_rank": 1,
+      "result_count": 5,
+      "result_pages": [
+        9,
+        123,
+        197,
+        323,
+        157
+      ],
+      "result_document_ids": [
+        "dmc_g85_full_kor",
+        "dmc_g85_full_kor",
+        "dmc_g85_full_kor",
+        "dmc_g85_full_kor",
+        "dmc_g85_full_kor"
+      ]
+    },
+    {
+      "case_id": "g85_card_format",
+      "query_type": "menu_setting",
+      "feature_category": "setup",
+      "difficulty": "easy",
+      "source_method": "manual_seed",
+      "hit_document": true,
+      "hit_page": true,
+      "top_rank": 1,
+      "result_count": 2,
+      "result_pages": [
+        27,
+        4
+      ],
+      "result_document_ids": [
+        "dmc_g85_full_kor",
+        "dmc_g85_full_kor"
+      ]
+    },
+    {
+      "case_id": "g85_battery_charge",
+      "query_type": "troubleshooting",
+      "feature_category": "power",
+      "difficulty": "easy",
+      "source_method": "manual_seed",
+      "hit_document": true,
+      "hit_page": true,
+      "top_rank": 1,
+      "result_count": 5,
+      "result_pages": [
+        24,
+        19,
+        138,
+        13,
+        20
+      ],
+      "result_document_ids": [
+        "dmc_g85_full_kor",
+        "dmc_g85_full_kor",
+        "dmc_g85_full_kor",
+        "dmc_g85_full_kor",
+        "dmc_g85_full_kor"
+      ]
+    },
+    {
+      "case_id": "gh7_frame_io",
+      "query_type": "english_keyword",
+      "feature_category": "connectivity",
+      "difficulty": "easy",
+      "source_method": "manual_seed",
+      "hit_document": true,
+      "hit_page": true,
+      "top_rank": 1,
+      "result_count": 5,
+      "result_pages": [
+        686,
+        941,
+        262,
+        654,
+        721
+      ],
+      "result_document_ids": [
+        "dc_gh7_full_kor",
+        "dc_gh7_full_kor",
+        "dc_gh7_full_kor",
+        "dc_gh7_full_kor",
+        "dc_gh7_full_kor"
+      ]
+    },
+    {
+      "case_id": "gh7_timecode",
+      "query_type": "exact_keyword",
+      "feature_category": "video",
+      "difficulty": "easy",
+      "source_method": "manual_seed",
+      "hit_document": true,
+      "hit_page": true,
+      "top_rank": 1,
+      "result_count": 5,
+      "result_pages": [
+        437,
+        925,
+        951,
+        11,
+        438
+      ],
+      "result_document_ids": [
+        "dc_gh7_full_kor",
+        "dc_gh7_full_kor",
+        "dc_gh7_full_kor",
+        "dc_gh7_full_kor",
+        "dc_gh7_full_kor"
+      ]
+    },
+    {
+      "case_id": "gh7_vlog",
+      "query_type": "english_keyword",
+      "feature_category": "video",
+      "difficulty": "easy",
+      "source_method": "manual_seed",
+      "hit_document": true,
+      "hit_page": true,
+      "top_rank": 1,
+      "result_count": 5,
+      "result_pages": [
+        344,
+        353,
+        658,
+        936,
+        1025
+      ],
+      "result_document_ids": [
+        "dc_gh7_full_kor",
+        "dc_gh7_full_kor",
+        "dc_gh7_full_kor",
+        "dc_gh7_full_kor",
+        "dc_gh7_full_kor"
+      ]
+    },
+    {
+      "case_id": "gh7_video_recording",
+      "query_type": "natural_language",
+      "feature_category": "video",
+      "difficulty": "medium",
+      "source_method": "manual_seed",
+      "hit_document": true,
+      "hit_page": true,
+      "top_rank": 1,
+      "result_count": 5,
+      "result_pages": [
+        297,
+        352,
+        590,
+        632,
+        654
+      ],
+      "result_document_ids": [
+        "dc_gh7_full_kor",
+        "dc_gh7_full_kor",
+        "dc_gh7_full_kor",
+        "dc_gh7_full_kor",
+        "dc_gh7_full_kor"
+      ]
+    },
+    {
+      "case_id": "gh7_proxy_recording",
+      "query_type": "exact_keyword",
+      "feature_category": "video",
+      "difficulty": "medium",
+      "source_method": "manual_seed",
+      "hit_document": true,
+      "hit_page": true,
+      "top_rank": 1,
+      "result_count": 4,
+      "result_pages": [
+        1019,
+        129,
+        1007,
+        703
+      ],
+      "result_document_ids": [
+        "dc_gh7_full_kor",
+        "dc_gh7_full_kor",
+        "dc_gh7_full_kor",
+        "dc_gh7_full_kor"
+      ]
+    },
+    {
+      "case_id": "s5m2x_live_streaming",
+      "query_type": "natural_language",
+      "feature_category": "video",
+      "difficulty": "hard",
+      "source_method": "manual_seed",
+      "hit_document": true,
+      "hit_page": true,
+      "top_rank": 1,
+      "result_count": 5,
+      "result_pages": [
+        1004,
+        714,
+        712,
+        640,
+        699
+      ],
+      "result_document_ids": [
+        "dc_s5m2x_full_kor",
+        "dc_s5m2x_full_kor",
+        "dc_s5m2x_full_kor",
+        "dc_s5m2x_full_kor",
+        "dc_s5m2x_full_kor"
+      ]
+    },
+    {
+      "case_id": "s5m2x_lut",
+      "query_type": "english_keyword",
+      "feature_category": "video",
+      "difficulty": "easy",
+      "source_method": "manual_seed",
+      "hit_document": true,
+      "hit_page": true,
+      "top_rank": 1,
+      "result_count": 5,
+      "result_pages": [
+        317,
+        516,
+        442,
+        312,
+        329
+      ],
+      "result_document_ids": [
+        "dc_s5m2x_full_kor",
+        "dc_s5m2x_full_kor",
+        "dc_s5m2x_full_kor",
+        "dc_s5m2x_full_kor",
+        "dc_s5m2x_full_kor"
+      ]
+    },
+    {
+      "case_id": "s5m2x_hdmi_raw",
+      "query_type": "english_keyword",
+      "feature_category": "video",
+      "difficulty": "hard",
+      "source_method": "manual_seed",
+      "hit_document": true,
+      "hit_page": true,
+      "top_rank": 1,
+      "result_count": 5,
+      "result_pages": [
+        721,
+        827,
+        851,
+        892,
+        475
+      ],
+      "result_document_ids": [
+        "dc_s5m2x_full_kor",
+        "dc_s5m2x_full_kor",
+        "dc_s5m2x_full_kor",
+        "dc_s5m2x_full_kor",
+        "dc_s5m2x_full_kor"
+      ]
+    },
+    {
+      "case_id": "s5m2x_stabilizer",
+      "query_type": "exact_keyword",
+      "feature_category": "stabilization",
+      "difficulty": "easy",
+      "source_method": "manual_seed",
+      "hit_document": true,
+      "hit_page": true,
+      "top_rank": 1,
+      "result_count": 3,
+      "result_pages": [
+        259,
+        862,
+        262
+      ],
+      "result_document_ids": [
+        "dc_s5m2x_full_kor",
+        "dc_s5m2x_full_kor",
+        "dc_s5m2x_full_kor"
+      ]
+    },
+    {
+      "case_id": "s5m2x_lut_natural",
+      "query_type": "natural_language",
+      "feature_category": "video",
+      "difficulty": "hard",
+      "source_method": "manual_seed",
+      "hit_document": true,
+      "hit_page": true,
+      "top_rank": 1,
+      "result_count": 5,
+      "result_pages": [
+        317,
+        516,
+        442,
+        312,
+        329
+      ],
+      "result_document_ids": [
+        "dc_s5m2x_full_kor",
+        "dc_s5m2x_full_kor",
+        "dc_s5m2x_full_kor",
+        "dc_s5m2x_full_kor",
+        "dc_s5m2x_full_kor"
+      ]
+    },
+    {
+      "case_id": "s1m2_lumix_lab_natural",
+      "query_type": "natural_language",
+      "feature_category": "connectivity",
+      "difficulty": "hard",
+      "source_method": "manual_seed",
+      "hit_document": true,
+      "hit_page": true,
+      "top_rank": 1,
+      "result_count": 4,
+      "result_pages": [
+        1002,
+        770,
+        775,
+        15
+      ],
+      "result_document_ids": [
+        "dc_s1m2_full_kor",
+        "dc_s1m2_full_kor",
+        "dc_s1m2_full_kor",
+        "dc_s1m2_full_kor"
+      ]
+    },
+    {
+      "case_id": "tz99_charge_lamp_natural",
+      "query_type": "natural_language",
+      "feature_category": "power",
+      "difficulty": "hard",
+      "source_method": "manual_seed",
+      "hit_document": true,
+      "hit_page": true,
+      "top_rank": 1,
+      "result_count": 3,
+      "result_pages": [
+        22,
+        17,
+        267
+      ],
+      "result_document_ids": [
+        "dc_tz99_zs99_full_kor",
+        "dc_tz99_zs99_full_kor",
+        "dc_tz99_zs99_full_kor"
+      ]
+    },
+    {
+      "case_id": "auto_dc_g100_kor_23_사용_가능한_렌즈",
+      "query_type": "exact_keyword",
+      "feature_category": "general",
+      "difficulty": "easy",
+      "source_method": "section_title_weak_label",
+      "hit_document": true,
+      "hit_page": true,
+      "top_rank": 1,
+      "result_count": 2,
+      "result_pages": [
+        23,
+        6
+      ],
+      "result_document_ids": [
+        "dc_g100_kor",
+        "dc_g100_kor"
+      ]
+    },
+    {
+      "case_id": "auto_dc_g100_kor_24_사용_가능한_메모리_카드",
+      "query_type": "exact_keyword",
+      "feature_category": "setup",
+      "difficulty": "easy",
+      "source_method": "section_title_weak_label",
+      "hit_document": true,
+      "hit_page": true,
+      "top_rank": 1,
+      "result_count": 2,
+      "result_pages": [
+        24,
+        6
+      ],
+      "result_document_ids": [
+        "dc_g100_kor",
+        "dc_g100_kor"
+      ]
+    },
+    {
+      "case_id": "auto_dc_g100_kor_31_배터리_충전하기",
+      "query_type": "exact_keyword",
+      "feature_category": "power",
+      "difficulty": "easy",
+      "source_method": "section_title_weak_label",
+      "hit_document": true,
+      "hit_page": true,
+      "top_rank": 1,
+      "result_count": 2,
+      "result_pages": [
+        31,
+        6
+      ],
+      "result_document_ids": [
+        "dc_g100_kor",
+        "dc_g100_kor"
+      ]
+    },
+    {
+      "case_id": "auto_dc_g100_kor_35_화면에_표시되는_배터리_잔량은_대략적인_값입니다",
+      "query_type": "exact_keyword",
+      "feature_category": "power",
+      "difficulty": "easy",
+      "source_method": "section_title_weak_label",
+      "hit_document": true,
+      "hit_page": true,
+      "top_rank": 1,
+      "result_count": 1,
+      "result_pages": [
+        35
+      ],
+      "result_document_ids": [
+        "dc_g100_kor"
+      ]
+    },
+    {
+      "case_id": "auto_dc_g100_kor_39_카드_옵션_넣기",
+      "query_type": "exact_keyword",
+      "feature_category": "setup",
+      "difficulty": "easy",
+      "source_method": "section_title_weak_label",
+      "hit_document": true,
+      "hit_page": true,
+      "top_rank": 1,
+      "result_count": 2,
+      "result_pages": [
+        39,
+        6
+      ],
+      "result_document_ids": [
+        "dc_g100_kor",
+        "dc_g100_kor"
+      ]
+    },
+    {
+      "case_id": "auto_dc_g100_kor_44_모니터_방향_및_각도_조정하기",
+      "query_type": "exact_keyword",
+      "feature_category": "display",
+      "difficulty": "easy",
+      "source_method": "section_title_weak_label",
+      "hit_document": true,
+      "hit_page": true,
+      "top_rank": 1,
+      "result_count": 2,
+      "result_pages": [
+        44,
+        6
+      ],
+      "result_document_ids": [
+        "dc_g100_kor",
+        "dc_g100_kor"
+      ]
+    },
+    {
+      "case_id": "auto_dc_g100_kor_45_시계_설정하기_처음_켤_때",
+      "query_type": "exact_keyword",
+      "feature_category": "setup",
+      "difficulty": "easy",
+      "source_method": "section_title_weak_label",
+      "hit_document": true,
+      "hit_page": true,
+      "top_rank": 1,
+      "result_count": 2,
+      "result_pages": [
+        45,
+        6
+      ],
+      "result_document_ids": [
+        "dc_g100_kor",
+        "dc_g100_kor"
+      ]
+    },
+    {
+      "case_id": "auto_dc_g100_kor_53_카메라_설정_조작",
+      "query_type": "exact_keyword",
+      "feature_category": "setup",
+      "difficulty": "easy",
+      "source_method": "section_title_weak_label",
+      "hit_document": true,
+      "hit_page": true,
+      "top_rank": 1,
+      "result_count": 4,
+      "result_pages": [
+        53,
+        7,
+        386,
+        291
+      ],
+      "result_document_ids": [
+        "dc_g100_kor",
+        "dc_g100_kor",
+        "dc_g100_kor",
+        "dc_g100_kor"
+      ]
+    },
+    {
+      "case_id": "auto_dc_g100d_full_kor_23_사용_가능한_렌즈",
+      "query_type": "exact_keyword",
+      "feature_category": "general",
+      "difficulty": "easy",
+      "source_method": "section_title_weak_label",
+      "hit_document": true,
+      "hit_page": true,
+      "top_rank": 1,
+      "result_count": 2,
+      "result_pages": [
+        23,
+        6
+      ],
+      "result_document_ids": [
+        "dc_g100d_full_kor",
+        "dc_g100d_full_kor"
+      ]
+    },
+    {
+      "case_id": "auto_dc_g100d_full_kor_24_사용_가능한_메모리_카드",
+      "query_type": "exact_keyword",
+      "feature_category": "setup",
+      "difficulty": "easy",
+      "source_method": "section_title_weak_label",
+      "hit_document": true,
+      "hit_page": true,
+      "top_rank": 1,
+      "result_count": 2,
+      "result_pages": [
+        24,
+        6
+      ],
+      "result_document_ids": [
+        "dc_g100d_full_kor",
+        "dc_g100d_full_kor"
+      ]
+    },
+    {
+      "case_id": "auto_dc_g100d_full_kor_31_배터리_충전하기",
+      "query_type": "exact_keyword",
+      "feature_category": "power",
+      "difficulty": "easy",
+      "source_method": "section_title_weak_label",
+      "hit_document": true,
+      "hit_page": true,
+      "top_rank": 1,
+      "result_count": 2,
+      "result_pages": [
+        31,
+        6
+      ],
+      "result_document_ids": [
+        "dc_g100d_full_kor",
+        "dc_g100d_full_kor"
+      ]
+    },
+    {
+      "case_id": "auto_dc_g100d_full_kor_35_화면에_표시되는_배터리_잔량은_대략적인_값입니다",
+      "query_type": "exact_keyword",
+      "feature_category": "power",
+      "difficulty": "easy",
+      "source_method": "section_title_weak_label",
+      "hit_document": true,
+      "hit_page": true,
+      "top_rank": 1,
+      "result_count": 1,
+      "result_pages": [
+        35
+      ],
+      "result_document_ids": [
+        "dc_g100d_full_kor"
+      ]
+    },
+    {
+      "case_id": "auto_dc_g100d_full_kor_39_카드_옵션_넣기",
+      "query_type": "exact_keyword",
+      "feature_category": "setup",
+      "difficulty": "easy",
+      "source_method": "section_title_weak_label",
+      "hit_document": true,
+      "hit_page": true,
+      "top_rank": 1,
+      "result_count": 2,
+      "result_pages": [
+        39,
+        6
+      ],
+      "result_document_ids": [
+        "dc_g100d_full_kor",
+        "dc_g100d_full_kor"
+      ]
+    },
+    {
+      "case_id": "auto_dc_g100d_full_kor_44_모니터_방향_및_각도_조정하기",
+      "query_type": "exact_keyword",
+      "feature_category": "display",
+      "difficulty": "easy",
+      "source_method": "section_title_weak_label",
+      "hit_document": true,
+      "hit_page": true,
+      "top_rank": 1,
+      "result_count": 2,
+      "result_pages": [
+        44,
+        6
+      ],
+      "result_document_ids": [
+        "dc_g100d_full_kor",
+        "dc_g100d_full_kor"
+      ]
+    },
+    {
+      "case_id": "auto_dc_g100d_full_kor_45_시계_설정하기_처음_켤_때",
+      "query_type": "exact_keyword",
+      "feature_category": "setup",
+      "difficulty": "easy",
+      "source_method": "section_title_weak_label",
+      "hit_document": true,
+      "hit_page": true,
+      "top_rank": 1,
+      "result_count": 2,
+      "result_pages": [
+        45,
+        6
+      ],
+      "result_document_ids": [
+        "dc_g100d_full_kor",
+        "dc_g100d_full_kor"
+      ]
+    },
+    {
+      "case_id": "auto_dc_g100d_full_kor_53_카메라_설정_조작",
+      "query_type": "exact_keyword",
+      "feature_category": "setup",
+      "difficulty": "easy",
+      "source_method": "section_title_weak_label",
+      "hit_document": true,
+      "hit_page": true,
+      "top_rank": 1,
+      "result_count": 4,
+      "result_pages": [
+        53,
+        7,
+        388,
+        291
+      ],
+      "result_document_ids": [
+        "dc_g100d_full_kor",
+        "dc_g100d_full_kor",
+        "dc_g100d_full_kor",
+        "dc_g100d_full_kor"
+      ]
+    },
+    {
+      "case_id": "auto_dc_g9m2_full_kor_19_응결_렌즈_뷰파인더_또는_모니터에_김이_서리는_경우",
+      "query_type": "exact_keyword",
+      "feature_category": "display",
+      "difficulty": "easy",
+      "source_method": "section_title_weak_label",
+      "hit_document": true,
+      "hit_page": true,
+      "top_rank": 1,
+      "result_count": 1,
+      "result_pages": [
+        19
+      ],
+      "result_document_ids": [
+        "dc_g9m2_full_kor"
+      ]
+    },
+    {
+      "case_id": "auto_dc_gh6_full_kor_19_응결_렌즈_뷰파인더_또는_모니터에_김이_서리는_경우",
+      "query_type": "exact_keyword",
+      "feature_category": "display",
+      "difficulty": "easy",
+      "source_method": "section_title_weak_label",
+      "hit_document": true,
+      "hit_page": true,
+      "top_rank": 1,
+      "result_count": 1,
+      "result_pages": [
+        19
+      ],
+      "result_document_ids": [
+        "dc_gh6_full_kor"
+      ]
+    },
+    {
+      "case_id": "auto_dc_gh7_full_kor_21_응결_렌즈_뷰파인더_또는_모니터에_김이_서리는_경우",
+      "query_type": "exact_keyword",
+      "feature_category": "display",
+      "difficulty": "easy",
+      "source_method": "section_title_weak_label",
+      "hit_document": true,
+      "hit_page": true,
+      "top_rank": 1,
+      "result_count": 1,
+      "result_pages": [
+        21
+      ],
+      "result_document_ids": [
+        "dc_gh7_full_kor"
+      ]
+    },
+    {
+      "case_id": "auto_dc_gx9_kor_7_초점_밝기_노출_및_색조_설정",
+      "query_type": "exact_keyword",
+      "feature_category": "focus",
+      "difficulty": "easy",
+      "source_method": "section_title_weak_label",
+      "hit_document": true,
+      "hit_page": true,
+      "top_rank": 1,
+      "result_count": 3,
+      "result_pages": [
+        7,
+        95,
+        112
+      ],
+      "result_document_ids": [
+        "dc_gx9_kor",
+        "dc_gx9_kor",
+        "dc_gx9_kor"
+      ]
+    },
+    {
+      "case_id": "auto_dc_gx9_kor_7_4k_사진_및_드라이브_설정",
+      "query_type": "exact_keyword",
+      "feature_category": "setup",
+      "difficulty": "easy",
+      "source_method": "section_title_weak_label",
+      "hit_document": true,
+      "hit_page": true,
+      "top_rank": 1,
+      "result_count": 2,
+      "result_pages": [
+        7,
+        120
+      ],
+      "result_document_ids": [
+        "dc_gx9_kor",
+        "dc_gx9_kor"
+      ]
+    },
+    {
+      "case_id": "auto_dc_gx9_kor_23_배터리를_꺼내려면_카드_배터리함의_레버를_화살표_방향으로",
+      "query_type": "exact_keyword",
+      "feature_category": "power",
+      "difficulty": "easy",
+      "source_method": "section_title_weak_label",
+      "hit_document": true,
+      "hit_page": true,
+      "top_rank": 1,
+      "result_count": 1,
+      "result_pages": [
+        23
+      ],
+      "result_document_ids": [
+        "dc_gx9_kor"
+      ]
+    },
+    {
+      "case_id": "auto_dc_s1_full_kor_3_사용할_수_있는_촬영_모드_사진_및_비디오_기호",
+      "query_type": "exact_keyword",
+      "feature_category": "video",
+      "difficulty": "easy",
+      "source_method": "section_title_weak_label",
+      "hit_document": true,
+      "hit_page": true,
+      "top_rank": 1,
+      "result_count": 1,
+      "result_pages": [
+        3
+      ],
+      "result_document_ids": [
+        "dc_s1_full_kor"
+      ]
+    },
+    {
+      "case_id": "auto_dc_s1_full_kor_14_전원",
+      "query_type": "exact_keyword",
+      "feature_category": "power",
+      "difficulty": "easy",
+      "source_method": "section_title_weak_label",
+      "hit_document": true,
+      "hit_page": true,
+      "top_rank": 1,
+      "result_count": 4,
+      "result_pages": [
+        14,
+        42,
+        459,
+        502
+      ],
+      "result_document_ids": [
+        "dc_s1_full_kor",
+        "dc_s1_full_kor",
+        "dc_s1_full_kor",
+        "dc_s1_full_kor"
+      ]
+    },
+    {
+      "case_id": "auto_dc_s1_full_kor_14_카드",
+      "query_type": "exact_keyword",
+      "feature_category": "setup",
+      "difficulty": "easy",
+      "source_method": "section_title_weak_label",
+      "hit_document": true,
+      "hit_page": true,
+      "top_rank": 1,
+      "result_count": 5,
+      "result_pages": [
+        14,
+        435,
+        456,
+        476,
+        46
+      ],
+      "result_document_ids": [
+        "dc_s1_full_kor",
+        "dc_s1_full_kor",
+        "dc_s1_full_kor",
+        "dc_s1_full_kor",
+        "dc_s1_full_kor"
+      ]
+    },
+    {
+      "case_id": "auto_dc_s1_full_kor_14_af_mf",
+      "query_type": "exact_keyword",
+      "feature_category": "focus",
+      "difficulty": "easy",
+      "source_method": "section_title_weak_label",
+      "hit_document": true,
+      "hit_page": true,
+      "top_rank": 1,
+      "result_count": 5,
+      "result_pages": [
+        14,
+        329,
+        489,
+        551,
+        570
+      ],
+      "result_document_ids": [
+        "dc_s1_full_kor",
+        "dc_s1_full_kor",
+        "dc_s1_full_kor",
+        "dc_s1_full_kor",
+        "dc_s1_full_kor"
+      ]
+    },
+    {
+      "case_id": "auto_dc_s1_full_kor_14_뷰파인더",
+      "query_type": "exact_keyword",
+      "feature_category": "display",
+      "difficulty": "easy",
+      "source_method": "section_title_weak_label",
+      "hit_document": true,
+      "hit_page": true,
+      "top_rank": 1,
+      "result_count": 5,
+      "result_pages": [
+        14,
+        68,
+        464,
+        473,
+        474
+      ],
+      "result_document_ids": [
+        "dc_s1_full_kor",
+        "dc_s1_full_kor",
+        "dc_s1_full_kor",
+        "dc_s1_full_kor",
+        "dc_s1_full_kor"
+      ]
+    },
+    {
+      "case_id": "auto_dc_s1h_full_kor_3_사용할_수_있는_촬영_모드_사진_및_비디오_기호",
+      "query_type": "exact_keyword",
+      "feature_category": "video",
+      "difficulty": "easy",
+      "source_method": "section_title_weak_label",
+      "hit_document": true,
+      "hit_page": true,
+      "top_rank": 1,
+      "result_count": 1,
+      "result_pages": [
+        3
+      ],
+      "result_document_ids": [
+        "dc_s1h_full_kor"
+      ]
+    },
+    {
+      "case_id": "auto_dc_s1h_full_kor_15_전원",
+      "query_type": "exact_keyword",
+      "feature_category": "power",
+      "difficulty": "easy",
+      "source_method": "section_title_weak_label",
+      "hit_document": true,
+      "hit_page": true,
+      "top_rank": 1,
+      "result_count": 4,
+      "result_pages": [
+        15,
+        44,
+        557,
+        606
+      ],
+      "result_document_ids": [
+        "dc_s1h_full_kor",
+        "dc_s1h_full_kor",
+        "dc_s1h_full_kor",
+        "dc_s1h_full_kor"
+      ]
+    },
+    {
+      "case_id": "auto_dc_s1h_full_kor_15_뷰파인더",
+      "query_type": "exact_keyword",
+      "feature_category": "display",
+      "difficulty": "easy",
+      "source_method": "section_title_weak_label",
+      "hit_document": true,
+      "hit_page": true,
+      "top_rank": 1,
+      "result_count": 5,
+      "result_pages": [
+        15,
+        70,
+        562,
+        572,
+        573
+      ],
+      "result_document_ids": [
+        "dc_s1h_full_kor",
+        "dc_s1h_full_kor",
+        "dc_s1h_full_kor",
+        "dc_s1h_full_kor",
+        "dc_s1h_full_kor"
+      ]
+    },
+    {
+      "case_id": "auto_dc_s1h_full_kor_15_카드",
+      "query_type": "exact_keyword",
+      "feature_category": "setup",
+      "difficulty": "easy",
+      "source_method": "section_title_weak_label",
+      "hit_document": true,
+      "hit_page": true,
+      "top_rank": 1,
+      "result_count": 5,
+      "result_pages": [
+        15,
+        553,
+        574,
+        50,
+        444
+      ],
+      "result_document_ids": [
+        "dc_s1h_full_kor",
+        "dc_s1h_full_kor",
+        "dc_s1h_full_kor",
+        "dc_s1h_full_kor",
+        "dc_s1h_full_kor"
+      ]
+    },
+    {
+      "case_id": "auto_dc_s1m2_full_kor_22_응결_렌즈_뷰파인더_또는_모니터에_김이_서리는_경우",
+      "query_type": "exact_keyword",
+      "feature_category": "display",
+      "difficulty": "easy",
+      "source_method": "section_title_weak_label",
+      "hit_document": true,
+      "hit_page": true,
+      "top_rank": 1,
+      "result_count": 1,
+      "result_pages": [
+        22
+      ],
+      "result_document_ids": [
+        "dc_s1m2_full_kor"
+      ]
+    },
+    {
+      "case_id": "auto_dc_s1m2es_full_kor_22_응결_렌즈_뷰파인더_또는_모니터에_김이_서리는_경우",
+      "query_type": "exact_keyword",
+      "feature_category": "display",
+      "difficulty": "easy",
+      "source_method": "section_title_weak_label",
+      "hit_document": true,
+      "hit_page": true,
+      "top_rank": 1,
+      "result_count": 1,
+      "result_pages": [
+        22
+      ],
+      "result_document_ids": [
+        "dc_s1m2es_full_kor"
+      ]
+    },
+    {
+      "case_id": "auto_dc_s1r_full_kor_3_사용할_수_있는_촬영_모드_사진_및_비디오_기호",
+      "query_type": "exact_keyword",
+      "feature_category": "video",
+      "difficulty": "easy",
+      "source_method": "section_title_weak_label",
+      "hit_document": true,
+      "hit_page": true,
+      "top_rank": 1,
+      "result_count": 1,
+      "result_pages": [
+        3
+      ],
+      "result_document_ids": [
+        "dc_s1r_full_kor"
+      ]
+    },
+    {
+      "case_id": "auto_dc_s1r_full_kor_14_전원",
+      "query_type": "exact_keyword",
+      "feature_category": "power",
+      "difficulty": "easy",
+      "source_method": "section_title_weak_label",
+      "hit_document": true,
+      "hit_page": true,
+      "top_rank": 1,
+      "result_count": 4,
+      "result_pages": [
+        14,
+        42,
+        459,
+        502
+      ],
+      "result_document_ids": [
+        "dc_s1r_full_kor",
+        "dc_s1r_full_kor",
+        "dc_s1r_full_kor",
+        "dc_s1r_full_kor"
+      ]
+    },
+    {
+      "case_id": "auto_dc_s1r_full_kor_14_카드",
+      "query_type": "exact_keyword",
+      "feature_category": "setup",
+      "difficulty": "easy",
+      "source_method": "section_title_weak_label",
+      "hit_document": true,
+      "hit_page": true,
+      "top_rank": 1,
+      "result_count": 5,
+      "result_pages": [
+        14,
+        435,
+        456,
+        476,
+        46
+      ],
+      "result_document_ids": [
+        "dc_s1r_full_kor",
+        "dc_s1r_full_kor",
+        "dc_s1r_full_kor",
+        "dc_s1r_full_kor",
+        "dc_s1r_full_kor"
+      ]
+    },
+    {
+      "case_id": "auto_dc_s1r_full_kor_14_af_mf",
+      "query_type": "exact_keyword",
+      "feature_category": "focus",
+      "difficulty": "easy",
+      "source_method": "section_title_weak_label",
+      "hit_document": true,
+      "hit_page": true,
+      "top_rank": 1,
+      "result_count": 5,
+      "result_pages": [
+        14,
+        329,
+        489,
+        535,
+        550
+      ],
+      "result_document_ids": [
+        "dc_s1r_full_kor",
+        "dc_s1r_full_kor",
+        "dc_s1r_full_kor",
+        "dc_s1r_full_kor",
+        "dc_s1r_full_kor"
+      ]
+    },
+    {
+      "case_id": "auto_dc_s1r_full_kor_14_뷰파인더",
+      "query_type": "exact_keyword",
+      "feature_category": "display",
+      "difficulty": "easy",
+      "source_method": "section_title_weak_label",
+      "hit_document": true,
+      "hit_page": true,
+      "top_rank": 1,
+      "result_count": 5,
+      "result_pages": [
+        14,
+        68,
+        464,
+        473,
+        474
+      ],
+      "result_document_ids": [
+        "dc_s1r_full_kor",
+        "dc_s1r_full_kor",
+        "dc_s1r_full_kor",
+        "dc_s1r_full_kor",
+        "dc_s1r_full_kor"
+      ]
+    },
+    {
+      "case_id": "auto_dc_s1rm2_full_kor_21_응결_렌즈_뷰파인더_또는_모니터에_김이_서리는_경우",
+      "query_type": "exact_keyword",
+      "feature_category": "display",
+      "difficulty": "easy",
+      "source_method": "section_title_weak_label",
+      "hit_document": true,
+      "hit_page": true,
+      "top_rank": 1,
+      "result_count": 1,
+      "result_pages": [
+        21
+      ],
+      "result_document_ids": [
+        "dc_s1rm2_full_kor"
+      ]
+    },
+    {
+      "case_id": "auto_dc_s5_full_kor_3_사용할_수_있는_촬영_모드_사진_및_비디오_기호",
+      "query_type": "exact_keyword",
+      "feature_category": "video",
+      "difficulty": "easy",
+      "source_method": "section_title_weak_label",
+      "hit_document": true,
+      "hit_page": true,
+      "top_rank": 1,
+      "result_count": 1,
+      "result_pages": [
+        3
+      ],
+      "result_document_ids": [
+        "dc_s5_full_kor"
+      ]
+    },
+    {
+      "case_id": "auto_dc_s5_full_kor_15_전원",
+      "query_type": "exact_keyword",
+      "feature_category": "power",
+      "difficulty": "easy",
+      "source_method": "section_title_weak_label",
+      "hit_document": true,
+      "hit_page": true,
+      "top_rank": 1,
+      "result_count": 4,
+      "result_pages": [
+        15,
+        41,
+        42,
+        505
+      ],
+      "result_document_ids": [
+        "dc_s5_full_kor",
+        "dc_s5_full_kor",
+        "dc_s5_full_kor",
+        "dc_s5_full_kor"
+      ]
+    },
+    {
+      "case_id": "auto_dc_s5_full_kor_15_뷰파인더",
+      "query_type": "exact_keyword",
+      "feature_category": "display",
+      "difficulty": "easy",
+      "source_method": "section_title_weak_label",
+      "hit_document": true,
+      "hit_page": true,
+      "top_rank": 1,
+      "result_count": 5,
+      "result_pages": [
+        15,
+        67,
+        511,
+        518,
+        519
+      ],
+      "result_document_ids": [
+        "dc_s5_full_kor",
+        "dc_s5_full_kor",
+        "dc_s5_full_kor",
+        "dc_s5_full_kor",
+        "dc_s5_full_kor"
+      ]
+    },
+    {
+      "case_id": "auto_dc_s5_full_kor_15_카드",
+      "query_type": "exact_keyword",
+      "feature_category": "setup",
+      "difficulty": "easy",
+      "source_method": "section_title_weak_label",
+      "hit_document": true,
+      "hit_page": true,
+      "top_rank": 1,
+      "result_count": 5,
+      "result_pages": [
+        15,
+        502,
+        521,
+        48,
+        395
+      ],
+      "result_document_ids": [
+        "dc_s5_full_kor",
+        "dc_s5_full_kor",
+        "dc_s5_full_kor",
+        "dc_s5_full_kor",
+        "dc_s5_full_kor"
+      ]
+    },
+    {
+      "case_id": "auto_dc_s5m2_full_kor_19_응결_렌즈_뷰파인더_또는_모니터에_김이_서리는_경우",
+      "query_type": "exact_keyword",
+      "feature_category": "display",
+      "difficulty": "easy",
+      "source_method": "section_title_weak_label",
+      "hit_document": true,
+      "hit_page": true,
+      "top_rank": 1,
+      "result_count": 1,
+      "result_pages": [
+        19
+      ],
+      "result_document_ids": [
+        "dc_s5m2_full_kor"
+      ]
+    },
+    {
+      "case_id": "auto_dc_s5m2x_full_kor_20_응결_렌즈_뷰파인더_또는_모니터에_김이_서리는_경우",
+      "query_type": "exact_keyword",
+      "feature_category": "display",
+      "difficulty": "easy",
+      "source_method": "section_title_weak_label",
+      "hit_document": true,
+      "hit_page": true,
+      "top_rank": 1,
+      "result_count": 1,
+      "result_pages": [
+        20
+      ],
+      "result_document_ids": [
+        "dc_s5m2x_full_kor"
+      ]
+    },
+    {
+      "case_id": "auto_dc_s9_full_kor_19_응결_렌즈_또는_모니터에_김이_서리는_경우",
+      "query_type": "exact_keyword",
+      "feature_category": "display",
+      "difficulty": "easy",
+      "source_method": "section_title_weak_label",
+      "hit_document": true,
+      "hit_page": true,
+      "top_rank": 1,
+      "result_count": 1,
+      "result_pages": [
+        19
+      ],
+      "result_document_ids": [
+        "dc_s9_full_kor"
+      ]
+    },
+    {
+      "case_id": "auto_dc_s9_full_kor_20_배터리_팩",
+      "query_type": "exact_keyword",
+      "feature_category": "power",
+      "difficulty": "easy",
+      "source_method": "section_title_weak_label",
+      "hit_document": true,
+      "hit_page": true,
+      "top_rank": 1,
+      "result_count": 2,
+      "result_pages": [
+        20,
+        672
+      ],
+      "result_document_ids": [
+        "dc_s9_full_kor",
+        "dc_s9_full_kor"
+      ]
+    },
+    {
+      "case_id": "auto_dc_tz300_zs300_full_kor_7_4k_사진_및_드라이브_설정",
+      "query_type": "exact_keyword",
+      "feature_category": "setup",
+      "difficulty": "easy",
+      "source_method": "section_title_weak_label",
+      "hit_document": true,
+      "hit_page": true,
+      "top_rank": 1,
+      "result_count": 2,
+      "result_pages": [
+        7,
+        104
+      ],
+      "result_document_ids": [
+        "dc_tz300_zs300_full_kor",
+        "dc_tz300_zs300_full_kor"
+      ]
+    },
+    {
+      "case_id": "auto_dc_tz300_zs300_full_kor_26_카드_별매_넣기와_꺼내기",
+      "query_type": "exact_keyword",
+      "feature_category": "setup",
+      "difficulty": "easy",
+      "source_method": "section_title_weak_label",
+      "hit_document": true,
+      "hit_page": true,
+      "top_rank": 1,
+      "result_count": 2,
+      "result_pages": [
+        26,
+        5
+      ],
+      "result_document_ids": [
+        "dc_tz300_zs300_full_kor",
+        "dc_tz300_zs300_full_kor"
+      ]
+    },
+    {
+      "case_id": "auto_dc_tz300_zs300_full_kor_31_시계_설정",
+      "query_type": "exact_keyword",
+      "feature_category": "setup",
+      "difficulty": "easy",
+      "source_method": "section_title_weak_label",
+      "hit_document": true,
+      "hit_page": true,
+      "top_rank": 1,
+      "result_count": 4,
+      "result_pages": [
+        31,
+        32,
+        5,
+        193
+      ],
+      "result_document_ids": [
+        "dc_tz300_zs300_full_kor",
+        "dc_tz300_zs300_full_kor",
+        "dc_tz300_zs300_full_kor",
+        "dc_tz300_zs300_full_kor"
+      ]
+    }
+  ]
+}

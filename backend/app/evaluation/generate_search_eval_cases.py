@@ -44,9 +44,14 @@ NOISE_TITLE_PATTERNS: Final = (
     re.compile(r"소개$"),
     re.compile(r"^\d+(?:[.\s]\d*)*$"),
     re.compile(r"^\d+\.\s*시작하기$"),
+    re.compile(r"\s\d{2,4}$"),
+    re.compile(r"P\d{2,4}"),
+    re.compile(r"문제해결"),
+    re.compile(r"^[∫■]"),
     re.compile(r"^[•※*]"),
 )
 TITLE_WRAPPERS: Final = (("[", "]"), ("(", ")"), ("【", "】"))
+LEADING_TITLE_MARKERS_PATTERN: Final = re.compile(r"^[\s\uf076≥∫■•※*]+")
 CATEGORY_RULES: Final[tuple[tuple[FeatureCategory, tuple[str, ...]], ...]] = (
     ("connectivity", ("Wi-Fi", "Bluetooth", "LUMIX Lab", "Frame.io")),
     ("power", ("충전", "배터리", "전원")),
@@ -144,7 +149,7 @@ def _clean_title(section_title: str | None) -> str | None:
     if section_title is None:
         return None
     compact = " ".join(section_title.split())
-    title = _unwrap_title(compact)
+    title = _strip_title_markers(_unwrap_title(compact))
     if _is_noise_title(title):
         return None
     return title
@@ -164,6 +169,10 @@ def _unwrap_title(title: str) -> str:
         if title.startswith(opening) and title.endswith(closing):
             return title[1:-1].strip()
     return title
+
+
+def _strip_title_markers(title: str) -> str:
+    return LEADING_TITLE_MARKERS_PATTERN.sub("", title).strip()
 
 
 def _feature_category(title: str) -> FeatureCategory:

@@ -4,6 +4,7 @@ from pathlib import Path
 import pytest
 from backend.app.evaluation.search_eval import (
     run_search_eval,
+    run_search_eval_cases,
     write_search_eval_report,
 )
 from backend.app.evaluation.search_eval_schema import SearchEvalCase, SearchEvalReport
@@ -126,6 +127,44 @@ def test_run_search_eval_requires_page_hit_in_expected_document(
     assert report.document_hit_count == 1
     assert report.page_hit_count == 0
     assert report.results[0].top_rank is None
+
+
+def test_run_search_eval_cases_uses_loaded_case_sequence(tmp_path: Path) -> None:
+    chunks_dir = tmp_path / "chunks"
+    chunks_dir.mkdir()
+    _ = (chunks_dir / "sample.jsonl").write_text(
+        _chunk().model_dump_json() + "\n",
+        encoding="utf-8",
+    )
+    index_path = tmp_path / "fts" / "lumix_manuals.sqlite3"
+    _ = build_fts_index(chunks_dir=chunks_dir, index_path=index_path)
+    registry_dir, pages_dir = _write_source_validation_fixture(
+        tmp_path=tmp_path,
+        pages=(7,),
+    )
+
+    report = run_search_eval_cases(
+        cases=(
+            SearchEvalCase(
+                case_id="zebra",
+                query="제브라패턴",
+                model_ids=("DC-G9M2",),
+                expected_document_id="sample_manual",
+                expected_pages=(7,),
+                query_type="compact_korean",
+                feature_category="exposure",
+                difficulty="medium",
+                source_method="manual_seed",
+                top_k=5,
+            ),
+        ),
+        index_path=index_path,
+        registry_dir=registry_dir,
+        pages_dir=pages_dir,
+    )
+
+    assert report.case_count == 1
+    assert report.page_hit_rate == 1
 
 
 def test_write_search_eval_report_writes_json(tmp_path: Path) -> None:

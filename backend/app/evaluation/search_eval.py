@@ -1,5 +1,5 @@
 import sys
-from collections.abc import Callable
+from collections.abc import Callable, Sequence
 from pathlib import Path
 from typing import Final
 
@@ -31,6 +31,21 @@ def run_search_eval(
     pages_dir: Path = DEFAULT_PAGES_DIR,
 ) -> SearchEvalReport:
     cases = load_search_eval_cases(cases_path)
+    return run_search_eval_cases(
+        cases=cases,
+        index_path=index_path,
+        registry_dir=registry_dir,
+        pages_dir=pages_dir,
+    )
+
+
+def run_search_eval_cases(
+    *,
+    cases: Sequence[SearchEvalCase],
+    index_path: Path,
+    registry_dir: Path = DEFAULT_REGISTRY_DIR,
+    pages_dir: Path = DEFAULT_PAGES_DIR,
+) -> SearchEvalReport:
     retriever = HybridRetriever(
         index_path=index_path,
         registry_dir=registry_dir,

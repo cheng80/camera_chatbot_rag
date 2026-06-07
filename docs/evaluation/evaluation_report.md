@@ -158,10 +158,11 @@ data/eval/search_eval_report.json
 현재 결정:
 
 ```text
-검색 평가셋 확장은 여기서 일단 중단한다.
-현재 산출물은 50개 seed 평가셋과 300개 자동 약라벨 후보셋이다.
-자동 약라벨 후보셋은 품질 주장에 바로 쓰지 않고, 후속 고도화에서 노이즈 필터와
-검색 로그 기반 확장을 붙일 때 다시 다룬다.
+50개 seed 평가셋은 기준선으로 유지한다.
+300개 자동 약라벨 후보셋은 품질 주장에 바로 쓰지 않는다.
+자동 후보 중 Top-1으로 검증되고 노이즈 필터를 통과한 50개만 seed 50개에 붙여
+100개 개발 평가셋(Dev Evaluation Set)을 만들었다.
+300개 잠금 평가셋은 웹 프로토타입 이후 검색 로그와 사람 검수를 붙여 만든다.
 ```
 
 권장 분포:
@@ -202,6 +203,8 @@ top_k
 
 ```text
 data/eval/generated_search_eval_cases.json
+data/eval/dev_search_eval_cases.json
+data/eval/dev_search_eval_report.json
 ```
 
 현재 생성 결과:
@@ -213,12 +216,39 @@ data/eval/generated_search_eval_cases.json
 | 문서당 최대 케이스 | 12 |
 | 생성 근거 | section_title_weak_label |
 
+현재 개발 평가셋:
+
+| 항목 | 결과 |
+|---|---:|
+| 평가 질문 | 100 |
+| 수동 seed | 50 |
+| 자동 약라벨 채택 | 50 |
+| 포함 문서 | 19 |
+| 기대 문서 적중 | 100 |
+| 기대 페이지 적중 | 100 |
+| 문서 적중률(Document Hit Rate) | 100% |
+| 페이지 적중률(Page Hit Rate) | 100% |
+| 생성/검증 실행 시간 | 약 6분 30초 |
+
+자동 약라벨 채택 기준:
+
+```text
+- source_method가 section_title_weak_label이다.
+- 현재 검색 결과에서 기대 문서와 기대 페이지가 Top-1로 적중한다.
+- feature_category가 general이 아니거나, 제품 지원 질문으로 허용한 general 질의다.
+- 목차, 모델번호, 본 매뉴얼, 날짜, P325 같은 페이지 참조 제목은 제외한다.
+```
+
+개발 평가셋의 자동 약라벨은 회귀 검사용이며, 최종 품질 주장에는 아직 사용하지 않는다.
+특히 `응결`, `전원`, `카드`, `표시`처럼 넓은 제목은 실제 사용자 질문 기반 로그로
+후속 보강해야 한다.
+
 다음 확장 순서:
 
 1. 50개 seed 평가셋을 자동 검증 기준선으로 유지
 2. 처리된 청크(Chunk)의 섹션 제목, 문서 ID, 페이지 번호로 후보 평가 케이스 자동 생성
 3. 같은 기능명이 목차, 기능별 목차, 본문 페이지에서 반복 확인되는 케이스를 우선 채택
-4. 100개 개발 평가셋(Dev Evaluation Set)으로 확장
+4. 100개 개발 평가셋(Dev Evaluation Set)으로 확장 완료
 5. 300개 잠금 평가셋(Locked Evaluation Set)으로 확장
 6. 웹 프로토타입 이후 커뮤니티 검색 로그에서 실제 질의를 수집해 평가셋에 편입
 7. FTS5, Elasticsearch, 벡터 검색(Vector Search)을 같은 평가셋으로 비교

@@ -15,17 +15,26 @@ def test_generate_search_eval_cases_uses_section_titles(tmp_path: Path) -> None:
         (
             _chunk(section_title="[제브라 패턴]", page=415),
             _chunk(section_title="목차", page=5),
+            _chunk(section_title="비디오 촬영하기 121", page=6),
+            _chunk(section_title="메시지 표시 P325 문제해결 P328", page=1),
+            _chunk(
+                section_title=" 응결(렌즈 또는 모니터에 김이 서리는 경우)",
+                page=19,
+            ),
+            _chunk(section_title="≥배터리 팩", page=20),
             _chunk(section_title="Wi-Fi 연결", page=673),
         ),
     )
 
     cases = generate_search_eval_cases(chunks_dir=chunks_dir, limit=10)
 
-    assert len(cases) == 2
+    assert len(cases) == 4
     assert cases[0].query == "제브라 패턴"
     assert cases[0].expected_pages == (415,)
     assert cases[0].source_method == "section_title_weak_label"
-    assert cases[1].feature_category == "connectivity"
+    assert cases[1].query == "응결(렌즈 또는 모니터에 김이 서리는 경우)"
+    assert cases[2].query == "배터리 팩"
+    assert cases[3].feature_category == "connectivity"
 
 
 def test_write_search_eval_cases_writes_json(tmp_path: Path) -> None:
