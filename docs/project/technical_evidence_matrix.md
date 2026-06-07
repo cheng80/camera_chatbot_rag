@@ -1,6 +1,6 @@
 # Technical Evidence Matrix
 
-이 문서는 Panasonic LUMIX Manual Assistant에서 쓰는 기술과 구현 근거를
+이 문서는 Camera Manual Assistant에서 쓰는 기술과 구현 근거를
 보고서 생성용으로 추적하는 장부다. 새 기술을 도입하거나 평가 기준을 바꾸면 이
 문서에 구현 위치, 검증 산출물, 남은 확인 사항을 함께 남긴다.
 
@@ -32,20 +32,23 @@ Korean query
 | Area | Technology or Method | Why | Code Evidence | Runtime or Output Evidence | Current Caveat |
 |---|---|---|---|---|---|
 | Product architecture | Hybrid RAG -> Feature Wiki -> Graph-lite -> Guided Support | PDF 검색에서 기능 카드, 관계형 탐색, 상담 흐름으로 확장하기 위한 장기 구조 | [초기 설계 문서](../Panasonic_LUMIX_Manual_Assistant_GCSE_Initial_Design.md), [architecture/overview.md](../architecture/overview.md), [architecture/rag_pipeline.md](../architecture/rag_pipeline.md) | [docs/project/next_work_roadmap.md](next_work_roadmap.md) | 현재 우선순위는 검색 정확도와 출처 카드 안정화 |
-| Backend API | FastAPI backend with static web serving direction | 웹 MVP에서 검색 API와 정적 UI를 한 프로세스로 시연하기 위해 사용 | [backend/app/main.py](../../backend/app/main.py), [docs/api/api_spec.md](../api/api_spec.md) | API 문서와 테스트 스위트 | 정적 UI만 static이고 검색은 backend/API driven |
-| Settings | Pydantic settings and `.env` based runtime config | 로컬 모델, 보정 모델, 예비 보정 모델, 벡터 검색, 평가 옵션을 환경별로 바꾸기 위해 사용 | [backend/app/core/settings.py](../../backend/app/core/settings.py), [.env.example](../../.env.example) | 실제 `.env`의 `LUMIX_` 설정과 `test_local_model_config.py` | 비밀값은 문서에 복사하지 않음 |
+| Backend API | FastAPI backend with static web serving direction | 웹 MVP에서 검색 API와 정적 UI를 한 프로세스로 시연하기 위해 사용 | [backend/app/main.py](../../backend/app/main.py), [backend/app/api/routes/app_config.py](../../backend/app/api/routes/app_config.py), [docs/api/api_spec.md](../api/api_spec.md) | API 문서와 테스트 스위트 | 정적 UI만 static이고 검색은 backend/API driven |
+| PDF page viewer | 4x PyMuPDF page render + vendored OpenSeadragon | PDF 상세 보기에서 저해상도 확대와 중앙 기준 확대 잘림을 줄이고, 확대 후 드래그 팬/미니맵 탐색을 제공 | [backend/app/indexing/page_renderer.py](../../backend/app/indexing/page_renderer.py), [backend/app/api/routes/viewer.py](../../backend/app/api/routes/viewer.py), [web/assets/vendor/openseadragon/openseadragon.min.js](../../web/assets/vendor/openseadragon/openseadragon.min.js), [backend/tests/test_page_renderer.py](../../backend/tests/test_page_renderer.py), [backend/tests/test_viewer_route.py](../../backend/tests/test_viewer_route.py) | [portfolio-screenshots/ui-checks/viewer-openseadragon.png](../../portfolio-screenshots/ui-checks/viewer-openseadragon.png), `/page-images/{document_id}/{page}@4x.png` runtime output | 단일 고해상도 PNG를 쓰므로 매우 큰 PDF에서는 tile 기반 Deep Zoom 변환을 추가 검토 |
+| Search API smoke eval | `POST /api/search` contract smoke set | 실제 사용자-facing API 응답의 카드, source, viewer_url, evidence, summary, 모델 필터 계약을 검증 | [backend/app/evaluation/search_api_smoke_eval.py](../../backend/app/evaluation/search_api_smoke_eval.py), [backend/tests/test_search_api_smoke_eval.py](../../backend/tests/test_search_api_smoke_eval.py), [backend/app/api/routes/search.py](../../backend/app/api/routes/search.py) | [data/eval/search_api_smoke_report.json](../../data/eval/search_api_smoke_report.json), [docs/evaluation/evaluation_report.md](../evaluation/evaluation_report.md) | LLM rewrite는 끄고 검색/API 계약만 검증 |
+| Settings | Pydantic settings and `.env` based runtime config | 로컬 모델, 보정 모델, 예비 보정 모델, 벡터 검색, 평가 옵션, 현재 카메라 브랜드명을 환경별로 바꾸기 위해 사용 | [backend/app/core/settings.py](../../backend/app/core/settings.py), [backend/app/schemas/app_config.py](../../backend/app/schemas/app_config.py), [.env.example](../../.env.example) | 실제 `.env`의 `CAMERA_` 설정과 `test_local_model_config.py`; 기존 `LUMIX_`는 호환 alias | 비밀값은 문서에 복사하지 않음 |
 | PDF ingestion | OpenDataLoader primary with PDF fallback path | 한국어 PDF 페이지 텍스트를 색인 가능한 구조로 추출 | [backend/app/indexing/opendataloader_adapter.py](../../backend/app/indexing/opendataloader_adapter.py), [backend/app/indexing/pdf_loader.py](../../backend/app/indexing/pdf_loader.py), [docs/data/pdf_loader_options.md](../data/pdf_loader_options.md) | [docs/data/data_inventory.md](../data/data_inventory.md) | 표/이미지 기반 정보는 텍스트 추출 품질 확인 필요 |
-| Chunking | Page and section-oriented chunks | PDF 페이지 출처를 유지하면서 검색 단위를 작게 만들기 위해 사용 | [backend/app/indexing/chunker.py](../../backend/app/indexing/chunker.py), [backend/app/indexing/fts_index.py](../../backend/app/indexing/fts_index.py) | `data/processed` 색인 산출물 | 페이지/섹션 경계가 틀리면 카드 출처도 흔들림 |
+| Chunking | OpenDataLoader semantic chunk cleanup + page/section chunks | PDF 페이지 출처를 유지하면서 `×`, `1`, `)`, 메뉴 glyph, dot leader 목차, 내부 page reference 같은 검색 노이즈를 줄이기 위해 사용 | [backend/app/indexing/opendataloader_adapter.py](../../backend/app/indexing/opendataloader_adapter.py), [backend/app/indexing/chunker.py](../../backend/app/indexing/chunker.py), [backend/app/indexing/fts_index.py](../../backend/app/indexing/fts_index.py), [backend/tests/test_opendataloader_adapter.py](../../backend/tests/test_opendataloader_adapter.py) | `data/processed/chunks`, [data/processed/evaluation/chunk_quality_audit.json](../../data/processed/evaluation/chunk_quality_audit.json) | 남은 flagged 항목은 대부분 한 글자짜리 tiny chunk라 다음 refinement에서 별도 병합/제외 검토 |
+| Chunk quality audit | Deterministic chunk noise scanner | PDF 파싱/chunking 변경 시 노이즈 감소를 수치로 추적 | [backend/app/evaluation/chunk_quality_audit.py](../../backend/app/evaluation/chunk_quality_audit.py), [scripts/chunk_quality_audit.py](../../scripts/chunk_quality_audit.py), [backend/tests/test_chunk_quality_audit.py](../../backend/tests/test_chunk_quality_audit.py) | [data/processed/evaluation/chunk_quality_audit.json](../../data/processed/evaluation/chunk_quality_audit.json) currently `275372` chunks, `2439` flagged, `0.009` issue rate | audit는 검색 품질 점수가 아니라 파싱 노이즈 지표이므로 search eval/API smoke와 같이 봐야 함 |
 | Korean query interpretation | Rule-based query normalizer + compound alias normalization | 모델명, 조사, 제어 문구, `제브라패턴`/`손떨림보정` 같은 붙여쓰기 별칭을 검색어에서 분리 | [backend/app/services/query_normalizer.py](../../backend/app/services/query_normalizer.py), [backend/app/services/korean_text_normalization.py](../../backend/app/services/korean_text_normalization.py), [backend/tests/test_query_normalizer.py](../../backend/tests/test_query_normalizer.py) | 검색 평가 케이스와 unit tests | 현재는 LLM 의미 해석이 아니라 규칙 기반 정규화 |
 | Lexical retrieval | SQLite FTS5 `unicode61` + `bm25(chunks_fts)` | 설치 부담이 낮고 한국어 PDF 텍스트를 로컬에서 빠르게 검색 | [backend/app/indexing/fts_schema.py](../../backend/app/indexing/fts_schema.py), [backend/app/indexing/fts_index.py](../../backend/app/indexing/fts_index.py) | [docs/evaluation/evaluation_report.md](../evaluation/evaluation_report.md) | 목차/메뉴 페이지가 실제 설명 페이지보다 높게 뜰 수 있음 |
 | Search eval sets | 50 seed + 100 dev eval + 300 weak-label candidates | 검색 변경 때 감이 아니라 고정 질문으로 회귀를 확인하기 위해 사용 | [backend/app/evaluation/search_eval.py](../../backend/app/evaluation/search_eval.py), [backend/app/evaluation/generate_search_eval_cases.py](../../backend/app/evaluation/generate_search_eval_cases.py), [backend/app/evaluation/dev_search_eval_cases.py](../../backend/app/evaluation/dev_search_eval_cases.py), [backend/tests/test_search_eval.py](../../backend/tests/test_search_eval.py), [backend/tests/test_dev_search_eval_cases.py](../../backend/tests/test_dev_search_eval_cases.py) | [data/eval/search_eval_report.json](../../data/eval/search_eval_report.json), [data/eval/dev_search_eval_report.json](../../data/eval/dev_search_eval_report.json), [docs/evaluation/evaluation_report.md](../evaluation/evaluation_report.md) | dev eval 생성/검증은 약 6분대로 느려 캐시나 진행 로그가 필요 |
 | Trigram fallback | SQLite FTS5 trigram table + BM25 rank | 붙여 쓰기, 영문/한글 혼합 기능명, 짧은 메뉴명을 보완 | [backend/app/indexing/fts_schema.py](../../backend/app/indexing/fts_schema.py) | 검색 결과에서 fallback 후보 사용 | 노이즈 후보가 늘 수 있어 source reranking 필요 |
 | Hybrid retrieval | BM25 result + optional vector result fusion | 키워드 검색과 의미 검색 후보를 함께 다루기 위해 사용 | [backend/app/services/hybrid_retriever.py](../../backend/app/services/hybrid_retriever.py), [backend/app/services/retrieval_hybrid_fusion.py](../../backend/app/services/retrieval_hybrid_fusion.py) | [docs/architecture/rag_pipeline.md](../architecture/rag_pipeline.md) | fusion 점수는 검색 평가로 계속 튜닝 필요 |
-| Optional vector search | Local in-memory vector adapter; `bge-m3` candidate | 한국어 의미 검색 후보를 실험하기 위한 확장 지점 | [backend/app/services/vector_search.py](../../backend/app/services/vector_search.py), [backend/app/services/local_model_config.py](../../backend/app/services/local_model_config.py), [docs/architecture/vector_search_plan.md](../architecture/vector_search_plan.md) | `LUMIX_ENABLE_LOCAL_VECTOR` 설정 | 현재 기본 품질 근거는 BM25/FTS 평가가 더 강함 |
+| Optional vector search | Local in-memory vector adapter; `bge-m3` candidate | 한국어 의미 검색 후보를 실험하기 위한 확장 지점 | [backend/app/services/vector_search.py](../../backend/app/services/vector_search.py), [backend/app/services/local_model_config.py](../../backend/app/services/local_model_config.py), [docs/architecture/vector_search_plan.md](../architecture/vector_search_plan.md) | `CAMERA_ENABLE_LOCAL_VECTOR` 설정 | 현재 기본 품질 근거는 BM25/FTS 평가가 더 강함 |
 | Source validation | `document_id`, `model_id`, page source refs | 모델별 정보 오염을 막고 공식 PDF 근거를 강제 | [backend/app/services/retrieval_source_validation.py](../../backend/app/services/retrieval_source_validation.py), [backend/app/wiki/source_ref_checker.py](../../backend/app/wiki/source_ref_checker.py) | feature card source refs, RAG quality citation gates | source ref 없는 답변은 확정 답변으로 쓰면 안 됨 |
 | Reference page promotion | Follow menu/table references like `[라이브 뷰 합성]: 253` | 목차/메뉴 page가 검색되면 실제 설명 page를 source로 승격하되, 긴 참조 라벨 과매칭은 막아 PDF 충실도를 높임 | [backend/app/services/retrieval_reference_pages.py](../../backend/app/services/retrieval_reference_pages.py), [backend/app/services/retrieval_feature_cards.py](../../backend/app/services/retrieval_feature_cards.py), [backend/tests/test_hybrid_retriever.py](../../backend/tests/test_hybrid_retriever.py) | [data/eval/search_eval_report.json](../../data/eval/search_eval_report.json), [data/processed/evaluation/rag_model_quality_card_template_alias_reference_limit10.json](../../data/processed/evaluation/rag_model_quality_card_template_alias_reference_limit10.json) | 현재는 FTS result content 안의 직접 page reference를 우선 처리 |
 | Card answer | Deterministic `card_template` answer | LLM 없이 찾은 PDF 페이지와 근거 텍스트를 빠르게 카드화 | [backend/app/evaluation/rag_model_quality_runner.py](../../backend/app/evaluation/rag_model_quality_runner.py), [backend/tests/test_rag_model_quality_runner.py](../../backend/tests/test_rag_model_quality_runner.py) | [data/processed/evaluation/rag_model_quality_card_template_alias_reference_limit10.json](../../data/processed/evaluation/rag_model_quality_card_template_alias_reference_limit10.json) | 문장 자연스러움보다 출처/속도/안정성을 우선 |
-| Search answer rewrite | Optional top-card summary rewrite and warm-up | 실제 `/api/search` 응답에서 검증된 첫 번째 카드 summary만 LLM으로 짧게 보정하고, 설정 시 앱 시작 때 보정 모델을 더미 호출 | [backend/app/services/answer_rewrite.py](../../backend/app/services/answer_rewrite.py), [backend/app/api/routes/search.py](../../backend/app/api/routes/search.py), [backend/app/main.py](../../backend/app/main.py), [backend/tests/test_answer_rewrite.py](../../backend/tests/test_answer_rewrite.py), [docs/api/api_spec.md](../api/api_spec.md) | `LUMIX_LLM_REWRITE_*` 설정과 answer rewrite 평가 산출물 | LLM은 source refs를 수정하지 않고, 실패 시 원본 summary 유지 |
+| Search answer rewrite | Optional top-card summary rewrite and warm-up | 실제 `/api/search` 응답에서 검증된 첫 번째 카드 summary만 LLM으로 짧게 보정하고, 설정 시 앱 시작 때 보정 모델을 더미 호출 | [backend/app/services/answer_rewrite.py](../../backend/app/services/answer_rewrite.py), [backend/app/api/routes/search.py](../../backend/app/api/routes/search.py), [backend/app/main.py](../../backend/app/main.py), [backend/tests/test_answer_rewrite.py](../../backend/tests/test_answer_rewrite.py), [docs/api/api_spec.md](../api/api_spec.md) | `CAMERA_LLM_REWRITE_*` 설정과 answer rewrite 평가 산출물 | LLM은 source refs를 수정하지 않고, rewrite output도 PDF glyph/menu noise cleanup을 통과하며, 실패 시 원본 summary 유지 |
 | Card rewrite eval | `card_template` JSON + short LLM rewrite | 검색/출처 판단은 deterministic card가 맡고 LLM은 1-2문장 보정만 맡기는 구조를 검증 | [backend/app/evaluation/card_template_rewrite_eval.py](../../backend/app/evaluation/card_template_rewrite_eval.py), [scripts/card_template_rewrite_eval.py](../../scripts/card_template_rewrite_eval.py), [backend/tests/test_card_template_rewrite_eval.py](../../backend/tests/test_card_template_rewrite_eval.py) | [data/processed/evaluation/card_template_rewrite_limit10.json](../../data/processed/evaluation/card_template_rewrite_limit10.json) | Qwen3 계열은 reasoning/content 분리 이슈를 별도 확인해야 함 |
 | Answer-only rewrite eval | LLM writes only answer text, code preserves JSON/source refs | Gemma4가 JSON 생성 대신 한국어 문장 보정에 적합한지 분리 검증 | [backend/app/evaluation/card_answer_rewrite_eval.py](../../backend/app/evaluation/card_answer_rewrite_eval.py), [backend/app/evaluation/card_answer_rewrite_ollama.py](../../backend/app/evaluation/card_answer_rewrite_ollama.py), [backend/app/evaluation/card_answer_rewrite_prefix.py](../../backend/app/evaluation/card_answer_rewrite_prefix.py), [scripts/card_answer_rewrite_eval.py](../../scripts/card_answer_rewrite_eval.py), [backend/tests/test_card_answer_rewrite_eval.py](../../backend/tests/test_card_answer_rewrite_eval.py) | [data/processed/evaluation/card_answer_rewrite_native_unsloth_e4b_alias_reference_prompt_128_limit10.json](../../data/processed/evaluation/card_answer_rewrite_native_unsloth_e4b_alias_reference_prompt_128_limit10.json) | Source contract는 코드가 보존하고, prompt는 근거 문장 밖 동사/기능/메뉴명 추가를 금지 |
 | Local LLM runtime | Ollama/OpenAI-compatible chat completions | 로컬 모델의 짧은 답변 정리, JSON 안정성, latency 비교 | [backend/app/services/local_model_config.py](../../backend/app/services/local_model_config.py), [backend/app/services/llm_model_selector.py](../../backend/app/services/llm_model_selector.py), [backend/app/evaluation/local_model_benchmark.py](../../backend/app/evaluation/local_model_benchmark.py) | [data/processed/evaluation/local_model_benchmark.json](../../data/processed/evaluation/local_model_benchmark.json), [docs/evaluation/local_model_benchmark.md](../evaluation/local_model_benchmark.md) | 기본 경로로 쓰기에는 로컬 latency와 출력 형식 리스크가 큼 |
@@ -92,6 +95,7 @@ Korean query
 | [data/processed/evaluation/card_answer_rewrite_native_single_model_unsloth_gemma-4-E4B-it-qat-GGUF_UD-Q4_K_XL_128_limit10.json](../../data/processed/evaluation/card_answer_rewrite_native_single_model_unsloth_gemma-4-E4B-it-qat-GGUF_UD-Q4_K_XL_128_limit10.json) | Unsloth Gemma4 E4B 단일 모델 연속 호출 측정 | warm-up 후 고정 보정 모델 운영 근거 |
 | [data/processed/evaluation/card_answer_rewrite_native_single_model_Qwen_Qwen3-4B-GGUF_Q4_K_M_128_limit10.json](../../data/processed/evaluation/card_answer_rewrite_native_single_model_Qwen_Qwen3-4B-GGUF_Q4_K_M_128_limit10.json) | Qwen3-4B 단일 모델 연속 호출 측정 | Qwen3-4B 보정 후보 제외 근거 |
 | [data/processed/evaluation/card_answer_rewrite_native_single_model_unsloth_gemma-4-12B-it-qat-GGUF_UD-Q4_K_XL_128_limit10.json](../../data/processed/evaluation/card_answer_rewrite_native_single_model_unsloth_gemma-4-12B-it-qat-GGUF_UD-Q4_K_XL_128_limit10.json) | Gemma4 12B 단일 모델 연속 호출 측정 | 12B 속도와 품질 판단 근거 |
+| [data/eval/search_api_smoke_report.json](../../data/eval/search_api_smoke_report.json) | 실제 `POST /api/search` 카드/source/viewer/evidence/summary/model filter 계약 확인 | 사용자-facing API 계약 안정성 근거 |
 | [data/processed/evaluation/local_model_benchmark.json](../../data/processed/evaluation/local_model_benchmark.json) | source 없는 로컬 모델 생성 성능 비교 | 모델 속도/토큰 처리량 설명 |
 | [docs/evaluation/rag_model_quality.md](../evaluation/rag_model_quality.md) | 평가 축과 실행 방법 | 평가 방법론 설명 |
 | [docs/evaluation/local_model_benchmark.md](../evaluation/local_model_benchmark.md) | 로컬 모델 벤치마크 설명 | LLM 후보군 설명 |
@@ -106,7 +110,13 @@ Korean query
    .venv/bin/python -m backend.app.evaluation.search_eval
    ```
 
-2. 기본 응답 전략을 검증한다.
+2. 실제 검색 API 계약을 검증한다.
+
+   ```bash
+   .venv/bin/python -m backend.app.evaluation.search_api_smoke_eval
+   ```
+
+3. 기본 응답 전략을 검증한다.
 
    ```bash
    .venv/bin/python - <<'PY'
@@ -132,7 +142,7 @@ Korean query
    PY
    ```
 
-3. LLM 보조 단계가 필요하면 같은 source 조건으로 비교한다.
+4. LLM 보조 단계가 필요하면 같은 source 조건으로 비교한다.
 
    ```bash
    .venv/bin/python scripts/rag_model_quality_eval.py \
@@ -140,7 +150,7 @@ Korean query
      --output data/processed/evaluation/rag_model_quality_limit10.json
    ```
 
-4. 후속 LLM 보정 단계가 필요하면 `card_template` 보정 전용 비교를 실행한다.
+5. 후속 LLM 보정 단계가 필요하면 `card_template` 보정 전용 비교를 실행한다.
 
    ```bash
    .venv/bin/python scripts/card_template_rewrite_eval.py \
@@ -149,7 +159,7 @@ Korean query
      --output data/processed/evaluation/card_template_rewrite_limit10.json
    ```
 
-5. Gemma4 보정 가능성을 볼 때는 answer-only rewrite 비교를 실행한다.
+6. Gemma4 보정 가능성을 볼 때는 answer-only rewrite 비교를 실행한다.
 
    ```bash
    .venv/bin/python scripts/card_answer_rewrite_eval.py \
@@ -158,12 +168,13 @@ Korean query
      --output data/processed/evaluation/card_answer_rewrite_native_qwen4b_unsloth_e4b_128_limit10.json
    ```
 
-6. 리포트에는 최소한 다음을 함께 인용한다.
+7. 리포트에는 최소한 다음을 함께 인용한다.
 
    ```text
    - query_normalizer.py: 한국어 질문 정규화 근거
    - fts_schema.py: BM25/trigram 검색 근거
    - hybrid_retriever.py: 검색 흐름 근거
+   - search_api_smoke_eval.py, search_api_smoke_report.json: 실제 검색 API 계약 근거
    - rag_model_quality_runner.py: retrieval_only/card_template/llm_inference 비교 근거
    - card_template_rewrite_eval.py: card_template 후속 LLM 보정 비교 근거
    - card_answer_rewrite_eval.py: answer-only LLM 보정 비교 근거

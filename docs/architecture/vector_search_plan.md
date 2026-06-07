@@ -51,7 +51,7 @@ MVP에서는 `chunk` 단위로 시작하고, 중복 페이지 축소와 Feature 
 - adapter가 있으면 FTS5 결과 유무와 관계없이 vector 후보도 함께 검색한다.
 - FTS5/vector 후보는 Source Reference Validator를 통과해야 Feature Card로 반환된다.
 - 같은 `(document_id, model_id, page)` 출처는 중복 제거하고 FTS5 결과를 우선한다.
-- API 기본값은 vector off이며, `LUMIX_ENABLE_LOCAL_VECTOR=true`일 때 local-only
+- API 기본값은 vector off이며, `CAMERA_ENABLE_LOCAL_VECTOR=true`일 때 local-only
   in-memory vector adapter를 chunks에서 lazy load한다.
 
 ## 다음 결정 필요 항목

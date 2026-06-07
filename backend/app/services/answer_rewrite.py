@@ -12,6 +12,7 @@ from backend.app.schemas.feature_card import (
     SupportedModel,
 )
 from backend.app.schemas.search import SearchResponse
+from backend.app.services.retrieval_display_text import clean_summary_text
 
 DEFAULT_REWRITE_CARD_LIMIT = 1
 
@@ -233,8 +234,8 @@ def _source_page_text(card: FeatureCard) -> str:
 
 
 def _subject_prefixed_summary(*, subject: str, summary: str) -> str:
-    answer = " ".join(summary.split()).strip()
-    clean_subject = " ".join(subject.split()).strip("[]() ")
+    answer = clean_summary_text(" ".join(summary.split()).strip())
+    clean_subject = " ".join(subject.split()).strip("[] ")
     if not clean_subject or clean_subject in answer:
         return answer
     return f"{clean_subject}: {answer}"

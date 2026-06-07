@@ -20,7 +20,7 @@ summary와 source ref만 JSON으로 조립한다. `card_template`는 LLM 추론 
 정형화한다. `card_template_rewrite`는 이미 검증된 `card_template` JSON을
 LLM에 넣고 `answer` 문장만 짧게 다듬는 후속 보정 평가다. 이 모드에서 LLM은
 검색이나 출처 판단을 하지 않는다. `Gemma 4 12B`는 16GB Mac 기준 지연이
-커서 기본 비교에서 제외하고, 필요할 때만 `LUMIX_LLM_COMPARISON_MODELS`에 명시한다.
+커서 기본 비교에서 제외하고, 필요할 때만 `CAMERA_LLM_COMPARISON_MODELS`에 명시한다.
 
 ## 평가 축
 

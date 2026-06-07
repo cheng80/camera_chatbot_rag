@@ -10,6 +10,7 @@ DEFAULT_MANUALS_DIR: Final = Path("data/raw/manuals")
 DEFAULT_PAGE_IMAGES_DIR: Final = Path("data/processed/page_images")
 SAFE_DOCUMENT_ID_RE: Final = re.compile(r"^[a-z0-9_]+$")
 WORKER_TIMEOUT_SECONDS: Final = 60
+RENDER_SCALE: Final = 4
 RENDER_WORKER_CODE: Final = """
 import sys
 from pathlib import Path
@@ -19,6 +20,7 @@ import fitz
 pdf_path = Path(sys.argv[1])
 page_number = int(sys.argv[2])
 output_path = Path(sys.argv[3])
+render_scale = int(sys.argv[4])
 document = fitz.open(pdf_path)
 try:
     page_index = page_number - 1
@@ -28,7 +30,8 @@ try:
         )
         raise SystemExit(2)
     page = document.load_page(page_index)
-    pixmap = page.get_pixmap()
+    matrix = fitz.Matrix(render_scale, render_scale)
+    pixmap = page.get_pixmap(matrix=matrix)
     pixmap.save(output_path)
 finally:
     document.close()
@@ -131,6 +134,7 @@ def _run_worker(
         str(request.pdf_path),
         str(request.page),
         str(image_path),
+        str(RENDER_SCALE),
     ]
     try:
         return subprocess.run(  # noqa: S603
@@ -197,7 +201,7 @@ def _error_result(
 
 
 def _image_path(request: PageRenderRequest) -> Path:
-    return request.output_root / request.document_id / f"{request.page}.png"
+    return request.output_root / request.document_id / f"{request.page}@4x.png"
 
 
 def _invalid_image_path(request: PageRenderRequest) -> Path:

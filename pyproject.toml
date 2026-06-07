@@ -1,7 +1,7 @@
 [project]
 name = "camera-chatbot-rag"
 version = "0.1.0"
-description = "Panasonic LUMIX manual assistant with FastAPI-served static UI and Hybrid RAG."
+description = "Camera manual assistant with FastAPI-served static UI and Hybrid RAG."
 readme = "README.md"
 requires-python = ">=3.12.10,<3.13"
 dependencies = [

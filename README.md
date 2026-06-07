@@ -1,7 +1,8 @@
-# Panasonic LUMIX Manual Assistant
+# Camera Manual Assistant
 
-Panasonic LUMIX 한국어 PDF 매뉴얼을 기반으로 기능 검색, 기능 카드,
-공식 PDF 출처 페이지를 제공하는 제품 지원형 RAG 프로젝트입니다.
+카메라 브랜드별 한국어 PDF 매뉴얼을 기반으로 기능 검색, 기능 카드,
+공식 PDF 출처 페이지를 제공하는 제품 지원형 RAG 프로젝트입니다. 현재 등록된
+1차 데이터셋은 Panasonic LUMIX 매뉴얼입니다.
 
 ## 방향
 

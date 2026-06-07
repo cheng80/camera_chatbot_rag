@@ -146,6 +146,56 @@ data/eval/search_eval_report.json
 평가셋 기준으로는 필수 병목이 아니며, 300개 잠금 평가셋에서 FTS5 한계가 확인되면
 검색 어댑터(Search Adapter)로 추가한다.
 
+## Search API 스모크 평가
+
+평가 목적:
+
+retriever 내부 결과가 아니라 실제 `POST /api/search` 응답이 카드, 출처, 뷰어 URL,
+schema, 모델 필터 계약을 지키는지 확인한다. 이 평가는 LLM rewrite를 끄고 실행해
+검색/API 계약만 검증한다.
+
+실행 명령:
+
+```bash
+.venv/bin/python -m backend.app.evaluation.search_api_smoke_eval
+```
+
+평가 산출물:
+
+```text
+data/eval/search_api_smoke_cases.json
+data/eval/search_api_smoke_report.json
+```
+
+현재 결과:
+
+| 항목 | 결과 |
+|---|---:|
+| API 스모크 질문 | 25 |
+| 통과 | 25 |
+| 통과율 | 100% |
+| retrieval_status ok 비율 | 100% |
+| 카드 source 존재율 | 100% |
+| 기대 문서 적중률 | 100% |
+| 기대 페이지 적중률 | 100% |
+| viewer_url 형식 통과율 | 100% |
+| evidence_status 통과율 | 100% |
+| summary 존재율 | 100% |
+| 요청 모델 필터 통과율 | 100% |
+| source/support 모델 일관성 | 100% |
+| 실행 시간 | 약 32초 |
+
+대표 포함 케이스:
+
+| 질의 | 모델 | 기대 페이지 |
+|---|---|---:|
+| 제브라 패턴 | DC-G9M2 | 415 |
+| 손떨림보정 | DC-G9M2 | 266, 269 |
+| Wi-Fi 연결 | DC-G9M2 | 673 |
+| 카드 포맷 | DC-G9M2 | 597, 798 |
+| 라이브 뷰 합성 | DC-G9M2 | 253 |
+| 프록시 녹화 | DC-S1M2 | 177 |
+
 ## 300개 검색 평가셋 확장 계획
 
 목표:

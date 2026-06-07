@@ -1,4 +1,5 @@
 from pathlib import Path
+from typing import Final
 
 from backend.app.indexing.fts_index import (
     DEFAULT_FTS_INDEX_PATH,
@@ -26,6 +27,8 @@ from backend.app.wiki.source_ref_checker import (
     DEFAULT_PAGES_DIR,
     DEFAULT_REGISTRY_DIR,
 )
+
+SEARCH_CANDIDATE_TOP_K: Final = 1000
 
 
 class HybridRetriever:
@@ -57,14 +60,14 @@ class HybridRetriever:
             index_path=self._index_path,
             query=normalized_input.search_query,
             model_ids=normalized_input.effective_model_ids,
-            top_k=payload.top_k,
+            top_k=candidate_search_top_k(payload.top_k),
         )
         vector_results = (
             self._vector_adapter.search(
                 VectorSearchRequest(
                     query=normalized_input.search_query,
                     model_ids=tuple(normalized_input.effective_model_ids),
-                    top_k=payload.top_k,
+                    top_k=candidate_search_top_k(payload.top_k),
                 ),
             )
             if self._vector_adapter is not None
@@ -85,3 +88,7 @@ class HybridRetriever:
                 index_exists=self._index_path.is_file(),
             ),
         )
+
+
+def candidate_search_top_k(_final_top_k: int) -> int:
+    return SEARCH_CANDIDATE_TOP_K

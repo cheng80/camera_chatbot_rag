@@ -1,6 +1,7 @@
 from fastapi import APIRouter
 
 from backend.app.api.routes import (
+    app_config,
     documents,
     features,
     feedback,
@@ -11,6 +12,7 @@ from backend.app.api.routes import (
 )
 
 api_router = APIRouter()
+api_router.include_router(app_config.router, tags=["app"])
 api_router.include_router(health.router, tags=["health"])
 api_router.include_router(documents.router, prefix="/documents", tags=["documents"])
 api_router.include_router(models.router, prefix="/models", tags=["models"])

@@ -1,14 +1,14 @@
 # Next Work Roadmap
 
-이 문서는 Panasonic LUMIX Manual Assistant의 전체 목표를 기준으로 다음 작업을
+이 문서는 Camera Manual Assistant의 전체 목표를 기준으로 다음 작업을
 우선순위별로 정리한다. 새 세션에서는 [NEXT_SESSION.md](../../NEXT_SESSION.md)를
 먼저 읽고, 세부 작업 방향이 필요할 때 이 문서를 참조한다.
 
 ## Overall Goal
 
-한국어 LUMIX PDF 매뉴얼을 기반으로 사용자의 자연어 질문을 해석하고, 모델별
+카메라 브랜드별 한국어 PDF 매뉴얼을 기반으로 사용자의 자연어 질문을 해석하고, 모델별
 기능 카드(Feature Card)와 공식 PDF 출처 페이지(Source Page)를 제공하는 웹
-MVP를 만든다.
+MVP를 만든다. 현재 baseline 데이터셋은 Panasonic LUMIX 매뉴얼이다.
 
 핵심 흐름은 다음 순서를 유지한다.
 

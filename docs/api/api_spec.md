@@ -4,6 +4,7 @@
 
 ```text
 GET  /api/health
+GET  /api/app-config
 GET  /api/documents
 GET  /api/models
 POST /api/search
@@ -17,9 +18,23 @@ POST /api/feedback
 `POST /api/search`
 
 현재 검색은 SQLite FTS5 색인(Full-Text Search Index)을 기본으로 사용한다.
-검색 청크(Chunk)를 기능 카드(Feature Card)로 매핑하고, `LUMIX_LLM_REWRITE_ENABLED`
+검색 청크(Chunk)를 기능 카드(Feature Card)로 매핑하고, `CAMERA_LLM_REWRITE_ENABLED`
 가 켜져 있으면 첫 번째 카드의 `summary`만 짧은 한국어 답변으로 보정한다. 보정은
 카드의 `sources`, `evidence_status`, PDF viewer URL을 변경하지 않는다.
+
+## App Config
+
+`GET /api/app-config`
+
+정적 웹 UI가 상단 브랜드명과 앱명을 렌더링할 때 사용하는 설정을 반환한다.
+
+```json
+{
+  "app_name": "Camera Manual Assistant",
+  "brand_name": "Panasonic LUMIX",
+  "brand_mark": "PL"
+}
+```
 
 한국어 검색은 두 색인을 함께 사용한다.
 
@@ -67,12 +82,15 @@ LLM 보정 설정:
 
 | 환경 변수 | 의미 |
 |---|---|
-| `LUMIX_LLM_REWRITE_ENABLED` | 검색 응답의 첫 번째 카드 summary 보정 여부 |
-| `LUMIX_LLM_REWRITE_MODEL` | 기본 보정 모델 |
-| `LUMIX_LLM_REWRITE_FALLBACK_MODELS` | 기본 보정 모델 실패 시 시도할 예비 모델 목록 |
-| `LUMIX_LLM_REWRITE_MAX_TOKENS` | 보정 답변 생성 토큰 상한 |
-| `LUMIX_LLM_REWRITE_THINK` | 보정 호출에서 Ollama thinking 사용 여부 |
-| `LUMIX_LLM_REWRITE_WARMUP_ENABLED` | 앱 시작 시 보정 모델 더미 호출 여부 |
+| `CAMERA_LLM_REWRITE_ENABLED` | 검색 응답의 첫 번째 카드 summary 보정 여부 |
+| `CAMERA_LLM_REWRITE_MODEL` | 기본 보정 모델 |
+| `CAMERA_LLM_REWRITE_FALLBACK_MODELS` | 기본 보정 모델 실패 시 시도할 예비 모델 목록 |
+| `CAMERA_LLM_REWRITE_MAX_TOKENS` | 보정 답변 생성 토큰 상한 |
+| `CAMERA_LLM_REWRITE_THINK` | 보정 호출에서 Ollama thinking 사용 여부 |
+| `CAMERA_LLM_REWRITE_WARMUP_ENABLED` | 앱 시작 시 보정 모델 더미 호출 여부 |
+
+현재 기본 설정 prefix는 `CAMERA_`다. 기존 `LUMIX_` prefix는 과거 환경 파일과의
+호환을 위해 계속 읽는다.
 
 현재 권장값은 Unsloth Gemma4 E4B를 기본 보정 모델로 쓰고, SuperGemma4 E4B를
 예비 후보로 두는 것이다. LLM은 검색이나 출처 판단을 하지 않고, 이미 검증된 카드

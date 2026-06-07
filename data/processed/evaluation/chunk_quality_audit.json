@@ -1,0 +1,565 @@
+{
+  "document_count": 32,
+  "chunk_count": 275372,
+  "issue_chunk_count": 2439,
+  "issue_rate": 0.008857109655302646,
+  "issue_counts": {
+    "bad_section_title": 0,
+    "bad_content": 0,
+    "internal_page_reference": 0,
+    "toc_reference": 29,
+    "tiny_chunk": 2410
+  },
+  "examples": [
+    {
+      "chunk_id": "dc_g100_kor:opendl:94:939",
+      "document_id": "dc_g100_kor",
+      "page": 94,
+      "chunk_type": "paragraph",
+      "issue_kinds": [
+        "tiny_chunk"
+      ],
+      "section_title": "조리개우선 AE 모드",
+      "content_preview": "큼"
+    },
+    {
+      "chunk_id": "dc_g100_kor:opendl:129:1431",
+      "document_id": "dc_g100_kor",
+      "page": 129,
+      "chunk_type": "paragraph",
+      "issue_kinds": [
+        "tiny_chunk"
+      ],
+      "section_title": "AF 모드 선택하기",
+      "content_preview": "등"
+    },
+    {
+      "chunk_id": "dc_g100_kor:opendl:278:3517",
+      "document_id": "dc_g100_kor",
+      "page": 278,
+      "chunk_type": "paragraph",
+      "issue_kinds": [
+        "tiny_chunk"
+      ],
+      "section_title": "그룹 이미지",
+      "content_preview": "장"
+    },
+    {
+      "chunk_id": "dc_g100_kor:opendl:459:6226",
+      "document_id": "dc_g100_kor",
+      "page": 459,
+      "chunk_type": "paragraph",
+      "issue_kinds": [
+        "tiny_chunk"
+      ],
+      "section_title": "재생 화면",
+      "content_preview": "G"
+    },
+    {
+      "chunk_id": "dc_g100_kor:opendl:459:6234",
+      "document_id": "dc_g100_kor",
+      "page": 459,
+      "chunk_type": "paragraph",
+      "issue_kinds": [
+        "tiny_chunk"
+      ],
+      "section_title": "재생 화면",
+      "content_preview": "G"
+    },
+    {
+      "chunk_id": "dc_g100_kor:opendl:459:6235",
+      "document_id": "dc_g100_kor",
+      "page": 459,
+      "chunk_type": "paragraph",
+      "issue_kinds": [
+        "tiny_chunk"
+      ],
+      "section_title": "재생 화면",
+      "content_preview": "B"
+    },
+    {
+      "chunk_id": "dc_g100_kor:opendl:496:6720",
+      "document_id": "dc_g100_kor",
+      "page": 496,
+      "chunk_type": "paragraph",
+      "issue_kinds": [
+        "tiny_chunk"
+      ],
+      "section_title": "사양",
+      "content_preview": "줌"
+    },
+    {
+      "chunk_id": "dc_g100_kor:opendl:500:6782",
+      "document_id": "dc_g100_kor",
+      "page": 500,
+      "chunk_type": "list",
+      "issue_kinds": [
+        "tiny_chunk"
+      ],
+      "section_title": "색인",
+      "content_preview": "F"
+    },
+    {
+      "chunk_id": "dc_g100_kor:opendl:501:6783",
+      "document_id": "dc_g100_kor",
+      "page": 501,
+      "chunk_type": "paragraph",
+      "issue_kinds": [
+        "tiny_chunk"
+      ],
+      "section_title": "색인",
+      "content_preview": "Q"
+    },
+    {
+      "chunk_id": "dc_g100_kor:opendl:501:6784",
+      "document_id": "dc_g100_kor",
+      "page": 501,
+      "chunk_type": "list",
+      "issue_kinds": [
+        "tiny_chunk"
+      ],
+      "section_title": "색인",
+      "content_preview": "R"
+    },
+    {
+      "chunk_id": "dc_g100_kor:opendl:501:6785",
+      "document_id": "dc_g100_kor",
+      "page": 501,
+      "chunk_type": "list",
+      "issue_kinds": [
+        "tiny_chunk"
+      ],
+      "section_title": "색인",
+      "content_preview": "S"
+    },
+    {
+      "chunk_id": "dc_g100_kor:opendl:501:6786",
+      "document_id": "dc_g100_kor",
+      "page": 501,
+      "chunk_type": "paragraph",
+      "issue_kinds": [
+        "tiny_chunk"
+      ],
+      "section_title": "색인",
+      "content_preview": "T"
+    },
+    {
+      "chunk_id": "dc_g100_kor:opendl:501:6787",
+      "document_id": "dc_g100_kor",
+      "page": 501,
+      "chunk_type": "list",
+      "issue_kinds": [
+        "tiny_chunk"
+      ],
+      "section_title": "색인",
+      "content_preview": "U"
+    },
+    {
+      "chunk_id": "dc_g100_kor:opendl:501:6788",
+      "document_id": "dc_g100_kor",
+      "page": 501,
+      "chunk_type": "list",
+      "issue_kinds": [
+        "tiny_chunk"
+      ],
+      "section_title": "색인",
+      "content_preview": "V"
+    },
+    {
+      "chunk_id": "dc_g100_kor:opendl:501:6789",
+      "document_id": "dc_g100_kor",
+      "page": 501,
+      "chunk_type": "list",
+      "issue_kinds": [
+        "tiny_chunk"
+      ],
+      "section_title": "색인",
+      "content_preview": "W"
+    },
+    {
+      "chunk_id": "dc_g100_kor:opendl:501:6790",
+      "document_id": "dc_g100_kor",
+      "page": 501,
+      "chunk_type": "paragraph",
+      "issue_kinds": [
+        "tiny_chunk"
+      ],
+      "section_title": "색인",
+      "content_preview": "ㄱ"
+    },
+    {
+      "chunk_id": "dc_g100_kor:opendl:501:6791",
+      "document_id": "dc_g100_kor",
+      "page": 501,
+      "chunk_type": "paragraph",
+      "issue_kinds": [
+        "tiny_chunk"
+      ],
+      "section_title": "색인",
+      "content_preview": "ㄴ"
+    },
+    {
+      "chunk_id": "dc_g100_kor:opendl:502:6792",
+      "document_id": "dc_g100_kor",
+      "page": 502,
+      "chunk_type": "paragraph",
+      "issue_kinds": [
+        "tiny_chunk"
+      ],
+      "section_title": "색인",
+      "content_preview": "ㄷ"
+    },
+    {
+      "chunk_id": "dc_g100_kor:opendl:502:6793",
+      "document_id": "dc_g100_kor",
+      "page": 502,
+      "chunk_type": "paragraph",
+      "issue_kinds": [
+        "tiny_chunk"
+      ],
+      "section_title": "색인",
+      "content_preview": "ㄹ"
+    },
+    {
+      "chunk_id": "dc_g100_kor:opendl:502:6794",
+      "document_id": "dc_g100_kor",
+      "page": 502,
+      "chunk_type": "paragraph",
+      "issue_kinds": [
+        "tiny_chunk"
+      ],
+      "section_title": "색인",
+      "content_preview": "ㅁ"
+    },
+    {
+      "chunk_id": "dc_g100_kor:opendl:502:6795",
+      "document_id": "dc_g100_kor",
+      "page": 502,
+      "chunk_type": "paragraph",
+      "issue_kinds": [
+        "tiny_chunk"
+      ],
+      "section_title": "색인",
+      "content_preview": "ㅂ"
+    },
+    {
+      "chunk_id": "dc_g100_kor:opendl:503:6796",
+      "document_id": "dc_g100_kor",
+      "page": 503,
+      "chunk_type": "paragraph",
+      "issue_kinds": [
+        "tiny_chunk"
+      ],
+      "section_title": "색인",
+      "content_preview": "ㅅ"
+    },
+    {
+      "chunk_id": "dc_g100_kor:opendl:504:6797",
+      "document_id": "dc_g100_kor",
+      "page": 504,
+      "chunk_type": "paragraph",
+      "issue_kinds": [
+        "tiny_chunk"
+      ],
+      "section_title": "색인",
+      "content_preview": "ㅇ"
+    },
+    {
+      "chunk_id": "dc_g100_kor:opendl:504:6798",
+      "document_id": "dc_g100_kor",
+      "page": 504,
+      "chunk_type": "paragraph",
+      "issue_kinds": [
+        "tiny_chunk"
+      ],
+      "section_title": "색인",
+      "content_preview": "ㅈ"
+    },
+    {
+      "chunk_id": "dc_g100_kor:opendl:505:6799",
+      "document_id": "dc_g100_kor",
+      "page": 505,
+      "chunk_type": "paragraph",
+      "issue_kinds": [
+        "tiny_chunk"
+      ],
+      "section_title": "색인",
+      "content_preview": "ㅊ"
+    },
+    {
+      "chunk_id": "dc_g100_kor:opendl:505:6800",
+      "document_id": "dc_g100_kor",
+      "page": 505,
+      "chunk_type": "paragraph",
+      "issue_kinds": [
+        "tiny_chunk"
+      ],
+      "section_title": "색인",
+      "content_preview": "ㅋ"
+    },
+    {
+      "chunk_id": "dc_g100_kor:opendl:505:6801",
+      "document_id": "dc_g100_kor",
+      "page": 505,
+      "chunk_type": "paragraph",
+      "issue_kinds": [
+        "tiny_chunk"
+      ],
+      "section_title": "색인",
+      "content_preview": "ㅌ"
+    },
+    {
+      "chunk_id": "dc_g100_kor:opendl:506:6802",
+      "document_id": "dc_g100_kor",
+      "page": 506,
+      "chunk_type": "paragraph",
+      "issue_kinds": [
+        "tiny_chunk"
+      ],
+      "section_title": "색인",
+      "content_preview": "ㅍ"
+    },
+    {
+      "chunk_id": "dc_g100_kor:opendl:506:6803",
+      "document_id": "dc_g100_kor",
+      "page": 506,
+      "chunk_type": "paragraph",
+      "issue_kinds": [
+        "tiny_chunk"
+      ],
+      "section_title": "색인",
+      "content_preview": "ㅎ"
+    },
+    {
+      "chunk_id": "dc_g100d_full_kor:opendl:94:921",
+      "document_id": "dc_g100d_full_kor",
+      "page": 94,
+      "chunk_type": "paragraph",
+      "issue_kinds": [
+        "tiny_chunk"
+      ],
+      "section_title": "조리개우선 AE 모드",
+      "content_preview": "큼"
+    },
+    {
+      "chunk_id": "dc_g100d_full_kor:opendl:129:1413",
+      "document_id": "dc_g100d_full_kor",
+      "page": 129,
+      "chunk_type": "paragraph",
+      "issue_kinds": [
+        "tiny_chunk"
+      ],
+      "section_title": "AF 모드 선택하기",
+      "content_preview": "등"
+    },
+    {
+      "chunk_id": "dc_g100d_full_kor:opendl:278:3493",
+      "document_id": "dc_g100d_full_kor",
+      "page": 278,
+      "chunk_type": "paragraph",
+      "issue_kinds": [
+        "tiny_chunk"
+      ],
+      "section_title": "그룹 이미지",
+      "content_preview": "장"
+    },
+    {
+      "chunk_id": "dc_g100d_full_kor:opendl:447:5998",
+      "document_id": "dc_g100d_full_kor",
+      "page": 447,
+      "chunk_type": "paragraph",
+      "issue_kinds": [
+        "tiny_chunk"
+      ],
+      "section_title": "재생 화면",
+      "content_preview": "G"
+    },
+    {
+      "chunk_id": "dc_g100d_full_kor:opendl:447:6006",
+      "document_id": "dc_g100d_full_kor",
+      "page": 447,
+      "chunk_type": "paragraph",
+      "issue_kinds": [
+        "tiny_chunk"
+      ],
+      "section_title": "재생 화면",
+      "content_preview": "G"
+    },
+    {
+      "chunk_id": "dc_g100d_full_kor:opendl:447:6007",
+      "document_id": "dc_g100d_full_kor",
+      "page": 447,
+      "chunk_type": "paragraph",
+      "issue_kinds": [
+        "tiny_chunk"
+      ],
+      "section_title": "재생 화면",
+      "content_preview": "B"
+    },
+    {
+      "chunk_id": "dc_g100d_full_kor:opendl:484:6488",
+      "document_id": "dc_g100d_full_kor",
+      "page": 484,
+      "chunk_type": "paragraph",
+      "issue_kinds": [
+        "tiny_chunk"
+      ],
+      "section_title": "사양",
+      "content_preview": "줌"
+    },
+    {
+      "chunk_id": "dc_g100d_full_kor:opendl:488:6550",
+      "document_id": "dc_g100d_full_kor",
+      "page": 488,
+      "chunk_type": "list",
+      "issue_kinds": [
+        "tiny_chunk"
+      ],
+      "section_title": "색인",
+      "content_preview": "F"
+    },
+    {
+      "chunk_id": "dc_g100d_full_kor:opendl:489:6551",
+      "document_id": "dc_g100d_full_kor",
+      "page": 489,
+      "chunk_type": "list",
+      "issue_kinds": [
+        "tiny_chunk"
+      ],
+      "section_title": "색인",
+      "content_preview": "P"
+    },
+    {
+      "chunk_id": "dc_g100d_full_kor:opendl:489:6552",
+      "document_id": "dc_g100d_full_kor",
+      "page": 489,
+      "chunk_type": "list",
+      "issue_kinds": [
+        "tiny_chunk"
+      ],
+      "section_title": "색인",
+      "content_preview": "Q"
+    },
+    {
+      "chunk_id": "dc_g100d_full_kor:opendl:489:6553",
+      "document_id": "dc_g100d_full_kor",
+      "page": 489,
+      "chunk_type": "list",
+      "issue_kinds": [
+        "tiny_chunk"
+      ],
+      "section_title": "색인",
+      "content_preview": "R"
+    },
+    {
+      "chunk_id": "dc_g100d_full_kor:opendl:489:6554",
+      "document_id": "dc_g100d_full_kor",
+      "page": 489,
+      "chunk_type": "list",
+      "issue_kinds": [
+        "tiny_chunk"
+      ],
+      "section_title": "색인",
+      "content_preview": "S"
+    },
+    {
+      "chunk_id": "dc_g100d_full_kor:opendl:489:6555",
+      "document_id": "dc_g100d_full_kor",
+      "page": 489,
+      "chunk_type": "paragraph",
+      "issue_kinds": [
+        "tiny_chunk"
+      ],
+      "section_title": "색인",
+      "content_preview": "T"
+    },
+    {
+      "chunk_id": "dc_g100d_full_kor:opendl:489:6556",
+      "document_id": "dc_g100d_full_kor",
+      "page": 489,
+      "chunk_type": "list",
+      "issue_kinds": [
+        "tiny_chunk"
+      ],
+      "section_title": "색인",
+      "content_preview": "U"
+    },
+    {
+      "chunk_id": "dc_g100d_full_kor:opendl:489:6557",
+      "document_id": "dc_g100d_full_kor",
+      "page": 489,
+      "chunk_type": "list",
+      "issue_kinds": [
+        "tiny_chunk"
+      ],
+      "section_title": "색인",
+      "content_preview": "V"
+    },
+    {
+      "chunk_id": "dc_g100d_full_kor:opendl:489:6558",
+      "document_id": "dc_g100d_full_kor",
+      "page": 489,
+      "chunk_type": "paragraph",
+      "issue_kinds": [
+        "tiny_chunk"
+      ],
+      "section_title": "색인",
+      "content_preview": "ㄱ"
+    },
+    {
+      "chunk_id": "dc_g100d_full_kor:opendl:489:6559",
+      "document_id": "dc_g100d_full_kor",
+      "page": 489,
+      "chunk_type": "paragraph",
+      "issue_kinds": [
+        "tiny_chunk"
+      ],
+      "section_title": "색인",
+      "content_preview": "ㄴ"
+    },
+    {
+      "chunk_id": "dc_g100d_full_kor:opendl:490:6560",
+      "document_id": "dc_g100d_full_kor",
+      "page": 490,
+      "chunk_type": "paragraph",
+      "issue_kinds": [
+        "tiny_chunk"
+      ],
+      "section_title": "색인",
+      "content_preview": "ㄷ"
+    },
+    {
+      "chunk_id": "dc_g100d_full_kor:opendl:490:6561",
+      "document_id": "dc_g100d_full_kor",
+      "page": 490,
+      "chunk_type": "paragraph",
+      "issue_kinds": [
+        "tiny_chunk"
+      ],
+      "section_title": "색인",
+      "content_preview": "ㄹ"
+    },
+    {
+      "chunk_id": "dc_g100d_full_kor:opendl:490:6562",
+      "document_id": "dc_g100d_full_kor",
+      "page": 490,
+      "chunk_type": "paragraph",
+      "issue_kinds": [
+        "tiny_chunk"
+      ],
+      "section_title": "색인",
+      "content_preview": "ㅁ"
+    },
+    {
+      "chunk_id": "dc_g100d_full_kor:opendl:490:6563",
+      "document_id": "dc_g100d_full_kor",
+      "page": 490,
+      "chunk_type": "paragraph",
+      "issue_kinds": [
+        "tiny_chunk"
+      ],
+      "section_title": "색인",
+      "content_preview": "ㅂ"
+    }
+  ]
+}

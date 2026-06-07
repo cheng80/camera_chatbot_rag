@@ -12,34 +12,34 @@ Embedding: http://127.0.0.1:11434/v1/embeddings
 프로젝트 설정값:
 
 ```text
-LUMIX_LLM_BASE_URL=http://127.0.0.1:11434/v1
-LUMIX_EMBEDDING_BASE_URL=http://127.0.0.1:11434/v1
-LUMIX_LLM_SELECTION_MODE=auto
-LUMIX_LLM_MODEL=hf.co/mradermacher/supergemma4-e4b-abliterated-i1-GGUF:Q4_K_M
-LUMIX_LLM_FAST_MODEL=hf.co/mradermacher/supergemma4-e4b-abliterated-i1-GGUF:Q4_K_M
-LUMIX_LLM_THINKING_MODEL=hf.co/Qwen/Qwen3-8B-GGUF:Q4_K_M
-LUMIX_LLM_REQUEST_TIMEOUT_SECONDS=120
-LUMIX_LLM_TEMPERATURE=0.2
-LUMIX_LLM_MAX_TOKENS=512
-LUMIX_LLM_THINK=false
+CAMERA_LLM_BASE_URL=http://127.0.0.1:11434/v1
+CAMERA_EMBEDDING_BASE_URL=http://127.0.0.1:11434/v1
+CAMERA_LLM_SELECTION_MODE=auto
+CAMERA_LLM_MODEL=hf.co/mradermacher/supergemma4-e4b-abliterated-i1-GGUF:Q4_K_M
+CAMERA_LLM_FAST_MODEL=hf.co/mradermacher/supergemma4-e4b-abliterated-i1-GGUF:Q4_K_M
+CAMERA_LLM_THINKING_MODEL=hf.co/Qwen/Qwen3-8B-GGUF:Q4_K_M
+CAMERA_LLM_REQUEST_TIMEOUT_SECONDS=120
+CAMERA_LLM_TEMPERATURE=0.2
+CAMERA_LLM_MAX_TOKENS=512
+CAMERA_LLM_THINK=false
 ```
 
-기존 RAG 챗봇 `.env` 샘플을 가져올 때는 현재 프로젝트의 `LUMIX_` prefix로 변환한다.
+기존 RAG 챗봇 `.env` 샘플을 가져올 때는 현재 프로젝트의 `CAMERA_` prefix로 변환한다.
 `OLLAMA_BASE_URL=http://localhost:11434`는 OpenAI-compatible 경로를 포함해
-`LUMIX_LLM_BASE_URL=http://127.0.0.1:11434/v1`와
-`LUMIX_EMBEDDING_BASE_URL=http://127.0.0.1:11434/v1`로 나눈다.
+`CAMERA_LLM_BASE_URL=http://127.0.0.1:11434/v1`와
+`CAMERA_EMBEDDING_BASE_URL=http://127.0.0.1:11434/v1`로 나눈다.
 
 | 기존 키 | 현재 키 |
 |---|---|
-| `CORS_ORIGINS` | `LUMIX_ALLOWED_ORIGINS` 또는 `CORS_ORIGINS` |
-| `OLLAMA_CHAT_MODEL` | `LUMIX_LLM_MODEL` |
-| quick answer model | `LUMIX_LLM_FAST_MODEL` |
-| thinking answer model | `LUMIX_LLM_THINKING_MODEL` |
-| `OLLAMA_EMBED_MODEL` | `LUMIX_EMBEDDING_MODEL` |
-| `OLLAMA_REQUEST_TIMEOUT` | `LUMIX_LLM_REQUEST_TIMEOUT_SECONDS` |
-| `LLM_TEMPERATURE` | `LUMIX_LLM_TEMPERATURE` |
-| `LLM_NUM_PREDICT` | `LUMIX_LLM_MAX_TOKENS` |
-| `LLM_THINK` | `LUMIX_LLM_THINK` |
+| `CORS_ORIGINS` | `CAMERA_ALLOWED_ORIGINS` 또는 `CORS_ORIGINS` |
+| `OLLAMA_CHAT_MODEL` | `CAMERA_LLM_MODEL` |
+| quick answer model | `CAMERA_LLM_FAST_MODEL` |
+| thinking answer model | `CAMERA_LLM_THINKING_MODEL` |
+| `OLLAMA_EMBED_MODEL` | `CAMERA_EMBEDDING_MODEL` |
+| `OLLAMA_REQUEST_TIMEOUT` | `CAMERA_LLM_REQUEST_TIMEOUT_SECONDS` |
+| `LLM_TEMPERATURE` | `CAMERA_LLM_TEMPERATURE` |
+| `LLM_NUM_PREDICT` | `CAMERA_LLM_MAX_TOKENS` |
+| `LLM_THINK` | `CAMERA_LLM_THINK` |
 
 `LLM_NUM_PREDICT=256`은 Gemma 계열 모델에서 reasoning 토큰만 생성하고 `content`가
 비는 smoke 실패를 만들 수 있어 현재 기본값은 512로 둔다. `APP_NAME`, `ENVIRONMENT`,
@@ -48,12 +48,12 @@ generation adapter, vector store, indexing pipeline에 연결할 때 활성 설�
 
 ## Local Models
 
-`LUMIX_LLM_SELECTION_MODE=auto`일 때는 호출 상황에 따라 모델을 고른다.
-짧은 일반 답변과 smoke/benchmark 기본 경로는 `LUMIX_LLM_FAST_MODEL`을 쓰고,
+`CAMERA_LLM_SELECTION_MODE=auto`일 때는 호출 상황에 따라 모델을 고른다.
+짧은 일반 답변과 smoke/benchmark 기본 경로는 `CAMERA_LLM_FAST_MODEL`을 쓰고,
 출처 기반 JSON 생성처럼 native thinking이 필요한 경로는
-`LUMIX_LLM_THINKING_MODEL`을 쓴다. 이 값은 Ollama `capabilities`에 `thinking`이
+`CAMERA_LLM_THINKING_MODEL`을 쓴다. 이 값은 Ollama `capabilities`에 `thinking`이
 있는 모델이어야 한다. 단일 모델로 고정해야 하면
-`LUMIX_LLM_SELECTION_MODE=fixed`로 바꾸고 `LUMIX_LLM_MODEL`을 지정한다.
+`CAMERA_LLM_SELECTION_MODE=fixed`로 바꾸고 `CAMERA_LLM_MODEL`을 지정한다.
 
 | 역할 | 모델 | 용도 |
 |---|---|---|
@@ -69,17 +69,20 @@ generation adapter, vector store, indexing pipeline에 연결할 때 활성 설�
 .venv/bin/python scripts/local_model_smoke.py --target embedding
 .venv/bin/python scripts/local_model_smoke.py --target llm
 
-LUMIX_LLM_THINK=true \
+CAMERA_LLM_THINK=true \
   .venv/bin/python scripts/local_model_smoke.py --target llm
 
-LUMIX_LLM_SELECTION_MODE=fixed \
-  LUMIX_LLM_MODEL='hf.co/unsloth/gemma-4-E4B-it-qat-GGUF:UD-Q4_K_XL' \
+CAMERA_LLM_SELECTION_MODE=fixed \
+  CAMERA_LLM_MODEL='hf.co/unsloth/gemma-4-E4B-it-qat-GGUF:UD-Q4_K_XL' \
   .venv/bin/python scripts/local_model_smoke.py --target llm
 
-LUMIX_LLM_SELECTION_MODE=fixed \
-  LUMIX_LLM_MODEL='hf.co/Qwen/Qwen3-8B-GGUF:Q4_K_M' \
+CAMERA_LLM_SELECTION_MODE=fixed \
+  CAMERA_LLM_MODEL='hf.co/Qwen/Qwen3-8B-GGUF:Q4_K_M' \
   .venv/bin/python scripts/local_model_smoke.py --target llm
 ```
+
+기존 `LUMIX_` prefix는 호환 alias로 읽지만, 새 설정과 문서에서는 `CAMERA_`를
+기본으로 사용한다.
 
 OpenAI-compatible smoke 기준은 endpoint가 JSON 응답을 반환하는지 확인하는 것이다.
 native thinking 지원 여부는 Ollama `/api/tags`의 `capabilities`와 `/api/chat`의

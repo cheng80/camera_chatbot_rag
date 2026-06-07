@@ -120,6 +120,29 @@ def test_legacy_cors_origins_env_alias_is_supported(
     assert settings.allowed_origins == ["*"]
 
 
+def test_camera_env_prefix_configures_brand_name(
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    monkeypatch.setenv("CAMERA_BRAND_NAME", "Sony Alpha")
+    settings_factory = cast("SettingsFactory", Settings)
+
+    settings = settings_factory(_env_file=None)
+
+    assert settings.brand_name == "Sony Alpha"
+
+
+def test_legacy_lumix_env_prefix_is_supported(
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    monkeypatch.delenv("CAMERA_LLM_THINK", raising=False)
+    monkeypatch.setenv("LUMIX_LLM_THINK", "true")
+    settings_factory = cast("SettingsFactory", Settings)
+
+    settings = settings_factory(_env_file=None)
+
+    assert settings.llm_think is True
+
+
 def test_local_model_candidates_include_recommended_roles() -> None:
     primary = local_model_candidates_by_role("primary_llm")
     comparisons = local_model_candidates_by_role("comparison_llm")

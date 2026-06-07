@@ -1,3 +1,4 @@
+import re
 from collections.abc import Iterable
 from pathlib import Path
 from typing import ClassVar, Final, Literal
@@ -37,6 +38,29 @@ VALID_ELEMENT_TYPES: Final[tuple[OpenDataLoaderElementType, ...]] = (
     "table",
     "text block",
 )
+SPACING_RE: Final = re.compile(r"\s+")
+INTERNAL_PAGE_REFERENCE_RE: Final = re.compile(r"\s*\(\s*[lI]\s*\d+\s*\)")
+PAREN_PAGE_REFERENCE_RE: Final = re.compile(r"\s*\([^\)]*?\d+\s*\)")
+BROKEN_MARKDOWN_PAGE_LINK_RE: Final = re.compile(
+    r"^\s*[•*-]?\s*\[([^\[\]]+)\]\s*\(.*?\d+\s*\)\s*$",
+)
+INLINE_MARKDOWN_PAGE_LINK_RE: Final = re.compile(r"\[([^\[\]]+)\]\s*\(.*?\d+\s*\)")
+MENU_PATH_ACTION_RE: Final = re.compile(
+    r"^/?\s*(?:>\s*)+\[([^\[\]]+)\]\s*(?:선택|사용하기)?$",
+)
+MENU_PATH_COLON_SUFFIX_RE: Final = re.compile(
+    r"^/?\s*(?:>\s*)+\[[^\[\]]+\](?:\s*>\s*\[[^\[\]]+\])*\s*(?:선택|사용하기)?\s*:\s*(.+)$",
+)
+TRAILING_BRACKETED_PAGE_REFERENCE_RE: Final = re.compile(
+    r"\s*\(\s*\[[^\]]+\]\s*:?\s*\d+\s*\)\s*$",
+)
+BULLET_BRACKETED_TITLE_RE: Final = re.compile(r"^\s*[•*-]\s*\[([^\[\]]+)\]\s*$")
+DASH_TEXT_PREFIX_RE: Final = re.compile(r"^\s*[-\N{EN DASH}]\s*(?=\S)(.+)$")
+TOC_DOT_LEADER_RE: Final = re.compile(r"\.{3,}\s*\d+")
+TOC_PAGE_REFERENCE_LINE_RE: Final = re.compile(r"^[^\n]{2,80}\s+\d{1,4}$")
+TOC_SECTION_TITLES: Final[frozenset[str]] = frozenset({"목차", "기능별 목차"})
+SYMBOL_ONLY_RE: Final = re.compile(r"^[^\w가-힣]+$")
+LEADING_MARK_RE: Final = re.compile(r"^(?:\s*(?:|||≥|➔|→)\s*)+")
 
 
 class BoundingBox(BaseModel):
@@ -115,10 +139,18 @@ def _iter_element_chunks(
     section_title: str | None = None
     chunk_number = 1
     for element in elements:
-        content = element.content.strip()
+        content = _clean_index_text(element.content)
         if not content:
             continue
+        if not _is_indexable_content(
+            content=content,
+            element_type=element.element_type,
+            section_title=section_title,
+        ):
+            continue
         if element.element_type == "heading":
+            if not _is_meaningful_heading(content):
+                continue
             section_title = content
         yield _build_element_chunk(
             document=document,
@@ -226,3 +258,73 @@ def _parse_bounding_box(raw_box: JsonValue) -> BoundingBox | None:
             return None
         values.append(float(raw_value))
     return BoundingBox(x0=values[0], y0=values[1], x1=values[2], y1=values[3])
+
+
+def _clean_index_text(value: str) -> str:
+    cleaned = LEADING_MARK_RE.sub("", value)
+    cleaned = cleaned.replace("", " > ")
+    cleaned = cleaned.replace("", "")
+    cleaned = cleaned.replace("", "")
+    cleaned = cleaned.replace("[ ]", "")
+    markdown_match = BROKEN_MARKDOWN_PAGE_LINK_RE.fullmatch(
+        SPACING_RE.sub(" ", cleaned).strip(),
+    )
+    if markdown_match is not None:
+        return markdown_match.group(1).strip()
+    menu_match = MENU_PATH_ACTION_RE.fullmatch(SPACING_RE.sub(" ", cleaned).strip())
+    if menu_match is not None:
+        return menu_match.group(1).strip()
+    menu_suffix_match = MENU_PATH_COLON_SUFFIX_RE.fullmatch(
+        SPACING_RE.sub(" ", cleaned).strip(),
+    )
+    if menu_suffix_match is not None:
+        return menu_suffix_match.group(1).strip()
+    cleaned = INLINE_MARKDOWN_PAGE_LINK_RE.sub(r"\1", cleaned)
+    cleaned = TRAILING_BRACKETED_PAGE_REFERENCE_RE.sub("", cleaned)
+    cleaned = INTERNAL_PAGE_REFERENCE_RE.sub("", cleaned)
+    cleaned = PAREN_PAGE_REFERENCE_RE.sub("", cleaned)
+    cleaned = SPACING_RE.sub(" ", cleaned).strip()
+    bullet_match = BULLET_BRACKETED_TITLE_RE.fullmatch(cleaned)
+    if bullet_match is not None:
+        return bullet_match.group(1).strip()
+    dash_text_match = DASH_TEXT_PREFIX_RE.fullmatch(cleaned)
+    if dash_text_match is not None:
+        return dash_text_match.group(1).strip()
+    return cleaned
+
+
+def _is_meaningful_heading(value: str) -> bool:
+    if _bad_text(value):
+        return False
+    return any(character.isalnum() for character in value) and len(value) > 1
+
+
+def _is_indexable_content(
+    *,
+    content: str,
+    element_type: OpenDataLoaderElementType,
+    section_title: str | None,
+) -> bool:
+    if _bad_text(content):
+        return False
+    if element_type != "heading" and TOC_DOT_LEADER_RE.search(content):
+        return False
+    if (
+        element_type != "heading"
+        and TOC_PAGE_REFERENCE_LINE_RE.fullmatch(content) is not None
+    ):
+        return False
+    return not (
+        section_title is not None
+        and TOC_PAGE_REFERENCE_LINE_RE.fullmatch(section_title) is not None
+        and TOC_PAGE_REFERENCE_LINE_RE.fullmatch(content) is not None
+    )
+
+
+def _bad_text(value: str) -> bool:
+    stripped = value.strip()
+    if not stripped:
+        return True
+    if stripped.isdigit():
+        return True
+    return SYMBOL_ONLY_RE.fullmatch(stripped) is not None

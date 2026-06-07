@@ -17,7 +17,26 @@ def test_viewer_route_returns_page_image_reference() -> None:
     assert response.status_code == 200
     assert page_reference.document_id == "dc_s9_full_kor"
     assert page_reference.page == 201
-    assert page_reference.image_url == "/page-images/dc_s9_full_kor/201.png"
+    assert page_reference.image_url == "/page-images/dc_s9_full_kor/201@4x.png"
+
+
+def test_viewer_route_returns_html_image_page_for_browser_request() -> None:
+    client = TestClient(create_app())
+
+    response = client.get(
+        "/api/viewer/dc_s9_full_kor/pages/201",
+        headers={"Accept": "text/html"},
+    )
+
+    assert response.status_code == 200
+    assert response.headers["content-type"].startswith("text/html")
+    assert "openseadragon.min.js" in response.text
+    assert "OpenSeadragon({" in response.text
+    assert "dragToPan:true" in response.text
+    assert "pinchToZoom:true" in response.text
+    assert "/assets/vendor/openseadragon/openseadragon.min.js" in response.text
+    assert "prefixUrl:'/assets/vendor/openseadragon/images/'" in response.text
+    assert "/page-images/dc_s9_full_kor/201@4x.png" in response.text
 
 
 def test_page_image_static_mount_serves_rendered_png(tmp_path: Path) -> None:

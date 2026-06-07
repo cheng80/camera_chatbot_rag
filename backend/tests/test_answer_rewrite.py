@@ -116,6 +116,40 @@ def test_rewrite_search_response_keeps_extra_cards_unchanged() -> None:
     assert rewritten.cards[1].summary == response.cards[1].summary
 
 
+def test_rewrite_search_response_cleans_rewritten_pdf_menu_noise() -> None:
+    settings = _settings()
+    client = FakeRewriteClient(
+        responses=[
+            "> > [프록시 기록 설정] > [실시간 LUT(프록시)] 선택: 하이브리드 줌 동영상",
+        ],
+    )
+    response = _search_response(cards=(_card(feature_name="하이브리드 줌"),))
+
+    rewritten = rewrite_search_response(
+        response=response,
+        settings=settings,
+        client=client,
+    )
+
+    assert rewritten.cards[0].summary == "하이브리드 줌 동영상"
+
+
+def test_rewrite_search_response_keeps_parenthesized_subject_suffix() -> None:
+    settings = _settings()
+    client = FakeRewriteClient(
+        responses=["동영상 촬영에서 하이브리드 줌을 설정합니다."],
+    )
+    response = _search_response(cards=(_card(feature_name="하이브리드 줌(동영상)"),))
+
+    rewritten = rewrite_search_response(
+        response=response,
+        settings=settings,
+        client=client,
+    )
+
+    assert rewritten.cards[0].summary.startswith("하이브리드 줌(동영상):")
+
+
 def test_warm_up_answer_rewrite_uses_primary_model_when_enabled() -> None:
     settings = _settings(llm_rewrite_warmup_enabled=True)
     client = FakeRewriteClient(responses=["제브라 패턴: 줄무늬를 표시합니다."])

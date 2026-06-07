@@ -1,55 +1,346 @@
 const form = document.querySelector("#search-form")
 const results = document.querySelector("#results")
-const viewerPanel = document.querySelector(".viewer-panel")
+const pdfPreview = document.querySelector("#pdf-preview")
+const modelList = document.querySelector("#model-list")
+const clearModels = document.querySelector("#clear-models")
+const filterShell = document.querySelector("#filter-shell")
+const filterSummary = document.querySelector("#filter-summary")
+const quickQueryButtons = document.querySelectorAll("[data-query]")
+const SEARCH_FETCH_LIMIT = 1000
+let resultState = null
+
+void loadModels()
+syncFilterShellWithViewport()
+
+window.addEventListener("resize", syncFilterShellWithViewport)
+
+if (clearModels instanceof HTMLButtonElement) {
+  clearModels.addEventListener("click", () => {
+    modelButtons().forEach((button) => {
+      button.setAttribute("aria-pressed", "false")
+    })
+    updateFilterSummary()
+  })
+}
 
 if (form instanceof HTMLFormElement && results instanceof HTMLElement) {
   form.addEventListener("submit", (event) => {
     event.preventDefault()
     const data = new FormData(form)
     const query = String(data.get("query") ?? "").trim()
-    void runSearch(query, results)
+    const pageSize = Number(data.get("top_k") ?? 20)
+    void runSearch(query, selectedModelIds(), selectedPageSize(pageSize), results)
   })
 }
 
-async function runSearch(query, target) {
+quickQueryButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    if (!(form instanceof HTMLFormElement)) {
+      return
+    }
+    const input = form.elements.namedItem("query")
+    if (!(input instanceof HTMLInputElement)) {
+      return
+    }
+    input.value = String(button.dataset.query ?? "")
+    form.requestSubmit()
+  })
+})
+
+async function runSearch(query, modelIds, pageSize, target) {
   if (query.length === 0) {
     target.textContent = "검색어를 입력하세요."
     return
   }
 
+  resultState = null
   target.innerHTML = `<p class="status-line">검색 중...</p>`
   try {
     const response = await fetch("/api/search", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ query }),
+      body: JSON.stringify(searchPayload(query, modelIds)),
     })
     const payload = await response.json()
-    renderResults(payload, target)
-    renderViewer(payload)
+    resultState = { page: 1, pageSize, payload, selectedIndex: null }
+    renderCurrentPage(target)
   } catch {
     target.innerHTML = `<p class="status-line">검색 요청을 처리하지 못했습니다.</p>`
   }
 }
 
-function renderResults(payload, target) {
+function selectedPageSize(value) {
+  if (!Number.isFinite(value)) {
+    return 20
+  }
+  return Math.min(200, Math.max(1, Math.trunc(value)))
+}
+
+function selectedModelIds() {
+  return modelButtons()
+    .filter((button) => button.getAttribute("aria-pressed") === "true")
+    .map((button) => String(button.dataset.modelId ?? "").trim())
+    .filter(Boolean)
+}
+
+function modelButtons() {
+  if (!(modelList instanceof HTMLElement)) {
+    return []
+  }
+  return [...modelList.querySelectorAll("[data-model-id]")]
+}
+
+async function loadModels() {
+  if (!(modelList instanceof HTMLElement)) {
+    return
+  }
+  try {
+    const response = await fetch("/api/models")
+    const models = await response.json()
+    renderModelButtons(Array.isArray(models) ? models : [])
+  } catch {
+    modelList.innerHTML = `<p class="status-line">모델 목록을 불러오지 못했습니다.</p>`
+  }
+}
+
+function renderModelButtons(models) {
+  if (!(modelList instanceof HTMLElement)) {
+    return
+  }
+  if (models.length === 0) {
+    modelList.innerHTML = `<p class="status-line">등록된 모델 없음</p>`
+    return
+  }
+  modelList.innerHTML = groupedModels(models)
+    .map((group, index) => renderModelGroup(group, index))
+    .join("")
+  modelList.querySelectorAll("[data-model-id]").forEach((button) => {
+    button.addEventListener("click", () => {
+      const pressed = button.getAttribute("aria-pressed") === "true"
+      button.setAttribute("aria-pressed", String(!pressed))
+      updateFilterSummary()
+    })
+  })
+  updateFilterSummary()
+}
+
+function groupedModels(models) {
+  const groups = [
+    { key: "full_frame", label: "풀프레임 카메라", models: [] },
+    { key: "four_thirds", label: "마이크로 포서드 마운트 카메라", models: [] },
+    { key: "compact", label: "컴팩트 카메라", models: [] },
+  ]
+  models.forEach((model) => {
+    const productLine = String(model.product_line ?? "")
+    const group = groups.find(
+      (candidate) => candidate.key === modelGroupKey(productLine),
+    )
+    if (group !== undefined) {
+      group.models.push(model)
+    }
+  })
+  return groups.filter((group) => group.models.length > 0)
+}
+
+function modelGroupKey(productLine) {
+  if (productLine === "LUMIX S") {
+    return "full_frame"
+  }
+  if (productLine === "LUMIX G") {
+    return "four_thirds"
+  }
+  return "compact"
+}
+
+function renderModelGroup(group, index) {
+  return `<details class="model-group" ${index === 0 ? "open" : ""}>
+    <summary>${escapeHtml(group.label)} <span>${group.models.length}</span></summary>
+    <div class="model-group-list">
+      ${group.models.map((model) => renderModelButton(model)).join("")}
+    </div>
+  </details>`
+}
+
+function updateFilterSummary() {
+  if (!(filterSummary instanceof HTMLElement)) {
+    return
+  }
+  const selected = selectedModelIds()
+  filterSummary.textContent =
+    selected.length === 0 ? "전체 모델" : `${selected.length}개 선택`
+}
+
+function syncFilterShellWithViewport() {
+  if (!(filterShell instanceof HTMLDetailsElement)) {
+    return
+  }
+  filterShell.open = window.matchMedia("(min-width: 761px)").matches
+}
+
+function renderModelButton(model) {
+  const modelId = String(model.model_id ?? "")
+  const displayName = String(model.display_name ?? modelId)
+  const productLine = String(model.product_line ?? "")
+  return `<button type="button" data-model-id="${escapeAttributeValue(
+    modelId,
+  )}" aria-pressed="false">
+    <span>${escapeHtml(modelId)}</span>
+    <small>${escapeHtml(
+      [displayName, productLine].filter(Boolean).join(" · "),
+    )}</small>
+  </button>`
+}
+
+function searchPayload(query, modelIds) {
+  const payload = { query, top_k: SEARCH_FETCH_LIMIT }
+  if (modelIds.length === 0) {
+    return payload
+  }
+  return { ...payload, model_ids: modelIds }
+}
+
+function renderCurrentPage(target) {
+  if (resultState === null) {
+    return
+  }
+  renderResults({
+    page: resultState.page,
+    pageSize: resultState.pageSize,
+    payload: resultState.payload,
+    selectedIndex: resultState.selectedIndex,
+    target,
+  })
+  attachPaginationHandlers(target)
+  attachCardSelectionHandlers(target)
+}
+
+function renderResults({ payload, target, page, pageSize, selectedIndex }) {
   const cards = Array.isArray(payload.cards) ? payload.cards : []
   if (cards.length === 0) {
     target.innerHTML = `<p class="status-line">검색 상태: ${escapeHtml(
       String(payload.retrieval_status ?? "unknown"),
     )}</p>`
+    renderPdfPreview(null)
     return
   }
-  target.innerHTML = cards.map((card) => renderCard(card)).join("")
+  const pageCount = Math.max(1, Math.ceil(cards.length / pageSize))
+  const safePage = Math.min(pageCount, Math.max(1, page))
+  const start = (safePage - 1) * pageSize
+  const safeSelectedIndex = visibleSelectedCardIndex({
+    selectedIndex,
+    cardCount: cards.length,
+    pageStart: start,
+    pageSize,
+  })
+  const pageCards = cards.slice(start, start + pageSize)
+  renderPdfPreview(
+    safeSelectedIndex === null ? null : (cards[safeSelectedIndex] ?? null),
+  )
+  target.innerHTML = `${renderPagination({
+    page: safePage,
+    pageCount,
+    pageSize,
+    totalCount: cards.length,
+  })}
+  ${pageCards
+    .map((card, offset) =>
+      renderCard(
+        card,
+        start + offset,
+        safeSelectedIndex !== null && start + offset === safeSelectedIndex,
+      ),
+    )
+    .join("")}
+  ${renderPagination({
+    page: safePage,
+    pageCount,
+    pageSize,
+    totalCount: cards.length,
+  })}`
+  resultState = {
+    page: safePage,
+    pageSize,
+    payload,
+    selectedIndex: safeSelectedIndex,
+  }
 }
 
-function renderCard(card) {
+function renderPagination({ page, pageCount, pageSize, totalCount }) {
+  const first = Math.min(totalCount, (page - 1) * pageSize + 1)
+  const last = Math.min(totalCount, page * pageSize)
+  return `<nav class="pagination" aria-label="검색 결과 페이지">
+    <p>${totalCount}개 결과 중 ${first}-${last} 표시 · ${page}/${pageCount}쪽</p>
+    <div>
+      <button type="button" data-page-action="prev" ${
+        page <= 1 ? "disabled" : ""
+      }>이전</button>
+      <button type="button" data-page-action="next" ${
+        page >= pageCount ? "disabled" : ""
+      }>다음</button>
+    </div>
+  </nav>`
+}
+
+function attachPaginationHandlers(target) {
+  target.querySelectorAll("[data-page-action]").forEach((button) => {
+    button.addEventListener("click", () => {
+      if (resultState === null) {
+        return
+      }
+      const action = String(button.dataset.pageAction ?? "")
+      const delta = action === "prev" ? -1 : 1
+      resultState = {
+        ...resultState,
+        page: resultState.page + delta,
+        selectedIndex: null,
+      }
+      renderCurrentPage(target)
+    })
+  })
+}
+
+function attachCardSelectionHandlers(target) {
+  target.querySelectorAll("[data-card-index]").forEach((cardElement) => {
+    cardElement.addEventListener("click", (event) => {
+      if (
+        event.target instanceof Element &&
+        event.target.closest("a") !== null
+      ) {
+        return
+      }
+      selectCard(cardElement)
+    })
+    cardElement.addEventListener("keydown", (event) => {
+      if (event.key !== "Enter" && event.key !== " ") {
+        return
+      }
+      event.preventDefault()
+      selectCard(cardElement)
+    })
+  })
+}
+
+function selectCard(cardElement) {
+  if (resultState === null || !(results instanceof HTMLElement)) {
+    return
+  }
+  const index = Number(cardElement.dataset.cardIndex ?? 0)
+  if (!Number.isFinite(index)) {
+    return
+  }
+  resultState = { ...resultState, selectedIndex: Math.trunc(index) }
+  renderCurrentPage(results)
+}
+
+function renderCard(card, index, selected) {
   const sources = Array.isArray(card.sources) ? card.sources : []
   const models = Array.isArray(card.supported_models) ? card.supported_models : []
-  return `<article class="result-card">
+  return `<article class="result-card" tabindex="0" role="button" aria-pressed="${String(
+    selected,
+  )}" data-card-index="${String(index)}">
     <div class="card-header">
       <h2>${escapeHtml(String(card.feature_name ?? "기능"))}</h2>
-      <span>${escapeHtml(String(card.evidence_status ?? "source_validated"))}</span>
+      <span>${escapeHtml(evidenceStatusText(card.evidence_status))}</span>
     </div>
     <p>${escapeHtml(String(card.summary ?? ""))}</p>
     <p class="meta-line">${escapeHtml(modelText(models))}</p>
@@ -73,25 +364,49 @@ function renderSource(source) {
   </li>`
 }
 
-function renderViewer(payload) {
-  if (!(viewerPanel instanceof HTMLElement)) {
+function renderPdfPreview(card) {
+  if (!(pdfPreview instanceof HTMLElement)) {
     return
   }
-  const cards = Array.isArray(payload.cards) ? payload.cards : []
-  const firstSource = cards[0]?.sources?.[0]
-  if (firstSource === undefined) {
-    viewerPanel.innerHTML = `<h2>PDF Source</h2><p>출처 페이지 없음</p>`
+  if (card === null) {
+    pdfPreview.innerHTML =
+      `<p class="status-line">카드를 선택하면 PDF 페이지가 표시됩니다.</p>`
     return
   }
-  const url = String(firstSource.viewer_url ?? "")
-  viewerPanel.innerHTML = `<h2>PDF Source</h2>
-    <p>${escapeHtml(String(firstSource.document_id ?? ""))}</p>
-    <p>${escapeHtml(String(firstSource.model_id ?? ""))} · ${escapeHtml(
-      String(firstSource.page ?? ""),
-    )}쪽</p>
-    <a class="viewer-link" href="${escapeAttribute(url)}" target="_blank" rel="noreferrer">
-      PDF 페이지 열기
-    </a>`
+  const sources = Array.isArray(card.sources) ? card.sources : []
+  const source = sources[0]
+  if (source === undefined) {
+    pdfPreview.innerHTML = `<p class="status-line">출처 페이지 없음</p>`
+    return
+  }
+  const url = String(source.viewer_url ?? "")
+  const documentId = String(source.document_id ?? "")
+  const modelId = String(source.model_id ?? "")
+  const page = String(source.page ?? "")
+  pdfPreview.innerHTML = `<div class="preview-meta">
+      <strong>${escapeHtml(modelId)} ${escapeHtml(page)}쪽</strong>
+      <span>${escapeHtml(documentId)}</span>
+    </div>
+    <iframe title="선택한 PDF 페이지" src="${escapeAttribute(url)}"></iframe>
+    <a href="${escapeAttribute(url)}" target="_blank" rel="noreferrer">크게 열기</a>`
+}
+
+function visibleSelectedCardIndex({ selectedIndex, cardCount, pageStart, pageSize }) {
+  const index = selectedCardIndex(selectedIndex, cardCount)
+  if (index === null) {
+    return null
+  }
+  if (index < pageStart || index >= pageStart + pageSize) {
+    return null
+  }
+  return index
+}
+
+function selectedCardIndex(value, cardCount) {
+  if (!Number.isFinite(value) || cardCount < 1) {
+    return null
+  }
+  return Math.min(cardCount - 1, Math.max(0, Math.trunc(value)))
 }
 
 function modelText(models) {
@@ -100,6 +415,13 @@ function modelText(models) {
     return "모델 정보 없음"
   }
   return `모델: ${ids.join(", ")}`
+}
+
+function evidenceStatusText(value) {
+  if (value === "insufficient_evidence") {
+    return "근거 부족"
+  }
+  return "출처 확인"
 }
 
 function escapeHtml(value) {
@@ -115,5 +437,9 @@ function escapeAttribute(value) {
   if (!value.startsWith("/api/viewer/")) {
     return "#"
   }
+  return escapeHtml(value)
+}
+
+function escapeAttributeValue(value) {
   return escapeHtml(value)
 }

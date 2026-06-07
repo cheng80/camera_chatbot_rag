@@ -1,0 +1,315 @@
+[
+  {
+    "case_id": "g9m2_zebra_phrase",
+    "query": "제브라 패턴",
+    "model_ids": [
+      "DC-G9M2"
+    ],
+    "expected_document_id": "dc_g9m2_full_kor",
+    "expected_pages": [
+      415
+    ],
+    "top_k": 5
+  },
+  {
+    "case_id": "g9m2_stabilizer_compact",
+    "query": "손떨림보정",
+    "model_ids": [
+      "DC-G9M2"
+    ],
+    "expected_document_id": "dc_g9m2_full_kor",
+    "expected_pages": [
+      266,
+      269
+    ],
+    "top_k": 5
+  },
+  {
+    "case_id": "g9m2_wifi_connection",
+    "query": "Wi-Fi 연결",
+    "model_ids": [
+      "DC-G9M2"
+    ],
+    "expected_document_id": "dc_g9m2_full_kor",
+    "expected_pages": [
+      673
+    ],
+    "top_k": 5
+  },
+  {
+    "case_id": "g9m2_card_format",
+    "query": "카드 포맷",
+    "model_ids": [
+      "DC-G9M2"
+    ],
+    "expected_document_id": "dc_g9m2_full_kor",
+    "expected_pages": [
+      597,
+      798
+    ],
+    "top_k": 5
+  },
+  {
+    "case_id": "g9m2_live_view_composite",
+    "query": "라이브 뷰 합성",
+    "model_ids": [
+      "DC-G9M2"
+    ],
+    "expected_document_id": "dc_g9m2_full_kor",
+    "expected_pages": [
+      253
+    ],
+    "top_k": 5
+  },
+  {
+    "case_id": "s1m2_proxy_recording",
+    "query": "프록시 녹화",
+    "model_ids": [
+      "DC-S1M2"
+    ],
+    "expected_document_id": "dc_s1m2_full_kor",
+    "expected_pages": [
+      177
+    ],
+    "top_k": 5
+  },
+  {
+    "case_id": "s1m2_af_on",
+    "query": "AF-ON",
+    "model_ids": [
+      "DC-S1M2"
+    ],
+    "expected_document_id": "dc_s1m2_full_kor",
+    "expected_pages": [
+      647,
+      654
+    ],
+    "top_k": 5
+  },
+  {
+    "case_id": "s1m2_battery_charge",
+    "query": "배터리 충전",
+    "model_ids": [
+      "DC-S1M2"
+    ],
+    "expected_document_id": "dc_s1m2_full_kor",
+    "expected_pages": [
+      45,
+      48
+    ],
+    "top_k": 5
+  },
+  {
+    "case_id": "tz99_monitor_brightness",
+    "query": "모니터 밝기",
+    "model_ids": [
+      "DC-TZ99"
+    ],
+    "expected_document_id": "dc_tz99_zs99_full_kor",
+    "expected_pages": [
+      200
+    ],
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_dc_g100_kor_23_사용_가능한_렌즈",
+    "query": "사용 가능한 렌즈",
+    "model_ids": [
+      "DC-G100"
+    ],
+    "expected_document_id": "dc_g100_kor",
+    "expected_pages": [
+      23
+    ],
+    "top_k": 5
+  },
+  {
+    "case_id": "g9m2_zebra_compact",
+    "query": "제브라패턴",
+    "model_ids": [
+      "DC-G9M2"
+    ],
+    "expected_document_id": "dc_g9m2_full_kor",
+    "expected_pages": [
+      415
+    ],
+    "top_k": 5
+  },
+  {
+    "case_id": "g9m2_zebra_with_model_name",
+    "query": "G9M2 제브라 패턴",
+    "model_ids": [
+      "DC-G9M2"
+    ],
+    "expected_document_id": "dc_g9m2_full_kor",
+    "expected_pages": [
+      415
+    ],
+    "top_k": 5
+  },
+  {
+    "case_id": "g9m2_zebra_natural_language",
+    "query": "G9M2에서 제브라 패턴 어디서 설정해?",
+    "model_ids": [],
+    "expected_document_id": "dc_g9m2_full_kor",
+    "expected_pages": [
+      415
+    ],
+    "top_k": 5
+  },
+  {
+    "case_id": "g9m2_stabilizer_phrase",
+    "query": "손떨림 보정",
+    "model_ids": [
+      "DC-G9M2"
+    ],
+    "expected_document_id": "dc_g9m2_full_kor",
+    "expected_pages": [
+      266,
+      269
+    ],
+    "top_k": 5
+  },
+  {
+    "case_id": "g9m2_boost_is",
+    "query": "Boost I.S.",
+    "model_ids": [
+      "DC-G9M2"
+    ],
+    "expected_document_id": "dc_g9m2_full_kor",
+    "expected_pages": [
+      269
+    ],
+    "top_k": 5
+  },
+  {
+    "case_id": "s1m2_lumix_lab",
+    "query": "LUMIX Lab",
+    "model_ids": [
+      "DC-S1M2"
+    ],
+    "expected_document_id": "dc_s1m2_full_kor",
+    "expected_pages": [
+      770,
+      775,
+      1002
+    ],
+    "top_k": 5
+  },
+  {
+    "case_id": "s1m2_frame_io",
+    "query": "Frame.io",
+    "model_ids": [
+      "DC-S1M2"
+    ],
+    "expected_document_id": "dc_s1m2_full_kor",
+    "expected_pages": [
+      737,
+      964
+    ],
+    "top_k": 5
+  },
+  {
+    "case_id": "s1m2_vlog",
+    "query": "V-Log",
+    "model_ids": [
+      "DC-S1M2"
+    ],
+    "expected_document_id": "dc_s1m2_full_kor",
+    "expected_pages": [
+      375,
+      384
+    ],
+    "top_k": 5
+  },
+  {
+    "case_id": "s1m2_timecode",
+    "query": "타임코드",
+    "model_ids": [
+      "DC-S1M2"
+    ],
+    "expected_document_id": "dc_s1m2_full_kor",
+    "expected_pages": [
+      470
+    ],
+    "top_k": 5
+  },
+  {
+    "case_id": "s1m2_hdmi_output",
+    "query": "HDMI 출력",
+    "model_ids": [
+      "DC-S1M2"
+    ],
+    "expected_document_id": "dc_s1m2_full_kor",
+    "expected_pages": [
+      565
+    ],
+    "top_k": 5
+  },
+  {
+    "case_id": "s1m2_stabilizer",
+    "query": "손떨림 보정",
+    "model_ids": [
+      "DC-S1M2"
+    ],
+    "expected_document_id": "dc_s1m2_full_kor",
+    "expected_pages": [
+      316,
+      988
+    ],
+    "top_k": 5
+  },
+  {
+    "case_id": "s1m2_streaming",
+    "query": "스트리밍",
+    "model_ids": [
+      "DC-S1M2"
+    ],
+    "expected_document_id": "dc_s1m2_full_kor",
+    "expected_pages": [
+      177,
+      383,
+      589
+    ],
+    "top_k": 5
+  },
+  {
+    "case_id": "tz99_zoom",
+    "query": "줌",
+    "model_ids": [
+      "DC-TZ99"
+    ],
+    "expected_document_id": "dc_tz99_zs99_full_kor",
+    "expected_pages": [
+      35,
+      51
+    ],
+    "top_k": 5
+  },
+  {
+    "case_id": "zs99_zoom",
+    "query": "줌",
+    "model_ids": [
+      "DC-ZS99"
+    ],
+    "expected_document_id": "dc_tz99_zs99_full_kor",
+    "expected_pages": [
+      35,
+      51
+    ],
+    "top_k": 5
+  },
+  {
+    "case_id": "tz99_charge_lamp",
+    "query": "충전 램프",
+    "model_ids": [
+      "DC-TZ99"
+    ],
+    "expected_document_id": "dc_tz99_zs99_full_kor",
+    "expected_pages": [
+      17,
+      22
+    ],
+    "top_k": 5
+  }
+]

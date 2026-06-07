@@ -16,7 +16,7 @@ class VectorSearchRequest(BaseModel):
     model_config: ClassVar[ConfigDict] = ConfigDict(frozen=True, extra="forbid")
 
     query: str = Field(min_length=1)
-    top_k: int = Field(default=8, ge=1, le=50)
+    top_k: int = Field(default=8, ge=1, le=1000)
     model_ids: tuple[str, ...] = Field(default_factory=tuple)
 
 

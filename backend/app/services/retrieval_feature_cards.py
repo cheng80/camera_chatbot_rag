@@ -1,5 +1,4 @@
 from dataclasses import dataclass
-from typing import Final
 
 from backend.app.indexing.fts_index import FtsSearchResult
 from backend.app.schemas.feature_card import (
@@ -8,6 +7,8 @@ from backend.app.schemas.feature_card import (
     SupportedModel,
 )
 from backend.app.schemas.search import NormalizedQuery, SearchRequest, SearchResponse
+from backend.app.services import retrieval_display_text as text
+from backend.app.services.retrieval_model_filter import supported_model_ids
 from backend.app.services.retrieval_reference_pages import referenced_page_for_query
 from backend.app.services.retrieval_source_validation import (
     SourceValidationContext,
@@ -20,8 +21,6 @@ from backend.app.wiki.source_ref_checker import (
     SourceReferenceValidationResult,
 )
 
-DEFAULT_CATEGORY: Final = "manual_chunk"
-SUMMARY_LIMIT: Final = 180
 type SourcePageKey = tuple[str, str, int]
 
 
@@ -148,7 +147,7 @@ def _card_from_vector_result(
     requested_model_ids: tuple[str, ...],
     validation_context: SourceValidationContext,
 ) -> FeatureCard:
-    feature_name = result.section_title or "vector_match"
+    feature_name = text.clean_feature_title(result.section_title or "vector_match")
     source_id = source_model_id(
         result_model_ids=result.model_ids,
         requested_model_ids=requested_model_ids,
@@ -166,7 +165,7 @@ def _card_from_vector_result(
             feature_id=result.chunk_id,
             feature_name=feature_name,
             content=result.content,
-            model_ids=result.model_ids,
+            model_ids=supported_model_ids(result.model_ids, requested_model_ids),
             source=SourceReference(
                 document_id=result.document_id,
                 model_id=source_id,
@@ -191,7 +190,7 @@ def _card_from_result(
     requested_model_ids: tuple[str, ...],
     validation_context: SourceValidationContext,
 ) -> FeatureCard:
-    feature_name = result.section_title or result.chunk_type
+    feature_name = text.clean_feature_title(result.section_title or result.chunk_type)
     source_id = source_model_id(
         result_model_ids=result.model_ids,
         requested_model_ids=requested_model_ids,
@@ -204,7 +203,9 @@ def _card_from_result(
         referenced_page.page if referenced_page is not None else result.page_start
     )
     source_title = (
-        referenced_page.label if referenced_page is not None else feature_name
+        text.clean_feature_title(referenced_page.label)
+        if referenced_page is not None
+        else feature_name
     )
     validation_result = validate_source_reference_cached(
         reference=SourceReferenceCandidate(
@@ -219,7 +220,7 @@ def _card_from_result(
             feature_id=result.chunk_id,
             feature_name=feature_name,
             content=result.content,
-            model_ids=result.model_ids,
+            model_ids=supported_model_ids(result.model_ids, requested_model_ids),
             source=SourceReference(
                 document_id=result.document_id,
                 model_id=source_id,
@@ -241,11 +242,24 @@ def _feature_card(data: FeatureCardData) -> FeatureCard:
     evidence_status = (
         "source_validated" if data.validation_result.valid else "insufficient_evidence"
     )
+    display_title = text.feature_title_from_card(
+        feature_name=data.feature_name,
+        source_title=data.source.section_title,
+        content=data.content,
+    )
+    display_source = data.source.model_copy(
+        update={
+            "section_title": text.source_title_from_card(
+                source_title=data.source.section_title,
+                fallback_title=display_title,
+            ),
+        },
+    )
     return FeatureCard(
         feature_id=data.feature_id,
-        feature_name=data.feature_name,
-        category=DEFAULT_CATEGORY,
-        summary=_summary(data.content),
+        feature_name=display_title,
+        category="manual_chunk",
+        summary=text.summary_text(data.content),
         supported_models=[
             SupportedModel(model_id=model_id, support_status="unknown")
             for model_id in data.model_ids
@@ -253,17 +267,10 @@ def _feature_card(data: FeatureCardData) -> FeatureCard:
         how_to_use=[],
         menu_path=None,
         cautions=[],
-        sources=[data.source],
+        sources=[display_source],
         evidence_status=evidence_status,
         source_validation_errors=[
             error.code for error in data.validation_result.errors
         ],
         confidence=data.confidence,
     )
-
-
-def _summary(content: str) -> str:
-    normalized = " ".join(content.split())
-    if len(normalized) <= SUMMARY_LIMIT:
-        return normalized
-    return f"{normalized[:SUMMARY_LIMIT]}..."

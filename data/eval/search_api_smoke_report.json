@@ -1,0 +1,708 @@
+{
+  "case_count": 25,
+  "pass_count": 25,
+  "pass_rate": 1.0,
+  "retrieval_ok_rate": 1.0,
+  "source_presence_rate": 1.0,
+  "document_hit_rate": 1.0,
+  "page_hit_rate": 1.0,
+  "viewer_url_rate": 1.0,
+  "evidence_rate": 1.0,
+  "summary_rate": 1.0,
+  "model_filter_rate": 1.0,
+  "source_model_consistency_rate": 1.0,
+  "results": [
+    {
+      "case_id": "g9m2_zebra_phrase",
+      "status_code": 200,
+      "retrieval_status": "ok",
+      "card_count": 3,
+      "schema_valid": true,
+      "retrieval_ok": true,
+      "sources_present": true,
+      "hit_document": true,
+      "hit_page": true,
+      "viewer_url_valid": true,
+      "evidence_valid": true,
+      "summary_present": true,
+      "model_filter_valid": true,
+      "source_model_consistent": true,
+      "result_pages": [
+        415,
+        589,
+        796
+      ],
+      "result_document_ids": [
+        "dc_g9m2_full_kor",
+        "dc_g9m2_full_kor",
+        "dc_g9m2_full_kor"
+      ]
+    },
+    {
+      "case_id": "g9m2_stabilizer_compact",
+      "status_code": 200,
+      "retrieval_status": "ok",
+      "card_count": 3,
+      "schema_valid": true,
+      "retrieval_ok": true,
+      "sources_present": true,
+      "hit_document": true,
+      "hit_page": true,
+      "viewer_url_valid": true,
+      "evidence_valid": true,
+      "summary_present": true,
+      "model_filter_valid": true,
+      "source_model_consistent": true,
+      "result_pages": [
+        266,
+        272,
+        8
+      ],
+      "result_document_ids": [
+        "dc_g9m2_full_kor",
+        "dc_g9m2_full_kor",
+        "dc_g9m2_full_kor"
+      ]
+    },
+    {
+      "case_id": "g9m2_wifi_connection",
+      "status_code": 200,
+      "retrieval_status": "ok",
+      "card_count": 5,
+      "schema_valid": true,
+      "retrieval_ok": true,
+      "sources_present": true,
+      "hit_document": true,
+      "hit_page": true,
+      "viewer_url_valid": true,
+      "evidence_valid": true,
+      "summary_present": true,
+      "model_filter_valid": true,
+      "source_model_consistent": true,
+      "result_pages": [
+        673,
+        15,
+        85,
+        402,
+        404
+      ],
+      "result_document_ids": [
+        "dc_g9m2_full_kor",
+        "dc_g9m2_full_kor",
+        "dc_g9m2_full_kor",
+        "dc_g9m2_full_kor",
+        "dc_g9m2_full_kor"
+      ]
+    },
+    {
+      "case_id": "g9m2_card_format",
+      "status_code": 200,
+      "retrieval_status": "ok",
+      "card_count": 2,
+      "schema_valid": true,
+      "retrieval_ok": true,
+      "sources_present": true,
+      "hit_document": true,
+      "hit_page": true,
+      "viewer_url_valid": true,
+      "evidence_valid": true,
+      "summary_present": true,
+      "model_filter_valid": true,
+      "source_model_consistent": true,
+      "result_pages": [
+        597,
+        798
+      ],
+      "result_document_ids": [
+        "dc_g9m2_full_kor",
+        "dc_g9m2_full_kor"
+      ]
+    },
+    {
+      "case_id": "g9m2_live_view_composite",
+      "status_code": 200,
+      "retrieval_status": "ok",
+      "card_count": 5,
+      "schema_valid": true,
+      "retrieval_ok": true,
+      "sources_present": true,
+      "hit_document": true,
+      "hit_page": true,
+      "viewer_url_valid": true,
+      "evidence_valid": true,
+      "summary_present": true,
+      "model_filter_valid": true,
+      "source_model_consistent": true,
+      "result_pages": [
+        253,
+        173,
+        221,
+        227,
+        234
+      ],
+      "result_document_ids": [
+        "dc_g9m2_full_kor",
+        "dc_g9m2_full_kor",
+        "dc_g9m2_full_kor",
+        "dc_g9m2_full_kor",
+        "dc_g9m2_full_kor"
+      ]
+    },
+    {
+      "case_id": "s1m2_proxy_recording",
+      "status_code": 200,
+      "retrieval_status": "ok",
+      "card_count": 5,
+      "schema_valid": true,
+      "retrieval_ok": true,
+      "sources_present": true,
+      "hit_document": true,
+      "hit_page": true,
+      "viewer_url_valid": true,
+      "evidence_valid": true,
+      "summary_present": true,
+      "model_filter_valid": true,
+      "source_model_consistent": true,
+      "result_pages": [
+        177,
+        585,
+        7,
+        134,
+        756
+      ],
+      "result_document_ids": [
+        "dc_s1m2_full_kor",
+        "dc_s1m2_full_kor",
+        "dc_s1m2_full_kor",
+        "dc_s1m2_full_kor",
+        "dc_s1m2_full_kor"
+      ]
+    },
+    {
+      "case_id": "s1m2_af_on",
+      "status_code": 200,
+      "retrieval_status": "ok",
+      "card_count": 4,
+      "schema_valid": true,
+      "retrieval_ok": true,
+      "sources_present": true,
+      "hit_document": true,
+      "hit_page": true,
+      "viewer_url_valid": true,
+      "evidence_valid": true,
+      "summary_present": true,
+      "model_filter_valid": true,
+      "source_model_consistent": true,
+      "result_pages": [
+        234,
+        647,
+        654,
+        695
+      ],
+      "result_document_ids": [
+        "dc_s1m2_full_kor",
+        "dc_s1m2_full_kor",
+        "dc_s1m2_full_kor",
+        "dc_s1m2_full_kor"
+      ]
+    },
+    {
+      "case_id": "s1m2_battery_charge",
+      "status_code": 200,
+      "retrieval_status": "ok",
+      "card_count": 5,
+      "schema_valid": true,
+      "retrieval_ok": true,
+      "sources_present": true,
+      "hit_document": true,
+      "hit_page": true,
+      "viewer_url_valid": true,
+      "evidence_valid": true,
+      "summary_present": true,
+      "model_filter_valid": true,
+      "source_model_consistent": true,
+      "result_pages": [
+        5,
+        45,
+        48,
+        53,
+        875
+      ],
+      "result_document_ids": [
+        "dc_s1m2_full_kor",
+        "dc_s1m2_full_kor",
+        "dc_s1m2_full_kor",
+        "dc_s1m2_full_kor",
+        "dc_s1m2_full_kor"
+      ]
+    },
+    {
+      "case_id": "tz99_monitor_brightness",
+      "status_code": 200,
+      "retrieval_status": "ok",
+      "card_count": 1,
+      "schema_valid": true,
+      "retrieval_ok": true,
+      "sources_present": true,
+      "hit_document": true,
+      "hit_page": true,
+      "viewer_url_valid": true,
+      "evidence_valid": true,
+      "summary_present": true,
+      "model_filter_valid": true,
+      "source_model_consistent": true,
+      "result_pages": [
+        200
+      ],
+      "result_document_ids": [
+        "dc_tz99_zs99_full_kor"
+      ]
+    },
+    {
+      "case_id": "auto_dc_g100_kor_23_사용_가능한_렌즈",
+      "status_code": 200,
+      "retrieval_status": "ok",
+      "card_count": 2,
+      "schema_valid": true,
+      "retrieval_ok": true,
+      "sources_present": true,
+      "hit_document": true,
+      "hit_page": true,
+      "viewer_url_valid": true,
+      "evidence_valid": true,
+      "summary_present": true,
+      "model_filter_valid": true,
+      "source_model_consistent": true,
+      "result_pages": [
+        23,
+        6
+      ],
+      "result_document_ids": [
+        "dc_g100_kor",
+        "dc_g100_kor"
+      ]
+    },
+    {
+      "case_id": "g9m2_zebra_compact",
+      "status_code": 200,
+      "retrieval_status": "ok",
+      "card_count": 3,
+      "schema_valid": true,
+      "retrieval_ok": true,
+      "sources_present": true,
+      "hit_document": true,
+      "hit_page": true,
+      "viewer_url_valid": true,
+      "evidence_valid": true,
+      "summary_present": true,
+      "model_filter_valid": true,
+      "source_model_consistent": true,
+      "result_pages": [
+        415,
+        589,
+        796
+      ],
+      "result_document_ids": [
+        "dc_g9m2_full_kor",
+        "dc_g9m2_full_kor",
+        "dc_g9m2_full_kor"
+      ]
+    },
+    {
+      "case_id": "g9m2_zebra_with_model_name",
+      "status_code": 200,
+      "retrieval_status": "ok",
+      "card_count": 3,
+      "schema_valid": true,
+      "retrieval_ok": true,
+      "sources_present": true,
+      "hit_document": true,
+      "hit_page": true,
+      "viewer_url_valid": true,
+      "evidence_valid": true,
+      "summary_present": true,
+      "model_filter_valid": true,
+      "source_model_consistent": true,
+      "result_pages": [
+        415,
+        589,
+        796
+      ],
+      "result_document_ids": [
+        "dc_g9m2_full_kor",
+        "dc_g9m2_full_kor",
+        "dc_g9m2_full_kor"
+      ]
+    },
+    {
+      "case_id": "g9m2_zebra_natural_language",
+      "status_code": 200,
+      "retrieval_status": "ok",
+      "card_count": 3,
+      "schema_valid": true,
+      "retrieval_ok": true,
+      "sources_present": true,
+      "hit_document": true,
+      "hit_page": true,
+      "viewer_url_valid": true,
+      "evidence_valid": true,
+      "summary_present": true,
+      "model_filter_valid": true,
+      "source_model_consistent": true,
+      "result_pages": [
+        415,
+        589,
+        796
+      ],
+      "result_document_ids": [
+        "dc_g9m2_full_kor",
+        "dc_g9m2_full_kor",
+        "dc_g9m2_full_kor"
+      ]
+    },
+    {
+      "case_id": "g9m2_stabilizer_phrase",
+      "status_code": 200,
+      "retrieval_status": "ok",
+      "card_count": 3,
+      "schema_valid": true,
+      "retrieval_ok": true,
+      "sources_present": true,
+      "hit_document": true,
+      "hit_page": true,
+      "viewer_url_valid": true,
+      "evidence_valid": true,
+      "summary_present": true,
+      "model_filter_valid": true,
+      "source_model_consistent": true,
+      "result_pages": [
+        266,
+        272,
+        8
+      ],
+      "result_document_ids": [
+        "dc_g9m2_full_kor",
+        "dc_g9m2_full_kor",
+        "dc_g9m2_full_kor"
+      ]
+    },
+    {
+      "case_id": "g9m2_boost_is",
+      "status_code": 200,
+      "retrieval_status": "ok",
+      "card_count": 4,
+      "schema_valid": true,
+      "retrieval_ok": true,
+      "sources_present": true,
+      "hit_document": true,
+      "hit_page": true,
+      "viewer_url_valid": true,
+      "evidence_valid": true,
+      "summary_present": true,
+      "model_filter_valid": true,
+      "source_model_consistent": true,
+      "result_pages": [
+        269,
+        784,
+        789,
+        807
+      ],
+      "result_document_ids": [
+        "dc_g9m2_full_kor",
+        "dc_g9m2_full_kor",
+        "dc_g9m2_full_kor",
+        "dc_g9m2_full_kor"
+      ]
+    },
+    {
+      "case_id": "s1m2_lumix_lab",
+      "status_code": 200,
+      "retrieval_status": "ok",
+      "card_count": 4,
+      "schema_valid": true,
+      "retrieval_ok": true,
+      "sources_present": true,
+      "hit_document": true,
+      "hit_page": true,
+      "viewer_url_valid": true,
+      "evidence_valid": true,
+      "summary_present": true,
+      "model_filter_valid": true,
+      "source_model_consistent": true,
+      "result_pages": [
+        1002,
+        770,
+        775,
+        15
+      ],
+      "result_document_ids": [
+        "dc_s1m2_full_kor",
+        "dc_s1m2_full_kor",
+        "dc_s1m2_full_kor",
+        "dc_s1m2_full_kor"
+      ]
+    },
+    {
+      "case_id": "s1m2_frame_io",
+      "status_code": 200,
+      "retrieval_status": "ok",
+      "card_count": 5,
+      "schema_valid": true,
+      "retrieval_ok": true,
+      "sources_present": true,
+      "hit_document": true,
+      "hit_page": true,
+      "viewer_url_valid": true,
+      "evidence_valid": true,
+      "summary_present": true,
+      "model_filter_valid": true,
+      "source_model_consistent": true,
+      "result_pages": [
+        737,
+        964,
+        286,
+        474,
+        708
+      ],
+      "result_document_ids": [
+        "dc_s1m2_full_kor",
+        "dc_s1m2_full_kor",
+        "dc_s1m2_full_kor",
+        "dc_s1m2_full_kor",
+        "dc_s1m2_full_kor"
+      ]
+    },
+    {
+      "case_id": "s1m2_vlog",
+      "status_code": 200,
+      "retrieval_status": "ok",
+      "card_count": 5,
+      "schema_valid": true,
+      "retrieval_ok": true,
+      "sources_present": true,
+      "hit_document": true,
+      "hit_page": true,
+      "viewer_url_valid": true,
+      "evidence_valid": true,
+      "summary_present": true,
+      "model_filter_valid": true,
+      "source_model_consistent": true,
+      "result_pages": [
+        375,
+        384,
+        712,
+        959,
+        1038
+      ],
+      "result_document_ids": [
+        "dc_s1m2_full_kor",
+        "dc_s1m2_full_kor",
+        "dc_s1m2_full_kor",
+        "dc_s1m2_full_kor",
+        "dc_s1m2_full_kor"
+      ]
+    },
+    {
+      "case_id": "s1m2_timecode",
+      "status_code": 200,
+      "retrieval_status": "ok",
+      "card_count": 5,
+      "schema_valid": true,
+      "retrieval_ok": true,
+      "sources_present": true,
+      "hit_document": true,
+      "hit_page": true,
+      "viewer_url_valid": true,
+      "evidence_valid": true,
+      "summary_present": true,
+      "model_filter_valid": true,
+      "source_model_consistent": true,
+      "result_pages": [
+        470,
+        948,
+        975,
+        473,
+        11
+      ],
+      "result_document_ids": [
+        "dc_s1m2_full_kor",
+        "dc_s1m2_full_kor",
+        "dc_s1m2_full_kor",
+        "dc_s1m2_full_kor",
+        "dc_s1m2_full_kor"
+      ]
+    },
+    {
+      "case_id": "s1m2_hdmi_output",
+      "status_code": 200,
+      "retrieval_status": "ok",
+      "card_count": 5,
+      "schema_valid": true,
+      "retrieval_ok": true,
+      "sources_present": true,
+      "hit_document": true,
+      "hit_page": true,
+      "viewer_url_valid": true,
+      "evidence_valid": true,
+      "summary_present": true,
+      "model_filter_valid": true,
+      "source_model_consistent": true,
+      "result_pages": [
+        93,
+        353,
+        565,
+        627,
+        731
+      ],
+      "result_document_ids": [
+        "dc_s1m2_full_kor",
+        "dc_s1m2_full_kor",
+        "dc_s1m2_full_kor",
+        "dc_s1m2_full_kor",
+        "dc_s1m2_full_kor"
+      ]
+    },
+    {
+      "case_id": "s1m2_stabilizer",
+      "status_code": 200,
+      "retrieval_status": "ok",
+      "card_count": 3,
+      "schema_valid": true,
+      "retrieval_ok": true,
+      "sources_present": true,
+      "hit_document": true,
+      "hit_page": true,
+      "viewer_url_valid": true,
+      "evidence_valid": true,
+      "summary_present": true,
+      "model_filter_valid": true,
+      "source_model_consistent": true,
+      "result_pages": [
+        316,
+        988,
+        322
+      ],
+      "result_document_ids": [
+        "dc_s1m2_full_kor",
+        "dc_s1m2_full_kor",
+        "dc_s1m2_full_kor"
+      ]
+    },
+    {
+      "case_id": "s1m2_streaming",
+      "status_code": 200,
+      "retrieval_status": "ok",
+      "card_count": 5,
+      "schema_valid": true,
+      "retrieval_ok": true,
+      "sources_present": true,
+      "hit_document": true,
+      "hit_page": true,
+      "viewer_url_valid": true,
+      "evidence_valid": true,
+      "summary_present": true,
+      "model_filter_valid": true,
+      "source_model_consistent": true,
+      "result_pages": [
+        177,
+        383,
+        589,
+        736,
+        799
+      ],
+      "result_document_ids": [
+        "dc_s1m2_full_kor",
+        "dc_s1m2_full_kor",
+        "dc_s1m2_full_kor",
+        "dc_s1m2_full_kor",
+        "dc_s1m2_full_kor"
+      ]
+    },
+    {
+      "case_id": "tz99_zoom",
+      "status_code": 200,
+      "retrieval_status": "ok",
+      "card_count": 5,
+      "schema_valid": true,
+      "retrieval_ok": true,
+      "sources_present": true,
+      "hit_document": true,
+      "hit_page": true,
+      "viewer_url_valid": true,
+      "evidence_valid": true,
+      "summary_present": true,
+      "model_filter_valid": true,
+      "source_model_consistent": true,
+      "result_pages": [
+        35,
+        51,
+        81,
+        186,
+        161
+      ],
+      "result_document_ids": [
+        "dc_tz99_zs99_full_kor",
+        "dc_tz99_zs99_full_kor",
+        "dc_tz99_zs99_full_kor",
+        "dc_tz99_zs99_full_kor",
+        "dc_tz99_zs99_full_kor"
+      ]
+    },
+    {
+      "case_id": "zs99_zoom",
+      "status_code": 200,
+      "retrieval_status": "ok",
+      "card_count": 5,
+      "schema_valid": true,
+      "retrieval_ok": true,
+      "sources_present": true,
+      "hit_document": true,
+      "hit_page": true,
+      "viewer_url_valid": true,
+      "evidence_valid": true,
+      "summary_present": true,
+      "model_filter_valid": true,
+      "source_model_consistent": true,
+      "result_pages": [
+        35,
+        51,
+        81,
+        186,
+        161
+      ],
+      "result_document_ids": [
+        "dc_tz99_zs99_full_kor",
+        "dc_tz99_zs99_full_kor",
+        "dc_tz99_zs99_full_kor",
+        "dc_tz99_zs99_full_kor",
+        "dc_tz99_zs99_full_kor"
+      ]
+    },
+    {
+      "case_id": "tz99_charge_lamp",
+      "status_code": 200,
+      "retrieval_status": "ok",
+      "card_count": 3,
+      "schema_valid": true,
+      "retrieval_ok": true,
+      "sources_present": true,
+      "hit_document": true,
+      "hit_page": true,
+      "viewer_url_valid": true,
+      "evidence_valid": true,
+      "summary_present": true,
+      "model_filter_valid": true,
+      "source_model_consistent": true,
+      "result_pages": [
+        22,
+        17,
+        267
+      ],
+      "result_document_ids": [
+        "dc_tz99_zs99_full_kor",
+        "dc_tz99_zs99_full_kor",
+        "dc_tz99_zs99_full_kor"
+      ]
+    }
+  ]
+}

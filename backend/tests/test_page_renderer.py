@@ -5,6 +5,7 @@ from backend.app.indexing.page_renderer import (
     PageRenderRequest,
     render_pdf_page,
 )
+from PIL import Image
 from pypdf import PdfWriter
 
 
@@ -24,9 +25,11 @@ def test_render_pdf_page_writes_png(tmp_path: Path) -> None:
     )
 
     assert result.rendered is True
-    assert result.image_path == output_root / "sample_manual" / "1.png"
+    assert result.image_path == output_root / "sample_manual" / "1@4x.png"
     assert result.image_path.is_file()
     assert result.error is None
+    with Image.open(result.image_path) as image:
+        assert image.size == (800, 800)
 
 
 def test_render_pdf_page_reports_missing_pdf(tmp_path: Path) -> None:
