@@ -45,6 +45,7 @@ class Settings(BaseSettings):
     )
     llm_rewrite_max_tokens: int = Field(default=128, ge=1)
     llm_rewrite_think: bool = False
+    llm_rewrite_warmup_enabled: bool = False
     embedding_base_url: str = "http://127.0.0.1:11434/v1"
     embedding_api_key: str = "local"
     embedding_model: str = "bge-m3"
