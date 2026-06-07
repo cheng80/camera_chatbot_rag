@@ -16,7 +16,8 @@ LUMIX_LLM_BASE_URL=http://127.0.0.1:11434/v1
 LUMIX_EMBEDDING_BASE_URL=http://127.0.0.1:11434/v1
 LUMIX_LLM_REQUEST_TIMEOUT_SECONDS=120
 LUMIX_LLM_TEMPERATURE=0.2
-LUMIX_LLM_MAX_TOKENS=256
+LUMIX_LLM_MAX_TOKENS=512
+LUMIX_LLM_THINK=false
 ```
 
 기존 RAG 챗봇 `.env` 샘플을 가져올 때는 현재 프로젝트의 `LUMIX_` prefix로 변환한다.
@@ -26,15 +27,18 @@ LUMIX_LLM_MAX_TOKENS=256
 
 | 기존 키 | 현재 키 |
 |---|---|
+| `CORS_ORIGINS` | `LUMIX_ALLOWED_ORIGINS` 또는 `CORS_ORIGINS` |
 | `OLLAMA_CHAT_MODEL` | `LUMIX_LLM_MODEL` |
 | `OLLAMA_EMBED_MODEL` | `LUMIX_EMBEDDING_MODEL` |
 | `OLLAMA_REQUEST_TIMEOUT` | `LUMIX_LLM_REQUEST_TIMEOUT_SECONDS` |
 | `LLM_TEMPERATURE` | `LUMIX_LLM_TEMPERATURE` |
 | `LLM_NUM_PREDICT` | `LUMIX_LLM_MAX_TOKENS` |
+| `LLM_THINK` | `LUMIX_LLM_THINK` |
 
-`OLLAMA_KEEP_ALIVE`, `LLM_THINK`, `CHROMA_*`, `DATABASE_URL`, `CHUNK_*`,
-`TOP_K`는 다음 단계의 실제 generation adapter, vector store, indexing pipeline에 연결할
-때 활성 설정으로 승격한다.
+`LLM_NUM_PREDICT=256`은 Gemma 계열 모델에서 reasoning 토큰만 생성하고 `content`가
+비는 smoke 실패를 만들 수 있어 현재 기본값은 512로 둔다. `APP_NAME`, `ENVIRONMENT`,
+`OLLAMA_KEEP_ALIVE`, `CHROMA_*`, `DATABASE_URL`, `CHUNK_*`, `TOP_K`는 다음 단계의 실제
+generation adapter, vector store, indexing pipeline에 연결할 때 활성 설정으로 승격한다.
 
 ## Local Models
 

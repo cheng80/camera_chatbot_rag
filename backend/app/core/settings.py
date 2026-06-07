@@ -2,7 +2,7 @@ from functools import lru_cache
 from pathlib import Path
 from typing import ClassVar
 
-from pydantic import Field
+from pydantic import AliasChoices, Field
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
 
@@ -18,7 +18,10 @@ class Settings(BaseSettings):
     debug: bool = False
     static_dir: Path = Path("web")
     data_dir: Path = Path("data")
-    allowed_origins: list[str] = Field(default_factory=list)
+    allowed_origins: list[str] = Field(
+        default_factory=list,
+        validation_alias=AliasChoices("LUMIX_ALLOWED_ORIGINS", "CORS_ORIGINS"),
+    )
     enable_local_vector: bool = False
     llm_base_url: str = "http://127.0.0.1:11434/v1"
     llm_api_key: str = "local"
@@ -35,7 +38,8 @@ class Settings(BaseSettings):
     embedding_model: str = "bge-m3"
     llm_request_timeout_seconds: float = Field(default=120, gt=0)
     llm_temperature: float = Field(default=0.2, ge=0, le=2)
-    llm_max_tokens: int = Field(default=256, ge=1)
+    llm_max_tokens: int = Field(default=512, ge=1)
+    llm_think: bool = False
 
 
 @lru_cache

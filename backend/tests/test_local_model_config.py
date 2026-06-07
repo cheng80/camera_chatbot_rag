@@ -1,20 +1,40 @@
+from collections.abc import Callable
+from typing import cast
+
+import pytest
 from backend.app.core.settings import Settings
 from backend.app.services.local_model_config import local_model_candidates_by_role
 
+type SettingsFactory = Callable[..., Settings]
+
 
 def test_default_local_model_settings_target_requested_models() -> None:
-    settings = Settings()
+    settings_factory = cast("SettingsFactory", Settings)
+    settings = settings_factory(_env_file=None)
 
     assert settings.llm_model == "hf.co/unsloth/gemma-4-12B-it-qat-GGUF:UD-Q4_K_XL"
     assert settings.embedding_model == "bge-m3"
     assert settings.llm_temperature == 0.2
-    assert settings.llm_max_tokens == 256
+    assert settings.llm_max_tokens == 512
     assert settings.llm_request_timeout_seconds == 120
+    assert settings.llm_think is False
     assert (
         "hf.co/unsloth/gemma-4-E4B-it-qat-GGUF:UD-Q4_K_XL"
         in settings.llm_comparison_models
     )
     assert "hf.co/Qwen/Qwen3-8B-GGUF:Q4_K_M" in settings.llm_comparison_models
+
+
+def test_legacy_cors_origins_env_alias_is_supported(
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    monkeypatch.delenv("LUMIX_ALLOWED_ORIGINS", raising=False)
+    monkeypatch.setenv("CORS_ORIGINS", '["*"]')
+    settings_factory = cast("SettingsFactory", Settings)
+
+    settings = settings_factory(_env_file=None)
+
+    assert settings.allowed_origins == ["*"]
 
 
 def test_local_model_candidates_include_recommended_roles() -> None:
