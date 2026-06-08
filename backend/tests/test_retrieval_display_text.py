@@ -452,6 +452,22 @@ def test_feature_title_from_card_uses_content_when_title_is_number() -> None:
     assert title == "초점 피킹"
 
 
+def test_feature_title_from_card_uses_content_when_title_is_diagram_label() -> None:
+    # Given: a PDF figure label was promoted as the section title.
+    title = feature_title_from_card(
+        feature_name="(A)",
+        source_title="(A)",
+        content=(
+            "• 이 기능을 사용하면, 이미지는 촬영 시 "
+            "[하이브리드 줌(사진)]/[크롭 줌(사진)]의 화면비율과 시야각으로 "
+            "처리됩니다."
+        ),
+    )
+
+    # When / Then: the card title falls back to the feature label in the content.
+    assert title == "하이브리드 줌(사진)"
+
+
 def test_feature_title_from_card_uses_content_when_title_is_menu_path() -> None:
     # Given: a PDF menu path was promoted as the section title.
     feature_name = "> > [프록시 기록 설정] > [실시간 LUT(프록시)] 선택"

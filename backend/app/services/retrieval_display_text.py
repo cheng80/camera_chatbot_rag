@@ -12,6 +12,7 @@ PLAYBACK_TIME_SAMPLE_RE: Final = re.compile(
     rf"^\d{{1,2}}:\d{{2}}[{RIGHT_SINGLE_QUOTE}']\d{{2}}[{RIGHT_DOUBLE_QUOTE}\"]$",
 )
 FILE_NUMBER_SAMPLE_RE: Final = re.compile(r"^\d{3}-\d{4}$")
+DIAGRAM_LABEL_RE: Final = re.compile(r"^\([A-Za-z]\)$")
 EXPOSURE_SAMPLE_ALLOWED_RE: Final = re.compile(r"^[0-9Ff/+\-.\s]+$")
 EXPOSURE_SAMPLE_SIGNAL_RE: Final = re.compile(r"(?:\d+/\d+|F\s?\d)", re.IGNORECASE)
 BROKEN_MENU_PREFIX_RE: Final = re.compile(r"^(?:\s*(?:||➔|→)\s*)?(?:\[\s*\]\s*)+")
@@ -50,6 +51,7 @@ TOC_BRACKETED_TITLE_DOT_LEADER_RE: Final = re.compile(
     r"^\[([^\[\]]+)\]\s*\.{3,}\s*\d+$",
 )
 TOC_BRACKETED_PAGE_RE: Final = re.compile(r"\[([^\[\]]+)\]\s*:?\s*(\d+)")
+INLINE_BRACKETED_FEATURE_RE: Final = re.compile(r"\[([^\[\]]*[가-힣][^\[\]]*)\]")
 TOC_TEXT_DOT_LEADER_RE: Final = re.compile(
     r"(?<!\S)([^\[\].\n][^.\n]{1,80}?)\s*\.{3,}\s*(\d+)",
 )
@@ -232,6 +234,7 @@ def _is_noise_feature_title(value: str) -> bool:
         or TIMECODE_LIKE_TITLE_RE.fullmatch(value) is not None
         or PLAYBACK_TIME_SAMPLE_RE.fullmatch(value) is not None
         or FILE_NUMBER_SAMPLE_RE.fullmatch(value) is not None
+        or DIAGRAM_LABEL_RE.fullmatch(value) is not None
         or _is_exposure_sample_title(compact)
     )
 
@@ -248,6 +251,11 @@ def _feature_title_from_content(content: str) -> str:
     first_line = cleaned.splitlines()[0] if cleaned else ""
     if not first_line:
         return ""
+    inline_feature_match = INLINE_BRACKETED_FEATURE_RE.search(first_line)
+    if inline_feature_match is not None:
+        inline_feature = clean_feature_title(inline_feature_match.group(1))
+        if _is_meaningful_feature_title(inline_feature):
+            return inline_feature
     return clean_feature_title(first_line)
 
 
