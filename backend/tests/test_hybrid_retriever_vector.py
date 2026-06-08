@@ -2,8 +2,9 @@ from pathlib import Path
 
 from backend.app.indexing.fts_index import build_fts_index
 from backend.app.schemas.search import SearchRequest
-from backend.app.services.hybrid_retriever import HybridRetriever
+from backend.app.services.hybrid_retriever import HybridRetriever, HybridRetrieverConfig
 from backend.app.services.vector_search import (
+    VectorSearchAdapter,
     VectorSearchRequest,
     VectorSearchResult,
 )
@@ -85,7 +86,7 @@ def test_hybrid_retriever_can_use_vector_adapter_when_fts_has_no_results(
     tmp_path: Path,
 ) -> None:
     registry_dir, pages_dir = write_hybrid_source_validation_fixture(tmp_path=tmp_path)
-    retriever = HybridRetriever(
+    retriever = _retriever(
         index_path=tmp_path / "missing.sqlite3",
         registry_dir=registry_dir,
         pages_dir=pages_dir,
@@ -114,7 +115,7 @@ def test_hybrid_retriever_merges_fts_and_vector_results(
         tmp_path=tmp_path,
         pages=(12, 13),
     )
-    retriever = HybridRetriever(
+    retriever = _retriever(
         index_path=index_path,
         registry_dir=registry_dir,
         pages_dir=pages_dir,
@@ -145,7 +146,7 @@ def test_hybrid_retriever_caps_fused_results_to_top_k(
         tmp_path=tmp_path,
         pages=(12, 13),
     )
-    retriever = HybridRetriever(
+    retriever = _retriever(
         index_path=index_path,
         registry_dir=registry_dir,
         pages_dir=pages_dir,
@@ -172,7 +173,7 @@ def test_hybrid_retriever_deduplicates_fts_and_vector_source_page(
     index_path = tmp_path / "fts" / "lumix_manuals.sqlite3"
     _ = build_fts_index(chunks_dir=chunks_dir, index_path=index_path)
     registry_dir, pages_dir = write_hybrid_source_validation_fixture(tmp_path=tmp_path)
-    retriever = HybridRetriever(
+    retriever = _retriever(
         index_path=index_path,
         registry_dir=registry_dir,
         pages_dir=pages_dir,
@@ -190,7 +191,7 @@ def test_hybrid_retriever_uses_requested_model_for_vector_source(
     tmp_path: Path,
 ) -> None:
     registry_dir, pages_dir = write_hybrid_source_validation_fixture(tmp_path=tmp_path)
-    retriever = HybridRetriever(
+    retriever = _retriever(
         index_path=tmp_path / "missing.sqlite3",
         registry_dir=registry_dir,
         pages_dir=pages_dir,
@@ -207,7 +208,7 @@ def test_hybrid_retriever_reports_insufficient_evidence_for_invalid_vector_sourc
     tmp_path: Path,
 ) -> None:
     registry_dir, pages_dir = write_hybrid_source_validation_fixture(tmp_path=tmp_path)
-    retriever = HybridRetriever(
+    retriever = _retriever(
         index_path=tmp_path / "missing.sqlite3",
         registry_dir=registry_dir,
         pages_dir=pages_dir,
@@ -218,3 +219,20 @@ def test_hybrid_retriever_reports_insufficient_evidence_for_invalid_vector_sourc
 
     assert response.retrieval_status == "insufficient_evidence"
     assert response.cards == []
+
+
+def _retriever(
+    *,
+    index_path: Path,
+    registry_dir: Path,
+    pages_dir: Path,
+    vector_adapter: VectorSearchAdapter,
+) -> HybridRetriever:
+    return HybridRetriever(
+        config=HybridRetrieverConfig(
+            index_path=index_path,
+            registry_dir=registry_dir,
+            pages_dir=pages_dir,
+            vector_adapter=vector_adapter,
+        ),
+    )

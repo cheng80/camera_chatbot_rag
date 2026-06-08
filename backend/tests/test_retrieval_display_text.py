@@ -51,6 +51,28 @@ def test_clean_feature_title_removes_broken_ge_marker_prefix() -> None:
     assert cleaned == "배터리 팩"
 
 
+def test_clean_feature_title_replaces_broken_right_arrow() -> None:
+    # Given: a PDF-extracted menu path contains a broken right-arrow glyph.
+    title = "표준 정보 표시컨트롤 패널간이 정보 표시"
+
+    # When: the text is cleaned for feature-card display.
+    cleaned = clean_feature_title(title)
+
+    # Then: the unreadable glyph is replaced with a readable path separator.
+    assert cleaned == "표준 정보 표시 > 컨트롤 패널 > 간이 정보 표시"
+
+
+def test_clean_feature_title_removes_repeated_circle_bullets() -> None:
+    # Given: a THETA PDF heading includes repeated bullet symbols.
+    title = "●●촬영 화면"
+
+    # When: the text is cleaned for feature-card display.
+    cleaned = clean_feature_title(title)
+
+    # Then: only the meaningful title remains.
+    assert cleaned == "촬영 화면"
+
+
 def test_clean_feature_title_removes_spaced_ge_marker_prefix() -> None:
     # Given: a PDF-extracted heading with a spaced broken list marker.
     title = "≥ 하이브리드 줌(사진)/크롭 줌(사진)"
@@ -115,6 +137,111 @@ def test_clean_feature_title_repairs_pdf_korean_spacing() -> None:
 
     # Then: the feature title uses natural Korean spacing.
     assert cleaned == "자주 사용하는 기능들을 버튼에 지정하기 (기능 버튼들)"
+
+
+def test_clean_feature_title_removes_dash_leader_suffix() -> None:
+    # Given: a Ricoh PDF section title contains a dash leader before page layout.
+    title = "초점에 대해" + "-" * 64
+
+    # When: the title is cleaned for card display.
+    cleaned = clean_feature_title(title)
+
+    # Then: only the meaningful title remains.
+    assert cleaned == "초점에 대해"
+
+
+def test_clean_feature_title_removes_toc_dot_leader_page_suffix() -> None:
+    # Given: a PDF table-of-contents entry was promoted into a card title.
+    title = "화면 정보..............................................................14"
+
+    # When: the title is cleaned for card display.
+    cleaned = clean_feature_title(title)
+
+    # Then: only the section label remains.
+    assert cleaned == "화면 정보"
+
+
+def test_clean_feature_title_collapses_repeated_display_tokens() -> None:
+    # Given: PDF display sample text is duplicated by extraction.
+    title = "원원 터치터치 RAW+RAW+"
+
+    # When: the title is cleaned for card display.
+    cleaned = clean_feature_title(title)
+
+    # Then: each repeated display token is shown once.
+    assert cleaned == "원 터치 RAW+"
+
+
+def test_clean_feature_title_collapses_repeated_gps_token() -> None:
+    # Given: a short display label is duplicated by extraction.
+    title = "GPSGPS"
+
+    # When: the title is cleaned for card display.
+    cleaned = clean_feature_title(title)
+
+    # Then: the display label is shown once.
+    assert cleaned == "GPS"
+
+
+def test_feature_title_from_card_ignores_pdf_date_sample_title() -> None:
+    # Given: a Ricoh PDF chunk has a camera date sample as the extracted heading.
+    title = feature_title_from_card(
+        feature_name="2016/02/022016/02/02",
+        source_title="2016/02/022016/02/02",
+        content="메모리 카드 포맷",
+    )
+
+    # When / Then: the card title falls back to the actual content label.
+    assert title == "메모리 카드 포맷"
+
+
+def test_feature_title_from_card_ignores_pdf_exposure_sample_title() -> None:
+    # Given: a Ricoh PDF chunk has shutter/aperture sample values as the heading.
+    title = feature_title_from_card(
+        feature_name="1/1/125125 F5.65.6",
+        source_title="1/1/125125 F5.65.6",
+        content="메모리 카드 포맷",
+    )
+
+    # When / Then: the card title falls back to the actual content label.
+    assert title == "메모리 카드 포맷"
+
+
+def test_feature_title_from_card_ignores_pdf_timecode_sample_title() -> None:
+    # Given: a Ricoh PDF chunk has a timecode-like sample as the extracted heading.
+    title = feature_title_from_card(
+        feature_name="2: 002: 00",
+        source_title="2: 002: 00",
+        content="표준 정보 표시컨트롤 패널간이 정보 표시",
+    )
+
+    # When / Then: the card title falls back to the actual content label.
+    assert title == "표준 정보 표시 > 컨트롤 패널 > 간이 정보 표시"
+
+
+def test_feature_title_from_card_ignores_repeated_file_number_sample_title() -> None:
+    # Given: a Ricoh PDF chunk has a repeated image file number as the heading.
+    title = feature_title_from_card(
+        feature_name="100-0001100-0001",
+        source_title="100-0001100-0001",
+        content="폴더/파일 번호",
+    )
+
+    # When / Then: the card title falls back to the actual content label.
+    assert title == "폴더/파일 번호"
+
+
+def test_feature_title_from_card_ignores_playback_time_sample_title() -> None:
+    # Given: a Ricoh PDF chunk has repeated playback time samples as the heading.
+    sample = "9:59\N{RIGHT SINGLE QUOTATION MARK}59\N{RIGHT DOUBLE QUOTATION MARK}"
+    title = feature_title_from_card(
+        feature_name=f"{sample}{sample} {sample}{sample}",
+        source_title=f"{sample}{sample} {sample}{sample}",
+        content="동영상 재생",
+    )
+
+    # When / Then: the card title falls back to the actual content label.
+    assert title == "동영상 재생"
 
 
 def test_clean_summary_text_removes_broken_empty_menu_icons() -> None:

@@ -2,7 +2,7 @@ import re
 from pathlib import Path
 from typing import Annotated, Final
 
-from fastapi import APIRouter, HTTPException, Request
+from fastapi import APIRouter, HTTPException, Query, Request
 from fastapi import Path as ApiPath
 from fastapi.responses import HTMLResponse
 from pydantic import TypeAdapter
@@ -11,6 +11,8 @@ from backend.app.core.settings import get_settings
 from backend.app.indexing.page_renderer import PageRenderRequest, render_pdf_page
 from backend.app.indexing.pdf_extractor import ExtractedPage
 from backend.app.schemas.document import PageReference
+from backend.app.services.brand_data_paths import brand_data_paths
+from backend.app.services.brand_registry import BrandRegistryError, resolve_brand
 from backend.app.services.registry import load_registry
 
 router = APIRouter()
@@ -25,12 +27,18 @@ async def get_page_reference(
     request: Request,
     document_id: str,
     page: Annotated[int, ApiPath(ge=1)],
+    brand_id: Annotated[str | None, Query(max_length=64)] = None,
 ) -> PageReference | HTMLResponse:
     if SAFE_DOCUMENT_ID_RE.fullmatch(document_id) is None:
         raise HTTPException(status_code=400, detail="unsafe document_id")
 
     settings = get_settings()
-    catalog = load_registry(settings.data_dir / "registry")
+    try:
+        brand = resolve_brand(settings=settings, brand_id=brand_id)
+    except BrandRegistryError as error:
+        raise HTTPException(status_code=404, detail=error.errors) from error
+    paths = brand_data_paths(brand.data_dir)
+    catalog = load_registry(paths.registry_dir)
     document = next(
         (item for item in catalog.documents if item.document_id == document_id),
         None,
@@ -38,7 +46,7 @@ async def get_page_reference(
     if document is None:
         raise HTTPException(status_code=404, detail="document not found")
 
-    pages_path = settings.data_dir / "processed" / "pages" / f"{document_id}.jsonl"
+    pages_path = paths.processed_pages_dir / f"{document_id}.jsonl"
     if not pages_path.is_file():
         raise HTTPException(status_code=404, detail="processed pages not found")
 
@@ -50,10 +58,10 @@ async def get_page_reference(
     render_result = render_pdf_page(
         PageRenderRequest(
             document_id=document_id,
-            pdf_path=settings.data_dir / "raw" / "manuals" / document.filename,
+            pdf_path=paths.manuals_dir / document.filename,
             page=page,
-            output_root=settings.data_dir / "processed" / "page_images",
-            manuals_root=settings.data_dir / "raw" / "manuals",
+            output_root=paths.page_images_dir,
+            manuals_root=paths.manuals_dir,
         ),
     )
     if not render_result.rendered:
@@ -63,11 +71,28 @@ async def get_page_reference(
     page_reference = PageReference(
         document_id=document_id,
         page=page,
-        image_url=f"/page-images/{document_id}/{page}@4x.png",
+        image_url=_page_image_url(
+            active_brand_id=settings.active_brand_id,
+            brand_id=brand.brand_id,
+            document_id=document_id,
+            page=page,
+        ),
     )
     if "text/html" in request.headers.get("accept", ""):
         return _viewer_html(page_reference)
     return page_reference
+
+
+def _page_image_url(
+    *,
+    active_brand_id: str,
+    brand_id: str,
+    document_id: str,
+    page: int,
+) -> str:
+    if brand_id == active_brand_id:
+        return f"/page-images/{document_id}/{page}@4x.png"
+    return f"/page-images/{brand_id}/{document_id}/{page}@4x.png"
 
 
 def _load_document_pages(path: Path) -> tuple[ExtractedPage, ...]:

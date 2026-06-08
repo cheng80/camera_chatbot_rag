@@ -15,17 +15,20 @@
         <h1 data-app-brand-name>Panasonic LUMIX</h1>
       </div>
       <div class="header-status">
+        <label class="brand-picker">
+          <span>Brand</span>
+          <select data-brand-select aria-label="브랜드 선택"></select>
+        </label>
         <span>Hybrid RAG</span>
         <span>Source pages</span>
       </div>
     </header>
     <main class="app-shell">
-      <aside class="filters" aria-label="검색 필터">
+      <aside class="filters" aria-label="모델 선택">
         <details id="filter-shell" class="filter-shell" open>
           <summary>
             <span>
-              <span class="eyebrow">Filter</span>
-              <strong>Models</strong>
+              <strong>모델 선택</strong>
             </span>
             <span id="filter-summary">전체 모델</span>
           </summary>
@@ -51,7 +54,7 @@
               name="query"
               type="search"
               autocomplete="off"
-              placeholder="예: S9 하이브리드 줌, 제브라 패턴, 손떨림 보정"
+              placeholder="예: 초점, 배터리, Wi-Fi"
             />
             <select id="top-k" name="top_k" aria-label="화면 표시 수">
               <option value="8">8개</option>
@@ -64,10 +67,11 @@
             <button type="submit">Search</button>
           </div>
           <div class="suggestion-row" aria-label="빠른 검색어">
-            <button type="button" data-query="하이브리드 줌">하이브리드 줌</button>
-            <button type="button" data-query="제브라 패턴">제브라 패턴</button>
-            <button type="button" data-query="손떨림 보정">손떨림 보정</button>
+            <button type="button" data-query="초점">초점</button>
+            <button type="button" data-query="배터리">배터리</button>
+            <button type="button" data-query="Wi-Fi">Wi-Fi</button>
           </div>
+          <div id="context-search-panel" class="context-search-panel" hidden></div>
         </form>
         <div id="results" class="results" aria-live="polite"></div>
       </section>
@@ -81,8 +85,8 @@
         </div>
       </aside>
     </main>
-    <script type="module" src="/assets/js/app_config.js"></script>
-    <script type="module" src="/assets/js/app.js"></script>
-    <script type="module" src="/assets/js/card_rewrite.js"></script>
+    <script type="module" src="/assets/js/app_config.js?v=brand-service"></script>
+    <script type="module" src="/assets/js/app.js?v=pagination-cleanup"></script>
+    <script type="module" src="/assets/js/card_rewrite.js?v=brand-service"></script>
   </body>
 </html>

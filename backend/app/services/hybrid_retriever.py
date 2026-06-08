@@ -1,3 +1,4 @@
+from dataclasses import dataclass
 from pathlib import Path
 from typing import Final
 
@@ -31,23 +32,37 @@ from backend.app.wiki.source_ref_checker import (
 SEARCH_CANDIDATE_TOP_K: Final = 1000
 
 
+@dataclass(frozen=True, slots=True)
+class HybridRetrieverConfig:
+    index_path: Path = DEFAULT_FTS_INDEX_PATH
+    registry_dir: Path = DEFAULT_REGISTRY_DIR
+    pages_dir: Path = DEFAULT_PAGES_DIR
+    models: tuple[CameraModelRegistryEntry, ...] | None = None
+    model_aliases: tuple[tuple[str, str], ...] = ()
+    vector_adapter: VectorSearchAdapter | None = None
+
+
 class HybridRetriever:
     def __init__(
         self,
         *,
-        index_path: Path = DEFAULT_FTS_INDEX_PATH,
-        registry_dir: Path = DEFAULT_REGISTRY_DIR,
-        pages_dir: Path = DEFAULT_PAGES_DIR,
-        models: tuple[CameraModelRegistryEntry, ...] | None = None,
-        vector_adapter: VectorSearchAdapter | None = None,
+        config: HybridRetrieverConfig | None = None,
     ) -> None:
-        self._index_path: Path = index_path
-        self._registry_dir: Path = registry_dir
-        self._pages_dir: Path = pages_dir
+        resolved_config = config or HybridRetrieverConfig()
+        self._index_path: Path = resolved_config.index_path
+        self._registry_dir: Path = resolved_config.registry_dir
+        self._pages_dir: Path = resolved_config.pages_dir
         self._models: tuple[CameraModelRegistryEntry, ...] = (
-            models if models is not None else load_default_models()
+            resolved_config.models
+            if resolved_config.models is not None
+            else load_default_models()
         )
-        self._vector_adapter: VectorSearchAdapter | None = vector_adapter
+        self._model_aliases: tuple[tuple[str, str], ...] = (
+            resolved_config.model_aliases
+        )
+        self._vector_adapter: VectorSearchAdapter | None = (
+            resolved_config.vector_adapter
+        )
         self._source_validation_cache: SourceValidationCache = {}
 
     def search(self, payload: SearchRequest) -> SearchResponse:
@@ -55,6 +70,7 @@ class HybridRetriever:
             query=payload.query,
             requested_model_ids=payload.model_ids,
             models=self._models,
+            extra_model_aliases=self._model_aliases,
         )
         results = search_fts_index(
             index_path=self._index_path,

@@ -4,8 +4,18 @@ from typing import Final
 SUMMARY_LIMIT: Final = 180
 GENERIC_FEATURE_TITLES: Final[frozenset[str]] = frozenset({"Fn", "목차"})
 CORRUPT_PDF_TEXT_RE: Final = re.compile(r"[ÐÑî]")
-BROKEN_MENU_PREFIX_RE: Final = re.compile(r"^(?:\s*(?:|➔|→)\s*)?(?:\[\s*\]\s*)+")
-LEADING_MENU_MARK_RE: Final = re.compile(r"^(?:\s*(?:|||≥|➔|→)\s*)+")
+RIGHT_SINGLE_QUOTE: Final = "\N{RIGHT SINGLE QUOTATION MARK}"
+RIGHT_DOUBLE_QUOTE: Final = "\N{RIGHT DOUBLE QUOTATION MARK}"
+DATE_LIKE_TITLE_RE: Final = re.compile(r"^(?:\d{4}/\d{2}/\d{2}){1,2}$")
+TIMECODE_LIKE_TITLE_RE: Final = re.compile(r"^\d+\s*:\s*\d{2,3}\s*:\s*\d{2}$")
+PLAYBACK_TIME_SAMPLE_RE: Final = re.compile(
+    rf"^\d{{1,2}}:\d{{2}}[{RIGHT_SINGLE_QUOTE}']\d{{2}}[{RIGHT_DOUBLE_QUOTE}\"]$",
+)
+FILE_NUMBER_SAMPLE_RE: Final = re.compile(r"^\d{3}-\d{4}$")
+EXPOSURE_SAMPLE_ALLOWED_RE: Final = re.compile(r"^[0-9Ff/+\-.\s]+$")
+EXPOSURE_SAMPLE_SIGNAL_RE: Final = re.compile(r"(?:\d+/\d+|F\s?\d)", re.IGNORECASE)
+BROKEN_MENU_PREFIX_RE: Final = re.compile(r"^(?:\s*(?:||➔|→)\s*)?(?:\[\s*\]\s*)+")
+LEADING_MENU_MARK_RE: Final = re.compile(r"^(?:\s*(?:||||≥|➔|→|●)\s*)+")
 SPACING_RE: Final = re.compile(r"\s+")
 BRACKETED_ACTION_RE: Final = re.compile(r"^\[([^\[\]]+)\]\s*(?:선택|사용하기)$")
 MENU_PATH_ACTION_RE: Final = re.compile(
@@ -36,10 +46,15 @@ TRAILING_BRACKETED_PAGE_REFERENCE_RE: Final = re.compile(
 TOC_BRACKETED_DOT_LEADER_RE: Final = re.compile(
     r"\[([^\[\]]+)\]\s*\.{3,}\s*(\d+)",
 )
+TOC_BRACKETED_TITLE_DOT_LEADER_RE: Final = re.compile(
+    r"^\[([^\[\]]+)\]\s*\.{3,}\s*\d+$",
+)
 TOC_BRACKETED_PAGE_RE: Final = re.compile(r"\[([^\[\]]+)\]\s*:?\s*(\d+)")
 TOC_TEXT_DOT_LEADER_RE: Final = re.compile(
     r"(?<!\S)([^\[\].\n][^.\n]{1,80}?)\s*\.{3,}\s*(\d+)",
 )
+TOC_TEXT_TITLE_DOT_LEADER_RE: Final = re.compile(r"^(.{1,80}?)\s*\.{3,}\s*\d+$")
+DASH_LEADER_SUFFIX_RE: Final = re.compile(r"\s*-{3,}\s*$")
 SPACE_BEFORE_PUNCTUATION_RE: Final = re.compile(r"\s+([.,:;!?])")
 PARENTHESIZED_SPACING_RE: Final = re.compile(r"\(\s*([^)]+?)\s*\)")
 BROKEN_KOREAN_SPACING_REPLACEMENTS: Final[tuple[tuple[str, str], ...]] = (
@@ -50,7 +65,7 @@ BROKEN_KOREAN_SPACING_REPLACEMENTS: Final[tuple[tuple[str, str], ...]] = (
 
 
 def clean_feature_title(value: str) -> str:
-    cleaned = _unwrap_bracketed_selection(_clean_common(value))
+    cleaned = _unwrap_bracketed_selection(_clean_toc_title(_clean_common(value)))
     return cleaned or value.strip()
 
 
@@ -112,6 +127,7 @@ def _clean_common(value: str) -> str:
         cleaned = LEADING_MENU_MARK_RE.sub("", cleaned)
         cleaned = BROKEN_MENU_PREFIX_RE.sub("", cleaned)
     cleaned = cleaned.replace("", " > ")
+    cleaned = cleaned.replace("", " > ")
     cleaned = cleaned.replace("", "")
     cleaned = cleaned.replace("", "")
     cleaned = cleaned.replace("[ ]", "")
@@ -119,10 +135,12 @@ def _clean_common(value: str) -> str:
     if markdown_match is not None:
         return markdown_match.group(1).strip()
     cleaned = INLINE_MARKDOWN_PAGE_LINK_RE.sub(r"\1", cleaned)
+    cleaned = DASH_LEADER_SUFFIX_RE.sub("", cleaned)
     cleaned = TRAILING_BRACKETED_PAGE_REFERENCE_RE.sub("", cleaned)
     cleaned = INTERNAL_PAGE_REFERENCE_RE.sub("", cleaned)
     cleaned = PAREN_PAGE_REFERENCE_RE.sub("", cleaned)
     cleaned = SPACING_RE.sub(" ", cleaned).strip()
+    cleaned = _collapse_repeated_display_tokens(cleaned)
     cleaned = _repair_pdf_spacing(cleaned)
     return SPACE_BEFORE_PUNCTUATION_RE.sub(r"\1", cleaned)
 
@@ -132,6 +150,38 @@ def _repair_pdf_spacing(value: str) -> str:
     for broken, repaired in BROKEN_KOREAN_SPACING_REPLACEMENTS:
         cleaned = cleaned.replace(broken, repaired)
     return PARENTHESIZED_SPACING_RE.sub(r"(\1)", cleaned)
+
+
+def _collapse_repeated_display_tokens(value: str) -> str:
+    collapsed_tokens = [_collapse_repeated_token(token) for token in value.split()]
+    deduplicated: list[str] = []
+    for token in collapsed_tokens:
+        if deduplicated and deduplicated[-1] == token:
+            continue
+        deduplicated.append(token)
+    return " ".join(deduplicated)
+
+
+def _collapse_repeated_token(token: str) -> str:
+    midpoint, remainder = divmod(len(token), 2)
+    if remainder != 0 or midpoint == 0:
+        return token
+    prefix = token[:midpoint]
+    if prefix != token[midpoint:]:
+        return token
+    if prefix.isdigit():
+        return token
+    return prefix
+
+
+def _clean_toc_title(value: str) -> str:
+    bracketed_match = TOC_BRACKETED_TITLE_DOT_LEADER_RE.fullmatch(value)
+    if bracketed_match is not None:
+        return bracketed_match.group(1).strip()
+    text_match = TOC_TEXT_TITLE_DOT_LEADER_RE.fullmatch(value)
+    if text_match is not None:
+        return text_match.group(1).strip()
+    return value
 
 
 def _unwrap_bracketed_selection(value: str) -> str:
@@ -166,15 +216,31 @@ def _unwrap_broken_markdown_page_link(value: str) -> str:
 
 
 def _is_meaningful_feature_title(value: str) -> bool:
-    if value in GENERIC_FEATURE_TITLES:
-        return False
-    if CORRUPT_PDF_TEXT_RE.search(value) is not None:
-        return False
-    if value.lstrip().startswith(">"):
-        return False
-    if value.isdigit():
+    if _is_noise_feature_title(value):
         return False
     return any(character.isalnum() for character in value) and len(value) > 1
+
+
+def _is_noise_feature_title(value: str) -> bool:
+    compact = "".join(value.split())
+    return (
+        value in GENERIC_FEATURE_TITLES
+        or CORRUPT_PDF_TEXT_RE.search(value) is not None
+        or value.lstrip().startswith(">")
+        or value.isdigit()
+        or DATE_LIKE_TITLE_RE.fullmatch(compact) is not None
+        or TIMECODE_LIKE_TITLE_RE.fullmatch(value) is not None
+        or PLAYBACK_TIME_SAMPLE_RE.fullmatch(value) is not None
+        or FILE_NUMBER_SAMPLE_RE.fullmatch(value) is not None
+        or _is_exposure_sample_title(compact)
+    )
+
+
+def _is_exposure_sample_title(value: str) -> bool:
+    return (
+        EXPOSURE_SAMPLE_ALLOWED_RE.fullmatch(value) is not None
+        and EXPOSURE_SAMPLE_SIGNAL_RE.search(value) is not None
+    )
 
 
 def _feature_title_from_content(content: str) -> str:

@@ -1,8 +1,9 @@
 from pathlib import Path
 
 from backend.app.indexing.fts_index import build_fts_index
+from backend.app.schemas.document import CameraModelRegistryEntry
 from backend.app.schemas.search import SearchRequest
-from backend.app.services.hybrid_retriever import HybridRetriever
+from backend.app.services.hybrid_retriever import HybridRetriever, HybridRetrieverConfig
 from backend.tests.hybrid_retriever_fixtures import (
     hybrid_chunk,
     hybrid_model,
@@ -22,7 +23,7 @@ def test_hybrid_retriever_returns_feature_cards_from_fts_index(
     index_path = tmp_path / "fts" / "lumix_manuals.sqlite3"
     _ = build_fts_index(chunks_dir=chunks_dir, index_path=index_path)
     registry_dir, pages_dir = write_hybrid_source_validation_fixture(tmp_path=tmp_path)
-    retriever = HybridRetriever(
+    retriever = _retriever(
         index_path=index_path,
         registry_dir=registry_dir,
         pages_dir=pages_dir,
@@ -44,7 +45,7 @@ def test_hybrid_retriever_returns_feature_cards_from_fts_index(
 def test_hybrid_retriever_reports_not_indexed_when_index_missing(
     tmp_path: Path,
 ) -> None:
-    retriever = HybridRetriever(index_path=tmp_path / "missing.sqlite3")
+    retriever = _retriever(index_path=tmp_path / "missing.sqlite3")
 
     response = retriever.search(SearchRequest(query="제브라"))
 
@@ -64,7 +65,7 @@ def test_hybrid_retriever_uses_requested_model_for_multi_model_source(
     index_path = tmp_path / "fts" / "lumix_manuals.sqlite3"
     _ = build_fts_index(chunks_dir=chunks_dir, index_path=index_path)
     registry_dir, pages_dir = write_hybrid_source_validation_fixture(tmp_path=tmp_path)
-    retriever = HybridRetriever(
+    retriever = _retriever(
         index_path=index_path,
         registry_dir=registry_dir,
         pages_dir=pages_dir,
@@ -88,7 +89,7 @@ def test_hybrid_retriever_detects_model_name_in_query(
     index_path = tmp_path / "fts" / "lumix_manuals.sqlite3"
     _ = build_fts_index(chunks_dir=chunks_dir, index_path=index_path)
     registry_dir, pages_dir = write_hybrid_source_validation_fixture(tmp_path=tmp_path)
-    retriever = HybridRetriever(
+    retriever = _retriever(
         index_path=index_path,
         registry_dir=registry_dir,
         pages_dir=pages_dir,
@@ -115,7 +116,7 @@ def test_hybrid_retriever_handles_natural_language_setting_query(
     index_path = tmp_path / "fts" / "lumix_manuals.sqlite3"
     _ = build_fts_index(chunks_dir=chunks_dir, index_path=index_path)
     registry_dir, pages_dir = write_hybrid_source_validation_fixture(tmp_path=tmp_path)
-    retriever = HybridRetriever(
+    retriever = _retriever(
         index_path=index_path,
         registry_dir=registry_dir,
         pages_dir=pages_dir,
@@ -156,7 +157,7 @@ def test_hybrid_retriever_promotes_menu_reference_page(
         tmp_path=tmp_path,
         pages=(253, 535),
     )
-    retriever = HybridRetriever(
+    retriever = _retriever(
         index_path=index_path,
         registry_dir=registry_dir,
         pages_dir=pages_dir,
@@ -203,7 +204,7 @@ def test_hybrid_retriever_keeps_specific_source_when_reference_label_is_broader(
         tmp_path=tmp_path,
         pages=(177, 585),
     )
-    retriever = HybridRetriever(
+    retriever = _retriever(
         index_path=index_path,
         registry_dir=registry_dir,
         pages_dir=pages_dir,
@@ -243,7 +244,7 @@ def test_hybrid_retriever_keeps_source_when_reference_label_has_no_terms(
         tmp_path=tmp_path,
         pages=(44, 135),
     )
-    retriever = HybridRetriever(
+    retriever = _retriever(
         index_path=index_path,
         registry_dir=registry_dir,
         pages_dir=pages_dir,
@@ -273,7 +274,7 @@ def test_hybrid_retriever_drops_unvalidated_source_cards(
         tmp_path=tmp_path,
         pages=(99,),
     )
-    retriever = HybridRetriever(
+    retriever = _retriever(
         index_path=index_path,
         registry_dir=registry_dir,
         pages_dir=pages_dir,
@@ -301,7 +302,7 @@ def test_hybrid_retriever_deduplicates_same_source_page(
     index_path = tmp_path / "fts" / "lumix_manuals.sqlite3"
     _ = build_fts_index(chunks_dir=chunks_dir, index_path=index_path)
     registry_dir, pages_dir = write_hybrid_source_validation_fixture(tmp_path=tmp_path)
-    retriever = HybridRetriever(
+    retriever = _retriever(
         index_path=index_path,
         registry_dir=registry_dir,
         pages_dir=pages_dir,
@@ -311,3 +312,20 @@ def test_hybrid_retriever_deduplicates_same_source_page(
 
     assert response.retrieval_status == "ok"
     assert len(response.cards) == 1
+
+
+def _retriever(
+    *,
+    index_path: Path | None = None,
+    registry_dir: Path | None = None,
+    pages_dir: Path | None = None,
+    models: tuple[CameraModelRegistryEntry, ...] | None = None,
+) -> HybridRetriever:
+    return HybridRetriever(
+        config=HybridRetrieverConfig(
+            index_path=index_path or HybridRetrieverConfig().index_path,
+            registry_dir=registry_dir or HybridRetrieverConfig().registry_dir,
+            pages_dir=pages_dir or HybridRetrieverConfig().pages_dir,
+            models=models,
+        ),
+    )

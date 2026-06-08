@@ -66,6 +66,28 @@ def test_parse_community_retrieval_args_accepts_limit() -> None:
 
     assert args.input_path.name == "input.json"
     assert args.output_path.name == "output.json"
+    assert args.brand_id == "panasonic_lumix"
+    assert args.limit == 12
+
+
+def test_parse_community_retrieval_args_accepts_brand_id() -> None:
+    args = parse_community_retrieval_args(
+        argv=(
+            "community_candidate_retrieval",
+            "--brand-id",
+            "ricoh",
+            "--limit",
+            "12",
+        ),
+    )
+
+    assert args.brand_id == "ricoh"
+    assert args.input_path.as_posix().endswith(
+        "data/eval/community/ricoh/community_query_candidates.json",
+    )
+    assert args.output_path.as_posix().endswith(
+        "data/eval/community/ricoh/community_query_retrieval_candidates.json",
+    )
     assert args.limit == 12
 
 

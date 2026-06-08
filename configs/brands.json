@@ -1,0 +1,16 @@
+[
+  {
+    "brand_id": "panasonic_lumix",
+    "brand_name": "Panasonic LUMIX",
+    "brand_mark": "PL",
+    "data_dir": "data/brands/panasonic_lumix",
+    "rules_dir": "configs/brands/panasonic_lumix"
+  },
+  {
+    "brand_id": "ricoh",
+    "brand_name": "Ricoh / PENTAX",
+    "brand_mark": "R",
+    "data_dir": "data/brands/ricoh",
+    "rules_dir": "configs/brands/ricoh"
+  }
+]

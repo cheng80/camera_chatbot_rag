@@ -11,10 +11,30 @@ COMPOUND_ALIASES: Final[tuple[tuple[str, str], ...]] = (
     ("오픈게이트", "오픈 게이트"),
     ("루믹스랩", "LUMIX Lab"),
 )
+SEARCH_SYNONYM_ALIASES: Final[tuple[tuple[str, str], ...]] = (
+    ("와이파이", "Wi-Fi"),
+    ("무선랜", "무선 LAN"),
+    ("무선연결", "무선 연결"),
+    ("블루투스", "Bluetooth"),
+    ("베터리", "배터리"),
+    ("밧데리", "배터리"),
+    ("건전지", "배터리"),
+    ("메모리카드", "메모리 카드"),
+    ("SD카드", "SD 카드"),
+    ("사진촬영", "사진 촬영"),
+    ("동영상촬영", "동영상 촬영"),
+)
 
 
 def normalize_korean_compound_aliases(value: str) -> str:
     normalized = value
     for source, target in COMPOUND_ALIASES:
+        normalized = normalized.replace(source, target)
+    return WHITESPACE_PATTERN.sub(" ", normalized).strip()
+
+
+def normalize_korean_search_aliases(value: str) -> str:
+    normalized = normalize_korean_compound_aliases(value)
+    for source, target in SEARCH_SYNONYM_ALIASES:
         normalized = normalized.replace(source, target)
     return WHITESPACE_PATTERN.sub(" ", normalized).strip()

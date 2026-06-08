@@ -25,6 +25,7 @@ OpenDataLoaderErrorKind = Literal[
 FALLBACK_ALLOWED_KINDS: Final[tuple[OpenDataLoaderErrorKind, ...]] = (
     "cli_failed",
     "cli_not_found",
+    "empty_pages",
 )
 
 

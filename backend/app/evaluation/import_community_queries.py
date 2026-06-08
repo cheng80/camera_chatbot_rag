@@ -7,6 +7,10 @@ from typing import Final
 
 from pydantic import TypeAdapter
 
+from backend.app.evaluation.community_paths import (
+    DEFAULT_COMMUNITY_BRAND_ID,
+    community_candidates_path,
+)
 from backend.app.evaluation.community_query_classifier import (
     CommunityQueryCandidate,
     classify_community_query,
@@ -14,8 +18,8 @@ from backend.app.evaluation.community_query_classifier import (
 )
 
 DEFAULT_RAW_PATH: Final = Path.home() / "Desktop" / "Naver_Cafe_Q&A.txt"
-DEFAULT_OUTPUT_PATH: Final = Path("data/eval/community_query_candidates.json")
-OUTPUT_PATH_ARG_INDEX: Final = 2
+BRAND_ID_FLAG: Final = "--brand-id"
+BRAND_ID_ERROR_MESSAGE: Final = "--brand-id requires a brand id value"
 MAX_AUTHOR_LINE_LENGTH: Final = 12
 CANDIDATES_ADAPTER: Final[TypeAdapter[tuple[CommunityQueryCandidate, ...]]] = (
     TypeAdapter(tuple[CommunityQueryCandidate, ...])
@@ -47,12 +51,7 @@ def write_community_query_candidates(
 
 
 def main() -> None:
-    raw_path = Path(sys.argv[1]) if len(sys.argv) > 1 else DEFAULT_RAW_PATH
-    output_path = (
-        Path(sys.argv[OUTPUT_PATH_ARG_INDEX])
-        if len(sys.argv) > OUTPUT_PATH_ARG_INDEX
-        else DEFAULT_OUTPUT_PATH
-    )
+    raw_path, output_path = parse_import_args(argv=tuple(sys.argv))
     candidates = extract_community_query_candidates(raw_path)
     _ = write_community_query_candidates(candidates=candidates, path=output_path)
     counts = Counter(candidate.category for candidate in candidates)
@@ -67,6 +66,29 @@ def main() -> None:
         f"unknown={counts['unknown']}\n"
     )
     _ = sys.stdout.write(message)
+
+
+def parse_import_args(argv: Sequence[str]) -> tuple[Path, Path]:
+    positional: list[str] = []
+    brand_id = DEFAULT_COMMUNITY_BRAND_ID
+    index = 1
+    while index < len(argv):
+        value = argv[index]
+        if value == BRAND_ID_FLAG:
+            if index + 1 >= len(argv):
+                raise SystemExit(BRAND_ID_ERROR_MESSAGE)
+            brand_id = argv[index + 1]
+            index += 2
+            continue
+        positional.append(value)
+        index += 1
+    raw_path = Path(positional[0]) if positional else DEFAULT_RAW_PATH
+    output_path = (
+        Path(positional[1])
+        if len(positional) > 1
+        else community_candidates_path(brand_id=brand_id)
+    )
+    return raw_path, output_path
 
 
 def _extract_raw_entries(lines: Sequence[str]) -> tuple[tuple[str, str], ...]:

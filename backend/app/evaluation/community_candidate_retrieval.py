@@ -3,6 +3,7 @@ from collections.abc import Sequence
 from pathlib import Path
 from typing import Final
 
+from backend.app.core.settings import get_settings
 from backend.app.evaluation.community_candidate_query import (
     community_retrieval_query,
     resolve_community_model_mentions,
@@ -18,12 +19,19 @@ from backend.app.evaluation.community_candidate_retrieval_models import (
 from backend.app.evaluation.community_candidate_triage import (
     triage_community_candidate,
 )
+from backend.app.evaluation.community_paths import (
+    DEFAULT_COMMUNITY_BRAND_ID,
+    community_candidates_path,
+    community_retrieval_candidates_path,
+)
 from backend.app.evaluation.community_query_classifier import (
     CommunityQueryCandidate,
 )
 from backend.app.indexing.fts_index import DEFAULT_FTS_INDEX_PATH
 from backend.app.schemas.search import SearchRequest, SearchResponse
-from backend.app.services.hybrid_retriever import HybridRetriever
+from backend.app.services.brand_data_paths import brand_data_paths
+from backend.app.services.brand_registry import resolve_brand
+from backend.app.services.hybrid_retriever import HybridRetriever, HybridRetrieverConfig
 from backend.app.services.query_normalizer import load_default_models
 from backend.app.wiki.source_ref_checker import (
     DEFAULT_PAGES_DIR,
@@ -33,14 +41,16 @@ from backend.app.wiki.source_ref_checker import (
 )
 
 DEFAULT_COMMUNITY_CANDIDATES_PATH: Final = Path(
-    "data/eval/community_query_candidates.json",
+    "data/eval/community/panasonic_lumix/community_query_candidates.json",
 )
 DEFAULT_RETRIEVAL_CANDIDATES_PATH: Final = Path(
-    "data/eval/community_query_retrieval_candidates.json",
+    "data/eval/community/panasonic_lumix/community_query_retrieval_candidates.json",
 )
 MAX_DEFAULT_CANDIDATES: Final = 216
+BRAND_ID_FLAG: Final = "--brand-id"
 LIMIT_FLAG: Final = "--limit"
 LIMIT_ERROR_MESSAGE: Final = "--limit requires a positive integer value"
+BRAND_ID_ERROR_MESSAGE: Final = "--brand-id requires a brand id value"
 
 
 class CommunityRetrievalArgumentError(ValueError):
@@ -111,9 +121,11 @@ def generate_community_retrieval_candidates(
 ) -> tuple[CommunityQueryRetrievalCandidate, ...]:
     candidates = _load_community_candidates(candidates_path)
     retriever = HybridRetriever(
-        index_path=index_path,
-        registry_dir=registry_dir,
-        pages_dir=pages_dir,
+        config=HybridRetrieverConfig(
+            index_path=index_path,
+            registry_dir=registry_dir,
+            pages_dir=pages_dir,
+        ),
     )
     known_model_ids = tuple(model.model_id for model in load_default_models())
     selected = tuple(
@@ -147,10 +159,17 @@ def parse_community_retrieval_args(
     argv: Sequence[str],
 ) -> CommunityRetrievalArgs:
     positional: list[str] = []
+    brand_id = DEFAULT_COMMUNITY_BRAND_ID
     limit = MAX_DEFAULT_CANDIDATES
     index = 1
     while index < len(argv):
         value = argv[index]
+        if value == BRAND_ID_FLAG:
+            if index + 1 >= len(argv):
+                raise CommunityRetrievalArgumentError(BRAND_ID_ERROR_MESSAGE)
+            brand_id = argv[index + 1]
+            index += 2
+            continue
         if value == LIMIT_FLAG:
             if index + 1 >= len(argv):
                 raise CommunityRetrievalArgumentError(LIMIT_ERROR_MESSAGE)
@@ -159,15 +178,16 @@ def parse_community_retrieval_args(
             continue
         positional.append(value)
         index += 1
-    input_path = (
-        Path(positional[0]) if positional else DEFAULT_COMMUNITY_CANDIDATES_PATH
+    input_path = Path(positional[0]) if positional else community_candidates_path(
+        brand_id=brand_id,
     )
     output_path = (
         Path(positional[1])
         if len(positional) > 1
-        else DEFAULT_RETRIEVAL_CANDIDATES_PATH
+        else community_retrieval_candidates_path(brand_id=brand_id)
     )
     return CommunityRetrievalArgs(
+        brand_id=brand_id,
         input_path=input_path,
         output_path=output_path,
         limit=limit,
@@ -188,8 +208,13 @@ def main() -> None:
         args = parse_community_retrieval_args(argv=tuple(sys.argv))
     except CommunityRetrievalArgumentError as error:
         raise SystemExit(str(error)) from error
+    brand = resolve_brand(settings=get_settings(), brand_id=args.brand_id)
+    paths = brand_data_paths(brand.data_dir)
     candidates = generate_community_retrieval_candidates(
         candidates_path=args.input_path,
+        index_path=paths.fts_index_path,
+        registry_dir=paths.registry_dir,
+        pages_dir=paths.processed_pages_dir,
         limit=args.limit,
     )
     _ = write_community_retrieval_candidates(

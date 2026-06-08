@@ -26,7 +26,8 @@ PDF 추출(PDF Extraction)
 
 ## Current Baseline
 
-- 레지스트리(Registry): 32개 문서(Document), 34개 모델(Model) 등록 완료
+- 레지스트리(Registry): Panasonic LUMIX 32개 문서(Document), 34개 모델(Model)
+  등록 완료. Ricoh/PENTAX는 registry 기준 24개 문서, 21개 모델 등록 완료
 - PDF 추출(PDF Extraction): OpenDataLoader PDF primary + pypdf fallback 구성 완료
 - 전체 추출: 32개 문서, 17,699 페이지(Page), 321,976 청크(Chunk)
 - 검색 색인(Search Index): SQLite FTS5 원문 색인 + trigram 보조 색인 생성 완료
@@ -34,12 +35,34 @@ PDF 추출(PDF Extraction)
 - 검색 API(Search API): `/api/search`가 임시 기능 카드(Feature Card)를 반환
 - 질의 정규화(Query Normalization): 모델 별칭, 제어 문구, 일부 한국어 검색어 처리 완료
 - 검색 평가(Search Evaluation): 50개 seed 평가셋과 300개 자동 약라벨(Weak Label) 후보 생성 완료
+- Ricoh/PENTAX 색인: 24개 문서 추출, 2967 페이지, 70738 청크 생성. FTS는
+  OCR된 THETA V quick guide를 포함한 24개 문서 기준 생성 완료. Ricoh 섹션 제목
+  약라벨 후보는 오타/동의어 정규화와 표지/회사명/모델번호 노이즈 제거 후 278개 생성 완료
+- 브랜드별 검색 평가: Panasonic LUMIX 50개 seed case 기준 document hit 100.0%,
+  page hit 94.0%. Ricoh/PENTAX 278개 section-title weak-label 기준 document hit
+  99.6%, page hit 99.3%
+- 브랜드별 검색 서비스: Panasonic LUMIX와 Ricoh/PENTAX 모두 `/api/models`,
+  `/api/documents`, `/api/search`, `/api/viewer` smoke 통과. 대표 질의
+  `GF9 자주 사용하는 기능 버튼`, `GR III 초점`, `WG-8 방수 촬영`, `THETA X 촬영`
+  모두 `retrieval_status=ok`
 - Source Reference 검증기(Source Reference Validator): 공식 문서/모델/페이지/viewer URL 검증 구현 완료
 - 페이지 이미지 렌더링(Page Image Rendering): PDF 페이지 PNG 렌더링 구현 완료
 - 뷰어 API(Page Viewer API): 처리된 페이지 범위를 검증하고 `image_url`을 반환
 - 페이지 이미지 정적 제공(Page Image Static Serving): `/page-images/{document_id}/{page}.png` 응답 확인 완료
 - 커뮤니티 후보(Community Candidates): 네이버 카페 수동 복사 제목 999개 후보화, 기능 후보 216개를 자동 triage/weak-label 후보 풀로 관리
 - 현재 제한: 기능 카드는 아직 LLM 요약이 아니며, Vector Search는 local PoC adapter까지만 연결됨
+- 브랜드 데이터 루트(Brand Data Root): 런타임은
+  `configs/brands.json`의 `data_dir` 아래 `raw/manuals`, `registry`,
+  `processed`, `indexes`를 브랜드별로 분리해 사용한다. 현재 Panasonic LUMIX는
+  `data/brands/panasonic_lumix`를 기준 루트로 쓰고, Ricoh/PENTAX는
+  `data/brands/ricoh`를 기준 루트로 쓴다.
+- 브랜드 규칙(Brand Rules): `configs/brands/{brand_id}/rules.json`에 모델 별칭,
+  제품군 분류, 커뮤니티 후보 위치를 브랜드별로 둔다. Ricoh/PENTAX의 초기 제품군은
+  중형카메라, 360카메라, 방수카메라, DSLR, 필름 카메라, 컴팩트 카메라다.
+- Ricoh/PENTAX 제한: `ricoh_theta_v_quick_guide_kor`는 OCR 후 24페이지, 270청크,
+  7856자로 검색 색인에 들어갔다. Ricoh 자연어 질의는 대표 alias/rules를 query
+  normalizer에 연결했고 smoke는 통과했다. 다만 Ricoh 278개 평가는 section-title
+  weak-label 기반이라 사람이 검수한 자연어 질문셋은 별도로 만들어야 한다.
 
 ## Priority 0: Checkpoint
 
@@ -135,7 +158,8 @@ PDF 추출(PDF Extraction)
 
 작업 범위:
 
-- `data/eval/community_query_retrieval_candidates.json`에 `triage_bucket`, `triage_reasons`, `weak_label`, `not_human_verified` 필드 유지
+- `data/eval/community/{brand_id}/community_query_retrieval_candidates.json`에
+  `triage_bucket`, `triage_reasons`, `weak_label`, `not_human_verified` 필드 유지
 - `ok_with_source`, `no_results`, `model_missing`, `query_too_broad`, `lens_accessory_noise`, `low_signal_query`, `needs_synonym` bucket으로 자동 분류
 - `source_ref_valid=true`라도 정답으로 승격하지 않고 `weak_label=true`, `not_human_verified=true` 후보로만 유지
 - no_results 원인을 검색 품질 개선(Search Quality Pass) 입력으로 넘김
@@ -187,18 +211,20 @@ PDF 추출(PDF Extraction)
 
 작업 범위:
 
-- 원본 PDF를 `data/raw/manuals/`에 배치
+- 원본 PDF를 `data/brands/<brand_id>/raw/manuals/`에 배치
 - 파일명과 PDF 첫 페이지 텍스트에서 `document_id`, `model_id`, `document_type` 자동 판정
 - confidence gate 통과 시 `data/registry/documents.json`, `data/registry/models.json` 자동 등록
 - 기준 미달 시 사람 확인 요청이 아니라 `blocked` 상태와 `block_reasons` 반환
 - OpenDataLoader primary 추출과 pypdf fallback 결과 기록
-- `data/processed/pages`, `data/processed/chunks`, `data/processed/reports` 갱신
+- `data/brands/<brand_id>/processed/pages`,
+  `data/brands/<brand_id>/processed/chunks`,
+  `data/brands/<brand_id>/processed/reports` 갱신
 - SQLite FTS5 색인(Index) 재생성
 - 신규 모델 검색 스모크와 기존 검색 평가(Search Evaluation) 회귀 확인
 - `/api/viewer`와 `/page-images` 출처 페이지 동작 확인
 - `NEXT_SESSION.md`, `docs/data/data_inventory.md`, 평가 문서 갱신
 - 자동 등록/추출/색인/평가/검증 CLI:
-  `.venv/bin/uv run python -m backend.app.indexing.ingest_new_pdf data/raw/manuals/<PDF>`
+  `.venv/bin/uv run python -m backend.app.indexing.ingest_new_pdf data/brands/<brand_id>/raw/manuals/<PDF>`
 
 왜 필요한가:
 

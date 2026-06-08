@@ -1,0 +1,107 @@
+[
+  {
+    "model_id": "PENTAX-645Z",
+    "display_name": "PENTAX 645Z",
+    "product_line": "medium_format"
+  },
+  {
+    "model_id": "PENTAX-K-1",
+    "display_name": "PENTAX K-1",
+    "product_line": "dslr"
+  },
+  {
+    "model_id": "PENTAX-K-1-MARK-II",
+    "display_name": "PENTAX K-1 Mark II",
+    "product_line": "dslr"
+  },
+  {
+    "model_id": "PENTAX-K-3-MARK-III",
+    "display_name": "PENTAX K-3 Mark III",
+    "product_line": "dslr"
+  },
+  {
+    "model_id": "PENTAX-K-70",
+    "display_name": "PENTAX K-70",
+    "product_line": "dslr"
+  },
+  {
+    "model_id": "PENTAX-KP",
+    "display_name": "PENTAX KP",
+    "product_line": "dslr"
+  },
+  {
+    "model_id": "PENTAX-K-S2",
+    "display_name": "PENTAX K-S2",
+    "product_line": "dslr"
+  },
+  {
+    "model_id": "PENTAX-17",
+    "display_name": "PENTAX 17",
+    "product_line": "film_camera"
+  },
+  {
+    "model_id": "RICOH-GR",
+    "display_name": "RICOH GR",
+    "product_line": "compact_camera"
+  },
+  {
+    "model_id": "RICOH-GR-II",
+    "display_name": "RICOH GR II",
+    "product_line": "compact_camera"
+  },
+  {
+    "model_id": "RICOH-GR-DIGITAL-III",
+    "display_name": "RICOH GR DIGITAL III",
+    "product_line": "compact_camera"
+  },
+  {
+    "model_id": "RICOH-GR-III",
+    "display_name": "RICOH GR III",
+    "product_line": "compact_camera"
+  },
+  {
+    "model_id": "RICOH-GR-IIIX",
+    "display_name": "RICOH GR IIIx",
+    "product_line": "compact_camera"
+  },
+  {
+    "model_id": "RICOH-GR-IV",
+    "display_name": "RICOH GR IV",
+    "product_line": "compact_camera"
+  },
+  {
+    "model_id": "RICOH-GR-IV-MONOCHROME",
+    "display_name": "RICOH GR IV Monochrome",
+    "product_line": "compact_camera"
+  },
+  {
+    "model_id": "RICOH-THETA-V",
+    "display_name": "RICOH THETA V",
+    "product_line": "360_camera"
+  },
+  {
+    "model_id": "RICOH-THETA-X",
+    "display_name": "RICOH THETA X",
+    "product_line": "360_camera"
+  },
+  {
+    "model_id": "RICOH-WG-6",
+    "display_name": "RICOH WG-6",
+    "product_line": "waterproof_camera"
+  },
+  {
+    "model_id": "RICOH-WG-8",
+    "display_name": "RICOH WG-8",
+    "product_line": "waterproof_camera"
+  },
+  {
+    "model_id": "RICOH-WG-1000",
+    "display_name": "RICOH WG-1000",
+    "product_line": "waterproof_camera"
+  },
+  {
+    "model_id": "RICOH-WG-M2",
+    "display_name": "RICOH WG-M2",
+    "product_line": "waterproof_camera"
+  }
+]

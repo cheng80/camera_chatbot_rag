@@ -160,7 +160,7 @@ def test_batch_extractor_main_accepts_document_id_args(
     captured_document_ids: tuple[str, ...] = ()
 
     def fake_load_registry(registry_dir: Path) -> RegistryCatalog:
-        assert registry_dir == Path("data/registry")
+        assert registry_dir == Path("data/brands/panasonic_lumix/registry")
         return _catalog()
 
     def fake_run_batch_extraction(
@@ -172,8 +172,8 @@ def test_batch_extractor_main_accepts_document_id_args(
     ) -> batch_extractor.ExtractionReport:
         nonlocal captured_document_ids
         assert catalog == _catalog()
-        assert manuals_dir == Path("data/raw/manuals")
-        assert output_root == Path("data/processed")
+        assert manuals_dir == Path("data/brands/panasonic_lumix/raw/manuals")
+        assert output_root == Path("data/brands/panasonic_lumix/processed")
         captured_document_ids = document_ids
         return batch_extractor.ExtractionReport(document_count=1, records=())
 
@@ -188,6 +188,15 @@ def test_batch_extractor_main_accepts_document_id_args(
     batch_extractor.main()
 
     assert captured_document_ids == ("sample_a",)
+
+
+def test_parse_batch_extraction_args_reads_brand_id() -> None:
+    args = batch_extractor.parse_batch_extraction_args(
+        ("--brand-id", "ricoh", "sample_a"),
+    )
+
+    assert args.brand_id == "ricoh"
+    assert args.document_ids == ("sample_a",)
 
 
 def _loader_result(

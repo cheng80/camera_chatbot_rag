@@ -2,6 +2,7 @@ from pathlib import Path
 
 from backend.app.evaluation.import_community_queries import (
     extract_community_query_candidates,
+    parse_import_args,
     write_community_query_candidates,
 )
 
@@ -51,6 +52,17 @@ def test_write_community_query_candidates_writes_json(tmp_path: Path) -> None:
     )
 
     assert output_path.is_file()
+
+
+def test_parse_import_args_uses_brand_default_output() -> None:
+    raw_path, output_path = parse_import_args(
+        argv=("import_community_queries", "--brand-id", "ricoh"),
+    )
+
+    assert raw_path.name == "Naver_Cafe_Q&A.txt"
+    assert output_path.as_posix().endswith(
+        "data/eval/community/ricoh/community_query_candidates.json",
+    )
 
 
 def test_extract_community_query_candidates_keeps_manual_feature_titles(

@@ -19,6 +19,7 @@ class SearchRequest(BaseModel):
     model_config: ClassVar[ConfigDict] = ConfigDict(frozen=True)
 
     query: str = Field(min_length=1, max_length=300)
+    brand_id: str | None = Field(default=None, max_length=64)
     model_ids: list[str] = Field(default_factory=list, max_length=10)
     categories: list[str] = Field(default_factory=list, max_length=10)
     top_k: int = Field(default=8, ge=1, le=1000)
@@ -33,6 +34,16 @@ class SearchRequest(BaseModel):
             msg = "query must not be blank"
             raise ValueError(msg)
         return stripped
+
+    @field_validator("brand_id")
+    @classmethod
+    def brand_id_must_be_safe(cls, value: str | None) -> str | None:
+        if value is None:
+            return None
+        if fullmatch(r"[a-z0-9_]+", value) is None:
+            msg = "brand_id must contain only lowercase letters, numbers, and _"
+            raise ValueError(msg)
+        return value
 
     @field_validator("model_ids")
     @classmethod

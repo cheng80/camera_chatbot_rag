@@ -3,9 +3,17 @@ from pathlib import Path
 
 import pytest
 from backend.app.evaluation.search_eval import (
+    DEFAULT_BRAND_RULES_ROOT,
+    DEFAULT_BRANDS_DATA_ROOT,
+    parse_cli_args,
+    resolve_search_eval_cli_paths,
     run_search_eval,
     run_search_eval_cases,
     write_search_eval_report,
+)
+from backend.app.evaluation.search_eval_paths import (
+    generated_search_eval_cases_path,
+    search_eval_report_path,
 )
 from backend.app.evaluation.search_eval_schema import SearchEvalCase, SearchEvalReport
 from backend.app.indexing.chunker import ExtractedChunk
@@ -183,6 +191,27 @@ def test_write_search_eval_report_writes_json(tmp_path: Path) -> None:
     )
 
     assert output_path.is_file()
+
+
+def test_resolve_search_eval_cli_paths_keeps_default_paths() -> None:
+    paths = resolve_search_eval_cli_paths(parse_cli_args(()))
+
+    assert paths.brand_id is None
+    assert paths.cases_path == Path("data/eval/search_eval_cases.json")
+    assert paths.output_path == Path("data/eval/search_eval_report.json")
+    assert paths.rules_dir is None
+
+
+def test_resolve_search_eval_cli_paths_uses_brand_scoped_paths() -> None:
+    paths = resolve_search_eval_cli_paths(parse_cli_args(("--brand-id", "ricoh")))
+
+    assert paths.brand_id == "ricoh"
+    assert paths.cases_path == generated_search_eval_cases_path("ricoh")
+    assert paths.output_path == search_eval_report_path("ricoh")
+    assert paths.index_path == (
+        DEFAULT_BRANDS_DATA_ROOT / "ricoh" / "indexes" / "fts" / "lumix_manuals.sqlite3"
+    )
+    assert paths.rules_dir == DEFAULT_BRAND_RULES_ROOT / "ricoh"
 
 
 def test_search_eval_case_rejects_unknown_metadata() -> None:

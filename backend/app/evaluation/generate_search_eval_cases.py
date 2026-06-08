@@ -2,17 +2,28 @@ import re
 import sys
 from collections.abc import Iterable, Sequence
 from pathlib import Path
-from typing import Final
+from typing import ClassVar, Final
 
-from pydantic import TypeAdapter
+from pydantic import BaseModel, ConfigDict, Field, TypeAdapter
 
+from backend.app.core.settings import get_settings
+from backend.app.evaluation.search_eval_paths import (
+    DEFAULT_SEARCH_EVAL_BRAND_ID,
+    generated_search_eval_cases_path,
+)
 from backend.app.evaluation.search_eval_schema import FeatureCategory, SearchEvalCase
 from backend.app.indexing.chunker import ExtractedChunk
-from backend.app.indexing.fts_index import DEFAULT_CHUNKS_DIR
+from backend.app.services.brand_data_paths import brand_data_paths
+from backend.app.services.brand_registry import resolve_brand
+from backend.app.services.korean_text_normalization import (
+    normalize_korean_search_aliases,
+)
 
 DEFAULT_GENERATED_CASES_PATH: Final = Path(
     "data/eval/generated_search_eval_cases.json",
 )
+BRAND_ID_FLAG: Final = "--brand-id"
+LIMIT_FLAG: Final = "--limit"
 CHUNK_ADAPTER: Final[TypeAdapter[ExtractedChunk]] = TypeAdapter(ExtractedChunk)
 SEARCH_CASES_ADAPTER: Final[TypeAdapter[tuple[SearchEvalCase, ...]]] = TypeAdapter(
     tuple[SearchEvalCase, ...],
@@ -36,14 +47,38 @@ NOISE_TITLES: Final = {
     "사용하시기 전에",
     "각 부 명칭",
     "표준 부속품",
+    "사용 설명서",
+    "사용 설명서 목차",
+    "메뉴 조회서 목차",
+    "MEMO",
+    "메모",
+    "개요",
+    "고객 등록",
+    "경고",
+    "위험",
+    "주의 사항",
 }
 NOISE_TITLE_PATTERNS: Final = (
     re.compile(r"모델번호", flags=re.IGNORECASE),
+    re.compile(r"^Model:\s*[A-Z0-9]+$", flags=re.IGNORECASE),
+    re.compile(r"모델:\s*[A-Z0-9]+", flags=re.IGNORECASE),
     re.compile(r"DVQP[0-9A-Z]+", flags=re.IGNORECASE),
+    re.compile(r"RICOH IMAGING", flags=re.IGNORECASE),
+    re.compile(r"CORPORATION|COMPANY|CO\.,?\s*LTD", flags=re.IGNORECASE),
+    re.compile(r"^https?://", flags=re.IGNORECASE),
     re.compile(r"^[^A-Za-z0-9가-힣]+$"),
     re.compile(r"소개$"),
+    re.compile(r"소개\s+\d+$"),
+    re.compile(r"^\d+장\b"),
+    re.compile(r"^\d+\s*메$"),
+    re.compile(r"^\d+\s+카메라를 사용하기 전에(?:\s+\d+)?$"),
     re.compile(r"^\d+(?:[.\s]\d*)*$"),
     re.compile(r"^\d+\.\s*시작하기$"),
+    re.compile(r"^\d+/\d+"),
+    re.compile(r"^\d+-\d+"),
+    re.compile(r"F\d+(?:\.\d+)?", flags=re.IGNORECASE),
+    re.compile(r"^[A-Z0-9]+(?:\s+[A-Z0-9]+)*\*?$"),
+    re.compile(r"^[A-Z]{8,}$"),
     re.compile(r"\s\d{2,4}$"),
     re.compile(r"P\d{2,4}"),
     re.compile(r"문제해결"),
@@ -62,6 +97,31 @@ CATEGORY_RULES: Final[tuple[tuple[FeatureCategory, tuple[str, ...]], ...]] = (
     ("display", ("모니터", "뷰파인더", "표시")),
     ("setup", ("카드", "설정", "포맷")),
 )
+
+
+class GenerateSearchEvalArgumentError(ValueError):
+    @classmethod
+    def missing_flag_value(cls, flag: str) -> "GenerateSearchEvalArgumentError":
+        return cls(f"{flag} requires a value")
+
+    @classmethod
+    def unexpected_argument(cls, value: str) -> "GenerateSearchEvalArgumentError":
+        return cls(f"unexpected argument: {value}")
+
+    @classmethod
+    def invalid_limit(cls) -> "GenerateSearchEvalArgumentError":
+        return cls(f"{LIMIT_FLAG} must be an integer")
+
+    @classmethod
+    def non_positive_limit(cls) -> "GenerateSearchEvalArgumentError":
+        return cls(f"{LIMIT_FLAG} must be positive")
+
+
+class GenerateSearchEvalArgs(BaseModel):
+    model_config: ClassVar[ConfigDict] = ConfigDict(frozen=True)
+
+    brand_id: str
+    limit: int = Field(ge=1)
 
 
 def generate_search_eval_cases(
@@ -103,10 +163,45 @@ def write_search_eval_cases(
 
 
 def main() -> None:
-    cases = generate_search_eval_cases(chunks_dir=DEFAULT_CHUNKS_DIR)
-    _ = write_search_eval_cases(cases=cases, path=DEFAULT_GENERATED_CASES_PATH)
+    try:
+        args = parse_generate_search_eval_args(tuple(sys.argv[1:]))
+    except GenerateSearchEvalArgumentError as error:
+        raise SystemExit(str(error)) from error
+    brand = resolve_brand(settings=get_settings(), brand_id=args.brand_id)
+    paths = brand_data_paths(brand.data_dir)
+    cases = generate_search_eval_cases(
+        chunks_dir=paths.processed_chunks_dir,
+        limit=args.limit,
+    )
+    _ = write_search_eval_cases(
+        cases=cases,
+        path=generated_search_eval_cases_path(args.brand_id),
+    )
     message = f"generated {len(cases)} search eval cases\n"
     _ = sys.stdout.write(message)
+
+
+def parse_generate_search_eval_args(argv: Sequence[str]) -> GenerateSearchEvalArgs:
+    brand_id = DEFAULT_SEARCH_EVAL_BRAND_ID
+    limit = MAX_DEFAULT_CASES
+    pending_flag: str | None = None
+    for value in argv:
+        if pending_flag is not None:
+            if not value or value.startswith("--"):
+                raise GenerateSearchEvalArgumentError.missing_flag_value(pending_flag)
+            if pending_flag == BRAND_ID_FLAG:
+                brand_id = value
+            elif pending_flag == LIMIT_FLAG:
+                limit = _parse_limit(value)
+            pending_flag = None
+            continue
+        if value in {BRAND_ID_FLAG, LIMIT_FLAG}:
+            pending_flag = value
+            continue
+        raise GenerateSearchEvalArgumentError.unexpected_argument(value)
+    if pending_flag is not None:
+        raise GenerateSearchEvalArgumentError.missing_flag_value(pending_flag)
+    return GenerateSearchEvalArgs(brand_id=brand_id, limit=limit)
 
 
 def _eligible_chunks(chunks_dir: Path) -> tuple[ExtractedChunk, ...]:
@@ -149,7 +244,8 @@ def _clean_title(section_title: str | None) -> str | None:
     if section_title is None:
         return None
     compact = " ".join(section_title.split())
-    title = _strip_title_markers(_unwrap_title(compact))
+    unwrapped = _unwrap_title(compact)
+    title = normalize_korean_search_aliases(_strip_title_markers(unwrapped))
     if _is_noise_title(title):
         return None
     return title
@@ -185,6 +281,16 @@ def _feature_category(title: str) -> FeatureCategory:
 def _has_any(value: str, needles: tuple[str, ...]) -> bool:
     normalized = value.casefold()
     return any(needle.casefold() in normalized for needle in needles)
+
+
+def _parse_limit(value: str) -> int:
+    try:
+        limit = int(value)
+    except ValueError as error:
+        raise GenerateSearchEvalArgumentError.invalid_limit() from error
+    if limit < 1:
+        raise GenerateSearchEvalArgumentError.non_positive_limit()
+    return limit
 
 
 def _symbol_ratio(value: str) -> float:

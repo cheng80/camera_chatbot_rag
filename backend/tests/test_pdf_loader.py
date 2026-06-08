@@ -69,6 +69,7 @@ def test_extract_document_pages_primary_uses_opendataloader_when_available(
     [
         opendataloader_runner.OpenDataLoaderExtractionError.cli_failed("boom"),
         opendataloader_runner.OpenDataLoaderExtractionError.cli_not_found(),
+        opendataloader_runner.OpenDataLoaderExtractionError.empty_pages(),
     ],
 )
 def test_extract_document_pages_primary_falls_back_for_allowed_cli_errors(
@@ -129,7 +130,6 @@ def test_extract_document_pages_primary_falls_back_for_allowed_cli_errors(
 @pytest.mark.parametrize(
     "error",
     [
-        opendataloader_runner.OpenDataLoaderExtractionError.empty_pages(),
         opendataloader_runner.OpenDataLoaderExtractionError.missing_json(),
         opendataloader_runner.OpenDataLoaderExtractionError.no_pages(),
         opendataloader_runner.OpenDataLoaderExtractionError.page_count_mismatch(

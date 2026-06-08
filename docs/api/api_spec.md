@@ -5,11 +5,13 @@
 ```text
 GET  /api/health
 GET  /api/app-config
+GET  /api/brands
 GET  /api/documents
 GET  /api/models
 POST /api/search
+POST /api/search/expand
 GET  /api/features/{feature_id}
-GET  /api/viewer/{document_id}/pages/{page}
+GET  /api/viewer/{document_id}/pages/{page}?brand_id={brand_id}
 POST /api/feedback
 POST /api/search/rewrite
 ```
@@ -34,9 +36,47 @@ deterministic 카드 요약을 반환하고, `CAMERA_LLM_REWRITE_ON_SEARCH_ENABL
 ```json
 {
   "app_name": "Camera Manual Assistant",
+  "active_brand_id": "panasonic_lumix",
   "brand_name": "Panasonic LUMIX",
-  "brand_mark": "PL"
+  "brand_mark": "PL",
+  "brands": [
+    {
+      "brand_id": "panasonic_lumix",
+      "brand_name": "Panasonic LUMIX",
+      "brand_mark": "PL"
+    },
+    {
+      "brand_id": "ricoh",
+      "brand_name": "Ricoh / PENTAX",
+      "brand_mark": "R"
+    }
+  ]
 }
+```
+
+## Brands
+
+`GET /api/brands`
+
+상단 헤더의 브랜드 선택기에 표시할 브랜드 목록을 반환한다. 각 브랜드는
+`configs/brands.json`에 등록되며, `brand_id`는 검색/모델/문서 API의 스코프 키로
+사용한다.
+각 브랜드의 `data_dir`는 `raw/manuals`, `registry`, `processed`, `indexes`를 가진
+브랜드별 데이터 루트다.
+
+```json
+[
+  {
+    "brand_id": "panasonic_lumix",
+    "brand_name": "Panasonic LUMIX",
+    "brand_mark": "PL"
+  },
+  {
+    "brand_id": "ricoh",
+    "brand_name": "Ricoh / PENTAX",
+    "brand_mark": "R"
+  }
+]
 ```
 
 한국어 검색은 두 색인을 함께 사용한다.
@@ -53,6 +93,7 @@ deterministic 카드 요약을 반환하고, `CAMERA_LLM_REWRITE_ON_SEARCH_ENABL
 ```json
 {
   "query": "제브라 패턴",
+  "brand_id": "panasonic_lumix",
   "model_ids": ["DC-G9M2"],
   "top_k": 3
 }
@@ -74,12 +115,64 @@ deterministic 카드 요약을 반환하고, `CAMERA_LLM_REWRITE_ON_SEARCH_ENABL
 | `sources[].document_id` | 등록된 PDF 문서 ID |
 | `sources[].model_id` | 출처 문서와 연결된 모델 ID |
 | `sources[].page` | 처리된 PDF 페이지 번호 |
-| `sources[].viewer_url` | `/api/viewer/{document_id}/pages/{page}` 형식의 뷰어 API |
+| `sources[].viewer_url` | `/api/viewer/{document_id}/pages/{page}` 형식의 뷰어 API. 검색 요청에 `brand_id`가 있으면 `?brand_id=...`를 포함 |
 | `evidence_status` | `source_validated` 또는 `insufficient_evidence` |
 | `source_validation_errors` | 출처 검증 실패 코드 목록 |
 
 검색 응답에 포함되는 카드는 현재 `source_validated` 출처만 반환한다. 검증 가능한
 출처가 없으면 카드를 반환하지 않고 `insufficient_evidence` 상태를 사용한다.
+
+## Context Expanded Search
+
+`POST /api/search/expand`
+
+기본 검색 결과가 부족하거나 한국어 질문 의도가 넓을 때만 사용자가 명시적으로
+실행하는 느린 보조 검색 경로다. LLM은 답변, 출처, 페이지 번호를 생성하지 않고
+원문 질문을 관련 검색어 후보로 확장하는 데만 사용한다. 확장된 질의들은 다시 기존
+`POST /api/search`와 같은 deterministic 검색/출처 검증 경로를 통과한다.
+
+요청 예시:
+
+```json
+{
+  "query": "내장 베터리 충전 안됨",
+  "brand_id": "ricoh",
+  "top_k": 20,
+  "max_expanded_queries": 6
+}
+```
+
+응답 예시:
+
+```json
+{
+  "status": "ok",
+  "notice": "LLM으로 한국어 질문 의도를 해석해 관련 검색어를 확장했습니다. 이 경로는 기본 검색보다 더 오래 걸릴 수 있습니다.",
+  "expanded_queries": ["배터리 충전", "충전 램프", "USB 전원"],
+  "response": {
+    "query": "내장 베터리 충전 안됨",
+    "normalized_query": {
+      "intent": "feature_search",
+      "terms": ["내장 배터리 충전 안됨"],
+      "detected_model_ids": [],
+      "search_query": "내장 배터리 충전 안됨"
+    },
+    "cards": [],
+    "retrieval_status": "ok"
+  }
+}
+```
+
+문맥 확장 설정:
+
+| 환경 변수 | 의미 |
+|---|---|
+| `CAMERA_LLM_QUERY_EXPANSION_ENABLED` | 문맥 기반 추가 검색 활성화 여부 |
+| `CAMERA_LLM_QUERY_EXPANSION_MODEL` | 기본 질의 확장 모델 |
+| `CAMERA_LLM_QUERY_EXPANSION_FALLBACK_MODELS` | 기본 모델 실패 시 시도할 예비 모델 목록 |
+| `CAMERA_LLM_QUERY_EXPANSION_MAX_TOKENS` | 확장 질의 생성 토큰 상한 |
+| `CAMERA_LLM_QUERY_EXPANSION_THINK` | 확장 호출에서 Ollama thinking 사용 여부 |
+| `CAMERA_LLM_QUERY_EXPANSION_MAX_TERMS` | LLM이 만들 수 있는 최대 확장 검색어 수 |
 
 ## Selected Card Rewrite
 

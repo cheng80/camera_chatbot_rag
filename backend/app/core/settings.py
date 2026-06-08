@@ -23,6 +23,14 @@ class Settings(BaseSettings):
         default="Camera Manual Assistant",
         validation_alias=_env_aliases("APP_NAME"),
     )
+    active_brand_id: str = Field(
+        default="panasonic_lumix",
+        validation_alias=_env_aliases("ACTIVE_BRAND_ID"),
+    )
+    brands_config_path: Path = Field(
+        default=Path("configs/brands.json"),
+        validation_alias=_env_aliases("BRANDS_CONFIG_PATH"),
+    )
     brand_name: str = Field(
         default="Panasonic LUMIX",
         validation_alias=_env_aliases("BRAND_NAME"),
@@ -109,6 +117,35 @@ class Settings(BaseSettings):
     llm_rewrite_warmup_enabled: bool = Field(
         default=False,
         validation_alias=_env_aliases("LLM_REWRITE_WARMUP_ENABLED"),
+    )
+    llm_query_expansion_enabled: bool = Field(
+        default=True,
+        validation_alias=_env_aliases("LLM_QUERY_EXPANSION_ENABLED"),
+    )
+    llm_query_expansion_model: str = Field(
+        default="hf.co/unsloth/gemma-4-E4B-it-qat-GGUF:UD-Q4_K_XL",
+        validation_alias=_env_aliases("LLM_QUERY_EXPANSION_MODEL"),
+    )
+    llm_query_expansion_fallback_models: list[str] = Field(
+        default_factory=lambda: [
+            "hf.co/mradermacher/supergemma4-e4b-abliterated-i1-GGUF:Q4_K_M",
+        ],
+        validation_alias=_env_aliases("LLM_QUERY_EXPANSION_FALLBACK_MODELS"),
+    )
+    llm_query_expansion_max_tokens: int = Field(
+        default=160,
+        ge=1,
+        validation_alias=_env_aliases("LLM_QUERY_EXPANSION_MAX_TOKENS"),
+    )
+    llm_query_expansion_think: bool = Field(
+        default=False,
+        validation_alias=_env_aliases("LLM_QUERY_EXPANSION_THINK"),
+    )
+    llm_query_expansion_max_terms: int = Field(
+        default=6,
+        ge=1,
+        le=12,
+        validation_alias=_env_aliases("LLM_QUERY_EXPANSION_MAX_TERMS"),
     )
     embedding_base_url: str = Field(
         default="http://127.0.0.1:11434/v1",

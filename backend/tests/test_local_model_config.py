@@ -28,6 +28,8 @@ def test_default_local_model_settings_target_requested_models() -> None:
         settings.llm_thinking_model
         == "hf.co/Qwen/Qwen3-8B-GGUF:Q4_K_M"
     )
+    assert settings.active_brand_id == "panasonic_lumix"
+    assert settings.brands_config_path.as_posix() == "configs/brands.json"
     assert settings.embedding_model == "bge-m3"
     assert settings.llm_temperature == 0.2
     assert settings.llm_max_tokens == 512

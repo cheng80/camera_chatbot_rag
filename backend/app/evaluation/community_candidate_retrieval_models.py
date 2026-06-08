@@ -24,6 +24,7 @@ COMMUNITY_CANDIDATES_ADAPTER: TypeAdapter[tuple[CommunityQueryCandidate, ...]] =
 class CommunityRetrievalArgs(BaseModel):
     model_config: ClassVar[ConfigDict] = ConfigDict(frozen=True, extra="forbid")
 
+    brand_id: str
     input_path: Path
     output_path: Path
     limit: int = Field(ge=1)

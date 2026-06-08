@@ -1,10 +1,16 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-HOST="${CAMERA_TUNNEL_HOST:-127.0.0.1}"
-PORT="${CAMERA_TUNNEL_PORT:-8010}"
+if [[ -f ".env" ]]; then
+  set -a
+  source ".env"
+  set +a
+fi
+
+HOST="127.0.0.1"
+PORT="8010"
 URL="http://${HOST}:${PORT}"
-APP_MODULE="${CAMERA_TUNNEL_APP_MODULE:-backend.app.main:app}"
+APP_MODULE="${CAMERA_APP_MODULE:-backend.app.main:app}"
 SERVER_LOG="${CAMERA_TUNNEL_SERVER_LOG:-.quick-tunnel-uvicorn.log}"
 SERVER_PID=""
 

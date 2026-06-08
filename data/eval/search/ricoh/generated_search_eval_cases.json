@@ -1,0 +1,4450 @@
+[
+  {
+    "case_id": "auto_pentax_17_operating_instructions_kor_4_안전_주의_사항",
+    "query": "안전 주의 사항",
+    "model_ids": [
+      "PENTAX-17"
+    ],
+    "expected_document_id": "pentax_17_operating_instructions_kor",
+    "expected_pages": [
+      4
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_pentax_17_operating_instructions_kor_7_패키지_내용물_확인",
+    "query": "패키지 내용물 확인",
+    "model_ids": [
+      "PENTAX-17"
+    ],
+    "expected_document_id": "pentax_17_operating_instructions_kor",
+    "expected_pages": [
+      7
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_pentax_17_operating_instructions_kor_8_각_부분의_명칭과_기능",
+    "query": "각 부분의 명칭과 기능",
+    "model_ids": [
+      "PENTAX-17"
+    ],
+    "expected_document_id": "pentax_17_operating_instructions_kor",
+    "expected_pages": [
+      8
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_pentax_17_operating_instructions_kor_12_표시등",
+    "query": "표시등",
+    "model_ids": [
+      "PENTAX-17"
+    ],
+    "expected_document_id": "pentax_17_operating_instructions_kor",
+    "expected_pages": [
+      12
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "display",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_pentax_17_operating_instructions_kor_13_파인더_내_표시",
+    "query": "파인더 내 표시",
+    "model_ids": [
+      "PENTAX-17"
+    ],
+    "expected_document_id": "pentax_17_operating_instructions_kor",
+    "expected_pages": [
+      13
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "display",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_pentax_17_operating_instructions_kor_14_스트랩_부착",
+    "query": "스트랩 부착",
+    "model_ids": [
+      "PENTAX-17"
+    ],
+    "expected_document_id": "pentax_17_operating_instructions_kor",
+    "expected_pages": [
+      14
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_pentax_17_operating_instructions_kor_16_필름_준비",
+    "query": "필름 준비",
+    "model_ids": [
+      "PENTAX-17"
+    ],
+    "expected_document_id": "pentax_17_operating_instructions_kor",
+    "expected_pages": [
+      16
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_pentax_17_operating_instructions_kor_16_사용_가능한_필름",
+    "query": "사용 가능한 필름",
+    "model_ids": [
+      "PENTAX-17"
+    ],
+    "expected_document_id": "pentax_17_operating_instructions_kor",
+    "expected_pages": [
+      16
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_pentax_17_operating_instructions_kor_17_필름_감도_설정",
+    "query": "필름 감도 설정",
+    "model_ids": [
+      "PENTAX-17"
+    ],
+    "expected_document_id": "pentax_17_operating_instructions_kor",
+    "expected_pages": [
+      17
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "setup",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_pentax_17_operating_instructions_kor_18_필름_넣기",
+    "query": "필름 넣기",
+    "model_ids": [
+      "PENTAX-17"
+    ],
+    "expected_document_id": "pentax_17_operating_instructions_kor",
+    "expected_pages": [
+      18
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_pentax_17_operating_instructions_kor_21_메모_홀더_사용",
+    "query": "메모 홀더 사용",
+    "model_ids": [
+      "PENTAX-17"
+    ],
+    "expected_document_id": "pentax_17_operating_instructions_kor",
+    "expected_pages": [
+      21
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_pentax_17_operating_instructions_kor_22_필름_되감기",
+    "query": "필름 되감기",
+    "model_ids": [
+      "PENTAX-17"
+    ],
+    "expected_document_id": "pentax_17_operating_instructions_kor",
+    "expected_pages": [
+      22
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_pentax_645z_full_kor_1_안전_주의_사항",
+    "query": "안전 주의 사항",
+    "model_ids": [
+      "PENTAX-645Z"
+    ],
+    "expected_document_id": "pentax_645z_full_kor",
+    "expected_pages": [
+      1
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_pentax_645z_full_kor_3_사용_시_주의_사항",
+    "query": "사용 시 주의 사항",
+    "model_ids": [
+      "PENTAX-645Z"
+    ],
+    "expected_document_id": "pentax_645z_full_kor",
+    "expected_pages": [
+      3
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_pentax_645z_full_kor_5_제공_설명서",
+    "query": "제공 설명서",
+    "model_ids": [
+      "PENTAX-645Z"
+    ],
+    "expected_document_id": "pentax_645z_full_kor",
+    "expected_pages": [
+      5
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_pentax_645z_full_kor_10_패키지_구성품_확인",
+    "query": "패키지 구성품 확인",
+    "model_ids": [
+      "PENTAX-645Z"
+    ],
+    "expected_document_id": "pentax_645z_full_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_pentax_645z_full_kor_11_작동_부위의_이름과_기능",
+    "query": "작동 부위의 이름과 기능",
+    "model_ids": [
+      "PENTAX-645Z"
+    ],
+    "expected_document_id": "pentax_645z_full_kor",
+    "expected_pages": [
+      11
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_pentax_645z_full_kor_12_조작_제어_부위의_이름과_기능",
+    "query": "조작 제어 부위의 이름과 기능",
+    "model_ids": [
+      "PENTAX-645Z"
+    ],
+    "expected_document_id": "pentax_645z_full_kor",
+    "expected_pages": [
+      12
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_pentax_645z_full_kor_14_모니터_앵글_조정",
+    "query": "모니터 앵글 조정",
+    "model_ids": [
+      "PENTAX-645Z"
+    ],
+    "expected_document_id": "pentax_645z_full_kor",
+    "expected_pages": [
+      14
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "display",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_pentax_645z_full_kor_15_화면_정보",
+    "query": "화면 정보",
+    "model_ids": [
+      "PENTAX-645Z"
+    ],
+    "expected_document_id": "pentax_645z_full_kor",
+    "expected_pages": [
+      15
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_pentax_645z_full_kor_15_모니터",
+    "query": "모니터",
+    "model_ids": [
+      "PENTAX-645Z"
+    ],
+    "expected_document_id": "pentax_645z_full_kor",
+    "expected_pages": [
+      15
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "display",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_pentax_645z_full_kor_22_뷰파인더",
+    "query": "뷰파인더",
+    "model_ids": [
+      "PENTAX-645Z"
+    ],
+    "expected_document_id": "pentax_645z_full_kor",
+    "expected_pages": [
+      22
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "display",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_pentax_645z_full_kor_23_lcd_패널",
+    "query": "LCD 패널",
+    "model_ids": [
+      "PENTAX-645Z"
+    ],
+    "expected_document_id": "pentax_645z_full_kor",
+    "expected_pages": [
+      23
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_pentax_645z_full_kor_23_전자_수준기",
+    "query": "전자 수준기",
+    "model_ids": [
+      "PENTAX-645Z"
+    ],
+    "expected_document_id": "pentax_645z_full_kor",
+    "expected_pages": [
+      23
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_pentax_645z_menu_reference_kor_2_e_커스텀_설정_메뉴_r39",
+    "query": "E 커스텀 설정 메뉴 R39",
+    "model_ids": [
+      "PENTAX-645Z"
+    ],
+    "expected_document_id": "pentax_645z_menu_reference_kor",
+    "expected_pages": [
+      2
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "setup",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_pentax_645z_menu_reference_kor_3_부록_r44",
+    "query": "부록 R44",
+    "model_ids": [
+      "PENTAX-645Z"
+    ],
+    "expected_document_id": "pentax_645z_menu_reference_kor",
+    "expected_pages": [
+      3
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_pentax_645z_menu_reference_kor_5_메뉴_설명_및_기본_설정",
+    "query": "메뉴 설명 및 기본 설정",
+    "model_ids": [
+      "PENTAX-645Z"
+    ],
+    "expected_document_id": "pentax_645z_menu_reference_kor",
+    "expected_pages": [
+      5
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "setup",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_pentax_645z_menu_reference_kor_9_셋업_메뉴",
+    "query": "셋업 메뉴",
+    "model_ids": [
+      "PENTAX-645Z"
+    ],
+    "expected_document_id": "pentax_645z_menu_reference_kor",
+    "expected_pages": [
+      9
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_pentax_645z_menu_reference_kor_11_커스텀_설정_메뉴",
+    "query": "커스텀 설정 메뉴",
+    "model_ids": [
+      "PENTAX-645Z"
+    ],
+    "expected_document_id": "pentax_645z_menu_reference_kor",
+    "expected_pages": [
+      11
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "setup",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_pentax_645z_menu_reference_kor_15_a_촬영모드_메뉴",
+    "query": "A 촬영모드 메뉴",
+    "model_ids": [
+      "PENTAX-645Z"
+    ],
+    "expected_document_id": "pentax_645z_menu_reference_kor",
+    "expected_pages": [
+      15
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_pentax_645z_menu_reference_kor_16_d_range_설정_a2_v",
+    "query": "D-Range 설정 A2/v",
+    "model_ids": [
+      "PENTAX-645Z"
+    ],
+    "expected_document_id": "pentax_645z_menu_reference_kor",
+    "expected_pages": [
+      16
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "setup",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_pentax_645z_menu_reference_kor_19_기타_표시_설정",
+    "query": "기타 표시 설정",
+    "model_ids": [
+      "PENTAX-645Z"
+    ],
+    "expected_document_id": "pentax_645z_menu_reference_kor",
+    "expected_pages": [
+      19
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "display",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_pentax_645z_menu_reference_kor_22_설정_등록",
+    "query": "설정 등록",
+    "model_ids": [
+      "PENTAX-645Z"
+    ],
+    "expected_document_id": "pentax_645z_menu_reference_kor",
+    "expected_pages": [
+      22
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "setup",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_pentax_645z_menu_reference_kor_24_c_동영상_메뉴",
+    "query": "C 동영상 메뉴",
+    "model_ids": [
+      "PENTAX-645Z"
+    ],
+    "expected_document_id": "pentax_645z_menu_reference_kor",
+    "expected_pages": [
+      24
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "video",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_pentax_645z_menu_reference_kor_25_movie_sr_c1_v",
+    "query": "Movie SR C1/v",
+    "model_ids": [
+      "PENTAX-645Z"
+    ],
+    "expected_document_id": "pentax_645z_menu_reference_kor",
+    "expected_pages": [
+      25
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_pentax_645z_menu_reference_kor_26_b_재생_메뉴",
+    "query": "B 재생 메뉴",
+    "model_ids": [
+      "PENTAX-645Z"
+    ],
+    "expected_document_id": "pentax_645z_menu_reference_kor",
+    "expected_pages": [
+      26
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_pentax_k1_full_kor_2_패키지_구성품_확인",
+    "query": "패키지 구성품 확인",
+    "model_ids": [
+      "PENTAX-K-1"
+    ],
+    "expected_document_id": "pentax_k1_full_kor",
+    "expected_pages": [
+      2
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_pentax_k1_full_kor_19_crop",
+    "query": "Crop",
+    "model_ids": [
+      "PENTAX-K-1"
+    ],
+    "expected_document_id": "pentax_k1_full_kor",
+    "expected_pages": [
+      19
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_pentax_k1_full_kor_34_스트랩_부착",
+    "query": "스트랩 부착",
+    "model_ids": [
+      "PENTAX-K-1"
+    ],
+    "expected_document_id": "pentax_k1_full_kor",
+    "expected_pages": [
+      34
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_pentax_k1_full_kor_39_날짜_및_시간_설정",
+    "query": "날짜 및 시간 설정",
+    "model_ids": [
+      "PENTAX-K-1"
+    ],
+    "expected_document_id": "pentax_k1_full_kor",
+    "expected_pages": [
+      39
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "setup",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_pentax_k1_full_kor_44_이미지_확인",
+    "query": "이미지 확인",
+    "model_ids": [
+      "PENTAX-K-1"
+    ],
+    "expected_document_id": "pentax_k1_full_kor",
+    "expected_pages": [
+      44
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_pentax_k1_full_kor_53_포커스_모드_설정",
+    "query": "포커스 모드 설정",
+    "model_ids": [
+      "PENTAX-K-1"
+    ],
+    "expected_document_id": "pentax_k1_full_kor",
+    "expected_pages": [
+      53
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "focus",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_pentax_k1_full_kor_61_x3_0_3ev",
+    "query": "x3 ±0.3EV",
+    "model_ids": [
+      "PENTAX-K-1"
+    ],
+    "expected_document_id": "pentax_k1_full_kor",
+    "expected_pages": [
+      61
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_pentax_k1_full_kor_62_다중_노출",
+    "query": "다중 노출",
+    "model_ids": [
+      "PENTAX-K-1"
+    ],
+    "expected_document_id": "pentax_k1_full_kor",
+    "expected_pages": [
+      62
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "exposure",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_pentax_k1_full_kor_65_화이트_밸런스_설정",
+    "query": "화이트 밸런스 설정",
+    "model_ids": [
+      "PENTAX-K-1"
+    ],
+    "expected_document_id": "pentax_k1_full_kor",
+    "expected_pages": [
+      65
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "setup",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_pentax_k1_full_kor_67_r_플래시_광량을_보정합니다_m_보정값이_기본_설정으로_초기화됩니다",
+    "query": "R 플래시 광량을 보정합니다. M 보정값이 기본 설정으로 초기화됩니다.",
+    "model_ids": [
+      "PENTAX-K-1"
+    ],
+    "expected_document_id": "pentax_k1_full_kor",
+    "expected_pages": [
+      67
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "exposure",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_pentax_k1_full_kor_67_0_0ev",
+    "query": "0.0EV",
+    "model_ids": [
+      "PENTAX-K-1"
+    ],
+    "expected_document_id": "pentax_k1_full_kor",
+    "expected_pages": [
+      67
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_pentax_k1_full_kor_73_shake_reduction",
+    "query": "Shake Reduction",
+    "model_ids": [
+      "PENTAX-K-1"
+    ],
+    "expected_document_id": "pentax_k1_full_kor",
+    "expected_pages": [
+      73
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_pentax_k1_mark_ii_full_kor_2_안전_주의_사항",
+    "query": "안전 주의 사항",
+    "model_ids": [
+      "PENTAX-K-1-MARK-II"
+    ],
+    "expected_document_id": "pentax_k1_mark_ii_full_kor",
+    "expected_pages": [
+      2
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_pentax_k1_mark_ii_full_kor_11_패키지_구성품_확인",
+    "query": "패키지 구성품 확인",
+    "model_ids": [
+      "PENTAX-K-1-MARK-II"
+    ],
+    "expected_document_id": "pentax_k1_mark_ii_full_kor",
+    "expected_pages": [
+      11
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_pentax_k1_mark_ii_full_kor_22_crop",
+    "query": "Crop",
+    "model_ids": [
+      "PENTAX-K-1-MARK-II"
+    ],
+    "expected_document_id": "pentax_k1_mark_ii_full_kor",
+    "expected_pages": [
+      22
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_pentax_k1_mark_ii_full_kor_39_스트랩_부착",
+    "query": "스트랩 부착",
+    "model_ids": [
+      "PENTAX-K-1-MARK-II"
+    ],
+    "expected_document_id": "pentax_k1_mark_ii_full_kor",
+    "expected_pages": [
+      39
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_pentax_k1_mark_ii_full_kor_44_날짜_및_시간_설정",
+    "query": "날짜 및 시간 설정",
+    "model_ids": [
+      "PENTAX-K-1-MARK-II"
+    ],
+    "expected_document_id": "pentax_k1_mark_ii_full_kor",
+    "expected_pages": [
+      44
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "setup",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_pentax_k1_mark_ii_full_kor_49_이미지_확인",
+    "query": "이미지 확인",
+    "model_ids": [
+      "PENTAX-K-1-MARK-II"
+    ],
+    "expected_document_id": "pentax_k1_mark_ii_full_kor",
+    "expected_pages": [
+      49
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_pentax_k1_mark_ii_full_kor_54_d_ranged_range_설정설정",
+    "query": "D-RangeD-Range 설정설정",
+    "model_ids": [
+      "PENTAX-K-1-MARK-II"
+    ],
+    "expected_document_id": "pentax_k1_mark_ii_full_kor",
+    "expected_pages": [
+      54
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "setup",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_pentax_k1_mark_ii_full_kor_59_포커스_모드_설정",
+    "query": "포커스 모드 설정",
+    "model_ids": [
+      "PENTAX-K-1-MARK-II"
+    ],
+    "expected_document_id": "pentax_k1_mark_ii_full_kor",
+    "expected_pages": [
+      59
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "focus",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_pentax_k1_mark_ii_full_kor_64_드라이브_모드_설정",
+    "query": "드라이브 모드 설정",
+    "model_ids": [
+      "PENTAX-K-1-MARK-II"
+    ],
+    "expected_document_id": "pentax_k1_mark_ii_full_kor",
+    "expected_pages": [
+      64
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "setup",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_pentax_k1_mark_ii_full_kor_66_리모콘",
+    "query": "리모콘",
+    "model_ids": [
+      "PENTAX-K-1-MARK-II"
+    ],
+    "expected_document_id": "pentax_k1_mark_ii_full_kor",
+    "expected_pages": [
+      66
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_pentax_k1_mark_ii_full_kor_67_x3_0_3ev_0_3ev",
+    "query": "x3 ±0.3EV±0.3EV",
+    "model_ids": [
+      "PENTAX-K-1-MARK-II"
+    ],
+    "expected_document_id": "pentax_k1_mark_ii_full_kor",
+    "expected_pages": [
+      67
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_pentax_k1_mark_ii_full_kor_71_화이트_밸런스_설정",
+    "query": "화이트 밸런스 설정",
+    "model_ids": [
+      "PENTAX-K-1-MARK-II"
+    ],
+    "expected_document_id": "pentax_k1_mark_ii_full_kor",
+    "expected_pages": [
+      71
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "setup",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_pentax_k3_mark_iii_full_kor_9_k_3_mark_iii의_기초_지식",
+    "query": "K-3 Mark III의 기초 지식",
+    "model_ids": [
+      "PENTAX-K-3-MARK-III"
+    ],
+    "expected_document_id": "pentax_k3_mark_iii_full_kor",
+    "expected_pages": [
+      9
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_pentax_k3_mark_iii_full_kor_10_내용물_확인",
+    "query": "내용물 확인",
+    "model_ids": [
+      "PENTAX-K-3-MARK-III"
+    ],
+    "expected_document_id": "pentax_k3_mark_iii_full_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_pentax_k3_mark_iii_full_kor_11_각부_명칭과_기능",
+    "query": "각부 명칭과 기능",
+    "model_ids": [
+      "PENTAX-K-3-MARK-III"
+    ],
+    "expected_document_id": "pentax_k3_mark_iii_full_kor",
+    "expected_pages": [
+      11
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_pentax_k3_mark_iii_full_kor_39_스트랩_부착",
+    "query": "스트랩 부착",
+    "model_ids": [
+      "PENTAX-K-3-MARK-III"
+    ],
+    "expected_document_id": "pentax_k3_mark_iii_full_kor",
+    "expected_pages": [
+      39
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_pentax_k3_mark_iii_full_kor_49_이미지_확인",
+    "query": "이미지 확인",
+    "model_ids": [
+      "PENTAX-K-3-MARK-III"
+    ],
+    "expected_document_id": "pentax_k3_mark_iii_full_kor",
+    "expected_pages": [
+      49
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_pentax_k3_mark_iii_full_kor_50_기록_방법_설정",
+    "query": "기록 방법 설정",
+    "model_ids": [
+      "PENTAX-K-3-MARK-III"
+    ],
+    "expected_document_id": "pentax_k3_mark_iii_full_kor",
+    "expected_pages": [
+      50
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "setup",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_pentax_k3_mark_iii_full_kor_51_사진_촬영",
+    "query": "사진 촬영",
+    "model_ids": [
+      "PENTAX-K-3-MARK-III"
+    ],
+    "expected_document_id": "pentax_k3_mark_iii_full_kor",
+    "expected_pages": [
+      51
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_pentax_k3_mark_iii_full_kor_64_a1_메뉴_b1_메뉴",
+    "query": "A1 메뉴 B1 메뉴",
+    "model_ids": [
+      "PENTAX-K-3-MARK-III"
+    ],
+    "expected_document_id": "pentax_k3_mark_iii_full_kor",
+    "expected_pages": [
+      64
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_pentax_k3_mark_iii_full_kor_68_드라이브_모드_선택_a4",
+    "query": "드라이브 모드 선택 A4",
+    "model_ids": [
+      "PENTAX-K-3-MARK-III"
+    ],
+    "expected_document_id": "pentax_k3_mark_iii_full_kor",
+    "expected_pages": [
+      68
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_pentax_k3_mark_iii_full_kor_70_1_0stop_1_0stop",
+    "query": "1.0STOP-1.0STOP",
+    "model_ids": [
+      "PENTAX-K-3-MARK-III"
+    ],
+    "expected_document_id": "pentax_k3_mark_iii_full_kor",
+    "expected_pages": [
+      70
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_pentax_k3_mark_iii_full_kor_75_셀프타이머",
+    "query": "셀프타이머",
+    "model_ids": [
+      "PENTAX-K-3-MARK-III"
+    ],
+    "expected_document_id": "pentax_k3_mark_iii_full_kor",
+    "expected_pages": [
+      75
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_pentax_k3_mark_iii_full_kor_76_화이트_밸런스_설정_a3_b3",
+    "query": "화이트 밸런스 설정 A3/B3",
+    "model_ids": [
+      "PENTAX-K-3-MARK-III"
+    ],
+    "expected_document_id": "pentax_k3_mark_iii_full_kor",
+    "expected_pages": [
+      76
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "setup",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_pentax_k3_mark_iii_wireless_guide_kor_2_무선_lan_bluetooth_기능에_대해",
+    "query": "무선 LAN/Bluetooth® 기능에 대해",
+    "model_ids": [
+      "PENTAX-K-3-MARK-III"
+    ],
+    "expected_document_id": "pentax_k3_mark_iii_wireless_guide_kor",
+    "expected_pages": [
+      2
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "connectivity",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_pentax_k3_mark_iii_wireless_guide_kor_3_통신_장비_이용",
+    "query": "통신 장비 이용",
+    "model_ids": [
+      "PENTAX-K-3-MARK-III"
+    ],
+    "expected_document_id": "pentax_k3_mark_iii_wireless_guide_kor",
+    "expected_pages": [
+      3
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_pentax_k70_full_kor_2_안전_주의_사항",
+    "query": "안전 주의 사항",
+    "model_ids": [
+      "PENTAX-K-70"
+    ],
+    "expected_document_id": "pentax_k70_full_kor",
+    "expected_pages": [
+      2
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_pentax_k70_full_kor_4_패키지_구성품_확인",
+    "query": "패키지 구성품 확인",
+    "model_ids": [
+      "PENTAX-K-70"
+    ],
+    "expected_document_id": "pentax_k70_full_kor",
+    "expected_pages": [
+      4
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_pentax_k70_full_kor_11_작동_부위의_이름과_기능",
+    "query": "작동 부위의 이름과 기능",
+    "model_ids": [
+      "PENTAX-K-70"
+    ],
+    "expected_document_id": "pentax_k70_full_kor",
+    "expected_pages": [
+      11
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_pentax_k70_full_kor_44_초기_설정",
+    "query": "초기 설정",
+    "model_ids": [
+      "PENTAX-K-70"
+    ],
+    "expected_document_id": "pentax_k70_full_kor",
+    "expected_pages": [
+      44
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "setup",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_pentax_k70_full_kor_45_날짜_및_시간_설정",
+    "query": "날짜 및 시간 설정",
+    "model_ids": [
+      "PENTAX-K-70"
+    ],
+    "expected_document_id": "pentax_k70_full_kor",
+    "expected_pages": [
+      45
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "setup",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_pentax_k70_full_kor_61_내장_플래시_사용",
+    "query": "내장 플래시 사용",
+    "model_ids": [
+      "PENTAX-K-70"
+    ],
+    "expected_document_id": "pentax_k70_full_kor",
+    "expected_pages": [
+      61
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "exposure",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_pentax_k70_full_kor_61_0_0evev",
+    "query": "0.0EVEV",
+    "model_ids": [
+      "PENTAX-K-70"
+    ],
+    "expected_document_id": "pentax_k70_full_kor",
+    "expected_pages": [
+      61
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_pentax_k70_full_kor_63_포커스_모드_설정",
+    "query": "포커스 모드 설정",
+    "model_ids": [
+      "PENTAX-K-70"
+    ],
+    "expected_document_id": "pentax_k70_full_kor",
+    "expected_pages": [
+      63
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "focus",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_pentax_k70_full_kor_67_드라이브_모드_설정",
+    "query": "드라이브 모드 설정",
+    "model_ids": [
+      "PENTAX-K-70"
+    ],
+    "expected_document_id": "pentax_k70_full_kor",
+    "expected_pages": [
+      67
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "setup",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_pentax_k70_full_kor_69_리모콘",
+    "query": "리모콘",
+    "model_ids": [
+      "PENTAX-K-70"
+    ],
+    "expected_document_id": "pentax_k70_full_kor",
+    "expected_pages": [
+      69
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_pentax_k70_full_kor_70_x3_0_3ev_0_3ev",
+    "query": "x3 ±0.3EV±0.3EV",
+    "model_ids": [
+      "PENTAX-K-70"
+    ],
+    "expected_document_id": "pentax_k70_full_kor",
+    "expected_pages": [
+      70
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_pentax_k70_full_kor_77_이미지_최종톤_설정",
+    "query": "이미지 최종톤 설정",
+    "model_ids": [
+      "PENTAX-K-70"
+    ],
+    "expected_document_id": "pentax_k70_full_kor",
+    "expected_pages": [
+      77
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "setup",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_pentax_kp_full_kor_2_안전_주의_사항",
+    "query": "안전 주의 사항",
+    "model_ids": [
+      "PENTAX-KP"
+    ],
+    "expected_document_id": "pentax_kp_full_kor",
+    "expected_pages": [
+      2
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_pentax_kp_full_kor_11_패키지_구성품_확인",
+    "query": "패키지 구성품 확인",
+    "model_ids": [
+      "PENTAX-KP"
+    ],
+    "expected_document_id": "pentax_kp_full_kor",
+    "expected_pages": [
+      11
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_pentax_kp_full_kor_12_작동_부위의_이름과_기능",
+    "query": "작동 부위의 이름과 기능",
+    "model_ids": [
+      "PENTAX-KP"
+    ],
+    "expected_document_id": "pentax_kp_full_kor",
+    "expected_pages": [
+      12
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_pentax_kp_full_kor_43_모니터_앵글_조정",
+    "query": "모니터 앵글 조정",
+    "model_ids": [
+      "PENTAX-KP"
+    ],
+    "expected_document_id": "pentax_kp_full_kor",
+    "expected_pages": [
+      43
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "display",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_pentax_kp_full_kor_45_화면_표시_설정",
+    "query": "화면 표시 설정",
+    "model_ids": [
+      "PENTAX-KP"
+    ],
+    "expected_document_id": "pentax_kp_full_kor",
+    "expected_pages": [
+      45
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "display",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_pentax_kp_full_kor_59_0_0evev",
+    "query": "0.0EVEV",
+    "model_ids": [
+      "PENTAX-KP"
+    ],
+    "expected_document_id": "pentax_kp_full_kor",
+    "expected_pages": [
+      59
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_pentax_kp_full_kor_61_포커스_모드_설정",
+    "query": "포커스 모드 설정",
+    "model_ids": [
+      "PENTAX-KP"
+    ],
+    "expected_document_id": "pentax_kp_full_kor",
+    "expected_pages": [
+      61
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "focus",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_pentax_kp_full_kor_66_드라이브_모드_설정",
+    "query": "드라이브 모드 설정",
+    "model_ids": [
+      "PENTAX-KP"
+    ],
+    "expected_document_id": "pentax_kp_full_kor",
+    "expected_pages": [
+      66
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "setup",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_pentax_kp_full_kor_67_셀프_타이머",
+    "query": "셀프 타이머",
+    "model_ids": [
+      "PENTAX-KP"
+    ],
+    "expected_document_id": "pentax_kp_full_kor",
+    "expected_pages": [
+      67
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_pentax_kp_full_kor_68_x3_0_3ev_0_3ev",
+    "query": "x3 ±0.3EV±0.3EV",
+    "model_ids": [
+      "PENTAX-KP"
+    ],
+    "expected_document_id": "pentax_kp_full_kor",
+    "expected_pages": [
+      68
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_pentax_kp_full_kor_71_다중_노출",
+    "query": "다중 노출",
+    "model_ids": [
+      "PENTAX-KP"
+    ],
+    "expected_document_id": "pentax_kp_full_kor",
+    "expected_pages": [
+      71
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "exposure",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_pentax_kp_full_kor_74_화이트_밸런스_설정",
+    "query": "화이트 밸런스 설정",
+    "model_ids": [
+      "PENTAX-KP"
+    ],
+    "expected_document_id": "pentax_kp_full_kor",
+    "expected_pages": [
+      74
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "setup",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_pentax_ks2_full_kor_2_패키지_구성품_확인",
+    "query": "패키지 구성품 확인",
+    "model_ids": [
+      "PENTAX-K-S2"
+    ],
+    "expected_document_id": "pentax_ks2_full_kor",
+    "expected_pages": [
+      2
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_pentax_ks2_full_kor_9_작동_부위의_이름과_기능",
+    "query": "작동 부위의 이름과 기능",
+    "model_ids": [
+      "PENTAX-K-S2"
+    ],
+    "expected_document_id": "pentax_ks2_full_kor",
+    "expected_pages": [
+      9
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_pentax_ks2_full_kor_38_초기_설정",
+    "query": "초기 설정",
+    "model_ids": [
+      "PENTAX-K-S2"
+    ],
+    "expected_document_id": "pentax_ks2_full_kor",
+    "expected_pages": [
+      38
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "setup",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_pentax_ks2_full_kor_46_촬영_설정_구성",
+    "query": "촬영 설정 구성",
+    "model_ids": [
+      "PENTAX-K-S2"
+    ],
+    "expected_document_id": "pentax_ks2_full_kor",
+    "expected_pages": [
+      46
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "setup",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_pentax_ks2_full_kor_55_내장_플래시_사용",
+    "query": "내장 플래시 사용",
+    "model_ids": [
+      "PENTAX-K-S2"
+    ],
+    "expected_document_id": "pentax_ks2_full_kor",
+    "expected_pages": [
+      55
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "exposure",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_pentax_ks2_full_kor_55_0_0evev",
+    "query": "0.0EVEV",
+    "model_ids": [
+      "PENTAX-K-S2"
+    ],
+    "expected_document_id": "pentax_ks2_full_kor",
+    "expected_pages": [
+      55
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_pentax_ks2_full_kor_56_포커스_모드_설정",
+    "query": "포커스 모드 설정",
+    "model_ids": [
+      "PENTAX-K-S2"
+    ],
+    "expected_document_id": "pentax_ks2_full_kor",
+    "expected_pages": [
+      56
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "focus",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_pentax_ks2_full_kor_61_드라이브_모드_설정",
+    "query": "드라이브 모드 설정",
+    "model_ids": [
+      "PENTAX-K-S2"
+    ],
+    "expected_document_id": "pentax_ks2_full_kor",
+    "expected_pages": [
+      61
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "setup",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_pentax_ks2_full_kor_67_인터벌_합성",
+    "query": "인터벌 합성",
+    "model_ids": [
+      "PENTAX-K-S2"
+    ],
+    "expected_document_id": "pentax_ks2_full_kor",
+    "expected_pages": [
+      67
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_pentax_ks2_full_kor_68_인터벌_동영상",
+    "query": "인터벌 동영상",
+    "model_ids": [
+      "PENTAX-K-S2"
+    ],
+    "expected_document_id": "pentax_ks2_full_kor",
+    "expected_pages": [
+      68
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "video",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_pentax_ks2_full_kor_69_스타_스트림",
+    "query": "스타 스트림",
+    "model_ids": [
+      "PENTAX-K-S2"
+    ],
+    "expected_document_id": "pentax_ks2_full_kor",
+    "expected_pages": [
+      69
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_pentax_ks2_full_kor_73_이미지_최종톤_제어",
+    "query": "이미지 최종톤 제어",
+    "model_ids": [
+      "PENTAX-K-S2"
+    ],
+    "expected_document_id": "pentax_ks2_full_kor",
+    "expected_pages": [
+      73
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_gr_digital_iii_full_kor_6_시작하기_전에",
+    "query": "시작하기 전에",
+    "model_ids": [
+      "RICOH-GR-DIGITAL-III"
+    ],
+    "expected_document_id": "ricoh_gr_digital_iii_full_kor",
+    "expected_pages": [
+      6
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_gr_digital_iii_full_kor_14_기본_촬영_및_재생",
+    "query": "기본 촬영 및 재생",
+    "model_ids": [
+      "RICOH-GR-DIGITAL-III"
+    ],
+    "expected_document_id": "ricoh_gr_digital_iii_full_kor",
+    "expected_pages": [
+      14
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_gr_digital_iii_full_kor_15_첫단계",
+    "query": "첫단계",
+    "model_ids": [
+      "RICOH-GR-DIGITAL-III"
+    ],
+    "expected_document_id": "ricoh_gr_digital_iii_full_kor",
+    "expected_pages": [
+      15
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_gr_digital_iii_full_kor_22_사진_촬영",
+    "query": "사진 촬영",
+    "model_ids": [
+      "RICOH-GR-DIGITAL-III"
+    ],
+    "expected_document_id": "ricoh_gr_digital_iii_full_kor",
+    "expected_pages": [
+      22
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_gr_digital_iii_full_kor_27_3_초점을_맞춥니다",
+    "query": "3 초점을 맞춥니다.",
+    "model_ids": [
+      "RICOH-GR-DIGITAL-III"
+    ],
+    "expected_document_id": "ricoh_gr_digital_iii_full_kor",
+    "expected_pages": [
+      27
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "focus",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_gr_digital_iii_full_kor_27_4_사진을_촬영합니다",
+    "query": "4 사진을 촬영합니다.",
+    "model_ids": [
+      "RICOH-GR-DIGITAL-III"
+    ],
+    "expected_document_id": "ricoh_gr_digital_iii_full_kor",
+    "expected_pages": [
+      27
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_gr_digital_iii_full_kor_28_2_초점을_맞춥니다",
+    "query": "2 초점을 맞춥니다.",
+    "model_ids": [
+      "RICOH-GR-DIGITAL-III"
+    ],
+    "expected_document_id": "ricoh_gr_digital_iii_full_kor",
+    "expected_pages": [
+      28
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "focus",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_gr_digital_iii_full_kor_28_3_사진을_촬영합니다",
+    "query": "3 사진을 촬영합니다.",
+    "model_ids": [
+      "RICOH-GR-DIGITAL-III"
+    ],
+    "expected_document_id": "ricoh_gr_digital_iii_full_kor",
+    "expected_pages": [
+      28
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_gr_digital_iii_full_kor_34_사진_보기_및_삭제",
+    "query": "사진 보기 및 삭제",
+    "model_ids": [
+      "RICOH-GR-DIGITAL-III"
+    ],
+    "expected_document_id": "ricoh_gr_digital_iii_full_kor",
+    "expected_pages": [
+      34
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_gr_digital_iii_full_kor_39_2_개별선택_또는_범위지정을_선택",
+    "query": "2 개별선택 또는 범위지정을 선택",
+    "model_ids": [
+      "RICOH-GR-DIGITAL-III"
+    ],
+    "expected_document_id": "ricoh_gr_digital_iii_full_kor",
+    "expected_pages": [
+      39
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_gr_digital_iii_full_kor_39_3_사진을_선택합니다",
+    "query": "3 사진을 선택합니다.",
+    "model_ids": [
+      "RICOH-GR-DIGITAL-III"
+    ],
+    "expected_document_id": "ricoh_gr_digital_iii_full_kor",
+    "expected_pages": [
+      39
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_gr_digital_iii_full_kor_44_참조",
+    "query": "참조",
+    "model_ids": [
+      "RICOH-GR-DIGITAL-III"
+    ],
+    "expected_document_id": "ricoh_gr_digital_iii_full_kor",
+    "expected_pages": [
+      44
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_gr_full_kor_3_안전_주의_사항",
+    "query": "안전 주의 사항",
+    "model_ids": [
+      "RICOH-GR"
+    ],
+    "expected_document_id": "ricoh_gr_full_kor",
+    "expected_pages": [
+      3
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_gr_full_kor_13_시작하기_전에",
+    "query": "시작하기 전에",
+    "model_ids": [
+      "RICOH-GR"
+    ],
+    "expected_document_id": "ricoh_gr_full_kor",
+    "expected_pages": [
+      13
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_gr_full_kor_14_카메라_각_부분",
+    "query": "카메라 각 부분",
+    "model_ids": [
+      "RICOH-GR"
+    ],
+    "expected_document_id": "ricoh_gr_full_kor",
+    "expected_pages": [
+      14
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_gr_full_kor_16_다이얼_및_레버_사용",
+    "query": "다이얼 및 레버 사용",
+    "model_ids": [
+      "RICOH-GR"
+    ],
+    "expected_document_id": "ricoh_gr_full_kor",
+    "expected_pages": [
+      16
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_gr_full_kor_18_화상_모니터",
+    "query": "화상 모니터",
+    "model_ids": [
+      "RICOH-GR"
+    ],
+    "expected_document_id": "ricoh_gr_full_kor",
+    "expected_pages": [
+      18
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "display",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_gr_full_kor_20_eye_fi_연결",
+    "query": "Eye-Fi 연결",
+    "model_ids": [
+      "RICOH-GR"
+    ],
+    "expected_document_id": "ricoh_gr_full_kor",
+    "expected_pages": [
+      20
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_gr_full_kor_23_준비하기",
+    "query": "준비하기",
+    "model_ids": [
+      "RICOH-GR"
+    ],
+    "expected_document_id": "ricoh_gr_full_kor",
+    "expected_pages": [
+      23
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_gr_full_kor_32_기본_촬영",
+    "query": "기본 촬영",
+    "model_ids": [
+      "RICOH-GR"
+    ],
+    "expected_document_id": "ricoh_gr_full_kor",
+    "expected_pages": [
+      32
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_gr_full_kor_37_이미지_재생",
+    "query": "이미지 재생",
+    "model_ids": [
+      "RICOH-GR"
+    ],
+    "expected_document_id": "ricoh_gr_full_kor",
+    "expected_pages": [
+      37
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_gr_full_kor_38_메뉴_사용",
+    "query": "메뉴 사용",
+    "model_ids": [
+      "RICOH-GR"
+    ],
+    "expected_document_id": "ricoh_gr_full_kor",
+    "expected_pages": [
+      38
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_gr_full_kor_38_1_menu_ok를_누릅니다",
+    "query": "1 MENU/OK를 누릅니다.",
+    "model_ids": [
+      "RICOH-GR"
+    ],
+    "expected_document_id": "ricoh_gr_full_kor",
+    "expected_pages": [
+      38
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_gr_full_kor_38_2_버튼을_눌러_설정을_선택합니다",
+    "query": "2 !\" 버튼을 눌러 설정을 선택합니다.",
+    "model_ids": [
+      "RICOH-GR"
+    ],
+    "expected_document_id": "ricoh_gr_full_kor",
+    "expected_pages": [
+      38
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "setup",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_gr_ii_full_kor_15_시작하기_전에",
+    "query": "시작하기 전에",
+    "model_ids": [
+      "RICOH-GR-II"
+    ],
+    "expected_document_id": "ricoh_gr_ii_full_kor",
+    "expected_pages": [
+      15
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_gr_ii_full_kor_22_wi_fi_연결",
+    "query": "Wi-Fi 연결",
+    "model_ids": [
+      "RICOH-GR-II"
+    ],
+    "expected_document_id": "ricoh_gr_ii_full_kor",
+    "expected_pages": [
+      22
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "connectivity",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_gr_ii_full_kor_23_화상_모니터_변경",
+    "query": "화상 모니터 변경",
+    "model_ids": [
+      "RICOH-GR-II"
+    ],
+    "expected_document_id": "ricoh_gr_ii_full_kor",
+    "expected_pages": [
+      23
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "display",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_gr_ii_full_kor_33_첫_단계",
+    "query": "첫 단계",
+    "model_ids": [
+      "RICOH-GR-II"
+    ],
+    "expected_document_id": "ricoh_gr_ii_full_kor",
+    "expected_pages": [
+      33
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_gr_ii_full_kor_43_고급_조작",
+    "query": "고급 조작",
+    "model_ids": [
+      "RICOH-GR-II"
+    ],
+    "expected_document_id": "ricoh_gr_ii_full_kor",
+    "expected_pages": [
+      43
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_gr_ii_full_kor_44_노출_설정으로_촬영",
+    "query": "노출 설정으로 촬영",
+    "model_ids": [
+      "RICOH-GR-II"
+    ],
+    "expected_document_id": "ricoh_gr_ii_full_kor",
+    "expected_pages": [
+      44
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "exposure",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_gr_ii_full_kor_50_노출_보정_사용",
+    "query": "노출 보정 사용",
+    "model_ids": [
+      "RICOH-GR-II"
+    ],
+    "expected_document_id": "ricoh_gr_ii_full_kor",
+    "expected_pages": [
+      50
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "exposure",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_gr_ii_full_kor_72_색온도_설정",
+    "query": "색온도 설정",
+    "model_ids": [
+      "RICOH-GR-II"
+    ],
+    "expected_document_id": "ricoh_gr_ii_full_kor",
+    "expected_pages": [
+      72
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "setup",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_gr_ii_full_kor_82_2_f_버튼을_누릅니다",
+    "query": "2 F($)버튼을 누릅니다.",
+    "model_ids": [
+      "RICOH-GR-II"
+    ],
+    "expected_document_id": "ricoh_gr_ii_full_kor",
+    "expected_pages": [
+      82
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_gr_ii_full_kor_82_3_버튼을_눌러_플래시_모드를",
+    "query": "3 #$ 버튼을 눌러 플래시 모드를",
+    "model_ids": [
+      "RICOH-GR-II"
+    ],
+    "expected_document_id": "ricoh_gr_ii_full_kor",
+    "expected_pages": [
+      82
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "exposure",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_gr_ii_full_kor_94_동영상_촬영",
+    "query": "동영상 촬영",
+    "model_ids": [
+      "RICOH-GR-II"
+    ],
+    "expected_document_id": "ricoh_gr_ii_full_kor",
+    "expected_pages": [
+      94
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "video",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_gr_ii_full_kor_95_동영상_재생",
+    "query": "동영상 재생",
+    "model_ids": [
+      "RICOH-GR-II"
+    ],
+    "expected_document_id": "ricoh_gr_ii_full_kor",
+    "expected_pages": [
+      95
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "video",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_gr_iii_full_kor_3_무선_lan_기능_정보",
+    "query": "무선 LAN 기능 정보",
+    "model_ids": [
+      "RICOH-GR-III"
+    ],
+    "expected_document_id": "ricoh_gr_iii_full_kor",
+    "expected_pages": [
+      3
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_gr_iii_full_kor_5_안전_주의_사항",
+    "query": "안전 주의 사항",
+    "model_ids": [
+      "RICOH-GR-III"
+    ],
+    "expected_document_id": "ricoh_gr_iii_full_kor",
+    "expected_pages": [
+      5
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_gr_iii_full_kor_5_경고_기호",
+    "query": "경고 기호",
+    "model_ids": [
+      "RICOH-GR-III"
+    ],
+    "expected_document_id": "ricoh_gr_iii_full_kor",
+    "expected_pages": [
+      5
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_gr_iii_full_kor_5_기호_의미",
+    "query": "기호 의미",
+    "model_ids": [
+      "RICOH-GR-III"
+    ],
+    "expected_document_id": "ricoh_gr_iii_full_kor",
+    "expected_pages": [
+      5
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_gr_iii_full_kor_8_주의",
+    "query": "주의",
+    "model_ids": [
+      "RICOH-GR-III"
+    ],
+    "expected_document_id": "ricoh_gr_iii_full_kor",
+    "expected_pages": [
+      8
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_gr_iii_full_kor_14_패키지_구성품_확인",
+    "query": "패키지 구성품 확인",
+    "model_ids": [
+      "RICOH-GR-III"
+    ],
+    "expected_document_id": "ricoh_gr_iii_full_kor",
+    "expected_pages": [
+      14
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_gr_iii_full_kor_14_ricoh_gr_iii_핫_슈_커버",
+    "query": "RICOH GR III 핫 슈 커버",
+    "model_ids": [
+      "RICOH-GR-III"
+    ],
+    "expected_document_id": "ricoh_gr_iii_full_kor",
+    "expected_pages": [
+      14
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_gr_iii_full_kor_14_usb_케이블",
+    "query": "USB 케이블",
+    "model_ids": [
+      "RICOH-GR-III"
+    ],
+    "expected_document_id": "ricoh_gr_iii_full_kor",
+    "expected_pages": [
+      14
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_gr_iii_full_kor_14_핸드_스트랩",
+    "query": "핸드 스트랩",
+    "model_ids": [
+      "RICOH-GR-III"
+    ],
+    "expected_document_id": "ricoh_gr_iii_full_kor",
+    "expected_pages": [
+      14
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_gr_iii_full_kor_14_전원_플러그_사용_설명서_본_설명서",
+    "query": "전원 플러그 사용 설명서(본 설명서)",
+    "model_ids": [
+      "RICOH-GR-III"
+    ],
+    "expected_document_id": "ricoh_gr_iii_full_kor",
+    "expected_pages": [
+      14
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "power",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_gr_iii_full_kor_15_각_부위의_이름과_기능",
+    "query": "각 부위의 이름과 기능",
+    "model_ids": [
+      "RICOH-GR-III"
+    ],
+    "expected_document_id": "ricoh_gr_iii_full_kor",
+    "expected_pages": [
+      15
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_gr_iii_full_kor_17_버튼_다이얼_레버",
+    "query": "버튼/다이얼/레버",
+    "model_ids": [
+      "RICOH-GR-III"
+    ],
+    "expected_document_id": "ricoh_gr_iii_full_kor",
+    "expected_pages": [
+      17
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_gr_iiix_alt_full_kor_3_무선_lan_bluetooth_기능_정보",
+    "query": "무선 LAN/Bluetooth® 기능 정보",
+    "model_ids": [
+      "RICOH-GR-IIIX"
+    ],
+    "expected_document_id": "ricoh_gr_iiix_alt_full_kor",
+    "expected_pages": [
+      3
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "connectivity",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_gr_iiix_alt_full_kor_5_안전_주의_사항",
+    "query": "안전 주의 사항",
+    "model_ids": [
+      "RICOH-GR-IIIX"
+    ],
+    "expected_document_id": "ricoh_gr_iiix_alt_full_kor",
+    "expected_pages": [
+      5
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_gr_iiix_alt_full_kor_5_경고_기호",
+    "query": "경고 기호",
+    "model_ids": [
+      "RICOH-GR-IIIX"
+    ],
+    "expected_document_id": "ricoh_gr_iiix_alt_full_kor",
+    "expected_pages": [
+      5
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_gr_iiix_alt_full_kor_5_기호_의미",
+    "query": "기호 의미",
+    "model_ids": [
+      "RICOH-GR-IIIX"
+    ],
+    "expected_document_id": "ricoh_gr_iiix_alt_full_kor",
+    "expected_pages": [
+      5
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_gr_iiix_alt_full_kor_8_주의",
+    "query": "주의",
+    "model_ids": [
+      "RICOH-GR-IIIX"
+    ],
+    "expected_document_id": "ricoh_gr_iiix_alt_full_kor",
+    "expected_pages": [
+      8
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_gr_iiix_alt_full_kor_14_패키지_구성품_확인",
+    "query": "패키지 구성품 확인",
+    "model_ids": [
+      "RICOH-GR-IIIX"
+    ],
+    "expected_document_id": "ricoh_gr_iiix_alt_full_kor",
+    "expected_pages": [
+      14
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_gr_iiix_alt_full_kor_14_ricoh_gr_iiix_핫_슈_커버",
+    "query": "RICOH GR IIIx 핫 슈 커버",
+    "model_ids": [
+      "RICOH-GR-IIIX"
+    ],
+    "expected_document_id": "ricoh_gr_iiix_alt_full_kor",
+    "expected_pages": [
+      14
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_gr_iiix_alt_full_kor_14_usb_케이블",
+    "query": "USB 케이블",
+    "model_ids": [
+      "RICOH-GR-IIIX"
+    ],
+    "expected_document_id": "ricoh_gr_iiix_alt_full_kor",
+    "expected_pages": [
+      14
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_gr_iiix_alt_full_kor_14_핸드_스트랩",
+    "query": "핸드 스트랩",
+    "model_ids": [
+      "RICOH-GR-IIIX"
+    ],
+    "expected_document_id": "ricoh_gr_iiix_alt_full_kor",
+    "expected_pages": [
+      14
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_gr_iiix_alt_full_kor_14_전원_플러그_사용_설명서_본_설명서",
+    "query": "전원 플러그 사용 설명서(본 설명서)",
+    "model_ids": [
+      "RICOH-GR-IIIX"
+    ],
+    "expected_document_id": "ricoh_gr_iiix_alt_full_kor",
+    "expected_pages": [
+      14
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "power",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_gr_iiix_alt_full_kor_15_각_부위의_이름과_기능",
+    "query": "각 부위의 이름과 기능",
+    "model_ids": [
+      "RICOH-GR-IIIX"
+    ],
+    "expected_document_id": "ricoh_gr_iiix_alt_full_kor",
+    "expected_pages": [
+      15
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_gr_iiix_alt_full_kor_17_버튼_다이얼_레버",
+    "query": "버튼/다이얼/레버",
+    "model_ids": [
+      "RICOH-GR-IIIX"
+    ],
+    "expected_document_id": "ricoh_gr_iiix_alt_full_kor",
+    "expected_pages": [
+      17
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_gr_iiix_full_kor_3_무선_lan_bluetooth_기능_정보",
+    "query": "무선 LAN/Bluetooth® 기능 정보",
+    "model_ids": [
+      "RICOH-GR-IIIX"
+    ],
+    "expected_document_id": "ricoh_gr_iiix_full_kor",
+    "expected_pages": [
+      3
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "connectivity",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_gr_iiix_full_kor_5_안전_주의_사항",
+    "query": "안전 주의 사항",
+    "model_ids": [
+      "RICOH-GR-IIIX"
+    ],
+    "expected_document_id": "ricoh_gr_iiix_full_kor",
+    "expected_pages": [
+      5
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_gr_iiix_full_kor_5_경고_기호",
+    "query": "경고 기호",
+    "model_ids": [
+      "RICOH-GR-IIIX"
+    ],
+    "expected_document_id": "ricoh_gr_iiix_full_kor",
+    "expected_pages": [
+      5
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_gr_iiix_full_kor_5_기호_의미",
+    "query": "기호 의미",
+    "model_ids": [
+      "RICOH-GR-IIIX"
+    ],
+    "expected_document_id": "ricoh_gr_iiix_full_kor",
+    "expected_pages": [
+      5
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_gr_iiix_full_kor_8_주의",
+    "query": "주의",
+    "model_ids": [
+      "RICOH-GR-IIIX"
+    ],
+    "expected_document_id": "ricoh_gr_iiix_full_kor",
+    "expected_pages": [
+      8
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_gr_iiix_full_kor_14_패키지_구성품_확인",
+    "query": "패키지 구성품 확인",
+    "model_ids": [
+      "RICOH-GR-IIIX"
+    ],
+    "expected_document_id": "ricoh_gr_iiix_full_kor",
+    "expected_pages": [
+      14
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_gr_iiix_full_kor_14_ricoh_gr_iiix_핫_슈_커버",
+    "query": "RICOH GR IIIx 핫 슈 커버",
+    "model_ids": [
+      "RICOH-GR-IIIX"
+    ],
+    "expected_document_id": "ricoh_gr_iiix_full_kor",
+    "expected_pages": [
+      14
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_gr_iiix_full_kor_14_usb_케이블",
+    "query": "USB 케이블",
+    "model_ids": [
+      "RICOH-GR-IIIX"
+    ],
+    "expected_document_id": "ricoh_gr_iiix_full_kor",
+    "expected_pages": [
+      14
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_gr_iiix_full_kor_14_핸드_스트랩",
+    "query": "핸드 스트랩",
+    "model_ids": [
+      "RICOH-GR-IIIX"
+    ],
+    "expected_document_id": "ricoh_gr_iiix_full_kor",
+    "expected_pages": [
+      14
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_gr_iiix_full_kor_14_전원_플러그_사용_설명서_본_설명서",
+    "query": "전원 플러그 사용 설명서(본 설명서)",
+    "model_ids": [
+      "RICOH-GR-IIIX"
+    ],
+    "expected_document_id": "ricoh_gr_iiix_full_kor",
+    "expected_pages": [
+      14
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "power",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_gr_iiix_full_kor_15_각_부위의_이름과_기능",
+    "query": "각 부위의 이름과 기능",
+    "model_ids": [
+      "RICOH-GR-IIIX"
+    ],
+    "expected_document_id": "ricoh_gr_iiix_full_kor",
+    "expected_pages": [
+      15
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_gr_iiix_full_kor_17_버튼_다이얼_레버",
+    "query": "버튼/다이얼/레버",
+    "model_ids": [
+      "RICOH-GR-IIIX"
+    ],
+    "expected_document_id": "ricoh_gr_iiix_full_kor",
+    "expected_pages": [
+      17
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_gr_iv_full_kor_3_무선_lan_bluetooth_기능_정보",
+    "query": "무선 LAN/Bluetooth®기능 정보",
+    "model_ids": [
+      "RICOH-GR-IV"
+    ],
+    "expected_document_id": "ricoh_gr_iv_full_kor",
+    "expected_pages": [
+      3
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "connectivity",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_gr_iv_full_kor_5_안전_주의_사항",
+    "query": "안전 주의 사항",
+    "model_ids": [
+      "RICOH-GR-IV"
+    ],
+    "expected_document_id": "ricoh_gr_iv_full_kor",
+    "expected_pages": [
+      5
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_gr_iv_full_kor_5_기호",
+    "query": "기호",
+    "model_ids": [
+      "RICOH-GR-IV"
+    ],
+    "expected_document_id": "ricoh_gr_iv_full_kor",
+    "expected_pages": [
+      5
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_gr_iv_full_kor_5_표시_예",
+    "query": "표시 예",
+    "model_ids": [
+      "RICOH-GR-IV"
+    ],
+    "expected_document_id": "ricoh_gr_iv_full_kor",
+    "expected_pages": [
+      5
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "display",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_gr_iv_full_kor_8_주의",
+    "query": "주의",
+    "model_ids": [
+      "RICOH-GR-IV"
+    ],
+    "expected_document_id": "ricoh_gr_iv_full_kor",
+    "expected_pages": [
+      8
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_gr_iv_full_kor_14_패키지_구성품_확인",
+    "query": "패키지 구성품 확인",
+    "model_ids": [
+      "RICOH-GR-IV"
+    ],
+    "expected_document_id": "ricoh_gr_iv_full_kor",
+    "expected_pages": [
+      14
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_gr_iv_full_kor_14_ricoh_gr_iv_핫_슈_커버",
+    "query": "RICOH GR IV 핫 슈 커버",
+    "model_ids": [
+      "RICOH-GR-IV"
+    ],
+    "expected_document_id": "ricoh_gr_iv_full_kor",
+    "expected_pages": [
+      14
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_gr_iv_full_kor_14_usb_케이블",
+    "query": "USB 케이블",
+    "model_ids": [
+      "RICOH-GR-IV"
+    ],
+    "expected_document_id": "ricoh_gr_iv_full_kor",
+    "expected_pages": [
+      14
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_gr_iv_full_kor_14_핸드_스트랩",
+    "query": "핸드 스트랩",
+    "model_ids": [
+      "RICOH-GR-IV"
+    ],
+    "expected_document_id": "ricoh_gr_iv_full_kor",
+    "expected_pages": [
+      14
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_gr_iv_full_kor_14_시작_가이드",
+    "query": "시작 가이드",
+    "model_ids": [
+      "RICOH-GR-IV"
+    ],
+    "expected_document_id": "ricoh_gr_iv_full_kor",
+    "expected_pages": [
+      14
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_gr_iv_full_kor_15_각_부위의_이름과_기능",
+    "query": "각 부위의 이름과 기능",
+    "model_ids": [
+      "RICOH-GR-IV"
+    ],
+    "expected_document_id": "ricoh_gr_iv_full_kor",
+    "expected_pages": [
+      15
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_gr_iv_full_kor_17_버튼_다이얼",
+    "query": "버튼 / 다이얼",
+    "model_ids": [
+      "RICOH-GR-IV"
+    ],
+    "expected_document_id": "ricoh_gr_iv_full_kor",
+    "expected_pages": [
+      17
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_gr_iv_monochrome_full_kor_3_무선_lan_bluetooth_기능_정보",
+    "query": "무선 LAN/Bluetooth®기능 정보",
+    "model_ids": [
+      "RICOH-GR-IV-MONOCHROME"
+    ],
+    "expected_document_id": "ricoh_gr_iv_monochrome_full_kor",
+    "expected_pages": [
+      3
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "connectivity",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_gr_iv_monochrome_full_kor_5_안전_주의_사항",
+    "query": "안전 주의 사항",
+    "model_ids": [
+      "RICOH-GR-IV-MONOCHROME"
+    ],
+    "expected_document_id": "ricoh_gr_iv_monochrome_full_kor",
+    "expected_pages": [
+      5
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_gr_iv_monochrome_full_kor_5_기호",
+    "query": "기호",
+    "model_ids": [
+      "RICOH-GR-IV-MONOCHROME"
+    ],
+    "expected_document_id": "ricoh_gr_iv_monochrome_full_kor",
+    "expected_pages": [
+      5
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_gr_iv_monochrome_full_kor_5_표시_예",
+    "query": "표시 예",
+    "model_ids": [
+      "RICOH-GR-IV-MONOCHROME"
+    ],
+    "expected_document_id": "ricoh_gr_iv_monochrome_full_kor",
+    "expected_pages": [
+      5
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "display",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_gr_iv_monochrome_full_kor_8_주의",
+    "query": "주의",
+    "model_ids": [
+      "RICOH-GR-IV-MONOCHROME"
+    ],
+    "expected_document_id": "ricoh_gr_iv_monochrome_full_kor",
+    "expected_pages": [
+      8
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_gr_iv_monochrome_full_kor_14_패키지_구성품_확인",
+    "query": "패키지 구성품 확인",
+    "model_ids": [
+      "RICOH-GR-IV-MONOCHROME"
+    ],
+    "expected_document_id": "ricoh_gr_iv_monochrome_full_kor",
+    "expected_pages": [
+      14
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_gr_iv_monochrome_full_kor_14_ricoh_gr_iv_monochrome",
+    "query": "RICOH GR IV Monochrome",
+    "model_ids": [
+      "RICOH-GR-IV-MONOCHROME"
+    ],
+    "expected_document_id": "ricoh_gr_iv_monochrome_full_kor",
+    "expected_pages": [
+      14
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_gr_iv_monochrome_full_kor_14_핫_슈_커버",
+    "query": "핫 슈 커버",
+    "model_ids": [
+      "RICOH-GR-IV-MONOCHROME"
+    ],
+    "expected_document_id": "ricoh_gr_iv_monochrome_full_kor",
+    "expected_pages": [
+      14
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_gr_iv_monochrome_full_kor_14_usb_케이블",
+    "query": "USB 케이블",
+    "model_ids": [
+      "RICOH-GR-IV-MONOCHROME"
+    ],
+    "expected_document_id": "ricoh_gr_iv_monochrome_full_kor",
+    "expected_pages": [
+      14
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_gr_iv_monochrome_full_kor_14_핸드_스트랩",
+    "query": "핸드 스트랩",
+    "model_ids": [
+      "RICOH-GR-IV-MONOCHROME"
+    ],
+    "expected_document_id": "ricoh_gr_iv_monochrome_full_kor",
+    "expected_pages": [
+      14
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_gr_iv_monochrome_full_kor_14_시작_가이드",
+    "query": "시작 가이드",
+    "model_ids": [
+      "RICOH-GR-IV-MONOCHROME"
+    ],
+    "expected_document_id": "ricoh_gr_iv_monochrome_full_kor",
+    "expected_pages": [
+      14
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_gr_iv_monochrome_full_kor_15_각_부위의_이름과_기능",
+    "query": "각 부위의 이름과 기능",
+    "model_ids": [
+      "RICOH-GR-IV-MONOCHROME"
+    ],
+    "expected_document_id": "ricoh_gr_iv_monochrome_full_kor",
+    "expected_pages": [
+      15
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_theta_v_quick_guide_kor_2_1_사진을_새롭게_즐기는_방법",
+    "query": "1. 사진을 새롭게 즐기는 방법",
+    "model_ids": [
+      "RICOH-THETA-V"
+    ],
+    "expected_document_id": "ricoh_theta_v_quick_guide_kor",
+    "expected_pages": [
+      2
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_theta_v_quick_guide_kor_3_2_부품_명칭",
+    "query": "2.부품 명칭",
+    "model_ids": [
+      "RICOH-THETA-V"
+    ],
+    "expected_document_id": "ricoh_theta_v_quick_guide_kor",
+    "expected_pages": [
+      3
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_theta_v_quick_guide_kor_4_01_0",
+    "query": "01<0",
+    "model_ids": [
+      "RICOH-THETA-V"
+    ],
+    "expected_document_id": "ricoh_theta_v_quick_guide_kor",
+    "expected_pages": [
+      4
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_theta_v_quick_guide_kor_4_of",
+    "query": "|OF",
+    "model_ids": [
+      "RICOH-THETA-V"
+    ],
+    "expected_document_id": "ricoh_theta_v_quick_guide_kor",
+    "expected_pages": [
+      4
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_theta_v_quick_guide_kor_5_3_4_다운로드하기",
+    "query": "3. 4 다운로드하기",
+    "model_ids": [
+      "RICOH-THETA-V"
+    ],
+    "expected_document_id": "ricoh_theta_v_quick_guide_kor",
+    "expected_pages": [
+      5
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_theta_v_quick_guide_kor_6_4_무선_lane_통해_스_마트폰에_연_결_하기",
+    "query": "4. 무선 LANE 통해 스 마트폰에 연 결 하기",
+    "model_ids": [
+      "RICOH-THETA-V"
+    ],
+    "expected_document_id": "ricoh_theta_v_quick_guide_kor",
+    "expected_pages": [
+      6
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_theta_v_quick_guide_kor_7_5_bluetooths통해_스_마트폰에_연_결하기",
+    "query": "5.BluetoothS통해 스 마트폰에 연 결하기",
+    "model_ids": [
+      "RICOH-THETA-V"
+    ],
+    "expected_document_id": "ricoh_theta_v_quick_guide_kor",
+    "expected_pages": [
+      7
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "connectivity",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_theta_v_quick_guide_kor_8_6_사진_촬영_및_보기",
+    "query": "6.사진 촬영 및 보기",
+    "model_ids": [
+      "RICOH-THETA-V"
+    ],
+    "expected_document_id": "ricoh_theta_v_quick_guide_kor",
+    "expected_pages": [
+      8
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_theta_v_quick_guide_kor_9_7_동영상_촬영_및_보기",
+    "query": "7.동영상 촬영 및 보기",
+    "model_ids": [
+      "RICOH-THETA-V"
+    ],
+    "expected_document_id": "ricoh_theta_v_quick_guide_kor",
+    "expected_pages": [
+      9
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "video",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_theta_v_quick_guide_kor_10_8_라이브_동영상_스트리밍",
+    "query": "8.라이브 동영상 스트리밍",
+    "model_ids": [
+      "RICOH-THETA-V"
+    ],
+    "expected_document_id": "ricoh_theta_v_quick_guide_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "video",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_theta_v_quick_guide_kor_12_10_theta_기능확장",
+    "query": "10. THETA 기능확장",
+    "model_ids": [
+      "RICOH-THETA-V"
+    ],
+    "expected_document_id": "ricoh_theta_v_quick_guide_kor",
+    "expected_pages": [
+      12
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_theta_v_quick_guide_kor_13_11_고객을_위한_중요_메시지",
+    "query": "11. 고객을 위한 중요 메시지",
+    "model_ids": [
+      "RICOH-THETA-V"
+    ],
+    "expected_document_id": "ricoh_theta_v_quick_guide_kor",
+    "expected_pages": [
+      13
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_theta_x_user_guide_kor_3_사진을_즐기는_새로운_방법",
+    "query": "사진을 즐기는 새로운 방법",
+    "model_ids": [
+      "RICOH-THETA-X"
+    ],
+    "expected_document_id": "ricoh_theta_x_user_guide_kor",
+    "expected_pages": [
+      3
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_theta_x_user_guide_kor_3_쉬운_작동법_소개_동영상",
+    "query": "●●쉬운 작동법 소개 동영상",
+    "model_ids": [
+      "RICOH-THETA-X"
+    ],
+    "expected_document_id": "ricoh_theta_x_user_guide_kor",
+    "expected_pages": [
+      3
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "video",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_theta_x_user_guide_kor_3_제품_웹사이트",
+    "query": "●●제품 웹사이트",
+    "model_ids": [
+      "RICOH-THETA-X"
+    ],
+    "expected_document_id": "ricoh_theta_x_user_guide_kor",
+    "expected_pages": [
+      3
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_theta_x_user_guide_kor_3_브랜드_웹사이트",
+    "query": "●●브랜드 웹사이트",
+    "model_ids": [
+      "RICOH-THETA-X"
+    ],
+    "expected_document_id": "ricoh_theta_x_user_guide_kor",
+    "expected_pages": [
+      3
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_theta_x_user_guide_kor_3_사용_설명서",
+    "query": "●●사용 설명서",
+    "model_ids": [
+      "RICOH-THETA-X"
+    ],
+    "expected_document_id": "ricoh_theta_x_user_guide_kor",
+    "expected_pages": [
+      3
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_theta_x_user_guide_kor_3_지원_정보",
+    "query": "●●지원 정보",
+    "model_ids": [
+      "RICOH-THETA-X"
+    ],
+    "expected_document_id": "ricoh_theta_x_user_guide_kor",
+    "expected_pages": [
+      3
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_theta_x_user_guide_kor_4_각_부위_명칭",
+    "query": "각 부위 명칭",
+    "model_ids": [
+      "RICOH-THETA-X"
+    ],
+    "expected_document_id": "ricoh_theta_x_user_guide_kor",
+    "expected_pages": [
+      4
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_theta_x_user_guide_kor_6_사용하기_전에",
+    "query": "사용하기 전에",
+    "model_ids": [
+      "RICOH-THETA-X"
+    ],
+    "expected_document_id": "ricoh_theta_x_user_guide_kor",
+    "expected_pages": [
+      6
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_theta_x_user_guide_kor_7_6_제공된usb케이블로카메라를컴퓨터에연결하여",
+    "query": "6 제공된USB케이블로카메라를컴퓨터에연결하여",
+    "model_ids": [
+      "RICOH-THETA-X"
+    ],
+    "expected_document_id": "ricoh_theta_x_user_guide_kor",
+    "expected_pages": [
+      7
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_theta_x_user_guide_kor_8_기본_조작",
+    "query": "기본 조작",
+    "model_ids": [
+      "RICOH-THETA-X"
+    ],
+    "expected_document_id": "ricoh_theta_x_user_guide_kor",
+    "expected_pages": [
+      8
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_theta_x_user_guide_kor_8_카메라_켜기",
+    "query": "●●카메라 켜기",
+    "model_ids": [
+      "RICOH-THETA-X"
+    ],
+    "expected_document_id": "ricoh_theta_x_user_guide_kor",
+    "expected_pages": [
+      8
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_theta_x_user_guide_kor_8_초기_설정",
+    "query": "●●초기 설정",
+    "model_ids": [
+      "RICOH-THETA-X"
+    ],
+    "expected_document_id": "ricoh_theta_x_user_guide_kor",
+    "expected_pages": [
+      8
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "setup",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_wg1000_full_kor_2_시작하기_전에",
+    "query": "시작하기 전에",
+    "model_ids": [
+      "RICOH-WG-1000"
+    ],
+    "expected_document_id": "ricoh_wg1000_full_kor",
+    "expected_pages": [
+      2
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_wg1000_full_kor_3_방수_방진_내충격성",
+    "query": "방수/방진/내충격성",
+    "model_ids": [
+      "RICOH-WG-1000"
+    ],
+    "expected_document_id": "ricoh_wg1000_full_kor",
+    "expected_pages": [
+      3
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_wg1000_full_kor_3_방수_참고_사항",
+    "query": "방수 참고 사항:",
+    "model_ids": [
+      "RICOH-WG-1000"
+    ],
+    "expected_document_id": "ricoh_wg1000_full_kor",
+    "expected_pages": [
+      3
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_wg1000_full_kor_4_안전_참고_사항",
+    "query": "안전 참고 사항",
+    "model_ids": [
+      "RICOH-WG-1000"
+    ],
+    "expected_document_id": "ricoh_wg1000_full_kor",
+    "expected_pages": [
+      4
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_wg1000_full_kor_4_카메라_참고_사항",
+    "query": "카메라 참고 사항",
+    "model_ids": [
+      "RICOH-WG-1000"
+    ],
+    "expected_document_id": "ricoh_wg1000_full_kor",
+    "expected_pages": [
+      4
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_wg1000_full_kor_5_배터리_참고_사항",
+    "query": "배터리 참고 사항",
+    "model_ids": [
+      "RICOH-WG-1000"
+    ],
+    "expected_document_id": "ricoh_wg1000_full_kor",
+    "expected_pages": [
+      5
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "power",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_wg1000_full_kor_6_usb_전원_어댑터_참고_사항",
+    "query": "USB 전원 어댑터 참고 사항",
+    "model_ids": [
+      "RICOH-WG-1000"
+    ],
+    "expected_document_id": "ricoh_wg1000_full_kor",
+    "expected_pages": [
+      6
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "power",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_wg1000_full_kor_7_메모리_카드_참고_사항",
+    "query": "메모리 카드 참고 사항",
+    "model_ids": [
+      "RICOH-WG-1000"
+    ],
+    "expected_document_id": "ricoh_wg1000_full_kor",
+    "expected_pages": [
+      7
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "setup",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_wg1000_full_kor_8_기타_참고_사항",
+    "query": "기타 참고 사항",
+    "model_ids": [
+      "RICOH-WG-1000"
+    ],
+    "expected_document_id": "ricoh_wg1000_full_kor",
+    "expected_pages": [
+      8
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_wg1000_full_kor_13_준비_하기",
+    "query": "준비 하기",
+    "model_ids": [
+      "RICOH-WG-1000"
+    ],
+    "expected_document_id": "ricoh_wg1000_full_kor",
+    "expected_pages": [
+      13
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_wg1000_full_kor_13_패키지_구성품_확인",
+    "query": "패키지 구성품 확인",
+    "model_ids": [
+      "RICOH-WG-1000"
+    ],
+    "expected_document_id": "ricoh_wg1000_full_kor",
+    "expected_pages": [
+      13
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_wg1000_full_kor_14_각_부분_이름",
+    "query": "각 부분 이름",
+    "model_ids": [
+      "RICOH-WG-1000"
+    ],
+    "expected_document_id": "ricoh_wg1000_full_kor",
+    "expected_pages": [
+      14
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_wg6_full_kor_5_안전_주의_사항",
+    "query": "안전 주의 사항",
+    "model_ids": [
+      "RICOH-WG-6"
+    ],
+    "expected_document_id": "ricoh_wg6_full_kor",
+    "expected_pages": [
+      5
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_wg6_full_kor_5_기호",
+    "query": "기호",
+    "model_ids": [
+      "RICOH-WG-6"
+    ],
+    "expected_document_id": "ricoh_wg6_full_kor",
+    "expected_pages": [
+      5
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_wg6_full_kor_5_표시_예",
+    "query": "표시 예",
+    "model_ids": [
+      "RICOH-WG-6"
+    ],
+    "expected_document_id": "ricoh_wg6_full_kor",
+    "expected_pages": [
+      5
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "display",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_wg6_full_kor_7_주의",
+    "query": "주의",
+    "model_ids": [
+      "RICOH-WG-6"
+    ],
+    "expected_document_id": "ricoh_wg6_full_kor",
+    "expected_pages": [
+      7
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_wg6_full_kor_12_패키지_구성품_확인",
+    "query": "패키지 구성품 확인",
+    "model_ids": [
+      "RICOH-WG-6"
+    ],
+    "expected_document_id": "ricoh_wg6_full_kor",
+    "expected_pages": [
+      12
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_wg6_full_kor_13_각_부위의_이름과_기능",
+    "query": "각 부위의 이름과 기능",
+    "model_ids": [
+      "RICOH-WG-6"
+    ],
+    "expected_document_id": "ricoh_wg6_full_kor",
+    "expected_pages": [
+      13
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_wg6_full_kor_15_3_전원_버튼",
+    "query": "3 전원 버튼",
+    "model_ids": [
+      "RICOH-WG-6"
+    ],
+    "expected_document_id": "ricoh_wg6_full_kor",
+    "expected_pages": [
+      15
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "power",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_wg6_full_kor_17_화상_모니터_표시",
+    "query": "화상 모니터 표시",
+    "model_ids": [
+      "RICOH-WG-6"
+    ],
+    "expected_document_id": "ricoh_wg6_full_kor",
+    "expected_pages": [
+      17
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "display",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_wg6_full_kor_17_촬영_화면",
+    "query": "촬영 화면",
+    "model_ids": [
+      "RICOH-WG-6"
+    ],
+    "expected_document_id": "ricoh_wg6_full_kor",
+    "expected_pages": [
+      17
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_wg6_full_kor_18_재생_화면",
+    "query": "재생 화면",
+    "model_ids": [
+      "RICOH-WG-6"
+    ],
+    "expected_document_id": "ricoh_wg6_full_kor",
+    "expected_pages": [
+      18
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_wg6_full_kor_18_배터리_상태",
+    "query": "배터리 상태",
+    "model_ids": [
+      "RICOH-WG-6"
+    ],
+    "expected_document_id": "ricoh_wg6_full_kor",
+    "expected_pages": [
+      18
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "power",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_wg6_full_kor_19_촬영_모드",
+    "query": "촬영 모드",
+    "model_ids": [
+      "RICOH-WG-6"
+    ],
+    "expected_document_id": "ricoh_wg6_full_kor",
+    "expected_pages": [
+      19
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_wg8_full_kor_3_상표",
+    "query": "상표",
+    "model_ids": [
+      "RICOH-WG-8"
+    ],
+    "expected_document_id": "ricoh_wg8_full_kor",
+    "expected_pages": [
+      3
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_wg8_full_kor_4_안전_주의_사항",
+    "query": "안전 주의 사항",
+    "model_ids": [
+      "RICOH-WG-8"
+    ],
+    "expected_document_id": "ricoh_wg8_full_kor",
+    "expected_pages": [
+      4
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_wg8_full_kor_4_기호",
+    "query": "기호",
+    "model_ids": [
+      "RICOH-WG-8"
+    ],
+    "expected_document_id": "ricoh_wg8_full_kor",
+    "expected_pages": [
+      4
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_wg8_full_kor_4_표시_예",
+    "query": "표시 예",
+    "model_ids": [
+      "RICOH-WG-8"
+    ],
+    "expected_document_id": "ricoh_wg8_full_kor",
+    "expected_pages": [
+      4
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "display",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_wg8_full_kor_6_주의",
+    "query": "주의",
+    "model_ids": [
+      "RICOH-WG-8"
+    ],
+    "expected_document_id": "ricoh_wg8_full_kor",
+    "expected_pages": [
+      6
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_wg8_full_kor_11_패키지_구성품_확인",
+    "query": "패키지 구성품 확인",
+    "model_ids": [
+      "RICOH-WG-8"
+    ],
+    "expected_document_id": "ricoh_wg8_full_kor",
+    "expected_pages": [
+      11
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_wg8_full_kor_11_pentax_wg_8_충전식_배터리",
+    "query": "PENTAX WG-8 충전식 배터리",
+    "model_ids": [
+      "RICOH-WG-8"
+    ],
+    "expected_document_id": "ricoh_wg8_full_kor",
+    "expected_pages": [
+      11
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "power",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_wg8_full_kor_12_각_부위의_이름과_기능",
+    "query": "각 부위의 이름과 기능",
+    "model_ids": [
+      "RICOH-WG-8"
+    ],
+    "expected_document_id": "ricoh_wg8_full_kor",
+    "expected_pages": [
+      12
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_wg8_full_kor_14_버튼_다이얼",
+    "query": "버튼· 다이얼",
+    "model_ids": [
+      "RICOH-WG-8"
+    ],
+    "expected_document_id": "ricoh_wg8_full_kor",
+    "expected_pages": [
+      14
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_wg8_full_kor_14_3_전원_버튼",
+    "query": "3 전원 버튼",
+    "model_ids": [
+      "RICOH-WG-8"
+    ],
+    "expected_document_id": "ricoh_wg8_full_kor",
+    "expected_pages": [
+      14
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "power",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_wg8_full_kor_16_화상_모니터_표시",
+    "query": "화상 모니터 표시",
+    "model_ids": [
+      "RICOH-WG-8"
+    ],
+    "expected_document_id": "ricoh_wg8_full_kor",
+    "expected_pages": [
+      16
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "display",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_wg8_full_kor_16_촬영_화면",
+    "query": "촬영 화면",
+    "model_ids": [
+      "RICOH-WG-8"
+    ],
+    "expected_document_id": "ricoh_wg8_full_kor",
+    "expected_pages": [
+      16
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_wgm2_full_kor_2_액세서리_목록",
+    "query": "액세서리 목록",
+    "model_ids": [
+      "RICOH-WG-M2"
+    ],
+    "expected_document_id": "ricoh_wgm2_full_kor",
+    "expected_pages": [
+      2
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_wgm2_full_kor_3_wg_m2_기초_1",
+    "query": "WG-M2 기초 1",
+    "model_ids": [
+      "RICOH-WG-M2"
+    ],
+    "expected_document_id": "ricoh_wgm2_full_kor",
+    "expected_pages": [
+      3
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_wgm2_full_kor_7_각_부분_이름",
+    "query": "각 부분 이름",
+    "model_ids": [
+      "RICOH-WG-M2"
+    ],
+    "expected_document_id": "ricoh_wgm2_full_kor",
+    "expected_pages": [
+      7
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_wgm2_full_kor_9_lcd_화면_디스플레이",
+    "query": "LCD 화면 디스플레이",
+    "model_ids": [
+      "RICOH-WG-M2"
+    ],
+    "expected_document_id": "ricoh_wgm2_full_kor",
+    "expected_pages": [
+      9
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_wgm2_full_kor_10_재생_모드_화면_디스플레이",
+    "query": "재생 모드 화면 디스플레이",
+    "model_ids": [
+      "RICOH-WG-M2"
+    ],
+    "expected_document_id": "ricoh_wgm2_full_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_wgm2_full_kor_16_배터리_충전",
+    "query": "배터리 충전",
+    "model_ids": [
+      "RICOH-WG-M2"
+    ],
+    "expected_document_id": "ricoh_wgm2_full_kor",
+    "expected_pages": [
+      16
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "power",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_wgm2_full_kor_17_english",
+    "query": "English",
+    "model_ids": [
+      "RICOH-WG-M2"
+    ],
+    "expected_document_id": "ricoh_wgm2_full_kor",
+    "expected_pages": [
+      17
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_wgm2_full_kor_19_촬영_모드",
+    "query": "촬영 모드",
+    "model_ids": [
+      "RICOH-WG-M2"
+    ],
+    "expected_document_id": "ricoh_wgm2_full_kor",
+    "expected_pages": [
+      19
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_wgm2_full_kor_21_00_00_01",
+    "query": "00:00:01",
+    "model_ids": [
+      "RICOH-WG-M2"
+    ],
+    "expected_document_id": "ricoh_wgm2_full_kor",
+    "expected_pages": [
+      21
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_wgm2_full_kor_21_00_01",
+    "query": "00:01",
+    "model_ids": [
+      "RICOH-WG-M2"
+    ],
+    "expected_document_id": "ricoh_wgm2_full_kor",
+    "expected_pages": [
+      21
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "general",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_wgm2_full_kor_31_촬영_모드_설정",
+    "query": "촬영 모드 설정",
+    "model_ids": [
+      "RICOH-WG-M2"
+    ],
+    "expected_document_id": "ricoh_wgm2_full_kor",
+    "expected_pages": [
+      31
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "setup",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "auto_ricoh_wgm2_full_kor_38_동영상_shake_reduction_설정",
+    "query": "동영상 Shake Reduction 설정",
+    "model_ids": [
+      "RICOH-WG-M2"
+    ],
+    "expected_document_id": "ricoh_wgm2_full_kor",
+    "expected_pages": [
+      38
+    ],
+    "query_type": "exact_keyword",
+    "feature_category": "video",
+    "difficulty": "easy",
+    "source_method": "section_title_weak_label",
+    "top_k": 5
+  }
+]

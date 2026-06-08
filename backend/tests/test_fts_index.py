@@ -3,6 +3,7 @@ from pathlib import Path
 from backend.app.indexing.chunker import ExtractedChunk
 from backend.app.indexing.fts_index import (
     build_fts_index,
+    parse_fts_index_args,
     search_fts_index,
 )
 
@@ -112,6 +113,26 @@ def test_search_fts_index_keeps_short_korean_token_search(tmp_path: Path) -> Non
     assert results[0].page_start == 1
 
 
+def test_search_fts_index_relaxes_multi_term_query_when_extra_word_misses(
+    tmp_path: Path,
+) -> None:
+    chunks_dir = tmp_path / "chunks"
+    chunks_dir.mkdir()
+    _write_chunks(
+        chunks_dir / "sample_manual.jsonl",
+        (
+            _chunk(content="배터리 충전 절차"),
+            _chunk(chunk_id="sample_manual:page:2", page=2, content="포맷 설정"),
+        ),
+    )
+    index_path = tmp_path / "fts" / "lumix_manuals.sqlite3"
+    _ = build_fts_index(chunks_dir=chunks_dir, index_path=index_path)
+
+    results = search_fts_index(index_path=index_path, query="배터리 충전 방법", top_k=5)
+
+    assert results[0].page_start == 1
+
+
 def test_search_fts_index_handles_punctuation_in_korean_query(tmp_path: Path) -> None:
     chunks_dir = tmp_path / "chunks"
     chunks_dir.mkdir()
@@ -183,6 +204,12 @@ def test_search_fts_index_filters_model_before_truncating_results(
     assert len(results) == 1
     assert results[0].model_ids == ("DC-S1M2",)
     assert results[0].page_start == 25
+
+
+def test_parse_fts_index_args_reads_brand_id() -> None:
+    args = parse_fts_index_args(("--brand-id", "ricoh"))
+
+    assert args.brand_id == "ricoh"
 
 
 def _write_chunks(path: Path, chunks: tuple[ExtractedChunk, ...]) -> None:

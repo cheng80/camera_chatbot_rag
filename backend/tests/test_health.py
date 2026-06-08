@@ -33,8 +33,7 @@ def test_app_config_when_brand_is_configured(
     monkeypatch: pytest.MonkeyPatch,
 ) -> None:
     monkeypatch.setenv("CAMERA_APP_NAME", "Camera Manual Assistant")
-    monkeypatch.setenv("CAMERA_BRAND_NAME", "Sony Alpha")
-    monkeypatch.setenv("CAMERA_BRAND_MARK", "SA")
+    monkeypatch.setenv("CAMERA_ACTIVE_BRAND_ID", "panasonic_lumix")
     get_settings.cache_clear()
     client = TestClient(create_app())
 
@@ -43,7 +42,20 @@ def test_app_config_when_brand_is_configured(
     assert response.status_code == 200
     assert response.json() == {
         "app_name": "Camera Manual Assistant",
-        "brand_name": "Sony Alpha",
-        "brand_mark": "SA",
+        "active_brand_id": "panasonic_lumix",
+        "brand_name": "Panasonic LUMIX",
+        "brand_mark": "PL",
+        "brands": [
+            {
+                "brand_id": "panasonic_lumix",
+                "brand_name": "Panasonic LUMIX",
+                "brand_mark": "PL",
+            },
+            {
+                "brand_id": "ricoh",
+                "brand_name": "Ricoh / PENTAX",
+                "brand_mark": "R",
+            },
+        ],
     }
     get_settings.cache_clear()

@@ -1,0 +1,142 @@
+{
+  "brand_id": "ricoh",
+  "display_name": "Ricoh / PENTAX",
+  "product_lines": [
+    {
+      "id": "medium_format",
+      "label_ko": "중형카메라"
+    },
+    {
+      "id": "360_camera",
+      "label_ko": "360카메라"
+    },
+    {
+      "id": "waterproof_camera",
+      "label_ko": "방수카메라"
+    },
+    {
+      "id": "dslr",
+      "label_ko": "DSLR"
+    },
+    {
+      "id": "film_camera",
+      "label_ko": "필름 카메라"
+    },
+    {
+      "id": "compact_camera",
+      "label_ko": "컴팩트 카메라"
+    }
+  ],
+  "classification_rules": [
+    {
+      "match": "model_id_or_name_contains_645",
+      "product_line": "medium_format"
+    },
+    {
+      "match": "model_id_or_name_contains_WG",
+      "product_line": "waterproof_camera"
+    },
+    {
+      "match": "model_id_or_name_contains_GR",
+      "product_line": "compact_camera"
+    },
+    {
+      "match": "model_id_or_name_contains_PENTAX_17",
+      "product_line": "film_camera"
+    },
+    {
+      "match": "model_id_or_name_contains_THETA",
+      "product_line": "360_camera"
+    },
+    {
+      "match": "fallback",
+      "product_line": "dslr"
+    }
+  ],
+  "model_aliases": {
+    "PENTAX-645Z": [
+      "645Z"
+    ],
+    "PENTAX-K-1": [
+      "K-1"
+    ],
+    "PENTAX-K-1-MARK-II": [
+      "K-1 Mark II",
+      "K-1MarkII",
+      "K1M2"
+    ],
+    "PENTAX-K-3-MARK-III": [
+      "K-3 Mark III",
+      "K-3 III",
+      "K3M3"
+    ],
+    "PENTAX-K-70": [
+      "K-70"
+    ],
+    "PENTAX-KP": [
+      "KP"
+    ],
+    "PENTAX-K-S2": [
+      "K-S2"
+    ],
+    "PENTAX-17": [
+      "PENTAX 17"
+    ],
+    "RICOH-GR": [
+      "GR"
+    ],
+    "RICOH-GR-II": [
+      "GR II",
+      "GRII",
+      "GR2"
+    ],
+    "RICOH-GR-DIGITAL-III": [
+      "GR DIGITAL III"
+    ],
+    "RICOH-GR-III": [
+      "GR III",
+      "GRIII",
+      "GR3"
+    ],
+    "RICOH-GR-IIIX": [
+      "GR IIIx",
+      "GRIIIx",
+      "GRIIIX",
+      "GR3x",
+      "GR3X"
+    ],
+    "RICOH-GR-IV": [
+      "GR IV",
+      "GRIV",
+      "GR4"
+    ],
+    "RICOH-GR-IV-MONOCHROME": [
+      "GR IV Monochrome",
+      "GR IV 모노크롬",
+      "GRIV Monochrome",
+      "GRIV 모노크롬",
+      "GR4 Monochrome",
+      "GR4 모노크롬"
+    ],
+    "RICOH-THETA-V": [
+      "THETA V"
+    ],
+    "RICOH-THETA-X": [
+      "THETA X"
+    ],
+    "RICOH-WG-6": [
+      "WG-6"
+    ],
+    "RICOH-WG-8": [
+      "WG-8"
+    ],
+    "RICOH-WG-1000": [
+      "WG-1000"
+    ],
+    "RICOH-WG-M2": [
+      "WG-M2"
+    ]
+  },
+  "community_source": "data/eval/community/ricoh",
+  "raw_manual_source": "/Users/cheng80/Desktop/RICOH"
+}

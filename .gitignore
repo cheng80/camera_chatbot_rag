@@ -173,6 +173,20 @@ data/indexes/fts/**/*
 !data/indexes/fts/.gitkeep
 data/indexes/vector/**/*
 !data/indexes/vector/.gitkeep
+data/brands/*/raw/manuals/**/*
+!data/brands/*/raw/manuals/.gitkeep
+data/brands/*/processed/pages/**/*
+!data/brands/*/processed/pages/.gitkeep
+data/brands/*/processed/chunks/**/*
+!data/brands/*/processed/chunks/.gitkeep
+data/brands/*/processed/page_images/**/*
+!data/brands/*/processed/page_images/.gitkeep
+data/brands/*/processed/reports/**/*
+!data/brands/*/processed/reports/.gitkeep
+data/brands/*/indexes/fts/**/*
+!data/brands/*/indexes/fts/.gitkeep
+data/brands/*/indexes/vector/**/*
+!data/brands/*/indexes/vector/.gitkeep
 
 # Leveling simulation / ML generated heavy artifacts
 logs/sim/*.jsonl

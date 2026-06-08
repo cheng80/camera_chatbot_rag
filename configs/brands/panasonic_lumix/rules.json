@@ -1,0 +1,20 @@
+{
+  "brand_id": "panasonic_lumix",
+  "display_name": "Panasonic LUMIX",
+  "model_alias_notes": "Existing Panasonic model aliases remain implemented in query_normalizer until rules ingestion is wired.",
+  "product_lines": [
+    {
+      "id": "lumix_s",
+      "label_ko": "풀프레임 카메라"
+    },
+    {
+      "id": "lumix_g",
+      "label_ko": "포서드마운트 카메라"
+    },
+    {
+      "id": "lumix_lx_tz",
+      "label_ko": "컴팩트 카메라"
+    }
+  ],
+  "community_source": "data/eval/community/panasonic_lumix"
+}

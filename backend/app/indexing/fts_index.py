@@ -6,6 +6,7 @@ from typing import ClassVar, Final
 
 from pydantic import BaseModel, ConfigDict, Field, TypeAdapter
 
+from backend.app.core.settings import get_settings
 from backend.app.indexing.chunker import ExtractedChunk
 from backend.app.indexing.fts_schema import (
     CREATE_MODEL_INDEX_SQL,
@@ -23,16 +24,37 @@ from backend.app.indexing.fts_schema import (
     SEARCH_SQL,
     TRIGRAM_SEARCH_SQL,
 )
+from backend.app.services.brand_data_paths import brand_data_paths
+from backend.app.services.brand_registry import resolve_brand
 
 DEFAULT_FTS_INDEX_PATH: Final = Path("data/indexes/fts/lumix_manuals.sqlite3")
 DEFAULT_CHUNKS_DIR: Final = Path("data/processed/chunks")
+DEFAULT_BRAND_ID: Final = "panasonic_lumix"
+BRAND_ID_FLAG: Final = "--brand-id"
 MIN_TRIGRAM_QUERY_LENGTH: Final = 3
+RELAXED_QUERY_STOP_TERMS: Final = frozenset({"방법"})
 CHUNK_ADAPTER: Final[TypeAdapter[ExtractedChunk]] = TypeAdapter(ExtractedChunk)
 type RawFtsRow = tuple[str, str, str, int, int, str | None, str, str, float]
 type SearchSqlPair = tuple[str, str]
 RAW_FTS_ROWS_ADAPTER: Final[TypeAdapter[tuple[RawFtsRow, ...]]] = TypeAdapter(
     tuple[RawFtsRow, ...],
 )
+
+
+class FtsIndexArgumentError(ValueError):
+    @classmethod
+    def missing_brand_id(cls) -> "FtsIndexArgumentError":
+        return cls(f"{BRAND_ID_FLAG} requires a value")
+
+    @classmethod
+    def unexpected_argument(cls, value: str) -> "FtsIndexArgumentError":
+        return cls(f"unexpected argument: {value}")
+
+
+class FtsIndexArgs(BaseModel):
+    model_config: ClassVar[ConfigDict] = ConfigDict(frozen=True)
+
+    brand_id: str
 
 
 class FtsIndexReport(BaseModel):
@@ -85,6 +107,7 @@ def search_fts_index(
     if not match_query:
         return ()
     trigram_query = _to_trigram_query(query)
+    relaxed_match_query = _to_relaxed_match_query(query)
     with sqlite3.connect(index_path) as connection:
         rows = _merge_rows(
             primary_rows=_search_rows(
@@ -101,6 +124,13 @@ def search_fts_index(
                 top_k=top_k,
                 sql_pair=(FILTERED_TRIGRAM_SEARCH_SQL, TRIGRAM_SEARCH_SQL),
             ),
+            relaxed_rows=_search_rows(
+                connection=connection,
+                match_query=relaxed_match_query,
+                model_ids=model_ids,
+                top_k=top_k,
+                sql_pair=(FILTERED_SEARCH_SQL, SEARCH_SQL),
+            ),
         )
     return tuple(
         result
@@ -115,14 +145,39 @@ def load_chunks(*, chunks_dir: Path) -> Iterable[ExtractedChunk]:
 
 
 def main() -> None:
+    try:
+        args = parse_fts_index_args(tuple(sys.argv[1:]))
+    except FtsIndexArgumentError as error:
+        raise SystemExit(str(error)) from error
+    brand = resolve_brand(settings=get_settings(), brand_id=args.brand_id)
+    paths = brand_data_paths(brand.data_dir)
     report = build_fts_index(
-        chunks_dir=DEFAULT_CHUNKS_DIR,
-        index_path=DEFAULT_FTS_INDEX_PATH,
+        chunks_dir=paths.processed_chunks_dir,
+        index_path=paths.fts_index_path,
     )
     message = (
         f"indexed {report.chunk_count} chunks from {report.document_count} documents\n"
     )
     _ = sys.stdout.write(message)
+
+
+def parse_fts_index_args(argv: Sequence[str]) -> FtsIndexArgs:
+    brand_id = DEFAULT_BRAND_ID
+    pending_brand_id = False
+    for value in argv:
+        if pending_brand_id:
+            if not value or value.startswith("--"):
+                raise FtsIndexArgumentError.missing_brand_id()
+            brand_id = value
+            pending_brand_id = False
+            continue
+        if value == BRAND_ID_FLAG:
+            pending_brand_id = True
+            continue
+        raise FtsIndexArgumentError.unexpected_argument(value)
+    if pending_brand_id:
+        raise FtsIndexArgumentError.missing_brand_id()
+    return FtsIndexArgs(brand_id=brand_id)
 
 
 def _create_schema(connection: sqlite3.Connection) -> None:
@@ -230,10 +285,11 @@ def _merge_rows(
     *,
     primary_rows: tuple[RawFtsRow, ...],
     fallback_rows: tuple[RawFtsRow, ...],
+    relaxed_rows: tuple[RawFtsRow, ...] = (),
 ) -> tuple[RawFtsRow, ...]:
     seen_chunk_ids: set[str] = set()
     merged: list[RawFtsRow] = []
-    for row in (*primary_rows, *fallback_rows):
+    for row in (*primary_rows, *fallback_rows, *relaxed_rows):
         if row[0] in seen_chunk_ids:
             continue
         seen_chunk_ids.add(row[0])
@@ -260,6 +316,17 @@ def _result_from_row(
 def _to_match_query(query: str) -> str:
     terms = tuple(term.strip() for term in query.split() if term.strip())
     return " ".join(f'"{_escape_match_term(term)}"' for term in terms)
+
+
+def _to_relaxed_match_query(query: str) -> str:
+    terms = tuple(
+        term.strip()
+        for term in query.split()
+        if term.strip() and term.strip() not in RELAXED_QUERY_STOP_TERMS
+    )
+    if len(terms) <= 1:
+        return ""
+    return " OR ".join(f'"{_escape_match_term(term)}"' for term in terms)
 
 
 def _to_trigram_query(query: str) -> str:

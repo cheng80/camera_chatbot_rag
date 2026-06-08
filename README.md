@@ -17,7 +17,7 @@
 
 ```bash
 uv sync
-uv run uvicorn backend.app.main:app --host 127.0.0.1 --port 8010 --reload
+scripts/run_local_server.sh
 ```
 
 브라우저에서 `http://127.0.0.1:8010`을 엽니다.
@@ -31,14 +31,47 @@ uv run uvicorn backend.app.main:app --host 127.0.0.1 --port 8010 --reload
 scripts/run_quick_tunnel.sh
 ```
 
-기본 대상은 `http://127.0.0.1:8010`입니다. 포트를 바꿔야 하면:
-
-```bash
-CAMERA_TUNNEL_PORT=8000 scripts/run_quick_tunnel.sh
-```
+기본 대상은 `http://127.0.0.1:8010`입니다.
 
 스크립트가 직접 띄운 uvicorn 로그는 기본적으로 `.quick-tunnel-uvicorn.log`에
 저장됩니다.
+
+브랜드별 PDF와 색인은 하나의 프로젝트 안에서 분리하고, 앱 포트는 하나만 씁니다.
+웹 상단 브랜드 선택기는 `configs/brands.json`의 브랜드 목록을 사용합니다.
+각 브랜드의 `data_dir`는 다음 구조를 가진 브랜드 데이터 루트를 가리킵니다.
+
+```text
+data/brands/<brand_id>/
+  raw/manuals/
+  registry/
+  processed/pages/
+  processed/chunks/
+  processed/page_images/
+  indexes/fts/
+  indexes/vector/
+```
+
+```json
+{
+  "brand_id": "ricoh",
+  "brand_name": "Ricoh / PENTAX",
+  "brand_mark": "R",
+  "data_dir": "data/brands/ricoh",
+  "rules_dir": "configs/brands/ricoh"
+}
+```
+
+브랜드별 모델 별칭, 제품군 분류, 커뮤니티 후보 위치 같은 규칙은
+`configs/brands/{brand_id}/rules.json`에 둡니다.
+
+브랜드별 PDF 추출, FTS 색인, 약라벨 검색 평가셋 생성은 같은 `brand_id`로
+실행합니다.
+
+```bash
+.venv/bin/python -m backend.app.indexing.batch_extractor --brand-id ricoh
+.venv/bin/python -m backend.app.indexing.fts_index --brand-id ricoh
+.venv/bin/python -m backend.app.evaluation.generate_search_eval_cases --brand-id ricoh --limit 300
+```
 
 ## 주요 디렉터리
 
