@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="820" viewBox="0 0 1400 820">
+  <rect width="1400" height="820" fill="#F7F9FA"/>
+  <rect x="54" y="42" width="1292" height="118" rx="18" fill="#EEF7F7"/>
+  <text x="86" y="94" font-family="Arial, sans-serif" font-size="40" font-weight="700" fill="#1F2933">Search Quality KPI Snapshot</text>
+  <text x="86" y="132" font-family="Arial, sans-serif" font-size="20" fill="#697386">Current retrieval and API contract evidence for the technical review</text>
+  <line x1="90" y1="660" x2="1320" y2="660" stroke="#CBD5E1" stroke-width="2"/>
+  <line x1="90" y1="244" x2="1320" y2="244" stroke="#CBD5E1" stroke-width="2" stroke-dasharray="8 8"/>
+  <text x="1182" y="235" font-family="Arial, sans-serif" font-size="19" fill="#5F6B7A">95% target</text>
+
+  <g font-family="Arial, sans-serif">
+    <rect x="135" y="220" width="130" height="440" rx="10" fill="#116466"/>
+    <rect x="128" y="178" width="144" height="36" rx="18" fill="#FFFFFF" stroke="#DDE6EF"/>
+    <text x="200" y="203" text-anchor="middle" font-size="23" font-weight="700" fill="#1F2933">100.0%</text>
+    <text x="200" y="702" text-anchor="middle" font-size="21" font-weight="700" fill="#344054">Panasonic</text>
+    <text x="200" y="730" text-anchor="middle" font-size="19" fill="#697386">document hit</text>
+
+    <rect x="375" y="246.4" width="130" height="413.6" rx="10" fill="#D9B44A"/>
+    <rect x="368" y="204" width="144" height="36" rx="18" fill="#FFFFFF" stroke="#DDE6EF"/>
+    <text x="440" y="229" text-anchor="middle" font-size="23" font-weight="700" fill="#1F2933">94.0%</text>
+    <text x="440" y="702" text-anchor="middle" font-size="21" font-weight="700" fill="#344054">Panasonic</text>
+    <text x="440" y="730" text-anchor="middle" font-size="19" fill="#697386">page hit</text>
+
+    <rect x="615" y="221.8" width="130" height="438.2" rx="10" fill="#2C7A7B"/>
+    <rect x="608" y="180" width="144" height="36" rx="18" fill="#FFFFFF" stroke="#DDE6EF"/>
+    <text x="680" y="205" text-anchor="middle" font-size="23" font-weight="700" fill="#1F2933">99.6%</text>
+    <text x="680" y="702" text-anchor="middle" font-size="21" font-weight="700" fill="#344054">Ricoh*</text>
+    <text x="680" y="730" text-anchor="middle" font-size="19" fill="#697386">document hit</text>
+
+    <rect x="855" y="223.1" width="130" height="436.9" rx="10" fill="#2C7A7B"/>
+    <rect x="848" y="181" width="144" height="36" rx="18" fill="#FFFFFF" stroke="#DDE6EF"/>
+    <text x="920" y="206" text-anchor="middle" font-size="23" font-weight="700" fill="#1F2933">99.3%</text>
+    <text x="920" y="702" text-anchor="middle" font-size="21" font-weight="700" fill="#344054">Ricoh*</text>
+    <text x="920" y="730" text-anchor="middle" font-size="19" fill="#697386">page hit</text>
+
+    <rect x="1095" y="220" width="130" height="440" rx="10" fill="#116466"/>
+    <rect x="1088" y="178" width="144" height="36" rx="18" fill="#FFFFFF" stroke="#DDE6EF"/>
+    <text x="1160" y="203" text-anchor="middle" font-size="23" font-weight="700" fill="#1F2933">100.0%</text>
+    <text x="1160" y="702" text-anchor="middle" font-size="21" font-weight="700" fill="#344054">Search API</text>
+    <text x="1160" y="730" text-anchor="middle" font-size="19" fill="#697386">smoke pass</text>
+  </g>
+
+  <rect x="70" y="766" width="1260" height="42" rx="8" fill="#EEF2F7"/>
+  <text x="90" y="793" font-family="Arial, sans-serif" font-size="18" fill="#697386">* Ricoh/PENTAX values are section-title weak-label baselines, not human-verified locked evaluation results.</text>
+</svg>
