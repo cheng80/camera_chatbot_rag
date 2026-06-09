@@ -10,7 +10,7 @@
 |---|---|---|
 | 기본 응답 방식 | `card_template` 유지 | 10문항 alias/source 개선 평가에서 답변 관련성, PDF 충실도, 품질 전체 100.0% |
 | LLM 역할 | 기본 검색이 아니라 선택 카드의 짧은 문장 보정 | LLM은 source ref를 수정하지 않고 실패 시 원본 summary 유지 |
-| 검색 인프라 | SQLite FTS5 BM25 + trigram 중심 | Panasonic seed/API smoke에서 기준선 충족, 외부 검색 인프라 도입 근거는 아직 부족 |
+| 검색 인프라 | SQLite FTS5 BM25 + trigram 기준선, section/vector 보강 필요 | Panasonic seed/API smoke에서 기준선은 충족하지만, chunk audit v2 기준 section-ready chunk가 74.6%라 기능 단위 안정화가 먼저 필요 |
 | 품질 보강 우선순위 | 300개 잠금 평가셋과 출처 정확도 측정 | 현재 50개 seed와 Ricoh weak-label은 최종 품질 주장에는 부족 |
 
 ```text
@@ -37,7 +37,8 @@
 | Search API smoke | 카드 source 존재율 | 100.0% | 100% | 통과 |
 | Search API smoke | viewer URL 형식 | 100.0% | 100% | 통과 |
 | Search API smoke | 모델 필터 계약 | 100.0% | 100% | 통과 |
-| Chunk quality | Flagged chunks | 2,439 / 275,372 | issue rate 0.9% | 관리 가능 |
+| Chunk quality | Flagged chunks | 2,439 / 275,372 | issue rate 0.9% | 단편 노이즈는 관리 가능 |
+| Chunk quality | Section-ready chunks | 205,561 / 275,372 | ready rate 74.6% | section-level retrieval 보강 필요 |
 | 기본 답변 | `card_template` 품질 전체 | 100.0% | 10문항 개선 평가 | 운영 기본값 |
 | Optional rewrite | Unsloth E4B answer-only | 100.0% | 10문항 best run | 변동성 있음 |
 | Optional rewrite | 평균 지연 | 1.1s-5.8s | 검색 기본 경로에는 부담 | 선택 기능 |
@@ -121,9 +122,10 @@ PDF Viewer Link
 | `card_template` 기본 응답 | 빠름, JSON 안정, source ref 고정 | 문장 자연스러움 제한 | 기본값 |
 | Selected-card LLM rewrite | 사용자-facing 문장 개선 | latency와 생성 변동성 | 선택 기능 |
 | Full LLM answer generation | 자연어 표현력 높음 | source 조작, JSON 불안정, 지연 | 보류 |
-| SQLite FTS5 BM25 | 설치 단순, 로컬 빠름, 평가 기준선 양호 | 긴 자연어/의미 검색 한계 가능 | 기본 검색 |
+| SQLite FTS5 BM25 | 설치 단순, 로컬 빠름, 평가 기준선 양호 | 긴 자연어/의미 검색과 불안정한 chunk 단위에 한계 | baseline 검색 |
 | Trigram fallback | 붙여쓰기/짧은 메뉴명 보완 | 노이즈 후보 증가 가능 | 보조 검색 |
-| Optional vector adapter | 의미 검색 확장 지점 | 현재 품질 근거는 약함 | 실험 단계 |
+| Section-level retrieval | 기능 단위 검색과 wiki/vector 기반을 안정화 | section 재구성 품질을 추가 측정해야 함 | 다음 검증 대상 |
+| Optional vector adapter | 의미 검색 확장 지점 | 현재 품질 근거는 약함 | section 단위 안정화 후 실험 |
 | Elasticsearch/Vector DB | 대규모 검색 확장성 | 운영 복잡도, 아직 정량 근거 부족 | 잠금 평가 후 판단 |
 
 ## 6. LLM 평가 요약

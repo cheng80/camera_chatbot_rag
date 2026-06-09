@@ -10,6 +10,16 @@
     "toc_reference": 29,
     "tiny_chunk": 2410
   },
+  "section_readiness": {
+    "chunk_count": 275372,
+    "ready_chunk_count": 205561,
+    "ready_chunk_rate": 0.7464847551675552,
+    "section_group_count": 31502,
+    "fragmented_section_group_count": 12,
+    "missing_section_title_chunk_count": 46,
+    "toc_or_index_chunk_count": 443,
+    "tiny_chunk_count": 2410
+  },
   "examples": [
     {
       "chunk_id": "dc_g100_kor:opendl:94:939",
@@ -560,6 +570,556 @@
       ],
       "section_title": "색인",
       "content_preview": "ㅂ"
+    },
+    {
+      "chunk_id": "dc_g100d_full_kor:opendl:491:6564",
+      "document_id": "dc_g100d_full_kor",
+      "page": 491,
+      "chunk_type": "paragraph",
+      "issue_kinds": [
+        "tiny_chunk"
+      ],
+      "section_title": "색인",
+      "content_preview": "ㅅ"
+    },
+    {
+      "chunk_id": "dc_g100d_full_kor:opendl:492:6565",
+      "document_id": "dc_g100d_full_kor",
+      "page": 492,
+      "chunk_type": "paragraph",
+      "issue_kinds": [
+        "tiny_chunk"
+      ],
+      "section_title": "색인",
+      "content_preview": "ㅇ"
+    },
+    {
+      "chunk_id": "dc_g100d_full_kor:opendl:492:6566",
+      "document_id": "dc_g100d_full_kor",
+      "page": 492,
+      "chunk_type": "paragraph",
+      "issue_kinds": [
+        "tiny_chunk"
+      ],
+      "section_title": "색인",
+      "content_preview": "ㅈ"
+    },
+    {
+      "chunk_id": "dc_g100d_full_kor:opendl:493:6567",
+      "document_id": "dc_g100d_full_kor",
+      "page": 493,
+      "chunk_type": "paragraph",
+      "issue_kinds": [
+        "tiny_chunk"
+      ],
+      "section_title": "색인",
+      "content_preview": "ㅊ"
+    },
+    {
+      "chunk_id": "dc_g100d_full_kor:opendl:493:6568",
+      "document_id": "dc_g100d_full_kor",
+      "page": 493,
+      "chunk_type": "paragraph",
+      "issue_kinds": [
+        "tiny_chunk"
+      ],
+      "section_title": "색인",
+      "content_preview": "ㅋ"
+    },
+    {
+      "chunk_id": "dc_g100d_full_kor:opendl:493:6569",
+      "document_id": "dc_g100d_full_kor",
+      "page": 493,
+      "chunk_type": "paragraph",
+      "issue_kinds": [
+        "tiny_chunk"
+      ],
+      "section_title": "색인",
+      "content_preview": "ㅌ"
+    },
+    {
+      "chunk_id": "dc_g100d_full_kor:opendl:493:6570",
+      "document_id": "dc_g100d_full_kor",
+      "page": 493,
+      "chunk_type": "paragraph",
+      "issue_kinds": [
+        "tiny_chunk"
+      ],
+      "section_title": "색인",
+      "content_preview": "ㅍ"
+    },
+    {
+      "chunk_id": "dc_g100d_full_kor:opendl:494:6571",
+      "document_id": "dc_g100d_full_kor",
+      "page": 494,
+      "chunk_type": "paragraph",
+      "issue_kinds": [
+        "tiny_chunk"
+      ],
+      "section_title": "색인",
+      "content_preview": "ㅎ"
+    },
+    {
+      "chunk_id": "dc_g95_kor:opendl:43:654",
+      "document_id": "dc_g95_kor",
+      "page": 43,
+      "chunk_type": "paragraph",
+      "issue_kinds": [
+        "tiny_chunk"
+      ],
+      "section_title": "셔터 버튼은 2 단계로 작동됩니다 . 셔터버튼을 반쯤 눌러 초점을 맞추십시오 .",
+      "content_preview": "F"
+    },
+    {
+      "chunk_id": "dc_g95_kor:opendl:51:824",
+      "document_id": "dc_g95_kor",
+      "page": 51,
+      "chunk_type": "paragraph",
+      "issue_kinds": [
+        "tiny_chunk"
+      ],
+      "section_title": "재생모드에서",
+      "content_preview": "s"
+    },
+    {
+      "chunk_id": "dc_g95_kor:opendl:51:827",
+      "document_id": "dc_g95_kor",
+      "page": 51,
+      "chunk_type": "paragraph",
+      "issue_kinds": [
+        "tiny_chunk"
+      ],
+      "section_title": "재생모드에서",
+      "content_preview": "L"
+    },
+    {
+      "chunk_id": "dc_g95_kor:opendl:51:838",
+      "document_id": "dc_g95_kor",
+      "page": 51,
+      "chunk_type": "paragraph",
+      "issue_kinds": [
+        "tiny_chunk"
+      ],
+      "section_title": "재생모드에서",
+      "content_preview": "L"
+    },
+    {
+      "chunk_id": "dc_g95_kor:opendl:59:989",
+      "document_id": "dc_g95_kor",
+      "page": 59,
+      "chunk_type": "paragraph",
+      "issue_kinds": [
+        "tiny_chunk"
+      ],
+      "section_title": "AFS",
+      "content_preview": "L"
+    },
+    {
+      "chunk_id": "dc_g95_kor:opendl:59:993",
+      "document_id": "dc_g95_kor",
+      "page": 59,
+      "chunk_type": "paragraph",
+      "issue_kinds": [
+        "tiny_chunk"
+      ],
+      "section_title": "AFS",
+      "content_preview": "L"
+    },
+    {
+      "chunk_id": "dc_g95_kor:opendl:78:1412",
+      "document_id": "dc_g95_kor",
+      "page": 78,
+      "chunk_type": "paragraph",
+      "issue_kinds": [
+        "tiny_chunk"
+      ],
+      "section_title": "필드 깊이 특성",
+      "content_preview": "큼"
+    },
+    {
+      "chunk_id": "dc_g95_kor:opendl:78:1418",
+      "document_id": "dc_g95_kor",
+      "page": 78,
+      "chunk_type": "paragraph",
+      "issue_kinds": [
+        "tiny_chunk"
+      ],
+      "section_title": "필드 깊이 특성",
+      "content_preview": "멈"
+    },
+    {
+      "chunk_id": "dc_g95_kor:opendl:96:1811",
+      "document_id": "dc_g95_kor",
+      "page": 96,
+      "chunk_type": "paragraph",
+      "issue_kinds": [
+        "tiny_chunk"
+      ],
+      "section_title": "[AFF] 및 [AFC] 를 사용하여 촬영 시",
+      "content_preview": "r"
+    },
+    {
+      "chunk_id": "dc_g95_kor:opendl:96:1813",
+      "document_id": "dc_g95_kor",
+      "page": 96,
+      "chunk_type": "paragraph",
+      "issue_kinds": [
+        "tiny_chunk"
+      ],
+      "section_title": "[AFF] 및 [AFC] 를 사용하여 촬영 시",
+      "content_preview": "s"
+    },
+    {
+      "chunk_id": "dc_g95_kor:opendl:102:1958",
+      "document_id": "dc_g95_kor",
+      "page": 102,
+      "chunk_type": "paragraph",
+      "issue_kinds": [
+        "tiny_chunk"
+      ],
+      "section_title": "MENU",
+      "content_preview": "s"
+    },
+    {
+      "chunk_id": "dc_g95_kor:opendl:104:1989",
+      "document_id": "dc_g95_kor",
+      "page": 104,
+      "chunk_type": "paragraph",
+      "issue_kinds": [
+        "tiny_chunk"
+      ],
+      "section_title": "그룹의 예",
+      "content_preview": "s"
+    },
+    {
+      "chunk_id": "dc_g95_kor:opendl:107:2058",
+      "document_id": "dc_g95_kor",
+      "page": 107,
+      "chunk_type": "paragraph",
+      "issue_kinds": [
+        "tiny_chunk"
+      ],
+      "section_title": "MF 로 촬영하기",
+      "content_preview": "A"
+    },
+    {
+      "chunk_id": "dc_g95_kor:opendl:107:2059",
+      "document_id": "dc_g95_kor",
+      "page": 107,
+      "chunk_type": "paragraph",
+      "issue_kinds": [
+        "tiny_chunk"
+      ],
+      "section_title": "MF 로 촬영하기",
+      "content_preview": "B"
+    },
+    {
+      "chunk_id": "dc_g95_kor:opendl:107:2060",
+      "document_id": "dc_g95_kor",
+      "page": 107,
+      "chunk_type": "paragraph",
+      "issue_kinds": [
+        "tiny_chunk"
+      ],
+      "section_title": "MF 로 촬영하기",
+      "content_preview": "C"
+    },
+    {
+      "chunk_id": "dc_g95_kor:opendl:107:2062",
+      "document_id": "dc_g95_kor",
+      "page": 107,
+      "chunk_type": "paragraph",
+      "issue_kinds": [
+        "tiny_chunk"
+      ],
+      "section_title": "MF 로 촬영하기",
+      "content_preview": "D"
+    },
+    {
+      "chunk_id": "dc_g95_kor:opendl:108:2082",
+      "document_id": "dc_g95_kor",
+      "page": 108,
+      "chunk_type": "paragraph",
+      "issue_kinds": [
+        "tiny_chunk"
+      ],
+      "section_title": "AF",
+      "content_preview": "s"
+    },
+    {
+      "chunk_id": "dc_g95_kor:opendl:117:2276",
+      "document_id": "dc_g95_kor",
+      "page": 117,
+      "chunk_type": "paragraph",
+      "issue_kinds": [
+        "tiny_chunk"
+      ],
+      "section_title": "화이트밸런스 미세하게 조절하기",
+      "content_preview": "G"
+    },
+    {
+      "chunk_id": "dc_g95_kor:opendl:117:2278",
+      "document_id": "dc_g95_kor",
+      "page": 117,
+      "chunk_type": "caption",
+      "issue_kinds": [
+        "tiny_chunk"
+      ],
+      "section_title": "화이트밸런스 미세하게 조절하기",
+      "content_preview": "M"
+    },
+    {
+      "chunk_id": "dc_g95_kor:opendl:119:2301",
+      "document_id": "dc_g95_kor",
+      "page": 119,
+      "chunk_type": "paragraph",
+      "issue_kinds": [
+        "tiny_chunk"
+      ],
+      "section_title": "MENU > [촬영] > [연사속도]",
+      "content_preview": "L"
+    },
+    {
+      "chunk_id": "dc_g95_kor:opendl:119:2304",
+      "document_id": "dc_g95_kor",
+      "page": 119,
+      "chunk_type": "paragraph",
+      "issue_kinds": [
+        "tiny_chunk"
+      ],
+      "section_title": "MENU > [촬영] > [연사속도]",
+      "content_preview": "H"
+    },
+    {
+      "chunk_id": "dc_g95_kor:opendl:120:2322",
+      "document_id": "dc_g95_kor",
+      "page": 120,
+      "chunk_type": "paragraph",
+      "issue_kinds": [
+        "tiny_chunk"
+      ],
+      "section_title": "MENU > [촬영] > [연사속도]",
+      "content_preview": "사"
+    },
+    {
+      "chunk_id": "dc_g95_kor:opendl:129:2549",
+      "document_id": "dc_g95_kor",
+      "page": 129,
+      "chunk_type": "paragraph",
+      "issue_kinds": [
+        "tiny_chunk"
+      ],
+      "section_title": "사진 선택 중 조작",
+      "content_preview": "s"
+    },
+    {
+      "chunk_id": "dc_g95_kor:opendl:129:2555",
+      "document_id": "dc_g95_kor",
+      "page": 129,
+      "chunk_type": "paragraph",
+      "issue_kinds": [
+        "tiny_chunk"
+      ],
+      "section_title": "사진 선택 중 조작",
+      "content_preview": "s"
+    },
+    {
+      "chunk_id": "dc_g95_kor:opendl:129:2560",
+      "document_id": "dc_g95_kor",
+      "page": 129,
+      "chunk_type": "paragraph",
+      "issue_kinds": [
+        "tiny_chunk"
+      ],
+      "section_title": "사진 선택 중 조작",
+      "content_preview": "s"
+    },
+    {
+      "chunk_id": "dc_g95_kor:opendl:129:2564",
+      "document_id": "dc_g95_kor",
+      "page": 129,
+      "chunk_type": "paragraph",
+      "issue_kinds": [
+        "tiny_chunk"
+      ],
+      "section_title": "사진 선택 중 조작",
+      "content_preview": "s"
+    },
+    {
+      "chunk_id": "dc_g95_kor:opendl:129:2566",
+      "document_id": "dc_g95_kor",
+      "page": 129,
+      "chunk_type": "paragraph",
+      "issue_kinds": [
+        "tiny_chunk"
+      ],
+      "section_title": "사진 선택 중 조작",
+      "content_preview": "s"
+    },
+    {
+      "chunk_id": "dc_g95_kor:opendl:129:2568",
+      "document_id": "dc_g95_kor",
+      "page": 129,
+      "chunk_type": "paragraph",
+      "issue_kinds": [
+        "tiny_chunk"
+      ],
+      "section_title": "사진 선택 중 조작",
+      "content_preview": "s"
+    },
+    {
+      "chunk_id": "dc_g95_kor:opendl:130:2586",
+      "document_id": "dc_g95_kor",
+      "page": 130,
+      "chunk_type": "paragraph",
+      "issue_kinds": [
+        "tiny_chunk"
+      ],
+      "section_title": "∫ 4K 연사 재생 화면 탐색하기",
+      "content_preview": "s"
+    },
+    {
+      "chunk_id": "dc_g95_kor:opendl:130:2591",
+      "document_id": "dc_g95_kor",
+      "page": 130,
+      "chunk_type": "paragraph",
+      "issue_kinds": [
+        "tiny_chunk"
+      ],
+      "section_title": "∫ 4K 연사 재생 화면 탐색하기",
+      "content_preview": "s"
+    },
+    {
+      "chunk_id": "dc_g95_kor:opendl:130:2596",
+      "document_id": "dc_g95_kor",
+      "page": 130,
+      "chunk_type": "paragraph",
+      "issue_kinds": [
+        "tiny_chunk"
+      ],
+      "section_title": "∫ 4K 연사 재생 화면 탐색하기",
+      "content_preview": "s"
+    },
+    {
+      "chunk_id": "dc_g95_kor:opendl:130:2600",
+      "document_id": "dc_g95_kor",
+      "page": 130,
+      "chunk_type": "paragraph",
+      "issue_kinds": [
+        "tiny_chunk"
+      ],
+      "section_title": "∫ 4K 연사 재생 화면 탐색하기",
+      "content_preview": "s"
+    },
+    {
+      "chunk_id": "dc_g95_kor:opendl:130:2602",
+      "document_id": "dc_g95_kor",
+      "page": 130,
+      "chunk_type": "paragraph",
+      "issue_kinds": [
+        "tiny_chunk"
+      ],
+      "section_title": "∫ 4K 연사 재생 화면 탐색하기",
+      "content_preview": "s"
+    },
+    {
+      "chunk_id": "dc_g95_kor:opendl:130:2604",
+      "document_id": "dc_g95_kor",
+      "page": 130,
+      "chunk_type": "paragraph",
+      "issue_kinds": [
+        "tiny_chunk"
+      ],
+      "section_title": "∫ 4K 연사 재생 화면 탐색하기",
+      "content_preview": "s"
+    },
+    {
+      "chunk_id": "dc_g95_kor:opendl:135:2695",
+      "document_id": "dc_g95_kor",
+      "page": 135,
+      "chunk_type": "paragraph",
+      "issue_kinds": [
+        "tiny_chunk"
+      ],
+      "section_title": "2 원하는 초점 영역을 터치하십시오 .",
+      "content_preview": "s"
+    },
+    {
+      "chunk_id": "dc_g95_kor:opendl:139:2790",
+      "document_id": "dc_g95_kor",
+      "page": 139,
+      "chunk_type": "paragraph",
+      "issue_kinds": [
+        "tiny_chunk"
+      ],
+      "section_title": "사진을 찍으",
+      "content_preview": "L"
+    },
+    {
+      "chunk_id": "dc_g95_kor:opendl:139:2792",
+      "document_id": "dc_g95_kor",
+      "page": 139,
+      "chunk_type": "paragraph",
+      "issue_kinds": [
+        "tiny_chunk"
+      ],
+      "section_title": "사진을 찍으",
+      "content_preview": "라"
+    },
+    {
+      "chunk_id": "dc_g95_kor:opendl:140:2836",
+      "document_id": "dc_g95_kor",
+      "page": 140,
+      "chunk_type": "paragraph",
+      "issue_kinds": [
+        "tiny_chunk"
+      ],
+      "section_title": "> [촬영] > [인터벌 / 애니메이션] > [모드] > [스톱 모션 애니메이션]",
+      "content_preview": "L"
+    },
+    {
+      "chunk_id": "dc_g95_kor:opendl:147:2967",
+      "document_id": "dc_g95_kor",
+      "page": 147,
+      "chunk_type": "paragraph",
+      "issue_kinds": [
+        "tiny_chunk"
+      ],
+      "section_title": "화이트밸런스 브래킷",
+      "content_preview": "G"
+    },
+    {
+      "chunk_id": "dc_g95_kor:opendl:147:2970",
+      "document_id": "dc_g95_kor",
+      "page": 147,
+      "chunk_type": "caption",
+      "issue_kinds": [
+        "tiny_chunk"
+      ],
+      "section_title": "화이트밸런스 브래킷",
+      "content_preview": "M"
+    },
+    {
+      "chunk_id": "dc_g95_kor:opendl:153:3068",
+      "document_id": "dc_g95_kor",
+      "page": 153,
+      "chunk_type": "paragraph",
+      "issue_kinds": [
+        "tiny_chunk"
+      ],
+      "section_title": "광학 줌",
+      "content_preview": "T"
+    },
+    {
+      "chunk_id": "dc_g95_kor:opendl:153:3070",
+      "document_id": "dc_g95_kor",
+      "page": 153,
+      "chunk_type": "paragraph",
+      "issue_kinds": [
+        "tiny_chunk"
+      ],
+      "section_title": "광학 줌",
+      "content_preview": "W"
     }
   ]
 }

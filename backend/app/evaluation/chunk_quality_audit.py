@@ -1,4 +1,5 @@
 import re
+from collections import defaultdict
 from pathlib import Path
 from typing import ClassVar, Final, Literal
 
@@ -6,7 +7,7 @@ from pydantic import BaseModel, ConfigDict, Field, TypeAdapter
 
 from backend.app.indexing.chunker import ExtractedChunk
 
-DEFAULT_CHUNKS_DIR: Final = Path("data/processed/chunks")
+DEFAULT_CHUNKS_DIR: Final = Path("data/brands/panasonic_lumix/processed/chunks")
 DEFAULT_CHUNK_AUDIT_OUTPUT_PATH: Final = Path(
     "data/processed/evaluation/chunk_quality_audit.json",
 )
@@ -18,6 +19,10 @@ BROKEN_MARKDOWN_PAGE_LINK_RE: Final = re.compile(
 INTERNAL_PAGE_REFERENCE_RE: Final = re.compile(r"\(\s*[lI]\s*\d+\s*\)")
 TOC_DOT_LEADER_RE: Final = re.compile(r"\.{3,}\s*\d+")
 SYMBOL_ONLY_RE: Final = re.compile(r"^[^\w가-힣]+$")
+MIN_READY_CONTENT_CHARS: Final = 8
+FRAGMENTED_GROUP_MIN_CHUNKS: Final = 5
+FRAGMENTED_GROUP_MIN_TINY_RATE: Final = 0.6
+TOC_OR_INDEX_TITLES: Final = ("목차", "색인")
 
 type ChunkQualityIssueKind = Literal[
     "bad_section_title",
@@ -40,6 +45,19 @@ class ChunkQualityExample(BaseModel):
     content_preview: str
 
 
+class SectionReadinessReport(BaseModel):
+    model_config: ClassVar[ConfigDict] = ConfigDict(frozen=True, extra="forbid")
+
+    chunk_count: int = Field(ge=0)
+    ready_chunk_count: int = Field(ge=0)
+    ready_chunk_rate: float = Field(ge=0, le=1)
+    section_group_count: int = Field(ge=0)
+    fragmented_section_group_count: int = Field(ge=0)
+    missing_section_title_chunk_count: int = Field(ge=0)
+    toc_or_index_chunk_count: int = Field(ge=0)
+    tiny_chunk_count: int = Field(ge=0)
+
+
 class ChunkQualityAuditReport(BaseModel):
     model_config: ClassVar[ConfigDict] = ConfigDict(frozen=True, extra="forbid")
 
@@ -48,6 +66,7 @@ class ChunkQualityAuditReport(BaseModel):
     issue_chunk_count: int = Field(ge=0)
     issue_rate: float = Field(ge=0, le=1)
     issue_counts: dict[ChunkQualityIssueKind, int]
+    section_readiness: SectionReadinessReport
     examples: tuple[ChunkQualityExample, ...]
 
 
@@ -82,6 +101,7 @@ def run_chunk_quality_audit(
         issue_chunk_count=issue_chunk_count,
         issue_rate=issue_chunk_count / chunk_count if chunk_count else 0,
         issue_counts=issue_counts,
+        section_readiness=_section_readiness(chunks),
         examples=tuple(examples),
     )
 
@@ -111,6 +131,95 @@ def _load_chunk_file(path: Path) -> tuple[ExtractedChunk, ...]:
     )
 
 
+def _section_readiness(
+    chunks: tuple[ExtractedChunk, ...],
+) -> SectionReadinessReport:
+    groups: dict[tuple[str, int, str], list[ExtractedChunk]] = defaultdict(list)
+    ready_chunk_count = 0
+    missing_section_title_chunk_count = 0
+    toc_or_index_chunk_count = 0
+    tiny_chunk_count = 0
+
+    for chunk in chunks:
+        groups[_section_group_key(chunk)].append(chunk)
+        if _missing_section_title(chunk):
+            missing_section_title_chunk_count += 1
+        if _toc_or_index_chunk(chunk):
+            toc_or_index_chunk_count += 1
+        if _tiny_chunk(chunk):
+            tiny_chunk_count += 1
+        if _section_ready_chunk(chunk):
+            ready_chunk_count += 1
+
+    chunk_count = len(chunks)
+    return SectionReadinessReport(
+        chunk_count=chunk_count,
+        ready_chunk_count=ready_chunk_count,
+        ready_chunk_rate=ready_chunk_count / chunk_count if chunk_count else 0,
+        section_group_count=len(
+            {
+                key
+                for key in groups
+                if key[2] and not _toc_or_index_title(key[2])
+            },
+        ),
+        fragmented_section_group_count=sum(
+            1 for group_chunks in groups.values() if _fragmented_group(group_chunks)
+        ),
+        missing_section_title_chunk_count=missing_section_title_chunk_count,
+        toc_or_index_chunk_count=toc_or_index_chunk_count,
+        tiny_chunk_count=tiny_chunk_count,
+    )
+
+
+def _section_group_key(chunk: ExtractedChunk) -> tuple[str, int, str]:
+    return (
+        chunk.document_id,
+        chunk.page_start,
+        (chunk.section_title or "").strip(),
+    )
+
+
+def _section_ready_chunk(chunk: ExtractedChunk) -> bool:
+    if _missing_section_title(chunk):
+        return False
+    if _toc_or_index_chunk(chunk):
+        return False
+    if _tiny_chunk(chunk):
+        return False
+    if chunk.section_title is not None and _bad_text(chunk.section_title):
+        return False
+    return len(chunk.content.strip()) >= MIN_READY_CONTENT_CHARS
+
+
+def _missing_section_title(chunk: ExtractedChunk) -> bool:
+    return chunk.section_title is None or not chunk.section_title.strip()
+
+
+def _toc_or_index_chunk(chunk: ExtractedChunk) -> bool:
+    title = (chunk.section_title or "").strip()
+    return (
+        _toc_or_index_title(title)
+        or TOC_DOT_LEADER_RE.search(chunk.content) is not None
+    )
+
+
+def _toc_or_index_title(title: str) -> bool:
+    return any(noise_title in title for noise_title in TOC_OR_INDEX_TITLES)
+
+
+def _tiny_chunk(chunk: ExtractedChunk) -> bool:
+    content = chunk.content.strip()
+    return len(content) <= 1 or not any(character.isalnum() for character in content)
+
+
+def _fragmented_group(chunks: list[ExtractedChunk]) -> bool:
+    if len(chunks) < FRAGMENTED_GROUP_MIN_CHUNKS:
+        return False
+    tiny_count = sum(1 for chunk in chunks if _tiny_chunk(chunk))
+    return tiny_count / len(chunks) >= FRAGMENTED_GROUP_MIN_TINY_RATE
+
+
 def _issue_kinds(chunk: ExtractedChunk) -> tuple[ChunkQualityIssueKind, ...]:
     issue_kinds: list[ChunkQualityIssueKind] = []
     content = chunk.content.strip()
@@ -124,7 +233,7 @@ def _issue_kinds(chunk: ExtractedChunk) -> tuple[ChunkQualityIssueKind, ...]:
         issue_kinds.append("internal_page_reference")
     if TOC_DOT_LEADER_RE.search(content):
         issue_kinds.append("toc_reference")
-    if len(content) <= 1 or not any(character.isalnum() for character in content):
+    if _tiny_chunk(chunk):
         issue_kinds.append("tiny_chunk")
     return tuple(issue_kinds)
 

@@ -45,6 +45,76 @@ def test_run_chunk_quality_audit_flags_broken_titles_and_references(
     ]
 
 
+def test_run_chunk_quality_audit_reports_section_readiness(
+    tmp_path: Path,
+) -> None:
+    chunks_dir = tmp_path / "chunks"
+    _ = write_document_chunks_jsonl(
+        chunks=(
+            _chunk(chunk_id="sample:opendl:1:1", section_title="초점 피킹"),
+            _chunk(
+                chunk_id="sample:opendl:1:2",
+                section_title="초점 피킹",
+                content="설정",
+            ),
+            _chunk(
+                chunk_id="sample:opendl:2:1",
+                page=2,
+                section_title=None,
+                content="제목 없이 추출된 본문입니다.",
+            ),
+            _chunk(
+                chunk_id="sample:opendl:3:1",
+                page=3,
+                section_title="색인",
+                content="AF .......... 12",
+            ),
+            _chunk(
+                chunk_id="sample:opendl:4:1",
+                page=4,
+                section_title="재생 화면",
+                content="G",
+            ),
+            _chunk(
+                chunk_id="sample:opendl:4:2",
+                page=4,
+                section_title="재생 화면",
+                content="B",
+            ),
+            _chunk(
+                chunk_id="sample:opendl:4:3",
+                page=4,
+                section_title="재생 화면",
+                content="R",
+            ),
+            _chunk(
+                chunk_id="sample:opendl:4:4",
+                page=4,
+                section_title="재생 화면",
+                content="Y",
+            ),
+            _chunk(
+                chunk_id="sample:opendl:4:5",
+                page=4,
+                section_title="재생 화면",
+                content="초점 위치 표시 설명입니다.",
+            ),
+        ),
+        document_id="sample",
+        output_dir=chunks_dir,
+    )
+
+    report = run_chunk_quality_audit(chunks_dir=chunks_dir)
+
+    assert report.section_readiness.chunk_count == 9
+    assert report.section_readiness.ready_chunk_count == 2
+    assert report.section_readiness.missing_section_title_chunk_count == 1
+    assert report.section_readiness.toc_or_index_chunk_count == 1
+    assert report.section_readiness.tiny_chunk_count == 4
+    assert report.section_readiness.fragmented_section_group_count == 1
+    assert report.section_readiness.section_group_count == 2
+
+
 def test_write_chunk_quality_audit_report_writes_json(tmp_path: Path) -> None:
     report = run_chunk_quality_audit(chunks_dir=tmp_path / "missing")
     output_path = tmp_path / "report.json"

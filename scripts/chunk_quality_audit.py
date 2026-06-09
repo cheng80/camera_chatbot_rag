@@ -38,13 +38,13 @@ def main(argv: Sequence[str] | None = None) -> int:
         report=report,
         path=args.output_path,
     )
-    print(f"wrote: {output_path}")
-    print(
-        "chunk quality: "
-        f"chunks={report.chunk_count} "
+    summary = (
+        f"chunk quality: chunks={report.chunk_count} "
         f"flagged={report.issue_chunk_count} "
-        f"rate={report.issue_rate:.3f}",
+        f"rate={report.issue_rate:.3f}"
     )
+    print(f"wrote: {output_path}")
+    print(summary)
     return 0
 
 
