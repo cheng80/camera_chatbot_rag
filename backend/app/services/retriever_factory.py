@@ -40,6 +40,7 @@ def build_hybrid_retriever_for_data_dir(
                 data_dir=data_dir,
                 enabled=settings.enable_local_vector,
             ),
+            feature_wiki_path=data_dir / "wiki" / "feature_wiki.json",
         ),
     )
 

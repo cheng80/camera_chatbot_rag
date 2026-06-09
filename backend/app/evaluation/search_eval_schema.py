@@ -9,6 +9,7 @@ type QueryType = Literal[
     "menu_setting",
     "model_alias",
     "natural_language",
+    "semantic_keyword",
     "troubleshooting",
 ]
 type FeatureCategory = Literal[
@@ -24,7 +25,11 @@ type FeatureCategory = Literal[
     "video",
 ]
 type Difficulty = Literal["easy", "medium", "hard"]
-type SourceMethod = Literal["manual_seed", "section_title_weak_label"]
+type SourceMethod = Literal[
+    "manual_seed",
+    "section_title_weak_label",
+    "semantic_keyword_weak_label",
+]
 
 
 class SearchEvalCase(BaseModel):

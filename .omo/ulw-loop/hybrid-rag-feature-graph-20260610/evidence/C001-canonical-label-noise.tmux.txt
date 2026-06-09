@@ -1,0 +1,27 @@
+.venv/bin/python -m pytest backend/tests/test_feature_wiki.py -k canonical_label
+_noise -q
+cheng80@KIMui-MacBookPro-2:~/Desktop/camera_chatbot_rag (main) ❯ .venv/bin/pytho
+n -m pytest backend/tests/test_feature_wiki.py -k canonical_label_noise -q
+.                                                                        [100%]
+1 passed, 3 deselected in 0.12s
+cheng80@KIMui-MacBookPro-2:~/Desktop/camera_chatbot_rag (main) ❯
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+RED(before implementation): .venv/bin/python -m pytest backend/tests/test_feature_wiki.py -k "canonical_label_noise or rejects_instruction_like_titles" -q -> 2 failed; canonical_label_noise len(entries) was 2 not 1.
+cleanup: tmux kill-session ulw-qa-c001; confirmed no session.

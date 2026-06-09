@@ -1,0 +1,6146 @@
+[
+  {
+    "case_id": "semantic_dc_g100_kor_23_렌즈_마운트_어댑터",
+    "query": "렌즈 마운트 어댑터",
+    "model_ids": [
+      "DC-G100"
+    ],
+    "expected_document_id": "dc_g100_kor",
+    "expected_pages": [
+      23
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_g100_kor_23_렌즈_four_thirds_마운트",
+    "query": "렌즈 Four Thirds 마운트",
+    "model_ids": [
+      "DC-G100"
+    ],
+    "expected_document_id": "dc_g100_kor",
+    "expected_pages": [
+      23
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_g100_kor_23_렌즈_마운트_어댑터_dmw_ma1",
+    "query": "렌즈 마운트 어댑터 DMW-MA1",
+    "model_ids": [
+      "DC-G100"
+    ],
+    "expected_document_id": "dc_g100_kor",
+    "expected_pages": [
+      23
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_g100_kor_23_렌즈_leica_마운트_교환식",
+    "query": "렌즈 Leica 마운트 교환식",
+    "model_ids": [
+      "DC-G100"
+    ],
+    "expected_document_id": "dc_g100_kor",
+    "expected_pages": [
+      23
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_g100_kor_23_렌즈_마운트_어댑터_dmw_ma2m",
+    "query": "렌즈 마운트 어댑터 DMW-MA2M",
+    "model_ids": [
+      "DC-G100"
+    ],
+    "expected_document_id": "dc_g100_kor",
+    "expected_pages": [
+      23
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_g100_kor_23_렌즈_마운트_어댑터_dmw_ma3r",
+    "query": "렌즈 마운트 어댑터 DMW-MA3R",
+    "model_ids": [
+      "DC-G100"
+    ],
+    "expected_document_id": "dc_g100_kor",
+    "expected_pages": [
+      23
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_g100_kor_23_렌즈_기능에_관하여",
+    "query": "렌즈 기능에 관하여",
+    "model_ids": [
+      "DC-G100"
+    ],
+    "expected_document_id": "dc_g100_kor",
+    "expected_pages": [
+      23
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_g100_kor_23_렌즈_사용하는_렌즈에_따라",
+    "query": "렌즈 사용하는 렌즈에 따라",
+    "model_ids": [
+      "DC-G100"
+    ],
+    "expected_document_id": "dc_g100_kor",
+    "expected_pages": [
+      23
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_g100_kor_23_렌즈_지원되는_렌즈에_관한",
+    "query": "렌즈 지원되는 렌즈에 관한",
+    "model_ids": [
+      "DC-G100"
+    ],
+    "expected_document_id": "dc_g100_kor",
+    "expected_pages": [
+      23
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_g100_kor_23_mm_렌즈_렌즈에_해당됩니다",
+    "query": "mm 렌즈 렌즈에 해당됩니다",
+    "model_ids": [
+      "DC-G100"
+    ],
+    "expected_document_id": "dc_g100_kor",
+    "expected_pages": [
+      23
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_g100_kor_24_메모리_카드",
+    "query": "메모리 카드",
+    "model_ids": [
+      "DC-G100"
+    ],
+    "expected_document_id": "dc_g100_kor",
+    "expected_pages": [
+      24
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "setup",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_g100_kor_24_메모리_카드_카메라에는_카드를",
+    "query": "메모리 카드 카메라에는 카드를",
+    "model_ids": [
+      "DC-G100"
+    ],
+    "expected_document_id": "dc_g100_kor",
+    "expected_pages": [
+      24
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "setup",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_g100d_full_kor_23_렌즈_micro_four_thirds",
+    "query": "렌즈 Micro Four Thirds",
+    "model_ids": [
+      "DC-G100D"
+    ],
+    "expected_document_id": "dc_g100d_full_kor",
+    "expected_pages": [
+      23
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_g100d_full_kor_23_렌즈_기능에_관하여",
+    "query": "렌즈 기능에 관하여",
+    "model_ids": [
+      "DC-G100D"
+    ],
+    "expected_document_id": "dc_g100d_full_kor",
+    "expected_pages": [
+      23
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_g100d_full_kor_23_렌즈_사용하는_렌즈에_따라",
+    "query": "렌즈 사용하는 렌즈에 따라",
+    "model_ids": [
+      "DC-G100D"
+    ],
+    "expected_document_id": "dc_g100d_full_kor",
+    "expected_pages": [
+      23
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_g100d_full_kor_23_렌즈_지원되는_렌즈에_관한",
+    "query": "렌즈 지원되는 렌즈에 관한",
+    "model_ids": [
+      "DC-G100D"
+    ],
+    "expected_document_id": "dc_g100d_full_kor",
+    "expected_pages": [
+      23
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_g100d_full_kor_23_mm_렌즈_렌즈에_해당됩니다",
+    "query": "mm 렌즈 렌즈에 해당됩니다",
+    "model_ids": [
+      "DC-G100D"
+    ],
+    "expected_document_id": "dc_g100d_full_kor",
+    "expected_pages": [
+      23
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_g100d_full_kor_24_메모리_카드",
+    "query": "메모리 카드",
+    "model_ids": [
+      "DC-G100D"
+    ],
+    "expected_document_id": "dc_g100d_full_kor",
+    "expected_pages": [
+      24
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "setup",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_g100d_full_kor_24_메모리_카드_카메라에는_카드를",
+    "query": "메모리 카드 카메라에는 카드를",
+    "model_ids": [
+      "DC-G100D"
+    ],
+    "expected_document_id": "dc_g100d_full_kor",
+    "expected_pages": [
+      24
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "setup",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_g100d_full_kor_24_메모리_카드_설명서에서_sd",
+    "query": "메모리 카드 설명서에서 SD",
+    "model_ids": [
+      "DC-G100D"
+    ],
+    "expected_document_id": "dc_g100d_full_kor",
+    "expected_pages": [
+      24
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "setup",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_g100d_full_kor_24_메모리_카드_sd_sdhc",
+    "query": "메모리 카드 SD SDHC",
+    "model_ids": [
+      "DC-G100D"
+    ],
+    "expected_document_id": "dc_g100d_full_kor",
+    "expected_pages": [
+      24
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "setup",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_g100d_full_kor_24_메모리_카드_카메라는_uhs_i",
+    "query": "메모리 카드 카메라는 UHS-I",
+    "model_ids": [
+      "DC-G100D"
+    ],
+    "expected_document_id": "dc_g100d_full_kor",
+    "expected_pages": [
+      24
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "setup",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_g100d_full_kor_24_속도_메모리_카드_sd",
+    "query": "속도 메모리 카드 SD",
+    "model_ids": [
+      "DC-G100D"
+    ],
+    "expected_document_id": "dc_g100d_full_kor",
+    "expected_pages": [
+      24
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "setup",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_g100d_full_kor_24_메모리_카드_화질",
+    "query": "메모리 카드 화질",
+    "model_ids": [
+      "DC-G100D"
+    ],
+    "expected_document_id": "dc_g100d_full_kor",
+    "expected_pages": [
+      24
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "setup",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_g95_kor_10_화질_색상톤",
+    "query": "화질 색상톤",
+    "model_ids": [
+      "DC-G95"
+    ],
+    "expected_document_id": "dc_g95_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_g95_kor_10_화질_색상톤_미리_보기",
+    "query": "화질 색상톤 미리 보기",
+    "model_ids": [
+      "DC-G95"
+    ],
+    "expected_document_id": "dc_g95_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_g95_kor_10_화질_i_색상톤_화이트",
+    "query": "화질 I. 색상톤 화이트",
+    "model_ids": [
+      "DC-G95"
+    ],
+    "expected_document_id": "dc_g95_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_g95_kor_10_포토_포스트_포커스",
+    "query": "포토 포스트 포커스",
+    "model_ids": [
+      "DC-G95"
+    ],
+    "expected_document_id": "dc_g95_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "focus",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_g95_kor_10_초점_af_mf",
+    "query": "초점 AF MF",
+    "model_ids": [
+      "DC-G95"
+    ],
+    "expected_document_id": "dc_g95_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "focus",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_g95_kor_10_ae_af_노출_초점",
+    "query": "AE AF 노출 초점",
+    "model_ids": [
+      "DC-G95"
+    ],
+    "expected_document_id": "dc_g95_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "focus",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_g95_kor_10_af_초점_mf_af_p93",
+    "query": "AF 초점 MF AF..........................P93",
+    "model_ids": [
+      "DC-G95"
+    ],
+    "expected_document_id": "dc_g95_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "focus",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_g95_kor_10_손떨림_보정_초점_af",
+    "query": "손떨림 보정 초점 AF",
+    "model_ids": [
+      "DC-G95"
+    ],
+    "expected_document_id": "dc_g95_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "focus",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_g95_kor_10_드라이브_연사_셀프타이머",
+    "query": "드라이브 연사 셀프타이머",
+    "model_ids": [
+      "DC-G95"
+    ],
+    "expected_document_id": "dc_g95_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_g95_kor_10_플래시_싱크로_조절_무선",
+    "query": "플래시 싱크로 조절 무선",
+    "model_ids": [
+      "DC-G95"
+    ],
+    "expected_document_id": "dc_g95_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "exposure",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_g95_kor_11_플래시_동영상",
+    "query": "플래시 동영상",
+    "model_ids": [
+      "DC-G95"
+    ],
+    "expected_document_id": "dc_g95_kor",
+    "expected_pages": [
+      11
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "video",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_g95_kor_11_동영상_플래시_촬영포맷_화질",
+    "query": "동영상 플래시 촬영포맷 화질",
+    "model_ids": [
+      "DC-G95"
+    ],
+    "expected_document_id": "dc_g95_kor",
+    "expected_pages": [
+      11
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "video",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_g9_full_kor_10_화질_색상톤",
+    "query": "화질 색상톤",
+    "model_ids": [
+      "DC-G9"
+    ],
+    "expected_document_id": "dc_g9_full_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_g9_full_kor_10_브래킷_화질_색상톤_미리",
+    "query": "브래킷 화질 색상톤 미리",
+    "model_ids": [
+      "DC-G9"
+    ],
+    "expected_document_id": "dc_g9_full_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_g9_full_kor_10_화질_i_색상톤_iso",
+    "query": "화질 I. 색상톤 ISO",
+    "model_ids": [
+      "DC-G9"
+    ],
+    "expected_document_id": "dc_g9_full_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "exposure",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_g9_full_kor_10_포토_감소_롤링_셔터",
+    "query": "포토 감소 롤링 셔터",
+    "model_ids": [
+      "DC-G9"
+    ],
+    "expected_document_id": "dc_g9_full_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_g9_full_kor_10_초점_af_mf",
+    "query": "초점 AF MF",
+    "model_ids": [
+      "DC-G9"
+    ],
+    "expected_document_id": "dc_g9_full_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "focus",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_g9_full_kor_10_ae_af_노출_초점",
+    "query": "AE AF 노출 초점",
+    "model_ids": [
+      "DC-G9"
+    ],
+    "expected_document_id": "dc_g9_full_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "focus",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_g9_full_kor_10_af_초점_mf_사진",
+    "query": "AF 초점 MF 사진",
+    "model_ids": [
+      "DC-G9"
+    ],
+    "expected_document_id": "dc_g9_full_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "focus",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_g9_full_kor_10_손떨림_초점_af_mf",
+    "query": "손떨림 초점 AF MF",
+    "model_ids": [
+      "DC-G9"
+    ],
+    "expected_document_id": "dc_g9_full_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "focus",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_g9_full_kor_10_드라이브_연사_셀프타이머",
+    "query": "드라이브 연사 셀프타이머",
+    "model_ids": [
+      "DC-G9"
+    ],
+    "expected_document_id": "dc_g9_full_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_g9_full_kor_10_플래시_후막_싱크로_조절",
+    "query": "플래시 후막 싱크로 조절",
+    "model_ids": [
+      "DC-G9"
+    ],
+    "expected_document_id": "dc_g9_full_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "exposure",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_g9_full_kor_11_플래시_동영상",
+    "query": "플래시 동영상",
+    "model_ids": [
+      "DC-G9"
+    ],
+    "expected_document_id": "dc_g9_full_kor",
+    "expected_pages": [
+      11
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "video",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_g9_full_kor_11_플래시_바람_소음_소거",
+    "query": "플래시 바람 소음 소거",
+    "model_ids": [
+      "DC-G9"
+    ],
+    "expected_document_id": "dc_g9_full_kor",
+    "expected_pages": [
+      11
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "exposure",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_g9m2_full_kor_17_소개_장에서는_카메라를_알아두어야",
+    "query": "소개 장에서는 카메라를 알아두어야",
+    "model_ids": [
+      "DC-G9M2"
+    ],
+    "expected_document_id": "dc_g9m2_full_kor",
+    "expected_pages": [
+      17
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_g9m2_full_kor_18_취급법_카메라를_떨어뜨리거나_부딪치거나",
+    "query": "취급법 카메라를 떨어뜨리거나 부딪치거나",
+    "model_ids": [
+      "DC-G9M2"
+    ],
+    "expected_document_id": "dc_g9m2_full_kor",
+    "expected_pages": [
+      18
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_g9m2_full_kor_18_취급법_모래_먼지_액체가",
+    "query": "취급법 모래 먼지 액체가",
+    "model_ids": [
+      "DC-G9M2"
+    ],
+    "expected_document_id": "dc_g9m2_full_kor",
+    "expected_pages": [
+      18
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_g9m2_full_kor_18_취급법_손을_마운트_안에",
+    "query": "취급법 손을 마운트 안에",
+    "model_ids": [
+      "DC-G9M2"
+    ],
+    "expected_document_id": "dc_g9m2_full_kor",
+    "expected_pages": [
+      18
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_g9m2_full_kor_18_취급법_카메라를_끄는_동안",
+    "query": "취급법 카메라를 끄는 동안",
+    "model_ids": [
+      "DC-G9M2"
+    ],
+    "expected_document_id": "dc_g9m2_full_kor",
+    "expected_pages": [
+      18
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_g9m2_full_kor_19_튀김_방수",
+    "query": "튀김 방수",
+    "model_ids": [
+      "DC-G9M2"
+    ],
+    "expected_document_id": "dc_g9m2_full_kor",
+    "expected_pages": [
+      19
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_g9m2_full_kor_19_튀김_방수_기능은_하지",
+    "query": "튀김 방수 기능은 하지",
+    "model_ids": [
+      "DC-G9M2"
+    ],
+    "expected_document_id": "dc_g9m2_full_kor",
+    "expected_pages": [
+      19
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_g9m2_full_kor_19_응결_렌즈_뷰파인더_모니터에",
+    "query": "응결 렌즈 뷰파인더 모니터에",
+    "model_ids": [
+      "DC-G9M2"
+    ],
+    "expected_document_id": "dc_g9m2_full_kor",
+    "expected_pages": [
+      19
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "display",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_g9m2_full_kor_20_사전_테스트_필요",
+    "query": "사전 테스트 필요",
+    "model_ids": [
+      "DC-G9M2"
+    ],
+    "expected_document_id": "dc_g9m2_full_kor",
+    "expected_pages": [
+      20
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_g9m2_full_kor_20_테스트_사전_필요_중요한",
+    "query": "테스트 사전 필요 중요한",
+    "model_ids": [
+      "DC-G9M2"
+    ],
+    "expected_document_id": "dc_g9m2_full_kor",
+    "expected_pages": [
+      20
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_g9m2_full_kor_20_촬영에_보상을_제공하지_않음",
+    "query": "촬영에 보상을 제공하지 않음",
+    "model_ids": [
+      "DC-G9M2"
+    ],
+    "expected_document_id": "dc_g9m2_full_kor",
+    "expected_pages": [
+      20
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_g9m2_full_kor_20_주의_읽어_주십시오",
+    "query": "주의 읽어 주십시오",
+    "model_ids": [
+      "DC-G9M2"
+    ],
+    "expected_document_id": "dc_g9m2_full_kor",
+    "expected_pages": [
+      20
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_gf10_kor_10_화질_색상톤_동영상",
+    "query": "화질 색상톤 동영상",
+    "model_ids": [
+      "DC-GF10"
+    ],
+    "expected_document_id": "dc_gf10_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "video",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_gf10_kor_10_동영상_화질_색상톤_촬영포맷",
+    "query": "동영상 화질 색상톤 촬영포맷",
+    "model_ids": [
+      "DC-GF10"
+    ],
+    "expected_document_id": "dc_gf10_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "video",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_gf10_kor_10_오디오_마이크음량_조정_바람",
+    "query": "오디오 마이크음량 조정 바람",
+    "model_ids": [
+      "DC-GF10"
+    ],
+    "expected_document_id": "dc_gf10_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_gf10_kor_10_화면_설정들",
+    "query": "화면 설정들",
+    "model_ids": [
+      "DC-GF10"
+    ],
+    "expected_document_id": "dc_gf10_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "setup",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_gf10_kor_10_화면_설정들_마이크음량_표시",
+    "query": "화면 설정들 마이크음량 표시",
+    "model_ids": [
+      "DC-GF10"
+    ],
+    "expected_document_id": "dc_gf10_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "display",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_gf10_kor_10_화면_설정들_리셋_초기화",
+    "query": "화면 설정들 리셋 초기화",
+    "model_ids": [
+      "DC-GF10"
+    ],
+    "expected_document_id": "dc_gf10_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "setup",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_gf10_kor_10_설정들_포맷_시계_디스플레이",
+    "query": "설정들 포맷 시계 디스플레이",
+    "model_ids": [
+      "DC-GF10"
+    ],
+    "expected_document_id": "dc_gf10_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "setup",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_gf10_kor_10_기호에_맞추기",
+    "query": "기호에 맞추기",
+    "model_ids": [
+      "DC-GF10"
+    ],
+    "expected_document_id": "dc_gf10_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_gf10_kor_10_기호에_맞추기_메뉴의_버튼들",
+    "query": "기호에 맞추기 메뉴의 버튼들",
+    "model_ids": [
+      "DC-GF10"
+    ],
+    "expected_document_id": "dc_gf10_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_gf10_kor_10_기호에_맞추기_재생",
+    "query": "기호에 맞추기 재생",
+    "model_ids": [
+      "DC-GF10"
+    ],
+    "expected_document_id": "dc_gf10_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_gf10_kor_10_재생_편집하기_사진_동영상",
+    "query": "재생 편집하기 사진 동영상",
+    "model_ids": [
+      "DC-GF10"
+    ],
+    "expected_document_id": "dc_gf10_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "video",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_gf10_kor_10_보정_편집하기_포커스_스태킹",
+    "query": "보정 편집하기 포커스 스태킹",
+    "model_ids": [
+      "DC-GF10"
+    ],
+    "expected_document_id": "dc_gf10_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "focus",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_gf9_kor_10_화질_색상톤_동영상",
+    "query": "화질 색상톤 동영상",
+    "model_ids": [
+      "DC-GF9"
+    ],
+    "expected_document_id": "dc_gf9_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "video",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_gf9_kor_10_동영상_화질_색상톤_촬영포맷",
+    "query": "동영상 화질 색상톤 촬영포맷",
+    "model_ids": [
+      "DC-GF9"
+    ],
+    "expected_document_id": "dc_gf9_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "video",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_gf9_kor_10_오디오_마이크음량_조정_바람",
+    "query": "오디오 마이크음량 조정 바람",
+    "model_ids": [
+      "DC-GF9"
+    ],
+    "expected_document_id": "dc_gf9_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_gf9_kor_10_화면_설정들",
+    "query": "화면 설정들",
+    "model_ids": [
+      "DC-GF9"
+    ],
+    "expected_document_id": "dc_gf9_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "setup",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_gf9_kor_10_화면_설정들_마이크음량_표시",
+    "query": "화면 설정들 마이크음량 표시",
+    "model_ids": [
+      "DC-GF9"
+    ],
+    "expected_document_id": "dc_gf9_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "display",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_gf9_kor_10_화면_설정들_리셋_초기화",
+    "query": "화면 설정들 리셋 초기화",
+    "model_ids": [
+      "DC-GF9"
+    ],
+    "expected_document_id": "dc_gf9_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "setup",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_gf9_kor_10_설정들_포맷_시계_디스플레이",
+    "query": "설정들 포맷 시계 디스플레이",
+    "model_ids": [
+      "DC-GF9"
+    ],
+    "expected_document_id": "dc_gf9_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "setup",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_gf9_kor_10_기호에_맞추기",
+    "query": "기호에 맞추기",
+    "model_ids": [
+      "DC-GF9"
+    ],
+    "expected_document_id": "dc_gf9_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_gf9_kor_10_기호에_맞추기_메뉴의_버튼들",
+    "query": "기호에 맞추기 메뉴의 버튼들",
+    "model_ids": [
+      "DC-GF9"
+    ],
+    "expected_document_id": "dc_gf9_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_gf9_kor_10_기호에_맞추기_재생",
+    "query": "기호에 맞추기 재생",
+    "model_ids": [
+      "DC-GF9"
+    ],
+    "expected_document_id": "dc_gf9_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_gf9_kor_10_재생_편집하기_사진_동영상",
+    "query": "재생 편집하기 사진 동영상",
+    "model_ids": [
+      "DC-GF9"
+    ],
+    "expected_document_id": "dc_gf9_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "video",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_gf9_kor_10_편집하기_포커스_스태킹_raw",
+    "query": "편집하기 포커스 스태킹 RAW",
+    "model_ids": [
+      "DC-GF9"
+    ],
+    "expected_document_id": "dc_gf9_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "focus",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_gh5_full_kor_10_화질_색상톤",
+    "query": "화질 색상톤",
+    "model_ids": [
+      "DC-GH5"
+    ],
+    "expected_document_id": "dc_gh5_full_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_gh5_full_kor_10_브래킷_화질_색상톤_미리",
+    "query": "브래킷 화질 색상톤 미리",
+    "model_ids": [
+      "DC-GH5"
+    ],
+    "expected_document_id": "dc_gh5_full_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_gh5_full_kor_10_화질_i_색상톤_iso",
+    "query": "화질 I. 색상톤 ISO",
+    "model_ids": [
+      "DC-GH5"
+    ],
+    "expected_document_id": "dc_gh5_full_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "exposure",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_gh5_full_kor_10_포토_감소_롤링_셔터",
+    "query": "포토 감소 롤링 셔터",
+    "model_ids": [
+      "DC-GH5"
+    ],
+    "expected_document_id": "dc_gh5_full_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_gh5_full_kor_10_초점_af_mf",
+    "query": "초점 AF MF",
+    "model_ids": [
+      "DC-GH5"
+    ],
+    "expected_document_id": "dc_gh5_full_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "focus",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_gh5_full_kor_10_af_초점_노출_사진",
+    "query": "AF 초점 노출 사진",
+    "model_ids": [
+      "DC-GH5"
+    ],
+    "expected_document_id": "dc_gh5_full_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "focus",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_gh5_full_kor_10_노출_ae_터치_원터치",
+    "query": "노출 AE 터치 원터치",
+    "model_ids": [
+      "DC-GH5"
+    ],
+    "expected_document_id": "dc_gh5_full_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "exposure",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_gh5_full_kor_10_손떨림_노출_보정_dual",
+    "query": "손떨림 노출 보정 Dual",
+    "model_ids": [
+      "DC-GH5"
+    ],
+    "expected_document_id": "dc_gh5_full_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "stabilization",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_gh5_full_kor_10_드라이브_노출_연사_연속으로",
+    "query": "드라이브 노출 연사 연속으로",
+    "model_ids": [
+      "DC-GH5"
+    ],
+    "expected_document_id": "dc_gh5_full_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "exposure",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_gh5_full_kor_10_플래시_후막_싱크로_조절",
+    "query": "플래시 후막 싱크로 조절",
+    "model_ids": [
+      "DC-GH5"
+    ],
+    "expected_document_id": "dc_gh5_full_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "exposure",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_gh5_full_kor_11_플래시_동영상",
+    "query": "플래시 동영상",
+    "model_ids": [
+      "DC-GH5"
+    ],
+    "expected_document_id": "dc_gh5_full_kor",
+    "expected_pages": [
+      11
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "video",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_gh5_full_kor_11_동영상_플래시_촬영포맷_화질",
+    "query": "동영상 플래시 촬영포맷 화질",
+    "model_ids": [
+      "DC-GH5"
+    ],
+    "expected_document_id": "dc_gh5_full_kor",
+    "expected_pages": [
+      11
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "video",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_gh5s_full_kor_10_화질_색상톤",
+    "query": "화질 색상톤",
+    "model_ids": [
+      "DC-GH5S"
+    ],
+    "expected_document_id": "dc_gh5s_full_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_gh5s_full_kor_10_브래킷_화질_색상톤_미리",
+    "query": "브래킷 화질 색상톤 미리",
+    "model_ids": [
+      "DC-GH5S"
+    ],
+    "expected_document_id": "dc_gh5s_full_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_gh5s_full_kor_10_화질_i_색상톤_iso",
+    "query": "화질 I. 색상톤 ISO",
+    "model_ids": [
+      "DC-GH5S"
+    ],
+    "expected_document_id": "dc_gh5s_full_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "exposure",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_gh5s_full_kor_10_포토_감소_롤링_셔터",
+    "query": "포토 감소 롤링 셔터",
+    "model_ids": [
+      "DC-GH5S"
+    ],
+    "expected_document_id": "dc_gh5s_full_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_gh5s_full_kor_10_초점_af_mf",
+    "query": "초점 AF MF",
+    "model_ids": [
+      "DC-GH5S"
+    ],
+    "expected_document_id": "dc_gh5s_full_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "focus",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_gh5s_full_kor_10_af_초점_노출_사진",
+    "query": "AF 초점 노출 사진",
+    "model_ids": [
+      "DC-GH5S"
+    ],
+    "expected_document_id": "dc_gh5s_full_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "focus",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_gh5s_full_kor_10_노출_ae_터치_원터치",
+    "query": "노출 AE 터치 원터치",
+    "model_ids": [
+      "DC-GH5S"
+    ],
+    "expected_document_id": "dc_gh5s_full_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "exposure",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_gh5s_full_kor_10_손떨림_보정",
+    "query": "손떨림 보정",
+    "model_ids": [
+      "DC-GH5S"
+    ],
+    "expected_document_id": "dc_gh5s_full_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "stabilization",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_gh5s_full_kor_10_손떨림_보정_드라이브_e",
+    "query": "손떨림 보정 드라이브 E-",
+    "model_ids": [
+      "DC-GH5S"
+    ],
+    "expected_document_id": "dc_gh5s_full_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "stabilization",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_gh5s_full_kor_10_드라이브_연사_셀프타이머",
+    "query": "드라이브 연사 셀프타이머",
+    "model_ids": [
+      "DC-GH5S"
+    ],
+    "expected_document_id": "dc_gh5s_full_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_gh5s_full_kor_10_플래시_후막_싱크로_조절",
+    "query": "플래시 후막 싱크로 조절",
+    "model_ids": [
+      "DC-GH5S"
+    ],
+    "expected_document_id": "dc_gh5s_full_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "exposure",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_gh5s_full_kor_11_플래시_동영상",
+    "query": "플래시 동영상",
+    "model_ids": [
+      "DC-GH5S"
+    ],
+    "expected_document_id": "dc_gh5s_full_kor",
+    "expected_pages": [
+      11
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "video",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_gh6_full_kor_17_소개_장에서는_카메라를_알아두어야",
+    "query": "소개 장에서는 카메라를 알아두어야",
+    "model_ids": [
+      "DC-GH6"
+    ],
+    "expected_document_id": "dc_gh6_full_kor",
+    "expected_pages": [
+      17
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_gh6_full_kor_18_취급법_카메라를_떨어뜨리거나_부딪치거나",
+    "query": "취급법 카메라를 떨어뜨리거나 부딪치거나",
+    "model_ids": [
+      "DC-GH6"
+    ],
+    "expected_document_id": "dc_gh6_full_kor",
+    "expected_pages": [
+      18
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_gh6_full_kor_18_취급법_모래_먼지_액체가",
+    "query": "취급법 모래 먼지 액체가",
+    "model_ids": [
+      "DC-GH6"
+    ],
+    "expected_document_id": "dc_gh6_full_kor",
+    "expected_pages": [
+      18
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_gh6_full_kor_18_취급법_손을_마운트_안에",
+    "query": "취급법 손을 마운트 안에",
+    "model_ids": [
+      "DC-GH6"
+    ],
+    "expected_document_id": "dc_gh6_full_kor",
+    "expected_pages": [
+      18
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_gh6_full_kor_18_취급법_카메라를_끄는_동안",
+    "query": "취급법 카메라를 끄는 동안",
+    "model_ids": [
+      "DC-GH6"
+    ],
+    "expected_document_id": "dc_gh6_full_kor",
+    "expected_pages": [
+      18
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_gh6_full_kor_19_튀김_방수",
+    "query": "튀김 방수",
+    "model_ids": [
+      "DC-GH6"
+    ],
+    "expected_document_id": "dc_gh6_full_kor",
+    "expected_pages": [
+      19
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_gh6_full_kor_19_튀김_방수_기능은_하지",
+    "query": "튀김 방수 기능은 하지",
+    "model_ids": [
+      "DC-GH6"
+    ],
+    "expected_document_id": "dc_gh6_full_kor",
+    "expected_pages": [
+      19
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_gh6_full_kor_19_응결_렌즈_뷰파인더_모니터에",
+    "query": "응결 렌즈 뷰파인더 모니터에",
+    "model_ids": [
+      "DC-GH6"
+    ],
+    "expected_document_id": "dc_gh6_full_kor",
+    "expected_pages": [
+      19
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "display",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_gh6_full_kor_19_사전_테스트_필요",
+    "query": "사전 테스트 필요",
+    "model_ids": [
+      "DC-GH6"
+    ],
+    "expected_document_id": "dc_gh6_full_kor",
+    "expected_pages": [
+      19
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_gh6_full_kor_19_테스트_사전_필요_중요한",
+    "query": "테스트 사전 필요 중요한",
+    "model_ids": [
+      "DC-GH6"
+    ],
+    "expected_document_id": "dc_gh6_full_kor",
+    "expected_pages": [
+      19
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_gh6_full_kor_19_촬영에_보상을_제공하지_않음",
+    "query": "촬영에 보상을 제공하지 않음",
+    "model_ids": [
+      "DC-GH6"
+    ],
+    "expected_document_id": "dc_gh6_full_kor",
+    "expected_pages": [
+      19
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_gh6_full_kor_20_주의_읽어_주십시오",
+    "query": "주의 읽어 주십시오",
+    "model_ids": [
+      "DC-GH6"
+    ],
+    "expected_document_id": "dc_gh6_full_kor",
+    "expected_pages": [
+      20
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_gh7_full_kor_19_소개_장에서는_카메라를_알아두어야",
+    "query": "소개 장에서는 카메라를 알아두어야",
+    "model_ids": [
+      "DC-GH7"
+    ],
+    "expected_document_id": "dc_gh7_full_kor",
+    "expected_pages": [
+      19
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_gh7_full_kor_20_취급법_카메라를_떨어뜨리거나_부딪치거나",
+    "query": "취급법 카메라를 떨어뜨리거나 부딪치거나",
+    "model_ids": [
+      "DC-GH7"
+    ],
+    "expected_document_id": "dc_gh7_full_kor",
+    "expected_pages": [
+      20
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_gh7_full_kor_20_취급법_모래_먼지_액체가",
+    "query": "취급법 모래 먼지 액체가",
+    "model_ids": [
+      "DC-GH7"
+    ],
+    "expected_document_id": "dc_gh7_full_kor",
+    "expected_pages": [
+      20
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_gh7_full_kor_20_취급법_손을_마운트_안에",
+    "query": "취급법 손을 마운트 안에",
+    "model_ids": [
+      "DC-GH7"
+    ],
+    "expected_document_id": "dc_gh7_full_kor",
+    "expected_pages": [
+      20
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_gh7_full_kor_20_취급법_카메라를_끄는_동안",
+    "query": "취급법 카메라를 끄는 동안",
+    "model_ids": [
+      "DC-GH7"
+    ],
+    "expected_document_id": "dc_gh7_full_kor",
+    "expected_pages": [
+      20
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_gh7_full_kor_21_튀김_방수",
+    "query": "튀김 방수",
+    "model_ids": [
+      "DC-GH7"
+    ],
+    "expected_document_id": "dc_gh7_full_kor",
+    "expected_pages": [
+      21
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_gh7_full_kor_21_튀김_방수_기능은_하지",
+    "query": "튀김 방수 기능은 하지",
+    "model_ids": [
+      "DC-GH7"
+    ],
+    "expected_document_id": "dc_gh7_full_kor",
+    "expected_pages": [
+      21
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_gh7_full_kor_21_응결_렌즈_뷰파인더_모니터에",
+    "query": "응결 렌즈 뷰파인더 모니터에",
+    "model_ids": [
+      "DC-GH7"
+    ],
+    "expected_document_id": "dc_gh7_full_kor",
+    "expected_pages": [
+      21
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "display",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_gh7_full_kor_22_사전_테스트_필요",
+    "query": "사전 테스트 필요",
+    "model_ids": [
+      "DC-GH7"
+    ],
+    "expected_document_id": "dc_gh7_full_kor",
+    "expected_pages": [
+      22
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_gh7_full_kor_22_테스트_사전_필요_중요한",
+    "query": "테스트 사전 필요 중요한",
+    "model_ids": [
+      "DC-GH7"
+    ],
+    "expected_document_id": "dc_gh7_full_kor",
+    "expected_pages": [
+      22
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_gh7_full_kor_22_촬영에_보상을_제공하지_않음",
+    "query": "촬영에 보상을 제공하지 않음",
+    "model_ids": [
+      "DC-GH7"
+    ],
+    "expected_document_id": "dc_gh7_full_kor",
+    "expected_pages": [
+      22
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_gh7_full_kor_22_주의_읽어_주십시오",
+    "query": "주의 읽어 주십시오",
+    "model_ids": [
+      "DC-GH7"
+    ],
+    "expected_document_id": "dc_gh7_full_kor",
+    "expected_pages": [
+      22
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_gx9_kor_10_다른_장치와_연결",
+    "query": "다른 장치와 연결",
+    "model_ids": [
+      "DC-GX9"
+    ],
+    "expected_document_id": "dc_gx9_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_gx9_kor_10_다른_장치와_연결_기타",
+    "query": "다른 장치와 연결 기타",
+    "model_ids": [
+      "DC-GX9"
+    ],
+    "expected_document_id": "dc_gx9_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_gx9_kor_16_부분의_명칭과",
+    "query": "부분의 명칭과",
+    "model_ids": [
+      "DC-GX9"
+    ],
+    "expected_document_id": "dc_gx9_kor",
+    "expected_pages": [
+      16
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_gx9_kor_16_부분의_명칭과_본체",
+    "query": "부분의 명칭과 본체",
+    "model_ids": [
+      "DC-GX9"
+    ],
+    "expected_document_id": "dc_gx9_kor",
+    "expected_pages": [
+      16
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_gx9_kor_17_부분의_명칭과_삭제_버튼",
+    "query": "부분의 명칭과 삭제 버튼",
+    "model_ids": [
+      "DC-GX9"
+    ],
+    "expected_document_id": "dc_gx9_kor",
+    "expected_pages": [
+      17
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_gx9_kor_17_부분의_명칭과_q_menu",
+    "query": "부분의 명칭과 Q.MENU",
+    "model_ids": [
+      "DC-GX9"
+    ],
+    "expected_document_id": "dc_gx9_kor",
+    "expected_pages": [
+      17
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_gx9_kor_17_부분의_명칭과_버튼_fn4",
+    "query": "부분의 명칭과 버튼 Fn4",
+    "model_ids": [
+      "DC-GX9"
+    ],
+    "expected_document_id": "dc_gx9_kor",
+    "expected_pages": [
+      17
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_gx9_kor_18_부분의_명칭과_렌즈_h_fs12032",
+    "query": "부분의 명칭과 렌즈 H-FS12032",
+    "model_ids": [
+      "DC-GX9"
+    ],
+    "expected_document_id": "dc_gx9_kor",
+    "expected_pages": [
+      18
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_gx9_kor_18_부분의_명칭과_h_fs35100",
+    "query": "부분의 명칭과 H-FS35100",
+    "model_ids": [
+      "DC-GX9"
+    ],
+    "expected_document_id": "dc_gx9_kor",
+    "expected_pages": [
+      18
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_gx9_kor_18_부분의_명칭과_h_fs12060",
+    "query": "부분의 명칭과 H-FS12060",
+    "model_ids": [
+      "DC-GX9"
+    ],
+    "expected_document_id": "dc_gx9_kor",
+    "expected_pages": [
+      18
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_gx9_kor_18_부분의_명칭과_h_fs1442a",
+    "query": "부분의 명칭과 H-FS1442A",
+    "model_ids": [
+      "DC-GX9"
+    ],
+    "expected_document_id": "dc_gx9_kor",
+    "expected_pages": [
+      18
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_gx9_kor_18_부분의_명칭과_h_h020a",
+    "query": "부분의 명칭과 H-H020A",
+    "model_ids": [
+      "DC-GX9"
+    ],
+    "expected_document_id": "dc_gx9_kor",
+    "expected_pages": [
+      18
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_lx100m2_kor_10_플래시_동영상",
+    "query": "플래시 동영상",
+    "model_ids": [
+      "DC-LX100M2"
+    ],
+    "expected_document_id": "dc_lx100m2_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "video",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_lx100m2_kor_10_동영상_플래시_촬영포맷_화질",
+    "query": "동영상 플래시 촬영포맷 화질",
+    "model_ids": [
+      "DC-LX100M2"
+    ],
+    "expected_document_id": "dc_lx100m2_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "video",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_lx100m2_kor_10_화면_설정들",
+    "query": "화면 설정들",
+    "model_ids": [
+      "DC-LX100M2"
+    ],
+    "expected_document_id": "dc_lx100m2_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "setup",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_lx100m2_kor_10_화면_설정들_사운드_녹음",
+    "query": "화면 설정들 사운드 녹음",
+    "model_ids": [
+      "DC-LX100M2"
+    ],
+    "expected_document_id": "dc_lx100m2_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "setup",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_lx100m2_kor_10_오디오_사운드_녹음_레벨",
+    "query": "오디오 사운드 녹음 레벨",
+    "model_ids": [
+      "DC-LX100M2"
+    ],
+    "expected_document_id": "dc_lx100m2_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_lx100m2_kor_10_기호에_맞추기",
+    "query": "기호에 맞추기",
+    "model_ids": [
+      "DC-LX100M2"
+    ],
+    "expected_document_id": "dc_lx100m2_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_lx100m2_kor_10_설정들_버튼들_메뉴",
+    "query": "설정들 버튼들 메뉴",
+    "model_ids": [
+      "DC-LX100M2"
+    ],
+    "expected_document_id": "dc_lx100m2_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "setup",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_lx100m2_kor_10_설정들_포맷_시계_디옵터",
+    "query": "설정들 포맷 시계 디옵터",
+    "model_ids": [
+      "DC-LX100M2"
+    ],
+    "expected_document_id": "dc_lx100m2_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "setup",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_lx100m2_kor_10_설정들_재생",
+    "query": "설정들 재생",
+    "model_ids": [
+      "DC-LX100M2"
+    ],
+    "expected_document_id": "dc_lx100m2_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "setup",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_lx100m2_kor_10_재생_회전_편집하기_사진",
+    "query": "재생 회전 편집하기 사진",
+    "model_ids": [
+      "DC-LX100M2"
+    ],
+    "expected_document_id": "dc_lx100m2_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_lx100m2_kor_10_포커스_편집하기_포스트_스태킹",
+    "query": "포커스 편집하기 포스트 스태킹",
+    "model_ids": [
+      "DC-LX100M2"
+    ],
+    "expected_document_id": "dc_lx100m2_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "focus",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_lx100m2_kor_10_이미지_보호_등급",
+    "query": "이미지 보호 등급",
+    "model_ids": [
+      "DC-LX100M2"
+    ],
+    "expected_document_id": "dc_lx100m2_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_s1_full_kor_14_표시_뷰파인더_화면_모니터",
+    "query": "표시 뷰파인더 화면 모니터",
+    "model_ids": [
+      "DC-S1"
+    ],
+    "expected_document_id": "dc_s1_full_kor",
+    "expected_pages": [
+      14
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "display",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_s1_full_kor_14_폴더_파일_카드_구조",
+    "query": "폴더 파일 카드 구조",
+    "model_ids": [
+      "DC-S1"
+    ],
+    "expected_document_id": "dc_s1_full_kor",
+    "expected_pages": [
+      14
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "setup",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_s1_full_kor_14_af_mf",
+    "query": "AF MF",
+    "model_ids": [
+      "DC-S1"
+    ],
+    "expected_document_id": "dc_s1_full_kor",
+    "expected_pages": [
+      14
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "focus",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_s1_full_kor_14_af_감지_mf_얼굴",
+    "query": "AF 감지 MF 얼굴",
+    "model_ids": [
+      "DC-S1"
+    ],
+    "expected_document_id": "dc_s1_full_kor",
+    "expected_pages": [
+      14
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "focus",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_s1_full_kor_14_af_mf_터치_보조",
+    "query": "AF MF 터치 보조",
+    "model_ids": [
+      "DC-S1"
+    ],
+    "expected_document_id": "dc_s1_full_kor",
+    "expected_pages": [
+      14
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "focus",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_s1_full_kor_15_뷰파인더_드라이브_연사_포토",
+    "query": "뷰파인더 드라이브 연사 포토",
+    "model_ids": [
+      "DC-S1"
+    ],
+    "expected_document_id": "dc_s1_full_kor",
+    "expected_pages": [
+      15
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "display",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_s1_full_kor_15_이미지_품질",
+    "query": "이미지 품질",
+    "model_ids": [
+      "DC-S1"
+    ],
+    "expected_document_id": "dc_s1_full_kor",
+    "expected_pages": [
+      15
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_s1_full_kor_15_사진_노이즈_감소_이미지",
+    "query": "사진 노이즈 감소 이미지",
+    "model_ids": [
+      "DC-S1"
+    ],
+    "expected_document_id": "dc_s1_full_kor",
+    "expected_pages": [
+      15
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_s1_full_kor_15_이미지_사진_품질_메뉴",
+    "query": "이미지 사진 품질 메뉴",
+    "model_ids": [
+      "DC-S1"
+    ],
+    "expected_document_id": "dc_s1_full_kor",
+    "expected_pages": [
+      15
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_s1_full_kor_15_ae_iso_노출_노출보정",
+    "query": "AE ISO 노출 노출보정",
+    "model_ids": [
+      "DC-S1"
+    ],
+    "expected_document_id": "dc_s1_full_kor",
+    "expected_pages": [
+      15
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "exposure",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_s1_full_kor_15_비디오_출력_동영상_af",
+    "query": "비디오 출력 동영상 AF",
+    "model_ids": [
+      "DC-S1"
+    ],
+    "expected_document_id": "dc_s1_full_kor",
+    "expected_pages": [
+      15
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "video",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_s1_full_kor_16_플래시_외장_조명_출력",
+    "query": "플래시 외장 조명 출력",
+    "model_ids": [
+      "DC-S1"
+    ],
+    "expected_document_id": "dc_s1_full_kor",
+    "expected_pages": [
+      16
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "exposure",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_s1h_full_kor_15_표시_절전_사진_매수",
+    "query": "표시 절전 사진 매수",
+    "model_ids": [
+      "DC-S1H"
+    ],
+    "expected_document_id": "dc_s1h_full_kor",
+    "expected_pages": [
+      15
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "display",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_s1h_full_kor_15_표시_모니터_뷰파인더_보기",
+    "query": "표시 모니터 뷰파인더 보기",
+    "model_ids": [
+      "DC-S1H"
+    ],
+    "expected_document_id": "dc_s1h_full_kor",
+    "expected_pages": [
+      15
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "display",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_s1h_full_kor_15_af_mf",
+    "query": "AF MF",
+    "model_ids": [
+      "DC-S1H"
+    ],
+    "expected_document_id": "dc_s1h_full_kor",
+    "expected_pages": [
+      15
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "focus",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_s1h_full_kor_16_mf_af_보조_기본적인",
+    "query": "MF AF 보조 기본적인",
+    "model_ids": [
+      "DC-S1H"
+    ],
+    "expected_document_id": "dc_s1h_full_kor",
+    "expected_pages": [
+      16
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "focus",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_s1h_full_kor_16_이미지_손떨림_보정",
+    "query": "이미지 손떨림 보정",
+    "model_ids": [
+      "DC-S1H"
+    ],
+    "expected_document_id": "dc_s1h_full_kor",
+    "expected_pages": [
+      16
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "stabilization",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_s1h_full_kor_16_이미지_손떨림_보정_비디오",
+    "query": "이미지 손떨림 보정 비디오",
+    "model_ids": [
+      "DC-S1H"
+    ],
+    "expected_document_id": "dc_s1h_full_kor",
+    "expected_pages": [
+      16
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "video",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_s1h_full_kor_16_드라이브_연사_포토_인터벌",
+    "query": "드라이브 연사 포토 인터벌",
+    "model_ids": [
+      "DC-S1H"
+    ],
+    "expected_document_id": "dc_s1h_full_kor",
+    "expected_pages": [
+      16
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_s1h_full_kor_16_이미지_품질",
+    "query": "이미지 품질",
+    "model_ids": [
+      "DC-S1H"
+    ],
+    "expected_document_id": "dc_s1h_full_kor",
+    "expected_pages": [
+      16
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_s1h_full_kor_16_사진_감소_이미지_품질",
+    "query": "사진 감소 이미지 품질",
+    "model_ids": [
+      "DC-S1H"
+    ],
+    "expected_document_id": "dc_s1h_full_kor",
+    "expected_pages": [
+      16
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_s1h_full_kor_16_사진_메뉴_확장_망원",
+    "query": "사진 메뉴 확장 망원",
+    "model_ids": [
+      "DC-S1H"
+    ],
+    "expected_document_id": "dc_s1h_full_kor",
+    "expected_pages": [
+      16
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_s1h_full_kor_16_ae_iso_노출_노출보정",
+    "query": "AE ISO 노출 노출보정",
+    "model_ids": [
+      "DC-S1H"
+    ],
+    "expected_document_id": "dc_s1h_full_kor",
+    "expected_pages": [
+      16
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "exposure",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_s1h_full_kor_16_플래시_외장_조명_조절",
+    "query": "플래시 외장 조명 조절",
+    "model_ids": [
+      "DC-S1H"
+    ],
+    "expected_document_id": "dc_s1h_full_kor",
+    "expected_pages": [
+      16
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "exposure",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_s1m2_full_kor_19_소개_장에서는_카메라를_알아두어야",
+    "query": "소개 장에서는 카메라를 알아두어야",
+    "model_ids": [
+      "DC-S1M2"
+    ],
+    "expected_document_id": "dc_s1m2_full_kor",
+    "expected_pages": [
+      19
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_s1m2_full_kor_21_취급법_카메라를_떨어뜨리거나_부딪치거나",
+    "query": "취급법 카메라를 떨어뜨리거나 부딪치거나",
+    "model_ids": [
+      "DC-S1M2"
+    ],
+    "expected_document_id": "dc_s1m2_full_kor",
+    "expected_pages": [
+      21
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_s1m2_full_kor_21_취급법_모래_먼지_액체가",
+    "query": "취급법 모래 먼지 액체가",
+    "model_ids": [
+      "DC-S1M2"
+    ],
+    "expected_document_id": "dc_s1m2_full_kor",
+    "expected_pages": [
+      21
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_s1m2_full_kor_21_취급법_손을_마운트_안에",
+    "query": "취급법 손을 마운트 안에",
+    "model_ids": [
+      "DC-S1M2"
+    ],
+    "expected_document_id": "dc_s1m2_full_kor",
+    "expected_pages": [
+      21
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_s1m2_full_kor_21_취급법_카메라를_끄는_동안",
+    "query": "취급법 카메라를 끄는 동안",
+    "model_ids": [
+      "DC-S1M2"
+    ],
+    "expected_document_id": "dc_s1m2_full_kor",
+    "expected_pages": [
+      21
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_s1m2_full_kor_21_튀김_방수",
+    "query": "튀김 방수",
+    "model_ids": [
+      "DC-S1M2"
+    ],
+    "expected_document_id": "dc_s1m2_full_kor",
+    "expected_pages": [
+      21
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_s1m2_full_kor_21_튀김_방수_기능은_하지",
+    "query": "튀김 방수 기능은 하지",
+    "model_ids": [
+      "DC-S1M2"
+    ],
+    "expected_document_id": "dc_s1m2_full_kor",
+    "expected_pages": [
+      21
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_s1m2_full_kor_22_응결_렌즈_뷰파인더_모니터에",
+    "query": "응결 렌즈 뷰파인더 모니터에",
+    "model_ids": [
+      "DC-S1M2"
+    ],
+    "expected_document_id": "dc_s1m2_full_kor",
+    "expected_pages": [
+      22
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "display",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_s1m2_full_kor_22_사전_테스트_필요",
+    "query": "사전 테스트 필요",
+    "model_ids": [
+      "DC-S1M2"
+    ],
+    "expected_document_id": "dc_s1m2_full_kor",
+    "expected_pages": [
+      22
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_s1m2_full_kor_22_테스트_사전_필요_중요한",
+    "query": "테스트 사전 필요 중요한",
+    "model_ids": [
+      "DC-S1M2"
+    ],
+    "expected_document_id": "dc_s1m2_full_kor",
+    "expected_pages": [
+      22
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_s1m2_full_kor_22_촬영에_보상을_제공하지_않음",
+    "query": "촬영에 보상을 제공하지 않음",
+    "model_ids": [
+      "DC-S1M2"
+    ],
+    "expected_document_id": "dc_s1m2_full_kor",
+    "expected_pages": [
+      22
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_s1m2_full_kor_22_주의_읽어_주십시오",
+    "query": "주의 읽어 주십시오",
+    "model_ids": [
+      "DC-S1M2"
+    ],
+    "expected_document_id": "dc_s1m2_full_kor",
+    "expected_pages": [
+      22
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_s1m2es_full_kor_19_소개_장에서는_카메라를_알아두어야",
+    "query": "소개 장에서는 카메라를 알아두어야",
+    "model_ids": [
+      "DC-S1M2ES"
+    ],
+    "expected_document_id": "dc_s1m2es_full_kor",
+    "expected_pages": [
+      19
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_s1m2es_full_kor_21_취급법_카메라를_떨어뜨리거나_부딪치거나",
+    "query": "취급법 카메라를 떨어뜨리거나 부딪치거나",
+    "model_ids": [
+      "DC-S1M2ES"
+    ],
+    "expected_document_id": "dc_s1m2es_full_kor",
+    "expected_pages": [
+      21
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_s1m2es_full_kor_21_취급법_모래_먼지_액체가",
+    "query": "취급법 모래 먼지 액체가",
+    "model_ids": [
+      "DC-S1M2ES"
+    ],
+    "expected_document_id": "dc_s1m2es_full_kor",
+    "expected_pages": [
+      21
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_s1m2es_full_kor_21_취급법_손을_마운트_안에",
+    "query": "취급법 손을 마운트 안에",
+    "model_ids": [
+      "DC-S1M2ES"
+    ],
+    "expected_document_id": "dc_s1m2es_full_kor",
+    "expected_pages": [
+      21
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_s1m2es_full_kor_21_취급법_카메라를_끄는_동안",
+    "query": "취급법 카메라를 끄는 동안",
+    "model_ids": [
+      "DC-S1M2ES"
+    ],
+    "expected_document_id": "dc_s1m2es_full_kor",
+    "expected_pages": [
+      21
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_s1m2es_full_kor_21_튀김_방수",
+    "query": "튀김 방수",
+    "model_ids": [
+      "DC-S1M2ES"
+    ],
+    "expected_document_id": "dc_s1m2es_full_kor",
+    "expected_pages": [
+      21
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_s1m2es_full_kor_21_튀김_방수_기능은_하지",
+    "query": "튀김 방수 기능은 하지",
+    "model_ids": [
+      "DC-S1M2ES"
+    ],
+    "expected_document_id": "dc_s1m2es_full_kor",
+    "expected_pages": [
+      21
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_s1m2es_full_kor_22_응결_렌즈_뷰파인더_모니터에",
+    "query": "응결 렌즈 뷰파인더 모니터에",
+    "model_ids": [
+      "DC-S1M2ES"
+    ],
+    "expected_document_id": "dc_s1m2es_full_kor",
+    "expected_pages": [
+      22
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "display",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_s1m2es_full_kor_22_사전_테스트_필요",
+    "query": "사전 테스트 필요",
+    "model_ids": [
+      "DC-S1M2ES"
+    ],
+    "expected_document_id": "dc_s1m2es_full_kor",
+    "expected_pages": [
+      22
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_s1m2es_full_kor_22_테스트_사전_필요_중요한",
+    "query": "테스트 사전 필요 중요한",
+    "model_ids": [
+      "DC-S1M2ES"
+    ],
+    "expected_document_id": "dc_s1m2es_full_kor",
+    "expected_pages": [
+      22
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_s1m2es_full_kor_22_촬영에_보상을_제공하지_않음",
+    "query": "촬영에 보상을 제공하지 않음",
+    "model_ids": [
+      "DC-S1M2ES"
+    ],
+    "expected_document_id": "dc_s1m2es_full_kor",
+    "expected_pages": [
+      22
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_s1m2es_full_kor_22_주의_읽어_주십시오",
+    "query": "주의 읽어 주십시오",
+    "model_ids": [
+      "DC-S1M2ES"
+    ],
+    "expected_document_id": "dc_s1m2es_full_kor",
+    "expected_pages": [
+      22
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_s1r_full_kor_14_표시_뷰파인더_화면_모니터",
+    "query": "표시 뷰파인더 화면 모니터",
+    "model_ids": [
+      "DC-S1R"
+    ],
+    "expected_document_id": "dc_s1r_full_kor",
+    "expected_pages": [
+      14
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "display",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_s1r_full_kor_14_폴더_파일_카드_구조",
+    "query": "폴더 파일 카드 구조",
+    "model_ids": [
+      "DC-S1R"
+    ],
+    "expected_document_id": "dc_s1r_full_kor",
+    "expected_pages": [
+      14
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "setup",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_s1r_full_kor_14_af_mf",
+    "query": "AF MF",
+    "model_ids": [
+      "DC-S1R"
+    ],
+    "expected_document_id": "dc_s1r_full_kor",
+    "expected_pages": [
+      14
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "focus",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_s1r_full_kor_14_af_감지_mf_얼굴",
+    "query": "AF 감지 MF 얼굴",
+    "model_ids": [
+      "DC-S1R"
+    ],
+    "expected_document_id": "dc_s1r_full_kor",
+    "expected_pages": [
+      14
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "focus",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_s1r_full_kor_14_af_mf_터치_보조",
+    "query": "AF MF 터치 보조",
+    "model_ids": [
+      "DC-S1R"
+    ],
+    "expected_document_id": "dc_s1r_full_kor",
+    "expected_pages": [
+      14
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "focus",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_s1r_full_kor_15_뷰파인더_드라이브_연사_포토",
+    "query": "뷰파인더 드라이브 연사 포토",
+    "model_ids": [
+      "DC-S1R"
+    ],
+    "expected_document_id": "dc_s1r_full_kor",
+    "expected_pages": [
+      15
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "display",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_s1r_full_kor_15_이미지_품질",
+    "query": "이미지 품질",
+    "model_ids": [
+      "DC-S1R"
+    ],
+    "expected_document_id": "dc_s1r_full_kor",
+    "expected_pages": [
+      15
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_s1r_full_kor_15_사진_노이즈_감소_이미지",
+    "query": "사진 노이즈 감소 이미지",
+    "model_ids": [
+      "DC-S1R"
+    ],
+    "expected_document_id": "dc_s1r_full_kor",
+    "expected_pages": [
+      15
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_s1r_full_kor_15_이미지_사진_품질_메뉴",
+    "query": "이미지 사진 품질 메뉴",
+    "model_ids": [
+      "DC-S1R"
+    ],
+    "expected_document_id": "dc_s1r_full_kor",
+    "expected_pages": [
+      15
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_s1r_full_kor_15_ae_iso_노출_노출보정",
+    "query": "AE ISO 노출 노출보정",
+    "model_ids": [
+      "DC-S1R"
+    ],
+    "expected_document_id": "dc_s1r_full_kor",
+    "expected_pages": [
+      15
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "exposure",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_s1r_full_kor_15_비디오_출력_동영상_af",
+    "query": "비디오 출력 동영상 AF",
+    "model_ids": [
+      "DC-S1R"
+    ],
+    "expected_document_id": "dc_s1r_full_kor",
+    "expected_pages": [
+      15
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "video",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_s1r_full_kor_16_플래시_외장_조명_출력",
+    "query": "플래시 외장 조명 출력",
+    "model_ids": [
+      "DC-S1R"
+    ],
+    "expected_document_id": "dc_s1r_full_kor",
+    "expected_pages": [
+      16
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "exposure",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_s1rm2_full_kor_18_소개_장에서는_카메라를_알아두어야",
+    "query": "소개 장에서는 카메라를 알아두어야",
+    "model_ids": [
+      "DC-S1RM2"
+    ],
+    "expected_document_id": "dc_s1rm2_full_kor",
+    "expected_pages": [
+      18
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_s1rm2_full_kor_20_취급법_카메라를_떨어뜨리거나_부딪치거나",
+    "query": "취급법 카메라를 떨어뜨리거나 부딪치거나",
+    "model_ids": [
+      "DC-S1RM2"
+    ],
+    "expected_document_id": "dc_s1rm2_full_kor",
+    "expected_pages": [
+      20
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_s1rm2_full_kor_20_취급법_모래_먼지_액체가",
+    "query": "취급법 모래 먼지 액체가",
+    "model_ids": [
+      "DC-S1RM2"
+    ],
+    "expected_document_id": "dc_s1rm2_full_kor",
+    "expected_pages": [
+      20
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_s1rm2_full_kor_20_취급법_손을_마운트_안에",
+    "query": "취급법 손을 마운트 안에",
+    "model_ids": [
+      "DC-S1RM2"
+    ],
+    "expected_document_id": "dc_s1rm2_full_kor",
+    "expected_pages": [
+      20
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_s1rm2_full_kor_20_취급법_카메라를_끄는_동안",
+    "query": "취급법 카메라를 끄는 동안",
+    "model_ids": [
+      "DC-S1RM2"
+    ],
+    "expected_document_id": "dc_s1rm2_full_kor",
+    "expected_pages": [
+      20
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_s1rm2_full_kor_20_튀김_방수",
+    "query": "튀김 방수",
+    "model_ids": [
+      "DC-S1RM2"
+    ],
+    "expected_document_id": "dc_s1rm2_full_kor",
+    "expected_pages": [
+      20
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_s1rm2_full_kor_20_튀김_방수_기능은_하지",
+    "query": "튀김 방수 기능은 하지",
+    "model_ids": [
+      "DC-S1RM2"
+    ],
+    "expected_document_id": "dc_s1rm2_full_kor",
+    "expected_pages": [
+      20
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_s1rm2_full_kor_21_응결_렌즈_뷰파인더_모니터에",
+    "query": "응결 렌즈 뷰파인더 모니터에",
+    "model_ids": [
+      "DC-S1RM2"
+    ],
+    "expected_document_id": "dc_s1rm2_full_kor",
+    "expected_pages": [
+      21
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "display",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_s1rm2_full_kor_21_사전_테스트_필요",
+    "query": "사전 테스트 필요",
+    "model_ids": [
+      "DC-S1RM2"
+    ],
+    "expected_document_id": "dc_s1rm2_full_kor",
+    "expected_pages": [
+      21
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_s1rm2_full_kor_21_테스트_사전_필요_중요한",
+    "query": "테스트 사전 필요 중요한",
+    "model_ids": [
+      "DC-S1RM2"
+    ],
+    "expected_document_id": "dc_s1rm2_full_kor",
+    "expected_pages": [
+      21
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_s1rm2_full_kor_21_촬영에_보상을_제공하지_않음",
+    "query": "촬영에 보상을 제공하지 않음",
+    "model_ids": [
+      "DC-S1RM2"
+    ],
+    "expected_document_id": "dc_s1rm2_full_kor",
+    "expected_pages": [
+      21
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_s1rm2_full_kor_21_주의_읽어_주십시오",
+    "query": "주의 읽어 주십시오",
+    "model_ids": [
+      "DC-S1RM2"
+    ],
+    "expected_document_id": "dc_s1rm2_full_kor",
+    "expected_pages": [
+      21
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_s5_full_kor_15_뷰파인더_배터리_표시_전원",
+    "query": "뷰파인더 배터리 표시 전원",
+    "model_ids": [
+      "DC-S5"
+    ],
+    "expected_document_id": "dc_s5_full_kor",
+    "expected_pages": [
+      15
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "power",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_s5_full_kor_15_표시_모니터_뷰파인더_보기",
+    "query": "표시 모니터 뷰파인더 보기",
+    "model_ids": [
+      "DC-S5"
+    ],
+    "expected_document_id": "dc_s5_full_kor",
+    "expected_pages": [
+      15
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "display",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_s5_full_kor_15_af_mf",
+    "query": "AF MF",
+    "model_ids": [
+      "DC-S5"
+    ],
+    "expected_document_id": "dc_s5_full_kor",
+    "expected_pages": [
+      15
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "focus",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_s5_full_kor_16_이미지_품질",
+    "query": "이미지 품질",
+    "model_ids": [
+      "DC-S5"
+    ],
+    "expected_document_id": "dc_s5_full_kor",
+    "expected_pages": [
+      16
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_s5_full_kor_16_mf_af_보조_이미지",
+    "query": "MF AF 보조 이미지",
+    "model_ids": [
+      "DC-S5"
+    ],
+    "expected_document_id": "dc_s5_full_kor",
+    "expected_pages": [
+      16
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "focus",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_s5_full_kor_16_감소_노이즈_이미지_품질",
+    "query": "감소 노이즈 이미지 품질",
+    "model_ids": [
+      "DC-S5"
+    ],
+    "expected_document_id": "dc_s5_full_kor",
+    "expected_pages": [
+      16
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_s5_full_kor_16_이미지_손떨림_보정",
+    "query": "이미지 손떨림 보정",
+    "model_ids": [
+      "DC-S5"
+    ],
+    "expected_document_id": "dc_s5_full_kor",
+    "expected_pages": [
+      16
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "stabilization",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_s5_full_kor_16_이미지_손떨림_보정_비디오",
+    "query": "이미지 손떨림 보정 비디오",
+    "model_ids": [
+      "DC-S5"
+    ],
+    "expected_document_id": "dc_s5_full_kor",
+    "expected_pages": [
+      16
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "video",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_s5_full_kor_16_사진_이미지_손떨림_보정",
+    "query": "사진 이미지 손떨림 보정",
+    "model_ids": [
+      "DC-S5"
+    ],
+    "expected_document_id": "dc_s5_full_kor",
+    "expected_pages": [
+      16
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "stabilization",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_s5_full_kor_16_이미지_손떨림_보정_드라이브",
+    "query": "이미지 손떨림 보정 드라이브",
+    "model_ids": [
+      "DC-S5"
+    ],
+    "expected_document_id": "dc_s5_full_kor",
+    "expected_pages": [
+      16
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "stabilization",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_s5_full_kor_17_표시_비디오",
+    "query": "표시 비디오",
+    "model_ids": [
+      "DC-S5"
+    ],
+    "expected_document_id": "dc_s5_full_kor",
+    "expected_pages": [
+      17
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "video",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_s5_full_kor_17_ae_iso_노출_노출보정",
+    "query": "AE ISO 노출 노출보정",
+    "model_ids": [
+      "DC-S5"
+    ],
+    "expected_document_id": "dc_s5_full_kor",
+    "expected_pages": [
+      17
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "exposure",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_s5m2_full_kor_17_소개_장에서는_카메라를_알아두어야",
+    "query": "소개 장에서는 카메라를 알아두어야",
+    "model_ids": [
+      "DC-S5M2"
+    ],
+    "expected_document_id": "dc_s5m2_full_kor",
+    "expected_pages": [
+      17
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_s5m2_full_kor_18_취급법_카메라를_떨어뜨리거나_부딪치거나",
+    "query": "취급법 카메라를 떨어뜨리거나 부딪치거나",
+    "model_ids": [
+      "DC-S5M2"
+    ],
+    "expected_document_id": "dc_s5m2_full_kor",
+    "expected_pages": [
+      18
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_s5m2_full_kor_18_취급법_모래_먼지_액체가",
+    "query": "취급법 모래 먼지 액체가",
+    "model_ids": [
+      "DC-S5M2"
+    ],
+    "expected_document_id": "dc_s5m2_full_kor",
+    "expected_pages": [
+      18
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_s5m2_full_kor_18_취급법_터치_조작이_올바르게",
+    "query": "취급법 터치 조작이 올바르게",
+    "model_ids": [
+      "DC-S5M2"
+    ],
+    "expected_document_id": "dc_s5m2_full_kor",
+    "expected_pages": [
+      18
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_s5m2_full_kor_18_취급법_손을_마운트_안에",
+    "query": "취급법 손을 마운트 안에",
+    "model_ids": [
+      "DC-S5M2"
+    ],
+    "expected_document_id": "dc_s5m2_full_kor",
+    "expected_pages": [
+      18
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_s5m2_full_kor_18_취급법_카메라를_끄는_동안",
+    "query": "취급법 카메라를 끄는 동안",
+    "model_ids": [
+      "DC-S5M2"
+    ],
+    "expected_document_id": "dc_s5m2_full_kor",
+    "expected_pages": [
+      18
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_s5m2_full_kor_19_튀김_방수",
+    "query": "튀김 방수",
+    "model_ids": [
+      "DC-S5M2"
+    ],
+    "expected_document_id": "dc_s5m2_full_kor",
+    "expected_pages": [
+      19
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_s5m2_full_kor_19_튀김_방수_기능은_하지",
+    "query": "튀김 방수 기능은 하지",
+    "model_ids": [
+      "DC-S5M2"
+    ],
+    "expected_document_id": "dc_s5m2_full_kor",
+    "expected_pages": [
+      19
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_s5m2_full_kor_19_응결_렌즈_뷰파인더_모니터에",
+    "query": "응결 렌즈 뷰파인더 모니터에",
+    "model_ids": [
+      "DC-S5M2"
+    ],
+    "expected_document_id": "dc_s5m2_full_kor",
+    "expected_pages": [
+      19
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "display",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_s5m2_full_kor_20_사전_테스트_필요",
+    "query": "사전 테스트 필요",
+    "model_ids": [
+      "DC-S5M2"
+    ],
+    "expected_document_id": "dc_s5m2_full_kor",
+    "expected_pages": [
+      20
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_s5m2_full_kor_20_테스트_사전_필요_중요한",
+    "query": "테스트 사전 필요 중요한",
+    "model_ids": [
+      "DC-S5M2"
+    ],
+    "expected_document_id": "dc_s5m2_full_kor",
+    "expected_pages": [
+      20
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_s5m2_full_kor_20_촬영에_보상을_제공하지_않음",
+    "query": "촬영에 보상을 제공하지 않음",
+    "model_ids": [
+      "DC-S5M2"
+    ],
+    "expected_document_id": "dc_s5m2_full_kor",
+    "expected_pages": [
+      20
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_s5m2x_full_kor_18_소개_장에서는_카메라를_알아두어야",
+    "query": "소개 장에서는 카메라를 알아두어야",
+    "model_ids": [
+      "DC-S5M2X"
+    ],
+    "expected_document_id": "dc_s5m2x_full_kor",
+    "expected_pages": [
+      18
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_s5m2x_full_kor_19_취급법_카메라를_떨어뜨리거나_부딪치거나",
+    "query": "취급법 카메라를 떨어뜨리거나 부딪치거나",
+    "model_ids": [
+      "DC-S5M2X"
+    ],
+    "expected_document_id": "dc_s5m2x_full_kor",
+    "expected_pages": [
+      19
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_s5m2x_full_kor_19_취급법_모래_먼지_액체가",
+    "query": "취급법 모래 먼지 액체가",
+    "model_ids": [
+      "DC-S5M2X"
+    ],
+    "expected_document_id": "dc_s5m2x_full_kor",
+    "expected_pages": [
+      19
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_s5m2x_full_kor_19_취급법_터치_조작이_올바르게",
+    "query": "취급법 터치 조작이 올바르게",
+    "model_ids": [
+      "DC-S5M2X"
+    ],
+    "expected_document_id": "dc_s5m2x_full_kor",
+    "expected_pages": [
+      19
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_s5m2x_full_kor_19_취급법_손을_마운트_안에",
+    "query": "취급법 손을 마운트 안에",
+    "model_ids": [
+      "DC-S5M2X"
+    ],
+    "expected_document_id": "dc_s5m2x_full_kor",
+    "expected_pages": [
+      19
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_s5m2x_full_kor_19_취급법_카메라를_끄는_동안",
+    "query": "취급법 카메라를 끄는 동안",
+    "model_ids": [
+      "DC-S5M2X"
+    ],
+    "expected_document_id": "dc_s5m2x_full_kor",
+    "expected_pages": [
+      19
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_s5m2x_full_kor_20_튀김_방수",
+    "query": "튀김 방수",
+    "model_ids": [
+      "DC-S5M2X"
+    ],
+    "expected_document_id": "dc_s5m2x_full_kor",
+    "expected_pages": [
+      20
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_s5m2x_full_kor_20_튀김_방수_기능은_하지",
+    "query": "튀김 방수 기능은 하지",
+    "model_ids": [
+      "DC-S5M2X"
+    ],
+    "expected_document_id": "dc_s5m2x_full_kor",
+    "expected_pages": [
+      20
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_s5m2x_full_kor_20_응결_렌즈_뷰파인더_모니터에",
+    "query": "응결 렌즈 뷰파인더 모니터에",
+    "model_ids": [
+      "DC-S5M2X"
+    ],
+    "expected_document_id": "dc_s5m2x_full_kor",
+    "expected_pages": [
+      20
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "display",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_s5m2x_full_kor_21_사전_테스트_필요",
+    "query": "사전 테스트 필요",
+    "model_ids": [
+      "DC-S5M2X"
+    ],
+    "expected_document_id": "dc_s5m2x_full_kor",
+    "expected_pages": [
+      21
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_s5m2x_full_kor_21_테스트_사전_필요_중요한",
+    "query": "테스트 사전 필요 중요한",
+    "model_ids": [
+      "DC-S5M2X"
+    ],
+    "expected_document_id": "dc_s5m2x_full_kor",
+    "expected_pages": [
+      21
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_s5m2x_full_kor_21_촬영에_보상을_제공하지_않음",
+    "query": "촬영에 보상을 제공하지 않음",
+    "model_ids": [
+      "DC-S5M2X"
+    ],
+    "expected_document_id": "dc_s5m2x_full_kor",
+    "expected_pages": [
+      21
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_s9_full_kor_17_소개_장에서는_카메라를_알아두어야",
+    "query": "소개 장에서는 카메라를 알아두어야",
+    "model_ids": [
+      "DC-S9"
+    ],
+    "expected_document_id": "dc_s9_full_kor",
+    "expected_pages": [
+      17
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_s9_full_kor_18_취급법_카메라를_떨어뜨리거나_부딪치거나",
+    "query": "취급법 카메라를 떨어뜨리거나 부딪치거나",
+    "model_ids": [
+      "DC-S9"
+    ],
+    "expected_document_id": "dc_s9_full_kor",
+    "expected_pages": [
+      18
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_s9_full_kor_18_방수_취급법_카메라는_방진",
+    "query": "방수 취급법 카메라는 방진",
+    "model_ids": [
+      "DC-S9"
+    ],
+    "expected_document_id": "dc_s9_full_kor",
+    "expected_pages": [
+      18
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_s9_full_kor_18_취급법_터치_조작이_올바르게",
+    "query": "취급법 터치 조작이 올바르게",
+    "model_ids": [
+      "DC-S9"
+    ],
+    "expected_document_id": "dc_s9_full_kor",
+    "expected_pages": [
+      18
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_s9_full_kor_18_취급법_손을_마운트_안에",
+    "query": "취급법 손을 마운트 안에",
+    "model_ids": [
+      "DC-S9"
+    ],
+    "expected_document_id": "dc_s9_full_kor",
+    "expected_pages": [
+      18
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_s9_full_kor_18_취급법_카메라를_끄는_동안",
+    "query": "취급법 카메라를 끄는 동안",
+    "model_ids": [
+      "DC-S9"
+    ],
+    "expected_document_id": "dc_s9_full_kor",
+    "expected_pages": [
+      18
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_s9_full_kor_19_응결_렌즈_모니터에_김이",
+    "query": "응결 렌즈 모니터에 김이",
+    "model_ids": [
+      "DC-S9"
+    ],
+    "expected_document_id": "dc_s9_full_kor",
+    "expected_pages": [
+      19
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "display",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_s9_full_kor_19_사전_테스트_필요",
+    "query": "사전 테스트 필요",
+    "model_ids": [
+      "DC-S9"
+    ],
+    "expected_document_id": "dc_s9_full_kor",
+    "expected_pages": [
+      19
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_s9_full_kor_19_테스트_사전_필요_중요한",
+    "query": "테스트 사전 필요 중요한",
+    "model_ids": [
+      "DC-S9"
+    ],
+    "expected_document_id": "dc_s9_full_kor",
+    "expected_pages": [
+      19
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_s9_full_kor_19_촬영에_보상을_제공하지_않음",
+    "query": "촬영에 보상을 제공하지 않음",
+    "model_ids": [
+      "DC-S9"
+    ],
+    "expected_document_id": "dc_s9_full_kor",
+    "expected_pages": [
+      19
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_s9_full_kor_19_주의_읽어_주십시오",
+    "query": "주의 읽어 주십시오",
+    "model_ids": [
+      "DC-S9"
+    ],
+    "expected_document_id": "dc_s9_full_kor",
+    "expected_pages": [
+      19
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_s9_full_kor_20_디지털_본체",
+    "query": "디지털 본체",
+    "model_ids": [
+      "DC-S9"
+    ],
+    "expected_document_id": "dc_s9_full_kor",
+    "expected_pages": [
+      20
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_tz300_zs300_full_kor_10_다른_장치와_연결",
+    "query": "다른 장치와 연결",
+    "model_ids": [
+      "DC-TZ300"
+    ],
+    "expected_document_id": "dc_tz300_zs300_full_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_tz300_zs300_full_kor_16_부분의_명칭과",
+    "query": "부분의 명칭과",
+    "model_ids": [
+      "DC-TZ300"
+    ],
+    "expected_document_id": "dc_tz300_zs300_full_kor",
+    "expected_pages": [
+      16
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_tz300_zs300_full_kor_17_버튼_부분의_명칭과_삭제",
+    "query": "버튼 부분의 명칭과 삭제",
+    "model_ids": [
+      "DC-TZ300"
+    ],
+    "expected_document_id": "dc_tz300_zs300_full_kor",
+    "expected_pages": [
+      17
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_tz300_zs300_full_kor_17_부분의_명칭과_버튼_fn4",
+    "query": "부분의 명칭과 버튼 Fn4",
+    "model_ids": [
+      "DC-TZ300"
+    ],
+    "expected_document_id": "dc_tz300_zs300_full_kor",
+    "expected_pages": [
+      17
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_tz300_zs300_full_kor_18_부분의_명칭과_준비",
+    "query": "부분의 명칭과 준비",
+    "model_ids": [
+      "DC-TZ300"
+    ],
+    "expected_document_id": "dc_tz300_zs300_full_kor",
+    "expected_pages": [
+      18
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_tz300_zs300_full_kor_18_부분의_명칭과_핸드_스트랩",
+    "query": "부분의 명칭과 핸드 스트랩",
+    "model_ids": [
+      "DC-TZ300"
+    ],
+    "expected_document_id": "dc_tz300_zs300_full_kor",
+    "expected_pages": [
+      18
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_tz300_zs300_full_kor_18_부분의_명칭과_낙하를_방지하기",
+    "query": "부분의 명칭과 낙하를 방지하기",
+    "model_ids": [
+      "DC-TZ300"
+    ],
+    "expected_document_id": "dc_tz300_zs300_full_kor",
+    "expected_pages": [
+      18
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_tz300_zs300_full_kor_18_부분의_명칭과_스트랩_고리",
+    "query": "부분의 명칭과 스트랩 고리",
+    "model_ids": [
+      "DC-TZ300"
+    ],
+    "expected_document_id": "dc_tz300_zs300_full_kor",
+    "expected_pages": [
+      18
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_tz300_zs300_full_kor_19_부분의_명칭과_배터리_충전",
+    "query": "부분의 명칭과 배터리 충전",
+    "model_ids": [
+      "DC-TZ300"
+    ],
+    "expected_document_id": "dc_tz300_zs300_full_kor",
+    "expected_pages": [
+      19
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "power",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_tz300_zs300_full_kor_19_시중_판매_제품_부분의",
+    "query": "시중 판매 제품 부분의",
+    "model_ids": [
+      "DC-TZ300"
+    ],
+    "expected_document_id": "dc_tz300_zs300_full_kor",
+    "expected_pages": [
+      19
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_tz300_zs300_full_kor_19_부분의_명칭과_상태",
+    "query": "부분의 명칭과 상태",
+    "model_ids": [
+      "DC-TZ300"
+    ],
+    "expected_document_id": "dc_tz300_zs300_full_kor",
+    "expected_pages": [
+      19
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_tz300_zs300_full_kor_19_부분의_명칭과_충전",
+    "query": "부분의 명칭과 충전",
+    "model_ids": [
+      "DC-TZ300"
+    ],
+    "expected_document_id": "dc_tz300_zs300_full_kor",
+    "expected_pages": [
+      19
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "power",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_tz99_zs99_full_kor_10_다른_장치와_연결",
+    "query": "다른 장치와 연결",
+    "model_ids": [
+      "DC-TZ99"
+    ],
+    "expected_document_id": "dc_tz99_zs99_full_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_tz99_zs99_full_kor_10_다른_장치와_연결_촬영된",
+    "query": "다른 장치와 연결 촬영된",
+    "model_ids": [
+      "DC-TZ99"
+    ],
+    "expected_document_id": "dc_tz99_zs99_full_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_tz99_zs99_full_kor_16_부분의_명칭과",
+    "query": "부분의 명칭과",
+    "model_ids": [
+      "DC-TZ99"
+    ],
+    "expected_document_id": "dc_tz99_zs99_full_kor",
+    "expected_pages": [
+      16
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_tz99_zs99_full_kor_17_부분의_명칭과_조절_다이얼",
+    "query": "부분의 명칭과 조절 다이얼",
+    "model_ids": [
+      "DC-TZ99"
+    ],
+    "expected_document_id": "dc_tz99_zs99_full_kor",
+    "expected_pages": [
+      17
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_tz99_zs99_full_kor_17_버튼_부분의_명칭과_q_menu",
+    "query": "버튼 부분의 명칭과 Q.MENU",
+    "model_ids": [
+      "DC-TZ99"
+    ],
+    "expected_document_id": "dc_tz99_zs99_full_kor",
+    "expected_pages": [
+      17
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_tz99_zs99_full_kor_17_부분의_명칭과_버튼_fn4",
+    "query": "부분의 명칭과 버튼 Fn4",
+    "model_ids": [
+      "DC-TZ99"
+    ],
+    "expected_document_id": "dc_tz99_zs99_full_kor",
+    "expected_pages": [
+      17
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_tz99_zs99_full_kor_18_부분의_명칭과_준비",
+    "query": "부분의 명칭과 준비",
+    "model_ids": [
+      "DC-TZ99"
+    ],
+    "expected_document_id": "dc_tz99_zs99_full_kor",
+    "expected_pages": [
+      18
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_tz99_zs99_full_kor_18_부분의_명칭과_핸드_스트랩",
+    "query": "부분의 명칭과 핸드 스트랩",
+    "model_ids": [
+      "DC-TZ99"
+    ],
+    "expected_document_id": "dc_tz99_zs99_full_kor",
+    "expected_pages": [
+      18
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_tz99_zs99_full_kor_18_부분의_명칭과_낙하를_방지하기",
+    "query": "부분의 명칭과 낙하를 방지하기",
+    "model_ids": [
+      "DC-TZ99"
+    ],
+    "expected_document_id": "dc_tz99_zs99_full_kor",
+    "expected_pages": [
+      18
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_tz99_zs99_full_kor_18_부분의_명칭과_스트랩_고리",
+    "query": "부분의 명칭과 스트랩 고리",
+    "model_ids": [
+      "DC-TZ99"
+    ],
+    "expected_document_id": "dc_tz99_zs99_full_kor",
+    "expected_pages": [
+      18
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_tz99_zs99_full_kor_19_부분의_명칭과_배터리_충전",
+    "query": "부분의 명칭과 배터리 충전",
+    "model_ids": [
+      "DC-TZ99"
+    ],
+    "expected_document_id": "dc_tz99_zs99_full_kor",
+    "expected_pages": [
+      19
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "power",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dc_tz99_zs99_full_kor_19_제공_시중_판매_제품",
+    "query": "제공 시중 판매 제품",
+    "model_ids": [
+      "DC-TZ99"
+    ],
+    "expected_document_id": "dc_tz99_zs99_full_kor",
+    "expected_pages": [
+      19
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dmc_g7_kor_10_강한_진동_충격이나_압력을",
+    "query": "강한 진동 충격이나 압력을",
+    "model_ids": [
+      "DMC-G7"
+    ],
+    "expected_document_id": "dmc_g7_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dmc_g7_kor_10_카메라에는_방진_방적_방수",
+    "query": "카메라에는 방진 방적 방수",
+    "model_ids": [
+      "DMC-G7"
+    ],
+    "expected_document_id": "dmc_g7_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dmc_g7_kor_10_모래_카메라에는_방진_방적",
+    "query": "모래 카메라에는 방진 방적",
+    "model_ids": [
+      "DMC-G7"
+    ],
+    "expected_document_id": "dmc_g7_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dmc_g7_kor_10_마십시오_카메라에는_방진_방적",
+    "query": "마십시오 카메라에는 방진 방적",
+    "model_ids": [
+      "DMC-G7"
+    ],
+    "expected_document_id": "dmc_g7_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dmc_g7_kor_12_부품의_명칭",
+    "query": "부품의 명칭",
+    "model_ids": [
+      "DMC-G7"
+    ],
+    "expected_document_id": "dmc_g7_kor",
+    "expected_pages": [
+      12
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dmc_g7_kor_12_본체_상태_표시_wi_fi",
+    "query": "본체 상태 표시 Wi-Fi",
+    "model_ids": [
+      "DMC-G7"
+    ],
+    "expected_document_id": "dmc_g7_kor",
+    "expected_pages": [
+      12
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "connectivity",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dmc_g7_kor_12_본체_wi_fi_연결되면_청색",
+    "query": "본체 Wi-Fi 연결되면 청색",
+    "model_ids": [
+      "DMC-G7"
+    ],
+    "expected_document_id": "dmc_g7_kor",
+    "expected_pages": [
+      12
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "connectivity",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dmc_g7_kor_12_본체_다이얼",
+    "query": "본체 다이얼",
+    "model_ids": [
+      "DMC-G7"
+    ],
+    "expected_document_id": "dmc_g7_kor",
+    "expected_pages": [
+      12
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dmc_g7_kor_12_본체_다이얼을_돌려_모드를",
+    "query": "본체 다이얼을 돌려 모드를",
+    "model_ids": [
+      "DMC-G7"
+    ],
+    "expected_document_id": "dmc_g7_kor",
+    "expected_pages": [
+      12
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dmc_g7_kor_12_본체_스테레오_마이크",
+    "query": "본체 스테레오 마이크",
+    "model_ids": [
+      "DMC-G7"
+    ],
+    "expected_document_id": "dmc_g7_kor",
+    "expected_pages": [
+      12
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dmc_g7_kor_12_본체_손가락으로_마이크를_가리지",
+    "query": "본체 손가락으로 마이크를 가리지",
+    "model_ids": [
+      "DMC-G7"
+    ],
+    "expected_document_id": "dmc_g7_kor",
+    "expected_pages": [
+      12
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dmc_g7_kor_12_본체_드라이브_다이얼",
+    "query": "본체 드라이브 다이얼",
+    "model_ids": [
+      "DMC-G7"
+    ],
+    "expected_document_id": "dmc_g7_kor",
+    "expected_pages": [
+      12
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dmc_g85_full_kor_10_모니터링_동영상",
+    "query": "모니터링 동영상",
+    "model_ids": [
+      "DMC-G85"
+    ],
+    "expected_document_id": "dmc_g85_full_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "video",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dmc_g85_full_kor_10_동영상_모니터링_크리에이티브_무음",
+    "query": "동영상 모니터링 크리에이티브 무음",
+    "model_ids": [
+      "DMC-G85"
+    ],
+    "expected_document_id": "dmc_g85_full_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "video",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dmc_g85_full_kor_10_마이크음량_오디오_조정_리미터",
+    "query": "마이크음량 오디오 조정 리미터",
+    "model_ids": [
+      "DMC-G85"
+    ],
+    "expected_document_id": "dmc_g85_full_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dmc_g85_full_kor_10_화면_설정들",
+    "query": "화면 설정들",
+    "model_ids": [
+      "DMC-G85"
+    ],
+    "expected_document_id": "dmc_g85_full_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "setup",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dmc_g85_full_kor_10_화면_설정들_마이크음량_표시",
+    "query": "화면 설정들 마이크음량 표시",
+    "model_ids": [
+      "DMC-G85"
+    ],
+    "expected_document_id": "dmc_g85_full_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "display",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dmc_g85_full_kor_10_이미지_휘도_레벨",
+    "query": "이미지 휘도 레벨",
+    "model_ids": [
+      "DMC-G85"
+    ],
+    "expected_document_id": "dmc_g85_full_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dmc_g85_full_kor_10_이미지_리셋_초기화_센서",
+    "query": "이미지 리셋 초기화 센서",
+    "model_ids": [
+      "DMC-G85"
+    ],
+    "expected_document_id": "dmc_g85_full_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dmc_g85_full_kor_10_설정들_포맷_시계_디스플레이",
+    "query": "설정들 포맷 시계 디스플레이",
+    "model_ids": [
+      "DMC-G85"
+    ],
+    "expected_document_id": "dmc_g85_full_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "setup",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dmc_g85_full_kor_10_기호에_맞추기",
+    "query": "기호에 맞추기",
+    "model_ids": [
+      "DMC-G85"
+    ],
+    "expected_document_id": "dmc_g85_full_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dmc_g85_full_kor_10_기호에_맞추기_메뉴의_버튼들",
+    "query": "기호에 맞추기 메뉴의 버튼들",
+    "model_ids": [
+      "DMC-G85"
+    ],
+    "expected_document_id": "dmc_g85_full_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dmc_g85_full_kor_10_기호에_맞추기_재생",
+    "query": "기호에 맞추기 재생",
+    "model_ids": [
+      "DMC-G85"
+    ],
+    "expected_document_id": "dmc_g85_full_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dmc_g85_full_kor_10_재생_편집하기_사진_동영상",
+    "query": "재생 편집하기 사진 동영상",
+    "model_ids": [
+      "DMC-G85"
+    ],
+    "expected_document_id": "dmc_g85_full_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "video",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dmc_gf1_kor_10_본체_누르십시오",
+    "query": "본체 누르십시오",
+    "model_ids": [
+      "DMC-GF1"
+    ],
+    "expected_document_id": "dmc_gf1_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dmc_gf1_kor_10_본체_menu_set",
+    "query": "본체 MENU SET",
+    "model_ids": [
+      "DMC-GF1"
+    ],
+    "expected_document_id": "dmc_gf1_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dmc_gf1_kor_10_본체_반드시_어깨끈을_부착하여",
+    "query": "본체 반드시 어깨끈을 부착하여",
+    "model_ids": [
+      "DMC-GF1"
+    ],
+    "expected_document_id": "dmc_gf1_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dmc_gf1_kor_10_본체_메라를_떨어뜨리지_않도록",
+    "query": "본체 메라를 떨어뜨리지 않도록",
+    "model_ids": [
+      "DMC-GF1"
+    ],
+    "expected_document_id": "dmc_gf1_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dmc_gf1_kor_11_본체_삼각대_시에는_카메라가",
+    "query": "본체 삼각대 시에는 카메라가",
+    "model_ids": [
+      "DMC-GF1"
+    ],
+    "expected_document_id": "dmc_gf1_kor",
+    "expected_pages": [
+      11
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dmc_gf1_kor_11_삼각대_본체_삼각대가_안정적인지",
+    "query": "삼각대 본체 삼각대가 안정적인지",
+    "model_ids": [
+      "DMC-GF1"
+    ],
+    "expected_document_id": "dmc_gf1_kor",
+    "expected_pages": [
+      11
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dmc_gf1_kor_11_본체_렌즈_h_h020_lumix",
+    "query": "본체 렌즈 H-H020 LUMIX",
+    "model_ids": [
+      "DMC-GF1"
+    ],
+    "expected_document_id": "dmc_gf1_kor",
+    "expected_pages": [
+      11
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dmc_gf1_kor_11_본체_전기충전기_직류전원장치경용",
+    "query": "본체 전기충전기 직류전원장치경용",
+    "model_ids": [
+      "DMC-GF1"
+    ],
+    "expected_document_id": "dmc_gf1_kor",
+    "expected_pages": [
+      11
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "power",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dmc_gf1_kor_12_핫슈_커버_빼기",
+    "query": "핫슈 커버 빼기",
+    "model_ids": [
+      "DMC-GF1"
+    ],
+    "expected_document_id": "dmc_gf1_kor",
+    "expected_pages": [
+      12
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dmc_gf1_kor_12_핫슈_외장_커버_빼기",
+    "query": "핫슈 외장 커버 빼기",
+    "model_ids": [
+      "DMC-GF1"
+    ],
+    "expected_document_id": "dmc_gf1_kor",
+    "expected_pages": [
+      12
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dmc_gf1_kor_12_핫슈_커버_열림_버튼을",
+    "query": "핫슈 커버 열림 버튼을",
+    "model_ids": [
+      "DMC-GF1"
+    ],
+    "expected_document_id": "dmc_gf1_kor",
+    "expected_pages": [
+      12
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dmc_gf1_kor_12_다이얼_조작하기",
+    "query": "다이얼 조작하기",
+    "model_ids": [
+      "DMC-GF1"
+    ],
+    "expected_document_id": "dmc_gf1_kor",
+    "expected_pages": [
+      12
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dmc_gm1_kor_10_강한_진동_충격이나_압력을",
+    "query": "강한 진동 충격이나 압력을",
+    "model_ids": [
+      "DMC-GM1"
+    ],
+    "expected_document_id": "dmc_gm1_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dmc_gm1_kor_10_카메라에는_방진_방적_방수",
+    "query": "카메라에는 방진 방적 방수",
+    "model_ids": [
+      "DMC-GM1"
+    ],
+    "expected_document_id": "dmc_gm1_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dmc_gm1_kor_10_모래_카메라에는_방진_방적",
+    "query": "모래 카메라에는 방진 방적",
+    "model_ids": [
+      "DMC-GM1"
+    ],
+    "expected_document_id": "dmc_gm1_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dmc_gm1_kor_10_마십시오_카메라에는_방진_방적",
+    "query": "마십시오 카메라에는 방진 방적",
+    "model_ids": [
+      "DMC-GM1"
+    ],
+    "expected_document_id": "dmc_gm1_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dmc_gm1_kor_12_부품의_명칭",
+    "query": "부품의 명칭",
+    "model_ids": [
+      "DMC-GM1"
+    ],
+    "expected_document_id": "dmc_gm1_kor",
+    "expected_pages": [
+      12
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dmc_gm1_kor_12_본체_플래시가_열리고_플래시",
+    "query": "본체 플래시가 열리고 플래시",
+    "model_ids": [
+      "DMC-GM1"
+    ],
+    "expected_document_id": "dmc_gm1_kor",
+    "expected_pages": [
+      12
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "exposure",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dmc_gm1_kor_12_본체_손가락으로_스피커를_가리지",
+    "query": "본체 손가락으로 스피커를 가리지",
+    "model_ids": [
+      "DMC-GM1"
+    ],
+    "expected_document_id": "dmc_gm1_kor",
+    "expected_pages": [
+      12
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dmc_gm1_kor_12_본체_심하십시오_소리가_들리지",
+    "query": "본체 심하십시오 소리가 들리지",
+    "model_ids": [
+      "DMC-GM1"
+    ],
+    "expected_document_id": "dmc_gm1_kor",
+    "expected_pages": [
+      12
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dmc_gm1_kor_12_본체_누를_때마다_모니터",
+    "query": "본체 누를 때마다 모니터",
+    "model_ids": [
+      "DMC-GM1"
+    ],
+    "expected_document_id": "dmc_gm1_kor",
+    "expected_pages": [
+      12
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "display",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dmc_gm1_kor_13_본체_손가락으로_마이크를_가리지",
+    "query": "본체 손가락으로 마이크를 가리지",
+    "model_ids": [
+      "DMC-GM1"
+    ],
+    "expected_document_id": "dmc_gm1_kor",
+    "expected_pages": [
+      13
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dmc_gm1_kor_13_본체_구입_시에는_wi_fi",
+    "query": "본체 구입 시에는 Wi-Fi",
+    "model_ids": [
+      "DMC-GM1"
+    ],
+    "expected_document_id": "dmc_gm1_kor",
+    "expected_pages": [
+      13
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "connectivity",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dmc_gm1_kor_13_본체_전원을_켜면_램프에",
+    "query": "본체 전원을 켜면 램프에",
+    "model_ids": [
+      "DMC-GM1"
+    ],
+    "expected_document_id": "dmc_gm1_kor",
+    "expected_pages": [
+      13
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "power",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dmc_gm5_kor_11_다른_기기에_연결하기",
+    "query": "다른 기기에 연결하기",
+    "model_ids": [
+      "DMC-GM5"
+    ],
+    "expected_document_id": "dmc_gm5_kor",
+    "expected_pages": [
+      11
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dmc_gm5_kor_12_강한_진동_충격이나_압력을",
+    "query": "강한 진동 충격이나 압력을",
+    "model_ids": [
+      "DMC-GM5"
+    ],
+    "expected_document_id": "dmc_gm5_kor",
+    "expected_pages": [
+      12
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dmc_gm5_kor_12_카메라에는_방진_방적_방수",
+    "query": "카메라에는 방진 방적 방수",
+    "model_ids": [
+      "DMC-GM5"
+    ],
+    "expected_document_id": "dmc_gm5_kor",
+    "expected_pages": [
+      12
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dmc_gm5_kor_12_모래_카메라에는_방진_방적",
+    "query": "모래 카메라에는 방진 방적",
+    "model_ids": [
+      "DMC-GM5"
+    ],
+    "expected_document_id": "dmc_gm5_kor",
+    "expected_pages": [
+      12
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dmc_gm5_kor_12_마십시오_카메라에는_방진_방적",
+    "query": "마십시오 카메라에는 방진 방적",
+    "model_ids": [
+      "DMC-GM5"
+    ],
+    "expected_document_id": "dmc_gm5_kor",
+    "expected_pages": [
+      12
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dmc_gm5_kor_14_부품의_명칭",
+    "query": "부품의 명칭",
+    "model_ids": [
+      "DMC-GM5"
+    ],
+    "expected_document_id": "dmc_gm5_kor",
+    "expected_pages": [
+      14
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dmc_gm5_kor_14_부품의_명칭_본체",
+    "query": "부품의 명칭 본체",
+    "model_ids": [
+      "DMC-GM5"
+    ],
+    "expected_document_id": "dmc_gm5_kor",
+    "expected_pages": [
+      14
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dmc_gm5_kor_14_부품의_명칭_스테레오_마이크",
+    "query": "부품의 명칭 스테레오 마이크",
+    "model_ids": [
+      "DMC-GM5"
+    ],
+    "expected_document_id": "dmc_gm5_kor",
+    "expected_pages": [
+      14
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dmc_gm5_kor_14_부품의_명칭_손가락으로_마이크를",
+    "query": "부품의 명칭 손가락으로 마이크를",
+    "model_ids": [
+      "DMC-GM5"
+    ],
+    "expected_document_id": "dmc_gm5_kor",
+    "expected_pages": [
+      14
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dmc_gm5_kor_14_부품의_명칭_커버",
+    "query": "부품의 명칭 커버",
+    "model_ids": [
+      "DMC-GM5"
+    ],
+    "expected_document_id": "dmc_gm5_kor",
+    "expected_pages": [
+      14
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dmc_gm5_kor_14_부품의_명칭_어린이가_핫슈",
+    "query": "부품의 명칭 어린이가 핫슈",
+    "model_ids": [
+      "DMC-GM5"
+    ],
+    "expected_document_id": "dmc_gm5_kor",
+    "expected_pages": [
+      14
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dmc_gm5_kor_14_부품의_명칭_어린이의_손이",
+    "query": "부품의 명칭 어린이의 손이",
+    "model_ids": [
+      "DMC-GM5"
+    ],
+    "expected_document_id": "dmc_gm5_kor",
+    "expected_pages": [
+      14
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dmc_gx85_kor_10_화질_색상톤_동영상",
+    "query": "화질 색상톤 동영상",
+    "model_ids": [
+      "DMC-GX85"
+    ],
+    "expected_document_id": "dmc_gx85_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "video",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dmc_gx85_kor_10_화질_색상톤_스냅_영상",
+    "query": "화질 색상톤 스냅 영상",
+    "model_ids": [
+      "DMC-GX85"
+    ],
+    "expected_document_id": "dmc_gx85_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dmc_gx85_kor_10_동영상_화질_색상톤_크리에이티브",
+    "query": "동영상 화질 색상톤 크리에이티브",
+    "model_ids": [
+      "DMC-GX85"
+    ],
+    "expected_document_id": "dmc_gx85_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "video",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dmc_gx85_kor_10_화질_색상톤_마이크음량_조정",
+    "query": "화질 색상톤 마이크음량 조정",
+    "model_ids": [
+      "DMC-GX85"
+    ],
+    "expected_document_id": "dmc_gx85_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dmc_gx85_kor_10_화면_설정들",
+    "query": "화면 설정들",
+    "model_ids": [
+      "DMC-GX85"
+    ],
+    "expected_document_id": "dmc_gx85_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "setup",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dmc_gx85_kor_10_화면_설정들_마이크음량_표시",
+    "query": "화면 설정들 마이크음량 표시",
+    "model_ids": [
+      "DMC-GX85"
+    ],
+    "expected_document_id": "dmc_gx85_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "display",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dmc_gx85_kor_10_화면_설정들_리셋_초기화",
+    "query": "화면 설정들 리셋 초기화",
+    "model_ids": [
+      "DMC-GX85"
+    ],
+    "expected_document_id": "dmc_gx85_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "setup",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dmc_gx85_kor_10_설정들_포맷_시계_디스플레이",
+    "query": "설정들 포맷 시계 디스플레이",
+    "model_ids": [
+      "DMC-GX85"
+    ],
+    "expected_document_id": "dmc_gx85_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "setup",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dmc_gx85_kor_10_기호에_맞추기",
+    "query": "기호에 맞추기",
+    "model_ids": [
+      "DMC-GX85"
+    ],
+    "expected_document_id": "dmc_gx85_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dmc_gx85_kor_10_기호에_맞추기_메뉴의_버튼들",
+    "query": "기호에 맞추기 메뉴의 버튼들",
+    "model_ids": [
+      "DMC-GX85"
+    ],
+    "expected_document_id": "dmc_gx85_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dmc_gx85_kor_10_기호에_맞추기_재생",
+    "query": "기호에 맞추기 재생",
+    "model_ids": [
+      "DMC-GX85"
+    ],
+    "expected_document_id": "dmc_gx85_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dmc_gx85_kor_10_재생_편집하기_사진_동영상",
+    "query": "재생 편집하기 사진 동영상",
+    "model_ids": [
+      "DMC-GX85"
+    ],
+    "expected_document_id": "dmc_gx85_kor",
+    "expected_pages": [
+      10
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "video",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dmc_lx10_kor_16_부분의_명칭과",
+    "query": "부분의 명칭과",
+    "model_ids": [
+      "DMC-LX10"
+    ],
+    "expected_document_id": "dmc_lx10_kor",
+    "expected_pages": [
+      16
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dmc_lx10_kor_17_부분의_명칭과_q_menu",
+    "query": "부분의 명칭과 Q.MENU",
+    "model_ids": [
+      "DMC-LX10"
+    ],
+    "expected_document_id": "dmc_lx10_kor",
+    "expected_pages": [
+      17
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dmc_lx10_kor_17_부분의_명칭과_삭제_버튼",
+    "query": "부분의 명칭과 삭제 버튼",
+    "model_ids": [
+      "DMC-LX10"
+    ],
+    "expected_document_id": "dmc_lx10_kor",
+    "expected_pages": [
+      17
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dmc_lx10_kor_17_부분의_명칭과_버튼_fn4",
+    "query": "부분의 명칭과 버튼 Fn4",
+    "model_ids": [
+      "DMC-LX10"
+    ],
+    "expected_document_id": "dmc_lx10_kor",
+    "expected_pages": [
+      17
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dmc_lx10_kor_18_부분의_명칭과_준비",
+    "query": "부분의 명칭과 준비",
+    "model_ids": [
+      "DMC-LX10"
+    ],
+    "expected_document_id": "dmc_lx10_kor",
+    "expected_pages": [
+      18
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dmc_lx10_kor_18_부분의_명칭과_핸드_스트랩",
+    "query": "부분의 명칭과 핸드 스트랩",
+    "model_ids": [
+      "DMC-LX10"
+    ],
+    "expected_document_id": "dmc_lx10_kor",
+    "expected_pages": [
+      18
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dmc_lx10_kor_18_부분의_명칭과_카메라를_낙하를",
+    "query": "부분의 명칭과 카메라를 낙하를",
+    "model_ids": [
+      "DMC-LX10"
+    ],
+    "expected_document_id": "dmc_lx10_kor",
+    "expected_pages": [
+      18
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dmc_lx10_kor_18_부분의_명칭과_스트랩_고리",
+    "query": "부분의 명칭과 스트랩 고리",
+    "model_ids": [
+      "DMC-LX10"
+    ],
+    "expected_document_id": "dmc_lx10_kor",
+    "expected_pages": [
+      18
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dmc_lx10_kor_19_부분의_명칭과_배터리_충전",
+    "query": "부분의 명칭과 배터리 충전",
+    "model_ids": [
+      "DMC-LX10"
+    ],
+    "expected_document_id": "dmc_lx10_kor",
+    "expected_pages": [
+      19
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "power",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dmc_lx10_kor_19_제공_부분의_명칭과_카메라에는",
+    "query": "제공 부분의 명칭과 카메라에는",
+    "model_ids": [
+      "DMC-LX10"
+    ],
+    "expected_document_id": "dmc_lx10_kor",
+    "expected_pages": [
+      19
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dmc_lx10_kor_19_부분의_명칭과_상태",
+    "query": "부분의 명칭과 상태",
+    "model_ids": [
+      "DMC-LX10"
+    ],
+    "expected_document_id": "dmc_lx10_kor",
+    "expected_pages": [
+      19
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "general",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  },
+  {
+    "case_id": "semantic_dmc_lx10_kor_19_부분의_명칭과_충전",
+    "query": "부분의 명칭과 충전",
+    "model_ids": [
+      "DMC-LX10"
+    ],
+    "expected_document_id": "dmc_lx10_kor",
+    "expected_pages": [
+      19
+    ],
+    "query_type": "semantic_keyword",
+    "feature_category": "power",
+    "difficulty": "medium",
+    "source_method": "semantic_keyword_weak_label",
+    "top_k": 5
+  }
+]

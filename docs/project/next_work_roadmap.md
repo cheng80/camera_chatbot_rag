@@ -37,7 +37,27 @@ PDF 추출(PDF Extraction)
 - Section documents: Panasonic LUMIX 기준 275,372개 chunk에서 30,367개
   section-level candidate를 생성하는 CLI와 schema 구현 완료. 생성 산출물은
   `data/brands/<brand_id>/processed/sections` 아래 ignored artifact로 관리
+- Section FTS A/B: Panasonic 50개 seed 기준 section-only FTS document hit 100.0%,
+  page hit 76.0%. 기존 chunk retriever page hit 94.0%보다 낮아 단독 대체가 아니라
+  vector/rerank/wiki 후보 단위로 유지
+- Section vector/rerank A/B: local section-vector page hit 66.0%, guarded chunk+section
+  rerank page hit 94.0%. chunk baseline을 넘지 못해 검색 랭킹 투입은 보류하고
+  Feature Wiki 후보층으로 유지
+- Qdrant vector path: `bge-m3` embedding endpoint smoke와 Qdrant REST
+  collection/upsert/query 경계 구현 완료. Qdrant v1.18.2 macOS arm64 런타임으로
+  30,367개 Panasonic section vector 색인 후 seed eval 실행. document hit 100.0%,
+  page hit 74.0%. chunk+Qdrant expanded rerank도 page hit 92.0%로 chunk baseline
+  94.0%보다 낮고, dev 100에서도 96.0%로 chunk baseline 97.0%보다 1건 낮아 검색 랭킹 투입 제외
 - 검색 평가(Search Evaluation): 50개 seed 평가셋과 300개 자동 약라벨(Weak Label) 후보 생성 완료
+- Semantic weak labels: section-title 후보와 별도로 본문 의미어 기반 Panasonic 후보 생성기 추가.
+  현재 균형용 문서당 12개 cap 적용 시 384개, cap을 키우면 800/1600/3200/31551+
+  후보가 나오므로 300개는 전체 수가 아니라 샘플 제한이다
+- Feature Wiki MVP: Panasonic section documents에서 source-backed feature dictionary 후보
+  4,388개와 model source refs 26,130개 생성. source ref validator 기준 invalid 0.
+  아직 canonical name cleaning과 graph edge 생성 전이라 runtime 검색에는 투입하지 않음
+- Graph-lite MVP: Feature Wiki 후보에서 feature/alias/category/model/document/page 노드
+  25,234개와 alias/source/model/category edge 95,057개 생성. Neo4j 도입 전 JSON
+  graph-lite로 feature-first 검색 실험 경계를 확보
 - Ricoh/PENTAX 색인: 24개 문서 추출, 2967 페이지, 70738 청크 생성. FTS는
   OCR된 THETA V quick guide를 포함한 24개 문서 기준 생성 완료. Ricoh 섹션 제목
   약라벨 후보는 오타/동의어 정규화와 표지/회사명/모델번호 노이즈 제거 후 278개 생성 완료
@@ -53,7 +73,7 @@ PDF 추출(PDF Extraction)
 - 뷰어 API(Page Viewer API): 처리된 페이지 범위를 검증하고 `image_url`을 반환
 - 페이지 이미지 정적 제공(Page Image Static Serving): `/page-images/{document_id}/{page}.png` 응답 확인 완료
 - 커뮤니티 후보(Community Candidates): 네이버 카페 수동 복사 제목 999개 후보화, 기능 후보 216개를 자동 triage/weak-label 후보 풀로 관리
-- 현재 제한: 기능 카드는 아직 LLM 요약이 아니며, Vector Search는 local PoC adapter까지만 연결됨
+- 현재 제한: 기능 카드는 아직 LLM 요약이 아니며, Qdrant section vector/rerank는 seed 50과 dev 100 모두 chunk baseline을 넘지 못해 검색 랭킹에 쓰지 않음
 - 브랜드 데이터 루트(Brand Data Root): 런타임은
   `configs/brands.json`의 `data_dir` 아래 `raw/manuals`, `registry`,
   `processed`, `indexes`를 브랜드별로 분리해 사용한다. 현재 Panasonic LUMIX는
@@ -66,6 +86,7 @@ PDF 추출(PDF Extraction)
   7856자로 검색 색인에 들어갔다. Ricoh 자연어 질의는 대표 alias/rules를 query
   normalizer에 연결했고 smoke는 통과했다. 다만 Ricoh 278개 평가는 section-title
   weak-label 기반이라 사람이 검수한 자연어 질문셋은 별도로 만들어야 한다.
+  Panasonic semantic weak-label도 아직 후보 풀이지 locked eval이 아니다.
 
 ## Priority 0: Checkpoint
 
@@ -255,11 +276,20 @@ PDF 추출(PDF Extraction)
 
 - 기능 위키 LLM(Feature Wiki LLM): PDF 근거 기반 기능 요약 지식층 생성
 - 그래프 라이트(Graph-lite): 모델, 기능, 문서, 페이지 관계를 그래프로 연결
+- Feature Dictionary cleaning: 괄호/메뉴형 canonical name, 일반 alias, 중복 feature를 정리해
+  graph-lite node 후보로 승격
+- Feature-first retrieval: query -> feature/alias node -> source_page edge 순서의 검색 실험을
+  BM25 baseline과 비교
 - 가이드형 지원 도우미(Guided Support Assistant): 문제 해결 질의를 단계별로 안내
 - 로컬 모델 런타임(Local Model Runtime): Ollama 기반 Gemma 4 12B, Gemma 4 E4B,
   SuperGemma E4B, Qwen3 8B, bge-m3 smoke 완료. 다음은 bge-m3 chunk embedding index 생성이다.
 - 벡터 검색(Vector Search): adapter 경계와 local PoC는 완료, bge-m3 embedding provider
-  smoke도 완료. 다음은 section document 기준 FTS/vector A/B 평가와 embedding 재생성 정책이다.
+  smoke와 Qdrant REST path도 완료. Qdrant section vector는 page hit `0.740`,
+  chunk+Qdrant expanded rerank는 seed 50 `0.920`, dev 100 `0.960`으로 각각
+  chunk baseline보다 1건 낮다. generated 300 약라벨 전체 rerank는 broad exact-title 질의와
+  chunk top-1000 확장 때문에 평가 비용이 과도하므로, 다음 vector 실험 전에는 300개
+  locked 자연어 평가셋 또는 rerank evaluator 최적화가 먼저 필요
+  하나를 별도 A/B로 제한해야 한다.
 - Elasticsearch: FTS5 한계가 평가로 확인된 뒤 검색 어댑터(Search Adapter)로 도입
 - 검색 평가셋(Search Evaluation Set) 확장: 웹 프로토타입 이후 검색 로그 기반으로 보강
 - Flutter 앱(Flutter App): 웹 MVP 이후 모바일 앱으로 확장
@@ -269,7 +299,7 @@ PDF 추출(PDF Extraction)
 다음 구현 커밋 단위는 다음 하나로 제한한다.
 
 ```text
-section-level FTS/vector index + A/B search eval
+source page relevance eval + model contamination metric
 ```
 
-이 단위가 끝나면 검색 품질 개선(Search Quality Pass)으로 넘어간다.
+이 단위가 끝나면 300개 locked eval 구축으로 넘어간다.

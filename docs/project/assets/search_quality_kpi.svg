@@ -2,7 +2,7 @@
   <rect width="1400" height="820" fill="#F7F9FA"/>
   <rect x="54" y="42" width="1292" height="118" rx="18" fill="#EEF7F7"/>
   <text x="86" y="94" font-family="Arial, sans-serif" font-size="40" font-weight="700" fill="#1F2933">Search Quality KPI Snapshot</text>
-  <text x="86" y="132" font-family="Arial, sans-serif" font-size="20" fill="#697386">Current retrieval and API contract evidence for the technical review</text>
+  <text x="86" y="132" font-family="Arial, sans-serif" font-size="20" fill="#697386">Current retrieval and API response evidence for the technical review</text>
   <line x1="90" y1="660" x2="1320" y2="660" stroke="#CBD5E1" stroke-width="2"/>
   <line x1="90" y1="244" x2="1320" y2="244" stroke="#CBD5E1" stroke-width="2" stroke-dasharray="8 8"/>
   <text x="1182" y="235" font-family="Arial, sans-serif" font-size="19" fill="#5F6B7A">95% target</text>

@@ -1,0 +1,28 @@
+...........................................                              [100%]
+43 passed in 14.45s
+All checks passed!
+0 errors, 0 warnings, 0 notes
+backend/app/services/feature_wiki_retriever.py: lines=202 pure=182
+backend/app/services/feature_wiki_scoring.py: lines=150 pure=134
+
+EXIT_STATUS=0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## cleanup
+tmux -L ulwqa kill-session -t ulw-qa-g003-c003 executed
+tmux session ulw-qa-g003-c003 absent

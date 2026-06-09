@@ -2,8 +2,13 @@ from pathlib import Path
 
 from backend.app.indexing.fts_index import build_fts_index
 from backend.app.schemas.document import CameraModelRegistryEntry
-from backend.app.schemas.search import SearchRequest
+from backend.app.schemas.search import SearchRequest, SearchResponse
 from backend.app.services.hybrid_retriever import HybridRetriever, HybridRetrieverConfig
+from backend.app.wiki.generator import (
+    FeatureSourceRef,
+    FeatureWikiEntry,
+    write_feature_wiki_json,
+)
 from backend.tests.hybrid_retriever_fixtures import (
     hybrid_chunk,
     hybrid_model,
@@ -314,12 +319,211 @@ def test_hybrid_retriever_deduplicates_same_source_page(
     assert len(response.cards) == 1
 
 
+def test_hybrid_retriever_falls_back_when_feature_wiki_missing(
+    tmp_path: Path,
+) -> None:
+    chunks_dir = tmp_path / "chunks"
+    chunks_dir.mkdir()
+    _ = (chunks_dir / "sample_manual.jsonl").write_text(
+        hybrid_chunk().model_dump_json() + "\n",
+        encoding="utf-8",
+    )
+    index_path = tmp_path / "fts" / "lumix_manuals.sqlite3"
+    _ = build_fts_index(chunks_dir=chunks_dir, index_path=index_path)
+    registry_dir, pages_dir = write_hybrid_source_validation_fixture(tmp_path=tmp_path)
+    baseline_retriever = _retriever(
+        index_path=index_path,
+        registry_dir=registry_dir,
+        pages_dir=pages_dir,
+    )
+    missing_wiki_retriever = _retriever(
+        index_path=index_path,
+        registry_dir=registry_dir,
+        pages_dir=pages_dir,
+        feature_wiki_path=tmp_path / "missing_feature_wiki.json",
+    )
+
+    baseline = baseline_retriever.search(SearchRequest(query="제브라 어디서 설정해?"))
+    fallback = missing_wiki_retriever.search(
+        SearchRequest(query="제브라 어디서 설정해?"),
+    )
+
+    assert fallback.retrieval_status == baseline.retrieval_status
+    assert _feature_ids(fallback) == _feature_ids(baseline)
+
+
+def test_hybrid_retriever_falls_back_when_feature_wiki_invalid(
+    tmp_path: Path,
+) -> None:
+    chunks_dir = tmp_path / "chunks"
+    chunks_dir.mkdir()
+    _ = (chunks_dir / "sample_manual.jsonl").write_text(
+        hybrid_chunk().model_dump_json() + "\n",
+        encoding="utf-8",
+    )
+    index_path = tmp_path / "fts" / "lumix_manuals.sqlite3"
+    _ = build_fts_index(chunks_dir=chunks_dir, index_path=index_path)
+    registry_dir, pages_dir = write_hybrid_source_validation_fixture(tmp_path=tmp_path)
+    invalid_wiki_path = tmp_path / "feature_wiki.json"
+    _ = invalid_wiki_path.write_text("[", encoding="utf-8")
+    baseline_retriever = _retriever(
+        index_path=index_path,
+        registry_dir=registry_dir,
+        pages_dir=pages_dir,
+    )
+    invalid_wiki_retriever = _retriever(
+        index_path=index_path,
+        registry_dir=registry_dir,
+        pages_dir=pages_dir,
+        feature_wiki_path=invalid_wiki_path,
+    )
+
+    baseline = baseline_retriever.search(SearchRequest(query="제브라 어디서 설정해?"))
+    fallback = invalid_wiki_retriever.search(
+        SearchRequest(query="제브라 어디서 설정해?"),
+    )
+
+    assert fallback.retrieval_status == baseline.retrieval_status
+    assert _feature_ids(fallback) == _feature_ids(baseline)
+
+
+def test_hybrid_retriever_filters_instruction_like_feature_wiki_labels(
+    tmp_path: Path,
+) -> None:
+    chunks_dir = tmp_path / "chunks"
+    chunks_dir.mkdir()
+    _ = (chunks_dir / "sample_manual.jsonl").write_text(
+        hybrid_chunk().model_dump_json() + "\n",
+        encoding="utf-8",
+    )
+    index_path = tmp_path / "fts" / "lumix_manuals.sqlite3"
+    _ = build_fts_index(chunks_dir=chunks_dir, index_path=index_path)
+    registry_dir, pages_dir = write_hybrid_source_validation_fixture(tmp_path=tmp_path)
+    wiki_path = tmp_path / "feature_wiki.json"
+    _ = write_feature_wiki_json(
+        entries=(
+            _wiki_entry(
+                feature_id="제브라_패턴",
+                canonical_name="제브라 패턴",
+                evidence="제브라 패턴은 노출 확인에 사용하는 촬영 보조 기능입니다.",
+            ),
+            _wiki_entry(
+                feature_id="3_3421를_눌러_af_영역의_위치를_옮기십시오",
+                canonical_name="3 3421를 눌러 AF 영역의 위치를 옮기십시오.",
+                evidence="제브라 패턴 설정 중 3421를 눌러 AF 영역의 위치를 옮기십시오.",
+            ),
+        ),
+        path=wiki_path,
+    )
+    retriever = _retriever(
+        index_path=index_path,
+        registry_dir=registry_dir,
+        pages_dir=pages_dir,
+        feature_wiki_path=wiki_path,
+    )
+
+    response = retriever.search(
+        SearchRequest(query="패턴", include_feature_wiki_candidates=True),
+    )
+
+    assert "feature_wiki:제브라_패턴" in _feature_ids(response)
+    assert (
+        "feature_wiki:3_3421를_눌러_af_영역의_위치를_옮기십시오"
+        not in _feature_ids(response)
+    )
+
+
+def test_hybrid_retriever_filters_stale_menu_path_feature_wiki_labels(
+    tmp_path: Path,
+) -> None:
+    chunks_dir = tmp_path / "chunks"
+    chunks_dir.mkdir()
+    _ = (chunks_dir / "sample_manual.jsonl").write_text(
+        hybrid_chunk().model_dump_json() + "\n",
+        encoding="utf-8",
+    )
+    index_path = tmp_path / "fts" / "lumix_manuals.sqlite3"
+    _ = build_fts_index(chunks_dir=chunks_dir, index_path=index_path)
+    registry_dir, pages_dir = write_hybrid_source_validation_fixture(tmp_path=tmp_path)
+    wiki_path = tmp_path / "feature_wiki.json"
+    _ = write_feature_wiki_json(
+        entries=(
+            _wiki_entry(
+                feature_id="제브라_패턴",
+                canonical_name="제브라 패턴",
+                evidence="제브라 패턴은 노출 확인에 사용하는 촬영 보조 기능입니다.",
+            ),
+            _wiki_entry(
+                feature_id="menu_af_setup",
+                canonical_name="MENU > AF 설정",
+                evidence="MENU > AF 설정에서 제브라 패턴 관련 기능을 설정합니다.",
+            ),
+            _wiki_entry(
+                feature_id="q_menu_setup",
+                canonical_name="Q.MENU 설정",
+                evidence="Q.MENU 설정에서 제브라 패턴 관련 기능을 설정합니다.",
+            ),
+            _wiki_entry(
+                feature_id="focus_display_path",
+                canonical_name="초점/표시 설정",
+                evidence="초점/표시 설정에서 제브라 패턴 관련 기능을 설정합니다.",
+            ),
+        ),
+        path=wiki_path,
+    )
+    retriever = _retriever(
+        index_path=index_path,
+        registry_dir=registry_dir,
+        pages_dir=pages_dir,
+        feature_wiki_path=wiki_path,
+    )
+
+    response = retriever.search(
+        SearchRequest(query="패턴", include_feature_wiki_candidates=True),
+    )
+
+    feature_ids = _feature_ids(response)
+    assert "feature_wiki:제브라_패턴" in feature_ids
+    assert "feature_wiki:menu_af_setup" not in feature_ids
+    assert "feature_wiki:q_menu_setup" not in feature_ids
+    assert "feature_wiki:focus_display_path" not in feature_ids
+
+
+def _wiki_entry(
+    *,
+    feature_id: str,
+    canonical_name: str,
+    evidence: str,
+) -> FeatureWikiEntry:
+    return FeatureWikiEntry(
+        feature_id=feature_id,
+        canonical_name=canonical_name,
+        aliases=(),
+        category="exposure",
+        source_refs=(
+            FeatureSourceRef(
+                document_id="sample_manual",
+                model_ids=("DC-G9M2",),
+                page=12,
+                section_id="촬영 보조",
+                evidence=evidence,
+            ),
+        ),
+        confidence="weak",
+    )
+
+
+def _feature_ids(response: SearchResponse) -> list[str]:
+    return [card.feature_id for card in response.cards]
+
+
 def _retriever(
     *,
     index_path: Path | None = None,
     registry_dir: Path | None = None,
     pages_dir: Path | None = None,
     models: tuple[CameraModelRegistryEntry, ...] | None = None,
+    feature_wiki_path: Path | None = None,
 ) -> HybridRetriever:
     return HybridRetriever(
         config=HybridRetrieverConfig(
@@ -327,5 +531,6 @@ def _retriever(
             registry_dir=registry_dir or HybridRetrieverConfig().registry_dir,
             pages_dir=pages_dir or HybridRetrieverConfig().pages_dir,
             models=models,
+            feature_wiki_path=feature_wiki_path,
         ),
     )

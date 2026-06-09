@@ -24,6 +24,7 @@ class SearchRequest(BaseModel):
     categories: list[str] = Field(default_factory=list, max_length=10)
     top_k: int = Field(default=8, ge=1, le=1000)
     include_pdf_sources: bool = True
+    include_feature_wiki_candidates: bool = False
     response_format: Literal["feature_cards"] = "feature_cards"
 
     @field_validator("query")

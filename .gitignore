@@ -26,9 +26,12 @@
 .ag/
 .codex/
 .codegraph/
+.cache/
+.qdrant-initialized
 .kiro/
 .playwright-cli/
 output/playwright/
+storage/
 
 ############################################################
 # Node.js
@@ -188,6 +191,10 @@ data/brands/*/processed/reports/**/*
 !data/brands/*/processed/reports/.gitkeep
 data/brands/*/indexes/fts/**/*
 !data/brands/*/indexes/fts/.gitkeep
+data/brands/*/indexes/section_fts/**/*
+!data/brands/*/indexes/section_fts/.gitkeep
+data/brands/*/indexes/section_vector/**/*
+!data/brands/*/indexes/section_vector/.gitkeep
 data/brands/*/indexes/vector/**/*
 !data/brands/*/indexes/vector/.gitkeep
 

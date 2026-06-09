@@ -4,6 +4,7 @@ pydantic>=2.10
 pydantic-settings>=2.6
 orjson>=3.10
 pymupdf>=1.24
+pdf2image>=1.17
 pdfplumber>=0.11
 pypdf>=5.1
 httpx2>=0.28

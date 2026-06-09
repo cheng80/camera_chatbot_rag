@@ -95,9 +95,22 @@ deterministic 카드 요약을 반환하고, `CAMERA_LLM_REWRITE_ON_SEARCH_ENABL
   "query": "제브라 패턴",
   "brand_id": "panasonic_lumix",
   "model_ids": ["DC-G9M2"],
-  "top_k": 3
+  "top_k": 3,
+  "include_feature_wiki_candidates": false
 }
 ```
+
+`include_feature_wiki_candidates`는 기본값이 `false`다. `true`로 요청하면 기존
+FTS/vector 검색 카드를 먼저 유지하고, 검증 가능한 PDF Source Reference를 가진
+`feature_wiki:` 후보 카드를 뒤에 추가한다. Feature Wiki 산출물이 없거나 유효하지
+않으면 기존 검색 응답만 반환한다.
+
+명확한 자연어 기능 질의는 기본 검색에서도 검증된 `feature_wiki:` 후보가 약한
+chunk 후보보다 먼저 나올 수 있다. 예를 들어 `과노출 경고 줄무늬 어디서 켜?`처럼
+기능 의도가 분명한 질의는 `제브라 패턴` 기능 카드로 연결한다. `초점`, `패턴`,
+`설정`, `기능`, `어디` 같은 broad 단일 단어 질의는 기본 FTS/vector 순서를 유지하고,
+wiki 후보는 명시적으로 `include_feature_wiki_candidates=true`를 요청한 경우에만 뒤에
+추가한다. wiki artifact가 없거나 유효하지 않으면 기존 검색 응답만 반환한다.
 
 응답 상태:
 

@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1000" viewBox="0 0 1800 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Source-Verified Camera Manual Search Architecture</title>
+  <desc id="desc">Landscape source diagram for imagegen-based report infographic generation.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F7FAFC"/><stop offset="1" stop-color="#EAF5F8"/></linearGradient>
+    <linearGradient id="navy" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0B2545"/><stop offset="1" stop-color="#116466"/></linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="12" stdDeviation="14" flood-color="#0B2545" flood-opacity="0.16"/></filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#0F5FA8"/></marker>
+    <style>
+      text { font-family: 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans CJK KR', Arial, sans-serif; }
+      .title { font-size: 60px; font-weight: 800; fill: #0B2545; }
+      .subtitle { font-size: 34px; font-weight: 700; fill: #116466; }
+      .card-title { font-size: 29px; font-weight: 800; fill: #0B2545; }
+      .ko { font-size: 22px; font-weight: 700; fill: #116466; }
+      .body { font-size: 19px; fill: #334155; }
+    </style>
+  </defs>
+  <rect width="1800" height="1000" fill="url(#bg)"/>
+  <rect x="70" y="52" width="1660" height="140" rx="30" fill="#FFFFFF" filter="url(#shadow)"/>
+  <text x="900" y="112" text-anchor="middle" class="title">Source-Verified Camera Manual Search</text>
+  <text x="900" y="162" text-anchor="middle" class="subtitle">공식 PDF 출처 검증형 기능 검색 아키텍처</text>
+
+  <g filter="url(#shadow)">
+    <rect x="70" y="255" width="270" height="505" rx="22" fill="#FFFFFF" stroke="#B7D6E6" stroke-width="3"/>
+    <circle cx="116" cy="310" r="35" fill="#0B2545"/><text x="116" y="322" text-anchor="middle" font-size="32" font-weight="800" fill="#FFFFFF">1</text>
+    <text x="155" y="302" class="card-title">질문 정규화</text><text x="155" y="338" class="ko">Query Normalization</text>
+    <text x="92" y="420" class="body">모델 별칭 매핑</text><text x="92" y="470" class="body">오타·붙여쓰기 보정</text><text x="92" y="520" class="body">기능명 후보 분리</text>
+  </g>
+  <line x1="360" y1="505" x2="425" y2="505" stroke="#0F5FA8" stroke-width="8" marker-end="url(#arrow)"/>
+
+  <g filter="url(#shadow)">
+    <rect x="445" y="255" width="270" height="505" rx="22" fill="#FFFFFF" stroke="#B7D6E6" stroke-width="3"/>
+    <circle cx="491" cy="310" r="35" fill="#116466"/><text x="491" y="322" text-anchor="middle" font-size="32" font-weight="800" fill="#FFFFFF">2</text>
+    <text x="535" y="302" class="card-title">하이브리드 검색</text><text x="535" y="338" class="ko">Hybrid Retrieval</text>
+    <text x="467" y="420" class="body">SQLite FTS5 BM25</text><text x="467" y="470" class="body">Trigram fallback</text><text x="467" y="520" class="body">Section candidate layer</text><text x="467" y="570" class="body">브랜드별 data root</text>
+  </g>
+  <line x1="735" y1="505" x2="800" y2="505" stroke="#0F5FA8" stroke-width="8" marker-end="url(#arrow)"/>
+
+  <g filter="url(#shadow)">
+    <rect x="820" y="255" width="300" height="505" rx="22" fill="#FFFFFF" stroke="#B7D6E6" stroke-width="3"/>
+    <circle cx="866" cy="310" r="35" fill="#0F5FA8"/><text x="866" y="322" text-anchor="middle" font-size="32" font-weight="800" fill="#FFFFFF">3</text>
+    <text x="910" y="302" class="card-title">기능 위키</text><text x="910" y="338" class="ko">Feature Wiki + Graph-lite</text>
+    <text x="842" y="420" class="body">기능 라벨 후보</text><text x="842" y="470" class="body">동의어·관련 기능</text><text x="842" y="520" class="body">모델·문서·페이지 관계</text><text x="842" y="570" class="body">자연어 기능 질의 보강</text>
+  </g>
+  <line x1="1140" y1="505" x2="1205" y2="505" stroke="#0F5FA8" stroke-width="8" marker-end="url(#arrow)"/>
+
+  <g filter="url(#shadow)">
+    <rect x="1225" y="255" width="270" height="505" rx="22" fill="#FFFFFF" stroke="#B7D6E6" stroke-width="3"/>
+    <circle cx="1271" cy="310" r="35" fill="#2F855A"/><text x="1271" y="322" text-anchor="middle" font-size="32" font-weight="800" fill="#FFFFFF">4</text>
+    <text x="1315" y="302" class="card-title">출처 검증</text><text x="1315" y="338" class="ko">Source Validation</text>
+    <text x="1247" y="420" class="body">document_id 확인</text><text x="1247" y="470" class="body">model_id 일치 확인</text><text x="1247" y="520" class="body">page 번호 확인</text><text x="1247" y="570" class="body">viewer URL 생성</text>
+  </g>
+  <line x1="1515" y1="505" x2="1580" y2="505" stroke="#0F5FA8" stroke-width="8" marker-end="url(#arrow)"/>
+
+  <g filter="url(#shadow)">
+    <rect x="1600" y="255" width="130" height="505" rx="22" fill="#FFFFFF" stroke="#B7D6E6" stroke-width="3"/>
+    <circle cx="1665" cy="310" r="35" fill="#6B46C1"/><text x="1665" y="322" text-anchor="middle" font-size="32" font-weight="800" fill="#FFFFFF">5</text>
+    <text x="1665" y="390" text-anchor="middle" class="card-title">카드</text><text x="1665" y="428" text-anchor="middle" class="ko">+ PDF</text>
+    <text x="1665" y="520" text-anchor="middle" class="body">card_template</text><text x="1665" y="565" text-anchor="middle" class="body">4x page image</text><text x="1665" y="610" text-anchor="middle" class="body">viewer</text>
+  </g>
+
+  <rect x="230" y="830" width="1340" height="92" rx="24" fill="url(#navy)"/>
+  <text x="900" y="886" text-anchor="middle" font-size="36" font-weight="800" fill="#FFFFFF">LLM은 선택 카드 문장 보정에만 사용</text>
+</svg>

@@ -1,0 +1,16 @@
+# G002 C002 HTTP malformed/blank edge
+server_pid=79986 port=8010
+# GREEN pytest after implementation
+.venv/bin/python -m pytest backend/tests/test_search_routes.py -k feature_wiki -q
+2 passed, 8 deselected in 1.05s
+# curl -i
+HTTP/1.1 422 Unprocessable Entity
+date: Tue, 09 Jun 2026 21:49:09 GMT
+server: uvicorn
+content-length: 136
+content-type: application/json
+
+{"detail":[{"type":"value_error","loc":["body","query"],"msg":"Value error, query must not be blank","input":"   ","ctx":{"error":{}}}]}
+# validation
+validated_422_no_server_error=true
+cleanup: killed server pid=79986; port 8010 no listener; removed temp header/body files

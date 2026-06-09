@@ -2,7 +2,7 @@ from collections.abc import Callable
 from typing import cast
 
 import pytest
-from backend.app.core.settings import Settings
+from backend.app.core.settings import PROJECT_ROOT, Settings
 from backend.app.evaluation.local_model_benchmark import benchmark_model_ids
 from backend.app.evaluation.rag_model_quality_runner import rag_quality_model_ids
 from backend.app.services.llm_model_selector import select_llm_model
@@ -29,7 +29,7 @@ def test_default_local_model_settings_target_requested_models() -> None:
         == "hf.co/Qwen/Qwen3-8B-GGUF:Q4_K_M"
     )
     assert settings.active_brand_id == "panasonic_lumix"
-    assert settings.brands_config_path.as_posix() == "configs/brands.json"
+    assert settings.brands_config_path == PROJECT_ROOT / "configs/brands.json"
     assert settings.embedding_model == "bge-m3"
     assert settings.llm_temperature == 0.2
     assert settings.llm_max_tokens == 512

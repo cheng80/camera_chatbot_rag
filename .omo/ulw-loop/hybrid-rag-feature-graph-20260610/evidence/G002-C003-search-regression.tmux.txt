@@ -1,0 +1,25 @@
+.venv/bin/python -m pytest backend/tests/test_search_routes.py backend/tests/tes
+t_search_api_smoke_eval.py backend/tests/test_feature_wiki.py backend/tests/test
+_graph_lite.py -q && python3 -m compileall -q backend/app backend/tests && .venv
+/bin/ruff check backend/app/schemas/search.py backend/app/services/hybrid_retrie
+ver.py backend/app/services/retriever_factory.py backend/app/services/feature_wi
+ki_retriever.py backend/tests/test_search_routes.py && .venv/bin/basedpyright ba
+ckend/app/schemas/search.py backend/app/services/hybrid_retriever.py backend/app
+/services/retriever_factory.py backend/app/services/feature_wiki_retriever.py ba
+ckend/tests/test_search_routes.py
+cheng80@KIMui-MacBookPro-2:~/Desktop/camera_chatbot_rag (main) ❯ .venv/bin/pytho
+n -m pytest backend/tests/test_search_routes.py backend/tests/test_search_api_sm
+oke_eval.py backend/tests/test_feature_wiki.py backend/tests/test_graph_lite.py
+-q && python3 -m compileall -q backend/app backend/tests && .venv/bin/ruff check
+ backend/app/schemas/search.py backend/app/services/hybrid_retriever.py backend/
+app/services/retriever_factory.py backend/app/services/feature_wiki_retriever.py
+ backend/tests/test_search_routes.py && .venv/bin/basedpyright backend/app/schem
+as/search.py backend/app/services/hybrid_retriever.py backend/app/services/retri
+ever_factory.py backend/app/services/feature_wiki_retriever.py backend/tests/tes
+t_search_routes.py
+.......................                                                  [100%]
+23 passed in 2.48s
+All checks passed!
+0 errors, 0 warnings, 0 notes
+cheng80@KIMui-MacBookPro-2:~/Desktop/camera_chatbot_rag (main) ❯
+cleanup: tmux kill-session ulw-qa-g002-c003 confirmed no session

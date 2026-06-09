@@ -1,71 +1,86 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1700" viewBox="0 0 1200 1700">
-  <rect width="1200" height="1700" fill="#F7F9FA"/>
-  <rect x="64" y="52" width="1072" height="150" rx="24" fill="#EEF7F7"/>
-  <text x="96" y="116" font-family="Arial, Apple SD Gothic Neo, sans-serif" font-size="42" font-weight="700" fill="#0B2545">Source-Verified Camera Manual Search</text>
-  <text x="96" y="164" font-family="Arial, Apple SD Gothic Neo, sans-serif" font-size="25" fill="#116466">공식 PDF 출처 검증형 기능 검색 아키텍처</text>
-
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="1650" viewBox="0 0 1100 1650" role="img" aria-labelledby="title desc">
+  <title id="title">Source-Verified Camera Manual Search Architecture</title>
+  <desc id="desc">Portrait source diagram for the Camera Manual Assistant report. The raster report image is generated from this content with imagegen.</desc>
   <defs>
-    <marker id="arrow" markerWidth="12" markerHeight="12" refX="8" refY="6" orient="auto" markerUnits="strokeWidth">
-      <path d="M2,2 L10,6 L2,10 z" fill="#2C7A7B"/>
-    </marker>
-    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
-      <feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#0B2545" flood-opacity="0.12"/>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F7FAFC"/>
+      <stop offset="1" stop-color="#EAF5F8"/>
+    </linearGradient>
+    <linearGradient id="navy" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0B2545"/>
+      <stop offset="1" stop-color="#116466"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#0B2545" flood-opacity="0.14"/>
     </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#0F5FA8"/>
+    </marker>
+    <style>
+      text { font-family: 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans CJK KR', Arial, sans-serif; }
+      .title { font-size: 46px; font-weight: 800; fill:#0B2545; }
+      .subtitle { font-size: 29px; font-weight: 700; fill:#116466; }
+      .card-title { font-size: 34px; font-weight: 800; fill:#0B2545; }
+      .ko { font-size: 25px; font-weight: 700; fill:#116466; }
+      .body { font-size: 23px; fill:#334155; }
+      .small { font-size: 19px; fill:#475569; }
+    </style>
   </defs>
+  <rect width="1100" height="1650" fill="url(#bg)"/>
+  <rect x="54" y="42" width="992" height="160" rx="28" fill="#FFFFFF" filter="url(#shadow)"/>
+  <text x="550" y="96" text-anchor="middle" class="title">Source-Verified Camera Manual Search</text>
+  <text x="550" y="144" text-anchor="middle" class="subtitle">공식 PDF 출처 검증형 기능 검색 아키텍처</text>
+  <text x="550" y="182" text-anchor="middle" class="small">Hybrid RAG · Feature Wiki · Graph-lite · PDF Viewer</text>
 
-  <g font-family="Arial, Apple SD Gothic Neo, sans-serif">
-    <g filter="url(#shadow)">
-      <rect x="110" y="270" width="980" height="205" rx="24" fill="#FFFFFF" stroke="#B7D6E6" stroke-width="3"/>
-      <circle cx="180" cy="335" r="42" fill="#116466"/>
-      <text x="180" y="349" text-anchor="middle" font-size="34" font-weight="700" fill="#FFFFFF">1</text>
-      <text x="250" y="326" font-size="34" font-weight="700" fill="#0B2545">Query Normalization</text>
-      <text x="250" y="368" font-size="25" fill="#344054">사용자 질문을 검색 가능한 표현으로 정리</text>
-      <text x="250" y="421" font-size="23" fill="#5F6B7A">모델명/별칭 · 오타 · 붙여쓰기 · 검색 제어어 보정</text>
-    </g>
-
-    <line x1="600" y1="486" x2="600" y2="565" stroke="#2C7A7B" stroke-width="5" marker-end="url(#arrow)"/>
-
-    <g filter="url(#shadow)">
-      <rect x="110" y="585" width="980" height="245" rx="24" fill="#FFFFFF" stroke="#B7D6E6" stroke-width="3"/>
-      <circle cx="180" cy="650" r="42" fill="#2C7A7B"/>
-      <text x="180" y="664" text-anchor="middle" font-size="34" font-weight="700" fill="#FFFFFF">2</text>
-      <text x="250" y="641" font-size="34" font-weight="700" fill="#0B2545">Hybrid Retrieval</text>
-      <text x="250" y="683" font-size="25" fill="#344054">로컬 색인에서 후보 페이지와 기능 문맥 검색</text>
-      <rect x="250" y="720" width="230" height="62" rx="16" fill="#EEF7F7"/>
-      <text x="365" y="759" text-anchor="middle" font-size="22" font-weight="700" fill="#116466">SQLite FTS5</text>
-      <rect x="505" y="720" width="210" height="62" rx="16" fill="#EEF7F7"/>
-      <text x="610" y="759" text-anchor="middle" font-size="22" font-weight="700" fill="#116466">Trigram</text>
-      <rect x="740" y="720" width="255" height="62" rx="16" fill="#F2F4F7"/>
-      <text x="867" y="759" text-anchor="middle" font-size="22" font-weight="700" fill="#5F6B7A">Optional Vector</text>
-    </g>
-
-    <line x1="600" y1="842" x2="600" y2="921" stroke="#2C7A7B" stroke-width="5" marker-end="url(#arrow)"/>
-
-    <g filter="url(#shadow)">
-      <rect x="110" y="940" width="980" height="230" rx="24" fill="#FFFFFF" stroke="#B7D6E6" stroke-width="3"/>
-      <circle cx="180" cy="1005" r="42" fill="#0F5FA8"/>
-      <text x="180" y="1019" text-anchor="middle" font-size="34" font-weight="700" fill="#FFFFFF">3</text>
-      <text x="250" y="996" font-size="34" font-weight="700" fill="#0B2545">Source Validation</text>
-      <text x="250" y="1038" font-size="25" fill="#344054">공식 PDF 근거와 모델 범위를 검증</text>
-      <text x="250" y="1094" font-size="23" fill="#5F6B7A">document_id · model_id · page · viewer URL 계약 확인</text>
-      <text x="250" y="1132" font-size="23" fill="#5F6B7A">source ref 없는 정보는 확정 답변으로 사용하지 않음</text>
-    </g>
-
-    <line x1="600" y1="1182" x2="600" y2="1261" stroke="#2C7A7B" stroke-width="5" marker-end="url(#arrow)"/>
-
-    <g filter="url(#shadow)">
-      <rect x="110" y="1280" width="980" height="250" rx="24" fill="#FFFFFF" stroke="#B7D6E6" stroke-width="3"/>
-      <circle cx="180" cy="1345" r="42" fill="#0B2545"/>
-      <text x="180" y="1359" text-anchor="middle" font-size="34" font-weight="700" fill="#FFFFFF">4</text>
-      <text x="250" y="1336" font-size="34" font-weight="700" fill="#0B2545">Feature Card + PDF Viewer</text>
-      <text x="250" y="1378" font-size="25" fill="#344054">deterministic card_template로 답변 카드 생성</text>
-      <rect x="250" y="1420" width="330" height="66" rx="16" fill="#EEF7F7"/>
-      <text x="415" y="1462" text-anchor="middle" font-size="22" font-weight="700" fill="#116466">기능 카드</text>
-      <rect x="615" y="1420" width="350" height="66" rx="16" fill="#EEF7F7"/>
-      <text x="790" y="1462" text-anchor="middle" font-size="22" font-weight="700" fill="#116466">PDF 원문 페이지 확인</text>
-    </g>
-
-    <rect x="150" y="1588" width="900" height="68" rx="20" fill="#0B2545"/>
-    <text x="600" y="1631" text-anchor="middle" font-size="25" font-weight="700" fill="#FFFFFF">LLM은 검색/출처 판단이 아니라 선택 카드의 짧은 문장 보정에만 사용</text>
+  <g filter="url(#shadow)">
+    <rect x="70" y="245" width="960" height="190" rx="22" fill="#FFFFFF" stroke="#B7D6E6" stroke-width="3"/>
+    <circle cx="125" cy="306" r="36" fill="#0B2545"/>
+    <text x="125" y="319" text-anchor="middle" font-size="33" font-weight="800" fill="#FFFFFF">1</text>
+    <text x="178" y="300" class="card-title">질문 정규화</text>
+    <text x="178" y="337" class="ko">Query Normalization</text>
+    <text x="178" y="392" class="body">모델 별칭, 오타, 붙여쓰기, 기능어를 정리해 검색 가능한 질의로 바꾼다.</text>
   </g>
+  <line x1="550" y1="440" x2="550" y2="505" stroke="#0F5FA8" stroke-width="8" marker-end="url(#arrow)"/>
+
+  <g filter="url(#shadow)">
+    <rect x="70" y="520" width="960" height="205" rx="22" fill="#FFFFFF" stroke="#B7D6E6" stroke-width="3"/>
+    <circle cx="125" cy="581" r="36" fill="#116466"/>
+    <text x="125" y="594" text-anchor="middle" font-size="33" font-weight="800" fill="#FFFFFF">2</text>
+    <text x="178" y="575" class="card-title">하이브리드 검색</text>
+    <text x="178" y="612" class="ko">SQLite FTS5 BM25 · Trigram · Section 후보</text>
+    <text x="178" y="667" class="body">빠른 기준 검색을 유지하고, 섹션 후보는 Feature Wiki와 vector 실험 입력으로 쓴다.</text>
+  </g>
+  <line x1="550" y1="730" x2="550" y2="795" stroke="#0F5FA8" stroke-width="8" marker-end="url(#arrow)"/>
+
+  <g filter="url(#shadow)">
+    <rect x="70" y="810" width="960" height="220" rx="22" fill="#FFFFFF" stroke="#B7D6E6" stroke-width="3"/>
+    <circle cx="125" cy="871" r="36" fill="#0F5FA8"/>
+    <text x="125" y="884" text-anchor="middle" font-size="33" font-weight="800" fill="#FFFFFF">3</text>
+    <text x="178" y="865" class="card-title">기능 위키 + Graph-lite</text>
+    <text x="178" y="902" class="ko">Feature labels · aliases · model-document-page relations</text>
+    <text x="178" y="957" class="body">자연어 기능 질문에는 검증된 기능 후보와 관계 정보를 더해 검색 누락을 줄인다.</text>
+    <text x="178" y="995" class="small">Neo4j는 아직 도입하지 않고 JSON graph-lite로 검증한다.</text>
+  </g>
+  <line x1="550" y1="1035" x2="550" y2="1100" stroke="#0F5FA8" stroke-width="8" marker-end="url(#arrow)"/>
+
+  <g filter="url(#shadow)">
+    <rect x="70" y="1115" width="960" height="205" rx="22" fill="#FFFFFF" stroke="#B7D6E6" stroke-width="3"/>
+    <circle cx="125" cy="1176" r="36" fill="#2F855A"/>
+    <text x="125" y="1189" text-anchor="middle" font-size="33" font-weight="800" fill="#FFFFFF">4</text>
+    <text x="178" y="1170" class="card-title">출처 검증</text>
+    <text x="178" y="1207" class="ko">document_id · model_id · page · viewer URL</text>
+    <text x="178" y="1262" class="body">공식 PDF 페이지와 모델 범위가 확인된 후보만 기능 카드로 승격한다.</text>
+  </g>
+  <line x1="550" y1="1325" x2="550" y2="1390" stroke="#0F5FA8" stroke-width="8" marker-end="url(#arrow)"/>
+
+  <g filter="url(#shadow)">
+    <rect x="70" y="1405" width="960" height="155" rx="22" fill="#FFFFFF" stroke="#B7D6E6" stroke-width="3"/>
+    <circle cx="125" cy="1466" r="36" fill="#6B46C1"/>
+    <text x="125" y="1479" text-anchor="middle" font-size="33" font-weight="800" fill="#FFFFFF">5</text>
+    <text x="178" y="1460" class="card-title">기능 카드 + PDF 뷰어</text>
+    <text x="178" y="1497" class="ko">deterministic card_template · 4x page image · OpenSeadragon</text>
+    <text x="178" y="1540" class="body">LLM은 선택 카드의 짧은 문장 보정에만 사용한다.</text>
+  </g>
+  <rect x="70" y="1587" width="960" height="72" rx="20" fill="url(#navy)"/>
+  <text x="550" y="1632" text-anchor="middle" font-size="29" font-weight="800" fill="#FFFFFF">검색·출처 판단은 파이프라인, 문장 보정만 LLM</text>
 </svg>

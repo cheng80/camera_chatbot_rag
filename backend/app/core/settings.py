@@ -1,18 +1,26 @@
 from functools import lru_cache
 from pathlib import Path
-from typing import ClassVar, Literal
+from typing import ClassVar, Literal, Self
 
-from pydantic import AliasChoices, Field
+from pydantic import AliasChoices, Field, model_validator
 from pydantic_settings import BaseSettings, SettingsConfigDict
+
+PROJECT_ROOT = Path(__file__).resolve().parents[3]
 
 
 def _env_aliases(name: str) -> AliasChoices:
     return AliasChoices(f"CAMERA_{name}", f"LUMIX_{name}")
 
 
+def _project_path(path: Path) -> Path:
+    if path.is_absolute():
+        return path
+    return PROJECT_ROOT / path
+
+
 class Settings(BaseSettings):
     model_config: ClassVar[SettingsConfigDict] = SettingsConfigDict(
-        env_file=".env",
+        env_file=PROJECT_ROOT / ".env",
         env_prefix="CAMERA_",
         extra="ignore",
         frozen=True,
@@ -179,6 +187,17 @@ class Settings(BaseSettings):
         default=False,
         validation_alias=_env_aliases("LLM_THINK"),
     )
+
+    @model_validator(mode="after")
+    def resolve_relative_paths(self) -> Self:
+        object.__setattr__(
+            self,
+            "brands_config_path",
+            _project_path(self.brands_config_path),
+        )
+        object.__setattr__(self, "static_dir", _project_path(self.static_dir))
+        object.__setattr__(self, "data_dir", _project_path(self.data_dir))
+        return self
 
 
 @lru_cache

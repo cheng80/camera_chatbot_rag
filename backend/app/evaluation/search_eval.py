@@ -79,7 +79,7 @@ def run_search_eval_cases(
         ),
     )
     results = tuple(_evaluate_case(case=case, retriever=retriever) for case in cases)
-    return _build_report(results)
+    return build_search_eval_report(results)
 
 
 def load_search_eval_cases(path: Path) -> tuple[SearchEvalCase, ...]:
@@ -185,7 +185,7 @@ def _evaluate_case(
     document_ids = tuple(source.document_id for source in source_refs)
     pages = tuple(source.page for source in source_refs)
     hit_document = case.expected_document_id in document_ids
-    top_rank = _top_rank(case=case, document_ids=document_ids, pages=pages)
+    top_rank = top_rank_for_case(case=case, document_ids=document_ids, pages=pages)
     return SearchEvalResult(
         case_id=case.case_id,
         query_type=case.query_type,
@@ -201,7 +201,9 @@ def _evaluate_case(
     )
 
 
-def _build_report(results: tuple[SearchEvalResult, ...]) -> SearchEvalReport:
+def build_search_eval_report(
+    results: tuple[SearchEvalResult, ...],
+) -> SearchEvalReport:
     case_count = len(results)
     document_hit_count = sum(1 for result in results if result.hit_document)
     page_hit_count = sum(1 for result in results if result.hit_page)
@@ -227,7 +229,7 @@ def _build_report(results: tuple[SearchEvalResult, ...]) -> SearchEvalReport:
     )
 
 
-def _top_rank(
+def top_rank_for_case(
     *,
     case: SearchEvalCase,
     document_ids: tuple[str, ...],
