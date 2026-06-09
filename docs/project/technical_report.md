@@ -39,6 +39,7 @@
 | Search API smoke | 모델 필터 계약 | 100.0% | 100% | 통과 |
 | Chunk quality | Flagged chunks | 2,439 / 275,372 | issue rate 0.9% | 단편 노이즈는 관리 가능 |
 | Chunk quality | Section-ready chunks | 205,561 / 275,372 | ready rate 74.6% | section-level retrieval 보강 필요 |
+| Section documents | Panasonic sections | 30,367 | generated from chunks | FTS/vector/wiki 공통 입력 후보 |
 | 기본 답변 | `card_template` 품질 전체 | 100.0% | 10문항 개선 평가 | 운영 기본값 |
 | Optional rewrite | Unsloth E4B answer-only | 100.0% | 10문항 best run | 변동성 있음 |
 | Optional rewrite | 평균 지연 | 1.1s-5.8s | 검색 기본 경로에는 부담 | 선택 기능 |
@@ -90,6 +91,7 @@ Query Normalizer
    v
 Hybrid Retriever
    |  SQLite FTS5 BM25
+   |  Section document candidate layer
    |  Trigram fallback
    |  Optional vector adapter
    v
@@ -110,6 +112,7 @@ PDF Viewer Link
 | Backend API | [backend/app/main.py](../../backend/app/main.py), [search.py](../../backend/app/api/routes/search.py) | 웹 MVP의 검색 API 표면 |
 | Query normalization | [query_normalizer.py](../../backend/app/services/query_normalizer.py), [korean_text_normalization.py](../../backend/app/services/korean_text_normalization.py) | 한국어 질의 해석의 핵심 |
 | Retrieval | [hybrid_retriever.py](../../backend/app/services/hybrid_retriever.py), [fts_schema.py](../../backend/app/indexing/fts_schema.py) | FTS5/BM25 + trigram 기준선 |
+| Section documents | [section_documents.py](../../backend/app/indexing/section_documents.py), [build_section_documents.py](../../scripts/build_section_documents.py) | chunk를 section-level retrieval/vector/wiki 입력으로 재구성 |
 | Source validation | [retrieval_source_validation.py](../../backend/app/services/retrieval_source_validation.py), [source_ref_checker.py](../../backend/app/wiki/source_ref_checker.py) | 모델 오염과 근거 없는 답변 방지 |
 | Card answer | [rag_model_quality_runner.py](../../backend/app/evaluation/rag_model_quality_runner.py), [retrieval_display_text.py](../../backend/app/services/retrieval_display_text.py) | LLM 없는 안정 카드 응답 |
 | PDF viewer | [page_renderer.py](../../backend/app/indexing/page_renderer.py), [viewer.py](../../backend/app/api/routes/viewer.py) | 사용자가 근거 페이지를 직접 확인 |
@@ -125,6 +128,7 @@ PDF Viewer Link
 | SQLite FTS5 BM25 | 설치 단순, 로컬 빠름, 평가 기준선 양호 | 긴 자연어/의미 검색과 불안정한 chunk 단위에 한계 | baseline 검색 |
 | Trigram fallback | 붙여쓰기/짧은 메뉴명 보완 | 노이즈 후보 증가 가능 | 보조 검색 |
 | Section-level retrieval | 기능 단위 검색과 wiki/vector 기반을 안정화 | section 재구성 품질을 추가 측정해야 함 | 다음 검증 대상 |
+| Section document builder | chunk를 page+section_title 단위로 묶고 목차/색인/tiny chunk를 제외 | 아직 검색 색인에는 연결되지 않음 | 구현 완료, 색인화 대기 |
 | Optional vector adapter | 의미 검색 확장 지점 | 현재 품질 근거는 약함 | section 단위 안정화 후 실험 |
 | Elasticsearch/Vector DB | 대규모 검색 확장성 | 운영 복잡도, 아직 정량 근거 부족 | 잠금 평가 후 판단 |
 

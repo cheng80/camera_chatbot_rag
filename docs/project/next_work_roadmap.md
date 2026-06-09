@@ -34,6 +34,9 @@ PDF 추출(PDF Extraction)
 - Vector Search: local-only adapter seam과 in-memory hash vector PoC, FTS/vector 후보 병합, API opt-in wiring 구현 완료
 - 검색 API(Search API): `/api/search`가 임시 기능 카드(Feature Card)를 반환
 - 질의 정규화(Query Normalization): 모델 별칭, 제어 문구, 일부 한국어 검색어 처리 완료
+- Section documents: Panasonic LUMIX 기준 275,372개 chunk에서 30,367개
+  section-level candidate를 생성하는 CLI와 schema 구현 완료. 생성 산출물은
+  `data/brands/<brand_id>/processed/sections` 아래 ignored artifact로 관리
 - 검색 평가(Search Evaluation): 50개 seed 평가셋과 300개 자동 약라벨(Weak Label) 후보 생성 완료
 - Ricoh/PENTAX 색인: 24개 문서 추출, 2967 페이지, 70738 청크 생성. FTS는
   OCR된 THETA V quick guide를 포함한 24개 문서 기준 생성 완료. Ricoh 섹션 제목
@@ -256,7 +259,7 @@ PDF 추출(PDF Extraction)
 - 로컬 모델 런타임(Local Model Runtime): Ollama 기반 Gemma 4 12B, Gemma 4 E4B,
   SuperGemma E4B, Qwen3 8B, bge-m3 smoke 완료. 다음은 bge-m3 chunk embedding index 생성이다.
 - 벡터 검색(Vector Search): adapter 경계와 local PoC는 완료, bge-m3 embedding provider
-  smoke도 완료. 다음은 local vector store 선택과 embedding 재생성 정책이다.
+  smoke도 완료. 다음은 section document 기준 FTS/vector A/B 평가와 embedding 재생성 정책이다.
 - Elasticsearch: FTS5 한계가 평가로 확인된 뒤 검색 어댑터(Search Adapter)로 도입
 - 검색 평가셋(Search Evaluation Set) 확장: 웹 프로토타입 이후 검색 로그 기반으로 보강
 - Flutter 앱(Flutter App): 웹 MVP 이후 모바일 앱으로 확장
@@ -266,7 +269,7 @@ PDF 추출(PDF Extraction)
 다음 구현 커밋 단위는 다음 하나로 제한한다.
 
 ```text
-feature card contract + source validation integration
+section-level FTS/vector index + A/B search eval
 ```
 
 이 단위가 끝나면 검색 품질 개선(Search Quality Pass)으로 넘어간다.

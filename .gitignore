@@ -180,6 +180,8 @@ data/brands/*/processed/pages/**/*
 !data/brands/*/processed/pages/.gitkeep
 data/brands/*/processed/chunks/**/*
 !data/brands/*/processed/chunks/.gitkeep
+data/brands/*/processed/sections/**/*
+!data/brands/*/processed/sections/.gitkeep
 data/brands/*/processed/page_images/**/*
 !data/brands/*/processed/page_images/.gitkeep
 data/brands/*/processed/reports/**/*
